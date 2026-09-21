@@ -355,6 +355,15 @@
   .listen h2 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 620px; }
   .listen-sub { color: var(--text-muted); margin-top: 14px; max-width: 520px; }
   .listen-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .listen-embed {
+    margin-top: 36px;
+    max-width: 640px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+  }
+  .listen-embed iframe { display: block; width: 100%; }
 
   /* ---- Contact ---- */
   .contact { border-top: 1px solid var(--border); }
@@ -563,9 +572,21 @@
       <p class="listen-sub">New episodes land on YouTube, Spotify, Apple Podcasts and Google Podcasts. Hit subscribe so you don't miss the next differential.</p>
       <div class="listen-actions">
         <a class="btn btn-primary" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">▶ YouTube</a>
-        <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Spotify</a>
+        <a class="btn btn-ghost" href="https://open.spotify.com/show/5Rt6dZX4SeqAddXO2RJHV0" target="_blank" rel="noopener">Spotify</a>
         <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Apple Podcasts</a>
         <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">Google Podcasts</a>
+      </div>
+
+      <div class="listen-embed">
+        <iframe
+          title="Medics Musings on Spotify"
+          src="https://open.spotify.com/embed/show/5Rt6dZX4SeqAddXO2RJHV0?utm_source=generator"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"></iframe>
       </div>
     </div>
   </section>
