@@ -122,7 +122,7 @@
     border-radius: 8px;
     padding: 22px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
     text-decoration: none;
     color: var(--text);
@@ -134,25 +134,31 @@
     height: 52px;
     flex: none;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 800;
-    font-size: 1.4rem;
+    overflow: hidden;
     background: var(--surface-2);
-    border: 2px solid var(--accent);
-    color: var(--accent);
+    border: 1px solid var(--border);
   }
-  .app-card:nth-child(2n) .app-icon { border-color: var(--pulse); color: var(--pulse); }
+  .app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
   .app-meta { min-width: 0; }
   .app-name { font-size: 1.1rem; font-weight: 600; }
+  .app-desc {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--text-muted);
+  }
   .app-url {
     display: block;
-    margin-top: 3px;
+    margin-top: 8px;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem;
-    color: var(--text-muted);
+    font-size: 0.76rem;
+    color: var(--pulse);
     overflow-wrap: anywhere;
   }
 
@@ -189,37 +195,42 @@
 
     <div class="app-grid">
       <a class="app-card" href="https://dialoque.app" target="_blank" rel="noopener">
-        <div class="app-icon">D</div>
+        <div class="app-icon"><img src="icons/dialoque.svg" alt="" loading="lazy"></div>
         <div class="app-meta">
           <div class="app-name">Dialoque</div>
+          <span class="app-desc">AI voice practice for the difficult conversations you've been avoiding.</span>
           <span class="app-url">dialoque.app</span>
         </div>
       </a>
       <a class="app-card" href="https://www.undertonejournal.app/" target="_blank" rel="noopener">
-        <div class="app-icon">U</div>
+        <div class="app-icon"><img src="icons/undertone.svg" alt="" loading="lazy"></div>
         <div class="app-meta">
           <div class="app-name">Undertone Journal</div>
+          <span class="app-desc">A journal that meets what you're facing with words that understand it — and remembers the pattern.</span>
           <span class="app-url">undertonejournal.app</span>
         </div>
       </a>
       <a class="app-card" href="https://www.introvue.app/" target="_blank" rel="noopener">
-        <div class="app-icon">I</div>
+        <div class="app-icon"><img src="icons/introvue.png" alt="" loading="lazy"></div>
         <div class="app-meta">
           <div class="app-name">IntroVue</div>
+          <span class="app-desc">A short, AI-guided interview that reflects back the pattern you keep repeating.</span>
           <span class="app-url">introvue.app</span>
         </div>
       </a>
       <a class="app-card" href="https://www.reverim.com/" target="_blank" rel="noopener">
-        <div class="app-icon">R</div>
+        <div class="app-icon"><img src="icons/reverim.svg" alt="" loading="lazy"></div>
         <div class="app-meta">
           <div class="app-name">Reverim</div>
+          <span class="app-desc">A private, local-first knowledge agent that makes a provider's whole note archive searchable.</span>
           <span class="app-url">reverim.com</span>
         </div>
       </a>
       <a class="app-card" href="https://storydistiller.app/" target="_blank" rel="noopener">
-        <div class="app-icon">S</div>
+        <div class="app-icon"><img src="icons/storydistiller.svg" alt="" loading="lazy"></div>
         <div class="app-meta">
           <div class="app-name">Story Distiller</div>
+          <span class="app-desc">Type any book or movie for a distilled, spoiler-free breakdown — live, from AI.</span>
           <span class="app-url">storydistiller.app</span>
         </div>
       </a>
