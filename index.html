@@ -321,28 +321,21 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 6px;
-    padding: 22px;
-    text-decoration: none;
+    padding: 16px;
     color: var(--text);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transition: border-color 0.15s ease;
-  }
-  .ep-card:hover { border-color: var(--accent); }
-  .ep-num {
-    font-family: "IBM Plex Mono", monospace;
-    color: var(--pulse);
-    font-size: 0.82rem;
-    letter-spacing: 0.06em;
   }
   .ep-card h3 {
-    font-size: 1.15rem;
+    font-size: 1rem;
     text-transform: none;
     font-weight: 700;
     letter-spacing: 0;
+    line-height: 1.3;
   }
-  .ep-card p { color: var(--text-muted); font-size: 0.92rem; margin: 0; }
+  .ep-card .ep-embed { border-radius: 8px; overflow: hidden; }
+  .ep-card .ep-embed iframe { display: block; width: 100%; }
   .ep-note {
     margin-top: 24px;
     font-family: "IBM Plex Mono", monospace;
@@ -540,28 +533,44 @@
         <h2>Latest episodes</h2>
       </div>
       <div class="ep-grid">
-        <a class="ep-card" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">
-          <span class="ep-num">EP 01 · ──╱╲──</span>
-          <h3>New episode — details coming soon</h3>
-          <p>Sample slot — replace with your real episode title and link.</p>
-        </a>
-        <a class="ep-card" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">
-          <span class="ep-num">EP 02 · ──╱╲──</span>
-          <h3>New episode — details coming soon</h3>
-          <p>Sample slot — replace with your real episode title and link.</p>
-        </a>
-        <a class="ep-card" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">
-          <span class="ep-num">EP 03 · ──╱╲──</span>
-          <h3>New episode — details coming soon</h3>
-          <p>Sample slot — replace with your real episode title and link.</p>
-        </a>
-        <a class="ep-card" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">
-          <span class="ep-num">EP 04 · ──╱╲──</span>
-          <h3>New episode — details coming soon</h3>
-          <p>Sample slot — replace with your real episode title and link.</p>
-        </a>
+        <div class="ep-card">
+          <h3>Meshamorphosis</h3>
+          <div class="ep-embed">
+            <iframe title="Meshamorphosis" src="https://open.spotify.com/embed/episode/5dsIxGSyKMeTE1v1gQWVv2?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="ep-card">
+          <h3>Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!</h3>
+          <div class="ep-embed">
+            <iframe title="Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!" src="https://open.spotify.com/embed/episode/6HUJpAAzz16SwrvfrrYbDY?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="ep-card">
+          <h3>Standing on the Shoulders of Physicists in the Operating Room</h3>
+          <div class="ep-embed">
+            <iframe title="Standing on the Shoulders of Physicists in the Operating Room" src="https://open.spotify.com/embed/episode/1UZUCy18UCiYDxCKDURM2x?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="ep-card">
+          <h3>The Presidential Address of the International Brotherhood of Biliary Tract Workers</h3>
+          <div class="ep-embed">
+            <iframe title="The Presidential Address of the International Brotherhood of Biliary Tract Workers" src="https://open.spotify.com/embed/episode/4E8xazg7ZKusIhdnjzTLcZ?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="ep-card">
+          <h3>Transference Analysis: Play by Play</h3>
+          <div class="ep-embed">
+            <iframe title="Transference Analysis: Play by Play" src="https://open.spotify.com/embed/episode/2DykEj3UDf00ffvKejpKi0?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="ep-card">
+          <h3>Out of Touch: From Healing Touch to Digital Distance</h3>
+          <div class="ep-embed">
+            <iframe title="Out of Touch: From Healing Touch to Digital Distance" src="https://open.spotify.com/embed/episode/4sUmWxleiRoKyQFO9a1R9Q?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+        </div>
       </div>
-      <p class="ep-note">↑ Placeholder episode cards — swap in real titles, thumbnails and links once you have them.</p>
+      <p class="ep-note">↑ Pulled live from your Spotify show — new episodes you publish will need a card added here too.</p>
     </div>
   </section>
 
