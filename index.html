@@ -253,6 +253,21 @@
     color: var(--text-muted);
     font-size: 0.94rem;
   }
+  .host-bio .mail-link { font-size: inherit; }
+  .host-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    color: var(--pulse);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--pulse);
+    padding-bottom: 2px;
+    align-self: flex-start;
+  }
+  .host-link:hover { color: var(--accent); border-color: var(--accent); }
   .avatar {
     width: 68px;
     height: 68px;
@@ -476,6 +491,10 @@
             something new. No one knows with certainty who said "the world belongs to the storytellers" — but
             they certainly had Dr. Gordon in mind.
           </p>
+          <p class="host-bio">
+            Contact Dr. Gordon for humorous educational speeches:
+            <a class="mail-link" href="mailto:leogordonmd@gmail.com">leogordonmd@gmail.com</a>.
+          </p>
           <div class="tag-row">
             <span class="tag">Clinical Perspective</span>
             <span class="tag">Comedian's Timing</span>
@@ -495,6 +514,7 @@
             blend of traditional psychiatric expertise and tech interest means he's equally comfortable
             discussing your unconscious mind or teaching an AI chatbot about comedic timing.
           </p>
+          <a class="host-link" href="tools.html">Digital Tools by Dr. Gardner →</a>
           <div class="tag-row">
             <span class="tag">Plenty of AI</span>
             <span class="tag">Unfiltered Humor</span>
