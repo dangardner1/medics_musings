@@ -803,6 +803,18 @@
 <script src="https://cdn.jsdelivr.net/npm/@elevenlabs/convai-widget-embed@0.18.2" async type="text/javascript"></script>
 
 <script>
+  (function () {
+    try {
+      Array.prototype.forEach.call(document.querySelectorAll(".footer-nav a[href^=\"#\"]"), function (a) {
+        a.addEventListener("click", function (e) {
+          var t = document.getElementById(a.getAttribute("href").slice(1));
+          if (!t) return;
+          e.preventDefault();
+          t.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    } catch (err) {}
+  })();
   try {
     var epGrid = document.getElementById('ep-grid');
     var epToggle = document.getElementById('ep-toggle');
