@@ -78,6 +78,10 @@
     padding-inline: 24px;
   }
 
+  @media (max-width: 420px) {
+    .wrap { padding-inline: 16px; }
+  }
+
   /* ---- Top bar ---- */
   .topbar {
     position: sticky;
@@ -336,8 +340,17 @@
     letter-spacing: 0;
     line-height: 1.3;
   }
-  .ep-card .ep-embed { border-radius: 8px; overflow: hidden; }
-  .ep-card .ep-embed iframe { display: block; width: 100%; }
+  .ep-card .ep-embed {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-inline: -16px;
+  }
+  .ep-card .ep-embed iframe { display: block; width: 100%; height: 152px; }
+  @media (max-width: 680px) {
+    /* Spotify's own compact layout doesn't reflow below ~400px; its
+       taller layout does, so grow the frame instead of clipping. */
+    .ep-card .ep-embed iframe { height: 352px; }
+  }
   .ep-note {
     margin-top: 24px;
     font-family: "IBM Plex Mono", monospace;
