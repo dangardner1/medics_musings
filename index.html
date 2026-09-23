@@ -134,6 +134,15 @@
     border: 1px solid var(--border);
     color: var(--text);
   }
+  .why-now-btn {
+    cursor: pointer;
+    border: 1px solid var(--pulse);
+    color: var(--pulse);
+    background: none;
+    font: inherit;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .why-now-btn[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
 
   /* ---- Hero ---- */
   .hero {
@@ -441,6 +450,8 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="wordmark">Medics<span>Musings</span></div>
+    <button type="button" class="btn btn-ghost why-now-btn" id="why-now-btn" aria-pressed="false">▶ Why Now?</button>
+    <audio id="why-now-audio" src="audio/why-now.mp3" preload="none"></audio>
   </div>
 </header>
 
@@ -785,6 +796,32 @@
         if (!willExpand) {
           epGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+      });
+    }
+  } catch (e) {}
+
+  try {
+    var whyNowBtn = document.getElementById('why-now-btn');
+    var whyNowAudio = document.getElementById('why-now-audio');
+    if (whyNowBtn && whyNowAudio) {
+      whyNowBtn.addEventListener('click', function () {
+        if (whyNowAudio.paused) {
+          whyNowAudio.play();
+        } else {
+          whyNowAudio.pause();
+        }
+      });
+      whyNowAudio.addEventListener('play', function () {
+        whyNowBtn.setAttribute('aria-pressed', 'true');
+        whyNowBtn.textContent = '⏸ Playing…';
+      });
+      whyNowAudio.addEventListener('pause', function () {
+        whyNowBtn.setAttribute('aria-pressed', 'false');
+        whyNowBtn.textContent = '▶ Why Now?';
+      });
+      whyNowAudio.addEventListener('ended', function () {
+        whyNowBtn.setAttribute('aria-pressed', 'false');
+        whyNowBtn.textContent = '▶ Why Now?';
       });
     }
   } catch (e) {}
