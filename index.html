@@ -134,15 +134,36 @@
     border: 1px solid var(--border);
     color: var(--text);
   }
-  .why-now-btn {
+  button.btn.why-now-btn {
     cursor: pointer;
-    border: 1px solid var(--pulse);
-    color: var(--pulse);
-    background: none;
+    border: 2px solid var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
     font: inherit;
     font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 12px 22px;
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent);
   }
-  .why-now-btn[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+  .why-now-btn:hover { filter: brightness(1.1); }
+  .why-now-btn:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  button.btn.why-now-btn[aria-pressed="true"] {
+    background: transparent;
+    color: var(--accent);
+  }
+  .why-now-btn.why-now-hero { font-size: 1.05rem; padding: 15px 28px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .why-now-btn[aria-pressed="false"] { animation: whyNowPulse 2.4s ease-out infinite; }
+  }
+  @keyframes whyNowPulse {
+    0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); }
+    70%  { box-shadow: 0 0 0 14px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+  }
+  @media (max-width: 420px) {
+    .topbar .why-now-btn { padding: 10px 14px; font-size: 0.85rem; }
+  }
 
   /* ---- Hero ---- */
   .hero {
@@ -450,7 +471,7 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <div class="wordmark">Medics<span>Musings</span></div>
-    <button type="button" class="btn btn-ghost why-now-btn" id="why-now-btn" aria-pressed="false">▶ Why Now?</button>
+    <button type="button" class="btn why-now-btn" aria-pressed="false">▶ Why Now?</button>
     <audio id="why-now-audio" src="audio/why-now.mp3" preload="none"></audio>
   </div>
 </header>
@@ -473,6 +494,7 @@
         </svg>
 
         <div class="hero-actions">
+          <button type="button" class="btn why-now-btn why-now-hero" aria-pressed="false">▶ Why Now? Hear Leo &amp; Dan</button>
           <a class="btn btn-primary" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">▶ Watch the latest episode</a>
           <span class="stamp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 12 9 18 20 6"/></svg>
@@ -801,28 +823,24 @@
   } catch (e) {}
 
   try {
-    var whyNowBtn = document.getElementById('why-now-btn');
+    var whyNowBtns = Array.prototype.slice.call(document.querySelectorAll('.why-now-btn'));
     var whyNowAudio = document.getElementById('why-now-audio');
-    if (whyNowBtn && whyNowAudio) {
-      whyNowBtn.addEventListener('click', function () {
-        if (whyNowAudio.paused) {
-          whyNowAudio.play();
-        } else {
-          whyNowAudio.pause();
-        }
+    if (whyNowBtns.length && whyNowAudio) {
+      var labels = whyNowBtns.map(function (b) { return b.innerHTML; });
+      var setState = function (playing) {
+        whyNowBtns.forEach(function (b, i) {
+          b.setAttribute('aria-pressed', String(playing));
+          b.innerHTML = playing ? '⏸ Playing…' : labels[i];
+        });
+      };
+      whyNowBtns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          if (whyNowAudio.paused) { whyNowAudio.play(); } else { whyNowAudio.pause(); }
+        });
       });
-      whyNowAudio.addEventListener('play', function () {
-        whyNowBtn.setAttribute('aria-pressed', 'true');
-        whyNowBtn.textContent = '⏸ Playing…';
-      });
-      whyNowAudio.addEventListener('pause', function () {
-        whyNowBtn.setAttribute('aria-pressed', 'false');
-        whyNowBtn.textContent = '▶ Why Now?';
-      });
-      whyNowAudio.addEventListener('ended', function () {
-        whyNowBtn.setAttribute('aria-pressed', 'false');
-        whyNowBtn.textContent = '▶ Why Now?';
-      });
+      whyNowAudio.addEventListener('play', function () { setState(true); });
+      whyNowAudio.addEventListener('pause', function () { setState(false); });
+      whyNowAudio.addEventListener('ended', function () { setState(false); });
     }
   } catch (e) {}
 </script>
