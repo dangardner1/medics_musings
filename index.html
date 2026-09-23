@@ -351,6 +351,14 @@
        taller layout does, so grow the frame instead of clipping. */
     .ep-card .ep-embed iframe { height: 352px; }
   }
+  .ep-grid.is-collapsed .ep-card:nth-child(n+7) { display: none; }
+  .ep-more-row { display: flex; justify-content: center; margin-top: 28px; }
+  button.btn {
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    background: none;
+  }
   .ep-note {
     margin-top: 24px;
     font-family: "IBM Plex Mono", monospace;
@@ -547,7 +555,7 @@
         <span class="eyebrow">Recent Admissions</span>
         <h2>Latest episodes</h2>
       </div>
-      <div class="ep-grid">
+      <div class="ep-grid is-collapsed" id="ep-grid">
         <div class="ep-card">
           <h3>Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!</h3>
           <div class="ep-embed">
@@ -693,6 +701,9 @@
           </div>
         </div>
       </div>
+      <div class="ep-more-row">
+        <button type="button" class="btn btn-ghost" id="ep-toggle" aria-expanded="false" aria-controls="ep-grid">Show all 24 episodes</button>
+      </div>
       <p class="ep-note">↑ Pulled live from your Spotify show — new episodes you publish will need a card added here too.</p>
     </div>
   </section>
@@ -752,3 +763,21 @@
 <!-- Medic's Musings, Chatbot -->
 <elevenlabs-convai agent-id="ciPdXJzufqD9sBcisxzc" variant="tiny"></elevenlabs-convai>
 <script src="https://cdn.jsdelivr.net/npm/@elevenlabs/convai-widget-embed@0.18.2" async type="text/javascript"></script>
+
+<script>
+  try {
+    var epGrid = document.getElementById('ep-grid');
+    var epToggle = document.getElementById('ep-toggle');
+    if (epGrid && epToggle) {
+      epToggle.addEventListener('click', function () {
+        var willExpand = epGrid.classList.contains('is-collapsed');
+        epGrid.classList.toggle('is-collapsed');
+        epToggle.setAttribute('aria-expanded', String(willExpand));
+        epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all 24 episodes';
+        if (!willExpand) {
+          epGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  } catch (e) {}
+</script>
