@@ -251,6 +251,11 @@
     transform: rotate(-2deg);
   }
   .stamp svg { width: 16px; height: 16px; flex: none; }
+  button.stamp { background: none; cursor: pointer; }
+  button.stamp:hover { filter: brightness(1.15); }
+  button.stamp:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  .npa-player { margin-top: 18px; max-width: 460px; }
+  .npa-player audio { width: 100%; display: block; }
 
   /* ---- Sections ---- */
   section { padding-block: 60px; scroll-margin-top: 76px; }
@@ -507,10 +512,13 @@
 
         <div class="hero-actions">
           <button type="button" class="btn why-now-btn why-now-hero" aria-pressed="false">▶ Why Now? Hear Leo &amp; Dan</button>
-          <a class="stamp" href="https://drive.proton.me/urls/KG4E09J2QM#pAhOqWzRAeaj" target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+          <button type="button" class="stamp" aria-controls="npa-player" aria-expanded="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="4 12 9 18 20 6"/></svg>
             No prior authorization required
-          </a>
+          </button>
+        </div>
+        <div id="npa-player" class="npa-player" hidden>
+          <audio id="npa-audio" src="audio/no-prior-authorization.mp3" preload="none" controls></audio>
         </div>
       </div>
       <div class="hero-art">
@@ -887,6 +895,23 @@
       whyNowAudio.addEventListener('play', function () { setState(true); });
       whyNowAudio.addEventListener('pause', function () { setState(false); });
       whyNowAudio.addEventListener('ended', function () { setState(false); });
+    }
+  } catch (e) {}
+
+  try {
+    var npaBtn = document.querySelector('button.stamp');
+    var npaPlayer = document.getElementById('npa-player');
+    var npaAudio = document.getElementById('npa-audio');
+    if (npaBtn && npaPlayer && npaAudio) {
+      npaBtn.addEventListener('click', function () {
+        npaPlayer.hidden = false;
+        npaBtn.setAttribute('aria-expanded', 'true');
+        var wn = document.getElementById('why-now-audio');
+        if (wn && !wn.paused) wn.pause();
+        if (npaAudio.paused) { npaAudio.play(); } else { npaAudio.pause(); }
+      });
+      var wnAudio = document.getElementById('why-now-audio');
+      if (wnAudio) wnAudio.addEventListener('play', function () { npaAudio.pause(); });
     }
   } catch (e) {}
 </script>
