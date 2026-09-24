@@ -817,6 +817,31 @@
 <script>
   (function () {
     try {
+      var label = document.querySelector('.chat-label');
+      var widget = document.querySelector('elevenlabs-convai');
+      if (!label || !widget) return;
+      function place() {
+        try {
+          var root = widget.shadowRoot;
+          var pill = root && root.querySelector('[class*="rounded-compact-sheet"]');
+          if (!pill) { label.style.visibility = 'hidden'; return; }
+          var r = pill.getBoundingClientRect();
+          if (!r.width || !r.height) { label.style.visibility = 'hidden'; return; }
+          var lr = label.getBoundingClientRect();
+          label.style.right = "auto";
+          label.style.bottom = "auto";
+          label.style.left = Math.max(0, r.right - lr.width) + "px";
+          label.style.top = Math.max(0, r.top - lr.height - 10) + "px";
+          label.style.visibility = 'visible';
+        } catch (e) {}
+      }
+      setInterval(place, 300);
+      window.addEventListener('resize', place);
+      place();
+    } catch (err) {}
+  })();
+  (function () {
+    try {
       Array.prototype.forEach.call(document.querySelectorAll(".footer-nav a[href^=\"#\"]"), function (a) {
         a.addEventListener("click", function (e) {
           var t = document.getElementById(a.getAttribute("href").slice(1));
