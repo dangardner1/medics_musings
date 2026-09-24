@@ -394,6 +394,24 @@
     background: none;
   }
 
+  .chat-label {
+    position: fixed;
+    right: 20px;
+    bottom: 84px;
+    z-index: 9;
+    pointer-events: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
   /* ---- Listen ---- */
   .listen { text-align: left; }
   .listen h2 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 620px; }
@@ -793,6 +811,7 @@
 
 <!-- Medic's Musings, Chatbot -->
 <elevenlabs-convai agent-id="ciPdXJzufqD9sBcisxzc" variant="tiny"></elevenlabs-convai>
+<div class="chat-label" aria-hidden="true">AI Medical Assistant</div>
 <script src="https://cdn.jsdelivr.net/npm/@elevenlabs/convai-widget-embed@0.18.2" async type="text/javascript"></script>
 
 <script>
