@@ -833,6 +833,31 @@
     margin-inline: -16px;
   }
   .ep-card .ep-embed:empty { display: none; }
+  .ep-card { scroll-margin-top: 90px; transition: border-color 0.3s ease; }
+  .ep-card.is-target { border-color: var(--accent); }
+  .ep-new {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+  }
+  .ep-new-note {
+    margin: -14px 0 22px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--pulse);
+  }
+  .ep-resume {
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+  }
   .ep-audio { width: 100%; display: block; }
   .ep-card .ep-embed iframe { display: block; width: 100%; height: 152px; }
   @media (max-width: 680px) {
@@ -872,6 +897,40 @@
   .listen h2 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 620px; }
   .listen-sub { color: var(--text-muted); margin-top: 14px; max-width: 520px; }
   .listen-actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .listen-rate { margin-top: 18px; max-width: 560px; color: var(--text-muted); font-size: 0.95rem; }
+  .listen-rate a { color: var(--pulse); text-decoration: none; border-bottom: 1px dashed var(--pulse); }
+  .listen-rate a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ---- Follow menu ---- */
+  .follow { position: relative; }
+  .follow > summary { list-style: none; cursor: pointer; padding: 8px 14px; font-size: 0.78rem; }
+  .follow > summary::-webkit-details-marker { display: none; }
+  .follow[open] > summary { border-color: var(--accent); color: var(--accent); }
+  .follow-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    z-index: 20;
+  }
+  .follow-menu a {
+    padding: 9px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .follow-menu a:hover, .follow-menu a:focus-visible { background: var(--surface-2); color: var(--accent); }
   .listen-embed {
     margin-top: 36px;
     max-width: 640px;
@@ -939,6 +998,15 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="wordmark" href="/" aria-label="Medics Musings home">Medics<span>Musings</span></a>
+    <details class="follow">
+      <summary class="btn btn-ghost">Follow</summary>
+      <div class="follow-menu">
+        <a href="https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+        <a href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a>
+        <a href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener" data-platform="youtube">YouTube</a>
+        <a href="https://anchor.fm/s/117844514/podcast/rss" target="_blank" rel="noopener" data-platform="rss">RSS feed</a>
+      </div>
+    </details>
     <audio id="why-now-audio" src="audio/why-now.mp3?v=4" preload="none"></audio>
   </div>
 </header>
@@ -1063,6 +1131,7 @@
         <span class="eyebrow">Recent Admissions</span>
         <h2>Latest episodes</h2>
       </div>
+      <p class="ep-new-note" id="ep-new-note" hidden></p>
       <div class="ep-grid is-collapsed" id="ep-grid">
         <article class="ep-card" id="the-robot-who-wipes-my-butt">
           <h3>The Robot Who Wipes My Butt</h3>
@@ -1074,242 +1143,266 @@
             <a class="ep-link" href="audio/episodes/the-robot-who-wipes-my-butt.mp3" download>Download MP3</a>
           </div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="tassel-twirling-in-tulsa-bumps-grinds-and-scalpels">
           <h3>Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels</h3>
           <p class="ep-meta"><time datetime="2026-09-21">Sep 21, 2026</time> · 32 min</p>
           <p class="ep-desc">Welcome to the world&#x27;s only medical comedy podcast dedicated to the bizarre, high-stakes occupational hazards of retired burlesque performers. Inspired by Leo A. Gordon, MD&#x27;s &quot;The Aging Ecdysiast&quot;…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="20qjxyYvmjcR0DpJtbNOk2" data-title="Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#tassel-twirling-in-tulsa-bumps-grinds-and-scalpels" data-share-title="Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/20qjxyYvmjcR0DpJtbNOk2" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="senior-pickleball-when-the-spirit-is-willing-but-the-joints">
           <h3>Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!</h3>
           <p class="ep-meta"><time datetime="2025-03-10">Mar 10, 2025</time> · 12 min</p>
           <p class="ep-desc">Join sportscaster Chuck &quot;The Mouth&quot; Morrison and former orthopedic surgeon Dr. Phil McCracken as they bring you the slowest-paced action in sports entertainment! This week&#x27;s episode features a…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="6HUJpAAzz16SwrvfrrYbDY" data-title="Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#senior-pickleball-when-the-spirit-is-willing-but-the-joints" data-share-title="Senior Pickleball: When the Spirit Is Willing but the Joints Are Not! — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/6HUJpAAzz16SwrvfrrYbDY" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="standing-on-the-shoulders-of-physicists-in-the-operating">
           <h3>Standing on the Shoulders of Physicists in the Operating Room</h3>
           <p class="ep-meta"><time datetime="2025-02-25">Feb 25, 2025</time> · 17 min</p>
           <p class="ep-desc">The Physics of Laparoscopic Surgery: Key Points Overview This humorous dissertation written and read by Leo A. Gordon, MD presents ten &quot;laws of physics&quot; that humorously explain the frustrations and…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1UZUCy18UCiYDxCKDURM2x" data-title="Standing on the Shoulders of Physicists in the Operating Room">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#standing-on-the-shoulders-of-physicists-in-the-operating" data-share-title="Standing on the Shoulders of Physicists in the Operating Room — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/1UZUCy18UCiYDxCKDURM2x" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="the-presidential-address-of-the-international-brotherhood">
           <h3>The Presidential Address of the International Brotherhood of Biliary Tract Workers</h3>
           <p class="ep-meta"><time datetime="2025-02-09">Feb 9, 2025</time> · 16 min</p>
           <p class="ep-desc">Please join us for a masterful presentation about the union of hard-working biliary tract workers. Dr. Antony Delatorre delivers the presidential address. He refers to:  The Charcot House for workers…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4E8xazg7ZKusIhdnjzTLcZ" data-title="The Presidential Address of the International Brotherhood of Biliary Tract Workers">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#the-presidential-address-of-the-international-brotherhood" data-share-title="The Presidential Address of the International Brotherhood of Biliary Tract Workers — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/4E8xazg7ZKusIhdnjzTLcZ" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="transference-analysis-play-by-play">
           <h3>Transference Analysis: Play by Play</h3>
           <p class="ep-meta"><time datetime="2025-02-05">Feb 5, 2025</time> · 3 min</p>
           <p class="ep-desc">Experience a Powerful Therapeutic Breakthrough: When Past Meets Present Join Dr. Travis Mitchell for an intimate look, in the style of a play by play sportscast,  into a transformative therapy…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2DykEj3UDf00ffvKejpKi0" data-title="Transference Analysis: Play by Play">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#transference-analysis-play-by-play" data-share-title="Transference Analysis: Play by Play — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/2DykEj3UDf00ffvKejpKi0" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="out-of-touch-from-healing-touch-to-digital-distance">
           <h3>Out of Touch: From Healing Touch to Digital Distance</h3>
           <p class="ep-meta"><time datetime="2025-02-03">Feb 3, 2025</time> · 12 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine. Join a veteran surgeon&#x27;s poignant and humorous journey through the evolution of modern surgery, where the intimate art of healing…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4sUmWxleiRoKyQFO9a1R9Q" data-title="Out of Touch: From Healing Touch to Digital Distance">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#out-of-touch-from-healing-touch-to-digital-distance" data-share-title="Out of Touch: From Healing Touch to Digital Distance — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/4sUmWxleiRoKyQFO9a1R9Q" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="the-iceman-cometh-and-the-patient-goeth">
           <h3>The Iceman Cometh and the Patient Goeth</h3>
           <p class="ep-meta"><time datetime="2025-01-28">Jan 28, 2025</time> · 14 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine. Step back to a bitterly cold Chicago in 1972 where a third-year medical student is about to learn a now-outdated method of…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0fP6WSXDts5uuV7XCZHvo8" data-title="The Iceman Cometh and the Patient Goeth">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#the-iceman-cometh-and-the-patient-goeth" data-share-title="The Iceman Cometh and the Patient Goeth — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/0fP6WSXDts5uuV7XCZHvo8" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="fourth-and-gall-play-by-play-coverage">
           <h3>Fourth and Gall (Play by Play Coverage)</h3>
           <p class="ep-meta"><time datetime="2025-01-18">Jan 18, 2025</time> · 21 min</p>
           <p class="ep-desc">This satirical nail-biting episode covers a cholecystectomy with bile duct exploration and extraction of a left hepatic duct stone. The Southwestern Conference of the American Surgical League brings…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2gZpolFaCJ5VtmvOZxV7nE" data-title="Fourth and Gall (Play by Play Coverage)">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#fourth-and-gall-play-by-play-coverage" data-share-title="Fourth and Gall (Play by Play Coverage) — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/2gZpolFaCJ5VtmvOZxV7nE" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="sylvias-walker-balls">
           <h3>Sylvia&#x27;s Walker Balls</h3>
           <p class="ep-meta"><time datetime="2025-01-06">Jan 6, 2025</time> · 11 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine Step into the quirky and poignant world of Sylvia Kropopnik, a 90-something enigma with a colorful past, an unforgettable walker…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0RwCNH8EOBVOHbtULLXxA9" data-title="Sylvia&#x27;s Walker Balls">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#sylvias-walker-balls" data-share-title="Sylvia&#x27;s Walker Balls — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/0RwCNH8EOBVOHbtULLXxA9" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="bedside-banter-with-algo-chats-a-lot-iii">
           <h3>Bedside Banter with Algo Chats-a-Lot III</h3>
           <p class="ep-meta"><time datetime="2025-01-02">Jan 2, 2025</time> · 7 min</p>
           <p class="ep-desc">Witty conversation with my AI Medical chatbot, Algo Chats-A-Lot,III, who offers opinions:   What to prescribe for a computer virus.  His version of &quot;take two bytes and call me in the morning&quot; Medical…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1kx52hXJvPk2ra33mTusg8" data-title="Bedside Banter with Algo Chats-a-Lot III">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#bedside-banter-with-algo-chats-a-lot-iii" data-share-title="Bedside Banter with Algo Chats-a-Lot III — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/1kx52hXJvPk2ra33mTusg8" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="surgery-department-voicemail-nightmare-thank-you-for-calling">
           <h3>Surgery Department Voicemail Nightmare: Thank You For Calling</h3>
           <p class="ep-meta"><time datetime="2024-12-20">Dec 20, 2024</time> · 3 min</p>
           <p class="ep-desc">Will you navigate the labyrinth of voicemail options before succumbing to existential despair?</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="5j1WbZVTiPlD0KWiPSfWU1" data-title="Surgery Department Voicemail Nightmare: Thank You For Calling">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#surgery-department-voicemail-nightmare-thank-you-for-calling" data-share-title="Surgery Department Voicemail Nightmare: Thank You For Calling — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/5j1WbZVTiPlD0KWiPSfWU1" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="from-burnout-to-punchlines-freuds-solution">
           <h3>From Burnout to Punchlines: Freud&#x27;s Solution</h3>
           <p class="ep-meta"><time datetime="2024-12-12">Dec 12, 2024</time> · 8 min</p>
           <p class="ep-desc">Discover the fascinating historical connection between comedy and physician burnout at Vienna&#x27;s Allgemeine Krankenhaus. In this satirical, fictional story, learn how Sigmund Freud prescribed stand-up…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="40cK7NDnBxjSA6GfgI47KQ" data-title="From Burnout to Punchlines: Freud&#x27;s Solution">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#from-burnout-to-punchlines-freuds-solution" data-share-title="From Burnout to Punchlines: Freud&#x27;s Solution — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/40cK7NDnBxjSA6GfgI47KQ" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="pax-inguinalis-salons-and-evening-events-programme">
           <h3>Pax Inguinalis Salons and Evening Events (Programme)</h3>
           <p class="ep-meta"><time datetime="2024-12-10">Dec 10, 2024</time> · 9 min</p>
           <p class="ep-desc">Evening Events – Inguinal Salons at the Pax Inguinalis The Pax Inguinalis Program Committee has instituted a series of evening salons to compliment the scientific presentations. These salons are…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1RNOWudmSlpqXWABlHisRV" data-title="Pax Inguinalis Salons and Evening Events (Programme)">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#pax-inguinalis-salons-and-evening-events-programme" data-share-title="Pax Inguinalis Salons and Evening Events (Programme) — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/1RNOWudmSlpqXWABlHisRV" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="pax-inguinalis-part-3">
           <h3>Pax Inguinalis (Part 3)</h3>
           <p class="ep-meta"><time datetime="2024-12-10">Dec 10, 2024</time> · 16 min</p>
           <p class="ep-desc">Join us for Part 3 of uniquely entertaining medical podcast featuring a veteran surgeon&#x27;s witty and candid exploration of inguinal hernia repair. Our host, a self-proclaimed chief negotiator of the…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0pUVXs4sMzBxqCxGGguFeA" data-title="Pax Inguinalis (Part 3)">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#pax-inguinalis-part-3" data-share-title="Pax Inguinalis (Part 3) — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/0pUVXs4sMzBxqCxGGguFeA" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="pax-inguinalis-part-2">
           <h3>Pax Inguinalis (Part 2)</h3>
           <p class="ep-meta"><time datetime="2024-12-09">Dec 9, 2024</time> · 6 min</p>
           <p class="ep-desc">Join us for a uniquely entertaining medical podcast featuring a veteran surgeon&#x27;s witty and candid exploration of inguinal hernia repair. Our host, a self-proclaimed chief negotiator of the &quot;Pax…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="32BmtHOT24DZELKubv1XoQ" data-title="Pax Inguinalis (Part 2)">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#pax-inguinalis-part-2" data-share-title="Pax Inguinalis (Part 2) — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/32BmtHOT24DZELKubv1XoQ" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the">
           <h3>Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1)</h3>
           <p class="ep-meta"><time datetime="2024-12-07">Dec 7, 2024</time> · 3 min</p>
           <p class="ep-desc">Join Dr. Patch Groin as he unveils the historic negotiations bringing peace to the anatomical territories of the groin! Watch as delegates from Abdomenia, Flexidia, and Pupica gather in Rouen for the…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1Fgwym38d7v2jRA18vswBJ" data-title="Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1)">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the" data-share-title="Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1) — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/1Fgwym38d7v2jRA18vswBJ" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="ai-rounds-when-your-chatbot-assistant-bites-back">
           <h3>AI Rounds: When Your Chatbot Assistant Bites Back!</h3>
           <p class="ep-meta"><time datetime="2024-12-06">Dec 6, 2024</time> · 3 min</p>
           <p class="ep-desc">Ever wondered what happens when an old-school doctor collides with cutting-edge AI? Join Dr. Davey Dinosaur (yes, that&#x27;s what I&#x27;m calling myself now) as I navigate the fast-paced challenges of modern…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4yjugw1bKUd7JLjlgFfw0X" data-title="AI Rounds: When Your Chatbot Assistant Bites Back!">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#ai-rounds-when-your-chatbot-assistant-bites-back" data-share-title="AI Rounds: When Your Chatbot Assistant Bites Back! — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/4yjugw1bKUd7JLjlgFfw0X" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="healing-by-hashtag-unpack-your-baggage-in-30-seconds">
           <h3>Healing by Hashtag: Unpack Your Baggage in 30 Seconds!</h3>
           <p class="ep-meta"><time datetime="2024-11-29">Nov 29, 2024</time> · 3 min</p>
           <p class="ep-desc">The internet&#x27;s attempts to commodify healing, from 30-second TikTok therapy to satirical self-help products.    (Created with the help of Perplexity Pro AI)</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="7bgesGeEUFKZd6hcak8vHD" data-title="Healing by Hashtag: Unpack Your Baggage in 30 Seconds!">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#healing-by-hashtag-unpack-your-baggage-in-30-seconds" data-share-title="Healing by Hashtag: Unpack Your Baggage in 30 Seconds! — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/7bgesGeEUFKZd6hcak8vHD" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="black-friday-bargain-bin-healthcare-extravaganza">
           <h3>Black Friday Bargain Bin Healthcare Extravaganza</h3>
           <p class="ep-meta"><time datetime="2024-11-28">Nov 28, 2024</time> · 4 min</p>
           <p class="ep-desc">Coming to you from a strip mall directly adjacent to a questionable accredited medical clinic. Don&#x27;t miss out!   (Created with the help of Perplexity Pro AI)</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="6FLw9nrEZv5BZiIuuygrRr" data-title="Black Friday Bargain Bin Healthcare Extravaganza">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#black-friday-bargain-bin-healthcare-extravaganza" data-share-title="Black Friday Bargain Bin Healthcare Extravaganza — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/6FLw9nrEZv5BZiIuuygrRr" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="is-happiness-behind-a-paywall">
           <h3>Is Happiness Behind a Paywall?</h3>
           <p class="ep-meta"><time datetime="2024-11-25">Nov 25, 2024</time> · 4 min</p>
           <p class="ep-desc">Is happiness hiding behind a paywall? Does happiness depend on your subscription level? (Created with the help of Perplexity Pro AI)</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1OXY8dpL91XZUq7Mh59M8l" data-title="Is Happiness Behind a Paywall?">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#is-happiness-behind-a-paywall" data-share-title="Is Happiness Behind a Paywall? — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/1OXY8dpL91XZUq7Mh59M8l" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="algorithms-meet-empathy-the-future-of-patient-care">
           <h3>Algorithms Meet Empathy: The Future of Patient Care</h3>
           <p class="ep-meta"><time datetime="2024-11-23">Nov 23, 2024</time> · 7 min</p>
           <p class="ep-desc">Artificial Intelligence is revolutionizing medicine, offering unprecedented accuracy in diagnosis and personalized treatment plans. But can it replace the human element? In this video, we explore how…</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="5oGJYAwZSvQsImW5mFI6df" data-title="Algorithms Meet Empathy: The Future of Patient Care">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#algorithms-meet-empathy-the-future-of-patient-care" data-share-title="Algorithms Meet Empathy: The Future of Patient Care — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/5oGJYAwZSvQsImW5mFI6df" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="can-patients-and-doctors-trust-ai-in-healthcare">
           <h3>Can Patients and Doctors Trust AI in Healthcare?</h3>
           <p class="ep-meta"><time datetime="2024-11-23">Nov 23, 2024</time> · 11 min</p>
           <p class="ep-desc">Can doctors and patients come to trust in and collaborate with AI in forming diagnoses and treatments?    (Created with the help of Perplexity Pro AI)</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2DTgBELd37AJoxbbKWUC9y" data-title="Can Patients and Doctors Trust AI in Healthcare?">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#can-patients-and-doctors-trust-ai-in-healthcare" data-share-title="Can Patients and Doctors Trust AI in Healthcare? — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/2DTgBELd37AJoxbbKWUC9y" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="the-ten-commandments-of-grand-rounds">
           <h3>The Ten Commandments of Grand Rounds</h3>
           <p class="ep-meta"><time datetime="2024-11-22">Nov 22, 2024</time> · 5 min</p>
           <p class="ep-desc">A senior surgeon&#x27;s unique witty perspective on the traditional protocols of Grand Rounds for physicians in training.  Send comments to TheAmericanBardofSurgery@gmail.com</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0ugKGRoH4NlXevPIHUeT36" data-title="The Ten Commandments of Grand Rounds">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#the-ten-commandments-of-grand-rounds" data-share-title="The Ten Commandments of Grand Rounds — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/0ugKGRoH4NlXevPIHUeT36" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
         </article>
-        <article class="ep-card">
+        <article class="ep-card" id="the-digital-doctor">
           <h3>The Digital Doctor</h3>
           <p class="ep-meta"><time datetime="2024-11-20">Nov 20, 2024</time> · 3 min</p>
           <p class="ep-desc">Satirical take on AI in Healthcare. Is AI in Healthcare accurate enough to keep you safe and healthy? Is it an aid or impediment? Or both? (Created with the help of Perplexity Pro AI)</p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2dl7NSc2WwKugB6SMwE2Tj" data-title="The Digital Doctor">▶ Play here</button>
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#the-digital-doctor" data-share-title="The Digital Doctor — Medics Musings">Share</button>
             <a class="ep-link" href="https://open.spotify.com/episode/2dl7NSc2WwKugB6SMwE2Tj" target="_blank" rel="noopener">Open in Spotify</a>
           </div>
           <div class="ep-embed"></div>
@@ -1327,10 +1420,13 @@
       <h2>Subscribe. Diagnose your commute.</h2>
       <p class="listen-sub">New episodes land on YouTube, Spotify and Apple Podcasts. Hit subscribe so you don't miss the next differential.</p>
       <div class="listen-actions">
-        <a class="btn btn-primary" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener">▶ YouTube</a>
-        <a class="btn btn-ghost" href="https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj" target="_blank" rel="noopener">Spotify</a>
-        <a class="btn btn-ghost" href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650" target="_blank" rel="noopener">Apple Podcasts</a>
+        <a class="btn btn-primary" href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener" data-platform="youtube">▶ YouTube</a>
+        <a class="btn btn-ghost" href="https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>
+        <a class="btn btn-ghost" href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a>
       </div>
+      <p class="listen-rate">
+        Enjoying the show? <a class="rate-link" href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650" target="_blank" rel="noopener">Rate us ★★★★★ on Apple Podcasts</a>. It takes ten seconds and is the best way to help new listeners find us.
+      </p>
 
       <div class="listen-embed">
         <iframe
@@ -1376,6 +1472,14 @@
 <script src="https://cdn.jsdelivr.net/npm/@elevenlabs/convai-widget-embed@0.18.2" async type="text/javascript"></script>
 
 <script>
+  function track(name, params) {
+    try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {}
+  }
+  function epTitle(el) {
+    var card = el && el.closest('.ep-card');
+    var h = card && card.querySelector('h3');
+    return h ? h.textContent : '';
+  }
   (function () {
     try {
       var label = document.querySelector('.chat-label');
@@ -1429,6 +1533,7 @@
         f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
         slot.appendChild(f);
         btn.remove();
+        track('episode_play', { episode_title: epTitle(slot), player: 'spotify_embed' });
       });
     });
   } catch (e) {}
@@ -1439,10 +1544,14 @@
       btn.addEventListener('click', function () {
         var url = btn.getAttribute('data-share-url');
         var title = btn.getAttribute('data-share-title');
+        var itemId = (btn.closest('.ep-card') || {}).id || '';
         if (navigator.share) {
-          navigator.share({ title: title, url: url }).catch(function () {});
+          navigator.share({ title: title, url: url }).then(function () {
+            track('share', { method: 'native', content_type: 'episode', item_id: itemId });
+          }).catch(function () {});
           return;
         }
+        track('share', { method: 'clipboard', content_type: 'episode', item_id: itemId });
         var done = function (msg) {
           btn.textContent = msg;
           setTimeout(function () { btn.textContent = label; }, 2000);
@@ -1462,6 +1571,7 @@
     if (epGrid && epToggle) {
       epToggle.addEventListener('click', function () {
         var willExpand = epGrid.classList.contains('is-collapsed');
+        if (willExpand) track('episodes_expand');
         epGrid.classList.toggle('is-collapsed');
         epToggle.setAttribute('aria-expanded', String(willExpand));
         epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all 25 episodes';
@@ -1488,7 +1598,7 @@
           if (whyNowAudio.paused) { whyNowAudio.play(); } else { whyNowAudio.pause(); }
         });
       });
-      whyNowAudio.addEventListener('play', function () { setState(true); });
+      whyNowAudio.addEventListener('play', function () { setState(true); track('promo_audio_play', { clip: 'why_now' }); });
       whyNowAudio.addEventListener('pause', function () { setState(false); });
       whyNowAudio.addEventListener('ended', function () { setState(false); });
     }
@@ -1508,7 +1618,149 @@
       });
       var wnAudio = document.getElementById('why-now-audio');
       if (wnAudio) wnAudio.addEventListener('play', function () { npaAudio.pause(); });
+      npaAudio.addEventListener('play', function () { track('promo_audio_play', { clip: 'no_prior_authorization' }); });
     }
+  } catch (e) {}
+
+  // Deep links to an episode card: expand the list if needed, then scroll to it.
+  function showEpisodeFromHash() {
+    try {
+      var id = decodeURIComponent(location.hash.slice(1));
+      if (!id) return;
+      var card = document.getElementById(id);
+      if (!card || !card.classList.contains('ep-card')) return;
+      var grid = document.getElementById('ep-grid');
+      var toggle = document.getElementById('ep-toggle');
+      if (grid && grid.classList.contains('is-collapsed') && getComputedStyle(card).display === 'none') {
+        grid.classList.remove('is-collapsed');
+        if (toggle) {
+          toggle.setAttribute('aria-expanded', 'true');
+          toggle.textContent = 'Show fewer episodes';
+        }
+      }
+      card.scrollIntoView({ block: 'start' });
+      card.classList.add('is-target');
+      setTimeout(function () { card.classList.remove('is-target'); }, 2500);
+    } catch (e) {}
+  }
+  window.addEventListener('hashchange', showEpisodeFromHash);
+  window.addEventListener('load', showEpisodeFromHash);
+
+  // "New since your last visit" badges. The baseline is fixed for the whole
+  // browser session so badges don't vanish on reload.
+  try {
+    var LAST = 'mm-last-visit', BASE = 'mm-visit-baseline';
+    var baseline = null;
+    try {
+      baseline = sessionStorage.getItem(BASE);
+      if (baseline === null) {
+        baseline = localStorage.getItem(LAST) || '';
+        sessionStorage.setItem(BASE, baseline);
+      }
+      localStorage.setItem(LAST, new Date().toISOString().slice(0, 10));
+    } catch (e) {}
+    if (baseline) {
+      var fresh = 0;
+      Array.prototype.forEach.call(document.querySelectorAll('.ep-card time[datetime]'), function (t) {
+        if (t.getAttribute('datetime') > baseline) {
+          var tag = document.createElement('span');
+          tag.className = 'ep-new';
+          tag.textContent = 'New';
+          t.parentNode.insertBefore(tag, t);
+          fresh++;
+        }
+      });
+      var note = document.getElementById('ep-new-note');
+      if (fresh && note) {
+        note.textContent = fresh + (fresh === 1 ? ' new episode' : ' new episodes') + ' since your last visit';
+        note.hidden = false;
+      }
+    }
+  } catch (e) {}
+
+  // Resume self-hosted episodes where the listener left off.
+  try {
+    var fmt = function (sec) {
+      sec = Math.floor(sec);
+      return Math.floor(sec / 60) + ':' + ('0' + (sec % 60)).slice(-2);
+    };
+    Array.prototype.forEach.call(document.querySelectorAll('.ep-audio'), function (a) {
+      var key = 'mm-pos:' + a.getAttribute('src');
+      var saved = 0;
+      try { saved = parseFloat(localStorage.getItem(key)) || 0; } catch (e) {}
+      var hint = null;
+      if (saved > 5) {
+        hint = document.createElement('p');
+        hint.className = 'ep-resume';
+        hint.textContent = 'Resumes from ' + fmt(saved);
+        a.parentNode.insertBefore(hint, a.nextSibling);
+      }
+      a.addEventListener('loadedmetadata', function () {
+        if (saved > 5 && saved < a.duration - 10) a.currentTime = saved;
+      });
+      var lastWrite = 0;
+      a.addEventListener('timeupdate', function () {
+        if (Date.now() - lastWrite < 5000) return;
+        lastWrite = Date.now();
+        try { localStorage.setItem(key, String(a.currentTime)); } catch (e) {}
+      });
+      var started = false;
+      a.addEventListener('play', function () {
+        if (started) return;
+        started = true;
+        track('episode_play', { episode_title: epTitle(a), player: 'self_hosted', resumed: saved > 5 });
+      });
+      a.addEventListener('ended', function () {
+        try { localStorage.removeItem(key); } catch (e) {}
+        if (hint) hint.remove();
+        track('episode_complete', { episode_title: epTitle(a) });
+      });
+    });
+  } catch (e) {}
+
+  // Follow menu: close on outside click or Escape.
+  try {
+    var follow = document.querySelector('details.follow');
+    if (follow) {
+      document.addEventListener('click', function (e) {
+        if (follow.open && !follow.contains(e.target)) follow.open = false;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && follow.open) {
+          follow.open = false;
+          follow.querySelector('summary').focus();
+        }
+      });
+      follow.addEventListener('toggle', function () { if (follow.open) track('follow_menu_open'); });
+    }
+  } catch (e) {}
+
+  // Outbound listening, follow, rating and contact clicks.
+  try {
+    Array.prototype.forEach.call(document.querySelectorAll('a[data-platform]'), function (a) {
+      a.addEventListener('click', function () {
+        track('follow_click', {
+          platform: a.getAttribute('data-platform'),
+          location: a.closest('.follow') ? 'topbar' : 'listen'
+        });
+      });
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.ep-link[href*="open.spotify.com/episode"]'), function (a) {
+      a.addEventListener('click', function () {
+        track('episode_outbound', { episode_title: epTitle(a), platform: 'spotify' });
+      });
+    });
+    var rate = document.querySelector('.rate-link');
+    if (rate) rate.addEventListener('click', function () { track('rate_click', { platform: 'apple' }); });
+    Array.prototype.forEach.call(document.querySelectorAll('a[href^="mailto:"]'), function (a) {
+      a.addEventListener('click', function () { track('contact_click'); });
+    });
+  } catch (e) {}
+
+  // Chatbot conversation started (event dispatched by the ElevenLabs widget).
+  try {
+    var bot = document.querySelector('elevenlabs-convai');
+    if (bot) bot.addEventListener('elevenlabs-convai:call', function () { track('chatbot_start'); });
   } catch (e) {}
 </script>
 </body>
