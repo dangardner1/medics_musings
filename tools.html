@@ -125,6 +125,7 @@
     text-decoration: none;
   }
   .wordmark span { color: var(--accent); }
+  .wordmark img { width: 30px; height: 30px; margin-right: 10px; vertical-align: middle; border-radius: 7px; box-shadow: 0 0 0 1px var(--border); }
   .back-link {
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.8rem;
@@ -212,6 +213,14 @@
     font-size: 0.76rem;
     color: var(--text-muted);
   }
+  .disclaimer {
+    margin: 14px 0 0;
+    max-width: 760px;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+  .disclaimer b { color: var(--text); font-weight: 600; }
 
   @media (max-width: 640px) {
     .app-grid { grid-template-columns: 1fr; }
@@ -222,7 +231,7 @@
 
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <a class="wordmark" href="/">Medics<span>Musings</span></a>
+    <a class="wordmark" href="/"><img src="favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
     <a class="back-link" href="/">← Back to show</a>
   </div>
 </header>
@@ -290,7 +299,10 @@
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Medics Musings Productions — no prior authorization required.</div>
+  <div class="wrap">
+    © 2026 Medics Musings Productions — no prior authorization required.
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
 </footer>
 
 <script>
