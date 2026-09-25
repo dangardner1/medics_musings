@@ -1064,12 +1064,13 @@
         <h2>Latest episodes</h2>
       </div>
       <div class="ep-grid is-collapsed" id="ep-grid">
-        <article class="ep-card">
+        <article class="ep-card" id="the-robot-who-wipes-my-butt">
           <h3>The Robot Who Wipes My Butt</h3>
           <p class="ep-meta"><time datetime="2026-09-25">Sep 25, 2026</time> · 4 min</p>
           <p class="ep-desc">An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn&#x27;t transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace.</p>
           <audio class="ep-audio" controls preload="none" src="audio/episodes/the-robot-who-wipes-my-butt.mp3" aria-label="Play The Robot Who Wipes My Butt"></audio>
           <div class="ep-actions">
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/#the-robot-who-wipes-my-butt" data-share-title="The Robot Who Wipes My Butt — Medics Musings">Share</button>
             <a class="ep-link" href="audio/episodes/the-robot-who-wipes-my-butt.mp3" download>Download MP3</a>
           </div>
         </article>
@@ -1428,6 +1429,29 @@
         f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
         slot.appendChild(f);
         btn.remove();
+      });
+    });
+  } catch (e) {}
+
+  try {
+    Array.prototype.forEach.call(document.querySelectorAll('.ep-share'), function (btn) {
+      var label = btn.textContent;
+      btn.addEventListener('click', function () {
+        var url = btn.getAttribute('data-share-url');
+        var title = btn.getAttribute('data-share-title');
+        if (navigator.share) {
+          navigator.share({ title: title, url: url }).catch(function () {});
+          return;
+        }
+        var done = function (msg) {
+          btn.textContent = msg;
+          setTimeout(function () { btn.textContent = label; }, 2000);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(function () { done('Link copied'); }, function () { window.prompt('Copy this link:', url); });
+        } else {
+          window.prompt('Copy this link:', url);
+        }
       });
     });
   } catch (e) {}
