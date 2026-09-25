@@ -111,6 +111,20 @@
     "https://www.youtube.com/@MedicsMusings"
    ],
    "episode": [
+   {
+    "@type": "PodcastEpisode",
+    "name": "The Robot Who Wipes My Butt",
+    "url": "https://www.medicsmusings.com/audio/episodes/the-robot-who-wipes-my-butt.mp3",
+    "datePublished": "2026-09-25",
+    "timeRequired": "PT4M",
+    "description": "An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn't transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace.",
+    "associatedMedia": {
+     "@type": "AudioObject",
+     "contentUrl": "https://www.medicsmusings.com/audio/episodes/the-robot-who-wipes-my-butt.mp3",
+     "encodingFormat": "audio/mpeg",
+     "duration": "PT3M56S"
+    }
+   },
     {
      "@type": "PodcastEpisode",
      "name": "Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels",
@@ -819,6 +833,7 @@
     margin-inline: -16px;
   }
   .ep-card .ep-embed:empty { display: none; }
+  .ep-audio { width: 100%; display: block; }
   .ep-card .ep-embed iframe { display: block; width: 100%; height: 152px; }
   @media (max-width: 680px) {
     /* Spotify's own compact layout doesn't reflow below ~400px; its
@@ -1049,6 +1064,15 @@
         <h2>Latest episodes</h2>
       </div>
       <div class="ep-grid is-collapsed" id="ep-grid">
+        <article class="ep-card">
+          <h3>The Robot Who Wipes My Butt</h3>
+          <p class="ep-meta"><time datetime="2026-09-25">Sep 25, 2026</time> · 4 min</p>
+          <p class="ep-desc">An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn&#x27;t transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace.</p>
+          <audio class="ep-audio" controls preload="none" src="audio/episodes/the-robot-who-wipes-my-butt.mp3" aria-label="Play The Robot Who Wipes My Butt"></audio>
+          <div class="ep-actions">
+            <a class="ep-link" href="audio/episodes/the-robot-who-wipes-my-butt.mp3" download>Download MP3</a>
+          </div>
+        </article>
         <article class="ep-card">
           <h3>Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels</h3>
           <p class="ep-meta"><time datetime="2026-09-21">Sep 21, 2026</time> · 32 min</p>
@@ -1291,7 +1315,7 @@
         </article>
       </div>
       <div class="ep-more-row">
-        <button type="button" class="btn btn-ghost" id="ep-toggle" aria-expanded="false" aria-controls="ep-grid">Show all 24 episodes</button>
+        <button type="button" class="btn btn-ghost" id="ep-toggle" aria-expanded="false" aria-controls="ep-grid">Show all 25 episodes</button>
       </div>
     </div>
   </section>
@@ -1416,7 +1440,7 @@
         var willExpand = epGrid.classList.contains('is-collapsed');
         epGrid.classList.toggle('is-collapsed');
         epToggle.setAttribute('aria-expanded', String(willExpand));
-        epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all 24 episodes';
+        epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all 25 episodes';
         if (!willExpand) {
           epGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
