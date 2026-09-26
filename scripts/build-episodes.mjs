@@ -61,7 +61,6 @@ const bySlug = new Map(episodes.map((e) => [e.slug, e]));
 for (const e of episodes) {
   for (const t of e.tags || []) if (!data.topics[t]) throw new Error(`${e.slug}: unknown topic "${t}"`);
   if (e.series && !data.series[e.series]) throw new Error(`${e.slug}: unknown series "${e.series}"`);
-  if (!e.audio && !e.spotify) throw new Error(`${e.slug}: needs audio or a spotify id`);
 }
 if (!bySlug.has(data.startHere)) throw new Error('startHere is not an episode slug');
 const startHere = bySlug.get(data.startHere);
@@ -89,7 +88,13 @@ function upNext(ep) {
   return { ep: startHere === ep ? episodes.find((e) => e !== ep) : startHere, kind: 'recommended' };
 }
 
-const spotifyUrl = (e) => e.spotify && `https://open.spotify.com/episode/${e.spotify}`;
+// Spotify's episode page, or (until Spotify lists a brand-new episode) the Spotify for Creators page.
+const spotifyUrl = (e) => (e.spotify ? `https://open.spotify.com/episode/${e.spotify}` : e.creatorUrl);
+
+// Media described in JSON-LD; none for an episode that is only linked out.
+const mediaOf = (e) => (e.audio
+  ? { '@type': 'AudioObject', contentUrl: `${SITE}/${e.audio}`, encodingFormat: 'audio/mpeg', ...(e.audioDuration && { duration: e.audioDuration }) }
+  : e.spotify ? { '@type': 'MediaObject', embedUrl: `https://open.spotify.com/embed/episode/${e.spotify}` } : undefined);
 const appleUrl = (e) => e.apple || SHOW.apple;
 const youtubeUrl = (e) => (e.youtube ? `https://www.youtube.com/watch?v=${e.youtube}` : SHOW.youtube);
 
@@ -183,9 +188,7 @@ function updateHomepage() {
     datePublished: e.date,
     timeRequired: `PT${e.minutes}M`,
     description: flat(e.description),
-    associatedMedia: e.audio
-      ? { '@type': 'AudioObject', contentUrl: `${SITE}/${e.audio}`, encodingFormat: 'audio/mpeg', ...(e.audioDuration && { duration: e.audioDuration }) }
-      : { '@type': 'MediaObject', embedUrl: `https://open.spotify.com/embed/episode/${e.spotify}` },
+    associatedMedia: mediaOf(e),
   }));
   html = html.replace(ldRe, (_, a, __, c) => `${a}\n${jsonLd(ld)}\n${c}`);
   writeFileSync(join(ROOT, 'index.html'), html);
@@ -267,7 +270,7 @@ function episodePage(ep, newer, older) {
   const transcriptPath = `transcripts/${ep.slug}.txt`;
   const transcript = existsSync(join(ROOT, transcriptPath)) ? paragraphs(read(transcriptPath)) : null;
 
-  const player = ep.audio
+  const player = !ep.audio && !ep.spotify ? '' : ep.audio
     ? `<audio class="ep-audio" controls preload="metadata" src="/${ep.audio}" aria-label="Play ${esc(ep.title)}"></audio>`
     : `<div class="ep-embed" id="ep-embed" data-spotify="${ep.spotify}">
           <iframe title="${esc(ep.title)}" src="https://open.spotify.com/embed/episode/${ep.spotify}?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -297,9 +300,7 @@ function episodePage(ep, newer, older) {
           { '@type': 'Person', '@id': `${SITE}/#leo`, name: 'Leo A. Gordon, MD' },
           { '@type': 'Person', '@id': `${SITE}/#dan`, name: 'Dan Gardner, MD' },
         ],
-        associatedMedia: ep.audio
-          ? { '@type': 'AudioObject', contentUrl: `${SITE}/${ep.audio}`, encodingFormat: 'audio/mpeg', ...(ep.audioDuration && { duration: ep.audioDuration }) }
-          : { '@type': 'MediaObject', embedUrl: `https://open.spotify.com/embed/episode/${ep.spotify}` },
+        associatedMedia: mediaOf(ep),
         ...(transcript && { transcript: transcript.join('\n\n') }),
       },
       {
@@ -380,9 +381,9 @@ ${jsonLd(ld)}
       <h1>${esc(ep.title)}</h1>
       <p class="ep-meta"><time datetime="${ep.date}">${dateLabel(ep.date)}</time> · ${ep.minutes} min</p>
       ${chips}
-      <div class="player">
+      ${player ? `<div class="player">
         ${player}
-      </div>
+      </div>` : ''}
       <div class="ep-actions">
         <button type="button" class="btn btn-primary ep-share" data-share-url="${ep.url}" data-share-title="${esc(ep.title)} — Medics Musings">Share</button>
         <button type="button" class="ctl react" data-react="like" aria-pressed="false">👍 Loved it</button>

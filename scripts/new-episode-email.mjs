@@ -17,10 +17,10 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fetchFeed, findByTitle, plain } from './lib/feed.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://www.medicsmusings.com';
-const FEED = process.env.FEED_URL || 'https://anchor.fm/s/117844514/podcast/rss';
 const LIST_ID = process.env.MAILCHIMP_LIST_ID || '8cbe14ef1a';
 // Secrets pasted into GitHub often carry a trailing newline or quotes.
 const API_KEY = (process.env.MAILCHIMP_API_KEY || '').trim().replace(/^["']+|["']+$/g, '');
@@ -28,6 +28,7 @@ const API_BASE = process.env.MAILCHIMP_API_BASE || `https://${API_KEY.split('-')
 const MODE = process.env.MODE || 'dry-run';
 const FORCE = process.env.FORCE_LATEST === 'true';
 const MAX_AGE_DAYS = Number(process.env.MAX_AGE_DAYS || 7);
+const SITE_WAIT_HOURS = Number(process.env.SITE_WAIT_HOURS || 5);
 const STATE_FILE = process.env.STATE_FILE || join(ROOT, '.github', 'newsletter-state.json');
 const PREVIEW_FILE = process.env.PREVIEW_FILE || join(ROOT, 'newsletter-preview.html');
 const SHOW = {
@@ -38,55 +39,40 @@ const SHOW = {
 
 if (!['dry-run', 'draft', 'test', 'send', 'auth-check'].includes(MODE)) throw new Error(`Unknown MODE "${MODE}"`);
 
-// ---- Feed ----------------------------------------------------------------------
+// ---- Feed helpers live in ./lib/feed.mjs -------------------------------------
 
-const decode = (s) => s
-  .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
-  .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
-  .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-const plain = (html) => decode(html).replace(/<\/(p|li|div)>/gi, '\n').replace(/<br\s*\/?>/gi, '\n')
-  .replace(/<[^>]+>/g, '').replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim();
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-
-function field(block, name) {
-  const m = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`));
-  return m ? m[1].trim() : '';
-}
-
-function parseFeed(xml) {
-  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, b]) => {
-    const guid = decode(field(b, 'guid')) || decode(field(b, 'link'));
-    const secs = field(b, 'itunes:duration');
-    let seconds = 0;
-    if (/^\d+$/.test(secs)) seconds = Number(secs);
-    else if (secs) seconds = secs.split(':').reduce((t, p) => t * 60 + Number(p), 0);
-    return {
-      guid,
-      title: plain(field(b, 'title')),
-      date: new Date(decode(field(b, 'pubDate'))),
-      link: decode(field(b, 'link')),
-      description: plain(field(b, 'description') || field(b, 'content:encoded')),
-      minutes: seconds ? Math.max(1, Math.round(seconds / 60)) : 0,
-    };
-  }).filter((i) => i.guid && i.title && !Number.isNaN(i.date.getTime()))
-    .sort((a, b) => a.date - b.date);
-}
 
 // ---- Email -----------------------------------------------------------------------
 
-const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-
 // Link to the episode's page on the site when data/episodes.json has it.
-function siteUrl(item) {
+function siteMatch(item) {
   try {
     const { episodes } = JSON.parse(readFileSync(join(ROOT, 'data', 'episodes.json'), 'utf8'));
-    const t = norm(item.title);
-    const hit = episodes.find((e) => norm(e.title) === t) ||
-      episodes.find((e) => t.startsWith(norm(e.title) + ' ') && norm(e.title).length > 8);
-    if (hit) return `${SITE}/episodes/${hit.slug}/`;
-  } catch (e) { /* fall through */ }
-  return item.link || `${SITE}/#episodes`;
+    return findByTitle(episodes, item.title) || null;
+  } catch (e) { return null; }
+}
+
+// The "Listen now" link: the episode's page on the site if it exists (and, when
+// sending, is live: the sync job has just published it), else the Spotify page.
+async function listenUrl(item) {
+  const hit = siteMatch(item);
+  const fallback = item.link || `${SITE}/#episodes`;
+  if (!hit) return fallback;
+  const url = `${SITE}/episodes/${hit.slug}/`;
+  if (MODE !== 'send') return url;
+  const deadline = Date.now() + Number(process.env.PAGE_WAIT_SECONDS || 480) * 1000;
+  for (;;) {
+    try {
+      const r = await fetch(`${url}?check=${Date.now()}`, { redirect: 'follow' });
+      if (r.ok) { console.log(`Episode page is live: ${url}`); return url; }
+    } catch (e) { /* retry */ }
+    if (Date.now() > deadline) break;
+    console.log('Waiting for the episode page to go live...');
+    await new Promise((r) => setTimeout(r, 15000));
+  }
+  console.log(`The episode page did not go live in time; linking to ${fallback} instead.`);
+  return fallback;
 }
 
 function snippet(text, max = 420) {
@@ -95,8 +81,7 @@ function snippet(text, max = 420) {
   return t.slice(0, t.lastIndexOf(' ', max)).replace(/[\s,;:.—-]+$/, '') + '…';
 }
 
-function renderEmail(item) {
-  const url = siteUrl(item);
+function renderEmail(item, url) {
   const when = item.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   const meta = [when, item.minutes ? `${item.minutes} min` : ''].filter(Boolean).join(' · ');
   const blurb = snippet(item.description);
@@ -254,9 +239,7 @@ async function authCheck() {
 
 async function main() {
   if (MODE === 'auth-check') return authCheck();
-  const res = await fetch(FEED, { headers: { 'User-Agent': 'medicsmusings-newsletter/1.0' } });
-  if (!res.ok) throw new Error(`Feed fetch failed: ${res.status}`);
-  const items = parseFeed(await res.text());
+  const items = await fetchFeed();
   if (!items.length) throw new Error('No episodes found in the feed; refusing to continue.');
   console.log(`Feed has ${items.length} episode(s); newest: "${items.at(-1).title}" (${items.at(-1).date.toISOString()})`);
 
@@ -278,7 +261,13 @@ async function main() {
       known.add(item.guid);
       continue;
     }
-    const email = renderEmail(item);
+    // Give the sync job time to publish the episode's page first, so the email can
+    // link to it. After a few hours we send anyway, with the Spotify link.
+    if (MODE === 'send' && !FORCE && !siteMatch(item) && ageDays * 24 < SITE_WAIT_HOURS) {
+      console.log(`"${item.title}" isn't on the site yet; waiting up to ${SITE_WAIT_HOURS}h for it before emailing.`);
+      continue;
+    }
+    const email = renderEmail(item, await listenUrl(item));
     console.log(`\nEpisode: ${item.title}\nSubject: ${email.subject}\nButton:  ${email.url}`);
     writeFileSync(PREVIEW_FILE, email.html);
 
