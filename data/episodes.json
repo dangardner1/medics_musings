@@ -8,9 +8,21 @@
     "hospital": "Hospital Life",
     "culture": "Culture & Sports"
   },
+  "topicIntros": {
+    "ai": "Satirical episodes about artificial intelligence in medicine: chatbots with opinions, algorithms that promise empathy, robots taking over the most intimate jobs, and doctors trying to keep up.",
+    "surgery": "The operating room seen by a veteran general surgeon: hernia diplomacy, gallbladder play-by-plays, the physics of laparoscopy, burlesque-inspired emergencies and the vanishing sense of touch.",
+    "aging": "Growing older with a clinician’s eye and a comedian’s timing: senior pickleball, walker balls, retired burlesque dancers and the robots now helping with elder care.",
+    "mind": "Psychiatry, psychoanalysis and the business of feeling better: physician burnout, transference, 30-second TikTok therapy and whether happiness sits behind a paywall.",
+    "hospital": "Life inside modern healthcare: grand rounds, voicemail trees, bargain-bin medicine, frozen Chicago emergencies and the everyday absurdities doctors and patients share.",
+    "culture": "Where medicine collides with sports, the stage and pop culture: surgery called like live football, pickleball showdowns, burlesque history and Black Friday healthcare deals."
+  },
   "series": {
     "pax-inguinalis": "Pax Inguinalis",
     "play-by-play": "Play by Play"
+  },
+  "seriesIntros": {
+    "pax-inguinalis": "A veteran surgeon convenes a mock diplomatic summit to settle the long war over inguinal hernia repair. Three negotiating sessions, then a programme of evening salons. Start with Part 1.",
+    "play-by-play": "Medicine called like live sports: a gallbladder operation with bile duct exploration covered snap by snap, then a psychotherapy breakthrough narrated from the booth."
   },
   "episodes": [
     {

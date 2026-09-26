@@ -981,6 +981,8 @@
     padding: 4px 9px; text-decoration: none; cursor: pointer;
   }
   .chip:hover, .chip:focus-visible, .chip.is-active { color: var(--accent); border-color: var(--accent); }
+  .chips-link { font-family: "IBM Plex Mono", monospace; font-size: 0.74rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pulse); text-decoration: none; border-bottom: 1px dashed var(--pulse); }
+  .chips-link:hover { color: var(--accent); border-color: var(--accent); }
   .ep-status { margin: -12px 0 22px; font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pulse); }
   .ep-status button { font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--accent); background: none; border: none; border-bottom: 1px dashed var(--accent); padding: 0; cursor: pointer; margin-left: 8px; }
   .ep-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
@@ -1296,6 +1298,7 @@
           <button type="button" class="chip" data-series="play-by-play">Play by Play · 2</button>
         </div>
         <!-- /build:chips -->
+        <p class="chips"><a class="chips-link" href="topics/">Browse all topic &amp; series pages →</a></p>
       </div>
       <p class="ep-status" id="ep-status" role="status" hidden></p>
       <p class="ep-new-note" id="ep-new-note" hidden></p>
@@ -1305,7 +1308,7 @@
           <h3><a href="episodes/out-of-touch/">Out of Touch</a></h3>
           <p class="ep-meta"><time datetime="2026-09-26">Sep 26, 2026</time> · 10 min</p>
           <p class="ep-desc">Dr. Leo A. Gordon’s essay on the vanishing sense of touch in modern surgery, from the “tissue sense” of open operations to laparoscopy and robotic consoles.</p>
-          <p class="ep-tags"><a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <audio class="ep-audio" controls preload="none" src="audio/episodes/out-of-touch.mp3" aria-label="Play Out of Touch"></audio>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/out-of-touch/" data-share-title="Out of Touch — Medics Musings">Share</button>
@@ -1317,7 +1320,7 @@
           <h3><a href="episodes/the-robot-who-wipes-my-butt/">The Robot Who Wipes My Butt</a></h3>
           <p class="ep-meta"><time datetime="2026-09-25">Sep 25, 2026</time> · 4 min</p>
           <p class="ep-desc">An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn&#x27;t transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace.</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a> <a class="chip" href="?topic=aging#episodes" data-topic="aging">Aging</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a> <a class="chip" href="topics/aging/" data-topic="aging">Aging</a></p>
           <audio class="ep-audio" controls preload="none" src="audio/episodes/the-robot-who-wipes-my-butt.mp3" aria-label="Play The Robot Who Wipes My Butt"></audio>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-robot-who-wipes-my-butt/" data-share-title="The Robot Who Wipes My Butt — Medics Musings">Share</button>
@@ -1329,7 +1332,7 @@
           <h3><a href="episodes/tassel-twirling-in-tulsa-bumps-grinds-and-scalpels/">Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels</a></h3>
           <p class="ep-meta"><time datetime="2026-09-21">Sep 21, 2026</time> · 32 min</p>
           <p class="ep-desc">Welcome to the world&#x27;s only medical comedy podcast dedicated to the bizarre, high-stakes occupational hazards of retired burlesque performers. Inspired by Leo A. Gordon, MD&#x27;s &quot;The Aging Ecdysiast&quot;…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="20qjxyYvmjcR0DpJtbNOk2" data-title="Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/tassel-twirling-in-tulsa-bumps-grinds-and-scalpels/" data-share-title="Tassel Twirling in Tulsa: Bumps, Grinds, and Scalpels — Medics Musings">Share</button>
@@ -1341,7 +1344,7 @@
           <h3><a href="episodes/senior-pickleball-when-the-spirit-is-willing-but-the-joints/">Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!</a></h3>
           <p class="ep-meta"><time datetime="2025-03-10">Mar 10, 2025</time> · 12 min</p>
           <p class="ep-desc">Join sportscaster Chuck &quot;The Mouth&quot; Morrison and former orthopedic surgeon Dr. Phil McCracken as they bring you the slowest-paced action in sports entertainment! This week&#x27;s episode features a…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=aging#episodes" data-topic="aging">Aging</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/aging/" data-topic="aging">Aging</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="6HUJpAAzz16SwrvfrrYbDY" data-title="Senior Pickleball: When the Spirit Is Willing but the Joints Are Not!">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/senior-pickleball-when-the-spirit-is-willing-but-the-joints/" data-share-title="Senior Pickleball: When the Spirit Is Willing but the Joints Are Not! — Medics Musings">Share</button>
@@ -1353,7 +1356,7 @@
           <h3><a href="episodes/standing-on-the-shoulders-of-physicists-in-the-operating/">Standing on the Shoulders of Physicists in the Operating Room</a></h3>
           <p class="ep-meta"><time datetime="2025-02-25">Feb 25, 2025</time> · 17 min</p>
           <p class="ep-desc">The Physics of Laparoscopic Surgery: Key Points Overview This humorous dissertation written and read by Leo A. Gordon, MD presents ten &quot;laws of physics&quot; that humorously explain the frustrations and…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1UZUCy18UCiYDxCKDURM2x" data-title="Standing on the Shoulders of Physicists in the Operating Room">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/standing-on-the-shoulders-of-physicists-in-the-operating/" data-share-title="Standing on the Shoulders of Physicists in the Operating Room — Medics Musings">Share</button>
@@ -1365,7 +1368,7 @@
           <h3><a href="episodes/the-presidential-address-of-the-international-brotherhood/">The Presidential Address of the International Brotherhood of Biliary Tract Workers</a></h3>
           <p class="ep-meta"><time datetime="2025-02-09">Feb 9, 2025</time> · 16 min</p>
           <p class="ep-desc">Please join us for a masterful presentation about the union of hard-working biliary tract workers. Dr. Antony Delatorre delivers the presidential address. He refers to:  The Charcot House for workers…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4E8xazg7ZKusIhdnjzTLcZ" data-title="The Presidential Address of the International Brotherhood of Biliary Tract Workers">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-presidential-address-of-the-international-brotherhood/" data-share-title="The Presidential Address of the International Brotherhood of Biliary Tract Workers — Medics Musings">Share</button>
@@ -1377,7 +1380,7 @@
           <h3><a href="episodes/transference-analysis-play-by-play/">Transference Analysis: Play by Play</a></h3>
           <p class="ep-meta"><time datetime="2025-02-05">Feb 5, 2025</time> · 3 min</p>
           <p class="ep-desc">Experience a Powerful Therapeutic Breakthrough: When Past Meets Present Join Dr. Travis Mitchell for an intimate look, in the style of a play by play sportscast,  into a transformative therapy…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=play-by-play#episodes" data-series="play-by-play">Play by Play · Part 2 of 2</a> <a class="chip" href="?topic=mind#episodes" data-topic="mind">Mind &amp; Mood</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/play-by-play/" data-series="play-by-play">Play by Play · Part 2 of 2</a> <a class="chip" href="topics/mind/" data-topic="mind">Mind &amp; Mood</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2DykEj3UDf00ffvKejpKi0" data-title="Transference Analysis: Play by Play">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/transference-analysis-play-by-play/" data-share-title="Transference Analysis: Play by Play — Medics Musings">Share</button>
@@ -1389,7 +1392,7 @@
           <h3><a href="episodes/out-of-touch-from-healing-touch-to-digital-distance/">Out of Touch: From Healing Touch to Digital Distance</a></h3>
           <p class="ep-meta"><time datetime="2025-02-03">Feb 3, 2025</time> · 12 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine. Join a veteran surgeon&#x27;s poignant and humorous journey through the evolution of modern surgery, where the intimate art of healing…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4sUmWxleiRoKyQFO9a1R9Q" data-title="Out of Touch: From Healing Touch to Digital Distance">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/out-of-touch-from-healing-touch-to-digital-distance/" data-share-title="Out of Touch: From Healing Touch to Digital Distance — Medics Musings">Share</button>
@@ -1401,7 +1404,7 @@
           <h3><a href="episodes/the-iceman-cometh-and-the-patient-goeth/">The Iceman Cometh and the Patient Goeth</a></h3>
           <p class="ep-meta"><time datetime="2025-01-28">Jan 28, 2025</time> · 14 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine. Step back to a bitterly cold Chicago in 1972 where a third-year medical student is about to learn a now-outdated method of…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0fP6WSXDts5uuV7XCZHvo8" data-title="The Iceman Cometh and the Patient Goeth">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-iceman-cometh-and-the-patient-goeth/" data-share-title="The Iceman Cometh and the Patient Goeth — Medics Musings">Share</button>
@@ -1413,7 +1416,7 @@
           <h3><a href="episodes/fourth-and-gall-play-by-play-coverage/">Fourth and Gall (Play by Play Coverage)</a></h3>
           <p class="ep-meta"><time datetime="2025-01-18">Jan 18, 2025</time> · 21 min</p>
           <p class="ep-desc">This satirical nail-biting episode covers a cholecystectomy with bile duct exploration and extraction of a left hepatic duct stone. The Southwestern Conference of the American Surgical League brings…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=play-by-play#episodes" data-series="play-by-play">Play by Play · Part 1 of 2</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/play-by-play/" data-series="play-by-play">Play by Play · Part 1 of 2</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2gZpolFaCJ5VtmvOZxV7nE" data-title="Fourth and Gall (Play by Play Coverage)">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/fourth-and-gall-play-by-play-coverage/" data-share-title="Fourth and Gall (Play by Play Coverage) — Medics Musings">Share</button>
@@ -1425,7 +1428,7 @@
           <h3><a href="episodes/sylvias-walker-balls/">Sylvia&#x27;s Walker Balls</a></h3>
           <p class="ep-meta"><time datetime="2025-01-06">Jan 6, 2025</time> · 11 min</p>
           <p class="ep-desc">Written and read by Leo A. Gordon, MD, The American Bard of Medicine Step into the quirky and poignant world of Sylvia Kropopnik, a 90-something enigma with a colorful past, an unforgettable walker…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=aging#episodes" data-topic="aging">Aging</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/aging/" data-topic="aging">Aging</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0RwCNH8EOBVOHbtULLXxA9" data-title="Sylvia&#x27;s Walker Balls">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/sylvias-walker-balls/" data-share-title="Sylvia&#x27;s Walker Balls — Medics Musings">Share</button>
@@ -1437,7 +1440,7 @@
           <h3><a href="episodes/bedside-banter-with-algo-chats-a-lot-iii/">Bedside Banter with Algo Chats-a-Lot III</a></h3>
           <p class="ep-meta"><time datetime="2025-01-02">Jan 2, 2025</time> · 7 min</p>
           <p class="ep-desc">Witty conversation with my AI Medical chatbot, Algo Chats-A-Lot,III, who offers opinions:   What to prescribe for a computer virus.  His version of &quot;take two bytes and call me in the morning&quot; Medical…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1kx52hXJvPk2ra33mTusg8" data-title="Bedside Banter with Algo Chats-a-Lot III">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/bedside-banter-with-algo-chats-a-lot-iii/" data-share-title="Bedside Banter with Algo Chats-a-Lot III — Medics Musings">Share</button>
@@ -1449,7 +1452,7 @@
           <h3><a href="episodes/surgery-department-voicemail-nightmare-thank-you-for-calling/">Surgery Department Voicemail Nightmare: Thank You For Calling</a></h3>
           <p class="ep-meta"><time datetime="2024-12-20">Dec 20, 2024</time> · 3 min</p>
           <p class="ep-desc">Will you navigate the labyrinth of voicemail options before succumbing to existential despair?</p>
-          <p class="ep-tags"><a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="5j1WbZVTiPlD0KWiPSfWU1" data-title="Surgery Department Voicemail Nightmare: Thank You For Calling">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/surgery-department-voicemail-nightmare-thank-you-for-calling/" data-share-title="Surgery Department Voicemail Nightmare: Thank You For Calling — Medics Musings">Share</button>
@@ -1461,7 +1464,7 @@
           <h3><a href="episodes/from-burnout-to-punchlines-freuds-solution/">From Burnout to Punchlines: Freud&#x27;s Solution</a></h3>
           <p class="ep-meta"><time datetime="2024-12-12">Dec 12, 2024</time> · 8 min</p>
           <p class="ep-desc">Discover the fascinating historical connection between comedy and physician burnout at Vienna&#x27;s Allgemeine Krankenhaus. In this satirical, fictional story, learn how Sigmund Freud prescribed stand-up…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=mind#episodes" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/mind/" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="40cK7NDnBxjSA6GfgI47KQ" data-title="From Burnout to Punchlines: Freud&#x27;s Solution">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/from-burnout-to-punchlines-freuds-solution/" data-share-title="From Burnout to Punchlines: Freud&#x27;s Solution — Medics Musings">Share</button>
@@ -1473,7 +1476,7 @@
           <h3><a href="episodes/pax-inguinalis-salons-and-evening-events-programme/">Pax Inguinalis Salons and Evening Events (Programme)</a></h3>
           <p class="ep-meta"><time datetime="2024-12-10">Dec 10, 2024</time> · 9 min</p>
           <p class="ep-desc">Evening Events – Inguinal Salons at the Pax Inguinalis The Pax Inguinalis Program Committee has instituted a series of evening salons to compliment the scientific presentations. These salons are…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=pax-inguinalis#episodes" data-series="pax-inguinalis">Pax Inguinalis · Bonus</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/pax-inguinalis/" data-series="pax-inguinalis">Pax Inguinalis · Bonus</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1RNOWudmSlpqXWABlHisRV" data-title="Pax Inguinalis Salons and Evening Events (Programme)">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/pax-inguinalis-salons-and-evening-events-programme/" data-share-title="Pax Inguinalis Salons and Evening Events (Programme) — Medics Musings">Share</button>
@@ -1485,7 +1488,7 @@
           <h3><a href="episodes/pax-inguinalis-part-3/">Pax Inguinalis (Part 3)</a></h3>
           <p class="ep-meta"><time datetime="2024-12-10">Dec 10, 2024</time> · 16 min</p>
           <p class="ep-desc">Join us for Part 3 of uniquely entertaining medical podcast featuring a veteran surgeon&#x27;s witty and candid exploration of inguinal hernia repair. Our host, a self-proclaimed chief negotiator of the…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=pax-inguinalis#episodes" data-series="pax-inguinalis">Pax Inguinalis · Part 3 of 3</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/pax-inguinalis/" data-series="pax-inguinalis">Pax Inguinalis · Part 3 of 3</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0pUVXs4sMzBxqCxGGguFeA" data-title="Pax Inguinalis (Part 3)">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/pax-inguinalis-part-3/" data-share-title="Pax Inguinalis (Part 3) — Medics Musings">Share</button>
@@ -1497,7 +1500,7 @@
           <h3><a href="episodes/pax-inguinalis-part-2/">Pax Inguinalis (Part 2)</a></h3>
           <p class="ep-meta"><time datetime="2024-12-09">Dec 9, 2024</time> · 6 min</p>
           <p class="ep-desc">Join us for a uniquely entertaining medical podcast featuring a veteran surgeon&#x27;s witty and candid exploration of inguinal hernia repair. Our host, a self-proclaimed chief negotiator of the &quot;Pax…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=pax-inguinalis#episodes" data-series="pax-inguinalis">Pax Inguinalis · Part 2 of 3</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/pax-inguinalis/" data-series="pax-inguinalis">Pax Inguinalis · Part 2 of 3</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="32BmtHOT24DZELKubv1XoQ" data-title="Pax Inguinalis (Part 2)">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/pax-inguinalis-part-2/" data-share-title="Pax Inguinalis (Part 2) — Medics Musings">Share</button>
@@ -1509,7 +1512,7 @@
           <h3><a href="episodes/pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the/">Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1)</a></h3>
           <p class="ep-meta"><time datetime="2024-12-07">Dec 7, 2024</time> · 3 min</p>
           <p class="ep-desc">Join Dr. Patch Groin as he unveils the historic negotiations bringing peace to the anatomical territories of the groin! Watch as delegates from Abdomenia, Flexidia, and Pupica gather in Rouen for the…</p>
-          <p class="ep-tags"><a class="chip chip-series" href="?series=pax-inguinalis#episodes" data-series="pax-inguinalis">Pax Inguinalis · Part 1 of 3</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a></p>
+          <p class="ep-tags"><a class="chip chip-series" href="series/pax-inguinalis/" data-series="pax-inguinalis">Pax Inguinalis · Part 1 of 3</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1Fgwym38d7v2jRA18vswBJ" data-title="Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1)">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the/" data-share-title="Pax Inguinalis: Negotiating a Just and Lasting Peace in the Inguinal Region (Part 1) — Medics Musings">Share</button>
@@ -1521,7 +1524,7 @@
           <h3><a href="episodes/ai-rounds-when-your-chatbot-assistant-bites-back/">AI Rounds: When Your Chatbot Assistant Bites Back!</a></h3>
           <p class="ep-meta"><time datetime="2024-12-06">Dec 6, 2024</time> · 3 min</p>
           <p class="ep-desc">Ever wondered what happens when an old-school doctor collides with cutting-edge AI? Join Dr. Davey Dinosaur (yes, that&#x27;s what I&#x27;m calling myself now) as I navigate the fast-paced challenges of modern…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a> <a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a> <a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="4yjugw1bKUd7JLjlgFfw0X" data-title="AI Rounds: When Your Chatbot Assistant Bites Back!">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/ai-rounds-when-your-chatbot-assistant-bites-back/" data-share-title="AI Rounds: When Your Chatbot Assistant Bites Back! — Medics Musings">Share</button>
@@ -1533,7 +1536,7 @@
           <h3><a href="episodes/healing-by-hashtag-unpack-your-baggage-in-30-seconds/">Healing by Hashtag: Unpack Your Baggage in 30 Seconds!</a></h3>
           <p class="ep-meta"><time datetime="2024-11-29">Nov 29, 2024</time> · 3 min</p>
           <p class="ep-desc">The internet&#x27;s attempts to commodify healing, from 30-second TikTok therapy to satirical self-help products.    (Created with the help of Perplexity Pro AI)</p>
-          <p class="ep-tags"><a class="chip" href="?topic=mind#episodes" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/mind/" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="7bgesGeEUFKZd6hcak8vHD" data-title="Healing by Hashtag: Unpack Your Baggage in 30 Seconds!">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/healing-by-hashtag-unpack-your-baggage-in-30-seconds/" data-share-title="Healing by Hashtag: Unpack Your Baggage in 30 Seconds! — Medics Musings">Share</button>
@@ -1545,7 +1548,7 @@
           <h3><a href="episodes/black-friday-bargain-bin-healthcare-extravaganza/">Black Friday Bargain Bin Healthcare Extravaganza</a></h3>
           <p class="ep-meta"><time datetime="2024-11-28">Nov 28, 2024</time> · 4 min</p>
           <p class="ep-desc">Coming to you from a strip mall directly adjacent to a questionable accredited medical clinic. Don&#x27;t miss out!   (Created with the help of Perplexity Pro AI)</p>
-          <p class="ep-tags"><a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="6FLw9nrEZv5BZiIuuygrRr" data-title="Black Friday Bargain Bin Healthcare Extravaganza">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/black-friday-bargain-bin-healthcare-extravaganza/" data-share-title="Black Friday Bargain Bin Healthcare Extravaganza — Medics Musings">Share</button>
@@ -1557,7 +1560,7 @@
           <h3><a href="episodes/is-happiness-behind-a-paywall/">Is Happiness Behind a Paywall?</a></h3>
           <p class="ep-meta"><time datetime="2024-11-25">Nov 25, 2024</time> · 4 min</p>
           <p class="ep-desc">Is happiness hiding behind a paywall? Does happiness depend on your subscription level? (Created with the help of Perplexity Pro AI)</p>
-          <p class="ep-tags"><a class="chip" href="?topic=mind#episodes" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="?topic=culture#episodes" data-topic="culture">Culture &amp; Sports</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/mind/" data-topic="mind">Mind &amp; Mood</a> <a class="chip" href="topics/culture/" data-topic="culture">Culture &amp; Sports</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="1OXY8dpL91XZUq7Mh59M8l" data-title="Is Happiness Behind a Paywall?">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/is-happiness-behind-a-paywall/" data-share-title="Is Happiness Behind a Paywall? — Medics Musings">Share</button>
@@ -1569,7 +1572,7 @@
           <h3><a href="episodes/algorithms-meet-empathy-the-future-of-patient-care/">Algorithms Meet Empathy: The Future of Patient Care</a></h3>
           <p class="ep-meta"><time datetime="2024-11-23">Nov 23, 2024</time> · 7 min</p>
           <p class="ep-desc">Artificial Intelligence is revolutionizing medicine, offering unprecedented accuracy in diagnosis and personalized treatment plans. But can it replace the human element? In this video, we explore how…</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="5oGJYAwZSvQsImW5mFI6df" data-title="Algorithms Meet Empathy: The Future of Patient Care">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/algorithms-meet-empathy-the-future-of-patient-care/" data-share-title="Algorithms Meet Empathy: The Future of Patient Care — Medics Musings">Share</button>
@@ -1581,7 +1584,7 @@
           <h3><a href="episodes/can-patients-and-doctors-trust-ai-in-healthcare/">Can Patients and Doctors Trust AI in Healthcare?</a></h3>
           <p class="ep-meta"><time datetime="2024-11-23">Nov 23, 2024</time> · 11 min</p>
           <p class="ep-desc">Can doctors and patients come to trust in and collaborate with AI in forming diagnoses and treatments?    (Created with the help of Perplexity Pro AI)</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2DTgBELd37AJoxbbKWUC9y" data-title="Can Patients and Doctors Trust AI in Healthcare?">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/can-patients-and-doctors-trust-ai-in-healthcare/" data-share-title="Can Patients and Doctors Trust AI in Healthcare? — Medics Musings">Share</button>
@@ -1593,7 +1596,7 @@
           <h3><a href="episodes/the-ten-commandments-of-grand-rounds/">The Ten Commandments of Grand Rounds</a></h3>
           <p class="ep-meta"><time datetime="2024-11-22">Nov 22, 2024</time> · 5 min</p>
           <p class="ep-desc">A senior surgeon&#x27;s unique witty perspective on the traditional protocols of Grand Rounds for physicians in training.  Send comments to TheAmericanBardofSurgery@gmail.com</p>
-          <p class="ep-tags"><a class="chip" href="?topic=hospital#episodes" data-topic="hospital">Hospital Life</a> <a class="chip" href="?topic=surgery#episodes" data-topic="surgery">Surgery</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/hospital/" data-topic="hospital">Hospital Life</a> <a class="chip" href="topics/surgery/" data-topic="surgery">Surgery</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="0ugKGRoH4NlXevPIHUeT36" data-title="The Ten Commandments of Grand Rounds">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-ten-commandments-of-grand-rounds/" data-share-title="The Ten Commandments of Grand Rounds — Medics Musings">Share</button>
@@ -1605,7 +1608,7 @@
           <h3><a href="episodes/the-digital-doctor/">The Digital Doctor</a></h3>
           <p class="ep-meta"><time datetime="2024-11-20">Nov 20, 2024</time> · 3 min</p>
           <p class="ep-desc">Satirical take on AI in Healthcare. Is AI in Healthcare accurate enough to keep you safe and healthy? Is it an aid or impediment? Or both? (Created with the help of Perplexity Pro AI)</p>
-          <p class="ep-tags"><a class="chip" href="?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a></p>
+          <p class="ep-tags"><a class="chip" href="topics/ai/" data-topic="ai">AI &amp; Tech</a></p>
           <div class="ep-actions">
             <button type="button" class="btn btn-ghost ep-play" data-ep="2dl7NSc2WwKugB6SMwE2Tj" data-title="The Digital Doctor">▶ Play here</button>
             <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-digital-doctor/" data-share-title="The Digital Doctor — Medics Musings">Share</button>
@@ -1705,6 +1708,7 @@
 <footer>
   <div class="wrap footer-nav">
     <a href="#about">About</a>
+    <a href="topics/">Topics</a>
     <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
     <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
     <span>Leo A. Gordon, MD &amp; Dan Gardner, MD</span>

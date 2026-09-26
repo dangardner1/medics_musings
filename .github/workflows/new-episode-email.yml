@@ -55,13 +55,26 @@ jobs:
             node scripts/sync-episodes.mjs
           fi
 
+      - uses: actions/setup-python@v5
+        if: ${{ (github.event.inputs.mode || 'send') == 'send' }}
+        with:
+          python-version: '3.12'
+
+      - name: Make share images for new episodes
+        if: ${{ (github.event.inputs.mode || 'send') == 'send' }}
+        continue-on-error: true
+        run: |
+          pip install --quiet pillow
+          python scripts/make-share-images.py --missing
+          node scripts/build-episodes.mjs
+
       - name: Publish the site update
         if: ${{ (github.event.inputs.mode || 'send') == 'send' }}
         run: |
-          if [ -n "$(git status --porcelain -- data index.html sitemap.xml sw.js episodes)" ]; then
+          if [ -n "$(git status --porcelain -- data index.html sitemap.xml sw.js episodes og topics series)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data index.html sitemap.xml sw.js episodes
+            git add data index.html sitemap.xml sw.js episodes og topics series
             git commit -m "Add new episode(s) from the podcast feed"
             git pull --rebase origin main
             git push origin HEAD:main
