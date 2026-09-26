@@ -1,14 +1,44 @@
-// Email signup for every form.signup on the site.
-// Set ENDPOINT to the newsletter provider's subscribe URL once the list exists:
-//   Buttondown: https://buttondown.com/api/emails/embed-subscribe/<username>
-//   Kit:        https://app.kit.com/forms/<form-id>/subscriptions
+// Email signup for every form.signup on the site, backed by a Mailchimp audience.
+// Set MAILCHIMP_URL to the form action from Mailchimp's embedded form
+// (Audience > Signup forms > Embedded forms, the <form action="..."> value):
+//   https://<account>.us<N>.list-manage.com/subscribe/post?u=<u>&id=<id>&f_id=<f_id>
 // Until then, Subscribe opens a pre-filled email to the show inbox.
 (function () {
-  var ENDPOINT = '';
+  var MAILCHIMP_URL = '';
   var INBOX = 'BialystockMDandBloomMD@Gmail.com';
 
   function track(name, params) {
     try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {}
+  }
+
+  // Mailchimp's post-json endpoint answers JSONP only (no CORS), which is
+  // what lets us show its real success or error message inline.
+  var seq = 0;
+  function subscribe(email, done) {
+    var cb = 'mmSignup' + (++seq) + '_' + Date.now();
+    var base = MAILCHIMP_URL.replace('/subscribe/post?', '/subscribe/post-json?');
+    var params = new URL(base).searchParams;
+    // b_<u>_<id> is Mailchimp's bot trap and must be sent empty.
+    var url = base + '&EMAIL=' + encodeURIComponent(email) +
+      '&b_' + params.get('u') + '_' + params.get('id') + '=&c=' + cb;
+    var script = document.createElement('script');
+    var timer = setTimeout(function () { finish({ result: 'error', msg: '' }); }, 10000);
+    function finish(res) {
+      clearTimeout(timer);
+      try { delete window[cb]; } catch (e) { window[cb] = undefined; }
+      script.remove();
+      done(res);
+    }
+    window[cb] = finish;
+    script.onerror = function () { finish({ result: 'error', msg: '' }); };
+    script.src = url;
+    document.head.appendChild(script);
+  }
+
+  function plain(html) {
+    var d = document.createElement('div');
+    d.innerHTML = html || '';
+    return (d.textContent || '').replace(/^\d+\s*-\s*/, '').trim();
   }
 
   try {
@@ -26,7 +56,7 @@
         e.preventDefault();
         var email = input.value.trim();
 
-        if (!ENDPOINT) {
+        if (!MAILCHIMP_URL) {
           location.href = 'mailto:' + INBOX +
             '?subject=' + encodeURIComponent('Add me to the Medics Musings email list') +
             '&body=' + encodeURIComponent('Please email me when new episodes drop: ' + email);
@@ -35,19 +65,20 @@
           return;
         }
 
-        // Providers don't send CORS headers, so the response is opaque; a
-        // network failure is the only error we can see.
-        var body = new URLSearchParams();
-        body.set(/kit\.com|convertkit/.test(ENDPOINT) ? 'email_address' : 'email', email);
         button.disabled = true;
         say('Signing you up…');
-        fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: body }).then(function () {
-          form.reset();
-          say('Almost done: check your inbox to confirm.');
-          track('sign_up', { method: 'newsletter', location: where });
-        }, function () {
-          say('Couldn’t reach the sign-up service. Please try again in a minute.', true);
-        }).then(function () { button.disabled = false; });
+        subscribe(email, function (res) {
+          button.disabled = false;
+          if (res.result === 'success') {
+            form.reset();
+            say('Almost done: check your inbox to confirm.');
+            track('sign_up', { method: 'mailchimp', location: where });
+          } else if (/already subscribed/i.test(res.msg)) {
+            say('You’re already on the list. New episodes will find you.');
+          } else {
+            say(plain(res.msg) || 'Couldn’t reach the sign-up service. Please try again in a minute.', true);
+          }
+        });
       });
     });
   } catch (e) {}

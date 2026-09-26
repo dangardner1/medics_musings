@@ -1,9 +1,12 @@
 // Builds a standalone page for every episode card in index.html:
 //   episodes/<card id>/index.html  ->  https://www.medicsmusings.com/episodes/<card id>/
 // then points the homepage's episode titles, share links and JSON-LD at those
-// pages and rewrites sitemap.xml. index.html stays the single source of truth,
-// so re-run this after adding or editing an episode card:
+// pages and rewrites sitemap.xml. index.html stays the single source of truth.
+// To publish an episode: add its <article class="ep-card"> anywhere in #ep-grid
+// (plus a matching JSON-LD PodcastEpisode with the same name), then run
 //   node scripts/build-episodes.mjs
+// Cards are re-sorted newest first, so the latest episode always sits directly
+// under "Latest episodes", and the "Show all N episodes" label is kept current.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -273,6 +276,19 @@ episodes.forEach((ep, i) => {
 });
 
 // ---- Point the homepage at the episode pages ---------------------------------
+
+// Newest first (stable for same-day episodes), regardless of where a card was added.
+{
+  const cards = [...html.matchAll(CARD)];
+  const first = cards[0].index;
+  const last = cards.at(-1).index + cards.at(-1)[0].length;
+  const dateOf = (m) => m[2].match(/<time datetime="([^"]+)"/)[1];
+  const sorted = [...cards].sort((a, b) => dateOf(b).localeCompare(dateOf(a)));
+  html = html.slice(0, first) + sorted.map((m) => m[0]).join('\n        ') + html.slice(last);
+}
+
+html = html.replace(/(id="ep-toggle"[^>]*>)Show all \d+ episodes/, `$1Show all ${episodes.length} episodes`);
+html = html.replace(/'Show all \d+ episodes'/, `'Show all ' + document.querySelectorAll('#ep-grid .ep-card').length + ' episodes'`);
 
 html = html.replace(CARD, (card, slug, body) => {
   const ep = episodes.find((e) => e.slug === slug);

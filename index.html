@@ -113,6 +113,20 @@
    "episode": [
    {
     "@type": "PodcastEpisode",
+    "name": "Out of Touch",
+    "url": "https://www.medicsmusings.com/episodes/out-of-touch/",
+    "datePublished": "2026-09-26",
+    "timeRequired": "PT10M",
+    "description": "Leo and Dan take another look at what modern medicine gains, and what it loses, as healing touch gives way to digital distance.",
+    "associatedMedia": {
+     "@type": "AudioObject",
+     "contentUrl": "https://www.medicsmusings.com/audio/episodes/out-of-touch.mp3",
+     "encodingFormat": "audio/mpeg",
+     "duration": "PT10M1S"
+    }
+   },
+   {
+    "@type": "PodcastEpisode",
     "name": "The Robot Who Wipes My Butt",
     "url": "https://www.medicsmusings.com/episodes/the-robot-who-wipes-my-butt/",
     "datePublished": "2026-09-25",
@@ -1173,6 +1187,16 @@
       </div>
       <p class="ep-new-note" id="ep-new-note" hidden></p>
       <div class="ep-grid is-collapsed" id="ep-grid">
+        <article class="ep-card" id="out-of-touch">
+          <h3><a href="episodes/out-of-touch/">Out of Touch</a></h3>
+          <p class="ep-meta"><time datetime="2026-09-26">Sep 26, 2026</time> · 10 min</p>
+          <p class="ep-desc">Leo and Dan take another look at what modern medicine gains, and what it loses, as healing touch gives way to digital distance.</p>
+          <audio class="ep-audio" controls preload="none" src="audio/episodes/out-of-touch.mp3" aria-label="Play Out of Touch"></audio>
+          <div class="ep-actions">
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="https://www.medicsmusings.com/episodes/out-of-touch/" data-share-title="Out of Touch — Medics Musings">Share</button>
+            <a class="ep-link" href="audio/episodes/out-of-touch.mp3" download>Download MP3</a>
+          </div>
+        </article>
         <article class="ep-card" id="the-robot-who-wipes-my-butt">
           <h3><a href="episodes/the-robot-who-wipes-my-butt/">The Robot Who Wipes My Butt</a></h3>
           <p class="ep-meta"><time datetime="2026-09-25">Sep 25, 2026</time> · 4 min</p>
@@ -1449,7 +1473,7 @@
         </article>
       </div>
       <div class="ep-more-row">
-        <button type="button" class="btn btn-ghost" id="ep-toggle" aria-expanded="false" aria-controls="ep-grid">Show all 25 episodes</button>
+        <button type="button" class="btn btn-ghost" id="ep-toggle" aria-expanded="false" aria-controls="ep-grid">Show all 26 episodes</button>
       </div>
     </div>
   </section>
@@ -1632,7 +1656,7 @@
         if (willExpand) track('episodes_expand');
         epGrid.classList.toggle('is-collapsed');
         epToggle.setAttribute('aria-expanded', String(willExpand));
-        epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all 25 episodes';
+        epToggle.textContent = willExpand ? 'Show fewer episodes' : 'Show all ' + document.querySelectorAll('#ep-grid .ep-card').length + ' episodes';
         if (!willExpand) {
           epGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
