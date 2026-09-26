@@ -36,7 +36,7 @@ const SHOW = {
   youtube: 'https://www.youtube.com/@MedicsMusings',
 };
 
-if (!['dry-run', 'draft', 'test', 'send'].includes(MODE)) throw new Error(`Unknown MODE "${MODE}"`);
+if (!['dry-run', 'draft', 'test', 'send', 'auth-check'].includes(MODE)) throw new Error(`Unknown MODE "${MODE}"`);
 
 // ---- Feed ----------------------------------------------------------------------
 
@@ -234,7 +234,26 @@ function saveState(known) {
   writeFileSync(STATE_FILE, JSON.stringify({ known: [...known].slice(-300), updated: new Date().toISOString() }, null, 2) + '\n');
 }
 
+// MODE=auth-check: report how Mailchimp answers the key (never prints the key).
+async function authCheck() {
+  const [id, dc] = API_KEY.split('-');
+  console.log(`Key shape: ${API_KEY.length} chars, ${/^[0-9a-f]{32}$/.test(id || '') ? '32 hex' : 'not 32 hex'}, dc "${dc}"`);
+  const tries = {
+    'Basic, any username': 'Basic ' + Buffer.from('anystring:' + API_KEY).toString('base64'),
+    'Basic, username=apikey': 'Basic ' + Buffer.from('apikey:' + API_KEY).toString('base64'),
+    'Bearer': 'Bearer ' + API_KEY,
+  };
+  for (const [name, auth] of Object.entries(tries)) {
+    const res = await fetch(`https://${dc}.api.mailchimp.com/3.0/ping`, { headers: { Authorization: auth } });
+    const t = await res.text();
+    console.log(`${name}: HTTP ${res.status} ${t.slice(0, 160).replace(/\s+/g, ' ')}`);
+  }
+  const anon = await fetch(`https://${dc}.api.mailchimp.com/3.0/ping`);
+  console.log(`No auth: HTTP ${anon.status}`);
+}
+
 async function main() {
+  if (MODE === 'auth-check') return authCheck();
   const res = await fetch(FEED, { headers: { 'User-Agent': 'medicsmusings-newsletter/1.0' } });
   if (!res.ok) throw new Error(`Feed fetch failed: ${res.status}`);
   const items = parseFeed(await res.text());

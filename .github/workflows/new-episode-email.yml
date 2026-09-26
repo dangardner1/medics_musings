@@ -13,7 +13,7 @@ on:
         description: 'dry-run = print only, draft = create in Mailchimp without sending, test = email one address, send = email the whole audience'
         type: choice
         default: dry-run
-        options: [dry-run, draft, test, send]
+        options: [dry-run, draft, test, send, auth-check]
       force_latest:
         description: 'Use the newest episode even if it was already handled (for previews and tests)'
         type: boolean
