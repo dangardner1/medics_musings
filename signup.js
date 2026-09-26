@@ -4,23 +4,25 @@
 //   https://<account>.us<N>.list-manage.com/subscribe/post?u=<u>&id=<id>&f_id=<f_id>
 // Until then, Subscribe opens a pre-filled email to the show inbox.
 (function () {
-  var MAILCHIMP_URL = '';
+  var MAILCHIMP_URL = 'https://dangardnermd.us2.list-manage.com/subscribe/post?u=6ec106537cbe21888e56c9dc8&id=8cbe14ef1a&f_id=005eb3e3f0';
   var INBOX = 'BialystockMDandBloomMD@Gmail.com';
 
   function track(name, params) {
     try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {}
   }
 
-  // Mailchimp's post-json endpoint answers JSONP only (no CORS), which is
-  // what lets us show its real success or error message inline.
+  // Mailchimp answers this endpoint with JSONP when given a callback name (c=),
+  // and sends no CORS headers, so a <script> tag is how we read its reply.
   var seq = 0;
   function subscribe(email, done) {
     var cb = 'mmSignup' + (++seq) + '_' + Date.now();
-    var base = MAILCHIMP_URL.replace('/subscribe/post?', '/subscribe/post-json?');
+    var base = MAILCHIMP_URL;
     var params = new URL(base).searchParams;
     // b_<u>_<id> is Mailchimp's bot trap and must be sent empty.
     var url = base + '&EMAIL=' + encodeURIComponent(email) +
-      '&b_' + params.get('u') + '_' + params.get('id') + '=&c=' + cb;
+      '&b_' + params.get('u') + '_' + params.get('id') + '=' +
+      // Marketing permission "Email" (the form's copy tells people they're agreeing to episode emails).
+      '&' + encodeURIComponent('gdpr[6553]') + '=Y&c=' + cb;
     var script = document.createElement('script');
     var timer = setTimeout(function () { finish({ result: 'error', msg: '' }); }, 10000);
     function finish(res) {
