@@ -1,0 +1,71 @@
+name: New episode email
+
+# Emails the Mailchimp audience when a new episode appears in the podcast RSS
+# feed. Needs one repository secret: MAILCHIMP_API_KEY
+# (Mailchimp > Profile > Extras > API keys). Until it is set, runs only record
+# what's in the feed and send nothing.
+on:
+  schedule:
+    - cron: '23 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'dry-run = print only, draft = create in Mailchimp without sending, test = email one address, send = email the whole audience'
+        type: choice
+        default: dry-run
+        options: [dry-run, draft, test, send]
+      force_latest:
+        description: 'Use the newest episode even if it was already handled (for previews and tests)'
+        type: boolean
+        default: false
+      test_email:
+        description: 'Address for mode=test (blank = the audience''s from address)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: new-episode-email
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check the feed and email new episodes
+        run: node scripts/new-episode-email.mjs
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          MODE: ${{ github.event.inputs.mode || 'send' }}
+          FORCE_LATEST: ${{ github.event.inputs.force_latest || 'false' }}
+          TEST_EMAIL: ${{ github.event.inputs.test_email }}
+
+      - name: Keep a copy of the email that was built
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-preview
+          path: newsletter-preview.html
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Save what has been emailed
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -n "$(git status --porcelain .github/newsletter-state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .github/newsletter-state.json
+            git commit -m "Update newsletter state [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
