@@ -1,9 +1,9 @@
 // "Tell Leo and Dan they're wrong" form on the homepage.
-// Set FEEDBACK_URL to a Formspree endpoint (https://formspree.io/f/<id>) to
-// receive messages in your inbox with no page reload. Until then, Send opens a
-// pre-filled email to the show inbox.
+// Messages go to the Formspree form below (https://formspree.io/f/<id>), which
+// emails them to the inbox with no page reload. If FEEDBACK_URL is ever blank,
+// Send falls back to a pre-filled email to the show inbox.
 (function () {
-  var FEEDBACK_URL = '';
+  var FEEDBACK_URL = 'https://formspree.io/f/mzezjwgn';
   var INBOX = 'BialystockMDandBloomMD@Gmail.com';
 
   function track(name, params) {
