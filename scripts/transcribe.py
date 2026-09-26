@@ -42,6 +42,29 @@ VOCAB = (
 ABBREVIATIONS = ("dr", "mr", "mrs", "ms", "st", "jr", "sr", "vs", "md", "no", "a", "h.l", "u.s")
 
 
+# Terms Whisper reliably mishears, fixed after transcription. Add to this list
+# whenever a proofread finds a new one.
+CORRECTIONS = [
+    (r"\b(agdysist|etusist|ecdysist)\b", "ecdysiast"),
+    (r"\b(ekdiziastic|ecdysiastic)\b", "ecdysiastic"),
+    (r"\bectosis\b", "ecdysis"),
+    (r"\b[Nn][eu]r?dlinger\b", "Nirdlinger"),
+    (r"\b[Cc]oupergeuse\b", "Cooper's"),
+    (r"\bhouse ?ship[- ]romberg\b", "Howship-Romberg"),
+    (r"\b[Yy]oung[- ][Ll]aplace\b", "Young-Laplace"),
+    (r"\b[Hh]ow did how did\b", "How did"),
+]
+
+
+def correct(text: str) -> str:
+    """Apply CORRECTIONS, keeping a leading capital where the original had one."""
+    for pattern, repl in CORRECTIONS:
+        def swap(m, repl=repl):
+            return repl[0].upper() + repl[1:] if m.group(0)[0].isupper() else repl
+        text = re.sub(pattern, swap, text, flags=re.IGNORECASE)
+    return text
+
+
 def is_sentence_end(text: str) -> bool:
     t = text.strip()
     if not t or t[-1] not in ".?!":
@@ -79,6 +102,7 @@ def main() -> int:
     ap.add_argument("slug")
     ap.add_argument("--model", default="medium.en", help="Whisper model (tiny.en, small.en, medium.en, large-v3)")
     ap.add_argument("--out", default=str(ROOT / "transcripts"))
+    ap.add_argument("--vad", action="store_true", help="skip silences with voice-activity detection (can clip quiet phrases)")
     args = ap.parse_args()
 
     audio = Path(args.audio)
@@ -93,7 +117,7 @@ def main() -> int:
         str(audio),
         language="en",
         beam_size=5,
-        vad_filter=True,
+        vad_filter=args.vad,
         initial_prompt=VOCAB,
         condition_on_previous_text=False,  # avoids repetition loops on long audio
     )
@@ -105,7 +129,7 @@ def main() -> int:
         print(f"\r  {pct:3d}%  {seg.end / 60:5.1f} of {duration / 60:.1f} min", end="", flush=True)
     print()
 
-    paragraphs = build_paragraphs(collected)
+    paragraphs = [correct(p) for p in build_paragraphs(collected)]
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / f"{args.slug}.txt"
