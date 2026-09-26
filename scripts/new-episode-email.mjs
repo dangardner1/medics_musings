@@ -22,7 +22,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://www.medicsmusings.com';
 const FEED = process.env.FEED_URL || 'https://anchor.fm/s/117844514/podcast/rss';
 const LIST_ID = process.env.MAILCHIMP_LIST_ID || '8cbe14ef1a';
-const API_KEY = process.env.MAILCHIMP_API_KEY || '';
+// Secrets pasted into GitHub often carry a trailing newline or quotes.
+const API_KEY = (process.env.MAILCHIMP_API_KEY || '').trim().replace(/^["']+|["']+$/g, '');
 const API_BASE = process.env.MAILCHIMP_API_BASE || `https://${API_KEY.split('-')[1] || 'us2'}.api.mailchimp.com/3.0`;
 const MODE = process.env.MODE || 'dry-run';
 const FORCE = process.env.FORCE_LATEST === 'true';
@@ -148,6 +149,11 @@ async function mc(path, method = 'GET', body) {
   const text = await res.text();
   let json = {};
   try { json = text ? JSON.parse(text) : {}; } catch (e) { /* non-JSON error page */ }
+  if (res.status === 401) {
+    // Describe the key's shape (never its value) to make a bad paste easy to spot.
+    const [id, dc] = API_KEY.split('-');
+    console.error(`Key check: ${API_KEY.length} characters (expected 36), ${/^[0-9a-f]{32}$/.test(id || '') ? 'starts with 32 hex characters (good)' : 'does NOT start with 32 hex characters'}, datacenter suffix "${dc || 'missing'}" (expected "us2").`);
+  }
   if (!res.ok) throw new Error(`Mailchimp ${method} ${path} -> ${res.status}: ${json.detail || json.title || text.slice(0, 200)}`);
   return json;
 }
