@@ -1,9 +1,9 @@
 name: New episode email
 
 # Emails the Mailchimp audience when a new episode appears in the podcast RSS
-# feed. Needs one repository secret: MAILCHIMP_API_KEY
-# (Mailchimp > Profile > Extras > API keys). Until it is set, runs only record
-# what's in the feed and send nothing.
+# feed. Needs the MAILCHIMP_API_KEY secret (Mailchimp > Profile > Extras >
+# API keys), stored in the "MAILCHIMP_API_KEY" environment. Until it is set,
+# runs only record what's in the feed and send nothing.
 on:
   schedule:
     - cron: '23 */2 * * *'
@@ -33,6 +33,7 @@ concurrency:
 jobs:
   email:
     runs-on: ubuntu-latest
+    environment: MAILCHIMP_API_KEY
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
