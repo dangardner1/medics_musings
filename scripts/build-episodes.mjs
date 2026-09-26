@@ -1,13 +1,16 @@
-// Builds a standalone page for every episode card in index.html:
-//   episodes/<card id>/index.html  ->  https://www.medicsmusings.com/episodes/<card id>/
-// then points the homepage's episode titles, share links and JSON-LD at those
-// pages and rewrites sitemap.xml. index.html stays the single source of truth.
-// To publish an episode: add its <article class="ep-card"> anywhere in #ep-grid
-// (plus a matching JSON-LD PodcastEpisode with the same name), then run
+// Builds everything episode-related from data/episodes.json:
+//   - the episode cards, topic/series chips, "Start here" and "Play latest" in index.html
+//   - the PodcastEpisode list in index.html's JSON-LD
+//   - episodes/<slug>/index.html, one page per episode
+//   - sitemap.xml and sw.js (service worker, versioned by content hash)
+//
+// To publish an episode: add an entry to data/episodes.json (newest anywhere;
+// cards are sorted newest first, so the latest always sits directly under
+// "Latest episodes"), drop its audio in audio/episodes/ if self-hosted, then
 //   node scripts/build-episodes.mjs
-// Cards are re-sorted newest first, so the latest episode always sits directly
-// under "Latest episodes", and the "Show all N episodes" label is kept current.
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+// Optional transcript: transcripts/<slug>.txt (blank line between paragraphs).
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -18,64 +21,177 @@ const SHOW = {
   apple: 'https://podcasts.apple.com/us/podcast/medics-musings/id1780716650',
   youtube: 'https://www.youtube.com/@MedicsMusings',
   rss: 'https://anchor.fm/s/117844514/podcast/rss',
+  overcast: 'https://overcast.fm/itunes1780716650',
+  pocketcasts: 'https://pca.st/itunes/1780716650',
+  amazon: 'https://music.amazon.com/search/Medics%20Musings',
 };
 const INBOX = 'BialystockMDandBloomMD@Gmail.com';
 
 const esc = (s) => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
-const decode = (s) => s
-  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
-  .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
-  .replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 const jsonLd = (data) => JSON.stringify(data, null, 1).replace(/</g, '\\u003c');
+const read = (p) => readFileSync(join(ROOT, p), 'utf8');
+const dateLabel = (iso) => new Date(iso + 'T12:00:00Z')
+  .toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 
 // Trim to a search-snippet length on a word boundary.
-function summary(text, max = 158) {
+function snippet(text, max = 158) {
   const t = text.replace(/\s+/g, ' ').replace(/…$/, '').trim();
   if (t.length <= max) return t;
   return t.slice(0, t.lastIndexOf(' ', max - 1)).replace(/[\s,;:.—-]+$/, '') + '…';
 }
 
-// Spotify show notes arrive with paragraph breaks stripped ("medicine.From the"),
-// so split where a sentence runs straight into the next capital.
+// Spotify show notes sometimes arrive with paragraph breaks stripped
+// ("medicine.From the"), so split where a sentence runs into the next capital.
 function paragraphs(text) {
-  return text.split(/(?<=[a-z)][.!?])(?=[A-Z])/)
-    .map((p) => p.replace(/\s+/g, ' ').trim())
-    .filter(Boolean);
+  const blocks = text.includes('\n\n') ? text.split(/\n\n+/) : text.split(/(?<=[a-z)][.!?])(?=[A-Z])/);
+  return blocks.map((p) => p.replace(/\s+/g, ' ').trim()).filter(Boolean);
+}
+const flat = (text) => text.replace(/\s+/g, ' ').trim();
+
+// ---- Data --------------------------------------------------------------------
+
+const data = JSON.parse(read('data/episodes.json'));
+const episodes = data.episodes
+  .map((e, i) => [e, i])
+  .sort((a, b) => b[0].date.localeCompare(a[0].date) || a[1] - b[1])
+  .map(([e]) => ({ ...e, url: `${SITE}/episodes/${e.slug}/`, path: `/episodes/${e.slug}/` }));
+const bySlug = new Map(episodes.map((e) => [e.slug, e]));
+for (const e of episodes) {
+  for (const t of e.tags || []) if (!data.topics[t]) throw new Error(`${e.slug}: unknown topic "${t}"`);
+  if (e.series && !data.series[e.series]) throw new Error(`${e.slug}: unknown series "${e.series}"`);
+  if (!e.audio && !e.spotify) throw new Error(`${e.slug}: needs audio or a spotify id`);
+}
+if (!bySlug.has(data.startHere)) throw new Error('startHere is not an episode slug');
+const startHere = bySlug.get(data.startHere);
+
+const partsOf = (series) => episodes.filter((e) => e.series === series).sort((a, b) => a.part - b.part);
+const partLabel = (e) => e.partLabel || `Part ${e.part}`;
+
+function seriesNext(ep) {
+  if (!ep.series) return null;
+  const parts = partsOf(ep.series);
+  return parts[parts.indexOf(ep) + 1] || null;
 }
 
-// ---- Read episodes from index.html -------------------------------------------
+// Next up: the next part of a series, else the newest episode sharing the most
+// topics, else the "start here" pick.
+function upNext(ep) {
+  const nextPart = seriesNext(ep);
+  if (nextPart) return { ep: nextPart, kind: 'series' };
+  const scored = episodes
+    .filter((e) => e !== ep && !(ep.series && e.series === ep.series))
+    .map((e) => ({ e, score: (e.tags || []).filter((t) => (ep.tags || []).includes(t)).length }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || b.e.date.localeCompare(a.e.date));
+  if (scored.length) return { ep: scored[0].e, kind: 'recommended' };
+  return { ep: startHere === ep ? episodes.find((e) => e !== ep) : startHere, kind: 'recommended' };
+}
 
-const indexPath = join(ROOT, 'index.html');
-let html = readFileSync(indexPath, 'utf8');
+const spotifyUrl = (e) => e.spotify && `https://open.spotify.com/episode/${e.spotify}`;
+const appleUrl = (e) => e.apple || SHOW.apple;
+const youtubeUrl = (e) => (e.youtube ? `https://www.youtube.com/watch?v=${e.youtube}` : SHOW.youtube);
 
-const graph = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
-const series = graph.find((n) => n['@type'] === 'PodcastSeries');
-const ldByName = new Map(series.episode.map((e) => [e.name, e]));
+function listenRow(e, extra = '') {
+  const links = [
+    spotifyUrl(e) && `<a href="${spotifyUrl(e)}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a>`,
+    `<a href="${appleUrl(e)}" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a>`,
+    `<a href="${youtubeUrl(e)}" target="_blank" rel="noopener" data-platform="youtube">YouTube</a>`,
+  ].filter(Boolean);
+  return `<p class="ep-listen">Listen on ${links.join(' · ')}${extra}</p>`;
+}
 
-const CARD = /<article class="ep-card" id="([^"]+)">([\s\S]*?)<\/article>/g;
-const episodes = [...html.matchAll(CARD)].map(([, slug, body]) => {
-  const title = decode(body.match(/<h3>([\s\S]*?)<\/h3>/)[1].replace(/<[^>]+>/g, '')).trim();
-  const meta = body.match(/<time datetime="([^"]+)">([^<]+)<\/time> · ([^<]+)<\/p>/);
-  const ld = ldByName.get(title);
-  if (!meta) throw new Error(`Episode card "${slug}" has no date/length line`);
-  if (!ld) throw new Error(`No JSON-LD PodcastEpisode named "${title}" (card "${slug}")`);
-  return {
-    slug,
-    title,
-    date: meta[1],
-    dateLabel: meta[2],
-    length: meta[3].trim(),
-    spotifyId: (body.match(/data-ep="([^"]+)"/) || [])[1],
-    audio: (body.match(/<audio class="ep-audio"[^>]* src="([^"]+)"/) || [])[1],
-    ld,
-    url: `${SITE}/episodes/${slug}/`,
-  };
-});
-if (!episodes.length) throw new Error('No episode cards found in index.html');
+// ---- Homepage pieces -----------------------------------------------------------
 
-// ---- Shared page pieces ------------------------------------------------------
+function tagChips(e) {
+  const chips = [];
+  if (e.series) {
+    const total = partsOf(e.series).filter((p) => !p.partLabel).length;
+    const label = e.partLabel ? `${data.series[e.series]} · ${e.partLabel}` : `${data.series[e.series]} · Part ${e.part} of ${total}`;
+    chips.push(`<a class="chip chip-series" href="?series=${e.series}#episodes" data-series="${e.series}">${esc(label)}</a>`);
+  }
+  for (const t of e.tags || []) {
+    chips.push(`<a class="chip" href="?topic=${t}#episodes" data-topic="${t}">${esc(data.topics[t])}</a>`);
+  }
+  return chips.length ? `<p class="ep-tags">${chips.join(' ')}</p>` : '';
+}
+
+function card(e) {
+  const attrs = `id="${e.slug}" data-tags="${(e.tags || []).join(' ')}"${e.series ? ` data-series="${e.series}"` : ''}`;
+  const audio = e.audio
+    ? `\n          <audio class="ep-audio" controls preload="none" src="${e.audio}" aria-label="Play ${esc(e.title)}"></audio>` : '';
+  const play = !e.audio && e.spotify
+    ? `\n            <button type="button" class="btn btn-ghost ep-play" data-ep="${e.spotify}" data-title="${esc(e.title)}">▶ Play here</button>` : '';
+  const download = e.audio ? `\n            <a class="ep-link" href="${e.audio}" download>Download MP3</a>` : '';
+  const embed = !e.audio && e.spotify ? '\n          <div class="ep-embed"></div>' : '';
+  return `<article class="ep-card" ${attrs}>
+          <h3><a href="episodes/${e.slug}/">${esc(e.title)}</a></h3>
+          <p class="ep-meta"><time datetime="${e.date}">${dateLabel(e.date)}</time> · ${e.minutes} min</p>
+          <p class="ep-desc">${esc(e.summary)}</p>
+          ${tagChips(e)}${audio}
+          <div class="ep-actions">${play}
+            <button type="button" class="btn btn-ghost ep-share" data-share-url="${e.url}" data-share-title="${esc(e.title)} — Medics Musings">Share</button>${download}
+          </div>
+          ${listenRow(e)}${embed}
+        </article>`;
+}
+
+function filterChips() {
+  const count = (fn) => episodes.filter(fn).length;
+  const topics = Object.entries(data.topics)
+    .map(([k, label]) => `<button type="button" class="chip" data-topic="${k}">${esc(label)} · ${count((e) => (e.tags || []).includes(k))}</button>`);
+  const series = Object.entries(data.series)
+    .map(([k, label]) => `<button type="button" class="chip" data-series="${k}">${esc(label)} · ${count((e) => e.series === k)}</button>`);
+  return `<div class="chips" role="group" aria-label="Filter by topic">
+          <span class="chips-label">Topic</span>
+          <button type="button" class="chip is-active" data-topic="">All</button>
+          ${topics.join('\n          ')}
+        </div>
+        <div class="chips" role="group" aria-label="Filter by series">
+          <span class="chips-label">Series</span>
+          ${series.join('\n          ')}
+        </div>`;
+}
+
+function region(html, name, body) {
+  const re = new RegExp(`(<!-- build:${name} -->)[\\s\\S]*?(<!-- /build:${name} -->)`);
+  if (!re.test(html)) throw new Error(`index.html is missing the build:${name} markers`);
+  return html.replace(re, (_, a, b) => `${a}\n        ${body}\n        ${b}`);
+}
+
+function updateHomepage() {
+  let html = read('index.html');
+  html = region(html, 'cards', episodes.map(card).join('\n        '));
+  html = region(html, 'chips', filterChips());
+  html = region(html, 'startHere',
+    `<p class="start-here">New here? Start with <a href="episodes/${startHere.slug}/">${esc(startHere.title)}</a> (${startHere.minutes} min).</p>`);
+  html = region(html, 'playLatest',
+    `<button type="button" class="btn btn-latest" data-play-latest title="${esc(episodes[0].title)}">▶ Play the latest episode</button>`);
+
+  html = html.replace(/(id="ep-toggle"[^>]*>)Show all \d+ episodes/, `$1Show all ${episodes.length} episodes`);
+  html = html.replace(/'Show all \d+ episodes'/, `'Show all ' + document.querySelectorAll('#ep-grid .ep-card').length + ' episodes'`);
+
+  // JSON-LD: keep everything else, regenerate the episode list.
+  const ldRe = /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/;
+  const ld = JSON.parse(html.match(ldRe)[2]);
+  const series = ld['@graph'].find((n) => n['@type'] === 'PodcastSeries');
+  series.episode = episodes.map((e) => ({
+    '@type': 'PodcastEpisode',
+    name: e.title,
+    url: e.url,
+    datePublished: e.date,
+    timeRequired: `PT${e.minutes}M`,
+    description: flat(e.description),
+    associatedMedia: e.audio
+      ? { '@type': 'AudioObject', contentUrl: `${SITE}/${e.audio}`, encodingFormat: 'audio/mpeg', ...(e.audioDuration && { duration: e.audioDuration }) }
+      : { '@type': 'MediaObject', embedUrl: `https://open.spotify.com/embed/episode/${e.spotify}` },
+  }));
+  html = html.replace(ldRe, (_, a, __, c) => `${a}\n${jsonLd(ld)}\n${c}`);
+  writeFileSync(join(ROOT, 'index.html'), html);
+}
+
+// ---- Episode pages -------------------------------------------------------------
 
 const signupSection = () => `  <section class="newsletter" id="newsletter">
     <div class="wrap">
@@ -105,33 +221,62 @@ const footer = () => `<footer>
 
 function neighbour(ep, label, rel) {
   if (!ep) return '<span></span>';
-  return `<a class="ep-nav-link" href="/episodes/${ep.slug}/" rel="${rel}">
+  return `<a class="ep-nav-link" href="${ep.path}" rel="${rel}">
         <span class="eyebrow">${label}</span>
         <span class="ep-nav-title">${esc(ep.title)}</span>
       </a>`;
 }
 
+function seriesPanel(ep) {
+  if (!ep.series) return '';
+  const items = partsOf(ep.series).map((p) => {
+    const label = `${partLabel(p)}: ${p.title}`;
+    return p === ep
+      ? `<li aria-current="page"><span>${esc(label)}</span></li>`
+      : `<li><a href="${p.path}">${esc(label)}</a></li>`;
+  });
+  return `<aside class="series-panel" aria-label="Series">
+        <span class="eyebrow">Series · ${esc(data.series[ep.series])}</span>
+        <ol>
+          ${items.join('\n          ')}
+        </ol>
+      </aside>`;
+}
+
+function upNextSection(next) {
+  const heading = next.kind === 'series' ? 'Next in the series' : 'Recommended next';
+  return `<section class="up-next" id="up-next" aria-label="${heading}">
+    <div class="wrap">
+      <span class="eyebrow">${heading}</span>
+      <a class="up-next-card" href="${next.ep.path}${next.kind === 'series' ? '?autoplay=1' : ''}">
+        <span class="up-next-title">${esc(next.ep.title)}</span>
+        <span class="ep-meta">${dateLabel(next.ep.date)} · ${next.ep.minutes} min</span>
+        <span class="up-next-desc">${esc(snippet(next.ep.summary, 170))}</span>
+        <span class="btn btn-primary">Play next →</span>
+      </a>
+    </div>
+  </section>`;
+}
+
 function episodePage(ep, newer, older) {
-  const description = summary(ep.ld.description);
+  const next = upNext(ep);
+  const description = snippet(ep.description);
   const pageTitle = `${ep.title} — Medics Musings Podcast`;
-  const truncated = ep.ld.description.trim().endsWith('…');
-  const spotifyUrl = ep.spotifyId && `https://open.spotify.com/episode/${ep.spotifyId}`;
+  const spotify = spotifyUrl(ep);
+  const truncated = flat(ep.description).endsWith('…');
+  const transcriptPath = `transcripts/${ep.slug}.txt`;
+  const transcript = existsSync(join(ROOT, transcriptPath)) ? paragraphs(read(transcriptPath)) : null;
 
   const player = ep.audio
     ? `<audio class="ep-audio" controls preload="metadata" src="/${ep.audio}" aria-label="Play ${esc(ep.title)}"></audio>`
-    : `<div class="ep-embed">
-          <iframe title="${esc(ep.title)}" src="https://open.spotify.com/embed/episode/${ep.spotifyId}?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    : `<div class="ep-embed" id="ep-embed" data-spotify="${ep.spotify}">
+          <iframe title="${esc(ep.title)}" src="https://open.spotify.com/embed/episode/${ep.spotify}?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>`;
 
-  const links = [
-    spotifyUrl && `<a class="ep-link" href="${spotifyUrl}" target="_blank" rel="noopener" data-platform="spotify">Open in Spotify</a>`,
-    ep.audio && `<a class="ep-link" href="/${ep.audio}" download>Download MP3</a>`,
-  ].filter(Boolean).join('\n        ');
-
-  const notes = paragraphs(ep.ld.description).map((p) => `<p>${esc(p)}</p>`).join('\n        ');
-  const more = truncated && spotifyUrl
-    ? `\n        <p><a class="ep-link" href="${spotifyUrl}" target="_blank" rel="noopener" data-platform="spotify">Full show notes on Spotify</a></p>`
-    : '';
+  const download = ep.audio ? `<a class="ep-link" href="/${ep.audio}" download>Download MP3</a>` : '';
+  const notes = paragraphs(ep.description).map((p) => `<p>${esc(p)}</p>`).join('\n        ');
+  const more = truncated && spotify
+    ? `\n        <p><a class="ep-link" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Full show notes on Spotify</a></p>` : '';
 
   const ld = {
     '@context': 'https://schema.org',
@@ -142,16 +287,20 @@ function episodePage(ep, newer, older) {
         url: ep.url,
         name: ep.title,
         datePublished: ep.date,
-        timeRequired: ep.ld.timeRequired,
-        description: ep.ld.description,
+        timeRequired: `PT${ep.minutes}M`,
+        description: flat(ep.description),
         inLanguage: 'en',
         image: `${SITE}/channel-poster.jpg`,
+        keywords: (ep.tags || []).map((t) => data.topics[t]).join(', ') || undefined,
         partOfSeries: { '@type': 'PodcastSeries', '@id': `${SITE}/#podcast`, name: 'Medics Musings', url: `${SITE}/` },
         author: [
           { '@type': 'Person', '@id': `${SITE}/#leo`, name: 'Leo A. Gordon, MD' },
           { '@type': 'Person', '@id': `${SITE}/#dan`, name: 'Dan Gardner, MD' },
         ],
-        associatedMedia: ep.ld.associatedMedia,
+        associatedMedia: ep.audio
+          ? { '@type': 'AudioObject', contentUrl: `${SITE}/${ep.audio}`, encodingFormat: 'audio/mpeg', ...(ep.audioDuration && { duration: ep.audioDuration }) }
+          : { '@type': 'MediaObject', embedUrl: `https://open.spotify.com/embed/episode/${ep.spotify}` },
+        ...(transcript && { transcript: transcript.join('\n\n') }),
       },
       {
         '@type': 'BreadcrumbList',
@@ -163,6 +312,8 @@ function episodePage(ep, newer, older) {
       },
     ],
   };
+
+  const chips = tagChips(ep).replace(/href="\?/g, 'href="/?');
 
   return `<!doctype html>
 <html lang="en">
@@ -223,32 +374,48 @@ ${jsonLd(ld)}
 </header>
 
 <main>
-  <article class="episode" data-slug="${ep.slug}">
+  <article class="episode" data-slug="${ep.slug}" data-title="${esc(ep.title)}" data-next-url="${next.ep.path}" data-next-title="${esc(next.ep.title)}" data-next-kind="${next.kind}"${ep.spotify ? ` data-spotify="${ep.spotify}"` : ''}>
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/#episodes">Episodes</a></nav>
       <h1>${esc(ep.title)}</h1>
-      <p class="ep-meta"><time datetime="${ep.date}">${esc(ep.dateLabel)}</time> · ${esc(ep.length)}</p>
+      <p class="ep-meta"><time datetime="${ep.date}">${dateLabel(ep.date)}</time> · ${ep.minutes} min</p>
+      ${chips}
       <div class="player">
         ${player}
       </div>
       <div class="ep-actions">
         <button type="button" class="btn btn-primary ep-share" data-share-url="${ep.url}" data-share-title="${esc(ep.title)} — Medics Musings">Share</button>
-        ${links}
+        <button type="button" class="ctl react" data-react="like" aria-pressed="false">👍 Loved it</button>
+        ${download}
+        <span class="react-note" role="status" aria-live="polite"></span>
       </div>
+      ${listenRow(ep)}
       <p class="follow-line">Follow the show:
         <a href="${SHOW.spotify}" target="_blank" rel="noopener" data-platform="spotify">Spotify</a> ·
         <a href="${SHOW.apple}" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a> ·
         <a href="${SHOW.youtube}" target="_blank" rel="noopener" data-platform="youtube">YouTube</a> ·
-        <a href="${SHOW.rss}" target="_blank" rel="noopener" data-platform="rss">RSS</a>
+        <a href="${SHOW.overcast}" target="_blank" rel="noopener" data-platform="overcast">Overcast</a> ·
+        <a href="${SHOW.pocketcasts}" target="_blank" rel="noopener" data-platform="pocketcasts">Pocket Casts</a> ·
+        <a href="${SHOW.amazon}" target="_blank" rel="noopener" data-platform="amazon">Amazon Music</a> ·
+        <a href="${SHOW.rss}" target="_blank" rel="noopener" data-platform="rss">RSS</a> ·
+        <button type="button" class="link-btn" data-copy-rss>Copy RSS</button>
       </p>
+      ${seriesPanel(ep)}
 
       <h2>Show notes</h2>
       <div class="notes">
         ${notes}${more}
-      </div>
+      </div>${transcript ? `
+
+      <details class="transcript" id="transcript">
+        <summary>Transcript</summary>
+        ${transcript.map((p) => `<p>${esc(p)}</p>`).join('\n        ')}
+      </details>` : ''}
       <p class="satire-note"><b>Satire alert:</b> Medics Musings is medical satire made for entertainment. Characters and stories may be fictional, and nothing in this episode is medical advice.</p>
     </div>
   </article>
+
+  ${upNextSection(next)}
 
 ${signupSection()}
 
@@ -258,16 +425,26 @@ ${signupSection()}
   </nav>
 </main>
 
+<div class="toast" id="up-next-toast" role="status" aria-live="polite" hidden>
+  <span class="toast-text"></span>
+  <a class="btn btn-primary toast-go" href="#">Play</a>
+  <button type="button" class="ctl toast-cancel">Cancel</button>
+</div>
+
 ${footer()}
 
 <script src="/signup.js" defer></script>
+<script src="/player.js" defer></script>
+<script src="/site.js" defer></script>
 <script src="/episodes/episode.js" defer></script>
 </body>
 </html>
 `;
 }
 
-// ---- Write episode pages -----------------------------------------------------
+// ---- Write everything -------------------------------------------------------------
+
+updateHomepage();
 
 episodes.forEach((ep, i) => {
   const dir = join(ROOT, 'episodes', ep.slug);
@@ -275,40 +452,8 @@ episodes.forEach((ep, i) => {
   writeFileSync(join(dir, 'index.html'), episodePage(ep, episodes[i - 1], episodes[i + 1]));
 });
 
-// ---- Point the homepage at the episode pages ---------------------------------
-
-// Newest first (stable for same-day episodes), regardless of where a card was added.
-{
-  const cards = [...html.matchAll(CARD)];
-  const first = cards[0].index;
-  const last = cards.at(-1).index + cards.at(-1)[0].length;
-  const dateOf = (m) => m[2].match(/<time datetime="([^"]+)"/)[1];
-  const sorted = [...cards].sort((a, b) => dateOf(b).localeCompare(dateOf(a)));
-  html = html.slice(0, first) + sorted.map((m) => m[0]).join('\n        ') + html.slice(last);
-}
-
-html = html.replace(/(id="ep-toggle"[^>]*>)Show all \d+ episodes/, `$1Show all ${episodes.length} episodes`);
-html = html.replace(/'Show all \d+ episodes'/, `'Show all ' + document.querySelectorAll('#ep-grid .ep-card').length + ' episodes'`);
-
-html = html.replace(CARD, (card, slug, body) => {
-  const ep = episodes.find((e) => e.slug === slug);
-  const next = body
-    .replace(/<h3>([\s\S]*?)<\/h3>/, (_, inner) =>
-      `<h3><a href="episodes/${slug}/">${inner.replace(/<[^>]+>/g, '')}</a></h3>`)
-    .replace(/data-share-url="[^"]*"/, `data-share-url="${ep.url}"`);
-  return `<article class="ep-card" id="${slug}">${next}</article>`;
-});
-
-for (const ep of episodes) {
-  const pattern = new RegExp(`("name": ${JSON.stringify(ep.title).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')},\\s*"url": )"[^"]*"`);
-  if (!pattern.test(html)) throw new Error(`Could not find JSON-LD url for "${ep.title}"`);
-  html = html.replace(pattern, `$1"${ep.url}"`);
-}
-writeFileSync(indexPath, html);
-
-// ---- Sitemap -----------------------------------------------------------------
-
-const newest = episodes.map((e) => e.date).sort().pop();
+// Sitemap
+const newest = episodes[0].date;
 const urls = [
   { loc: `${SITE}/`, lastmod: newest, changefreq: 'weekly', priority: '1.0' },
   { loc: `${SITE}/tools.html`, lastmod: '2026-09-25', changefreq: 'monthly', priority: '0.6' },
@@ -325,4 +470,68 @@ ${urls.map((u) => `  <url>
 </urlset>
 `);
 
-console.log(`Built ${episodes.length} episode pages, updated index.html and sitemap.xml.`);
+// Service worker: versioned by a hash of the files it precaches, so a deploy
+// with any change invalidates the old cache.
+const PRECACHE = [
+  '/', '/tools.html', '/offline.html', '/manifest.webmanifest',
+  '/episodes/episode.css', '/episodes/episode.js',
+  '/signup.js', '/feedback.js', '/player.js', '/discover.js', '/site.js',
+  '/favicon.svg', '/icon-192.png', '/icon-512.png', '/channel-poster.webp', '/host-leo.jpg', '/host-dan.jpg',
+].filter((u) => u === '/' || existsSync(join(ROOT, u.slice(1))));
+const hash = createHash('sha1');
+for (const u of PRECACHE) hash.update(read(u === '/' ? 'index.html' : u.slice(1)));
+for (const e of episodes) hash.update(read(`episodes/${e.slug}/index.html`));
+writeFileSync(join(ROOT, 'sw.js'), `// GENERATED by scripts/build-episodes.mjs. Do not edit.
+const VERSION = 'mm-${hash.digest('hex').slice(0, 10)}';
+const PRECACHE = ${JSON.stringify(PRECACHE, null, 2)};
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(VERSION).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('fetch', (e) => {
+  const req = e.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== location.origin) return;
+  // Audio streams (Range requests) always go to the network.
+  if (req.headers.has('range') || /\\.(mp3|m4a)$/i.test(url.pathname)) return;
+
+  if (req.mode === 'navigate') {
+    // Pages: network first so new episodes appear, cache as the offline fallback.
+    const key = new Request(url.origin + url.pathname);
+    e.respondWith(
+      fetch(req)
+        .then((res) => {
+          if (res.ok) { const copy = res.clone(); caches.open(VERSION).then((c) => c.put(key, copy)); }
+          return res;
+        })
+        .catch(() => caches.match(key).then((hit) => hit || caches.match('/offline.html')))
+    );
+    return;
+  }
+
+  // Static assets: cache first, refreshed in the background.
+  e.respondWith(
+    caches.match(req).then((hit) => {
+      const net = fetch(req)
+        .then((res) => {
+          if (res.ok) { const copy = res.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); }
+          return res;
+        })
+        .catch(() => hit);
+      return hit || net;
+    })
+  );
+});
+`);
+
+console.log(`Built ${episodes.length} episode pages, updated index.html, sitemap.xml and sw.js.`);

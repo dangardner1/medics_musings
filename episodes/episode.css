@@ -269,3 +269,118 @@ footer {
 .footer-nav a:hover { color: var(--accent); }
 .disclaimer { margin: 0; max-width: 760px; font-size: 0.8rem; line-height: 1.5; color: var(--text-muted); }
 .disclaimer b { color: var(--text); font-weight: 600; }
+
+/* ---- Tags, listen links, controls ---- */
+.chip {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 7px;
+  text-decoration: none;
+}
+.chip:hover, .chip:focus-visible { color: var(--accent); border-color: var(--accent); }
+.chip-series { color: var(--pulse); }
+.ep-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; }
+.ep-listen {
+  margin: 16px 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+.ep-listen a, .link-btn { color: var(--pulse); text-decoration: none; border-bottom: 1px dashed var(--pulse); }
+.ep-listen a:hover, .link-btn:hover { color: var(--accent); border-color: var(--accent); }
+.link-btn { font: inherit; background: none; border-top: none; border-left: none; border-right: none; padding: 0; cursor: pointer; }
+.follow-line .link-btn { font-size: inherit; }
+.ep-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ctl {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.ctl:hover, .ctl:focus-visible, .ctl.is-on { color: var(--accent); border-color: var(--accent); }
+.ctl:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+.react-note { font-size: 0.85rem; color: var(--text-muted); }
+
+/* ---- Series panel ---- */
+.series-panel {
+  margin-top: 28px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.series-panel ol { margin: 10px 0 0; padding-left: 20px; }
+.series-panel li { margin: 4px 0; font-size: 0.95rem; }
+.series-panel a { text-decoration: none; color: var(--text-muted); border-bottom: 1px dashed var(--border); }
+.series-panel a:hover { color: var(--accent); border-color: var(--accent); }
+.series-panel [aria-current="page"] { font-weight: 600; color: var(--text); }
+
+/* ---- Transcript ---- */
+.transcript { margin-top: 32px; border: 1px solid var(--border); border-radius: 6px; padding: 4px 18px; background: var(--surface); }
+.transcript summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.transcript p { margin: 0 0 14px; color: var(--text-muted); }
+
+/* ---- Up next ---- */
+.up-next { padding-block: 48px; border-bottom: 1px solid var(--border); }
+.up-next .eyebrow { display: block; margin-bottom: 14px; }
+.up-next-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 760px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.3s ease;
+}
+.up-next-card:hover, .up-next.is-highlight .up-next-card { border-color: var(--accent); }
+.up-next-title { font-family: "Big Shoulders Display", sans-serif; font-weight: 800; font-size: 1.6rem; line-height: 1.05; text-transform: uppercase; }
+.up-next-desc { color: var(--text-muted); font-size: 0.95rem; }
+.up-next-card .btn { margin-top: 6px; }
+.up-next .ep-meta { margin: 0; }
+
+/* ---- Toast ---- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  max-width: min(560px, calc(100vw - 32px));
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+.toast[hidden] { display: none; }
+.toast-text { flex: 1 1 200px; font-size: 0.92rem; }
+.toast .btn { padding: 8px 14px; font-size: 0.76rem; }
+.toast [hidden] { display: none; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }

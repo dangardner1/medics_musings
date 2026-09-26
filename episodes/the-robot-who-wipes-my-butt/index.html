@@ -57,6 +57,7 @@
    "description": "An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn't transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace.",
    "inLanguage": "en",
    "image": "https://www.medicsmusings.com/channel-poster.jpg",
+   "keywords": "AI & Tech, Aging",
    "partOfSeries": {
     "@type": "PodcastSeries",
     "@id": "https://www.medicsmusings.com/#podcast",
@@ -119,24 +120,33 @@
 </header>
 
 <main>
-  <article class="episode" data-slug="the-robot-who-wipes-my-butt">
+  <article class="episode" data-slug="the-robot-who-wipes-my-butt" data-title="The Robot Who Wipes My Butt" data-next-url="/episodes/out-of-touch/" data-next-title="Out of Touch" data-next-kind="recommended" data-spotify="6SUGgGd0p4dLmQfuLOGoNT">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/#episodes">Episodes</a></nav>
       <h1>The Robot Who Wipes My Butt</h1>
       <p class="ep-meta"><time datetime="2026-09-25">Sep 25, 2026</time> · 4 min</p>
+      <p class="ep-tags"><a class="chip" href="/?topic=ai#episodes" data-topic="ai">AI &amp; Tech</a> <a class="chip" href="/?topic=aging#episodes" data-topic="aging">Aging</a></p>
       <div class="player">
         <audio class="ep-audio" controls preload="metadata" src="/audio/episodes/the-robot-who-wipes-my-butt.mp3" aria-label="Play The Robot Who Wipes My Butt"></audio>
       </div>
       <div class="ep-actions">
         <button type="button" class="btn btn-primary ep-share" data-share-url="https://www.medicsmusings.com/episodes/the-robot-who-wipes-my-butt/" data-share-title="The Robot Who Wipes My Butt — Medics Musings">Share</button>
+        <button type="button" class="ctl react" data-react="like" aria-pressed="false">👍 Loved it</button>
         <a class="ep-link" href="/audio/episodes/the-robot-who-wipes-my-butt.mp3" download>Download MP3</a>
+        <span class="react-note" role="status" aria-live="polite"></span>
       </div>
+      <p class="ep-listen">Listen on <a href="https://open.spotify.com/episode/6SUGgGd0p4dLmQfuLOGoNT" target="_blank" rel="noopener" data-platform="spotify">Spotify</a> · <a href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650?i=1000791685892" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a> · <a href="https://www.youtube.com/watch?v=R2fMIdwHDDo" target="_blank" rel="noopener" data-platform="youtube">YouTube</a></p>
       <p class="follow-line">Follow the show:
         <a href="https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj" target="_blank" rel="noopener" data-platform="spotify">Spotify</a> ·
         <a href="https://podcasts.apple.com/us/podcast/medics-musings/id1780716650" target="_blank" rel="noopener" data-platform="apple">Apple Podcasts</a> ·
         <a href="https://www.youtube.com/@MedicsMusings" target="_blank" rel="noopener" data-platform="youtube">YouTube</a> ·
-        <a href="https://anchor.fm/s/117844514/podcast/rss" target="_blank" rel="noopener" data-platform="rss">RSS</a>
+        <a href="https://overcast.fm/itunes1780716650" target="_blank" rel="noopener" data-platform="overcast">Overcast</a> ·
+        <a href="https://pca.st/itunes/1780716650" target="_blank" rel="noopener" data-platform="pocketcasts">Pocket Casts</a> ·
+        <a href="https://music.amazon.com/search/Medics%20Musings" target="_blank" rel="noopener" data-platform="amazon">Amazon Music</a> ·
+        <a href="https://anchor.fm/s/117844514/podcast/rss" target="_blank" rel="noopener" data-platform="rss">RSS</a> ·
+        <button type="button" class="link-btn" data-copy-rss>Copy RSS</button>
       </p>
+      
 
       <h2>Show notes</h2>
       <div class="notes">
@@ -145,6 +155,18 @@
       <p class="satire-note"><b>Satire alert:</b> Medics Musings is medical satire made for entertainment. Characters and stories may be fictional, and nothing in this episode is medical advice.</p>
     </div>
   </article>
+
+  <section class="up-next" id="up-next" aria-label="Recommended next">
+    <div class="wrap">
+      <span class="eyebrow">Recommended next</span>
+      <a class="up-next-card" href="/episodes/out-of-touch/">
+        <span class="up-next-title">Out of Touch</span>
+        <span class="ep-meta">Sep 26, 2026 · 10 min</span>
+        <span class="up-next-desc">Dr. Leo A. Gordon’s essay on the vanishing sense of touch in modern surgery, from the “tissue sense” of open operations to laparoscopy and robotic consoles.</span>
+        <span class="btn btn-primary">Play next →</span>
+      </a>
+    </div>
+  </section>
 
   <section class="newsletter" id="newsletter">
     <div class="wrap">
@@ -172,6 +194,12 @@
   </nav>
 </main>
 
+<div class="toast" id="up-next-toast" role="status" aria-live="polite" hidden>
+  <span class="toast-text"></span>
+  <a class="btn btn-primary toast-go" href="#">Play</a>
+  <button type="button" class="ctl toast-cancel">Cancel</button>
+</div>
+
 <footer>
   <div class="wrap footer-nav">
     <a href="/#about">About</a>
@@ -185,6 +213,8 @@
 </footer>
 
 <script src="/signup.js" defer></script>
+<script src="/player.js" defer></script>
+<script src="/site.js" defer></script>
 <script src="/episodes/episode.js" defer></script>
 </body>
 </html>
