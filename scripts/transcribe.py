@@ -18,10 +18,14 @@ Then run `node scripts/build-episodes.mjs` to put the transcript on the page.
 The first run downloads the model (medium.en is about 1.5 GB) into the Hugging
 Face cache; later runs reuse it.
 
+It also writes transcripts/<slug>.json: each Whisper segment with its start and
+end time in seconds, used for chapter markers and quote timestamps.
+
 Whisper doesn't label speakers, so a conversation reads as continuous text;
 paragraphs break at pauses and roughly every few sentences.
 """
 import argparse
+import json
 import re
 import sys
 import time
@@ -134,6 +138,9 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / f"{args.slug}.txt"
     out_file.write_text("\n\n".join(paragraphs) + "\n", encoding="utf-8")
+    # Segment timings, for chapter markers and quote timestamps on the episode page.
+    timings = [{"s": round(seg.start, 1), "e": round(seg.end, 1), "t": correct(seg.text.strip())} for seg in collected if seg.text.strip()]
+    (out_dir / f"{args.slug}.json").write_text(json.dumps(timings, ensure_ascii=False), encoding="utf-8")
     words = sum(len(p.split()) for p in paragraphs)
     print(f"Wrote {out_file} ({len(paragraphs)} paragraphs, {words} words) in {(time.time() - started) / 60:.1f} min")
     return 0

@@ -437,3 +437,159 @@ footer {
 @media (max-width: 680px) {
   .coll-list { grid-template-columns: 1fr; }
 }
+
+/* ---- Top nav ---- */
+.topnav { display: flex; gap: 18px; margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 0.76rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.topnav a { color: var(--text-muted); text-decoration: none; }
+.topnav a:hover { color: var(--accent); }
+@media (max-width: 680px) { .topnav { display: none; } }
+
+/* ---- Signup topic choices ---- */
+.signup-prefs { flex-basis: 100%; margin-top: 4px; }
+.signup-prefs summary {
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+.signup-prefs summary:hover { color: var(--accent); }
+.prefs-note { margin: 8px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+.prefs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.prefs-open { flex-basis: 100%; }
+.pref {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+.pref:has(input:checked) { border-color: var(--accent); color: var(--accent); }
+.signup .pref input { flex: none; width: auto; padding: 0; margin: 0; accent-color: var(--accent); }
+.signup-wide { max-width: 720px; }
+.newsletter-alt { margin: 14px 0 0; font-size: 0.9rem; color: var(--text-muted); }
+.newsletter-alt a, .feed-line a { color: var(--pulse); text-decoration: none; }
+.newsletter-alt a:hover, .feed-line a:hover { color: var(--accent); }
+.feed-line { margin: 24px 0 0; font-size: 0.92rem; color: var(--text-muted); }
+
+/* ---- Feeds list ---- */
+.feed-list { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+.feed-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+.feed-link { font-weight: 600; color: var(--text); text-decoration: none; min-width: 180px; }
+.feed-link:hover { color: var(--accent); }
+.feed-list .ep-meta { margin: 0; font-size: 0.72rem; }
+
+/* ---- Episode extras: embed, learn more, chapters, quotes ---- */
+.embed-box { margin-top: 18px; border: 1px solid var(--border); border-radius: 6px; padding: 2px 16px; background: var(--surface); }
+.embed-box summary {
+  cursor: pointer;
+  padding: 10px 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.embed-box summary:hover { color: var(--accent); }
+.embed-box p { margin: 0 0 12px; font-size: 0.92rem; color: var(--text-muted); }
+.embed-box textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font: 0.78rem/1.45 "IBM Plex Mono", monospace;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  resize: vertical;
+}
+.short-link a { color: var(--pulse); }
+.learn-more { margin-top: 24px; padding: 14px 18px; border: 1px dashed var(--border); border-radius: 6px; }
+.learn-more p { margin: 4px 0; font-size: 0.95rem; }
+.learn-more .eyebrow { margin-right: 8px; }
+.learn-more a { color: var(--text); text-decoration: none; border-bottom: 1px dashed var(--pulse); }
+.learn-more a:hover { color: var(--accent); border-color: var(--accent); }
+.chapters { list-style: none; margin: 14px 0 0; padding: 0; border-top: 1px solid var(--border); }
+.chapters li { border-bottom: 1px solid var(--border); }
+.chapters a { display: flex; gap: 14px; padding: 9px 2px; text-decoration: none; color: var(--text); }
+.chapters a:hover { color: var(--accent); }
+.ch-time { flex: none; min-width: 3.4em; font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; color: var(--pulse); }
+.quotes { display: grid; gap: 22px; margin-top: 16px; }
+.quote { margin: 0; padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.quote img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.quote blockquote { margin: 12px 0 6px; font-size: 1.05rem; line-height: 1.45; }
+.quote-share { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+.quote-share .ctl { text-decoration: none; }
+.quote-page .quote-card { display: block; width: 100%; max-width: 760px; height: auto; margin-top: 22px; border-radius: 6px; border: 1px solid var(--border); }
+.quote-big { margin: 22px 0 0; max-width: 760px; }
+.quote-big p { margin: 0; font-size: 1.35rem; line-height: 1.4; }
+.quote-big footer { border: 0; padding: 10px 0 0; display: block; font-size: 0.92rem; color: var(--text-muted); }
+.quote-big a { color: var(--pulse); }
+
+/* ---- Explainers and teaching guides ---- */
+.explainer, .guide { padding-block: 44px 56px; border-bottom: 1px solid var(--border); }
+.explainer .wrap > *, .guide .wrap > * { max-width: 760px; }
+.explainer h1, .guide h1 { margin-top: 12px; font-size: clamp(2.1rem, 6vw, 3.4rem); line-height: 1; }
+.explainer .eyebrow, .guide .eyebrow { display: block; margin-top: 14px; }
+.dek { margin: 16px 0 0; font-size: 1.15rem; color: var(--text-muted); font-style: italic; }
+.prose h2 { margin-top: 34px; font-size: 1.5rem; }
+.prose p, .prose li { font-size: 1.04rem; line-height: 1.65; }
+.prose p { margin: 12px 0 0; }
+.prose ol, .prose ul { margin: 12px 0 0; padding-left: 22px; }
+.prose li { margin: 6px 0; }
+.prose a { color: var(--pulse); }
+.questions li { margin: 10px 0; }
+.faq { margin-top: 36px; }
+.faq h2 { font-size: 1.5rem; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 4px 0; }
+.faq-item:first-of-type { border-top: 1px solid var(--border); margin-top: 14px; }
+.faq-item summary { cursor: pointer; padding: 10px 0; font-weight: 600; }
+.faq-item summary:hover { color: var(--accent); }
+.faq-item p { margin: 0 0 12px; color: var(--text-muted); }
+.hear-it { margin-top: 36px; }
+.hear-it h2 { font-size: 1.5rem; }
+.related { margin-top: 26px; font-size: 0.95rem; color: var(--text-muted); }
+.related a { color: var(--pulse); }
+.satire-note a { color: var(--pulse); }
+.guide-meta { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 18px 0 0; }
+.guide-meta div { display: flex; flex-direction: column; }
+.guide-meta dt { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--pulse); }
+.guide-meta dd { margin: 2px 0 0; font-size: 0.95rem; }
+.guide-player { margin-top: 22px; }
+.embed-frame { display: block; width: 100%; max-width: 640px; border: 0; border-radius: 12px; }
+.guide-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.print-only { display: none; }
+
+/* ---- Submit form ---- */
+.story-form { display: flex; flex-direction: column; gap: 8px; max-width: 680px; margin-top: 28px; }
+.story-form label, .story-form legend { font-weight: 600; font-size: 0.95rem; margin-top: 10px; }
+.story-form input:not([type="checkbox"]):not([type="radio"]), .story-form select, .story-form textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+}
+.story-form :is(input, select, textarea):focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.story-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 680px) { .story-form .row { grid-template-columns: 1fr; } }
+.story-form fieldset { border: 0; padding: 0; margin: 0; }
+.story-form .check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin-top: 8px; }
+.story-form .check input { margin-top: 4px; accent-color: var(--accent); }
+.story-form button { align-self: flex-start; margin-top: 14px; }
+.field-note { margin: 4px 0 0; font-size: 0.85rem; color: var(--text-muted); max-width: 680px; }
+.field-note a { color: var(--pulse); }
+
+@media print {
+  .topbar, footer, .newsletter, .no-print { display: none !important; }
+  .print-only { display: block; }
+  body { background: #fff; color: #000; }
+  .guide, .explainer { padding: 0; border: 0; }
+  .prose p, .prose li { color: #000; }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medics Musings: Play by Play</title>
+    <link>https://www.medicsmusings.com/series/play-by-play/</link>
+    <atom:link href="https://www.medicsmusings.com/feeds/series/play-by-play.xml" rel="self" type="application/rss+xml"/>
+    <description>Medicine called like live sports: a gallbladder operation with bile duct exploration covered snap by snap, then a psychotherapy breakthrough narrated from the booth.</description>
+    <language>en-us</language>
+    <image><url>https://www.medicsmusings.com/icon-512.png</url><title>Medics Musings: Play by Play</title><link>https://www.medicsmusings.com/series/play-by-play/</link></image>
+    <lastBuildDate>Wed, 05 Feb 2025 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Transference Analysis: Play by Play</title>
+      <link>https://www.medicsmusings.com/episodes/transference-analysis-play-by-play/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/transference-analysis-play-by-play/</guid>
+      <pubDate>Wed, 05 Feb 2025 12:00:00 GMT</pubDate>
+      <description>Experience a Powerful Therapeutic Breakthrough: When Past Meets Present Join Dr. Travis Mitchell for an intimate look, in the style of a play by play sportscast,  into a transformative therapy… (3 min)</description>
+    </item>
+    <item>
+      <title>Fourth and Gall (Play by Play Coverage)</title>
+      <link>https://www.medicsmusings.com/episodes/fourth-and-gall-play-by-play-coverage/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/fourth-and-gall-play-by-play-coverage/</guid>
+      <pubDate>Sat, 18 Jan 2025 12:00:00 GMT</pubDate>
+      <description>This satirical nail-biting episode covers a cholecystectomy with bile duct exploration and extraction of a left hepatic duct stone. The Southwestern Conference of the American Surgical League brings… (21 min)</description>
+    </item>
+  </channel>
+</rss>

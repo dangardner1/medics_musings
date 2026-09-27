@@ -4,7 +4,14 @@
 //   MODE=dry-run  print the email, change nothing (default when run by hand)
 //   MODE=draft    create the campaign in Mailchimp but don't send it
 //   MODE=test     send a test copy to TEST_EMAIL (default: the list's from address)
-//   MODE=send     send to the whole audience (what the schedule uses)
+//   MODE=send     send to the audience (what the schedule uses)
+//   MODE=setup-topics  create the TOPICS merge field used for topic/series choices
+//
+// Topic choices: the site's signup forms save picks in a hidden TOPICS merge
+// field, e.g. "|ai|series-pax-inguinalis|" (blank = everything). Each episode is
+// sent to subscribers with a blank TOPICS or one containing any of the episode's
+// topics or its series. Episodes with no topics go to everyone. Run
+// MODE=setup-topics once (from the workflow's "Run workflow" menu) before relying on it.
 //
 // FORCE_LATEST=true handles the newest episode even if it was already seen
 // (use it with dry-run/draft/test to preview the email).
@@ -37,7 +44,7 @@ const SHOW = {
   youtube: 'https://www.youtube.com/@MedicsMusings',
 };
 
-if (!['dry-run', 'draft', 'test', 'send', 'auth-check'].includes(MODE)) throw new Error(`Unknown MODE "${MODE}"`);
+if (!['dry-run', 'draft', 'test', 'send', 'auth-check', 'setup-topics'].includes(MODE)) throw new Error(`Unknown MODE "${MODE}"`);
 
 // ---- Feed helpers live in ./lib/feed.mjs -------------------------------------
 
@@ -143,6 +150,48 @@ async function mc(path, method = 'GET', body) {
   return json;
 }
 
+// ---- Topic targeting -----------------------------------------------------------------
+
+const TOPICS_TAG = 'TOPICS';
+
+// '|ai|', '|series-pax-inguinalis|' ... for the episode's site entry.
+function topicTokens(item) {
+  const hit = siteMatch(item);
+  if (!hit) return [];
+  return [...(hit.tags || []), ...(hit.series ? [`series-${hit.series}`] : [])];
+}
+
+async function hasTopicsField() {
+  const res = await mc(`/lists/${LIST_ID}/merge-fields?count=100&fields=merge_fields.tag`);
+  return (res.merge_fields || []).some((f) => f.tag === TOPICS_TAG);
+}
+
+async function setupTopics() {
+  if (await hasTopicsField()) { console.log(`The ${TOPICS_TAG} merge field already exists.`); return; }
+  await mc(`/lists/${LIST_ID}/merge-fields`, 'POST', {
+    tag: TOPICS_TAG, name: 'Topics', type: 'text', public: false, required: false,
+    help_text: 'Set by medicsmusings.com signup forms: |topic|series-key| (blank = every episode).',
+  });
+  console.log(`Created the hidden ${TOPICS_TAG} merge field. Topic choices on the site now take effect.`);
+}
+
+// Mailchimp segment: blank TOPICS (everything) or any matching token.
+async function recipientsFor(item) {
+  const tokens = topicTokens(item);
+  if (!tokens.length || !(await hasTopicsField())) return { list_id: LIST_ID };
+  console.log(`Targeting subscribers who chose everything or: ${tokens.join(', ')}`);
+  return {
+    list_id: LIST_ID,
+    segment_opts: {
+      match: 'any',
+      conditions: [
+        { condition_type: 'TextMerge', field: TOPICS_TAG, op: 'blank' },
+        ...tokens.map((t) => ({ condition_type: 'TextMerge', field: TOPICS_TAG, op: 'contains', value: `|${t}|` })),
+      ],
+    },
+  };
+}
+
 const tagFor = (item) => createHash('sha1').update(item.guid).digest('hex').slice(0, 8);
 
 // Returns true when the episode has been emailed (or should not be), false otherwise.
@@ -169,6 +218,7 @@ async function deliver(item, email) {
   }
 
   let id = found.find((c) => c.status === 'save')?.id;
+  const recipients = await recipientsFor(item);
   const settings = {
     subject_line: email.subject,
     preview_text: email.preview,
@@ -177,10 +227,10 @@ async function deliver(item, email) {
     reply_to: defaults.from_email,
   };
   if (id) {
-    await mc(`/campaigns/${id}`, 'PATCH', { settings });
+    await mc(`/campaigns/${id}`, 'PATCH', { settings, recipients });
     console.log(`Reusing draft campaign ${id}`);
   } else {
-    id = (await mc('/campaigns', 'POST', { type: 'regular', recipients: { list_id: LIST_ID }, settings })).id;
+    id = (await mc('/campaigns', 'POST', { type: 'regular', recipients, settings })).id;
     console.log(`Created campaign ${id}`);
   }
   await mc(`/campaigns/${id}/content`, 'PUT', { html: email.html });
@@ -201,8 +251,13 @@ async function deliver(item, email) {
     const problems = (check.items || []).filter((i) => i.type === 'error').map((i) => i.details);
     throw new Error('Mailchimp says the campaign is not ready: ' + problems.join(' | '));
   }
+  const target = (await mc(`/campaigns/${id}?fields=recipients.recipient_count`)).recipients?.recipient_count;
+  if (target === 0) {
+    console.log('No subscribers chose this episode\'s topics; nothing to send.');
+    return true;
+  }
   await mc(`/campaigns/${id}/actions/send`, 'POST');
-  console.log(`Sent campaign ${id} to ${list.stats.member_count} subscribers.`);
+  console.log(`Sent campaign ${id} to ${target ?? list.stats.member_count} subscribers.`);
   return true;
 }
 
@@ -239,6 +294,10 @@ async function authCheck() {
 
 async function main() {
   if (MODE === 'auth-check') return authCheck();
+  if (MODE === 'setup-topics') {
+    if (!API_KEY) throw new Error('MAILCHIMP_API_KEY is not set.');
+    return setupTopics();
+  }
   const items = await fetchFeed();
   if (!items.length) throw new Error('No episodes found in the feed; refusing to continue.');
   console.log(`Feed has ${items.length} episode(s); newest: "${items.at(-1).title}" (${items.at(-1).date.toISOString()})`);
@@ -268,7 +327,7 @@ async function main() {
       continue;
     }
     const email = renderEmail(item, await listenUrl(item));
-    console.log(`\nEpisode: ${item.title}\nSubject: ${email.subject}\nButton:  ${email.url}`);
+    console.log(`\nEpisode: ${item.title}\nSubject: ${email.subject}\nButton:  ${email.url}\nTopics:  ${topicTokens(item).join(', ') || '(none: everyone)'}`);
     writeFileSync(PREVIEW_FILE, email.html);
 
     if (MODE === 'dry-run') { console.log(`Dry run: preview written to ${PREVIEW_FILE}; nothing sent.`); continue; }

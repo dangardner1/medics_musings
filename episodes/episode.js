@@ -14,6 +14,9 @@
   var nextTitle = article.getAttribute('data-next-title');
   var nextKind = article.getAttribute('data-next-kind');
   var autoplay = /[?&]autoplay=1(&|$)/.test(location.search);
+  // ?t=123 (from chapter and quote links) starts the episode at that second.
+  var startAt = parseInt((location.search.match(/[?&]t=(\d+)/) || [])[1], 10) || 0;
+  var spotifyCtrl = null;
 
   // ---- Share ---------------------------------------------------------------
   try {
@@ -120,6 +123,7 @@
       var saved = 0;
       try { saved = parseFloat(localStorage.getItem(posKey)) || 0; } catch (e) {}
       var hint = null;
+      if (startAt) saved = 0;
       if (saved > 5 && !autoplay) {
         hint = document.createElement('p');
         hint.className = 'ep-resume';
@@ -128,8 +132,10 @@
         bar.parentNode.insertBefore(hint, bar.nextSibling);
       }
       a.addEventListener('loadedmetadata', function () {
-        if (saved > 5 && !autoplay && saved < a.duration - 10) a.currentTime = saved;
+        if (startAt && startAt < a.duration) a.currentTime = startAt;
+        else if (saved > 5 && !autoplay && saved < a.duration - 10) a.currentTime = saved;
       });
+      if (startAt) a.preload = 'metadata';
       var lastWrite = 0;
       a.addEventListener('timeupdate', function () {
         if (Date.now() - lastWrite < 5000) return;
@@ -182,6 +188,8 @@
         var mount = document.createElement('div');
         wrap.appendChild(mount);
         IFrameAPI.createController(mount, { uri: 'spotify:episode:' + id, width: '100%', height: window.innerWidth <= 680 ? 352 : 152 }, function (ctrl) {
+          spotifyCtrl = ctrl;
+          if (startAt) ctrl.addListener('ready', function () { try { ctrl.seek(startAt); } catch (e) {} });
           var staticFrame = wrap.querySelector('iframe[src*="/embed/episode/"]:not([data-api])');
           // The API replaces `mount` with its own iframe; drop the static fallback once it exists.
           var mounted = wrap.querySelectorAll('iframe');
@@ -219,6 +227,34 @@
       s.async = true;
       document.body.appendChild(s);
     }
+  } catch (e) {}
+
+  // ---- Chapters and "hear it at" links: jump the player on this page ----------------
+  try {
+    var seek = function (t) {
+      var audio = document.querySelector('.ep-audio');
+      if (audio) {
+        var go = function () { audio.currentTime = t; audio.play().catch(function () {}); };
+        if (audio.readyState >= 1) go(); else { audio.addEventListener('loadedmetadata', go, { once: true }); audio.load(); }
+        return true;
+      }
+      if (spotifyCtrl) {
+        try { spotifyCtrl.seek(t); spotifyCtrl.resume ? spotifyCtrl.resume() : spotifyCtrl.play(); } catch (e) {}
+        return true;
+      }
+      return false;
+    };
+    Array.prototype.forEach.call(document.querySelectorAll('[data-seek]'), function (link) {
+      link.addEventListener('click', function (e) {
+        var t = parseInt(link.getAttribute('data-seek'), 10) || 0;
+        if (!seek(t)) return; // no player yet: follow the ?t= link instead
+        e.preventDefault();
+        try { history.replaceState(null, '', '?t=' + t); } catch (err) {}
+        var player = document.querySelector('.player');
+        if (player) player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        track('chapter_seek', { episode_slug: slug, seconds: t, kind: link.closest('.chapters') ? 'chapter' : 'quote' });
+      });
+    });
   } catch (e) {}
 
   // ---- Outbound clicks --------------------------------------------------------------

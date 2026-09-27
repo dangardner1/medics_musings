@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Scribes Explained: How Ambient AI Writes Your Doctor&#x27;s Notes | Medics Musings</title>
+<meta name="description" content="What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/explained/ai-scribes/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/explained/ai-scribes/">
+<meta property="og:title" content="AI scribes, explained">
+<meta property="og:description" content="What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI scribes, explained">
+<meta name="twitter:description" content="What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://www.medicsmusings.com/explained/ai-scribes/#article",
+   "headline": "AI scribes, explained",
+   "description": "What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.",
+   "url": "https://www.medicsmusings.com/explained/ai-scribes/",
+   "image": "https://www.medicsmusings.com/og-image.jpg",
+   "inLanguage": "en",
+   "about": {
+    "@type": "Thing",
+    "name": "AI scribes"
+   },
+   "author": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Medics Musings Productions",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isPartOf": {
+    "@id": "https://www.medicsmusings.com/#website"
+   },
+   "mentions": [
+    {
+     "@type": "PodcastEpisode",
+     "name": "AI Rounds: When Your Chatbot Assistant Bites Back!",
+     "url": "https://www.medicsmusings.com/episodes/ai-rounds-when-your-chatbot-assistant-bites-back/"
+    },
+    {
+     "@type": "PodcastEpisode",
+     "name": "The Digital Doctor",
+     "url": "https://www.medicsmusings.com/episodes/the-digital-doctor/"
+    },
+    {
+     "@type": "PodcastEpisode",
+     "name": "Can Patients and Doctors Trust AI in Healthcare?",
+     "url": "https://www.medicsmusings.com/episodes/can-patients-and-doctors-trust-ai-in-healthcare/"
+    },
+    {
+     "@type": "PodcastEpisode",
+     "name": "Algorithms Meet Empathy: The Future of Patient Care",
+     "url": "https://www.medicsmusings.com/episodes/algorithms-meet-empathy-the-future-of-patient-care/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is my doctor's visit being recorded by AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It might be. Clinics using AI scribes should tell you and ask for consent. If you're not sure, ask; you can decline."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who checks the note an AI scribe writes?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your clinician. The AI produces a draft, and the clinician is responsible for reviewing, correcting and signing it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do AI scribes make mistakes?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. They can omit, misattribute or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Explainers",
+     "item": "https://www.medicsmusings.com/explained/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI scribes, explained",
+     "item": "https://www.medicsmusings.com/explained/ai-scribes/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <article class="explainer">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/explained/">Explainers</a> <span aria-hidden="true">/</span> <span>AI scribes</span></nav>
+      <span class="eyebrow">Explained · the real medicine behind the jokes</span>
+      <h1>AI scribes, explained</h1>
+      <p class="dek">Your doctor used to type while you talked. Now an app listens and types for them. What could possibly get lost in translation?</p>
+      <div class="prose">
+        <h2>The short answer</h2>
+        <p>An AI scribe (also called ambient AI documentation or an ambient clinical assistant) is software that listens to a visit between you and your clinician, usually through a phone or computer microphone, and drafts the visit note: history, exam findings, assessment and plan. The clinician reviews and edits the draft before it goes into your medical record.</p>
+        <h2>Why clinics are adopting them</h2>
+        <p>Documentation is one of the biggest time sinks in medicine; many doctors finish notes at night (“pajama time”). Early studies and health-system pilots report less time spent on notes and lower reported burnout, and many patients say their doctor makes more eye contact. The evidence is still young, and results vary by product and specialty.</p>
+        <h2>What can go wrong</h2>
+        <p>AI scribes can mishear, leave things out, attribute a statement to the wrong person, or add details nobody said (a “hallucination”). That&#x27;s why the clinician remains responsible for the note and should read it before signing. If something in your visit summary looks wrong, ask for it to be corrected; you have a right to request amendments to your record.</p>
+        <h2>Privacy and consent</h2>
+        <p>In the U.S., vendors that handle your health information for a clinic generally work under HIPAA business associate agreements. Clinics should tell you when a visit is being recorded and ask for your consent, and some states require all-party consent to record. You can say no, and your care shouldn&#x27;t change if you do.</p>
+      </div>
+      <section class="faq" aria-label="Frequently asked questions">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item">
+          <summary>Is my doctor&#x27;s visit being recorded by AI?</summary>
+          <p>It might be. Clinics using AI scribes should tell you and ask for consent. If you&#x27;re not sure, ask; you can decline.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who checks the note an AI scribe writes?</summary>
+          <p>Your clinician. The AI produces a draft, and the clinician is responsible for reviewing, correcting and signing it.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do AI scribes make mistakes?</summary>
+          <p>Yes. They can omit, misattribute or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong.</p>
+        </details>
+      </section>
+      <section class="hear-it" aria-label="Episodes about this">
+        <h2>Hear it on the show</h2>
+        <ul class="coll-list">
+          <li>
+          <a class="coll-card" href="/episodes/ai-rounds-when-your-chatbot-assistant-bites-back/">
+            <span class="coll-title">AI Rounds: When Your Chatbot Assistant Bites Back!</span>
+            <span class="ep-meta">Dec 6, 2024 · 3 min</span>
+            <span class="coll-desc">Ever wondered what happens when an old-school doctor collides with cutting-edge AI? Join Dr. Davey Dinosaur (yes, that&#x27;s what I&#x27;m calling myself now) as I navigate the fast-paced challenges…</span>
+          </a>
+        </li>
+          <li>
+          <a class="coll-card" href="/episodes/the-digital-doctor/">
+            <span class="coll-title">The Digital Doctor</span>
+            <span class="ep-meta">Nov 20, 2024 · 3 min</span>
+            <span class="coll-desc">Satirical take on AI in Healthcare. Is AI in Healthcare accurate enough to keep you safe and healthy? Is it an aid or impediment? Or both? (Created with the help of Perplexity Pro AI)</span>
+          </a>
+        </li>
+          <li>
+          <a class="coll-card" href="/episodes/can-patients-and-doctors-trust-ai-in-healthcare/">
+            <span class="coll-title">Can Patients and Doctors Trust AI in Healthcare?</span>
+            <span class="ep-meta">Nov 23, 2024 · 11 min</span>
+            <span class="coll-desc">Can doctors and patients come to trust in and collaborate with AI in forming diagnoses and treatments? (Created with the help of Perplexity Pro AI)</span>
+          </a>
+        </li>
+          <li>
+          <a class="coll-card" href="/episodes/algorithms-meet-empathy-the-future-of-patient-care/">
+            <span class="coll-title">Algorithms Meet Empathy: The Future of Patient Care</span>
+            <span class="ep-meta">Nov 23, 2024 · 7 min</span>
+            <span class="coll-desc">Artificial Intelligence is revolutionizing medicine, offering unprecedented accuracy in diagnosis and personalized treatment plans. But can it replace the human element? In this video, we…</span>
+          </a>
+        </li>
+        </ul>
+      </section>
+      <p class="related">Related: <a href="/explained/ai-chatbots-medical-advice/">Can you trust an AI chatbot with medical questions?</a> · <a href="/explained/physician-burnout/">What is physician burnout?</a> · <a href="/explained/prior-authorization/">What is prior authorization?</a></p>
+      <p class="satire-note"><b>Not medical advice.</b> This page is general information, written to explain terms our satire leans on; it isn't a substitute for advice from your own clinician. In an emergency, call 911.</p>
+    </div>
+  </article>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+</body>
+</html>

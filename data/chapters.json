@@ -1,0 +1,156 @@
+{
+  "from-burnout-to-punchlines-freuds-solution": [
+    {
+      "t": 0,
+      "title": "Burnout at the Allgemeines Krankenhaus"
+    },
+    {
+      "t": 69,
+      "title": "The chief of staff consults Freud"
+    },
+    {
+      "t": 96,
+      "title": "Freud's cure: turn doctors into comedians"
+    },
+    {
+      "t": 179,
+      "title": "The mandatory open mic"
+    },
+    {
+      "t": 238,
+      "title": "A box under the pediatric wing"
+    },
+    {
+      "t": 348,
+      "title": "Open mic night: Billroth takes the stage"
+    }
+  ],
+  "out-of-touch-from-healing-touch-to-digital-distance": [
+    {
+      "t": 0,
+      "title": "Why touch drew him to surgery"
+    },
+    {
+      "t": 64,
+      "title": "Surgical history in his hands"
+    },
+    {
+      "t": 142,
+      "title": "Tissue sense"
+    },
+    {
+      "t": 298,
+      "title": "The laparoscope replaces the hand"
+    },
+    {
+      "t": 364,
+      "title": "A love affair gone awry"
+    },
+    {
+      "t": 503,
+      "title": "She left me for a robot"
+    },
+    {
+      "t": 621,
+      "title": "Retired robots in assisted living"
+    }
+  ],
+  "pax-inguinalis-part-3": [
+    {
+      "t": 0,
+      "title": "Two warring camps: repair or wait"
+    },
+    {
+      "t": 73,
+      "title": "The asymptomatic executive"
+    },
+    {
+      "t": 121,
+      "title": "Eight lifestyle questions"
+    },
+    {
+      "t": 226,
+      "title": "The actress and her femoral hernia"
+    },
+    {
+      "t": 287,
+      "title": "Medically underserved areas"
+    },
+    {
+      "t": 324,
+      "title": "Incarceration: the real odds"
+    },
+    {
+      "t": 417,
+      "title": "Post-repair pain: the non-negotiables"
+    },
+    {
+      "t": 546,
+      "title": "Imaging, nerve entrapment and re-exploration"
+    },
+    {
+      "t": 671,
+      "title": "The second opinion and the pain center"
+    },
+    {
+      "t": 840,
+      "title": "The triple neurectomy"
+    },
+    {
+      "t": 961,
+      "title": "Surgeons of the world, embark"
+    }
+  ],
+  "out-of-touch": [
+    {
+      "t": 0,
+      "title": "Why touch drew him to surgery"
+    },
+    {
+      "t": 55,
+      "title": "Surgical history in his hands"
+    },
+    {
+      "t": 115,
+      "title": "Tissue sense"
+    },
+    {
+      "t": 230,
+      "title": "The laparoscope replaces the hand"
+    },
+    {
+      "t": 276,
+      "title": "A love affair gone awry"
+    },
+    {
+      "t": 427,
+      "title": "She left me for a robot"
+    },
+    {
+      "t": 533,
+      "title": "Retired robots in assisted living"
+    }
+  ],
+  "the-robot-who-wipes-my-butt": [
+    {
+      "t": 0,
+      "title": "Meet Gerald"
+    },
+    {
+      "t": 33,
+      "title": "The hardest problem in robotics"
+    },
+    {
+      "t": 110,
+      "title": "The rest of the staff"
+    },
+    {
+      "t": 146,
+      "title": "The part nobody says out loud"
+    },
+    {
+      "t": 200,
+      "title": "Release notes"
+    }
+  ]
+}

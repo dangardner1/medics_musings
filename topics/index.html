@@ -58,6 +58,11 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/submit/">Submit</a>
+    </nav>
     <a class="btn btn-ghost" href="/#episodes">All episodes</a>
   </div>
 </header>
@@ -143,8 +148,23 @@
         <label class="sr-only" for="signup-email">Email address</label>
         <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
         <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
         <p class="signup-status" role="status" aria-live="polite"></p>
       </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
     </div>
   </section>
 </main>
@@ -154,6 +174,10 @@
     <a href="/#about">About</a>
     <a href="/#episodes">All episodes</a>
     <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
     <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
     <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
   </div>

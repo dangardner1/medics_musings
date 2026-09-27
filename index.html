@@ -1063,6 +1063,31 @@
     color: var(--pulse);
   }
   .signup-status.is-error { color: var(--accent); }
+  .signup-prefs { flex-basis: 100%; margin-top: 4px; }
+  .signup-prefs summary { cursor: pointer; font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; letter-spacing: 0.04em; color: var(--text-muted); }
+  .signup-prefs summary:hover { color: var(--accent); }
+  .prefs-note { margin: 8px 0 0; font-size: 0.85rem; color: var(--text-muted); }
+  .prefs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .pref { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border: 1px solid var(--border); border-radius: 3px; font-size: 0.88rem; cursor: pointer; }
+  .pref:has(input:checked) { border-color: var(--accent); color: var(--accent); }
+  .signup .pref input { flex: none; width: auto; padding: 0; margin: 0; accent-color: var(--accent); }
+  .newsletter-alt { margin: 14px 0 0; font-size: 0.9rem; color: var(--text-muted); }
+  .newsletter-alt a { color: var(--pulse); text-decoration: none; }
+  .newsletter-alt a:hover { color: var(--accent); }
+
+  /* ---- Beyond the episodes (explainers, teaching, submit) ---- */
+  .beyond { border-top: 1px solid var(--border); }
+  .beyond h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 680px; }
+  .beyond-sub { color: var(--text-muted); margin-top: 14px; max-width: 620px; }
+  .beyond-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+  .beyond-card { display: flex; flex-direction: column; gap: 10px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+  .beyond-card h3 { margin: 0; font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 800; font-size: 1.4rem; text-transform: uppercase; line-height: 1.05; }
+  .beyond-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
+  .beyond-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .beyond-card li a { color: var(--text); text-decoration: none; border-bottom: 1px dashed var(--pulse); font-size: 0.95rem; }
+  .beyond-card li a:hover { color: var(--accent); border-color: var(--accent); }
+  .beyond-card .chips-link { align-self: flex-start; margin-top: auto; }
+  @media (max-width: 860px) { .beyond-grid { grid-template-columns: 1fr; } }
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
@@ -1624,6 +1649,39 @@
     </div>
   </section>
 
+  <section class="beyond" id="beyond">
+    <div class="wrap">
+      <!-- build:beyond -->
+        <span class="eyebrow">Beyond the episodes</span>
+        <h2>The real medicine, the classroom, and your worst stories.</h2>
+        <p class="beyond-sub">The jokes land harder when you know what they're about. Look up the terms, teach with an episode, or send us the healthcare absurdity you lived through.</p>
+        <div class="beyond-grid">
+          <div class="beyond-card">
+            <h3>Explained</h3>
+            <p>Plain-English guides to the medicine our satire leans on.</p>
+            <ul>
+              <li><a href="explained/prior-authorization/">What is prior authorization?</a></li>
+              <li><a href="explained/ai-scribes/">AI scribes, explained</a></li>
+              <li><a href="explained/physician-burnout/">What is physician burnout?</a></li>
+              <li><a href="explained/inguinal-hernia/">What is an inguinal hernia?</a></li>
+            </ul>
+            <a class="chips-link" href="explained/">All 12 explainers →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Teach with it</h3>
+            <p>Free discussion guides for residency didactics, med school small groups and grand rounds: objectives, questions and a quick activity.</p>
+            <a class="chips-link" href="teach/">8 teaching guides →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Tell us yours</h3>
+            <p>Your worst prior authorization saga or hospital phone-tree nightmare could be the next episode. If we use it, we'll send you the link.</p>
+            <a class="chips-link" href="submit/">Submit a story or pitch a guest spot →</a>
+          </div>
+        </div>
+        <!-- /build:beyond -->
+    </div>
+  </section>
+
   <section class="listen">
     <div class="wrap">
       <span class="eyebrow">Discharge Instructions</span>
@@ -1667,8 +1725,25 @@
         <label class="sr-only" for="signup-email">Email address</label>
         <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
         <button type="submit" class="btn btn-primary">Subscribe</button>
+        <!-- build:signupPrefs -->
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <!-- /build:signupPrefs -->
         <p class="signup-status" role="status" aria-live="polite"></p>
       </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="subscribe/">RSS feeds for every topic and series →</a></p>
     </div>
   </section>
 
@@ -1689,7 +1764,7 @@
         <select id="fb-kind" name="kind">
           <option>Tell you you&#x27;re wrong</option>
           <option>Request a topic</option>
-          <option>Story tip</option>
+          <option>Story tip (or use the full form at /submit/)</option>
           <option>Sponsorship</option>
           <option>Something else</option>
         </select>
@@ -1709,6 +1784,10 @@
   <div class="wrap footer-nav">
     <a href="#about">About</a>
     <a href="topics/">Topics</a>
+    <a href="explained/">Explainers</a>
+    <a href="teach/">Teaching guides</a>
+    <a href="submit/">Submit a story</a>
+    <a href="subscribe/">Subscribe</a>
     <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
     <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
     <span>Leo A. Gordon, MD &amp; Dan Gardner, MD</span>
