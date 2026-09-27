@@ -1,0 +1,18 @@
+# Keep text files LF on every platform. Without this, a Windows checkout with
+# core.autocrlf=true rewrites committed LF line endings to CRLF; the site's
+# transcript-paragraph splitter (scripts/lib/page.mjs paragraphs()) only
+# recognizes blank lines as \n\n, so a CRLF checkout silently loses real
+# paragraph breaks in show-notes and transcript rendering.
+* text=auto eol=lf
+*.jpg -text
+*.jpeg -text
+*.png -text
+*.webp -text
+*.ico -text
+*.mp3 -text
+*.m4a -text
+*.wav -text
+*.mp4 -text
+*.woff -text
+*.woff2 -text
+*.ttf -text

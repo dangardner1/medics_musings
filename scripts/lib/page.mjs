@@ -37,6 +37,10 @@ export function snippet(text, max = 158) {
 // Spotify show notes sometimes arrive with paragraph breaks stripped
 // ("medicine.From the"), so split where a sentence runs into the next capital.
 export function paragraphs(text) {
+  // Normalize CRLF first: a Windows checkout (core.autocrlf) can turn a source
+  // file's blank lines into \r\n\r\n, which \n\n wouldn't match, silently
+  // falling through to the lossy sentence-boundary split below.
+  text = text.replace(/\r\n/g, '\n');
   const blocks = text.includes('\n\n') ? text.split(/\n\n+/) : text.split(/(?<=[a-z)][.!?])(?=[A-Z])/);
   return blocks.map((p) => p.replace(/\s+/g, ' ').trim()).filter(Boolean);
 }
