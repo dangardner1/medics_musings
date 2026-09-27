@@ -10,46 +10,21 @@
 // "Latest episodes"), drop its audio in audio/episodes/ if self-hosted, then
 //   node scripts/build-episodes.mjs
 // Optional transcript: transcripts/<slug>.txt (blank line between paragraphs).
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+// Optional chapters: data/chapters.json ({ slug: [{ t: seconds, title }] }).
+// Optional quotes: data/quotes.json ({ slug: [{ text, t }] }) with cards made by
+//   scripts/make-quote-cards.py in og/quotes/.
+// Also builds the explainer, teaching, submit, subscribe, embed, short-link and
+// feed pages (see build-extras.mjs).
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SITE = 'https://www.medicsmusings.com';
-const SHOW = {
-  spotify: 'https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj',
-  apple: 'https://podcasts.apple.com/us/podcast/medics-musings/id1780716650',
-  youtube: 'https://www.youtube.com/@MedicsMusings',
-  rss: 'https://anchor.fm/s/117844514/podcast/rss',
-  overcast: 'https://overcast.fm/itunes1780716650',
-  pocketcasts: 'https://pca.st/itunes/1780716650',
-  amazon: 'https://music.amazon.com/search/Medics%20Musings',
-};
-const INBOX = 'BialystockMDandBloomMD@Gmail.com';
-
-const esc = (s) => String(s)
-  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-  .replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
-const jsonLd = (data) => JSON.stringify(data, null, 1).replace(/</g, '\\u003c');
-const read = (p) => readFileSync(join(ROOT, p), 'utf8');
-const dateLabel = (iso) => new Date(iso + 'T12:00:00Z')
-  .toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
-
-// Trim to a search-snippet length on a word boundary.
-function snippet(text, max = 158) {
-  const t = text.replace(/\s+/g, ' ').replace(/…$/, '').trim();
-  if (t.length <= max) return t;
-  return t.slice(0, t.lastIndexOf(' ', max - 1)).replace(/[\s,;:.—-]+$/, '') + '…';
-}
-
-// Spotify show notes sometimes arrive with paragraph breaks stripped
-// ("medicine.From the"), so split where a sentence runs into the next capital.
-function paragraphs(text) {
-  const blocks = text.includes('\n\n') ? text.split(/\n\n+/) : text.split(/(?<=[a-z)][.!?])(?=[A-Z])/);
-  return blocks.map((p) => p.replace(/\s+/g, ' ').trim()).filter(Boolean);
-}
-const flat = (text) => text.replace(/\s+/g, ' ').trim();
+import { join } from 'node:path';
+import {
+  ROOT, SITE, SHOW, esc, jsonLd, read, readJson, dateLabel, snippet, paragraphs, flat, clock,
+  writePage, shareImage, pageHead, signupSection, footer, prefChoices,
+} from './lib/page.mjs';
+import {
+  buildExtras, embedSnippet, feedsFor, faqSection, faqLd, quoteCardPath, quoteShareRow, slugify,
+} from './build-extras.mjs';
 
 // ---- Data --------------------------------------------------------------------
 
@@ -65,6 +40,20 @@ for (const e of episodes) {
 }
 if (!bySlug.has(data.startHere)) throw new Error('startHere is not an episode slug');
 const startHere = bySlug.get(data.startHere);
+
+const isoSeconds = (iso) => {
+  const m = /PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/.exec(iso) || [];
+  return (+m[1] || 0) * 3600 + (+m[2] || 0) * 60 + (+m[3] || 0);
+};
+
+// Stable episode numbers, oldest = 1, for short links (medicsmusings.com/e/12).
+const num = new Map([...episodes].reverse().map((e, i) => [e.slug, i + 1]));
+const chapters = readJson('data/chapters.json', {});
+const quotes = readJson('data/quotes.json', {});
+const explainers = readJson('data/explainers.json', { explainers: [] }).explainers;
+const guides = readJson('data/teaching.json', { guides: [] }).guides;
+const eponyms = readJson('data/eponyms.json', { entries: [] }).entries;
+const timeline = readJson('data/timeline.json', { entries: [] }).entries;
 
 const partsOf = (series) => episodes.filter((e) => e.series === series).sort((a, b) => a.part - b.part);
 const partLabel = (e) => e.partLabel || `Part ${e.part}`;
@@ -174,6 +163,44 @@ function updateHomepage() {
     `<p class="start-here">New here? Start with <a href="episodes/${startHere.slug}/">${esc(startHere.title)}</a> (${startHere.minutes} min).</p>`);
   html = region(html, 'playLatest',
     `<button type="button" class="btn btn-latest" data-play-latest title="${esc(episodes[0].title)}">▶ Play the latest episode</button>`);
+  html = region(html, 'signupPrefs', `<details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            ${prefChoices(data)}
+          </div>
+        </details>`);
+  const featured = ['prior-authorization', 'ai-scribes', 'physician-burnout', 'inguinal-hernia']
+    .map((s) => explainers.find((x) => x.slug === s)).filter(Boolean);
+  html = region(html, 'beyond', `<span class="eyebrow">Beyond the episodes</span>
+        <h2>The real medicine, the classroom, and your worst stories.</h2>
+        <p class="beyond-sub">The jokes land harder when you know what they're about. Look up the terms, teach with an episode, or send us the healthcare absurdity you lived through.</p>
+        <div class="beyond-grid">
+          <div class="beyond-card">
+            <h3>Explained</h3>
+            <p>Plain-English guides to the medicine our satire leans on.</p>
+            <ul>
+              ${featured.map((x) => `<li><a href="explained/${x.slug}/">${esc(x.title)}</a></li>`).join('\n              ')}
+            </ul>
+            <a class="chips-link" href="explained/">All ${explainers.length} explainers →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Teach with it</h3>
+            <p>Free discussion guides for residency didactics, med school small groups and grand rounds: objectives, questions and a quick activity.</p>
+            <a class="chips-link" href="teach/">${guides.length} teaching guides →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Tell us yours</h3>
+            <p>Your worst prior authorization saga or hospital phone-tree nightmare could be the next episode. If we use it, we'll send you the link.</p>
+            <a class="chips-link" href="submit/">Submit a story or pitch a guest spot →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Names &amp; dates</h3>
+            <p>${eponyms.length} real eponyms from the episodes, and a timeline from Hippocrates to the robot in the room.</p>
+            <a class="chips-link" href="eponyms/">The eponym index →</a>
+            <a class="chips-link" href="timeline/">The history timeline →</a>
+          </div>
+        </div>`);
 
   html = html.replace(/(id="ep-toggle"[^>]*>)Show all \d+ episodes/, `$1Show all ${episodes.length} episodes`);
   html = html.replace(/'Show all \d+ episodes'/, `'Show all ' + document.querySelectorAll('#ep-grid .ep-card').length + ' episodes'`);
@@ -195,102 +222,7 @@ function updateHomepage() {
   writeFileSync(join(ROOT, 'index.html'), html);
 }
 
-// ---- Shared page pieces -----------------------------------------------------------
-
-// Per-episode share image made by scripts/make-share-images.py, else the show's.
-function shareImage(ep) {
-  if (ep && existsSync(join(ROOT, 'og', `${ep.slug}.jpg`))) {
-    return { url: `${SITE}/og/${ep.slug}.jpg`, alt: `${ep.title}: a Medics Musings episode` };
-  }
-  return { url: `${SITE}/og-image.jpg`, alt: 'Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD' };
-}
-
-function pageHead({ title, description, url, ogTitle, image, type = 'website', extraMeta = '', ld }) {
-  return `<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>${esc(title)}</title>
-<meta name="description" content="${esc(description)}">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="canonical" href="${url}">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
-<meta name="theme-color" content="#0b0f14">
-<meta property="og:type" content="${type}">
-<meta property="og:site_name" content="Medics Musings">
-<meta property="og:url" content="${url}">
-<meta property="og:title" content="${esc(ogTitle || title)}">
-<meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="${image.url}">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="${esc(image.alt)}">
-<meta property="og:locale" content="en_US">${extraMeta}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="${esc(ogTitle || title)}">
-<meta name="twitter:description" content="${esc(description)}">
-<meta name="twitter:image" content="${image.url}">
-<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="${SHOW.rss}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<!-- Google Analytics (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-HPV5BLPF1B');
-</script>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="stylesheet" href="/episodes/episode.css">
-<script type="application/ld+json">
-${jsonLd(ld)}
-</script>
-</head>
-<body>
-
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
-    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
-  </div>
-</header>
-`;
-}
-
 // ---- Episode pages -------------------------------------------------------------
-
-const signupSection = () => `  <section class="newsletter" id="newsletter">
-    <div class="wrap">
-      <span class="eyebrow">Refill Reminder</span>
-      <h2>New episodes, straight to your inbox.</h2>
-      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
-      <form class="signup" data-location="episode_page">
-        <label class="sr-only" for="signup-email">Email address</label>
-        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-        <p class="signup-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>`;
-
-const footer = () => `<footer>
-  <div class="wrap footer-nav">
-    <a href="/#about">About</a>
-    <a href="/#episodes">All episodes</a>
-    <a href="/topics/">Topics</a>
-    <a href="mailto:${INBOX}">Contact</a>
-    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
-  </div>
-  <div class="wrap">
-    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
-  </div>
-</footer>`;
 
 function neighbour(ep, label, rel) {
   if (!ep) return '<span></span>';
@@ -351,6 +283,60 @@ function episodePage(ep, newer, older) {
   const more = truncated && spotify
     ? `\n        <p><a class="ep-link" href="${spotify}" target="_blank" rel="noopener" data-platform="spotify">Full show notes on Spotify</a></p>` : '';
 
+  // Chapters jump the on-page player (episode.js); ?t= links work from anywhere.
+  const chs = (chapters[ep.slug] || []).slice().sort((a, b) => a.t - b.t);
+  const chapterList = chs.length ? `
+      <h2 id="chapters">Chapters</h2>
+      <ol class="chapters">
+        ${chs.map((c) => `<li><a href="?t=${Math.floor(c.t)}" data-seek="${Math.floor(c.t)}"><span class="ch-time">${clock(c.t)}</span> ${esc(c.title)}</a></li>`).join('\n        ')}
+      </ol>` : '';
+  const endSec = ep.audioDuration ? isoSeconds(ep.audioDuration) : ep.minutes * 60;
+  const clips = chs.map((c, i) => ({
+    '@type': 'Clip',
+    name: c.title,
+    startOffset: Math.floor(c.t),
+    endOffset: Math.floor(chs[i + 1]?.t ?? endSec),
+    url: `${ep.url}?t=${Math.floor(c.t)}`,
+  }));
+
+  // Quote cards (only quotes whose card image exists).
+  const qs = (quotes[ep.slug] || []).map((q, i) => ({ ...q, n: i + 1 }))
+    .filter((q) => existsSync(join(ROOT, quoteCardPath(ep.slug, q.n))));
+  const quoteSection = qs.length ? `
+      <h2 id="quotes">Share a quote</h2>
+      <div class="quotes">
+        ${qs.map((q) => `<figure class="quote">
+          <img src="/${quoteCardPath(ep.slug, q.n)}" width="1200" height="630" loading="lazy" alt="Quote card: “${esc(q.text)}”">
+          <figcaption>
+            <blockquote>“${esc(q.text)}”</blockquote>${q.t != null ? `
+            <a class="ep-link" href="?t=${Math.floor(q.t)}" data-seek="${Math.floor(q.t)}">Hear it at ${clock(q.t)}</a>` : ''}
+            ${quoteShareRow(ep, q, q.n)}
+          </figcaption>
+        </figure>`).join('\n        ')}
+      </div>` : '';
+
+  // The real medicine behind the episode, a teaching guide, and any names/dates it mentions.
+  const exps = explainers.filter((x) => x.episodes.includes(ep.slug));
+  const guide = guides.find((g) => g.slug === ep.slug);
+  const eponymHits = eponyms.filter((r) => r.episodes.some((e) => e.slug === ep.slug));
+  const timelineHits = timeline.filter((r) => r.episodes.some((e) => e.slug === ep.slug));
+  const learnMore = exps.length || guide || eponymHits.length || timelineHits.length ? `
+      <aside class="learn-more" aria-label="Learn more">${exps.length ? `
+        <p><span class="eyebrow">The real medicine</span> ${exps.map((x) => `<a href="/explained/${x.slug}/">${esc(x.title)}</a>`).join(' · ')}</p>` : ''}${guide ? `
+        <p><span class="eyebrow">Teaching this?</span> <a href="/teach/${ep.slug}/">Free discussion guide: ${esc(guide.theme.toLowerCase())}</a></p>` : ''}${eponymHits.length ? `
+        <p><span class="eyebrow">Names in this episode</span> ${eponymHits.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')}</p>` : ''}${timelineHits.length ? `
+        <p><span class="eyebrow">On the timeline</span> ${timelineHits.map((r) => `<a href="/timeline/#${r.slug}">${esc(r.yearLabel)}: ${esc(snippet(r.event, 60))}</a>`).join(' · ')}</p>` : ''}
+      </aside>` : '';
+
+  const embed = player ? `
+      <details class="embed-box">
+        <summary>Embed this episode on your site</summary>
+        <p>Paste this into a blog post, newsletter or course page. It shows a small player and links back here.</p>
+        <textarea readonly rows="4" aria-label="Embed code">${esc(embedSnippet(ep))}</textarea>
+        <p><button type="button" class="ctl" data-copy-embed>Copy embed code</button> <a class="ep-link" href="/embed/${ep.slug}/" target="_blank" rel="noopener">Preview</a></p>
+        <p class="short-link">Short link: <a href="/e/${num.get(ep.slug)}/">medicsmusings.com/e/${num.get(ep.slug)}</a> <button type="button" class="link-btn" data-copy="${SITE}/e/${num.get(ep.slug)}/">Copy</button></p>
+      </details>` : '';
+
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -372,6 +358,7 @@ function episodePage(ep, newer, older) {
         ],
         associatedMedia: mediaOf(ep),
         ...(transcript && { transcript: transcript.join('\n\n') }),
+        ...(clips.length && { hasPart: clips }),
       },
       {
         '@type': 'BreadcrumbList',
@@ -396,6 +383,7 @@ function episodePage(ep, newer, older) {
     extraMeta: `\n<meta property="article:published_time" content="${ep.date}">` + (ep.audio
       ? `\n<meta property="og:audio" content="${SITE}/${ep.audio}">\n<meta property="og:audio:type" content="audio/mpeg">` : ''),
     ld,
+    feeds: feedsFor(data, { topic: (ep.tags || [])[0], series: ep.series }),
   });
 
   return `${head}
@@ -425,13 +413,13 @@ function episodePage(ep, newer, older) {
         <a href="${SHOW.amazon}" target="_blank" rel="noopener" data-platform="amazon">Amazon Music</a> ·
         <a href="${SHOW.rss}" target="_blank" rel="noopener" data-platform="rss">RSS</a> ·
         <button type="button" class="link-btn" data-copy-rss>Copy RSS</button>
-      </p>
-      ${seriesPanel(ep)}
+      </p>${embed}
+      ${seriesPanel(ep)}${learnMore}${chapterList}
 
       <h2>Show notes</h2>
       <div class="notes">
         ${notes}${more}
-      </div>${transcript ? `
+      </div>${quoteSection}${transcript ? `
 
       <details class="transcript" id="transcript">
         <summary>Transcript</summary>
@@ -443,7 +431,7 @@ function episodePage(ep, newer, older) {
 
   ${upNextSection(next)}
 
-${signupSection()}
+${signupSection(data, { picked: ep.series ? [`series-${ep.series}`] : [] })}
 
   <nav class="wrap ep-nav" aria-label="More episodes">
     ${neighbour(newer, '← Newer episode', 'prev')}
@@ -462,6 +450,7 @@ ${footer()}
 <script src="/signup.js" defer></script>
 <script src="/player.js" defer></script>
 <script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
 <script src="/episodes/episode.js" defer></script>
 </body>
 </html>
@@ -496,7 +485,7 @@ function browseLinks(current) {
       </nav>`;
 }
 
-function collectionPage({ url, crumb, eyebrow, heading, intro, list, ordered = false, cta = '', current, pageTitle }) {
+function collectionPage({ url, crumb, eyebrow, heading, intro, list, ordered = false, cta = '', current, pageTitle, faq = [], feeds = [], picked = [] }) {
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -523,10 +512,12 @@ function collectionPage({ url, crumb, eyebrow, heading, intro, list, ordered = f
           ...(crumb ? [{ '@type': 'ListItem', position: 3, name: crumb, item: url }] : []),
         ],
       },
+      ...(faq.length ? [faqLd(faq)] : []),
     ],
   };
   const tag = ordered ? 'ol' : 'ul';
-  return `${pageHead({ title: pageTitle, description: snippet(intro), url, ogTitle: heading, image: shareImage(null), ld })}
+  const feed = feeds.at(-1);
+  return `${pageHead({ title: pageTitle, description: snippet(intro), url, ogTitle: heading, image: shareImage(null), ld, feeds })}
 <main>
   <section class="collection">
     <div class="wrap">
@@ -537,21 +528,49 @@ function collectionPage({ url, crumb, eyebrow, heading, intro, list, ordered = f
       ${cta}
       <${tag} class="coll-list">
         ${list.map((e) => collectionCard(e, { showPart: ordered })).join('\n        ')}
-      </${tag}>
+      </${tag}>${feed && picked.length ? `
+      <p class="feed-line">Follow just ${esc(heading)}: <a href="#newsletter">by email</a> · <a href="${feed.href}">RSS feed</a> <button type="button" class="link-btn" data-copy="${feed.href}">Copy feed URL</button></p>` : ''}
+      ${faqSection(faq)}
       ${browseLinks(current)}
     </div>
   </section>
 
-${signupSection()}
+${signupSection(data, { picked, heading: picked.length ? `${heading} episodes, straight to your inbox.` : undefined })}
 </main>
 
 ${footer()}
 
 <script src="/signup.js" defer></script>
 <script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
 </body>
 </html>
 `;
+}
+
+const NOT_ADVICE = 'No. Medics Musings is satire made for entertainment by two physicians. Episodes are AI-generated conversations; characters, stories and some “facts” are fictional. For medical questions, see your own clinician.';
+const titleList = (list) => list.map((e) => e.title).join('; ');
+const explainersFor = (pred) => explainers.filter(pred);
+
+function topicFaq(key, label, list) {
+  const pick = list.includes(startHere) ? startHere : list[0];
+  const faq = [
+    { q: `Which Medics Musings episodes are about ${label.toLowerCase()}?`, a: `${list.length} so far: ${titleList(list)}.` },
+    { q: `Where should I start with the ${label.toLowerCase()} episodes?`, a: `Try “${pick.title}” (${pick.minutes} min): ${snippet(pick.summary, 200)}` },
+  ];
+  const exps = explainersFor((x) => (x.topics || []).includes(key));
+  if (exps.length) faq.push({ q: 'Where can I read about the real medicine behind the jokes?', a: `Our plain-English explainers cover it: ${exps.map((x) => x.title).join('; ')}. Find them at medicsmusings.com/explained.` });
+  faq.push({ q: 'Is Medics Musings medical advice?', a: NOT_ADVICE });
+  return faq;
+}
+
+function seriesFaq(label, list) {
+  const total = list.reduce((n, e) => n + e.minutes, 0);
+  return [
+    { q: `In what order should I listen to ${label}?`, a: `In this order: ${list.map((e) => `${partLabel(e)}, “${e.title}”`).join('; ')}.` },
+    { q: `How long is ${label}?`, a: `${list.length} parts, about ${total} minutes in total.` },
+    { q: 'Is Medics Musings medical advice?', a: NOT_ADVICE },
+  ];
 }
 
 function topicPage(key) {
@@ -566,6 +585,9 @@ function topicPage(key) {
     list,
     current: key,
     pageTitle: `${label} Episodes — Medics Musings Medical Satire Podcast`,
+    faq: topicFaq(key, label, list),
+    feeds: feedsFor(data, { topic: key }),
+    picked: [key],
   });
 }
 
@@ -584,6 +606,9 @@ function seriesPage(key) {
     cta: `<p><a class="btn btn-primary" href="${first.path}?autoplay=1">▶ Start with ${esc(partLabel(first))}</a></p>`,
     current: key,
     pageTitle: `${label} (Series) — Medics Musings Medical Satire Podcast`,
+    faq: seriesFaq(label, list),
+    feeds: feedsFor(data, { series: key }),
+    picked: [`series-${key}`],
   });
 }
 
@@ -627,7 +652,7 @@ function hubPage() {
     </div>
   </section>
 
-${signupSection()}
+${signupSection(data)}
 </main>
 
 ${footer()}
@@ -649,13 +674,11 @@ episodes.forEach((ep, i) => {
   writeFileSync(join(dir, 'index.html'), episodePage(ep, episodes[i - 1], episodes[i + 1]));
 });
 
-const writePage = (rel, html) => {
-  mkdirSync(join(ROOT, rel), { recursive: true });
-  writeFileSync(join(ROOT, rel, 'index.html'), html);
-};
 writePage('topics', hubPage());
 for (const k of Object.keys(data.topics)) writePage(`topics/${k}`, topicPage(k));
 for (const k of Object.keys(data.series)) writePage(`series/${k}`, seriesPage(k));
+
+const extras = buildExtras({ data, episodes, bySlug, num, quotes, collectionCard });
 
 // Sitemap
 const newest = episodes[0].date;
@@ -672,6 +695,7 @@ const urls = [
     lastmod: partsOf(k).map((e) => e.date).sort().pop() || newest,
   })),
   ...episodes.map((e) => ({ loc: e.url, lastmod: e.date, changefreq: 'yearly', priority: '0.8' })),
+  ...extras.sitemap,
 ];
 writeFileSync(join(ROOT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -689,7 +713,7 @@ ${urls.map((u) => `  <url>
 const PRECACHE = [
   '/', '/tools.html', '/offline.html', '/manifest.webmanifest',
   '/episodes/episode.css', '/episodes/episode.js',
-  '/signup.js', '/feedback.js', '/player.js', '/discover.js', '/site.js',
+  '/signup.js', '/feedback.js', '/player.js', '/discover.js', '/site.js', '/extras.js',
   '/favicon.svg', '/icon-192.png', '/icon-512.png', '/channel-poster.webp', '/host-leo.jpg', '/host-dan.jpg',
 ].filter((u) => u === '/' || existsSync(join(ROOT, u.slice(1))));
 const hash = createHash('sha1');
@@ -697,6 +721,7 @@ for (const u of PRECACHE) hash.update(read(u === '/' ? 'index.html' : u.slice(1)
 for (const e of episodes) hash.update(read(`episodes/${e.slug}/index.html`));
 for (const k of Object.keys(data.topics)) hash.update(read(`topics/${k}/index.html`));
 for (const k of Object.keys(data.series)) hash.update(read(`series/${k}/index.html`));
+for (const rel of extras.pages) hash.update(read(`${rel}/index.html`));
 writeFileSync(join(ROOT, 'sw.js'), `// GENERATED by scripts/build-episodes.mjs. Do not edit.
 const VERSION = 'mm-${hash.digest('hex').slice(0, 10)}';
 const PRECACHE = ${JSON.stringify(PRECACHE, null, 2)};
@@ -750,4 +775,4 @@ self.addEventListener('fetch', (e) => {
 });
 `);
 
-console.log(`Built ${episodes.length} episode pages, ${Object.keys(data.topics).length} topic and ${Object.keys(data.series).length} series pages; updated index.html, sitemap.xml and sw.js.`);
+console.log(`Built ${episodes.length} episode pages, ${Object.keys(data.topics).length} topic and ${Object.keys(data.series).length} series pages, ${extras.explainers.length} explainers, ${extras.guides.length} teaching guides, embeds, short links and feeds; updated index.html, sitemap.xml and sw.js.`);

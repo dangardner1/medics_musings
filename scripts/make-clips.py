@@ -8,10 +8,17 @@ that highlight each word as it's spoken.
     $PY scripts/make-clips.py AUDIO SLUG                   # render the top 3
     $PY scripts/make-clips.py AUDIO SLUG --count 5
     $PY scripts/make-clips.py AUDIO SLUG --start 2:15 --length 40   # a moment you pick
+    $PY scripts/make-clips.py --all --audio-dir D:/podcast-audio     # every episode that has no clips yet
+
+With --all, each episode's audio is its self-hosted file (data/episodes.json "audio")
+or <audio-dir>/<slug>.mp3|m4a|wav; episodes without audio are skipped.
 
 Output goes to clips/<slug>/ (not committed): clip-1.mp4 ... plus clip-1.txt with
-the caption text and a ready-to-paste post. The first run transcribes the episode
-with word timings (a few minutes; cached in clips/<slug>/words.json).
+the caption text and ready-to-paste posts for YouTube Shorts, TikTok, Instagram
+Reels and LinkedIn, each linking back to the episode page (tagged per platform in
+analytics). The video itself shows the episode's short link, medicsmusings.com/e/<n>.
+The first run transcribes the episode with word timings (a few minutes; cached
+in clips/<slug>/words.json).
 
 Needs faster-whisper, Pillow and ffmpeg on the PATH.
 """
@@ -156,6 +163,12 @@ def parse_time(s):
 
 # ---- Artwork ------------------------------------------------------------------------------
 
+def episode_number(data, slug):
+    """Same numbering as build-episodes.mjs: oldest episode = 1."""
+    eps = sorted(enumerate(data["episodes"]), key=lambda x: (x[1]["date"], -x[0]))
+    return next(n + 1 for n, (_, e) in enumerate(eps) if e["slug"] == slug)
+
+
 def background(ep, data, path):
     img = Image.new("RGB", (W, H), b.BG)
     d = ImageDraw.Draw(img)
@@ -179,7 +192,7 @@ def background(ep, data, path):
     d.rounded_rectangle([60, 1440, W - 60, 1720], radius=18, fill=b.SURFACE, outline=b.BORDER, width=2)
 
     b.pulse_line(d, 90, 1812, 300)
-    d.text((420, 1790), "Full episode: medicsmusings.com", font=b.font(b.MONO, 30), fill=b.TEXT)
+    d.text((420, 1790), f"Full episode: medicsmusings.com/e/{episode_number(data, ep['slug'])}", font=b.font(b.MONO, 30), fill=b.TEXT)
     d.rectangle([0, H - 10, W, H], fill=b.ACCENT)
     img.save(path)
 
@@ -273,10 +286,75 @@ def render(audio, out_dir, name, bg_path, words, start, end):
     ass.unlink()
 
 
+def tagged(url, source, medium):
+    return f"{url}?utm_source={source}&utm_medium={medium}&utm_campaign=clip"
+
+
+def posts(ep, data, text, start, end):
+    """Ready-to-paste captions for each platform, all linking back to the episode."""
+    url = f"{SITE}/episodes/{ep['slug']}/"
+    short = f"medicsmusings.com/e/{episode_number(data, ep['slug'])}"
+    # The hook: a complete, short sentence, preferring the punchline (last) over the setup.
+    sents = [x for x in re.split(r"(?<=[.!?])\s", text) if x[:1].isupper() and 20 <= len(x) <= 100]
+    first = (sorted(sents, key=lambda x: ("!" in x or "?" in x, sents.index(x)))[-1] if sents
+             else re.split(r"(?<=[.!?])\s", text)[0])
+    hook = first if len(first) <= 90 else first[:87].rsplit(" ", 1)[0] + "…"
+    topic_tags = {"ai": "#AIinHealthcare", "surgery": "#surgery", "aging": "#aging", "mind": "#mentalhealth",
+                  "hospital": "#hospitallife", "culture": "#medicalhumor"}
+    tags = [topic_tags[t] for t in ep.get("tags", []) if t in topic_tags] + ["#medicine", "#doctors", "#satire", "#podcast", "#healthcare"]
+    credit = "Medics Musings, the medical satire podcast by Leo A. Gordon, MD and Dan Gardner, MD"
+    return f"""Episode: {ep['title']}
+Moment: {mmss(start)}-{mmss(end)}
+
+Captions:
+{text}
+
+=== YouTube Shorts ===
+Title: {hook} #Shorts
+Description:
+From "{ep['title']}" on {credit}.
+Full episode, transcript and show notes: {tagged(url, 'youtube', 'shorts')}
+{' '.join(tags[:5])}
+(Pin a comment with the link too, and set the Short's related video to the full episode if it's on YouTube.)
+
+=== TikTok ===
+{hook} From "{ep['title']}". Full episode: {short} (link in bio) {' '.join(tags[:5])} #medicaltiktok #doctorsoftiktok
+
+=== Instagram Reels ===
+{hook}
+
+From "{ep['title']}" on {credit}. Full episode at {short} (link in bio).
+{' '.join(tags)} #medicalhumor #doctorlife
+
+=== LinkedIn ===
+"{first}"
+
+A minute from "{ep['title']}" on {credit}. Satire, but you've met these people.
+
+Full episode: {tagged(url, 'linkedin', 'social')}
+{' '.join(tags[:4])}
+
+Link-in-bio URL for TikTok/Instagram: {tagged(url, 'bio', 'social')}
+"""
+
+
+def find_audio(ep, audio_dir):
+    if ep.get("audio") and (b.ROOT / ep["audio"]).exists():
+        return b.ROOT / ep["audio"]
+    if audio_dir:
+        for ext in (".mp3", ".m4a", ".wav"):
+            p = Path(audio_dir) / f"{ep['slug']}{ext}"
+            if p.exists():
+                return p
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("audio")
-    ap.add_argument("slug")
+    ap.add_argument("audio", nargs="?")
+    ap.add_argument("slug", nargs="?")
+    ap.add_argument("--all", action="store_true", help="make clips for every episode that has audio and no clips yet")
+    ap.add_argument("--audio-dir", help="folder of <slug>.mp3 files, for --all")
     ap.add_argument("--list", action="store_true", help="print the best moments and stop")
     ap.add_argument("--count", type=int, default=3)
     ap.add_argument("--start", help="start time of a moment you choose, e.g. 2:15")
@@ -285,14 +363,35 @@ def main():
     args = ap.parse_args()
 
     data = b.load_data()
+    if args.all:
+        done, skipped = 0, []
+        for e in data["episodes"]:
+            if list((b.ROOT / "clips" / e["slug"]).glob("clip-*.mp4")):
+                continue
+            audio = find_audio(e, args.audio_dir)
+            if not audio:
+                skipped.append(e["slug"])
+                continue
+            print(f"\n== {e['title']}")
+            make(args, data, e, str(audio))
+            done += 1
+        print(f"\nMade clips for {done} episode(s).")
+        if skipped:
+            print(f"No audio for {len(skipped)} (pass --audio-dir with <slug>.mp3 files): {', '.join(skipped)}")
+        return 0
+    if not (args.audio and args.slug):
+        ap.error("give AUDIO and SLUG, or --all")
     ep = next((e for e in data["episodes"] if e["slug"] == args.slug), None)
     if not ep:
         print(f"No episode with slug '{args.slug}' in data/episodes.json", file=sys.stderr)
         return 1
+    return make(args, data, ep, args.audio)
 
-    out_dir = b.ROOT / "clips" / args.slug
+
+def make(args, data, ep, audio):
+    out_dir = b.ROOT / "clips" / ep["slug"]
     out_dir.mkdir(parents=True, exist_ok=True)
-    words = merge_fragments(load_words(args.audio, out_dir / "words.json", args.model))
+    words = merge_fragments(load_words(audio, out_dir / "words.json", args.model))
 
     if args.start:
         t = parse_time(args.start)
@@ -311,23 +410,14 @@ def main():
 
     bg = out_dir / "background.png"
     background(ep, data, bg)
-    url = f"{SITE}/episodes/{ep['slug']}/"
     existing = len(list(out_dir.glob("clip-*.mp4")))
     for n, c in enumerate(chosen, start=existing + 1):
         name = f"clip-{n}"
         start = max(0, c["start"] - 0.15)
         end = c["end"] + 0.5
         print(f"Rendering {name}: {mmss(start)}-{mmss(end)} ({end - start:.0f}s)...", flush=True)
-        render(args.audio, out_dir, name, bg, words[c["a"]:c["z"] + 1], start, end)
-        first = re.split(r"(?<=[.!?])\s", c["text"])[0]
-        (out_dir / f"{name}.txt").write_text(
-            f"Episode: {ep['title']}\nMoment: {mmss(start)}-{mmss(end)}\n\n"
-            f"Captions:\n{c['text']}\n\n"
-            f"Suggested post:\n\"{first}\"\n\nFrom \"{ep['title']}\" on Medics Musings, the medical satire podcast "
-            f"by Leo A. Gordon, MD and Dan Gardner, MD. Full episode: {url}\n\n"
-            f"#podcast #medicine #satire #healthcare #doctors\n",
-            encoding="utf-8",
-        )
+        render(audio, out_dir, name, bg, words[c["a"]:c["z"] + 1], start, end)
+        (out_dir / f"{name}.txt").write_text(posts(ep, data, c["text"], start, end), encoding="utf-8")
     print(f"Done: {out_dir}")
     return 0
 

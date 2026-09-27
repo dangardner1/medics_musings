@@ -25,6 +25,8 @@
 <meta name="twitter:description" content="Artificial Intelligence is revolutionizing medicine, offering unprecedented accuracy in diagnosis and personalized treatment plans. But can it replace the…">
 <meta name="twitter:image" content="https://www.medicsmusings.com/og/algorithms-meet-empathy-the-future-of-patient-care.jpg">
 <link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings: all episodes (site feed)" href="https://www.medicsmusings.com/feeds/episodes.xml">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings: AI &amp; Tech episodes" href="https://www.medicsmusings.com/feeds/topics/ai.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -111,6 +113,13 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/submit/">Submit</a>
+    </nav>
     <a class="btn btn-ghost" href="/#episodes">All episodes</a>
   </div>
 </header>
@@ -144,7 +153,18 @@
         <a href="https://anchor.fm/s/117844514/podcast/rss" target="_blank" rel="noopener" data-platform="rss">RSS</a> ·
         <button type="button" class="link-btn" data-copy-rss>Copy RSS</button>
       </p>
+      <details class="embed-box">
+        <summary>Embed this episode on your site</summary>
+        <p>Paste this into a blog post, newsletter or course page. It shows a small player and links back here.</p>
+        <textarea readonly rows="4" aria-label="Embed code">&lt;iframe src=&quot;https://www.medicsmusings.com/embed/algorithms-meet-empathy-the-future-of-patient-care/&quot; title=&quot;Algorithms Meet Empathy: The Future of Patient Care — Medics Musings&quot; width=&quot;100%&quot; height=&quot;250&quot; style=&quot;border:0;border-radius:12px;max-width:640px&quot; loading=&quot;lazy&quot; allow=&quot;autoplay; encrypted-media&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.medicsmusings.com/episodes/algorithms-meet-empathy-the-future-of-patient-care/&quot;&gt;Algorithms Meet Empathy: The Future of Patient Care&lt;/a&gt; on &lt;a href=&quot;https://www.medicsmusings.com/&quot;&gt;Medics Musings&lt;/a&gt;, the medical satire podcast.&lt;/p&gt;</textarea>
+        <p><button type="button" class="ctl" data-copy-embed>Copy embed code</button> <a class="ep-link" href="/embed/algorithms-meet-empathy-the-future-of-patient-care/" target="_blank" rel="noopener">Preview</a></p>
+        <p class="short-link">Short link: <a href="/e/4/">medicsmusings.com/e/4</a> <button type="button" class="link-btn" data-copy="https://www.medicsmusings.com/e/4/">Copy</button></p>
+      </details>
       
+      <aside class="learn-more" aria-label="Learn more">
+        <p><span class="eyebrow">The real medicine</span> <a href="/explained/ai-scribes/">AI scribes, explained</a> · <a href="/explained/ai-chatbots-medical-advice/">Can you trust an AI chatbot with medical questions?</a></p>
+      </aside>
 
       <h2>Show notes</h2>
       <div class="notes">
@@ -176,8 +196,23 @@
         <label class="sr-only" for="signup-email">Email address</label>
         <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
         <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
         <p class="signup-status" role="status" aria-live="polite"></p>
       </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
     </div>
   </section>
 
@@ -204,6 +239,12 @@
     <a href="/#about">About</a>
     <a href="/#episodes">All episodes</a>
     <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
     <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
     <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
   </div>
@@ -215,6 +256,7 @@
 <script src="/signup.js" defer></script>
 <script src="/player.js" defer></script>
 <script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
 <script src="/episodes/episode.js" defer></script>
 </body>
 </html>

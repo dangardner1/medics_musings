@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medics Musings: AI &amp; Tech</title>
+    <link>https://www.medicsmusings.com/topics/ai/</link>
+    <atom:link href="https://www.medicsmusings.com/feeds/topics/ai.xml" rel="self" type="application/rss+xml"/>
+    <description>Satirical episodes about artificial intelligence in medicine: chatbots with opinions, algorithms that promise empathy, robots taking over the most intimate jobs, and doctors trying to keep up.</description>
+    <language>en-us</language>
+    <image><url>https://www.medicsmusings.com/icon-512.png</url><title>Medics Musings: AI &amp; Tech</title><link>https://www.medicsmusings.com/topics/ai/</link></image>
+    <lastBuildDate>Sat, 26 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Out of Touch</title>
+      <link>https://www.medicsmusings.com/episodes/out-of-touch/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/out-of-touch/</guid>
+      <pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Dr. Leo A. Gordon’s essay on the vanishing sense of touch in modern surgery, from the “tissue sense” of open operations to laparoscopy and robotic consoles. (10 min)</description>
+      <enclosure url="https://www.medicsmusings.com/audio/episodes/out-of-touch.mp3" length="9611850" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>The Robot Who Wipes My Butt</title>
+      <link>https://www.medicsmusings.com/episodes/the-robot-who-wipes-my-butt/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/the-robot-who-wipes-my-butt/</guid>
+      <pubDate>Fri, 25 Sep 2026 12:00:00 GMT</pubDate>
+      <description>An 84-year-old meets Gerald, the hygiene robot with a 4.8-star rating, and learns that shame doesn't transfer to a machine. A funny, tender look at robots caring for seniors, and what they must never replace. (4 min)</description>
+      <enclosure url="https://www.medicsmusings.com/audio/episodes/the-robot-who-wipes-my-butt.mp3" length="3795834" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Out of Touch: From Healing Touch to Digital Distance</title>
+      <link>https://www.medicsmusings.com/episodes/out-of-touch-from-healing-touch-to-digital-distance/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/out-of-touch-from-healing-touch-to-digital-distance/</guid>
+      <pubDate>Mon, 03 Feb 2025 12:00:00 GMT</pubDate>
+      <description>Written and read by Leo A. Gordon, MD, The American Bard of Medicine. Join a veteran surgeon's poignant and humorous journey through the evolution of modern surgery, where the intimate art of healing… (12 min)</description>
+    </item>
+    <item>
+      <title>Bedside Banter with Algo Chats-a-Lot III</title>
+      <link>https://www.medicsmusings.com/episodes/bedside-banter-with-algo-chats-a-lot-iii/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/bedside-banter-with-algo-chats-a-lot-iii/</guid>
+      <pubDate>Thu, 02 Jan 2025 12:00:00 GMT</pubDate>
+      <description>Witty conversation with my AI Medical chatbot, Algo Chats-A-Lot,III, who offers opinions:   What to prescribe for a computer virus.  His version of "take two bytes and call me in the morning" Medical… (7 min)</description>
+    </item>
+    <item>
+      <title>AI Rounds: When Your Chatbot Assistant Bites Back!</title>
+      <link>https://www.medicsmusings.com/episodes/ai-rounds-when-your-chatbot-assistant-bites-back/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/ai-rounds-when-your-chatbot-assistant-bites-back/</guid>
+      <pubDate>Fri, 06 Dec 2024 12:00:00 GMT</pubDate>
+      <description>Ever wondered what happens when an old-school doctor collides with cutting-edge AI? Join Dr. Davey Dinosaur (yes, that's what I'm calling myself now) as I navigate the fast-paced challenges of modern… (3 min)</description>
+    </item>
+    <item>
+      <title>Algorithms Meet Empathy: The Future of Patient Care</title>
+      <link>https://www.medicsmusings.com/episodes/algorithms-meet-empathy-the-future-of-patient-care/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/algorithms-meet-empathy-the-future-of-patient-care/</guid>
+      <pubDate>Sat, 23 Nov 2024 12:00:00 GMT</pubDate>
+      <description>Artificial Intelligence is revolutionizing medicine, offering unprecedented accuracy in diagnosis and personalized treatment plans. But can it replace the human element? In this video, we explore how… (7 min)</description>
+    </item>
+    <item>
+      <title>Can Patients and Doctors Trust AI in Healthcare?</title>
+      <link>https://www.medicsmusings.com/episodes/can-patients-and-doctors-trust-ai-in-healthcare/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/can-patients-and-doctors-trust-ai-in-healthcare/</guid>
+      <pubDate>Sat, 23 Nov 2024 12:00:00 GMT</pubDate>
+      <description>Can doctors and patients come to trust in and collaborate with AI in forming diagnoses and treatments?    (Created with the help of Perplexity Pro AI) (11 min)</description>
+    </item>
+    <item>
+      <title>The Digital Doctor</title>
+      <link>https://www.medicsmusings.com/episodes/the-digital-doctor/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/episodes/the-digital-doctor/</guid>
+      <pubDate>Wed, 20 Nov 2024 12:00:00 GMT</pubDate>
+      <description>Satirical take on AI in Healthcare. Is AI in Healthcare accurate enough to keep you safe and healthy? Is it an aid or impediment? Or both? (Created with the help of Perplexity Pro AI) (3 min)</description>
+    </item>
+  </channel>
+</rss>

@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'dry-run = print only, draft = create in Mailchimp without sending, test = email one address, send = email the whole audience'
+        description: 'dry-run = print only, draft = create in Mailchimp without sending, test = email one address, send = email the audience, setup-topics = create the TOPICS field for topic choices (run once)'
         type: choice
         default: dry-run
-        options: [dry-run, draft, test, send, auth-check]
+        options: [dry-run, draft, test, send, auth-check, setup-topics]
       force_latest:
         description: 'Use the newest episode even if it was already handled (for previews and tests)'
         type: boolean
