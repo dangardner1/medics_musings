@@ -66,6 +66,9 @@ function explainerPage(x, ctx) {
   const url = `${EXPLAINED_URL}${x.slug}/`;
   const eps = x.episodes.map((s) => ctx.bySlug.get(s)).filter(Boolean);
   const related = (x.related || []).map((s) => ctx.explainers.find((e) => e.slug === s)).filter(Boolean);
+  // Eponyms named in the same episodes this explainer links to, not just a shared topic
+  // (most eponyms share the "surgery" topic, which would otherwise match almost all of them).
+  const relatedEponyms = (ctx.eponyms || []).filter((r) => r.episodes.some((e) => x.episodes.includes(e.slug)));
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -107,7 +110,8 @@ function explainerPage(x, ctx) {
           ${eps.map((e) => ctx.collectionCard(e)).join('\n          ')}
         </ul>
       </section>${related.length ? `
-      <p class="related">Related: ${related.map((r) => `<a href="/explained/${r.slug}/">${esc(r.title)}</a>`).join(' · ')}</p>` : ''}
+      <p class="related">Related: ${related.map((r) => `<a href="/explained/${r.slug}/">${esc(r.title)}</a>`).join(' · ')}</p>` : ''}${relatedEponyms.length ? `
+      <p class="related">Related names: ${relatedEponyms.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')} <a href="/eponyms/">(full index)</a></p>` : ''}
       <p class="satire-note"><b>Not medical advice.</b> This page is general information, written to explain terms our satire leans on; it isn't a substitute for advice from your own clinician. In an emergency, call 911.</p>
     </div>
   </article>
@@ -154,6 +158,154 @@ function explainedHub(ctx) {
   </section>
 
 ${pageEnd(ctx.data)}`;
+}
+
+// ---- Eponyms and timeline (sortable, filterable data tables) -----------------------
+
+const EPONYMS_URL = `${SITE}/eponyms/`;
+const TIMELINE_URL = `${SITE}/timeline/`;
+export const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+// A row's "hear it" links: one per episode it's tied to, timestamped when we have one.
+function heardLinks(rows, ctx) {
+  return rows.map((r) => {
+    const ep = ctx.bySlug.get(r.slug);
+    if (!ep) return '';
+    const href = r.t != null ? `${ep.path}?t=${Math.floor(r.t)}` : ep.path;
+    const label = r.t != null ? `${esc(ep.title)} · ${clock(r.t)}` : esc(ep.title);
+    return `<a class="hear-link" href="${href}">${label}</a>`;
+  }).filter(Boolean).join(' ');
+}
+
+function tableControls(id, fields, searchLabel) {
+  const chips = fields.map((f) => `<button type="button" class="chip" data-field-filter="${esc(f)}">${esc(f)}</button>`).join('\n          ');
+  return `<div class="table-controls">
+        <label class="sr-only" for="${id}-search">${esc(searchLabel)}</label>
+        <input id="${id}-search" type="search" data-filter-table="${id}" placeholder="${esc(searchLabel)}">
+        <div class="chips" role="group" aria-label="Filter by category">
+          <button type="button" class="chip is-active" data-field-filter="">All</button>
+          ${chips}
+        </div>
+      </div>`;
+}
+
+function eponymsPage(ctx) {
+  const rows = ctx.eponyms;
+  const fields = [...new Set(rows.map((r) => r.field))].sort();
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'DefinedTermSet',
+        '@id': `${EPONYMS_URL}#terms`,
+        name: 'Medics Musings eponym index',
+        description: ctx.eponymData.intro,
+        url: EPONYMS_URL,
+        hasDefinedTerm: rows.map((r) => ({
+          '@type': 'DefinedTerm',
+          name: r.name,
+          description: r.what,
+          url: `${EPONYMS_URL}#${slugify(r.name)}`,
+        })),
+      },
+      breadcrumbLd([['Eponym index', EPONYMS_URL]]),
+    ],
+  };
+  const rowsHtml = rows.map((r) => `<tr id="${slugify(r.name)}" data-field="${esc(r.field)}" data-search="${esc(`${r.name} ${r.person} ${r.what}`.toLowerCase())}">
+          <td class="col-name"><a href="#${slugify(r.name)}">${esc(r.name)}</a><span class="row-field">${esc(r.field)}</span></td>
+          <td class="col-person">${esc(r.person)}<span class="row-years">${esc(r.years)}</span></td>
+          <td class="col-what">${esc(r.what)}</td>
+          <td class="col-hear">${heardLinks(r.episodes, ctx)}</td>
+        </tr>`).join('\n        ');
+  return `${pageHead({ title: 'Medical Eponym Index: Who’s Behind the Names | Medics Musings', description: snippet(ctx.eponymData.intro), url: EPONYMS_URL, ogTitle: 'The eponym index', image: shareImage(null), ld })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['Eponym index']])}
+      <span class="eyebrow">Reference · ${rows.length} names</span>
+      <h1>Who's behind the name?</h1>
+      <p class="coll-intro">${esc(ctx.eponymData.intro)}</p>
+      ${tableControls('eponyms', fields, 'Search names, people or terms…')}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="eponyms">
+          <thead>
+            <tr>
+              <th data-sort="text">Name</th>
+              <th data-sort="text">Person</th>
+              <th class="no-sort">What it means</th>
+              <th class="no-sort">Hear it</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rowsHtml}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No names match that search.</p>
+      <p class="related">See also: <a href="/timeline/">The surgery history timeline</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+function timelinePage(ctx) {
+  const rows = [...ctx.timeline].sort((a, b) => a.year - b.year);
+  const fields = [...new Set(rows.map((r) => r.field))].sort();
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ItemList',
+        '@id': `${TIMELINE_URL}#list`,
+        name: 'Surgery and medicine history timeline',
+        description: ctx.timelineData.intro,
+        url: TIMELINE_URL,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        numberOfItems: rows.length,
+        itemListElement: rows.map((r, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: { '@type': 'Event', name: r.event, startDate: String(r.year), url: `${TIMELINE_URL}#${r.slug}` },
+        })),
+      },
+      breadcrumbLd([['History timeline', TIMELINE_URL]]),
+    ],
+  };
+  const rowsHtml = rows.map((r) => `<tr id="${r.slug}" data-field="${esc(r.field)}" data-year="${r.year}" data-search="${esc(`${r.yearLabel} ${r.event}`.toLowerCase())}">
+          <td class="col-year"><a href="#${r.slug}">${esc(r.yearLabel)}</a></td>
+          <td class="col-what">${esc(r.event)}<span class="row-field">${esc(r.field)}</span></td>
+          <td class="col-hear">${heardLinks(r.episodes, ctx)}</td>
+        </tr>`).join('\n        ');
+  return `${pageHead({ title: 'A Timeline of Surgery and Medicine History | Medics Musings', description: snippet(ctx.timelineData.intro), url: TIMELINE_URL, ogTitle: 'The surgery history timeline', image: shareImage(null), ld })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['History timeline']])}
+      <span class="eyebrow">Reference · ${rows.length} milestones</span>
+      <h1>From Hippocrates to the robot</h1>
+      <p class="coll-intro">${esc(ctx.timelineData.intro)}</p>
+      ${tableControls('timeline', fields, 'Search years or events…')}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="timeline">
+          <thead>
+            <tr>
+              <th data-sort="number" class="is-sorted" data-dir="asc">Year</th>
+              <th class="no-sort">What happened</th>
+              <th class="no-sort">Hear it</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rowsHtml}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No events match that search.</p>
+      <p class="related">See also: <a href="/eponyms/">The eponym index</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 }
 
 // ---- Teaching guides ---------------------------------------------------------------
@@ -640,18 +792,26 @@ ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 export function buildExtras(ctx) {
   const explainedData = readJson('data/explainers.json', { intro: '', explainers: [] });
   const teachData = readJson('data/teaching.json', { intro: '', note: '', guides: [] });
+  const eponymData = readJson('data/eponyms.json', { intro: '', entries: [] });
+  const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
   const full = {
     ...ctx,
     explainedData,
     explainers: explainedData.explainers,
     teachData,
     guides: teachData.guides.filter((g) => ctx.bySlug.has(g.slug)),
+    eponymData,
+    eponyms: eponymData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))),
+    timelineData,
+    timeline: timelineData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))),
   };
 
   writePage('explained', explainedHub(full));
   for (const x of full.explainers) writePage(`explained/${x.slug}`, explainerPage(x, full));
   writePage('teach', teachHub(full));
   for (const g of full.guides) writePage(`teach/${g.slug}`, teachPage(g, full));
+  writePage('eponyms', eponymsPage(full));
+  writePage('timeline', timelinePage(full));
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -668,14 +828,18 @@ export function buildExtras(ctx) {
   return {
     explainers: full.explainers,
     guides: full.guides,
+    eponyms: full.eponyms,
+    timeline: full.timeline,
     sitemap: [
       { loc: EXPLAINED_URL, lastmod: newest, changefreq: 'monthly', priority: '0.8' },
       ...full.explainers.map((x) => ({ loc: `${EXPLAINED_URL}${x.slug}/`, lastmod: newest, changefreq: 'monthly', priority: '0.8' })),
       { loc: TEACH_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       ...full.guides.map((g) => ({ loc: `${TEACH_URL}${g.slug}/`, lastmod: newest, changefreq: 'monthly', priority: '0.7' })),
+      { loc: EPONYMS_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
+      { loc: TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'timeline', 'submit', 'subscribe'],
   };
 }

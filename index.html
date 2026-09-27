@@ -1079,7 +1079,8 @@
   .beyond { border-top: 1px solid var(--border); }
   .beyond h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 680px; }
   .beyond-sub { color: var(--text-muted); margin-top: 14px; max-width: 620px; }
-  .beyond-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+  .beyond-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+  .beyond-card .chips-link + .chips-link { margin-left: 12px; }
   .beyond-card { display: flex; flex-direction: column; gap: 10px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
   .beyond-card h3 { margin: 0; font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 800; font-size: 1.4rem; text-transform: uppercase; line-height: 1.05; }
   .beyond-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
@@ -1676,6 +1677,12 @@
             <h3>Tell us yours</h3>
             <p>Your worst prior authorization saga or hospital phone-tree nightmare could be the next episode. If we use it, we'll send you the link.</p>
             <a class="chips-link" href="submit/">Submit a story or pitch a guest spot →</a>
+          </div>
+          <div class="beyond-card">
+            <h3>Names &amp; dates</h3>
+            <p>25 real eponyms from the episodes, and a timeline from Hippocrates to the robot in the room.</p>
+            <a class="chips-link" href="eponyms/">The eponym index →</a>
+            <a class="chips-link" href="timeline/">The history timeline →</a>
           </div>
         </div>
         <!-- /build:beyond -->

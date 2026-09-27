@@ -23,7 +23,7 @@ import {
   writePage, shareImage, pageHead, signupSection, footer, prefChoices,
 } from './lib/page.mjs';
 import {
-  buildExtras, embedSnippet, feedsFor, faqSection, faqLd, quoteCardPath, quoteShareRow,
+  buildExtras, embedSnippet, feedsFor, faqSection, faqLd, quoteCardPath, quoteShareRow, slugify,
 } from './build-extras.mjs';
 
 // ---- Data --------------------------------------------------------------------
@@ -52,6 +52,8 @@ const chapters = readJson('data/chapters.json', {});
 const quotes = readJson('data/quotes.json', {});
 const explainers = readJson('data/explainers.json', { explainers: [] }).explainers;
 const guides = readJson('data/teaching.json', { guides: [] }).guides;
+const eponyms = readJson('data/eponyms.json', { entries: [] }).entries;
+const timeline = readJson('data/timeline.json', { entries: [] }).entries;
 
 const partsOf = (series) => episodes.filter((e) => e.series === series).sort((a, b) => a.part - b.part);
 const partLabel = (e) => e.partLabel || `Part ${e.part}`;
@@ -192,6 +194,12 @@ function updateHomepage() {
             <p>Your worst prior authorization saga or hospital phone-tree nightmare could be the next episode. If we use it, we'll send you the link.</p>
             <a class="chips-link" href="submit/">Submit a story or pitch a guest spot →</a>
           </div>
+          <div class="beyond-card">
+            <h3>Names &amp; dates</h3>
+            <p>${eponyms.length} real eponyms from the episodes, and a timeline from Hippocrates to the robot in the room.</p>
+            <a class="chips-link" href="eponyms/">The eponym index →</a>
+            <a class="chips-link" href="timeline/">The history timeline →</a>
+          </div>
         </div>`);
 
   html = html.replace(/(id="ep-toggle"[^>]*>)Show all \d+ episodes/, `$1Show all ${episodes.length} episodes`);
@@ -307,13 +315,17 @@ function episodePage(ep, newer, older) {
         </figure>`).join('\n        ')}
       </div>` : '';
 
-  // The real medicine behind the episode, and a teaching guide if there is one.
+  // The real medicine behind the episode, a teaching guide, and any names/dates it mentions.
   const exps = explainers.filter((x) => x.episodes.includes(ep.slug));
   const guide = guides.find((g) => g.slug === ep.slug);
-  const learnMore = exps.length || guide ? `
+  const eponymHits = eponyms.filter((r) => r.episodes.some((e) => e.slug === ep.slug));
+  const timelineHits = timeline.filter((r) => r.episodes.some((e) => e.slug === ep.slug));
+  const learnMore = exps.length || guide || eponymHits.length || timelineHits.length ? `
       <aside class="learn-more" aria-label="Learn more">${exps.length ? `
         <p><span class="eyebrow">The real medicine</span> ${exps.map((x) => `<a href="/explained/${x.slug}/">${esc(x.title)}</a>`).join(' · ')}</p>` : ''}${guide ? `
-        <p><span class="eyebrow">Teaching this?</span> <a href="/teach/${ep.slug}/">Free discussion guide: ${esc(guide.theme.toLowerCase())}</a></p>` : ''}
+        <p><span class="eyebrow">Teaching this?</span> <a href="/teach/${ep.slug}/">Free discussion guide: ${esc(guide.theme.toLowerCase())}</a></p>` : ''}${eponymHits.length ? `
+        <p><span class="eyebrow">Names in this episode</span> ${eponymHits.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')}</p>` : ''}${timelineHits.length ? `
+        <p><span class="eyebrow">On the timeline</span> ${timelineHits.map((r) => `<a href="/timeline/#${r.slug}">${esc(r.yearLabel)}: ${esc(snippet(r.event, 60))}</a>`).join(' · ')}</p>` : ''}
       </aside>` : '';
 
   const embed = player ? `

@@ -1,0 +1,149 @@
+{
+  "intro": "A timeline of the real surgical and medical history behind the show's satire, from ancient Greece to the robot in the operating room. Every entry links to the episode where it comes up.",
+  "entries": [
+    {
+      "slug": "hippocrates",
+      "year": -460,
+      "yearLabel": "c. 460 BC",
+      "event": "Hippocrates of Kos is traditionally dated to this era; the ethical tradition of the Hippocratic Oath still bears his name.",
+      "field": "ancient",
+      "episodes": [{ "slug": "out-of-touch", "t": 464 }]
+    },
+    {
+      "slug": "hesselbach-1806",
+      "year": 1806,
+      "yearLabel": "1806",
+      "event": "Franz Kaspar Hesselbach describes the triangular gap in the abdominal wall through which a direct inguinal hernia emerges.",
+      "field": "hernia",
+      "episodes": [{ "slug": "pax-inguinalis-part-2", "t": 294 }]
+    },
+    {
+      "slug": "lembert-1826",
+      "year": 1826,
+      "yearLabel": "1826",
+      "event": "Antoine Lembert describes the inverting suture technique still used to close the bowel.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "out-of-touch", "t": 183 }]
+    },
+    {
+      "slug": "semmelweis-1847",
+      "year": 1847,
+      "yearLabel": "1847",
+      "event": "Ignaz Semmelweis links handwashing between the autopsy room and the delivery room to a sharp drop in deaths from childbed fever.",
+      "field": "hospital",
+      "episodes": [{ "slug": "fourth-and-gall-play-by-play-coverage", "t": 1044 }]
+    },
+    {
+      "slug": "bobbs-1867",
+      "year": 1867,
+      "yearLabel": "1867",
+      "event": "John Stough Bobbs performs the first cholecystotomy, opening the gallbladder to remove a stone, in Indianapolis.",
+      "field": "biliary",
+      "episodes": [{ "slug": "out-of-touch", "t": 60 }]
+    },
+    {
+      "slug": "billroth-1881",
+      "year": 1881,
+      "yearLabel": "1881",
+      "event": "Theodor Billroth performs the first successful stomach removal for cancer; the reconstruction techniques that follow it are still called Billroth I and II.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "fourth-and-gall-play-by-play-coverage", "t": 191 }]
+    },
+    {
+      "slug": "heber-fitz-1886",
+      "year": 1886,
+      "yearLabel": "1886",
+      "event": "Reginald Heber Fitz coins the term \"appendicitis\" and argues for its early surgical removal.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "out-of-touch", "t": 87 }]
+    },
+    {
+      "slug": "bassini-1887",
+      "year": 1887,
+      "yearLabel": "1887",
+      "event": "Edoardo Bassini publishes his technique for repairing inguinal hernias, the standard repair for most of the next century.",
+      "field": "hernia",
+      "episodes": [{ "slug": "pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the", "t": 113 }]
+    },
+    {
+      "slug": "mcburney-1889",
+      "year": 1889,
+      "yearLabel": "1889",
+      "event": "Charles McBurney describes the point of maximal tenderness in appendicitis that bears his name.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "out-of-touch", "t": 85 }]
+    },
+    {
+      "slug": "connell-1892",
+      "year": 1892,
+      "yearLabel": "1892",
+      "event": "F. G. Connell describes the all-layer inverting suture used to close the bowel.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "out-of-touch", "t": 183 }]
+    },
+    {
+      "slug": "freud-1905",
+      "year": 1905,
+      "yearLabel": "1905",
+      "event": "Sigmund Freud publishes Jokes and Their Relation to the Unconscious, exploring why we laugh.",
+      "field": "mind",
+      "episodes": [{ "slug": "from-burnout-to-punchlines-freuds-solution", "t": 64 }]
+    },
+    {
+      "slug": "kocher-1909",
+      "year": 1909,
+      "yearLabel": "1909",
+      "event": "Emil Theodor Kocher wins the Nobel Prize in Physiology or Medicine for his work on the thyroid gland; his name now travels with the Kocher maneuver for mobilizing the duodenum.",
+      "field": "biliary",
+      "episodes": [{ "slug": "fourth-and-gall-play-by-play-coverage", "t": 819 }]
+    },
+    {
+      "slug": "barany-1914",
+      "year": 1914,
+      "yearLabel": "1914",
+      "event": "Robert Bárány wins the Nobel Prize in Physiology or Medicine for working out how the inner ear's balance system reacts to hot and cold water, the basis of the caloric reflex test.",
+      "field": "neurology",
+      "episodes": [{ "slug": "the-iceman-cometh-and-the-patient-goeth", "t": 278 }]
+    },
+    {
+      "slug": "mirizzi-1948",
+      "year": 1948,
+      "yearLabel": "1948",
+      "event": "Pablo Luis Mirizzi describes the syndrome, now named for him, in which a gallstone presses on the main bile duct.",
+      "field": "biliary",
+      "episodes": [{ "slug": "the-presidential-address-of-the-international-brotherhood", "t": 318 }]
+    },
+    {
+      "slug": "fogarty-1961",
+      "year": 1961,
+      "yearLabel": "1961",
+      "event": "Thomas Fogarty invents the balloon-tipped catheter used to retrieve clots and stones from vessels and ducts.",
+      "field": "biliary",
+      "episodes": [{ "slug": "fourth-and-gall-play-by-play-coverage", "t": 843 }]
+    },
+    {
+      "slug": "laveen-1970s",
+      "year": 1970,
+      "yearLabel": "1970s",
+      "event": "Harry LaVeen develops the peritoneovenous shunt, draining fluid from the abdomen into a vein to treat severe ascites.",
+      "field": "general surgery",
+      "episodes": [{ "slug": "the-presidential-address-of-the-international-brotherhood", "t": 658 }]
+    },
+    {
+      "slug": "laparoscopic-cholecystectomy-1985",
+      "year": 1985,
+      "yearLabel": "1985",
+      "event": "Erich Mühe performs the first laparoscopic cholecystectomy in Germany, removing a gallbladder through small incisions instead of one large one.",
+      "field": "laparoscopy",
+      "episodes": [{ "slug": "standing-on-the-shoulders-of-physicists-in-the-operating" }]
+    },
+    {
+      "slug": "da-vinci-2000",
+      "year": 2000,
+      "yearLabel": "2000",
+      "event": "The da Vinci Surgical System receives FDA clearance, bringing robotic-assisted surgery into general use.",
+      "field": "robotics",
+      "episodes": [{ "slug": "out-of-touch", "t": 427 }]
+    }
+  ]
+}
