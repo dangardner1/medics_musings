@@ -4,9 +4,11 @@ name: Health data
 # added) from public government data, rebuilds the site and publishes it.
 # openFDA publishes new enforcement reports weekly, usually by Wednesday; this
 # runs Thursday. "Run workflow" on the Actions tab refreshes on demand.
+# Paused while the health-stats pages are hidden (SHOW_HEALTH_STATS in
+# scripts/build-extras.mjs). Restore the schedule when they come back.
 on:
-  schedule:
-    - cron: '17 15 * * 4'
+  # schedule:
+  #   - cron: '17 15 * * 4'
   workflow_dispatch:
 
 permissions:

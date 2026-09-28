@@ -1,0 +1,92 @@
+name: Top 10
+
+# Weekly Top 10 lists (AI in Health Care, AI Updates).
+#
+# Monday: gathers candidates (scripts/fetch-top10.mjs), commits the drafts to
+# data/top10/ and opens an issue to review them. Drafts are never built into
+# pages. If the repo has an ANTHROPIC_API_KEY secret, Claude drafts the picks
+# and takes; otherwise the issue lists candidates for picking.
+#
+# Publishing: when a draft's "status" is changed to "published" and pushed to
+# main (edited on GitHub or locally), the publish job rebuilds the site.
+on:
+  schedule:
+    - cron: '23 13 * * 1'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['data/top10/**']
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: top10
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Gather candidates
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/fetch-top10.mjs
+
+      - name: Commit drafts
+        run: |
+          if [ -n "$(git status --porcelain data/top10)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/top10
+            git commit -m "Draft this week's Top 10 lists"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "No new drafts."
+          fi
+
+      - name: Open a review issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/top10-issue.mjs > body.md
+          if [ -s body.md ]; then
+            gh issue create --title "Top 10 drafts ready for review ($(date -u +%Y-%m-%d))" --body-file body.md
+          fi
+
+  publish:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Rebuild the site
+        run: node scripts/build-episodes.mjs
+
+      - name: Publish
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Publish Top 10"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "Nothing to publish."
+          fi

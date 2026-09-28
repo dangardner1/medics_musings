@@ -1,0 +1,253 @@
+{
+ "list": "ai-health",
+ "week": "2026-W39",
+ "start": "2026-09-21",
+ "end": "2026-09-27",
+ "status": "published",
+ "generated": "2026-09-28T03:53:39.175Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+   "date": "2026-09-25",
+   "take": "Prior authorization has reached its final form: a denial engine that never sleeps, never eats and never has to open the chart. Appeals will presumably be processed with equal enthusiasm."
+  },
+  {
+   "rank": 2,
+   "title": "Insurers claim AI is already increasing healthcare costs",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+   "date": "2026-09-26",
+   "take": "Insurers, pioneers of the algorithmic claim denial, are alarmed that hospitals now have algorithms too. The arms race has reached parity, and the patient is standing in the middle of the field."
+  },
+  {
+   "rank": 3,
+   "title": "AI will inflate healthcare costs before lowering them, Oz says",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-will-inflate-healthcare-costs-before-lowering-them-oz-says/831277/",
+   "date": "2026-09-24",
+   "take": "The most honest AI pitch deck yet: costs go up now, savings arrive later. Medicine has heard this one before, about every EHR rollout since 2009, and is still waiting on \"later.\""
+  },
+  {
+   "rank": 4,
+   "title": "Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42773211/",
+   "date": "2026-09-22",
+   "take": "A genuinely clever idea: look for esophageal cancer on the CT scans people were already getting for something else. The incidentaloma clinic should start ordering more chairs."
+  },
+  {
+   "rank": 5,
+   "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+   "date": "2026-09-24",
+   "take": "An AI agent got into a national health service and nobody noticed for months, which is still faster than most hospitals notice anything. The fax machine remains undefeated on cybersecurity."
+  },
+  {
+   "rank": 6,
+   "title": "Preparing AI chatbots to respond to patient distress and suicidality in high-risk healthcare settings",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42773125/",
+   "date": "2026-09-22",
+   "take": "The serious question of the week: what should a chatbot do when someone in crisis messages it at 2 a.m.? The right answer involves a human being and the 988 Suicide & Crisis Lifeline, not a cheerful disclaimer."
+  },
+  {
+   "rank": 7,
+   "title": "Comparative evaluation of ambient digital scribe systems in clinical documentation",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42776572/",
+   "date": "2026-09-23",
+   "take": "Someone finally compared ambient AI scribes head to head, answering the question every clinic asked roughly one week after signing the three-year contract."
+  },
+  {
+   "rank": 8,
+   "title": "The rise of the AI-native radiology practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/the-rise-of-the-ai-native-radiology-practice-health-tech/",
+   "date": "2026-09-24",
+   "take": "The AI-native radiology practice has arrived. Radiologists, promised for a decade that they would be replaced, are now being \"augmented,\" which is the word used right before the staffing model changes."
+  },
+  {
+   "rank": 9,
+   "title": "Overseeing Agentic AI in Medicine From First Principles",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42783380/",
+   "date": "2026-09-04",
+   "take": "Before AI agents start ordering tests on their own, someone wants to work out from first principles who supervises them. Medicine's traditional answer is the intern, at 3 a.m., untrained."
+  },
+  {
+   "rank": 10,
+   "title": "Epic’s mortality model, and Omada’s future products",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/22/epics-mortality-model-omadas-future-products-health-tech/",
+   "date": "2026-09-22",
+   "take": "Epic has a mortality model, which is either a triumph of predictive analytics or the most ominous pop-up in the chart. Clinicians will learn to click past it along with the other 400 alerts."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42773211/",
+   "date": "2026-09-22"
+  },
+  {
+   "id": 1,
+   "title": "Anthropic's AI biolab finds 'CRISPR-like' DNA in viruses. What's next?",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42791345/",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 2,
+   "title": "Overseeing Agentic AI in Medicine From First Principles",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42783380/",
+   "date": "2026-09-04"
+  },
+  {
+   "id": 3,
+   "title": "Counting who was not tested: artificial intelligence extraction of genomic and treatment data from hospital records",
+   "source": "Lancet Oncol",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42790441/",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 4,
+   "title": "Patient-facing generative artificial intelligence: interpretive influence and system-level evaluation",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42763270/",
+   "date": "2026-09-19"
+  },
+  {
+   "id": 5,
+   "title": "Rapid patient-specific neural networks for X-ray to volume registration",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42749809/",
+   "date": "2026-09-16"
+  },
+  {
+   "id": 6,
+   "title": "A real-time machine learning framework for improved intraoperative risk predictions in cardiac surgery patients",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42784706/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 7,
+   "title": "Sustainable artificial intelligence in global health: balancing promise, equity, and environmental realities in low- and middle-income countries",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42752875/",
+   "date": "2026-09-17"
+  },
+  {
+   "id": 8,
+   "title": "DiagnosticXchange: an open-source framework for evaluating safety, efficiency, and diagnostic reasoning in clinical AI systems",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42752607/",
+   "date": "2026-09-17"
+  },
+  {
+   "id": 9,
+   "title": "Preparing AI chatbots to respond to patient distress and suicidality in high-risk healthcare settings",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42773125/",
+   "date": "2026-09-22"
+  },
+  {
+   "id": 10,
+   "title": "Comparative evaluation of ambient digital scribe systems in clinical documentation",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42776572/",
+   "date": "2026-09-23"
+  },
+  {
+   "id": 11,
+   "title": "The Virtual Biotech: A multi-agent AI framework for therapeutic discovery and development",
+   "source": "Science",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42752167/",
+   "date": "2026-09-17"
+  },
+  {
+   "id": 12,
+   "title": "An expert-level generalist AI for abdominal CT diagnosis",
+   "source": "Science",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42752131/",
+   "date": "2026-09-17"
+  },
+  {
+   "id": 13,
+   "title": "The rise of the AI-native radiology practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/the-rise-of-the-ai-native-radiology-practice-health-tech/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 14,
+   "title": "In radiology, AI is blurring the line between technology development and clinical practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 15,
+   "title": "AI doomerism: Here’s how to make sense of it",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/23/how-to-make-sense-of-ai-doomerism-ai-prognosis/",
+   "date": "2026-09-23"
+  },
+  {
+   "id": 16,
+   "title": "AI will inflate healthcare costs before lowering them, Oz says",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-will-inflate-healthcare-costs-before-lowering-them-oz-says/831277/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 17,
+   "title": "Insurers claim AI is already increasing healthcare costs",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+   "date": "2026-09-26"
+  },
+  {
+   "id": 18,
+   "title": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 19,
+   "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 20,
+   "title": "Epic’s mortality model, and Omada’s future products",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/22/epics-mortality-model-omadas-future-products-health-tech/",
+   "date": "2026-09-22"
+  },
+  {
+   "id": 21,
+   "title": "'We Cannot Distinguish Fake From Real': What We Heard This Week",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/what-we-heard/123151",
+   "date": "2026-09-27"
+  },
+  {
+   "id": 22,
+   "title": "Introducing MentalHealthBench",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-mentalhealthbench",
+   "date": "2026-09-23"
+  }
+ ]
+}

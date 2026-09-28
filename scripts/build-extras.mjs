@@ -1,6 +1,7 @@
 // Pages beyond the episode catalogue, built by build-episodes.mjs:
 //   explained/            plain-English explainers (data/explainers.json), with FAQPage markup
 //   teach/                discussion guides for teaching (data/teaching.json)
+//   top-10/               weekly Top 10 lists (data/top10/), with an RSS feed each
 //   submit/               listener story and guest submissions (sent through Formspree)
 //   subscribe/            email-by-topic signup and the RSS feeds
 //   feeds/*.xml           RSS for all episodes, each topic and each series
@@ -8,7 +9,7 @@
 //   e/<n>/                short links (medicsmusings.com/e/12) used on clips and cards
 //   episodes/<slug>/quotes/<n>/  share pages for quote cards (og/quotes/<slug>-<n>.jpg)
 // Returns the sitemap entries for the indexable ones.
-import { writeFileSync, mkdirSync, existsSync, statSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync, statSync, readdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   ROOT, SITE, SHOW, INBOX, esc, jsonLd, readJson, dateLabel, snippet, clock,
@@ -321,6 +322,9 @@ ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 }
 
 // ---- Live health stats (data/*.json from scripts/fetch-health-data.mjs) ------------
+// Hidden for now: the pages aren't built or linked. Set to true to bring back
+// /stats/, /recalls/ and /er-wait-times/ (and restart the health-data workflow).
+const SHOW_HEALTH_STATS = false;
 
 const STATS_URL = `${SITE}/stats/`;
 const RECALLS_URL = `${SITE}/recalls/`;
@@ -638,6 +642,165 @@ function statsHub(ctx) {
 ${pageEnd(ctx.data)}`;
 }
 
+// ---- Weekly Top 10 lists (data/top10/<list>/<YYYY-Www>.json) -------------------------
+// scripts/fetch-top10.mjs drafts them; only weeks a person has marked
+// "published" are built. TOP10_PREVIEW=1 also builds "review" weeks (noindex)
+// for checking locally.
+
+const TOP10_URL = `${SITE}/top-10/`;
+const TOP10_LISTS = [
+  {
+    key: 'ai-health',
+    path: 'ai-in-health-care',
+    name: 'Top 10 AI in Health Care',
+    short: 'AI in Health Care',
+    tagline: 'The week’s ten biggest AI-in-medicine papers and stories, with commentary from two doctors who have seen a few hype cycles.',
+    blurb: 'New papers from the big journals and the health-tech news that matters, ranked, with one satirical take each.',
+  },
+  {
+    key: 'ai-updates',
+    path: 'ai-updates',
+    name: 'Top 10 AI Updates',
+    short: 'AI Updates',
+    tagline: 'The week in AI: model launches, company news and policy fights, ranked, with commentary from two doctors who read the press releases so you don’t have to.',
+    blurb: 'Model releases, launches and AI industry news, ranked, with one satirical take each.',
+  },
+];
+const TOP10_NOTE = 'Headlines link to the original papers and stories; the commentary under each is ours, and it is satire. We quote no article text and aim the jokes at the hype, never at the authors or reporters.';
+
+function loadTop10() {
+  const preview = process.env.TOP10_PREVIEW === '1';
+  return TOP10_LISTS.map((list) => {
+    const dir = join(ROOT, 'data', 'top10', list.key);
+    const weeks = existsSync(dir) ? readdirSync(dir).filter((f) => /^\d{4}-W\d{2}\.json$/.test(f)).sort().reverse()
+      .map((f) => readJson(`data/top10/${list.key}/${f}`, null))
+      .filter((w) => w && w.picks?.length === 10 && (w.status === 'published' || (preview && w.status === 'review'))) : [];
+    return { ...list, weeks };
+  });
+}
+
+const weekSlug = (w) => w.week.toLowerCase();
+const weekUrl = (list, w) => `${TOP10_URL}${list.path}/${weekSlug(w)}/`;
+const weekLabel = (w) => (w.start.slice(5, 7) === w.end.slice(5, 7)
+  ? `${shortDate(w.start)}–${Number(w.end.slice(8, 10))}, ${w.end.slice(0, 4)}`
+  : `${shortDate(w.start)}–${shortDate(w.end)}, ${w.end.slice(0, 4)}`);
+const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return ''; } };
+
+function top10ListHtml(w) {
+  return `<ol class="top10">
+        ${w.picks.map((p) => `<li class="top10-item" id="n${p.rank}">
+          <span class="top10-rank" aria-hidden="true">${p.rank}</span>
+          <div class="top10-body">
+            <a class="top10-title" href="${esc(p.url)}" rel="noopener" target="_blank">${esc(p.title)}</a>
+            <span class="top10-meta">${esc(p.source)} · ${esc(dateLabel(p.date))}${hostOf(p.url) === 'pubmed.ncbi.nlm.nih.gov' ? ' · via PubMed' : ''}</span>
+            <p class="top10-take"><b>Our take:</b> ${esc(p.take)}</p>
+          </div>
+        </li>`).join('\n        ')}
+      </ol>`;
+}
+
+const top10Ld = (list, w, url) => ({
+  '@type': 'ItemList',
+  '@id': `${url}#list`,
+  name: `${list.name}: ${weekLabel(w)}`,
+  numberOfItems: 10,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  itemListElement: w.picks.map((p) => ({ '@type': 'ListItem', position: p.rank, url: p.url, name: p.title })),
+});
+
+const top10Robots = (w) => (w.status === 'published' ? undefined : 'noindex, nofollow');
+
+function top10Archive(list, current) {
+  if (list.weeks.length < 2) return '';
+  return `<h2>Past weeks</h2>
+      <ul class="top10-archive">
+        ${list.weeks.filter((w) => w !== current).map((w) => `<li><a href="/top-10/${list.path}/${weekSlug(w)}/">${esc(weekLabel(w))}</a> <span>#1: ${esc(w.picks[0].title)}</span></li>`).join('\n        ')}
+      </ul>`;
+}
+
+function top10Follow(list) {
+  const feed = `${SITE}/feeds/top-10-${list.key}.xml`;
+  return `<p>New list every Monday. Follow it: <a href="/feeds/top-10-${list.key}.xml">RSS feed</a> <button type="button" class="link-btn" data-copy="${feed}">Copy feed URL</button> · <a href="#newsletter">Get episodes by email</a></p>`;
+}
+
+// /top-10/<list>/ (latest week) and /top-10/<list>/<yyyy-wnn>/ (every week, permanent).
+function top10Page(ctx, list, w, { latest }) {
+  const url = latest ? `${TOP10_URL}${list.path}/` : weekUrl(list, w);
+  const i = list.weeks.indexOf(w);
+  const newer = list.weeks[i - 1];
+  const older = list.weeks[i + 1];
+  const title = latest
+    ? `${list.name} This Week (${weekLabel(w)}) | Medics Musings`
+    : `${list.name}: ${weekLabel(w)} | Medics Musings`;
+  const description = snippet(`${list.name} for ${weekLabel(w)}. #1: ${w.picks[0].title}. ${list.blurb}`);
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'CollectionPage', url, name: `${list.name}: ${weekLabel(w)}`, description, dateModified: w.end, isPartOf: { '@id': `${SITE}/#website` }, mainEntity: { '@id': `${url}#list` } },
+      top10Ld(list, w, url),
+      breadcrumbLd([['Top 10', TOP10_URL], [list.name, `${TOP10_URL}${list.path}/`], ...(latest ? [] : [[weekLabel(w), url]])]),
+    ],
+  };
+  const feeds = [{ title: `Medics Musings: ${list.name}`, href: `${SITE}/feeds/top-10-${list.key}.xml` }];
+  return `${pageHead({ title, description, url, ogTitle: `${list.name}: ${weekLabel(w)}`, image: shareImage(null), ld, feeds, robots: top10Robots(w) })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['Top 10', '/top-10/'], [list.name, latest ? undefined : `/top-10/${list.path}/`], ...(latest ? [] : [[weekLabel(w)]])])}
+      <span class="eyebrow">Weekly · ${esc(weekLabel(w))}${w.status === 'published' ? '' : ' · DRAFT, not published'}</span>
+      <h1>${esc(list.name)}</h1>
+      <p class="coll-intro">${esc(list.tagline)}</p>
+      ${top10ListHtml(w)}
+      <nav class="top10-nav" aria-label="Other weeks">
+        ${older ? `<a href="/top-10/${list.path}/${weekSlug(older)}/">← ${esc(weekLabel(older))}</a>` : '<span></span>'}
+        ${newer ? `<a href="/top-10/${list.path}/${weekSlug(newer)}/">${esc(weekLabel(newer))} →</a>` : ''}
+      </nav>
+      <div class="source-note">
+        <p>${esc(TOP10_NOTE)}</p>
+        ${top10Follow(list)}
+      </div>
+      ${top10Archive(list, w)}
+      <p class="related">See also: ${TOP10_LISTS.filter((l) => l !== list).map((l) => `<a href="/top-10/${l.path}/">${esc(l.name)}</a>`).join(' · ')} · <a href="/explained/">Explainers</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+function top10Hub(ctx, lists) {
+  const intro = 'Every Monday, the ten AI papers and stories worth knowing about, ranked, each with one satirical take from the Medics Musings desk. Real headlines, linked to the source; the commentary is ours.';
+  const live = lists.filter((l) => l.weeks.length);
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'CollectionPage', url: TOP10_URL, name: 'Top 10', description: intro, isPartOf: { '@id': `${SITE}/#website` } },
+      breadcrumbLd([['Top 10', TOP10_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Weekly Top 10: AI in Health Care and AI Updates, With Commentary | Medics Musings', description: snippet(intro), url: TOP10_URL, ogTitle: 'The weekly Top 10', image: shareImage(null), ld, robots: live.length && live.every((l) => l.weeks[0].status === 'published') ? undefined : 'noindex, nofollow' })}
+<main>
+  <section class="collection">
+    <div class="wrap">
+      ${crumbs([['Top 10']])}
+      <span class="eyebrow">Updated weekly</span>
+      <h1>The weekly Top 10</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      ${live.length ? `<ul class="coll-list">
+        ${live.map((l) => `<li>
+          <a class="coll-card" href="/top-10/${l.path}/">
+            <span class="coll-part">${esc(weekLabel(l.weeks[0]))}</span>
+            <span class="coll-title">${esc(l.name)}</span>
+            <span class="coll-desc">${esc(l.blurb)}</span>
+            <span class="ep-meta">This week’s #1: ${esc(l.weeks[0].picks[0].title)}</span>
+          </a>
+        </li>`).join('\n        ')}
+      </ul>` : '<p class="coll-intro">The first lists arrive Monday.</p>'}
+    </div>
+  </section>
+
+${pageEnd(ctx.data)}`;
+}
+
 // ---- Teaching guides ---------------------------------------------------------------
 
 function embedFrame(ep, lazy = true) {
@@ -886,7 +1049,21 @@ function writeFeeds(ctx) {
     mkdirSync(join(ROOT, rel, '..'), { recursive: true });
     writeFileSync(join(ROOT, rel), xml);
   };
-  if (ctx.recallData) {
+  for (const list of ctx.top10) {
+    if (!list.weeks.some((w) => w.status === 'published')) continue;
+    put(`feeds/top-10-${list.key}.xml`, rss({
+      title: `Medics Musings: ${list.name}`,
+      description: list.tagline,
+      link: `${TOP10_URL}${list.path}/`, self: `${SITE}/feeds/top-10-${list.key}.xml`,
+      items: list.weeks.filter((w) => w.status === 'published').slice(0, 26).map((w) => ({
+        title: `${list.name}: ${weekLabel(w)}`,
+        url: weekUrl(list, w),
+        date: w.end,
+        feedDescription: w.picks.map((p) => `${p.rank}. ${p.title} (${p.source}). ${p.take}`).join(' '),
+      })),
+    }));
+  }
+  if (SHOW_HEALTH_STATS && ctx.recallData) {
     const d = ctx.recallData;
     put('feeds/recalls.xml', rss({
       title: 'Medics Musings: FDA recall roundup',
@@ -1141,8 +1318,9 @@ export function buildExtras(ctx) {
   const psychEponymData = readJson('data/eponyms-psychiatry.json', { intro: '', entries: [] });
   const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
   const psychTimelineData = readJson('data/timeline-psychiatry.json', { intro: '', entries: [] });
-  const recallData = readJson('data/recalls.json', null);
-  const erData = readJson('data/er-wait.json', null);
+  const recallData = SHOW_HEALTH_STATS ? readJson('data/recalls.json', null) : null;
+  const erData = SHOW_HEALTH_STATS ? readJson('data/er-wait.json', null) : null;
+  const top10 = loadTop10();
   const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));
   const full = {
     ...ctx,
@@ -1158,6 +1336,7 @@ export function buildExtras(ctx) {
     psychTimeline: psychTimelineData.entries.filter(onSite),
     recallData,
     erData,
+    top10,
   };
 
   writePage('explained', explainedHub(full));
@@ -1204,7 +1383,20 @@ export function buildExtras(ctx) {
     crumbs: [['History timeline', '/timeline/'], ['Psychiatry & psychoanalysis', '/timeline/psychiatry/']],
     seeAlso: '<a href="/timeline/">The surgery and medicine timeline</a> · <a href="/eponyms/psychiatry/">Psychiatric and psychoanalytic eponyms</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a>',
   }));
-  writePage('stats', statsHub(full));
+  // Rebuilt from scratch so a week taken back to draft disappears.
+  rmSync(join(ROOT, 'top-10'), { recursive: true, force: true });
+  const top10Pages = ['top-10'];
+  writePage('top-10', top10Hub(full, top10));
+  for (const list of top10) {
+    if (!list.weeks.length) continue;
+    writePage(`top-10/${list.path}`, top10Page(full, list, list.weeks[0], { latest: true }));
+    top10Pages.push(`top-10/${list.path}`);
+    for (const w of list.weeks) {
+      writePage(`top-10/${list.path}/${weekSlug(w)}`, top10Page(full, list, w, { latest: false }));
+      top10Pages.push(`top-10/${list.path}/${weekSlug(w)}`);
+    }
+  }
+  if (SHOW_HEALTH_STATS) writePage('stats', statsHub(full));
   if (recallData) writePage('recalls', recallsPage(full));
   if (erData) {
     writePage('er-wait-times', erMainPage(full));
@@ -1238,7 +1430,15 @@ export function buildExtras(ctx) {
       { loc: PSYCH_EPONYMS_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: PSYCH_TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
-      { loc: STATS_URL, lastmod: recallData?.fetched || newest, changefreq: 'weekly', priority: '0.7' },
+      ...top10.some((l) => l.weeks.some((w) => w.status === 'published')) ? [{ loc: TOP10_URL, lastmod: top10.flatMap((l) => l.weeks.filter((w) => w.status === 'published').map((w) => w.end)).sort().at(-1), changefreq: 'weekly', priority: '0.8' }] : [],
+      ...top10.flatMap((l) => {
+        const pub = l.weeks.filter((w) => w.status === 'published');
+        return pub.length ? [
+          { loc: `${TOP10_URL}${l.path}/`, lastmod: pub[0].end, changefreq: 'weekly', priority: '0.8' },
+          ...pub.map((w) => ({ loc: weekUrl(l, w), lastmod: w.end, changefreq: 'yearly', priority: '0.6' })),
+        ] : [];
+      }),
+      ...(SHOW_HEALTH_STATS ? [{ loc: STATS_URL, lastmod: recallData?.fetched || newest, changefreq: 'weekly', priority: '0.7' }] : []),
       ...(recallData ? [{ loc: RECALLS_URL, lastmod: recallData.fetched, changefreq: 'weekly', priority: '0.8' }] : []),
       ...(erData ? [
         { loc: ER_URL, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.8' },
@@ -1247,6 +1447,6 @@ export function buildExtras(ctx) {
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', 'stats', ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'submit', 'subscribe'],
   };
 }

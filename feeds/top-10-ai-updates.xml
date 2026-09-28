@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medics Musings: Top 10 AI Updates</title>
+    <link>https://www.medicsmusings.com/top-10/ai-updates/</link>
+    <atom:link href="https://www.medicsmusings.com/feeds/top-10-ai-updates.xml" rel="self" type="application/rss+xml"/>
+    <description>The week in AI: model launches, company news and policy fights, ranked, with commentary from two doctors who read the press releases so you don’t have to.</description>
+    <language>en-us</language>
+    <image><url>https://www.medicsmusings.com/icon-512.png</url><title>Medics Musings: Top 10 AI Updates</title><link>https://www.medicsmusings.com/top-10/ai-updates/</link></image>
+    <lastBuildDate>Sun, 27 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Top 10 AI Updates: Sep 21–27, 2026</title>
+      <link>https://www.medicsmusings.com/top-10/ai-updates/2026-w39/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/top-10/ai-updates/2026-w39/</guid>
+      <pubDate>Sun, 27 Sep 2026 12:00:00 GMT</pubDate>
+      <description>1. OpenAI pauses training of its ‘most capable models’ (The Verge). An AI company pausing training of its most capable models is the tech equivalent of a surgeon saying "let's just watch it." Watchful waiting: now a Silicon Valley strategy. 2. Introducing GPT-6 Sol and Luna (OpenAI). Two new models named after the sun and the moon, completing the naming journey from "GPT-4o mini" to astronomy. Physicians, who name things after dead Europeans, respect the ambition. 3. Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features (Ars Technica). A court says the government may blacklist a company for declining to switch certain features on. In medicine, saying no to a request is called clinical judgment; in procurement it is apparently a vendor problem. 4. Introducing Gemini 3.8 Live with Live Avatar (Google DeepMind). Google's assistant now has a face. Early impressions suggest it makes better eye contact than the average physician typing into an EHR. 5. Introducing MentalHealthBench (OpenAI). A benchmark for how AI handles mental health conversations is welcome and overdue. The previous standard was "did it tell the user to see a professional," graded pass/fail. 6. Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge (TechCrunch). The dream of fully automated workflows turns out to include fully automated data breaches. Finally, a process with no human in the loop at all. 7. OpenAI agents tried to ‘bruteforce’ a UN website (The Verge). AI agents tried password-guessing on a UN website, proving they have mastered the most human IT skill of all. Next milestone: the password on a sticky note under the keyboard. 8. Google’s Gemini Can Now Make Calls for You on Pixel Phones (Wired). Gemini can now make phone calls for you. The logical endpoint is your AI calling your insurer's AI, and both of them waiting on hold together. 9. Anthropic to pay Akamai $11.6 billion over seven years in cloud deal (TechCrunch). An $11.6 billion, seven-year commitment: the kind of long-range planning health systems reserve exclusively for parking garages. 10. AI was supposed to hit new grads hard. So far, unemployment data says otherwise. (Ars Technica). The robots were supposed to take the entry-level jobs, but the data says new grads are fine so far. Interns, who have always worked like machines at a fraction of the cost, remain safe.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/stats", "destination": "/top-10/", "permanent": false },
+    { "source": "/stats/", "destination": "/top-10/", "permanent": false },
+    { "source": "/recalls/:path*", "destination": "/top-10/", "permanent": false },
+    { "source": "/er-wait-times/:path*", "destination": "/top-10/", "permanent": false },
+    { "source": "/feeds/recalls.xml", "destination": "/top-10/", "permanent": false }
+  ]
+}
