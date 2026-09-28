@@ -1,11 +1,13 @@
-// Drafts the day's "Health Care News of the Day": one real health care story
-// with a satirical headline and take. Writes data/news/<YYYY-MM-DD>.json.
+// Writes the day's "Health Care News of the Day": one real health care story
+// with a satirical headline and take, to data/news/<YYYY-MM-DD>.json.
 //
-// Nothing here publishes. A draft has "status": "draft" (candidates only) or
-// "review" (a pick with headline and take, drafted by Claude when
-// ANTHROPIC_API_KEY is set). build-extras.mjs only builds days marked
-// "published", which a person sets after checking the take
-// (.github/workflows/daily-news.yml opens an issue for that).
+// Auto-publish: with ANTHROPIC_API_KEY set, Claude picks the story and writes
+// the headline and take, a second Claude pass checks them against the rules
+// below, and a word check screens for patient-directed jokes. If everything
+// passes, the day is saved as "published" and the workflow rebuilds the site.
+// If any check fails, it's saved as "review" and an issue asks a person to
+// look. Without an API key it saves "draft" (candidates only).
+// Set NEWS_AUTO_PUBLISH=0 to always stop at "review".
 //
 //   node scripts/fetch-daily-news.mjs            # today (UTC date)
 //   node scripts/fetch-daily-news.mjs 2026-09-28 # a given date's file
@@ -74,15 +76,45 @@ function rank(items, since, hours) {
 
 const STYLE = `You write for Medics Musings, a satirical medical podcast by two physicians.
 Rules:
-- Mock the system, the hype, the press release and the incentives. Never mock patients, and never mock the authors or reporters.
+- The target is always the system: insurers, pharma, hospital and health-system executives, regulators, lobbyists, billing, bureaucracy, tech hype and press releases.
+- Never make fun of patients: not their illnesses, bodies, ages, weight, money, intelligence, choices or suffering. Patients are the people the system is failing; the joke is on the system, on their side.
+- Never mock the authors or reporters, and never target a private individual.
 - Don't misstate what the story is about; the real headline is shown and linked right below yours. Don't invent numbers, quotes or results.
 - No quotes from the article. You only see the headline and a short summary.
 - Dry, deadpan, clinically literate. No emojis, no hashtags.
 - Skip any story involving death, illness of a named person, children or violence.`;
 
+async function claude(prompt, maxTokens) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-api-key': process.env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
+    body: JSON.stringify({ model: process.env.NEWS_MODEL || 'claude-sonnet-5', max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
+  });
+  if (!res.ok) throw new Error(`Claude API: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
+  const text = (await res.json()).content?.map((b) => b.text || '').join('') || '';
+  return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+}
+
+// Second opinion before anything auto-publishes.
+async function reviewWithClaude(pick) {
+  const verdict = await claude(`You are the standards editor for Medics Musings, a satirical medical podcast. Check this item against the rules.
+
+${STYLE}
+
+Real story headline: ${pick.title} (${pick.source})
+Our satirical headline: ${pick.headline}
+Our take: ${pick.take}
+
+Fail it if it makes fun of patients in any way, targets a private individual, mocks the reporter or authors, states an invented fact or number as real, quotes the article, or covers death, children, violence or suicide. Also fail it if it isn't actually satirical.
+Reply with only JSON: {"ok": true or false, "reason": "..."}`, 300);
+  return { ok: verdict.ok === true, reason: String(verdict.reason || '') };
+}
+
+// Belt and braces: words that suggest the joke has turned on patients.
+const PATIENT_JOKE_RE = /\b(fat|obese|lazy|stupid|dumb|idiot|moron|hypochondriac|whin(e|y|ing)|crazy|psycho|junkie|addict|senile|geezer|old (fool|coot)|drain on)\b/i;
+
 async function draftWithClaude(candidates) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey || !candidates.length) return null;
+  if (!process.env.ANTHROPIC_API_KEY || !candidates.length) return null;
   const prompt = `${STYLE}
 
 Pick the ONE story below that makes the best satire of how health care works, then write:
@@ -93,14 +125,7 @@ Reply with only JSON: {"id": <candidate number>, "headline": "...", "take": "...
 
 Candidates:
 ${candidates.map((c, n) => `${n}. [${c.source}, ${c.date}] ${c.title}${c.about ? ` — ${c.about.slice(0, 240)}` : ''}`).join('\n')}`;
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'content-type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    body: JSON.stringify({ model: process.env.NEWS_MODEL || 'claude-sonnet-5', max_tokens: 800, messages: [{ role: 'user', content: prompt }] }),
-  });
-  if (!res.ok) throw new Error(`Claude API: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-  const text = (await res.json()).content?.map((b) => b.text || '').join('') || '';
-  const json = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  const json = await claude(prompt, 800);
   const c = candidates[json.id];
   if (!c || !json.headline || !json.take) return null;
   return { ...pickOf(c), headline: String(json.headline).trim(), take: String(json.take).trim() };
@@ -119,15 +144,29 @@ if (existsSync(file) && JSON.parse(readFileSync(file, 'utf8')).status !== 'draft
     console.log('::warning::news: no candidates today; nothing written.');
   } else {
     let pick = null;
-    try { pick = await draftWithClaude(list); } catch (e) { console.log(`::warning::news: ${e.message}`); }
+    let status = 'draft';
+    let check = null;
+    try {
+      pick = await draftWithClaude(list);
+      if (pick) {
+        status = 'review';
+        const words = [pick.headline, pick.take].join(' ');
+        check = PATIENT_JOKE_RE.test(words) || SENSITIVE_RE.test(words)
+          ? { ok: false, reason: 'word check flagged the headline or take' }
+          : await reviewWithClaude(pick);
+        if (check.ok && process.env.NEWS_AUTO_PUBLISH !== '0') status = 'published';
+        if (!check.ok) console.log(`::warning::news: held for review: ${check.reason}`);
+      }
+    } catch (e) { console.log(`::warning::news: ${e.message}`); }
     mkdirSync(dir, { recursive: true });
     writeFileSync(file, JSON.stringify({
       date,
-      status: pick ? 'review' : 'draft',
+      status,
       generated: now.toISOString(),
+      ...(check ? { check } : {}),
       pick,
       candidates: list.map((c, n) => ({ id: n, ...pickOf(c) })),
     }, null, 1) + '\n');
-    console.log(`news ${date}: ${list.length} candidates${pick ? ', pick drafted for review' : ''}.`);
+    console.log(`news ${date}: ${list.length} candidates; ${status}.`);
   }
 }
