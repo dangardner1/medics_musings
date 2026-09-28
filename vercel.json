@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/episodes(/?)", "destination": "/#episodes", "permanent": false },
     { "source": "/stats(/?)", "destination": "/top-10/", "permanent": false },
     { "source": "/recalls(/.*)?", "destination": "/top-10/", "permanent": false },
     { "source": "/er-wait-times(/.*)?", "destination": "/top-10/", "permanent": false },
