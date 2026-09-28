@@ -1,12 +1,13 @@
 {
-  "intro": "Plain-English explainers for the medical terms our episodes keep poking fun at. The jokes are ours; the facts are checked. Each one links to the episodes where the topic comes up.",
+  "intro": "Plain-English explainers for the medical terms our episodes keep poking fun at, written in the same voice as the show. The jokes are ours; the facts underneath them are real and checked. Each one links to the episodes where the topic comes up.",
+  "style": "Tone rule for every explainer (documentation only; not rendered): satirical and funny throughout, in the show's voice. Mock the system, the paperwork, the jargon and the absurdity, never the patient. The facts carrying the jokes must still be true: no invented numbers, dates, laws or medical claims, and never state an episode's satire as fact (label it as the show's bit). Emergency signs and the 911/988 lines stay plain and unmistakable, and FAQ answers stay accurate even when they're funny.",
   "explainers": [
     {
       "slug": "prior-authorization",
       "term": "Prior authorization",
       "title": "What is prior authorization?",
       "seoTitle": "What Is Prior Authorization? A Plain-English Guide for Patients and Doctors",
-      "dek": "The paperwork your insurer wants filed before it pays for the care your doctor already said you need. It's the reason this show's tagline is “no prior authorization required.”",
+      "dek": "Your doctor says you need it. Your insurer says prove it. A fax machine says nothing at all. Welcome to the reason this show's tagline is “no prior authorization required.”",
       "summary": "Prior authorization explained: why insurers require approval before tests, drugs and surgery, how long it takes, the 2026 federal deadlines, and how to appeal a denial.",
       "topics": ["hospital"],
       "episodes": ["surgery-department-voicemail-nightmare-thank-you-for-calling", "black-friday-bargain-bin-healthcare-extravaganza", "ai-rounds-when-your-chatbot-assistant-bites-back"],
@@ -15,46 +16,46 @@
         {
           "h": "The short answer",
           "p": [
-            "Prior authorization (also called pre-authorization, pre-certification or just “prior auth”) is a rule in many health plans: before the plan will pay for certain tests, drugs, procedures or equipment, your clinician has to ask the plan for approval and show that the care is medically necessary.",
-            "If the plan says yes, the care is covered under your benefits. If it says no, you can still get the care, but you may be paying for it, and your clinician can appeal."
+            "Prior authorization (also called pre-authorization, pre-certification, or “prior auth,” usually muttered) is a rule in many health plans: before the plan will pay for certain tests, drugs, procedures or equipment, your clinician has to ask permission and prove the care is medically necessary. Think of it as a hall pass, except the hall monitor has never met you and works for the company paying the bill.",
+            "If the plan says yes, your benefits cover it. If it says no, you can still get the care, you just might pay for it yourself, and your clinician can appeal. Appealing is a lot like arguing with a vending machine, except sometimes the vending machine changes its mind."
           ]
         },
         {
-          "h": "What usually needs it",
+          "h": "What needs a permission slip",
           "p": [
-            "It varies by plan, but the usual suspects are advanced imaging (MRI, CT, PET), specialty and brand-name drugs, planned surgeries and hospital stays, durable medical equipment, home health, and some physical therapy. Emergency care should not require prior authorization."
+            "It varies by plan, but the usual suspects are advanced imaging (MRI, CT, PET), specialty and brand-name drugs, planned surgeries and hospital stays, durable medical equipment, home health, and some physical therapy. Emergency care should not require prior authorization. Even insurers agree you shouldn't have to fax a form while having a heart attack."
           ]
         },
         {
-          "h": "How it works (in theory)",
+          "h": "How it works, in theory",
           "p": [
-            "Your clinician's office submits a request with your diagnosis, the planned care and supporting notes. The plan approves it, denies it, or asks for more information. If it's denied, the clinician can often request a “peer-to-peer” call with a doctor who works for the plan, then file a formal appeal.",
-            "In practice this involves fax machines more often than anyone would like to admit, and hold music long enough to qualify as a residency."
+            "Your clinician's office submits a request with your diagnosis, the planned care and supporting notes. The plan approves it, denies it, or asks for more information, which is insurance for “please send the same notes again.” If it's denied, your clinician can request a “peer-to-peer” call with a doctor who works for the plan, then file a formal appeal.",
+            "In practice it involves fax machines more often than anyone in the 21st century should admit, and hold music long enough to count as a residency."
           ]
         },
         {
-          "h": "Why doctors complain about it",
+          "h": "Why doctors make that face when you say it",
           "p": [
-            "Insurers say prior authorization curbs unnecessary and unsafe care. Physicians say it delays treatment and eats hours of staff time every week; American Medical Association surveys consistently find that most physicians believe it sometimes leads patients to abandon treatment. It is one of the most-cited drivers of administrative burden and burnout."
+            "Insurers say prior authorization stops unnecessary and unsafe care. Physicians say it delays treatment and eats hours of staff time every week; American Medical Association surveys consistently find that most physicians believe it sometimes leads patients to give up on treatment altogether. It's one of the most-cited causes of administrative burden and burnout, which is a polite way of saying it's why your doctor's eye twitches."
           ]
         },
         {
-          "h": "What changed in 2026",
+          "h": "What changed in 2026 (yes, something improved)",
           "p": [
-            "A federal rule from the Centers for Medicare & Medicaid Services (CMS-0057-F) requires Medicare Advantage, Medicaid, CHIP and federal Marketplace plans to decide prior authorization requests within 72 hours for urgent requests and 7 calendar days for standard ones, starting in 2026, and to give a specific reason when they deny. Employer plans aren't covered by that rule, and many states have their own “gold card” and timeline laws."
+            "A federal rule from the Centers for Medicare & Medicaid Services (CMS-0057-F) now requires Medicare Advantage, Medicaid, CHIP and federal Marketplace plans to decide prior authorization requests within 72 hours for urgent requests and 7 calendar days for standard ones, and to give a specific reason when they say no. “Because” is no longer a reason. Employer plans aren't covered by that rule, though many states have their own “gold card” and timeline laws."
           ]
         },
         {
-          "h": "What you can do as a patient",
+          "h": "How to fight back without a fax machine",
           "p": [
-            "Ask your clinician's office whether the test or drug needs prior authorization and whether it's been submitted. Get the reference number. Call your plan to check the status. If it's denied, ask for the denial in writing and the reason, ask your clinician about a peer-to-peer review, and file an appeal: many denials are overturned on appeal."
+            "Ask your clinician's office whether the test or drug needs prior authorization and whether it's been submitted. Get the reference number and guard it like a lottery ticket. Call your plan to check the status. If it's denied, ask for the denial and the reason in writing, ask your clinician about a peer-to-peer review, and file an appeal: many denials are overturned on appeal, which tells you something about the first answer."
           ]
         }
       ],
       "faq": [
-        { "q": "How long does prior authorization take?", "a": "Anywhere from minutes (electronic approvals) to several weeks. For Medicare Advantage, Medicaid, CHIP and federal Marketplace plans, federal rules from 2026 require a decision within 72 hours for urgent requests and 7 calendar days for standard ones." },
-        { "q": "Who is responsible for getting prior authorization?", "a": "Usually the ordering clinician's office submits it, but it's your coverage on the line, so it's worth confirming it was requested and approved before a planned test or procedure." },
-        { "q": "What should I do if prior authorization is denied?", "a": "Ask for the denial and reason in writing, ask your clinician to request a peer-to-peer review, and file an appeal with your plan. If the plan upholds the denial, you can usually request an external review by an independent reviewer." },
+        { "q": "How long does prior authorization take?", "a": "Anywhere from minutes (electronic approvals, the unicorns of healthcare) to several weeks. Since 2026, Medicare Advantage, Medicaid, CHIP and federal Marketplace plans must decide within 72 hours for urgent requests and 7 calendar days for standard ones." },
+        { "q": "Who is responsible for getting prior authorization?", "a": "Usually your clinician's office submits it. But it's your coverage on the line, so confirm it was requested and approved before a planned test or procedure. Trust, but get the reference number." },
+        { "q": "What should I do if prior authorization is denied?", "a": "Get the denial and reason in writing, ask your clinician to request a peer-to-peer review, and file an appeal with your plan. If the plan still says no, you can usually request an external review by an independent reviewer who, crucially, doesn't work for your insurer." },
         { "q": "Does emergency care need prior authorization?", "a": "No. Emergency care should not require prior authorization. In an emergency, call 911 or go to the nearest emergency department." }
       ]
     },
@@ -63,7 +64,7 @@
       "term": "AI scribes",
       "title": "AI scribes, explained",
       "seoTitle": "AI Scribes Explained: How Ambient AI Writes Your Doctor's Notes",
-      "dek": "Your doctor used to type while you talked. Now an app listens and types for them. What could possibly get lost in translation?",
+      "dek": "Your doctor used to type while you talked. Now an app listens, types, and occasionally decides you mentioned a pet iguana. What could possibly get lost in translation?",
       "summary": "What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.",
       "topics": ["ai", "hospital"],
       "episodes": ["ai-rounds-when-your-chatbot-assistant-bites-back", "the-digital-doctor", "can-patients-and-doctors-trust-ai-in-healthcare", "algorithms-meet-empathy-the-future-of-patient-care"],
@@ -72,32 +73,32 @@
         {
           "h": "The short answer",
           "p": [
-            "An AI scribe (also called ambient AI documentation or an ambient clinical assistant) is software that listens to a visit between you and your clinician, usually through a phone or computer microphone, and drafts the visit note: history, exam findings, assessment and plan. The clinician reviews and edits the draft before it goes into your medical record."
+            "An AI scribe (also called ambient AI documentation, or “the phone on the counter that's listening”) is software that hears your visit through a phone or computer microphone and drafts the visit note: history, exam findings, assessment and plan. Your clinician then reviews and edits the draft before it goes into your medical record. The robot writes the first draft; the human signs the confession."
           ]
         },
         {
-          "h": "Why clinics are adopting them",
+          "h": "Why clinics suddenly love them",
           "p": [
-            "Documentation is one of the biggest time sinks in medicine; many doctors finish notes at night (“pajama time”). Early studies and health-system pilots report less time spent on notes and lower reported burnout, and many patients say their doctor makes more eye contact. The evidence is still young, and results vary by product and specialty."
+            "Documentation is one of the biggest time sinks in medicine; many doctors finish their notes at night, a ritual lovingly called “pajama time.” Early studies and health-system pilots report less time on notes and lower reported burnout, and many patients say their doctor finally looks at them instead of the keyboard. The evidence is still young and varies by product and specialty, but “my doctor made eye contact” is already a medical breakthrough."
           ]
         },
         {
           "h": "What can go wrong",
           "p": [
-            "AI scribes can mishear, leave things out, attribute a statement to the wrong person, or add details nobody said (a “hallucination”). That's why the clinician remains responsible for the note and should read it before signing. If something in your visit summary looks wrong, ask for it to be corrected; you have a right to request amendments to your record."
+            "AI scribes can mishear, leave things out, credit a statement to the wrong person, or add details nobody said, a “hallucination,” which is a fancy word for making things up with confidence. That's why your clinician stays responsible for the note and should read it before signing. If your visit summary says something you never said, ask for a correction; you have a right to request amendments to your record, iguana or no iguana."
           ]
         },
         {
-          "h": "Privacy and consent",
+          "h": "Privacy, consent and saying no",
           "p": [
-            "In the U.S., vendors that handle your health information for a clinic generally work under HIPAA business associate agreements. Clinics should tell you when a visit is being recorded and ask for your consent, and some states require all-party consent to record. You can say no, and your care shouldn't change if you do."
+            "In the U.S., vendors that handle your health information for a clinic generally work under HIPAA business associate agreements. Clinics should tell you when a visit is being recorded and ask for your consent, and some states require everyone's consent to record. You can say no, and your care shouldn't change if you do. The app will survive the rejection."
           ]
         }
       ],
       "faq": [
-        { "q": "Is my doctor's visit being recorded by AI?", "a": "It might be. Clinics using AI scribes should tell you and ask for consent. If you're not sure, ask; you can decline." },
-        { "q": "Who checks the note an AI scribe writes?", "a": "Your clinician. The AI produces a draft, and the clinician is responsible for reviewing, correcting and signing it." },
-        { "q": "Do AI scribes make mistakes?", "a": "Yes. They can omit, misattribute or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong." }
+        { "q": "Is my doctor's visit being recorded by AI?", "a": "It might be. Clinics using AI scribes should tell you and ask for consent. If you're not sure, ask; you're allowed to decline, and no, it won't hurt the software's feelings." },
+        { "q": "Who checks the note an AI scribe writes?", "a": "Your clinician. The AI writes a draft, and the clinician is responsible for reviewing, correcting and signing it." },
+        { "q": "Do AI scribes make mistakes?", "a": "Yes. They can leave things out, credit the wrong person or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong." }
       ]
     },
     {
@@ -114,37 +115,37 @@
         {
           "h": "The short answer",
           "p": [
-            "General-purpose AI chatbots can be genuinely helpful for understanding a diagnosis, decoding medical jargon, or preparing questions for your appointment. They are not a substitute for a clinician who knows your history, can examine you, and is accountable for the advice."
+            "General-purpose AI chatbots can be genuinely helpful for understanding a diagnosis, decoding medical jargon, or preparing questions for your appointment. They are not a substitute for a clinician who knows your history, can examine you, and has a license to lose if they're wrong. The chatbot has no license, no malpractice insurance and no stethoscope. It does have excellent grammar."
           ]
         },
         {
-          "h": "Where they help",
+          "h": "Where they actually help",
           "p": [
-            "Explaining terms in a lab report or visit summary. Summarizing what a condition is and how it's usually treated. Drafting a list of questions and symptoms to bring to an appointment. Translating instructions into plainer language or another language."
+            "Translating the lab report that reads like a ransom note. Summarizing what a condition is and how it's usually treated. Drafting a list of symptoms and questions so you don't forget everything the moment the doctor walks in. Rewriting instructions into plainer language, or another language entirely."
           ]
         },
         {
-          "h": "Where they fall short",
+          "h": "Where they fall on their face",
           "p": [
-            "They can state wrong information fluently and confidently. They don't know your full history, medications or exam unless you tell them, and they can't examine you. Their training data may be out of date. And they tend to agree with the way a question is framed, so leading questions get leading answers."
+            "They can state wrong information fluently and confidently, like a first-year resident at 3 a.m. They don't know your full history, medications or exam unless you tell them, and they can't examine you. Their training data may be out of date. And they tend to agree with however you phrase the question, so “isn't this probably nothing?” gets a very reassuring answer."
           ]
         },
         {
-          "h": "Privacy",
+          "h": "Privacy, briefly",
           "p": [
-            "Consumer chatbots are usually not covered by HIPAA. Check the app's privacy settings and avoid pasting in names, dates of birth, record numbers or other identifying details."
+            "Consumer chatbots are usually not covered by HIPAA. Check the app's privacy settings and leave out names, dates of birth, record numbers and anything else you wouldn't write on a postcard."
           ]
         },
         {
-          "h": "Red flags: skip the chatbot",
+          "h": "Red flags: close the app",
           "p": [
-            "Chest pain, trouble breathing, signs of stroke (face drooping, arm weakness, speech difficulty), severe bleeding, thoughts of harming yourself, or any symptom that feels like an emergency: call 911 (or 988 for a mental health crisis in the U.S.) or go to the nearest emergency department."
+            "Chest pain, trouble breathing, signs of stroke (face drooping, arm weakness, speech difficulty), severe bleeding, thoughts of harming yourself, or any symptom that feels like an emergency: skip the chatbot. Call 911 (or 988 for a mental health crisis in the U.S.) or go to the nearest emergency department."
           ]
         }
       ],
       "faq": [
-        { "q": "Is it safe to ask ChatGPT or Claude medical questions?", "a": "For general education and preparing for an appointment, often yes. For diagnosis or treatment decisions, check with a clinician; chatbots can be confidently wrong and don't know your full history." },
-        { "q": "Are AI chatbots HIPAA compliant?", "a": "Consumer chatbots generally are not covered by HIPAA. Avoid sharing identifying information and review the app's privacy settings." },
+        { "q": "Is it safe to ask ChatGPT or Claude medical questions?", "a": "For general education and prepping for an appointment, often yes. For diagnosis or treatment decisions, check with a clinician; chatbots can be confidently wrong and don't know your full history." },
+        { "q": "Are AI chatbots HIPAA compliant?", "a": "Consumer chatbots generally aren't covered by HIPAA. Leave out identifying details and review the app's privacy settings." },
         { "q": "When should I not use an AI chatbot for health?", "a": "In an emergency. Call 911, or 988 for a mental health crisis in the U.S., instead of typing symptoms into an app." }
       ]
     },
@@ -153,7 +154,7 @@
       "term": "Inguinal hernia",
       "title": "What is an inguinal hernia?",
       "seoTitle": "What Is an Inguinal Hernia? Symptoms, Repair Options and Warning Signs",
-      "dek": "The most contested territory in the groin, and the subject of our three-part peace summit, Pax Inguinalis.",
+      "dek": "The most contested territory in the groin, subject of a three-part peace summit (Pax Inguinalis) and roughly a century of surgeons disagreeing politely at conferences.",
       "summary": "Inguinal hernia explained: what causes the groin bulge, who gets it, open vs laparoscopic and robotic mesh repair, watchful waiting, and emergency warning signs.",
       "topics": ["surgery"],
       "episodes": ["pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the", "pax-inguinalis-part-2", "pax-inguinalis-part-3", "pax-inguinalis-salons-and-evening-events-programme"],
@@ -162,38 +163,38 @@
         {
           "h": "The short answer",
           "p": [
-            "An inguinal hernia happens when tissue, usually fat or a loop of intestine, pushes through a weak spot in the lower abdominal wall into the inguinal canal in the groin. It shows up as a bulge that often gets bigger when you stand, cough or strain and flattens when you lie down."
+            "An inguinal hernia happens when tissue, usually fat or a loop of intestine, pushes through a weak spot in the lower abdominal wall into the inguinal canal in the groin. It shows up as a bulge that gets bigger when you stand, cough or strain, and politely retreats when you lie down. Your insides are trying to leave; the hernia is the door they found."
           ]
         },
         {
-          "h": "Who gets them",
+          "h": "Who gets one",
           "p": [
-            "Inguinal hernias are far more common in men, whose estimated lifetime risk is roughly one in four, than in women. Age, family history, chronic cough, constipation and previous hernias raise the risk. Many are present at birth as a small opening that never closed."
+            "Men, mostly: their estimated lifetime risk is roughly one in four, far higher than women's. Age, family history, a chronic cough, constipation and previous hernias raise the odds. Many start as a small opening at birth that never quite got the memo to close."
           ]
         },
         {
-          "h": "How they're repaired",
+          "h": "How surgeons fix it (and argue about it)",
           "p": [
-            "Most repairs use a synthetic mesh to reinforce the weak spot. In an open repair (the Lichtenstein technique is the classic one), the surgeon works through an incision in the groin. In laparoscopic or robotic repair (TEP and TAPP are the common approaches), the mesh goes in from behind the abdominal wall through small incisions. Tissue repairs without mesh, such as the Shouldice repair, are still used in selected patients.",
-            "Which approach is best depends on the hernia, the patient and the surgeon's experience, which is roughly the point Pax Inguinalis spends three episodes negotiating."
+            "Most repairs use synthetic mesh to reinforce the weak spot, a sort of trellis for your abdominal wall. In an open repair (the Lichtenstein technique is the classic) the surgeon works through an incision in the groin. In laparoscopic or robotic repair (TEP and TAPP are the common approaches) the mesh goes in from behind the abdominal wall through small incisions. Tissue repairs without mesh, such as the Shouldice repair, are still used for selected patients.",
+            "Which approach is best depends on the hernia, the patient and the surgeon's experience, which is roughly what Pax Inguinalis spends three episodes and several evening salons negotiating."
           ]
         },
         {
-          "h": "Do all hernias need surgery?",
+          "h": "Does every hernia need surgery?",
           "p": [
-            "Not immediately. For men with small hernias that cause few or no symptoms, “watchful waiting” is a reasonable option, though many eventually choose repair as symptoms grow. Hernias in women are more often repaired because of a higher chance of a femoral hernia, which is more likely to become trapped."
+            "Not right away. For men with small hernias that cause few or no symptoms, “watchful waiting” is a reasonable option, though many eventually choose repair once the bulge starts making demands. Hernias in women are more often repaired because of a higher chance of a femoral hernia, which is more likely to get trapped."
           ]
         },
         {
-          "h": "When it's an emergency",
+          "h": "When the joking stops: emergency signs",
           "p": [
-            "Get emergency care if the bulge becomes firm, painful or tender, turns red or purple, or won't push back in, especially with nausea, vomiting or not being able to pass gas. Those are signs of an incarcerated or strangulated hernia, which can cut off blood supply to the intestine."
+            "Get emergency care if the bulge becomes firm, painful or tender, turns red or purple, or won't push back in, especially with nausea, vomiting or not being able to pass gas. Those are signs of an incarcerated or strangulated hernia, which can cut off blood supply to the intestine. Go to an emergency department."
           ]
         }
       ],
       "faq": [
-        { "q": "What does an inguinal hernia feel like?", "a": "Often a bulge in the groin that's more noticeable when standing or straining, with aching, pressure or a dragging feeling. Some cause no symptoms at all." },
-        { "q": "Is laparoscopic or open hernia repair better?", "a": "Both are effective. Laparoscopic and robotic repairs may mean a quicker return to activity and are often preferred for hernias on both sides or recurrences; open repair can be done under local anesthesia. The right choice depends on you and your surgeon." },
+        { "q": "What does an inguinal hernia feel like?", "a": "Often a bulge in the groin that's more noticeable when standing or straining, with aching, pressure or a dragging feeling. Some cause no symptoms at all and just sit there, bulging quietly." },
+        { "q": "Is laparoscopic or open hernia repair better?", "a": "Both work. Laparoscopic and robotic repairs may mean a quicker return to activity and are often preferred for hernias on both sides or repeat hernias; open repair can be done under local anesthesia. The right choice depends on you and your surgeon, not on who won the last conference debate." },
         { "q": "When is a hernia an emergency?", "a": "When the bulge is suddenly painful, firm, discolored or can't be pushed back in, especially with nausea or vomiting. Go to an emergency department." }
       ]
     },
@@ -202,7 +203,7 @@
       "term": "Laparoscopic surgery",
       "title": "What is laparoscopic surgery?",
       "seoTitle": "What Is Laparoscopic Surgery? How Keyhole Surgery Works, Benefits and Limits",
-      "dek": "Operating through keyholes with chopsticks while watching TV. Dr. Leo Gordon credits ten famous physicists for the difficulties, none of whom agreed to it.",
+      "dek": "Operating through keyholes with very long chopsticks while watching TV. Dr. Leo Gordon blames ten famous physicists for the difficulties, none of whom agreed to it.",
       "summary": "Laparoscopic (keyhole) surgery explained: how the camera, CO2 and long instruments work, common operations, recovery benefits, and why surgeons find it hard.",
       "topics": ["surgery"],
       "episodes": ["standing-on-the-shoulders-of-physicists-in-the-operating", "out-of-touch", "out-of-touch-from-healing-touch-to-digital-distance", "fourth-and-gall-play-by-play-coverage"],
@@ -211,32 +212,32 @@
         {
           "h": "The short answer",
           "p": [
-            "Laparoscopic surgery, often called keyhole or minimally invasive surgery, is done through a few small incisions instead of one large one. The surgeon inflates the abdomen with carbon dioxide gas to make working room, passes a thin camera (the laparoscope) through one port, and operates with long, narrow instruments while watching a video monitor."
+            "Laparoscopic surgery, a.k.a. keyhole or minimally invasive surgery, is done through a few small incisions instead of one large one. The surgeon inflates your abdomen with carbon dioxide to make room (you are, briefly, a balloon), slides a thin camera called a laparoscope through one port, and operates with long, narrow instruments while watching a video monitor. It's surgery by remote control, minus the remote."
           ]
         },
         {
-          "h": "Common laparoscopic operations",
+          "h": "Greatest hits",
           "p": [
-            "Gallbladder removal (laparoscopic cholecystectomy, first performed in the mid-1980s and now the standard), appendectomy, hernia repair, many colon, stomach and gynecologic operations, and weight-loss surgery."
+            "Gallbladder removal (laparoscopic cholecystectomy, first done in the mid-1980s and now the standard), appendectomy, hernia repair, many colon, stomach and gynecologic operations, and weight-loss surgery."
           ]
         },
         {
-          "h": "Benefits for patients",
+          "h": "What's in it for you",
           "p": [
-            "Compared with open surgery for the same operation, patients typically have less pain, smaller scars, fewer wound infections, shorter hospital stays and a faster return to normal activity. Not every patient or operation is suited to it, and some laparoscopic operations are converted to open surgery partway through for safety."
+            "Compared with open surgery for the same operation, patients typically get less pain, smaller scars, fewer wound infections, shorter hospital stays and a faster return to normal life. Not every patient or operation qualifies, and some laparoscopic operations are switched to open surgery partway through for safety. That's not a failure; it's the surgeon choosing to see with their own eyes."
           ]
         },
         {
-          "h": "Why it's harder for surgeons",
+          "h": "Why surgeons find it maddening",
           "p": [
-            "The instruments pivot at the abdominal wall, so the tip moves opposite to the surgeon's hand (the fulcrum effect). The monitor image can be two-dimensional, the range of motion is limited, and the surgeon loses much of the direct feel of tissue that open surgery provides, the “tissue sense” Dr. Gordon mourns in Out of Touch. Learning these skills takes years of practice."
+            "The instruments pivot at the abdominal wall, so when the surgeon's hand moves left, the tip moves right (the fulcrum effect, or as surgeons call it, “why is it doing that”). The image can be flat, the range of motion is limited, and much of the direct feel of tissue is gone: the “tissue sense” Dr. Gordon mourns in Out of Touch. Mastering it takes years, and a sense of humor helps."
           ]
         }
       ],
       "faq": [
         { "q": "Is laparoscopic surgery major surgery?", "a": "It can be. The incisions are small, but the operation inside may be the same as the open version, with general anesthesia and similar risks, just usually an easier recovery." },
-        { "q": "Why does my shoulder hurt after laparoscopic surgery?", "a": "The carbon dioxide used to inflate the abdomen can irritate the diaphragm, and that pain is often felt in the shoulder. It usually fades within a few days." },
-        { "q": "What is the difference between laparoscopic and robotic surgery?", "a": "Robotic surgery is a form of laparoscopic surgery in which the surgeon controls the instruments from a console instead of holding them directly." }
+        { "q": "Why does my shoulder hurt after laparoscopic surgery?", "a": "The carbon dioxide used to inflate the abdomen can irritate the diaphragm, and the brain files that pain under “shoulder.” It usually fades within a few days." },
+        { "q": "What is the difference between laparoscopic and robotic surgery?", "a": "Robotic surgery is a form of laparoscopic surgery in which the surgeon controls the instruments from a console instead of holding them directly. Same keyholes, fancier chair." }
       ]
     },
     {
@@ -244,7 +245,7 @@
       "term": "Robotic surgery",
       "title": "How does robotic surgery work?",
       "seoTitle": "How Does Robotic Surgery Work? The Surgeon, the Console and the Lost Sense of Touch",
-      "dek": "The robot doesn't operate on you. A surgeon does, from across the room, in what Dr. Gordon calls a high-tech romance gone digital.",
+      "dek": "The robot doesn't operate on you. A surgeon does, from across the room, in what Dr. Gordon calls a high-tech romance gone digital. The robot just gets the credit on the billboard.",
       "summary": "Robotic-assisted surgery explained: the surgeon's console, wristed instruments and 3D view, what the robot does and doesn't do, touch feedback, benefits and costs.",
       "topics": ["surgery", "ai"],
       "episodes": ["out-of-touch", "out-of-touch-from-healing-touch-to-digital-distance", "standing-on-the-shoulders-of-physicists-in-the-operating"],
@@ -253,30 +254,30 @@
         {
           "h": "The short answer",
           "p": [
-            "In robotic-assisted surgery, the surgeon sits at a console, often a few feet from the patient, and controls robotic arms that hold a camera and small instruments inserted through keyhole incisions. The robot doesn't make decisions or move on its own; every motion is the surgeon's."
+            "In robotic-assisted surgery, the surgeon sits at a console, often a few feet from you, and controls robotic arms that hold a camera and small instruments inserted through keyhole incisions. The robot makes no decisions and moves nothing on its own; every motion is the surgeon's. It is, essentially, a very expensive set of extremely steady hands."
           ]
         },
         {
-          "h": "What the robot adds",
+          "h": "What the robot brings to the party",
           "p": [
-            "A magnified, three-dimensional view; instruments with “wrists” that bend more than a human hand at the end of a long stick; motion scaling; and tremor filtering. That makes some tight, delicate work, like operating deep in the pelvis, easier than with standard laparoscopic tools."
+            "A magnified, three-dimensional view; instruments with “wrists” that bend more than a human hand could at the end of a long stick; motion scaling; and tremor filtering, so the surgeon's morning coffee stays out of the operation. That makes some tight, delicate work, like operating deep in the pelvis, easier than with standard laparoscopic tools."
           ]
         },
         {
           "h": "What it takes away",
           "p": [
-            "Distance, and for most of its history, touch. Early systems gave surgeons little or no force feedback, so they learned to judge tissue by sight alone. Newer systems have begun adding force feedback, but the surgeon's hands are still no longer in the patient, the loss at the heart of Out of Touch."
+            "Distance, and for most of its history, touch. Early systems gave surgeons little or no force feedback, so they learned to judge tissue by sight alone. Newer systems have started adding force feedback, but the surgeon's hands are still no longer in the patient, which is the heartbreak at the center of Out of Touch."
           ]
         },
         {
-          "h": "Is it better?",
+          "h": "Is it actually better?",
           "p": [
-            "For some operations it offers real advantages; for others, large studies show outcomes similar to standard laparoscopy at higher cost and sometimes longer operating time. The surgeon's experience with the specific operation matters more than the machine."
+            "For some operations it offers real advantages; for others, large studies show outcomes similar to standard laparoscopy at higher cost and sometimes longer operating time. The surgeon's experience with the specific operation matters more than the machine. Hospitals may advertise the robot; the surgeon is the one you're really hiring."
           ]
         }
       ],
       "faq": [
-        { "q": "Does a robot perform robotic surgery?", "a": "No. A surgeon controls every movement from a console; the robot holds and moves the instruments." },
+        { "q": "Does a robot perform robotic surgery?", "a": "No. A surgeon controls every movement from a console; the robot holds and moves the instruments. Nobody is getting operated on by a toaster." },
         { "q": "Can surgeons feel tissue during robotic surgery?", "a": "Traditionally very little. Most systems rely on visual cues; some newer instruments add force feedback." },
         { "q": "What should I ask my surgeon about robotic surgery?", "a": "How many of this specific operation they've done robotically, why they recommend it over laparoscopic or open surgery for you, and what their complication and conversion rates are." }
       ]
@@ -286,7 +287,7 @@
       "term": "Gallstones",
       "title": "Gallstones and gallbladder surgery, explained",
       "seoTitle": "Gallstones Explained: Symptoms, Bile Duct Stones and Gallbladder Removal",
-      "dek": "The official sport of Fourth and Gall and the livelihood of the International Brotherhood of Biliary Tract Workers.",
+      "dek": "The official sport of Fourth and Gall, and the entire livelihood of the (fictional, hard-working) International Brotherhood of Biliary Tract Workers.",
       "summary": "Gallstones explained: biliary colic symptoms, when stones block the bile duct, cholecystitis and cholangitis, laparoscopic cholecystectomy, ERCP and duct exploration.",
       "topics": ["surgery"],
       "episodes": ["fourth-and-gall-play-by-play-coverage", "the-presidential-address-of-the-international-brotherhood", "standing-on-the-shoulders-of-physicists-in-the-operating"],
@@ -295,32 +296,32 @@
         {
           "h": "The short answer",
           "p": [
-            "Gallstones are hardened deposits, usually of cholesterol, that form in the gallbladder, a small pouch under the liver that stores bile. Many people have gallstones and never know it. Trouble starts when a stone blocks the flow of bile."
+            "Gallstones are hardened deposits, usually cholesterol, that form in the gallbladder, a small pouch under the liver that stores bile. Plenty of people have gallstones and never find out; the stones just sit there like a rock collection nobody asked for. Trouble starts when one blocks the flow of bile."
           ]
         },
         {
-          "h": "Symptoms",
+          "h": "How they announce themselves",
           "p": [
-            "Biliary colic is a steady, often severe pain in the upper right or middle of the abdomen, sometimes spreading to the right shoulder or back, frequently after a fatty meal and lasting from about 30 minutes to several hours. Fever, persistent pain, yellowing of the skin or eyes (jaundice), dark urine or pale stools suggest a complication and need prompt medical attention."
+            "Biliary colic is a steady, often severe pain in the upper right or middle of the abdomen, sometimes spreading to the right shoulder or back, frequently after a fatty meal (the gallbladder has opinions about cheeseburgers) and lasting from about 30 minutes to several hours. Fever, pain that won't quit, yellowing of the skin or eyes (jaundice), dark urine or pale stools suggest a complication and need prompt medical attention."
           ]
         },
         {
-          "h": "When stones cause complications",
+          "h": "When stones start causing real trouble",
           "p": [
-            "Acute cholecystitis is inflammation of the gallbladder from a stuck stone. A stone that escapes into the common bile duct (choledocholithiasis) can cause jaundice, pancreatitis, or cholangitis, an infection of the bile ducts classically signaled by fever, jaundice and right upper abdominal pain (Charcot's triad). Mirizzi syndrome, a stone in the gallbladder neck pressing on the main bile duct, is rarer, and yes, the Brotherhood named a care home after it."
+            "Acute cholecystitis is inflammation of the gallbladder from a stuck stone. A stone that escapes into the common bile duct (choledocholithiasis) can cause jaundice, pancreatitis, or cholangitis, an infection of the bile ducts classically signaled by fever, jaundice and right upper abdominal pain (Charcot's triad). Mirizzi syndrome, a stone in the gallbladder neck pressing on the main bile duct, is rarer. In the show's telling, the Brotherhood named a home for the laparoscopically insane after it; in real life it's just a very inconvenient syndrome."
           ]
         },
         {
-          "h": "Treatment",
+          "h": "The eviction process",
           "p": [
-            "Symptomatic gallstones are usually treated by removing the gallbladder, most often laparoscopically (laparoscopic cholecystectomy). You can live normally without it. Stones in the bile duct may be removed endoscopically before or after surgery (ERCP) or during the operation by exploring the duct, which is the play-by-play action in Fourth and Gall. Surgeons may take an X-ray of the ducts during the operation (an intraoperative cholangiogram) to check for stones."
+            "Gallstones that cause symptoms are usually treated by removing the gallbladder, most often laparoscopically (laparoscopic cholecystectomy). You can live perfectly well without it; it's more of a storage closet than a load-bearing wall. Stones in the bile duct may be removed endoscopically before or after surgery (ERCP) or during the operation by exploring the duct, which is the play-by-play action in Fourth and Gall. Surgeons may take an X-ray of the ducts during the operation (an intraoperative cholangiogram) to check for stragglers."
           ]
         }
       ],
       "faq": [
-        { "q": "Do gallstones always need surgery?", "a": "No. Gallstones that cause no symptoms usually don't need treatment. Surgery is generally recommended once they cause pain or complications." },
-        { "q": "Can you live without a gallbladder?", "a": "Yes. Bile flows directly from the liver into the intestine. Some people notice looser stools after fatty meals, which usually improves." },
-        { "q": "What is ERCP?", "a": "Endoscopic retrograde cholangiopancreatography: a scope passed through the mouth into the small intestine lets a specialist reach the bile duct opening and remove stones without an incision." }
+        { "q": "Do gallstones always need surgery?", "a": "No. Gallstones that cause no symptoms usually don't need treatment. Surgery is generally recommended once they start causing pain or complications." },
+        { "q": "Can you live without a gallbladder?", "a": "Yes. Bile flows straight from the liver into the intestine. Some people notice looser stools after fatty meals, which usually improves." },
+        { "q": "What is ERCP?", "a": "Endoscopic retrograde cholangiopancreatography, which is why everyone just says ERCP. A scope passed through the mouth into the small intestine lets a specialist reach the bile duct opening and remove stones without an incision." }
       ]
     },
     {
@@ -328,7 +329,7 @@
       "term": "Physician burnout",
       "title": "What is physician burnout?",
       "seoTitle": "What Is Physician Burnout? Signs, Causes and Where Doctors Can Get Help",
-      "dek": "Freud's cure, in our entirely fictional telling, was stand-up comedy. The real causes are less funny and more fixable.",
+      "dek": "In our entirely fictional telling, Freud's cure was stand-up comedy. The real causes are less funny, involve a lot more paperwork, and are surprisingly fixable.",
       "summary": "Physician burnout explained: emotional exhaustion, depersonalization and lost sense of purpose, how common it is, the paperwork driving it, and confidential support lines.",
       "topics": ["mind", "hospital"],
       "episodes": ["from-burnout-to-punchlines-freuds-solution", "the-ten-commandments-of-grand-rounds", "surgery-department-voicemail-nightmare-thank-you-for-calling", "ai-rounds-when-your-chatbot-assistant-bites-back"],
@@ -337,25 +338,25 @@
         {
           "h": "The short answer",
           "p": [
-            "Burnout is a work-related syndrome, not a personal failing. It's usually described by three features: emotional exhaustion, depersonalization (feeling detached or cynical toward patients and work), and a reduced sense of accomplishment. It's not a medical diagnosis on its own, but it overlaps with depression, anxiety and substance use, and it affects patient care."
+            "Burnout is a work-related syndrome, not a personal failing or a character flaw. It's usually described by three features: emotional exhaustion, depersonalization (feeling detached or cynical toward patients and work), and a shrinking sense of accomplishment. It isn't a medical diagnosis on its own, but it overlaps with depression, anxiety and substance use, and it affects patient care. In short: the tank is empty, and the gas station requires prior authorization."
           ]
         },
         {
           "h": "How common is it?",
           "p": [
-            "Very. National surveys of U.S. physicians over the past decade have found burnout symptoms in roughly half of respondents, peaking during the COVID-19 pandemic. Rates are high among nurses, residents and other clinicians too."
+            "Very. National surveys of U.S. physicians over the past decade have found burnout symptoms in roughly half of respondents, peaking during the COVID-19 pandemic. Rates are high among nurses, residents and other clinicians too. If your doctor seems tired, it's not you. It's probably the inbox."
           ]
         },
         {
           "h": "What causes it",
           "p": [
-            "Research points more to the system than the individual: electronic health record and documentation burden, administrative tasks like prior authorization, long hours, loss of autonomy, and moral distress when clinicians can't give the care they think patients need."
+            "Research points more at the system than the person: electronic health record and documentation burden, administrative chores like prior authorization, long hours, loss of control over the work, and moral distress when clinicians can't give the care they think patients need. Nobody went to medical school dreaming of clicking boxes."
           ]
         },
         {
-          "h": "What helps",
+          "h": "What actually helps",
           "p": [
-            "Organizational fixes (reducing clerical work, adequate staffing, protected time) have the strongest evidence. Individual supports such as peer support, coaching, mindfulness and, yes, humor, help too. Our Freud episode is satire, but laughing with colleagues is a real coping tool."
+            "Fixing the organization has the strongest evidence: less clerical work, adequate staffing, protected time. Individual supports such as peer support, coaching, mindfulness and, yes, humor help too. Our Freud episode is satire, but laughing with colleagues is a real coping tool. Laughing at colleagues is a different episode."
           ]
         },
         {
@@ -366,8 +367,8 @@
         }
       ],
       "faq": [
-        { "q": "What are the signs of physician burnout?", "a": "Emotional exhaustion, feeling cynical or detached from patients and work, and feeling ineffective. Others include irritability, sleep problems and dreading work." },
-        { "q": "What causes burnout in doctors?", "a": "Mostly system factors: documentation and EHR burden, administrative tasks like prior authorization, long hours and loss of control over work." },
+        { "q": "What are the signs of physician burnout?", "a": "Emotional exhaustion, feeling cynical or detached from patients and work, and feeling ineffective. Others include irritability, poor sleep and dreading Monday by Saturday afternoon." },
+        { "q": "What causes burnout in doctors?", "a": "Mostly system factors: documentation and EHR burden, administrative tasks like prior authorization, long hours and loss of control over the work." },
         { "q": "Where can doctors get confidential help?", "a": "The Physician Support Line at 1-888-409-0141 is free and confidential. In a crisis in the U.S., call or text 988." }
       ]
     },
@@ -376,7 +377,7 @@
       "term": "Transference",
       "title": "What is transference in therapy?",
       "seoTitle": "What Is Transference in Therapy? Transference and Countertransference Explained",
-      "dek": "We called a therapy session like a football game. Transference is the play everyone's watching for.",
+      "dek": "We called a therapy session like a football game. Transference is the play everyone in the booth is waiting for, and your mother is somehow on both teams.",
       "summary": "Transference in psychotherapy explained: how feelings about past relationships get redirected onto a therapist, countertransference, and why therapists use it.",
       "topics": ["mind"],
       "episodes": ["transference-analysis-play-by-play", "from-burnout-to-punchlines-freuds-solution"],
@@ -385,31 +386,31 @@
         {
           "h": "The short answer",
           "p": [
-            "Transference is when a person unconsciously redirects feelings and expectations from an important relationship, often with a parent, onto someone else, classically their therapist. A client might feel the same need for approval, anger or fear of abandonment toward the therapist that they once felt toward a parent."
+            "Transference is when a person unconsciously redirects feelings and expectations from an important relationship, often with a parent, onto someone else, classically their therapist. A client might feel the same need for approval, anger or fear of abandonment toward the therapist that they once felt toward a parent. The therapist just asked how your week was; your nervous system heard your father asking about your report card."
           ]
         },
         {
-          "h": "Where the idea comes from",
+          "h": "Whose idea was this",
           "p": [
-            "Sigmund Freud described transference in the 1890s and 1900s and came to see it as central to psychoanalysis. It remains a core concept in psychodynamic therapy, though therapists of many schools recognize it."
+            "Sigmund Freud described transference in the 1890s and 1900s and came to see it as central to psychoanalysis. It's still a core idea in psychodynamic therapy, and therapists of many other schools recognize it too, usually without the cigar."
           ]
         },
         {
-          "h": "Why therapists pay attention to it",
+          "h": "Why therapists love it (professionally)",
           "p": [
-            "Transference brings old patterns into the room where they can be noticed and talked about in real time. When a client recognizes “I'm reacting to you the way I reacted to my mother,” that insight can loosen the pattern in their other relationships too, which is the “breakthrough” our play-by-play announcers get so excited about."
+            "Transference brings old patterns into the room where they can be noticed and talked about in real time. When a client realizes “I'm reacting to you the way I reacted to my mother,” that insight can loosen the pattern in their other relationships too. That's the “breakthrough” our play-by-play announcers get so worked up about, complete with instant replay."
           ]
         },
         {
-          "h": "Countertransference",
+          "h": "Countertransference: the therapist has a mother too",
           "p": [
-            "Countertransference is the therapist's own emotional reaction to the client, shaped by the therapist's history. Therapists are trained to notice it, often with supervision, so it informs rather than distorts their work."
+            "Countertransference is the therapist's own emotional reaction to the client, shaped by the therapist's history. Therapists are trained to notice it, often with help from supervision, so it informs rather than hijacks the work."
           ]
         }
       ],
       "faq": [
-        { "q": "What is an example of transference?", "a": "A client who grew up with a critical father starts to feel judged and defensive whenever their therapist asks a neutral question, as if the therapist were the father." },
-        { "q": "Is transference a bad thing?", "a": "No. It's a normal part of relationships. In therapy it's useful, because it can be explored openly." },
+        { "q": "What is an example of transference?", "a": "A client who grew up with a critical father starts feeling judged and defensive whenever their therapist asks a neutral question, as if the therapist were the father." },
+        { "q": "Is transference a bad thing?", "a": "No. It's a normal part of relationships. In therapy it's actually useful, because it can be explored out loud instead of acted out." },
         { "q": "What is the difference between transference and countertransference?", "a": "Transference is the client's feelings redirected onto the therapist; countertransference is the therapist's emotional reaction to the client." }
       ]
     },
@@ -418,7 +419,7 @@
       "term": "Caloric test",
       "title": "What is the caloric test (ice water in the ear)?",
       "seoTitle": "What Is the Caloric Test? Ice Water in the Ear, Nystagmus and COWS Explained",
-      "dek": "In The Iceman Cometh, a 1972 medical student is handed a bucket of ice water and told to find a brain tumor with it. Here's what the test actually does.",
+      "dek": "In The Iceman Cometh, a 1972 medical student is handed a bucket of ice water and told to find a brain tumor with it. Here's what the test actually does, and why the bucket was the least weird part.",
       "summary": "The caloric reflex test explained: how warm or cold water in the ear triggers nystagmus, the COWS rule, vestibular testing for dizziness, and its use in coma exams.",
       "topics": ["hospital"],
       "episodes": ["the-iceman-cometh-and-the-patient-goeth"],
@@ -427,13 +428,13 @@
         {
           "h": "The short answer",
           "p": [
-            "The caloric test checks the inner ear's balance system (the vestibular system) and its connections in the brainstem. Warm or cold water, or air, is gently put into the ear canal. The temperature change stirs the fluid in the inner ear's balance canals, which normally makes the eyes move in a characteristic flicking pattern called nystagmus."
+            "The caloric test checks the inner ear's balance system (the vestibular system) and its wiring through the brainstem. Warm or cold water, or air, is gently put into the ear canal. The temperature change stirs the fluid in the inner ear's balance canals, which normally makes the eyes flick in a characteristic pattern called nystagmus. Yes, doctors deliberately make you dizzy, and yes, it's diagnostic."
           ]
         },
         {
-          "h": "COWS",
+          "h": "COWS, the only mnemonic that moos",
           "p": [
-            "Medical students learn the direction of the quick flick of the eyes with the mnemonic COWS: Cold Opposite, Warm Same. Cold water in the left ear makes the fast phase beat toward the right; warm water makes it beat toward the left."
+            "Medical students learn which way the quick flick goes with COWS: Cold Opposite, Warm Same. Cold water in the left ear makes the fast phase beat toward the right; warm water makes it beat toward the left. Generations of students have mooed quietly during exams."
           ]
         },
         {
@@ -445,14 +446,14 @@
         {
           "h": "A bit of history",
           "p": [
-            "Robert Bárány won the 1914 Nobel Prize in Physiology or Medicine for his work on the vestibular apparatus, including the caloric reaction. Before CT and MRI arrived in the 1970s and '80s, bedside neurological tests carried much more weight in localizing disease, though the elaborate eye-movement map in The Iceman Cometh is pure satire."
+            "Robert Bárány won the 1914 Nobel Prize in Physiology or Medicine for his work on the vestibular apparatus, including the caloric reaction. Before CT and MRI arrived in the 1970s and '80s, bedside neurological tests carried much more weight in finding disease. The elaborate eye-movement treasure map in The Iceman Cometh, however, is pure satire; please don't try to locate a tumor with a bucket."
           ]
         }
       ],
       "faq": [
-        { "q": "Does the caloric test hurt?", "a": "It isn't usually painful, but it's designed to cause brief dizziness and sometimes nausea, which pass within minutes." },
+        { "q": "Does the caloric test hurt?", "a": "It isn't usually painful, but it's designed to cause brief dizziness and sometimes nausea, which pass within minutes. Think carnival ride, minus the funnel cake." },
         { "q": "What does COWS stand for?", "a": "Cold Opposite, Warm Same: the direction of the fast phase of nystagmus relative to the ear being irrigated." },
-        { "q": "Can the caloric test find a brain tumor?", "a": "Not directly. It tests the vestibular system and brainstem pathways. Brain tumors are found with imaging such as MRI." }
+        { "q": "Can the caloric test find a brain tumor?", "a": "Not directly. It tests the vestibular system and brainstem pathways. Brain tumors are found with imaging such as MRI, not a bucket of ice water." }
       ]
     },
     {
@@ -460,7 +461,7 @@
       "term": "Grand rounds",
       "title": "What are grand rounds?",
       "seoTitle": "What Are Grand Rounds? The Hospital Teaching Conference, Explained",
-      "dek": "Weekly hospital lectures where the coffee is lukewarm and the questions are hot. Dr. Gordon has ten commandments for surviving them.",
+      "dek": "Weekly hospital lectures where the coffee is lukewarm, the questions are hot, and the front row is reserved by an unwritten law older than the building. Dr. Gordon has ten commandments for surviving them.",
       "summary": "Grand rounds explained: the weekly teaching conference in hospital departments, its history at the bedside, who presents, CME credit, and how to give a good talk.",
       "topics": ["hospital", "surgery"],
       "episodes": ["the-ten-commandments-of-grand-rounds", "from-burnout-to-punchlines-freuds-solution"],
@@ -469,32 +470,32 @@
         {
           "h": "The short answer",
           "p": [
-            "Grand rounds is a regular (usually weekly) teaching conference held by a hospital department such as medicine, surgery or pediatrics. A resident, faculty member or visiting expert presents a case, a clinical topic or new research to physicians, trainees, students and other staff, followed by questions."
+            "Grand rounds is a regular, usually weekly, teaching conference held by a hospital department such as medicine, surgery or pediatrics. A resident, faculty member or visiting expert presents a case, a clinical topic or new research to physicians, trainees, students and staff, followed by questions. Some of the questions are actually questions; the rest are speeches with a question mark at the end."
           ]
         },
         {
           "h": "Where it came from",
           "p": [
-            "It started as literal rounds: senior physicians examining a patient at the bedside in front of a crowd of students and colleagues. Over the 20th century it moved to auditoriums and slide projectors, and now often to video calls, with the patient more often described than present."
+            "It started as literal rounds: senior physicians examining a patient at the bedside in front of a crowd of students and colleagues, which the patient presumably loved. Over the 20th century it moved to auditoriums and slide projectors, and now often to video calls, where the patient is described rather than present and half the audience is on mute."
           ]
         },
         {
-          "h": "Why it matters",
+          "h": "Why it matters (really)",
           "p": [
-            "Grand rounds is where departments share new evidence, debate difficult cases and teach trainees how to present. Many sessions are accredited for continuing medical education (CME) credit. It's also where a department's culture is on display, including its traditions about who sits in the front row."
+            "Grand rounds is where departments share new evidence, argue over difficult cases and teach trainees how to present. Many sessions are accredited for continuing medical education (CME) credit. It's also where a department's culture is on full display, including its traditions about who sits in the front row and who asks the first question."
           ]
         },
         {
-          "h": "Giving a good grand rounds",
+          "h": "How to give a good one",
           "p": [
-            "Know your audience, tell a clear clinical story, keep slides sparse, finish on time and leave room for questions. Or follow the Ten Commandments."
+            "Know your audience, tell a clear clinical story, keep slides sparse (no, 90 slides is not “sparse”), finish on time and leave room for questions. Or simply follow the Ten Commandments."
           ]
         }
       ],
       "faq": [
-        { "q": "Who can attend grand rounds?", "a": "Usually anyone in the hospital or department: physicians, residents, students, nurses and other staff. Many are open to the public online." },
+        { "q": "Who can attend grand rounds?", "a": "Usually anyone in the hospital or department: physicians, residents, students, nurses and other staff. Many are open to the public online. The front row is technically open too; good luck." },
         { "q": "Do grand rounds give CME credit?", "a": "Often. Many hospitals accredit their grand rounds series for continuing medical education credit." },
-        { "q": "How long is grand rounds?", "a": "Typically about an hour, including questions." }
+        { "q": "How long is grand rounds?", "a": "Typically about an hour, including questions, unless the speaker has discovered a 91st slide." }
       ]
     },
     {
@@ -502,7 +503,7 @@
       "term": "Care robots",
       "title": "Robots in elder care: what they do and don't do",
       "seoTitle": "Robots in Elder Care: Companion, Lifting and Hygiene Robots, Pros and Cons",
-      "dek": "Gerald has a 4.8-star rating and asks permission before every step. He still can't replace your Sunday visit.",
+      "dek": "Gerald has a 4.8-star rating and asks permission before every step. He still can't replace your Sunday visit, no matter how good his firmware gets.",
       "summary": "Care robots for older adults explained: companion robots like PARO, lifting and hygiene assist devices, reminders, the dignity and privacy questions, and their limits.",
       "topics": ["aging", "ai"],
       "episodes": ["the-robot-who-wipes-my-butt", "sylvias-walker-balls", "senior-pickleball-when-the-spirit-is-willing-but-the-joints"],
@@ -511,31 +512,31 @@
         {
           "h": "The short answer",
           "p": [
-            "Care robots are machines designed to help older or disabled people with daily living: moving from bed to chair, bathing and toileting, reminders for medication, and companionship. With a growing older population and a shortage of caregivers, they're getting more attention in nursing homes and in the home."
+            "Care robots are machines built to help older or disabled people with daily living: moving from bed to chair, bathing and toileting, medication reminders, and companionship. With the population aging and caregivers in short supply, they're showing up in nursing homes and living rooms. Some are helpful. Some are adorable. A few are both."
           ]
         },
         {
-          "h": "Kinds of care robots",
+          "h": "Meet the staff",
           "p": [
-            "Lifting and transfer aids that reduce injuries to residents and staff. Toileting and bathing assistance devices, such as automated bidet and hygiene systems. Social or companion robots, like PARO, a therapeutic robot seal studied in people with dementia. Reminder and check-in devices and tablets."
+            "Lifting and transfer aids that spare the backs of residents and staff. Toileting and bathing assistance devices, such as automated bidet and hygiene systems (Gerald's real-world cousins). Social or companion robots, like PARO, a therapeutic robot seal studied in people with dementia. Reminder and check-in devices and tablets that, unlike some relatives, actually wait for your answer."
           ]
         },
         {
           "h": "The case for them",
           "p": [
-            "Privacy and dignity for intimate tasks (the point of The Robot Who Wipes My Butt: shame doesn't transfer to a machine), fewer back injuries for caregivers, more independence at home, and comfort for some people with dementia or loneliness."
+            "Privacy and dignity for intimate tasks (the whole point of The Robot Who Wipes My Butt: shame doesn't transfer to a machine), fewer back injuries for caregivers, more independence at home, and comfort for some people living with dementia or loneliness."
           ]
         },
         {
-          "h": "The concerns",
+          "h": "The fine print",
           "p": [
-            "Cost, reliability and safety; privacy of the sensors and cameras; consent from people with cognitive impairment; and the risk that families or facilities use a machine to replace human contact rather than to support it."
+            "Cost, reliability and safety; privacy of all those sensors and cameras; consent from people with cognitive impairment; and the risk that families or facilities use a machine to replace human contact instead of support it. A robot that helps you bathe is a mercy. A robot that replaces your family's visits is an abandonment with good UX."
           ]
         }
       ],
       "faq": [
-        { "q": "What is PARO the robot seal?", "a": "A therapeutic robot shaped like a baby harp seal that responds to touch and sound. It has been used and studied in dementia care to reduce agitation and loneliness." },
-        { "q": "Can robots replace caregivers?", "a": "No. They can take on specific tasks, but they can't replace human judgment, relationships or companionship." },
+        { "q": "What is PARO the robot seal?", "a": "A therapeutic robot shaped like a baby harp seal that responds to touch and sound. It has been used and studied in dementia care to reduce agitation and loneliness, and it never contradicts anyone." },
+        { "q": "Can robots replace caregivers?", "a": "No. They can take on specific tasks, but they can't replace human judgment, relationships or company." },
         { "q": "Are care robots safe?", "a": "Approved devices are designed for safety, but they need proper setup, supervision and maintenance, and they should be chosen with the person's consent." }
       ]
     }
