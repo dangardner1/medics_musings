@@ -9,9 +9,18 @@
       "seoTitle": "What Is Prior Authorization? A Plain-English Guide for Patients and Doctors",
       "dek": "Your doctor says you need it. Your insurer says prove it. A fax machine says nothing at all. Welcome to the reason this show's tagline is “no prior authorization required.”",
       "summary": "Prior authorization explained: why insurers require approval before tests, drugs and surgery, how long it takes, the 2026 federal deadlines, and how to appeal a denial.",
-      "topics": ["hospital"],
-      "episodes": ["surgery-department-voicemail-nightmare-thank-you-for-calling", "black-friday-bargain-bin-healthcare-extravaganza", "ai-rounds-when-your-chatbot-assistant-bites-back"],
-      "related": ["physician-burnout", "ai-scribes"],
+      "topics": [
+        "hospital"
+      ],
+      "episodes": [
+        "surgery-department-voicemail-nightmare-thank-you-for-calling",
+        "black-friday-bargain-bin-healthcare-extravaganza",
+        "ai-rounds-when-your-chatbot-assistant-bites-back"
+      ],
+      "related": [
+        "physician-burnout",
+        "ai-scribes"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -53,10 +62,22 @@
         }
       ],
       "faq": [
-        { "q": "How long does prior authorization take?", "a": "Anywhere from minutes (electronic approvals, the unicorns of healthcare) to several weeks. Since 2026, Medicare Advantage, Medicaid, CHIP and federal Marketplace plans must decide within 72 hours for urgent requests and 7 calendar days for standard ones." },
-        { "q": "Who is responsible for getting prior authorization?", "a": "Usually your clinician's office submits it. But it's your coverage on the line, so confirm it was requested and approved before a planned test or procedure. Trust, but get the reference number." },
-        { "q": "What should I do if prior authorization is denied?", "a": "Get the denial and reason in writing, ask your clinician to request a peer-to-peer review, and file an appeal with your plan. If the plan still says no, you can usually request an external review by an independent reviewer who, crucially, doesn't work for your insurer." },
-        { "q": "Does emergency care need prior authorization?", "a": "No. Emergency care should not require prior authorization. In an emergency, call 911 or go to the nearest emergency department." }
+        {
+          "q": "How long does prior authorization take?",
+          "a": "Anywhere from minutes (electronic approvals, the unicorns of healthcare) to several weeks. Since 2026, Medicare Advantage, Medicaid, CHIP and federal Marketplace plans must decide within 72 hours for urgent requests and 7 calendar days for standard ones."
+        },
+        {
+          "q": "Who is responsible for getting prior authorization?",
+          "a": "Usually your clinician's office submits it. But it's your coverage on the line, so confirm it was requested and approved before a planned test or procedure. Trust, but get the reference number."
+        },
+        {
+          "q": "What should I do if prior authorization is denied?",
+          "a": "Get the denial and reason in writing, ask your clinician to request a peer-to-peer review, and file an appeal with your plan. If the plan still says no, you can usually request an external review by an independent reviewer who, crucially, doesn't work for your insurer."
+        },
+        {
+          "q": "Does emergency care need prior authorization?",
+          "a": "No. Emergency care should not require prior authorization. In an emergency, call 911 or go to the nearest emergency department."
+        }
       ]
     },
     {
@@ -66,9 +87,21 @@
       "seoTitle": "AI Scribes Explained: How Ambient AI Writes Your Doctor's Notes",
       "dek": "Your doctor used to type while you talked. Now an app listens, types, and occasionally decides you mentioned a pet iguana. What could possibly get lost in translation?",
       "summary": "What AI scribes (ambient clinical documentation) are, how they record and summarize a doctor visit, their benefits, error risks, privacy rules, and your right to say no.",
-      "topics": ["ai", "hospital"],
-      "episodes": ["ai-rounds-when-your-chatbot-assistant-bites-back", "the-digital-doctor", "can-patients-and-doctors-trust-ai-in-healthcare", "algorithms-meet-empathy-the-future-of-patient-care"],
-      "related": ["ai-chatbots-medical-advice", "physician-burnout", "prior-authorization"],
+      "topics": [
+        "ai",
+        "hospital"
+      ],
+      "episodes": [
+        "ai-rounds-when-your-chatbot-assistant-bites-back",
+        "the-digital-doctor",
+        "can-patients-and-doctors-trust-ai-in-healthcare",
+        "algorithms-meet-empathy-the-future-of-patient-care"
+      ],
+      "related": [
+        "ai-chatbots-medical-advice",
+        "physician-burnout",
+        "prior-authorization"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -96,9 +129,18 @@
         }
       ],
       "faq": [
-        { "q": "Is my doctor's visit being recorded by AI?", "a": "It might be. Clinics using AI scribes should tell you and ask for consent. If you're not sure, ask; you're allowed to decline, and no, it won't hurt the software's feelings." },
-        { "q": "Who checks the note an AI scribe writes?", "a": "Your clinician. The AI writes a draft, and the clinician is responsible for reviewing, correcting and signing it." },
-        { "q": "Do AI scribes make mistakes?", "a": "Yes. They can leave things out, credit the wrong person or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong." }
+        {
+          "q": "Is my doctor's visit being recorded by AI?",
+          "a": "It might be. Clinics using AI scribes should tell you and ask for consent. If you're not sure, ask; you're allowed to decline, and no, it won't hurt the software's feelings."
+        },
+        {
+          "q": "Who checks the note an AI scribe writes?",
+          "a": "Your clinician. The AI writes a draft, and the clinician is responsible for reviewing, correcting and signing it."
+        },
+        {
+          "q": "Do AI scribes make mistakes?",
+          "a": "Yes. They can leave things out, credit the wrong person or invent details. Read your visit summary in your patient portal and ask for corrections if something is wrong."
+        }
       ]
     },
     {
@@ -108,9 +150,18 @@
       "seoTitle": "Can You Trust AI Chatbots for Medical Advice? Uses, Limits and Red Flags",
       "dek": "Our resident chatbot, Algo Chats-a-Lot III, recommends two bytes and a call in the morning. Real chatbots are more useful than that, and occasionally just as confident.",
       "summary": "What AI chatbots like ChatGPT and Claude can and can't do with health questions, why they can be confidently wrong, privacy concerns, and how to use them safely.",
-      "topics": ["ai"],
-      "episodes": ["bedside-banter-with-algo-chats-a-lot-iii", "can-patients-and-doctors-trust-ai-in-healthcare", "the-digital-doctor", "algorithms-meet-empathy-the-future-of-patient-care"],
-      "related": ["ai-scribes"],
+      "topics": [
+        "ai"
+      ],
+      "episodes": [
+        "bedside-banter-with-algo-chats-a-lot-iii",
+        "can-patients-and-doctors-trust-ai-in-healthcare",
+        "the-digital-doctor",
+        "algorithms-meet-empathy-the-future-of-patient-care"
+      ],
+      "related": [
+        "ai-scribes"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -144,9 +195,18 @@
         }
       ],
       "faq": [
-        { "q": "Is it safe to ask ChatGPT or Claude medical questions?", "a": "For general education and prepping for an appointment, often yes. For diagnosis or treatment decisions, check with a clinician; chatbots can be confidently wrong and don't know your full history." },
-        { "q": "Are AI chatbots HIPAA compliant?", "a": "Consumer chatbots generally aren't covered by HIPAA. Leave out identifying details and review the app's privacy settings." },
-        { "q": "When should I not use an AI chatbot for health?", "a": "In an emergency. Call 911, or 988 for a mental health crisis in the U.S., instead of typing symptoms into an app." }
+        {
+          "q": "Is it safe to ask ChatGPT or Claude medical questions?",
+          "a": "For general education and prepping for an appointment, often yes. For diagnosis or treatment decisions, check with a clinician; chatbots can be confidently wrong and don't know your full history."
+        },
+        {
+          "q": "Are AI chatbots HIPAA compliant?",
+          "a": "Consumer chatbots generally aren't covered by HIPAA. Leave out identifying details and review the app's privacy settings."
+        },
+        {
+          "q": "When should I not use an AI chatbot for health?",
+          "a": "In an emergency. Call 911, or 988 for a mental health crisis in the U.S., instead of typing symptoms into an app."
+        }
       ]
     },
     {
@@ -156,9 +216,19 @@
       "seoTitle": "What Is an Inguinal Hernia? Symptoms, Repair Options and Warning Signs",
       "dek": "The most contested territory in the groin, subject of a three-part peace summit (Pax Inguinalis) and roughly a century of surgeons disagreeing politely at conferences.",
       "summary": "Inguinal hernia explained: what causes the groin bulge, who gets it, open vs laparoscopic and robotic mesh repair, watchful waiting, and emergency warning signs.",
-      "topics": ["surgery"],
-      "episodes": ["pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the", "pax-inguinalis-part-2", "pax-inguinalis-part-3", "pax-inguinalis-salons-and-evening-events-programme"],
-      "related": ["laparoscopic-surgery", "robotic-surgery"],
+      "topics": [
+        "surgery"
+      ],
+      "episodes": [
+        "pax-inguinalis-negotiating-a-just-and-lasting-peace-in-the",
+        "pax-inguinalis-part-2",
+        "pax-inguinalis-part-3",
+        "pax-inguinalis-salons-and-evening-events-programme"
+      ],
+      "related": [
+        "laparoscopic-surgery",
+        "robotic-surgery"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -193,9 +263,18 @@
         }
       ],
       "faq": [
-        { "q": "What does an inguinal hernia feel like?", "a": "Often a bulge in the groin that's more noticeable when standing or straining, with aching, pressure or a dragging feeling. Some cause no symptoms at all and just sit there, bulging quietly." },
-        { "q": "Is laparoscopic or open hernia repair better?", "a": "Both work. Laparoscopic and robotic repairs may mean a quicker return to activity and are often preferred for hernias on both sides or repeat hernias; open repair can be done under local anesthesia. The right choice depends on you and your surgeon, not on who won the last conference debate." },
-        { "q": "When is a hernia an emergency?", "a": "When the bulge is suddenly painful, firm, discolored or can't be pushed back in, especially with nausea or vomiting. Go to an emergency department." }
+        {
+          "q": "What does an inguinal hernia feel like?",
+          "a": "Often a bulge in the groin that's more noticeable when standing or straining, with aching, pressure or a dragging feeling. Some cause no symptoms at all and just sit there, bulging quietly."
+        },
+        {
+          "q": "Is laparoscopic or open hernia repair better?",
+          "a": "Both work. Laparoscopic and robotic repairs may mean a quicker return to activity and are often preferred for hernias on both sides or repeat hernias; open repair can be done under local anesthesia. The right choice depends on you and your surgeon, not on who won the last conference debate."
+        },
+        {
+          "q": "When is a hernia an emergency?",
+          "a": "When the bulge is suddenly painful, firm, discolored or can't be pushed back in, especially with nausea or vomiting. Go to an emergency department."
+        }
       ]
     },
     {
@@ -205,9 +284,20 @@
       "seoTitle": "What Is Laparoscopic Surgery? How Keyhole Surgery Works, Benefits and Limits",
       "dek": "Operating through keyholes with very long chopsticks while watching TV. Dr. Leo Gordon blames ten famous physicists for the difficulties, none of whom agreed to it.",
       "summary": "Laparoscopic (keyhole) surgery explained: how the camera, CO2 and long instruments work, common operations, recovery benefits, and why surgeons find it hard.",
-      "topics": ["surgery"],
-      "episodes": ["standing-on-the-shoulders-of-physicists-in-the-operating", "out-of-touch", "out-of-touch-from-healing-touch-to-digital-distance", "fourth-and-gall-play-by-play-coverage"],
-      "related": ["robotic-surgery", "gallstones-and-gallbladder-surgery", "inguinal-hernia"],
+      "topics": [
+        "surgery"
+      ],
+      "episodes": [
+        "standing-on-the-shoulders-of-physicists-in-the-operating",
+        "out-of-touch",
+        "out-of-touch-from-healing-touch-to-digital-distance",
+        "fourth-and-gall-play-by-play-coverage"
+      ],
+      "related": [
+        "robotic-surgery",
+        "gallstones-and-gallbladder-surgery",
+        "inguinal-hernia"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -235,9 +325,18 @@
         }
       ],
       "faq": [
-        { "q": "Is laparoscopic surgery major surgery?", "a": "It can be. The incisions are small, but the operation inside may be the same as the open version, with general anesthesia and similar risks, just usually an easier recovery." },
-        { "q": "Why does my shoulder hurt after laparoscopic surgery?", "a": "The carbon dioxide used to inflate the abdomen can irritate the diaphragm, and the brain files that pain under “shoulder.” It usually fades within a few days." },
-        { "q": "What is the difference between laparoscopic and robotic surgery?", "a": "Robotic surgery is a form of laparoscopic surgery in which the surgeon controls the instruments from a console instead of holding them directly. Same keyholes, fancier chair." }
+        {
+          "q": "Is laparoscopic surgery major surgery?",
+          "a": "It can be. The incisions are small, but the operation inside may be the same as the open version, with general anesthesia and similar risks, just usually an easier recovery."
+        },
+        {
+          "q": "Why does my shoulder hurt after laparoscopic surgery?",
+          "a": "The carbon dioxide used to inflate the abdomen can irritate the diaphragm, and the brain files that pain under “shoulder.” It usually fades within a few days."
+        },
+        {
+          "q": "What is the difference between laparoscopic and robotic surgery?",
+          "a": "Robotic surgery is a form of laparoscopic surgery in which the surgeon controls the instruments from a console instead of holding them directly. Same keyholes, fancier chair."
+        }
       ]
     },
     {
@@ -247,9 +346,19 @@
       "seoTitle": "How Does Robotic Surgery Work? The Surgeon, the Console and the Lost Sense of Touch",
       "dek": "The robot doesn't operate on you. A surgeon does, from across the room, in what Dr. Gordon calls a high-tech romance gone digital. The robot just gets the credit on the billboard.",
       "summary": "Robotic-assisted surgery explained: the surgeon's console, wristed instruments and 3D view, what the robot does and doesn't do, touch feedback, benefits and costs.",
-      "topics": ["surgery", "ai"],
-      "episodes": ["out-of-touch", "out-of-touch-from-healing-touch-to-digital-distance", "standing-on-the-shoulders-of-physicists-in-the-operating"],
-      "related": ["laparoscopic-surgery", "inguinal-hernia"],
+      "topics": [
+        "surgery",
+        "ai"
+      ],
+      "episodes": [
+        "out-of-touch",
+        "out-of-touch-from-healing-touch-to-digital-distance",
+        "standing-on-the-shoulders-of-physicists-in-the-operating"
+      ],
+      "related": [
+        "laparoscopic-surgery",
+        "inguinal-hernia"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -277,9 +386,18 @@
         }
       ],
       "faq": [
-        { "q": "Does a robot perform robotic surgery?", "a": "No. A surgeon controls every movement from a console; the robot holds and moves the instruments. Nobody is getting operated on by a toaster." },
-        { "q": "Can surgeons feel tissue during robotic surgery?", "a": "Traditionally very little. Most systems rely on visual cues; some newer instruments add force feedback." },
-        { "q": "What should I ask my surgeon about robotic surgery?", "a": "How many of this specific operation they've done robotically, why they recommend it over laparoscopic or open surgery for you, and what their complication and conversion rates are." }
+        {
+          "q": "Does a robot perform robotic surgery?",
+          "a": "No. A surgeon controls every movement from a console; the robot holds and moves the instruments. Nobody is getting operated on by a toaster."
+        },
+        {
+          "q": "Can surgeons feel tissue during robotic surgery?",
+          "a": "Traditionally very little. Most systems rely on visual cues; some newer instruments add force feedback."
+        },
+        {
+          "q": "What should I ask my surgeon about robotic surgery?",
+          "a": "How many of this specific operation they've done robotically, why they recommend it over laparoscopic or open surgery for you, and what their complication and conversion rates are."
+        }
       ]
     },
     {
@@ -289,9 +407,17 @@
       "seoTitle": "Gallstones Explained: Symptoms, Bile Duct Stones and Gallbladder Removal",
       "dek": "The official sport of Fourth and Gall, and the entire livelihood of the (fictional, hard-working) International Brotherhood of Biliary Tract Workers.",
       "summary": "Gallstones explained: biliary colic symptoms, when stones block the bile duct, cholecystitis and cholangitis, laparoscopic cholecystectomy, ERCP and duct exploration.",
-      "topics": ["surgery"],
-      "episodes": ["fourth-and-gall-play-by-play-coverage", "the-presidential-address-of-the-international-brotherhood", "standing-on-the-shoulders-of-physicists-in-the-operating"],
-      "related": ["laparoscopic-surgery"],
+      "topics": [
+        "surgery"
+      ],
+      "episodes": [
+        "fourth-and-gall-play-by-play-coverage",
+        "the-presidential-address-of-the-international-brotherhood",
+        "standing-on-the-shoulders-of-physicists-in-the-operating"
+      ],
+      "related": [
+        "laparoscopic-surgery"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -319,9 +445,18 @@
         }
       ],
       "faq": [
-        { "q": "Do gallstones always need surgery?", "a": "No. Gallstones that cause no symptoms usually don't need treatment. Surgery is generally recommended once they start causing pain or complications." },
-        { "q": "Can you live without a gallbladder?", "a": "Yes. Bile flows straight from the liver into the intestine. Some people notice looser stools after fatty meals, which usually improves." },
-        { "q": "What is ERCP?", "a": "Endoscopic retrograde cholangiopancreatography, which is why everyone just says ERCP. A scope passed through the mouth into the small intestine lets a specialist reach the bile duct opening and remove stones without an incision." }
+        {
+          "q": "Do gallstones always need surgery?",
+          "a": "No. Gallstones that cause no symptoms usually don't need treatment. Surgery is generally recommended once they start causing pain or complications."
+        },
+        {
+          "q": "Can you live without a gallbladder?",
+          "a": "Yes. Bile flows straight from the liver into the intestine. Some people notice looser stools after fatty meals, which usually improves."
+        },
+        {
+          "q": "What is ERCP?",
+          "a": "Endoscopic retrograde cholangiopancreatography, which is why everyone just says ERCP. A scope passed through the mouth into the small intestine lets a specialist reach the bile duct opening and remove stones without an incision."
+        }
       ]
     },
     {
@@ -331,9 +466,21 @@
       "seoTitle": "What Is Physician Burnout? Signs, Causes and Where Doctors Can Get Help",
       "dek": "In our entirely fictional telling, Freud's cure was stand-up comedy. The real causes are less funny, involve a lot more paperwork, and are surprisingly fixable.",
       "summary": "Physician burnout explained: emotional exhaustion, depersonalization and lost sense of purpose, how common it is, the paperwork driving it, and confidential support lines.",
-      "topics": ["mind", "hospital"],
-      "episodes": ["from-burnout-to-punchlines-freuds-solution", "the-ten-commandments-of-grand-rounds", "surgery-department-voicemail-nightmare-thank-you-for-calling", "ai-rounds-when-your-chatbot-assistant-bites-back"],
-      "related": ["prior-authorization", "ai-scribes", "transference"],
+      "topics": [
+        "mind",
+        "hospital"
+      ],
+      "episodes": [
+        "from-burnout-to-punchlines-freuds-solution",
+        "the-ten-commandments-of-grand-rounds",
+        "surgery-department-voicemail-nightmare-thank-you-for-calling",
+        "ai-rounds-when-your-chatbot-assistant-bites-back"
+      ],
+      "related": [
+        "prior-authorization",
+        "ai-scribes",
+        "transference"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -367,9 +514,18 @@
         }
       ],
       "faq": [
-        { "q": "What are the signs of physician burnout?", "a": "Emotional exhaustion, feeling cynical or detached from patients and work, and feeling ineffective. Others include irritability, poor sleep and dreading Monday by Saturday afternoon." },
-        { "q": "What causes burnout in doctors?", "a": "Mostly system factors: documentation and EHR burden, administrative tasks like prior authorization, long hours and loss of control over the work." },
-        { "q": "Where can doctors get confidential help?", "a": "The Physician Support Line at 1-888-409-0141 is free and confidential. In a crisis in the U.S., call or text 988." }
+        {
+          "q": "What are the signs of physician burnout?",
+          "a": "Emotional exhaustion, feeling cynical or detached from patients and work, and feeling ineffective. Others include irritability, poor sleep and dreading Monday by Saturday afternoon."
+        },
+        {
+          "q": "What causes burnout in doctors?",
+          "a": "Mostly system factors: documentation and EHR burden, administrative tasks like prior authorization, long hours and loss of control over the work."
+        },
+        {
+          "q": "Where can doctors get confidential help?",
+          "a": "The Physician Support Line at 1-888-409-0141 is free and confidential. In a crisis in the U.S., call or text 988."
+        }
       ]
     },
     {
@@ -379,9 +535,19 @@
       "seoTitle": "What Is Transference in Therapy? Transference and Countertransference Explained",
       "dek": "We called a therapy session like a football game. Transference is the play everyone in the booth is waiting for, and your mother is somehow on both teams.",
       "summary": "Transference in psychotherapy explained: how feelings about past relationships get redirected onto a therapist, countertransference, and why therapists use it.",
-      "topics": ["mind"],
-      "episodes": ["transference-analysis-play-by-play", "from-burnout-to-punchlines-freuds-solution"],
-      "related": ["physician-burnout"],
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "transference-analysis-play-by-play",
+        "from-burnout-to-punchlines-freuds-solution"
+      ],
+      "related": [
+        "psychoanalysis",
+        "defense-mechanisms",
+        "psychodynamic-therapy-vs-cbt",
+        "physician-burnout"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -409,9 +575,18 @@
         }
       ],
       "faq": [
-        { "q": "What is an example of transference?", "a": "A client who grew up with a critical father starts feeling judged and defensive whenever their therapist asks a neutral question, as if the therapist were the father." },
-        { "q": "Is transference a bad thing?", "a": "No. It's a normal part of relationships. In therapy it's actually useful, because it can be explored out loud instead of acted out." },
-        { "q": "What is the difference between transference and countertransference?", "a": "Transference is the client's feelings redirected onto the therapist; countertransference is the therapist's emotional reaction to the client." }
+        {
+          "q": "What is an example of transference?",
+          "a": "A client who grew up with a critical father starts feeling judged and defensive whenever their therapist asks a neutral question, as if the therapist were the father."
+        },
+        {
+          "q": "Is transference a bad thing?",
+          "a": "No. It's a normal part of relationships. In therapy it's actually useful, because it can be explored out loud instead of acted out."
+        },
+        {
+          "q": "What is the difference between transference and countertransference?",
+          "a": "Transference is the client's feelings redirected onto the therapist; countertransference is the therapist's emotional reaction to the client."
+        }
       ]
     },
     {
@@ -421,9 +596,15 @@
       "seoTitle": "What Is the Caloric Test? Ice Water in the Ear, Nystagmus and COWS Explained",
       "dek": "In The Iceman Cometh, a 1972 medical student is handed a bucket of ice water and told to find a brain tumor with it. Here's what the test actually does, and why the bucket was the least weird part.",
       "summary": "The caloric reflex test explained: how warm or cold water in the ear triggers nystagmus, the COWS rule, vestibular testing for dizziness, and its use in coma exams.",
-      "topics": ["hospital"],
-      "episodes": ["the-iceman-cometh-and-the-patient-goeth"],
-      "related": ["grand-rounds"],
+      "topics": [
+        "hospital"
+      ],
+      "episodes": [
+        "the-iceman-cometh-and-the-patient-goeth"
+      ],
+      "related": [
+        "grand-rounds"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -451,9 +632,18 @@
         }
       ],
       "faq": [
-        { "q": "Does the caloric test hurt?", "a": "It isn't usually painful, but it's designed to cause brief dizziness and sometimes nausea, which pass within minutes. Think carnival ride, minus the funnel cake." },
-        { "q": "What does COWS stand for?", "a": "Cold Opposite, Warm Same: the direction of the fast phase of nystagmus relative to the ear being irrigated." },
-        { "q": "Can the caloric test find a brain tumor?", "a": "Not directly. It tests the vestibular system and brainstem pathways. Brain tumors are found with imaging such as MRI, not a bucket of ice water." }
+        {
+          "q": "Does the caloric test hurt?",
+          "a": "It isn't usually painful, but it's designed to cause brief dizziness and sometimes nausea, which pass within minutes. Think carnival ride, minus the funnel cake."
+        },
+        {
+          "q": "What does COWS stand for?",
+          "a": "Cold Opposite, Warm Same: the direction of the fast phase of nystagmus relative to the ear being irrigated."
+        },
+        {
+          "q": "Can the caloric test find a brain tumor?",
+          "a": "Not directly. It tests the vestibular system and brainstem pathways. Brain tumors are found with imaging such as MRI, not a bucket of ice water."
+        }
       ]
     },
     {
@@ -463,9 +653,17 @@
       "seoTitle": "What Are Grand Rounds? The Hospital Teaching Conference, Explained",
       "dek": "Weekly hospital lectures where the coffee is lukewarm, the questions are hot, and the front row is reserved by an unwritten law older than the building. Dr. Gordon has ten commandments for surviving them.",
       "summary": "Grand rounds explained: the weekly teaching conference in hospital departments, its history at the bedside, who presents, CME credit, and how to give a good talk.",
-      "topics": ["hospital", "surgery"],
-      "episodes": ["the-ten-commandments-of-grand-rounds", "from-burnout-to-punchlines-freuds-solution"],
-      "related": ["physician-burnout"],
+      "topics": [
+        "hospital",
+        "surgery"
+      ],
+      "episodes": [
+        "the-ten-commandments-of-grand-rounds",
+        "from-burnout-to-punchlines-freuds-solution"
+      ],
+      "related": [
+        "physician-burnout"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -493,9 +691,18 @@
         }
       ],
       "faq": [
-        { "q": "Who can attend grand rounds?", "a": "Usually anyone in the hospital or department: physicians, residents, students, nurses and other staff. Many are open to the public online. The front row is technically open too; good luck." },
-        { "q": "Do grand rounds give CME credit?", "a": "Often. Many hospitals accredit their grand rounds series for continuing medical education credit." },
-        { "q": "How long is grand rounds?", "a": "Typically about an hour, including questions, unless the speaker has discovered a 91st slide." }
+        {
+          "q": "Who can attend grand rounds?",
+          "a": "Usually anyone in the hospital or department: physicians, residents, students, nurses and other staff. Many are open to the public online. The front row is technically open too; good luck."
+        },
+        {
+          "q": "Do grand rounds give CME credit?",
+          "a": "Often. Many hospitals accredit their grand rounds series for continuing medical education credit."
+        },
+        {
+          "q": "How long is grand rounds?",
+          "a": "Typically about an hour, including questions, unless the speaker has discovered a 91st slide."
+        }
       ]
     },
     {
@@ -505,9 +712,18 @@
       "seoTitle": "Robots in Elder Care: Companion, Lifting and Hygiene Robots, Pros and Cons",
       "dek": "Gerald has a 4.8-star rating and asks permission before every step. He still can't replace your Sunday visit, no matter how good his firmware gets.",
       "summary": "Care robots for older adults explained: companion robots like PARO, lifting and hygiene assist devices, reminders, the dignity and privacy questions, and their limits.",
-      "topics": ["aging", "ai"],
-      "episodes": ["the-robot-who-wipes-my-butt", "sylvias-walker-balls", "senior-pickleball-when-the-spirit-is-willing-but-the-joints"],
-      "related": ["ai-chatbots-medical-advice"],
+      "topics": [
+        "aging",
+        "ai"
+      ],
+      "episodes": [
+        "the-robot-who-wipes-my-butt",
+        "sylvias-walker-balls",
+        "senior-pickleball-when-the-spirit-is-willing-but-the-joints"
+      ],
+      "related": [
+        "ai-chatbots-medical-advice"
+      ],
       "sections": [
         {
           "h": "The short answer",
@@ -535,9 +751,499 @@
         }
       ],
       "faq": [
-        { "q": "What is PARO the robot seal?", "a": "A therapeutic robot shaped like a baby harp seal that responds to touch and sound. It has been used and studied in dementia care to reduce agitation and loneliness, and it never contradicts anyone." },
-        { "q": "Can robots replace caregivers?", "a": "No. They can take on specific tasks, but they can't replace human judgment, relationships or company." },
-        { "q": "Are care robots safe?", "a": "Approved devices are designed for safety, but they need proper setup, supervision and maintenance, and they should be chosen with the person's consent." }
+        {
+          "q": "What is PARO the robot seal?",
+          "a": "A therapeutic robot shaped like a baby harp seal that responds to touch and sound. It has been used and studied in dementia care to reduce agitation and loneliness, and it never contradicts anyone."
+        },
+        {
+          "q": "Can robots replace caregivers?",
+          "a": "No. They can take on specific tasks, but they can't replace human judgment, relationships or company."
+        },
+        {
+          "q": "Are care robots safe?",
+          "a": "Approved devices are designed for safety, but they need proper setup, supervision and maintenance, and they should be chosen with the person's consent."
+        }
+      ]
+    },
+    {
+      "slug": "psychoanalysis",
+      "term": "Psychoanalysis",
+      "title": "What is psychoanalysis?",
+      "seoTitle": "What Is Psychoanalysis? Freud, the Couch, Free Association and How It Works",
+      "dek": "Lie down, say whatever comes to mind, and pay someone to wonder aloud why you mentioned your mother. For roughly 130 years, it has been the most expensive way to talk about your childhood.",
+      "summary": "Psychoanalysis explained: Freud's talking cure, the couch, free association, how often sessions happen, how it differs from psychodynamic therapy, and what the evidence says.",
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "from-burnout-to-punchlines-freuds-solution",
+        "transference-analysis-play-by-play"
+      ],
+      "related": [
+        "transference",
+        "id-ego-superego",
+        "defense-mechanisms"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "Psychoanalysis is a form of therapy, and a theory of the mind, developed by Sigmund Freud in Vienna beginning in the 1890s. Its core idea is that much of what drives us is unconscious, and that talking freely, over time, brings those hidden wishes, fears and patterns into view where they lose some of their grip. It's the original talking cure, a phrase coined not by Freud but by a patient, Bertha Pappenheim, known in the case literature as “Anna O.” Even the branding came from the client."
+          ]
+        },
+        {
+          "h": "The couch, explained",
+          "p": [
+            "In classical psychoanalysis the patient lies on a couch and the analyst sits behind them, out of sight. The idea is to make it easier to follow your thoughts wherever they wander, without watching someone's face for a reaction. Freud's own couch is now in the Freud Museum in London, which makes it one of the few pieces of furniture with its own fan base."
+          ]
+        },
+        {
+          "h": "Free association: say the thing",
+          "p": [
+            "The basic rule is free association: say whatever comes to mind, however embarrassing, trivial or seemingly unrelated. The analyst listens for patterns, slips, dreams, and the moments you suddenly change the subject. Yes, the change of subject is the subject."
+          ]
+        },
+        {
+          "h": "The time commitment",
+          "p": [
+            "Traditional psychoanalysis means several sessions a week, classically four or five, often for years. Most people today who get this kind of treatment receive psychodynamic therapy instead: the same underlying ideas, usually once or twice a week, face to face, no couch required. Research supports psychodynamic therapy for conditions including depression, which is more than can be said for most furniture."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between psychoanalysis and psychodynamic therapy?",
+          "a": "Psychoanalysis is the intensive original: several sessions a week, often on a couch, for years. Psychodynamic therapy uses the same ideas about unconscious patterns and relationships but usually meets once or twice a week, face to face."
+        },
+        {
+          "q": "Why do psychoanalysts use a couch?",
+          "a": "Lying down, with the analyst out of view, is meant to make free association easier and reduce the urge to read the analyst's reactions. Many modern therapists skip it."
+        },
+        {
+          "q": "Does psychoanalysis work?",
+          "a": "Research supports psychodynamic therapy for conditions including depression. The long, intensive classical form is harder to study, partly because it takes years."
+        }
+      ]
+    },
+    {
+      "slug": "id-ego-superego",
+      "term": "Id, ego and superego",
+      "title": "What are the id, ego and superego?",
+      "seoTitle": "Id, Ego and Superego Explained: Freud's Structural Model of the Mind",
+      "dek": "Freud divided your mind into three roommates: one who wants everything now, one who has read the lease, and one who keeps a list of your sins. They share a kitchen.",
+      "summary": "Freud's id, ego and superego explained: what each part does, the pleasure and reality principles, where the Latin names came from, and how the model is viewed today.",
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "from-burnout-to-punchlines-freuds-solution"
+      ],
+      "related": [
+        "psychoanalysis",
+        "defense-mechanisms",
+        "psychosexual-stages"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "In his 1923 book The Ego and the Id, Freud described the mind as three interacting parts. The id is the reservoir of raw drives and wants, run on the pleasure principle: I want it, and I want it now. The superego is the internalized conscience and set of ideals, largely absorbed from parents and society: you should be ashamed of wanting it. The ego is the part that deals with reality and tries to keep the other two from burning the house down: maybe after lunch, and only a little."
+          ]
+        },
+        {
+          "h": "The ego's impossible job",
+          "p": [
+            "Freud described the ego as serving three harsh masters: the id, the superego and the outside world. It operates on the reality principle, delaying or redirecting the id's demands into something survivable, while trying not to get lectured by the superego. If that sounds like a middle manager, you have understood Freud."
+          ]
+        },
+        {
+          "h": "A secret about the names",
+          "p": [
+            "Freud wrote in plain German: das Es (“the It”), das Ich (“the I”) and das Über-Ich (“the Over-I”). His English translators rendered them in Latin, as id, ego and superego, which made them sound far more clinical than the originals. Nothing makes an idea feel scientific like a dead language."
+          ]
+        },
+        {
+          "h": "How it holds up",
+          "p": [
+            "Modern psychology doesn't treat the id, ego and superego as literal parts of the brain, and the model isn't tested the way today's theories are. But the broad idea, that behavior comes from competing impulses, rules and reality checks, much of it outside awareness, still shapes psychodynamic therapy and everyday language. You probably said “ego” this week without meaning Freud at all."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the id?",
+          "a": "In Freud's model, the id is the unconscious source of basic drives and desires, seeking immediate gratification according to the pleasure principle."
+        },
+        {
+          "q": "What does the ego do?",
+          "a": "The ego deals with reality. It balances the id's demands, the superego's rules and the outside world, often by delaying or redirecting impulses."
+        },
+        {
+          "q": "What is the superego?",
+          "a": "The superego is the internalized conscience and ideals, largely absorbed from parents and society, that judges thoughts and behavior."
+        }
+      ]
+    },
+    {
+      "slug": "defense-mechanisms",
+      "term": "Defense mechanisms",
+      "title": "What are defense mechanisms?",
+      "seoTitle": "Defense Mechanisms Explained: Denial, Projection, Sublimation and Humor",
+      "dek": "The mind's security guards, working unpaid overtime to keep uncomfortable feelings out of the building. Some are sophisticated. Denial is not, but it's convinced it is.",
+      "summary": "Psychological defense mechanisms explained: denial, projection, displacement, rationalization, sublimation, why humor counts as a mature defense, and where the idea came from.",
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "from-burnout-to-punchlines-freuds-solution",
+        "transference-analysis-play-by-play"
+      ],
+      "related": [
+        "id-ego-superego",
+        "psychoanalysis",
+        "physician-burnout"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "Defense mechanisms are mostly unconscious strategies the mind uses to protect itself from anxiety, painful feelings or unacceptable thoughts. Everyone uses them, every day. The idea began with Sigmund Freud and was organized most famously by his daughter Anna Freud in her 1936 book The Ego and the Mechanisms of Defence, proving that defense mechanisms, like dental records, run in families."
+          ]
+        },
+        {
+          "h": "The usual suspects",
+          "p": [
+            "Denial: refusing to accept something is happening (“it's just a little chest pressure”). Projection: attributing your own unwanted feelings to someone else (“you're the one who's angry”). Displacement: taking feelings out on a safer target, like yelling at the printer instead of the department chair. Rationalization: inventing a sensible reason after the fact (“I skipped the gym to rest my joints”). Reaction formation: acting the opposite of what you feel, such as being conspicuously sweet to a colleague you can't stand."
+          ]
+        },
+        {
+          "h": "The grown-up ones",
+          "p": [
+            "The psychiatrist George Vaillant, who studied how people adapted over decades of adult life, ranked defenses from immature to mature. Among the most mature: sublimation (channeling impulses into something useful, like surgery or competitive pickleball), altruism, suppression (consciously deciding to deal with it later), anticipation and humor. Which means the whole premise of our Freud episode, turning burnout into stand-up, is technically a promotion up the defense hierarchy."
+          ]
+        },
+        {
+          "h": "Why therapists care",
+          "p": [
+            "Defenses aren't bad; they get us through the day. They become a problem when they're rigid or cost more than they save, like denial that delays needed care, or projection that wrecks relationships. Therapy aims to notice them, not confiscate them. You get to keep your sense of humor."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What are examples of defense mechanisms?",
+          "a": "Common ones include denial, projection, displacement, rationalization, reaction formation, intellectualization, sublimation and humor."
+        },
+        {
+          "q": "Who came up with defense mechanisms?",
+          "a": "Sigmund Freud introduced the idea, and Anna Freud described them systematically in her 1936 book The Ego and the Mechanisms of Defence."
+        },
+        {
+          "q": "Is humor a defense mechanism?",
+          "a": "Yes, and a healthy one. Psychiatrist George Vaillant classified humor, along with sublimation and altruism, as a mature defense."
+        }
+      ]
+    },
+    {
+      "slug": "psychosexual-stages",
+      "term": "Psychosexual stages",
+      "title": "What are Freud's psychosexual stages?",
+      "seoTitle": "Freud's Psychosexual Stages Explained: Oral, Anal, Phallic, Latency, Genital",
+      "dek": "Freud's theory of childhood, in which every toddler is quietly negotiating a treaty with their own plumbing. It gave the world the phrase “anal-retentive,” which may be its most durable contribution.",
+      "summary": "Freud's psychosexual stages explained: oral, anal, phallic, latency and genital, fixation and regression, where 'anal-retentive' comes from, and what modern psychology thinks.",
+      "topics": [
+        "mind",
+        "aging"
+      ],
+      "episodes": [
+        "the-robot-who-wipes-my-butt",
+        "from-burnout-to-punchlines-freuds-solution"
+      ],
+      "related": [
+        "id-ego-superego",
+        "psychoanalysis",
+        "defense-mechanisms"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "In Three Essays on the Theory of Sexuality (1905), Freud proposed that personality develops through a series of childhood stages, each centered on a different part of the body as a source of pleasure. Get stuck, or “fixated,” at a stage, and its themes supposedly follow you into adulthood. Freud's critics have spent over a century asking how he knew what toddlers were thinking. Freud had answers. They were also about toddlers."
+          ]
+        },
+        {
+          "h": "The five stages",
+          "p": [
+            "Oral (roughly birth to age 1): feeding, sucking and mouth-based exploration. Anal (about 1 to 3): toilet training and control. Phallic (about 3 to 6): awareness of the body and the famously contested Oedipus complex. Latency (about 6 to puberty): a relatively calm period when those drives go quiet and school takes over. Genital (puberty onward): mature adult sexuality, at least in theory."
+          ]
+        },
+        {
+          "h": "Where “anal-retentive” comes from",
+          "p": [
+            "Freud linked fixation at the anal stage to adults who are orderly, stubborn and stingy, a cluster that became the everyday insult “anal-retentive.” It's why the narrator of The Robot Who Wipes My Butt jokes that his late analyst would say he'd regressed to the anal stage. Regression, in Freud's terms, is a retreat to an earlier stage under stress. Being cleaned by a robot with a 4.8-star rating qualifies as stress."
+          ]
+        },
+        {
+          "h": "How it holds up",
+          "p": [
+            "Modern developmental psychology does not support the psychosexual stages as described, and they aren't used to diagnose anyone. Their legacy is the broader, still-influential idea that early relationships and experiences shape adult personality, plus a handful of phrases that refuse to leave the English language."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What are Freud's five psychosexual stages?",
+          "a": "Oral, anal, phallic, latency and genital, which Freud described in Three Essays on the Theory of Sexuality in 1905."
+        },
+        {
+          "q": "What does anal-retentive mean?",
+          "a": "Everyday slang for someone excessively orderly or fussy. It comes from Freud's idea that fixation at the anal stage of development produces orderly, stubborn, stingy adults."
+        },
+        {
+          "q": "Are Freud's psychosexual stages scientifically supported?",
+          "a": "No. Modern developmental research doesn't support them as described. Their lasting influence is the broader idea that early experience shapes personality."
+        }
+      ]
+    },
+    {
+      "slug": "psychodynamic-therapy-vs-cbt",
+      "term": "Psychodynamic therapy vs CBT",
+      "title": "Psychodynamic therapy vs CBT: what's the difference?",
+      "seoTitle": "Psychodynamic Therapy vs CBT: How They Differ and Which Is Right for You",
+      "dek": "One asks why you feel this way and how it connects to your mother. The other hands you a worksheet and asks for it back by Thursday. Both work. Neither will let you skip the homework forever.",
+      "summary": "Psychodynamic therapy vs cognitive behavioral therapy (CBT) explained: how each works, how long they take, what the evidence shows, and how to choose between them.",
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "transference-analysis-play-by-play",
+        "healing-by-hashtag-unpack-your-baggage-in-30-seconds"
+      ],
+      "related": [
+        "psychoanalysis",
+        "transference",
+        "which-mental-health-professional"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "Psychodynamic therapy looks for the roots of current problems in unconscious patterns, early relationships and feelings you'd rather not have, often by exploring how those patterns show up with the therapist (hello, transference). Cognitive behavioral therapy, or CBT, focuses on the present: identifying unhelpful thoughts and behaviors and practicing new ones. One is archaeology. The other is a gym membership."
+          ]
+        },
+        {
+          "h": "CBT in one breath",
+          "p": [
+            "CBT grew out of Aaron Beck's cognitive therapy in the 1960s, alongside Albert Ellis's rational emotive behavior therapy. It's structured and time-limited, often around 12 to 20 sessions, with an agenda each session and homework in between: tracking thoughts, testing predictions, gradually facing feared situations. It is, in the best sense, therapy with a syllabus."
+          ]
+        },
+        {
+          "h": "Psychodynamic in one breath",
+          "p": [
+            "Psychodynamic therapy descends from psychoanalysis but usually meets once or twice a week, face to face. Sessions are less structured; you talk, the therapist listens for patterns, and together you notice what keeps repeating. It tends to be open-ended, though short-term versions exist. Worksheets are rare. Silences are not."
+          ]
+        },
+        {
+          "h": "Which one works?",
+          "p": [
+            "Both have research support for depression, and CBT has an especially large evidence base for anxiety disorders. How well you and your therapist work together, the “therapeutic alliance,” is one of the strongest predictors of success across therapy types. So the best therapy is often the one with a therapist you'll actually keep showing up for."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the main difference between CBT and psychodynamic therapy?",
+          "a": "CBT is structured and present-focused, changing unhelpful thoughts and behaviors with homework between sessions. Psychodynamic therapy explores unconscious patterns and past relationships and is usually less structured."
+        },
+        {
+          "q": "How long does CBT take?",
+          "a": "Often around 12 to 20 sessions, though it varies with the problem and the person."
+        },
+        {
+          "q": "Is CBT better than psychodynamic therapy?",
+          "a": "Both have evidence for depression, and CBT has an especially strong evidence base for anxiety disorders. The fit between you and the therapist matters a great deal."
+        }
+      ]
+    },
+    {
+      "slug": "which-mental-health-professional",
+      "term": "Psychiatrist vs psychologist vs therapist",
+      "title": "Psychiatrist, psychologist or therapist: who does what?",
+      "seoTitle": "Psychiatrist vs Psychologist vs Therapist vs Counselor: The Differences Explained",
+      "dek": "Four job titles, three kinds of degrees, and one person on TikTok calling themselves a “healing guide.” A field guide to who can prescribe, who can test, and who just has a ring light.",
+      "summary": "Psychiatrist vs psychologist vs therapist vs counselor explained: training, who can prescribe medication, who does therapy and testing, and how to check a license.",
+      "topics": [
+        "mind"
+      ],
+      "episodes": [
+        "healing-by-hashtag-unpack-your-baggage-in-30-seconds",
+        "is-happiness-behind-a-paywall",
+        "transference-analysis-play-by-play"
+      ],
+      "related": [
+        "psychodynamic-therapy-vs-cbt",
+        "therapy-on-social-media"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "A psychiatrist is a medical doctor (MD or DO) who specializes in mental health and can prescribe medication. A psychologist usually has a doctorate (PhD or PsyD), provides therapy and psychological testing, and generally can't prescribe. Licensed counselors (LPC), clinical social workers (LCSW) and marriage and family therapists (LMFT) hold master's degrees and provide therapy. “Therapist” is the umbrella most of them answer to, which is convenient for everyone except the person trying to hire one."
+          ]
+        },
+        {
+          "h": "Who can prescribe",
+          "p": [
+            "Psychiatrists, other physicians including primary care doctors, and psychiatric nurse practitioners can prescribe psychiatric medication. Psychologists can prescribe only in a handful of U.S. states, and only with additional training. Everyone else can recommend you ask a prescriber, which is the professional version of “have you tried talking to your doctor?”"
+          ]
+        },
+        {
+          "h": "Titles that mean less than they sound",
+          "p": [
+            "Licensed professions have protected titles and state boards that can take the license away. “Life coach,” “wellness guide” and, in many places, plain “therapist” are not consistently regulated, so almost anyone can use them. A good rule: if the title comes with a license number, it comes with accountability. If it comes with a discount code, check again."
+          ]
+        },
+        {
+          "h": "How to pick",
+          "p": [
+            "For medication or complex symptoms, start with a psychiatrist or your primary care doctor. For therapy, any licensed therapist with the right training and fit can help. You can look up a license on your state licensing board's website. In a mental health crisis in the U.S., call or text 988, the Suicide & Crisis Lifeline, any time."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between a psychiatrist and a psychologist?",
+          "a": "A psychiatrist is a medical doctor who can prescribe medication. A psychologist usually has a PhD or PsyD, provides therapy and testing, and can prescribe only in a few U.S. states with extra training."
+        },
+        {
+          "q": "Can a therapist prescribe medication?",
+          "a": "Most therapists, including counselors, social workers and most psychologists, cannot. Psychiatrists, other physicians and psychiatric nurse practitioners can."
+        },
+        {
+          "q": "How do I check if a therapist is licensed?",
+          "a": "Search your state's licensing board website for their name and license number. Licensed titles are protected; titles like “life coach” are not."
+        }
+      ]
+    },
+    {
+      "slug": "hedonic-treadmill",
+      "term": "Hedonic treadmill",
+      "title": "What is the hedonic treadmill?",
+      "seoTitle": "The Hedonic Treadmill Explained: Why Happiness Doesn't Stay Upgraded",
+      "dek": "You bought the upgrade. For two glorious weeks, you were happier. Then it became normal, and the premium tier started looking pretty good. Science has a name for this, and it isn't “subscription fatigue.”",
+      "summary": "The hedonic treadmill explained: hedonic adaptation, the lottery-winner study, what research says about money and happiness, and what actually seems to help.",
+      "topics": [
+        "mind",
+        "culture"
+      ],
+      "episodes": [
+        "is-happiness-behind-a-paywall",
+        "healing-by-hashtag-unpack-your-baggage-in-30-seconds"
+      ],
+      "related": [
+        "therapy-on-social-media",
+        "defense-mechanisms"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "The hedonic treadmill, or hedonic adaptation, is the tendency to return to a fairly stable level of happiness after good or bad changes in life. The new car, the raise, the bigger apartment: each gives a lift that fades as it becomes the new normal. The term was coined by psychologists Philip Brickman and Donald Campbell in 1971. You can keep running. The treadmill keeps moving."
+          ]
+        },
+        {
+          "h": "The lottery study",
+          "p": [
+            "In a famous 1978 study, Brickman and colleagues found that lottery winners were not much happier than comparison groups a while after winning, and took less pleasure in everyday things. It's a small, old study and not the last word, but it became the go-to evidence that the jackpot doesn't buy a permanent upgrade. Later research found that adaptation isn't always complete; some major events, like long-term unemployment or disability, can shift well-being for years."
+          ]
+        },
+        {
+          "h": "So can money buy happiness?",
+          "p": [
+            "A bit, and it's complicated. A 2010 study by Daniel Kahneman and Angus Deaton found day-to-day emotional well-being rose with income but leveled off around $75,000 a year. Later work by Matthew Killingsworth found it kept rising. In 2023 the researchers teamed up and found both were partly right: for most people, happiness keeps climbing with income, but for the least happy fifth it plateaus around $100,000. In other words, money helps, just not with everything, which is roughly what the paywall was hoping you wouldn't notice."
+          ]
+        },
+        {
+          "h": "What seems to slow the treadmill",
+          "p": [
+            "Research points to things that adapt more slowly than possessions: relationships, experiences over stuff, gratitude, variety, and time spent on things that feel meaningful. None of them comes with a premium tier. If low mood won't lift, that's worth raising with a doctor or therapist rather than a checkout page; in a crisis in the U.S., call or text 988."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the hedonic treadmill?",
+          "a": "The tendency to return to a relatively stable level of happiness after positive or negative changes, so gains like a raise or a new purchase lose their emotional punch over time."
+        },
+        {
+          "q": "Who coined the term hedonic treadmill?",
+          "a": "Psychologists Philip Brickman and Donald Campbell, in 1971."
+        },
+        {
+          "q": "Does more money make people happier?",
+          "a": "Generally somewhat. A 2023 joint study found happiness keeps rising with income for most people, but plateaus around $100,000 a year for the least happy fifth."
+        }
+      ]
+    },
+    {
+      "slug": "therapy-on-social-media",
+      "term": "Therapy on social media",
+      "title": "Is TikTok therapy real therapy?",
+      "seoTitle": "Is TikTok Therapy Real? Mental Health Advice on Social Media, Explained",
+      "dek": "Unpack your childhood in 30 seconds, set to a trending sound, then swipe up for a discount on a journal. It's the fastest therapy ever invented, and it has the outcomes to match.",
+      "summary": "Mental health content on TikTok and social media explained: what it gets right, how misinformation spreads, overused therapy words, and how to find real help.",
+      "topics": [
+        "mind",
+        "culture"
+      ],
+      "episodes": [
+        "healing-by-hashtag-unpack-your-baggage-in-30-seconds",
+        "is-happiness-behind-a-paywall"
+      ],
+      "related": [
+        "which-mental-health-professional",
+        "psychodynamic-therapy-vs-cbt",
+        "hedonic-treadmill"
+      ],
+      "sections": [
+        {
+          "h": "The short answer",
+          "p": [
+            "No. Short mental health videos can reduce stigma, help people name what they're feeling, and nudge them toward real care, and those are genuinely good things. But a video isn't therapy: it doesn't know you, can't assess you, and is optimized for watch time, not for getting you better. The algorithm is a great listener, in the sense that it never stops listening."
+          ]
+        },
+        {
+          "h": "The misinformation problem",
+          "p": [
+            "Reviews of popular mental health videos have repeatedly found that a large share contain misleading or oversimplified claims, and many creators have no clinical training. Normal experiences get packaged as symptoms (“if you like your coffee a certain way, you might have trauma”), and a checklist of relatable feelings gets passed off as a diagnosis. Self-diagnosing from a 30-second clip is like doing your own surgery because you watched the play-by-play."
+          ]
+        },
+        {
+          "h": "Therapy words, overworked",
+          "p": [
+            "Clinical terms have gone viral and lost their meaning along the way: trauma, narcissist, boundaries, triggered and gaslighting, which Merriam-Webster named its word of the year in 2022. The term comes from Patrick Hamilton's 1938 play Gas Light, about a husband who manipulates his wife into doubting her own perceptions. It describes a specific pattern of manipulation, not a partner who forgot to take out the trash."
+          ]
+        },
+        {
+          "h": "How to use it without getting used",
+          "p": [
+            "Treat mental health content as a starting point, not a diagnosis. Check whether the creator is a licensed professional, be wary of anyone selling a cure in the comments, and bring what resonates to an actual clinician. If you're in crisis in the U.S., call or text 988, the Suicide & Crisis Lifeline. It is, notably, free, and there's no subscription."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is mental health advice on TikTok reliable?",
+          "a": "Some is helpful, but reviews have found a large share of popular mental health videos contain misleading or oversimplified claims, and many creators aren't clinically trained. Treat it as a starting point, not a diagnosis."
+        },
+        {
+          "q": "Can you diagnose yourself from social media?",
+          "a": "No. Relatable symptom lists can't replace an assessment by a licensed clinician who knows your history."
+        },
+        {
+          "q": "Where does the word gaslighting come from?",
+          "a": "From Patrick Hamilton's 1938 play Gas Light, in which a husband manipulates his wife into doubting her own perceptions. Merriam-Webster named gaslighting its 2022 word of the year."
+        }
       ]
     }
   ]
