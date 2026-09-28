@@ -129,10 +129,43 @@ ${jsonLd(ld)}
       <a href="/top-10/">Top 10</a>
       <a href="/submit/">Submit</a>
     </nav>
+    ${siteMenu({ current: url })}
     <a class="btn btn-ghost" href="/#episodes">All episodes</a>
   </div>
 </header>
 `;
+}
+
+// Top-right menu. On desktop it's "More" (links not in the inline nav); on
+// phones, where the inline nav is hidden, it's a hamburger with every link.
+// `full` shows every link at all sizes (the homepage has no inline nav).
+// `base` is '' for the homepage's relative links, '/' elsewhere.
+const MENU_LINKS = [
+  ['#episodes', 'All episodes', true],
+  ['topics/', 'Topics'],
+  ['explained/', 'Explainers', true],
+  ['teach/', 'Teach', true],
+  ['eponyms/', 'Eponyms', true],
+  ['timeline/', 'Timeline', true],
+  ['top-10/', 'Top 10', true],
+  ['submit/', 'Submit a story', true],
+  ['subscribe/', 'Subscribe'],
+  ['#about', 'About'],
+];
+export function siteMenu({ current = '', base = '/', full = false } = {}) {
+  const here = current.replace(SITE, '');
+  const links = MENU_LINKS.map(([href, label, dup]) => {
+    const path = `/${href}`;
+    const cur = !href.startsWith('#') && here === path ? ' aria-current="page"' : '';
+    return `<a href="${base}${href}"${dup ? ' class="nav-dup"' : ''}${cur}>${esc(label)}</a>`;
+  });
+  return `<details class="site-menu${full ? ' site-menu--full' : ''}">
+      <summary class="btn btn-ghost"><span class="menu-more">${full ? 'Menu' : 'More'} <span aria-hidden="true">▾</span></span><span class="menu-burger"><i></i><i></i><i></i><span class="sr-only">Menu</span></span></summary>
+      <nav class="site-menu-panel" aria-label="More pages">
+        ${links.join('\n        ')}
+        <a href="mailto:${INBOX}">Contact</a>
+      </nav>
+    </details>`;
 }
 
 // Topic/series choices for the email signup. `picked` pre-ticks one (e.g. on its topic page).

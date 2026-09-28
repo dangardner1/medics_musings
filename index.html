@@ -1146,6 +1146,61 @@
     .hero-grid { flex-direction: column-reverse; gap: 32px; }
     .hero-art { max-width: 280px; align-self: center; }
   }
+  /* ---- Site menu: "More" on desktop, hamburger on phones ---- */
+  .site-menu { position: relative; }
+  .site-menu > summary { list-style: none; cursor: pointer; padding: 8px 14px; font-size: 0.78rem; }
+  .site-menu > summary::-webkit-details-marker { display: none; }
+  .site-menu[open] > summary { border-color: var(--accent); color: var(--accent); }
+  .menu-burger { display: none; flex-direction: column; justify-content: center; gap: 4px; width: 18px; height: 18px; }
+  .menu-burger i { display: block; height: 2px; border-radius: 1px; background: currentColor; transition: transform 0.2s ease, opacity 0.2s ease; }
+  .site-menu[open] .menu-burger i:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .site-menu[open] .menu-burger i:nth-child(2) { opacity: 0; }
+  .site-menu[open] .menu-burger i:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+  .site-menu-panel {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    z-index: 20;
+  }
+  .site-menu-panel a {
+    padding: 9px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+  .site-menu-panel a:hover, .site-menu-panel a:focus-visible { background: var(--surface-2); color: var(--accent); }
+  .site-menu-panel a[aria-current="page"] { color: var(--accent); }
+  .site-menu:not(.site-menu--full) .nav-dup { display: none; }
+  @media (max-width: 680px) {
+    .site-menu { order: 3; }
+    .site-menu > summary { display: inline-flex; align-items: center; padding: 11px 12px; }
+    .site-menu .menu-more { display: none; }
+    .menu-burger { display: flex; }
+    .site-menu:not(.site-menu--full) .nav-dup { display: block; }
+    .site-menu-panel {
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      top: auto;
+      margin-top: 8px;
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
+    .site-menu-panel a { padding: 13px 14px; font-size: 0.86rem; }
+  }
+  .topbar-inner > .follow { margin-left: auto; }
 </style>
 </head>
 <body>
@@ -1166,6 +1221,22 @@
         <button type="button" class="menu-btn" data-copy-rss>Copy RSS link</button>
         <a href="#newsletter" data-platform="email">Email updates</a>
       </div>
+    </details>
+    <details class="site-menu site-menu--full">
+      <summary class="btn btn-ghost"><span class="menu-more">Menu <span aria-hidden="true">▾</span></span><span class="menu-burger"><i></i><i></i><i></i><span class="sr-only">Menu</span></span></summary>
+      <nav class="site-menu-panel" aria-label="More pages">
+        <a href="#episodes" class="nav-dup">All episodes</a>
+        <a href="topics/">Topics</a>
+        <a href="explained/" class="nav-dup">Explainers</a>
+        <a href="teach/" class="nav-dup">Teach</a>
+        <a href="eponyms/" class="nav-dup">Eponyms</a>
+        <a href="timeline/" class="nav-dup">Timeline</a>
+        <a href="top-10/" class="nav-dup">Top 10</a>
+        <a href="submit/" class="nav-dup">Submit a story</a>
+        <a href="subscribe/">Subscribe</a>
+        <a href="#about">About</a>
+        <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+      </nav>
     </details>
     <audio id="why-now-audio" src="audio/why-now.mp3?v=5" preload="none"></audio>
   </div>

@@ -54,4 +54,27 @@
       });
     }
   } catch (e) {}
+  // Top-right site menu ("More" on desktop, hamburger on phones): close on an
+  // outside click, Escape or a link click.
+  try {
+    var menu = document.querySelector('details.site-menu');
+    if (menu) {
+      var summary = menu.querySelector('summary');
+      document.addEventListener('click', function (e) {
+        if (menu.open && !menu.contains(e.target)) menu.open = false;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.open) {
+          menu.open = false;
+          summary.focus();
+        }
+      });
+      menu.addEventListener('toggle', function () {
+        if (menu.open) track('site_menu_open', { layout: window.matchMedia('(max-width: 680px)').matches ? 'mobile' : 'desktop' });
+      });
+      Array.prototype.forEach.call(menu.querySelectorAll('.site-menu-panel a'), function (a) {
+        a.addEventListener('click', function () { menu.open = false; });
+      });
+    }
+  } catch (e) {}
 })();
