@@ -688,6 +688,20 @@
   .npa-player { margin-top: 18px; max-width: 460px; }
   .npa-player audio { width: 100%; display: block; }
 
+  /* Prior authorization status: a joke counter */
+  .pa-clock { margin-top: 26px; max-width: 460px; padding: 14px 16px; border: 1px dashed var(--border); border-radius: 6px; background: var(--surface); font-family: "IBM Plex Mono", monospace; }
+  .pa-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .pa-tag { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .pa-pause { background: none; border: 1px solid var(--border); color: var(--text-muted); border-radius: 3px; padding: 2px 8px; font: inherit; font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; }
+  .pa-pause:hover { color: var(--accent); border-color: var(--accent); }
+  .pa-pause:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+  .pa-time { margin: 8px 0 0; font-size: clamp(1.25rem, 4.6vw, 1.7rem); font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+  .pa-time b { font-weight: 600; }
+  .pa-time[hidden] { display: none; }
+  .pa-status { margin: 6px 0 0; min-height: 3em; font-size: 0.86rem; line-height: 1.5; color: var(--text); }
+  .pa-foot { margin: 8px 0 0; font-size: 0.72rem; line-height: 1.5; color: var(--text-muted); }
+  .pa-foot a { color: var(--pulse); }
+
   /* ---- Sections ---- */
   section { padding-block: 60px; scroll-margin-top: 76px; }
   .section-head { margin-bottom: 32px; }
@@ -1278,6 +1292,15 @@
         <!-- build:startHere -->
         <p class="start-here">New here? Orientation is mandatory. <a href="video/medics-musings-explainer.mp4">Begin Module 1 ▶</a> (2 min, 0.00 CME)</p>
         <!-- /build:startHere -->
+        <div class="pa-clock" id="pa-clock" role="group" aria-label="Prior authorization status: a joke counter">
+          <div class="pa-head">
+            <span class="pa-tag">Prior authorization status</span>
+            <button type="button" class="pa-pause" aria-pressed="false">Pause</button>
+          </div>
+          <p class="pa-time" data-pa-time aria-hidden="true" hidden><b data-pa="d">0</b>d <b data-pa="h">00</b>h <b data-pa="m">00</b>m <b data-pa="s">00</b>s</p>
+          <p class="pa-status" data-pa-status>Under review</p>
+          <p class="pa-foot">Case PA-<span data-pa-case>000000</span> · A joke counter. Any resemblance to your insurer is coincidental. <a href="icd10/#z75-2">The real ICD-10 code for waiting: Z75.2</a></p>
+        </div>
       </div>
       <div class="hero-art">
         <picture>
@@ -1762,6 +1785,7 @@
             <a class="chips-link" href="games/eponym/">Play the daily eponym game →</a>
             <a class="chips-link" href="games/word-rounds/">Play Word Rounds, the daily word search →</a>
             <a class="chips-link" href="line-of-the-day/">Today’s line from the show →</a>
+            <a class="chips-link" href="icd10/">Today’s ICD-10 code, with a deadpan note →</a>
             <a class="chips-link" href="news/">Health care news of the day, with satire →</a>
           </div>
         </div>
@@ -2045,6 +2069,71 @@
       var wnAudio = document.getElementById('why-now-audio');
       if (wnAudio) wnAudio.addEventListener('play', function () { npaAudio.pause(); });
       npaAudio.addEventListener('play', function () { track('promo_audio_play', { clip: 'no_prior_authorization' }); });
+    }
+  } catch (e) {}
+
+  // Prior authorization status: a joke counter that starts from a new absurd figure on each
+  // visit. Pausable, and paused from the start for people who prefer reduced motion.
+  try {
+    var pa = document.getElementById('pa-clock');
+    if (pa) {
+      var paTime = pa.querySelector('[data-pa-time]');
+      var paStatus = pa.querySelector('[data-pa-status]');
+      var paBtn = pa.querySelector('.pa-pause');
+      var paParts = {};
+      Array.prototype.forEach.call(pa.querySelectorAll('[data-pa]'), function (el) { paParts[el.getAttribute('data-pa')] = el; });
+      pa.querySelector('[data-pa-case]').textContent = String(Math.floor(100000 + Math.random() * 900000));
+      var paStatuses = [
+        'Under review',
+        'Additional documentation requested',
+        'Peer-to-peer: Tuesdays, 2:00 to 2:05 a.m.',
+        'Reviewed by an algorithm. Escalated to another algorithm.',
+        'Approved. For the drug you did not ask for.',
+        'Denied: submitted before it was needed',
+        'Denied: submitted too late',
+        'Please resubmit on the new form',
+        'Fax received. Fax not received.',
+        'Your call is important to us',
+        'Awaiting signature from someone on vacation',
+        'Lost in transit between two departments of one company',
+        'Auto-approved. Then auto-reversed.',
+        'Pending: the reviewer is being reviewed',
+        'Coverage confirmed for last year’s procedure',
+        'Estimated decision: soon'
+      ];
+      var paIdx = Math.floor(Math.random() * paStatuses.length);
+      // Months, usually; occasionally years.
+      var paElapsed = (3 + Math.random() * Math.random() * 900) * 86400 + Math.random() * 86400;
+      var paSince = 0;
+      var paPaused = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+      var paPad = function (n) { return (n < 10 ? '0' : '') + n; };
+      var paRender = function () {
+        var s = Math.floor(paElapsed), r = s % 86400;
+        paParts.d.textContent = Math.floor(s / 86400);
+        paParts.h.textContent = paPad(Math.floor(r / 3600));
+        paParts.m.textContent = paPad(Math.floor(r / 60) % 60);
+        paParts.s.textContent = paPad(r % 60);
+        paStatus.textContent = paStatuses[paIdx];
+      };
+      var paSetPaused = function (p) {
+        paPaused = p;
+        paBtn.setAttribute('aria-pressed', String(p));
+        paBtn.textContent = p ? 'Resume' : 'Pause';
+      };
+      paBtn.addEventListener('click', function () { paSetPaused(!paPaused); track('pa_clock_toggle', { paused: paPaused }); });
+      paSetPaused(paPaused);
+      paTime.hidden = false;
+      paRender();
+      var paLast = Date.now();
+      setInterval(function () {
+        var now = Date.now(), dt = (now - paLast) / 1000;
+        paLast = now;
+        if (paPaused) return;
+        paElapsed += dt;
+        paSince += dt;
+        if (paSince >= 8) { paSince = 0; paIdx = (paIdx + 1) % paStatuses.length; }
+        paRender();
+      }, 1000);
     }
   } catch (e) {}
 

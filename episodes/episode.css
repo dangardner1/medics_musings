@@ -854,6 +854,31 @@ footer {
 .line-list a:hover { color: var(--accent); }
 .line-list span { display: block; color: var(--text-muted); font-size: 0.85rem; }
 
+/* ---- ICD-10 code of the day ---- */
+.icd-card { max-width: 760px; margin-top: 26px; padding: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+.icd-kind { margin: 0; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pulse); }
+.icd-code { margin: 10px 0 0; font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 800; font-size: clamp(2.8rem, 11vw, 5rem); line-height: 1; letter-spacing: 0.01em; color: var(--accent); overflow-wrap: anywhere; }
+.icd-desc { margin: 10px 0 0; font-size: 1.2rem; font-weight: 600; line-height: 1.35; }
+.icd-label { margin: 22px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.icd-note { margin: 4px 0 0; font-size: 1.15rem; line-height: 1.45; color: var(--text-muted); }
+.icd-actions { margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.icd-actions .btn { margin-top: 0; }
+.icd-next { margin: 14px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; color: var(--pulse); }
+.icd-recent { max-width: 760px; margin-top: 30px; }
+.icd-recent[hidden] { display: none; }
+.icd-recent h2 { margin: 0; font-size: 1.3rem; }
+.icd-recent-list { list-style: none; margin: 10px 0 0; padding: 0; }
+.icd-recent-list li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.icd-recent-list a { color: var(--text-muted); text-decoration: none; }
+.icd-recent-list a:hover { color: var(--accent); }
+.icd-recent-list b { margin-right: 8px; font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--text); }
+.icd-page h2#all-codes { margin: 40px 0 16px; scroll-margin-top: 90px; }
+.icd-source { margin: 18px 0 0; max-width: 760px; font-size: 0.85rem; color: var(--text-muted); }
+.icd-source a { color: var(--pulse); }
+.icd-page .data-table td.col-name { min-width: 150px; }
+.data-table td.col-desc { min-width: 220px; }
+.data-table td.col-note { color: var(--text-muted); min-width: 260px; }
+
 /* ---- Word Rounds (word search) ---- */
 .ws { margin-top: 26px; max-width: 900px; }
 .ws-head h2 { margin: 0; font-size: 1.6rem; }

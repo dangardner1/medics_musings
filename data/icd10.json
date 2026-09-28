@@ -1,0 +1,1312 @@
+{
+  "intro": "One real diagnosis code a day, straight from the official ICD-10-CM code set, with a deadpan note from a coder who has seen too much. The codes and descriptions are real. The notes are satire.",
+  "source": {
+    "name": "ICD-10-CM",
+    "publisher": "CDC National Center for Health Statistics",
+    "years": "FY2026 and FY2027",
+    "url": "https://www.cdc.gov/nchs/icd/icd-10-cm/files.html"
+  },
+  "kinds": {
+    "beasts": "Birds & beasts",
+    "mishaps": "Objects & mishaps",
+    "heat": "Heat & weather",
+    "wheels": "Wheels & water",
+    "places": "Places",
+    "activities": "Activities",
+    "paperwork": "Paperwork",
+    "symptoms": "Symptoms & states",
+    "show": "From the show"
+  },
+  "entries": [
+    {
+      "code": "W61.62XA",
+      "kind": "beasts",
+      "description": "Struck by duck, initial encounter",
+      "note": "Please confirm the duck was in network."
+    },
+    {
+      "code": "W61.62XD",
+      "kind": "beasts",
+      "description": "Struck by duck, subsequent encounter",
+      "note": "Follow-up visit. The duck has not returned our calls."
+    },
+    {
+      "code": "W61.62XS",
+      "kind": "beasts",
+      "description": "Struck by duck, sequela",
+      "note": "Sequela: the late effects. The duck remains at large. The deductible has reset."
+    },
+    {
+      "code": "W61.61XA",
+      "kind": "beasts",
+      "description": "Bitten by duck, initial encounter",
+      "note": "A coder must now decide between a bite and a strike. Nobody has asked the duck."
+    },
+    {
+      "code": "W61.51XA",
+      "kind": "beasts",
+      "description": "Bitten by goose, initial encounter",
+      "note": "Geese have their own code because someone, somewhere, watched a goose and took notes."
+    },
+    {
+      "code": "W61.52XA",
+      "kind": "beasts",
+      "description": "Struck by goose, initial encounter",
+      "note": "Wait time for the appointment: see Z75.2."
+    },
+    {
+      "code": "W61.33XA",
+      "kind": "beasts",
+      "description": "Pecked by chicken, initial encounter",
+      "note": "Not to be confused with struck by chicken. The classification is firm on this."
+    },
+    {
+      "code": "W61.32XA",
+      "kind": "beasts",
+      "description": "Struck by chicken, initial encounter",
+      "note": "The chicken’s side of the story is not a required field."
+    },
+    {
+      "code": "W61.42XA",
+      "kind": "beasts",
+      "description": "Struck by turkey, initial encounter",
+      "note": "Seasonal, like open enrollment, and about as welcome."
+    },
+    {
+      "code": "W61.01XA",
+      "kind": "beasts",
+      "description": "Bitten by parrot, initial encounter",
+      "note": "The parrot repeats what the coder said about the payer. Not billable."
+    },
+    {
+      "code": "W61.22XA",
+      "kind": "beasts",
+      "description": "Struck by other psittacines, initial encounter",
+      "note": "The cockatoo, the budgie and every other parrot-adjacent bird share one code. Macaws got their own."
+    },
+    {
+      "code": "W61.99XA",
+      "kind": "beasts",
+      "description": "Other contact with other birds, initial encounter",
+      "note": "The classification’s way of saying: a bird did something."
+    },
+    {
+      "code": "W53.21XA",
+      "kind": "beasts",
+      "description": "Bitten by squirrel, initial encounter",
+      "note": "The rabies question triggers four forms. The squirrel signs none."
+    },
+    {
+      "code": "W53.01XA",
+      "kind": "beasts",
+      "description": "Bitten by mouse, initial encounter",
+      "note": "The smallest rodent with its own code, and a claim larger than the mouse."
+    },
+    {
+      "code": "W53.11XA",
+      "kind": "beasts",
+      "description": "Bitten by rat, initial encounter",
+      "note": "Mice and rats are coded separately. The rodents were not consulted."
+    },
+    {
+      "code": "W54.0XXA",
+      "kind": "beasts",
+      "description": "Bitten by dog, initial encounter",
+      "note": "A staple of the emergency department, and still no code for: it was a good dog."
+    },
+    {
+      "code": "W55.01XA",
+      "kind": "beasts",
+      "description": "Bitten by cat, initial encounter",
+      "note": "Bites and scratches are coded separately. The cat considers this an overreach."
+    },
+    {
+      "code": "W55.03XA",
+      "kind": "beasts",
+      "description": "Scratched by cat, initial encounter",
+      "note": "The cat has declined to be attached to the chart."
+    },
+    {
+      "code": "W55.12XA",
+      "kind": "beasts",
+      "description": "Struck by horse, initial encounter",
+      "note": "Please indicate the number of horsepower. It is, as a rule, one."
+    },
+    {
+      "code": "W55.22XA",
+      "kind": "beasts",
+      "description": "Struck by cow, initial encounter",
+      "note": "Cows cannot be sued. Their insurers, however, are well represented."
+    },
+    {
+      "code": "W55.31XA",
+      "kind": "beasts",
+      "description": "Bitten by other hoof stock, initial encounter",
+      "note": "Please identify the species. Species identification is not a covered service."
+    },
+    {
+      "code": "W55.41XA",
+      "kind": "beasts",
+      "description": "Bitten by pig, initial encounter",
+      "note": "Pigs have their own code. The pig did not ask for it."
+    },
+    {
+      "code": "W55.51XA",
+      "kind": "beasts",
+      "description": "Bitten by raccoon, initial encounter",
+      "note": "The raccoon has taken the chart and left."
+    },
+    {
+      "code": "W56.01XA",
+      "kind": "beasts",
+      "description": "Bitten by dolphin, initial encounter",
+      "note": "Yes, dolphins have a code. No, the dolphin does not have a payer."
+    },
+    {
+      "code": "W56.21XA",
+      "kind": "beasts",
+      "description": "Bitten by orca, initial encounter",
+      "note": "Orcas are dolphins, but the classification lists them separately. Coders have opinions."
+    },
+    {
+      "code": "W59.21XA",
+      "kind": "beasts",
+      "description": "Bitten by turtle, initial encounter",
+      "note": "Slow, but still faster than a prior authorization."
+    },
+    {
+      "code": "W59.01XA",
+      "kind": "beasts",
+      "description": "Bitten by nonvenomous lizards, initial encounter",
+      "note": "‘Nonvenomous’ is a determination usually made after the copay."
+    },
+    {
+      "code": "W62.0XXA",
+      "kind": "beasts",
+      "description": "Contact with nonvenomous frogs, initial encounter",
+      "note": "Kissing is billed separately."
+    },
+    {
+      "code": "W62.1XXA",
+      "kind": "beasts",
+      "description": "Contact with nonvenomous toads, initial encounter",
+      "note": "Frogs and toads are coded separately, and the committee’s minutes are sealed."
+    },
+    {
+      "code": "W57.XXXA",
+      "kind": "beasts",
+      "description": "Bitten or stung by nonvenomous insect and other nonvenomous arthropods, initial encounter",
+      "note": "Every nonvenomous insect and arthropod in the world, in one code. The classification believes in economies of scale."
+    },
+    {
+      "code": "W60.XXXA",
+      "kind": "beasts",
+      "description": "Contact with nonvenomous plant thorns and spines and sharp leaves, initial encounter",
+      "note": "Roses, cacti and holly share a code. The florist has no comment."
+    },
+    {
+      "code": "W22.02XA",
+      "kind": "mishaps",
+      "description": "Walked into lamppost, initial encounter",
+      "note": "The lamppost was not at fault and is not in network."
+    },
+    {
+      "code": "W22.02XD",
+      "kind": "mishaps",
+      "description": "Walked into lamppost, subsequent encounter",
+      "note": "Subsequent encounter. The lamppost has not moved."
+    },
+    {
+      "code": "W22.01XA",
+      "kind": "mishaps",
+      "description": "Walked into wall, initial encounter",
+      "note": "The wall reported no injuries and filed no claim."
+    },
+    {
+      "code": "W22.03XA",
+      "kind": "mishaps",
+      "description": "Walked into furniture, initial encounter",
+      "note": "Please specify the furniture. The classification declines to."
+    },
+    {
+      "code": "W22.8XXA",
+      "kind": "mishaps",
+      "description": "Striking against or struck by other objects, initial encounter",
+      "note": "The classification’s way of admitting it has run out of nouns."
+    },
+    {
+      "code": "W26.2XXA",
+      "kind": "mishaps",
+      "description": "Contact with edge of stiff paper, initial encounter",
+      "note": "The only paperwork injury with its own code."
+    },
+    {
+      "code": "W27.3XXA",
+      "kind": "mishaps",
+      "description": "Contact with needle (sewing), initial encounter",
+      "note": "Not the kind of needle that comes with a prior authorization."
+    },
+    {
+      "code": "W27.2XXA",
+      "kind": "mishaps",
+      "description": "Contact with scissors, initial encounter",
+      "note": "Running with them is a separate lecture, not a separate code."
+    },
+    {
+      "code": "W27.5XXA",
+      "kind": "mishaps",
+      "description": "Contact with paper-cutter, initial encounter",
+      "note": "See also W26.2XXA, the smaller paperwork incident."
+    },
+    {
+      "code": "W17.82XA",
+      "kind": "mishaps",
+      "description": "Fall from (out of) grocery cart, initial encounter",
+      "note": "Yes, there is a code for falling out of a grocery cart. No, there is no code for the appeal."
+    },
+    {
+      "code": "W21.04XA",
+      "kind": "mishaps",
+      "description": "Struck by golf ball, initial encounter",
+      "note": "‘Fore’ is not a billable modifier."
+    },
+    {
+      "code": "W21.13XA",
+      "kind": "mishaps",
+      "description": "Struck by golf club, initial encounter",
+      "note": "The only code where the doctor is out of the office and the patient knows why."
+    },
+    {
+      "code": "W21.02XA",
+      "kind": "mishaps",
+      "description": "Struck by soccer ball, initial encounter",
+      "note": "The beautiful game now has a code, and a deductible."
+    },
+    {
+      "code": "W88.0XXA",
+      "kind": "mishaps",
+      "description": "Exposure to X-rays, initial encounter",
+      "note": "Yes, there is a code for the X-ray. No, there is no code for the bill."
+    },
+    {
+      "code": "W42.9XXA",
+      "kind": "mishaps",
+      "description": "Exposure to other noise, initial encounter",
+      "note": "Suspected source: the payer’s hold music."
+    },
+    {
+      "code": "W94.11XA",
+      "kind": "mishaps",
+      "description": "Exposure to residence or prolonged visit at high altitude, initial encounter",
+      "note": "The only code that places the patient above the paperwork."
+    },
+    {
+      "code": "W94.23XA",
+      "kind": "mishaps",
+      "description": "Exposure to sudden change in air pressure in aircraft during ascent, initial encounter",
+      "note": "Airplane ears have a code. Airline delays do not."
+    },
+    {
+      "code": "W37.0XXA",
+      "kind": "mishaps",
+      "description": "Explosion of bicycle tire, initial encounter",
+      "note": "The tire’s claim was denied as a pre-existing condition."
+    },
+    {
+      "code": "W49.04XA",
+      "kind": "mishaps",
+      "description": "Ring or other jewelry causing external constriction, initial encounter",
+      "note": "Solved with a small saw, an apology and a form."
+    },
+    {
+      "code": "W18.40XA",
+      "kind": "mishaps",
+      "description": "Slipping, tripping and stumbling without falling, unspecified, initial encounter",
+      "note": "A code for an injury that did not happen. See also: a prior authorization that almost was."
+    },
+    {
+      "code": "W19.XXXA",
+      "kind": "mishaps",
+      "description": "Unspecified fall, initial encounter",
+      "note": "The chart says ‘pt fell.’ The patient agrees."
+    },
+    {
+      "code": "W07.XXXA",
+      "kind": "mishaps",
+      "description": "Fall from chair, initial encounter",
+      "note": "Not to be confused with a fall from department chair, which is called a reorganization."
+    },
+    {
+      "code": "W10.1XXA",
+      "kind": "mishaps",
+      "description": "Fall (on)(from) sidewalk curb, initial encounter",
+      "note": "Not to be confused with a curbside consult, which is free and equally risky."
+    },
+    {
+      "code": "W10.0XXA",
+      "kind": "mishaps",
+      "description": "Fall (on)(from) escalator, initial encounter",
+      "note": "A broken escalator is just stairs. This code is about the working kind."
+    },
+    {
+      "code": "W14.XXXA",
+      "kind": "mishaps",
+      "description": "Fall from tree, initial encounter",
+      "note": "Unrelated to decision trees, though both involve branches and a hard landing."
+    },
+    {
+      "code": "W01.0XXA",
+      "kind": "mishaps",
+      "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object, initial encounter",
+      "note": "Three verbs, one code. Payers approve of bundling."
+    },
+    {
+      "code": "X58.XXXA",
+      "kind": "mishaps",
+      "description": "Exposure to other specified factors, initial encounter",
+      "note": "The factors are specified nowhere."
+    },
+    {
+      "code": "W11.XXXA",
+      "kind": "mishaps",
+      "description": "Fall on and from ladder, initial encounter",
+      "note": "The career ladder is covered elsewhere (Z56)."
+    },
+    {
+      "code": "X32.XXXA",
+      "kind": "heat",
+      "description": "Exposure to sunlight, initial encounter",
+      "note": "Yes, sunlight is an external cause. No, your plan does not cover the sun."
+    },
+    {
+      "code": "X10.0XXA",
+      "kind": "heat",
+      "description": "Contact with hot drinks, initial encounter",
+      "note": "Coffee’s contribution to healthcare: a code for spilling it, none for going without."
+    },
+    {
+      "code": "X15.1XXA",
+      "kind": "heat",
+      "description": "Contact with hot toaster, initial encounter",
+      "note": "There is a code for the toaster. There is no code for the bread."
+    },
+    {
+      "code": "X15.0XXA",
+      "kind": "heat",
+      "description": "Contact with hot stove (kitchen), initial encounter",
+      "note": "No prior authorization is required to learn that the stove is hot."
+    },
+    {
+      "code": "X15.3XXA",
+      "kind": "heat",
+      "description": "Contact with hot saucepan or skillet, initial encounter",
+      "note": "Cast iron has a code, and a personality."
+    },
+    {
+      "code": "X16.XXXA",
+      "kind": "heat",
+      "description": "Contact with hot heating appliances, radiators and pipes, initial encounter",
+      "note": "The building’s heating has always been either this or nothing."
+    },
+    {
+      "code": "X19.XXXA",
+      "kind": "heat",
+      "description": "Contact with other heat and hot substances, initial encounter",
+      "note": "See also: the hospital parking lot in August."
+    },
+    {
+      "code": "X31.XXXA",
+      "kind": "heat",
+      "description": "Exposure to excessive natural cold, initial encounter",
+      "note": "Not to be confused with the operating room, where the cold is intentional."
+    },
+    {
+      "code": "V00.151A",
+      "kind": "wheels",
+      "description": "Fall from heelies, initial encounter",
+      "note": "Somewhere, a committee added a code for heelies. The minutes are not public."
+    },
+    {
+      "code": "V00.131A",
+      "kind": "wheels",
+      "description": "Fall from skateboard, initial encounter",
+      "note": "Separate codes exist for colliding with a stationary object. The stationary object is unavailable for comment."
+    },
+    {
+      "code": "V00.141A",
+      "kind": "wheels",
+      "description": "Fall from scooter (nonmotorized), initial encounter",
+      "note": "The motorized kind has its own code, and its own opinions."
+    },
+    {
+      "code": "V00.221A",
+      "kind": "wheels",
+      "description": "Fall from sled, initial encounter",
+      "note": "‘Rosebud’ has no diagnostic code."
+    },
+    {
+      "code": "V00.211A",
+      "kind": "wheels",
+      "description": "Fall from ice-skates, initial encounter",
+      "note": "A triple axel is not a diagnosis, but the fall from one might be."
+    },
+    {
+      "code": "V00.111A",
+      "kind": "wheels",
+      "description": "Fall from in-line roller-skates, initial encounter",
+      "note": "In-line and non-in-line skates have separate codes. The wheels were not consulted."
+    },
+    {
+      "code": "V91.07XA",
+      "kind": "wheels",
+      "description": "Burn due to water-skis on fire, initial encounter",
+      "note": "Somebody, at some point, needed this code."
+    },
+    {
+      "code": "V94.4XXA",
+      "kind": "wheels",
+      "description": "Injury to barefoot water-skier, initial encounter",
+      "note": "The classification distinguishes barefoot from shod. Nobody asked the water."
+    },
+    {
+      "code": "Y92.230",
+      "kind": "places",
+      "description": "Patient room in hospital as the place of occurrence of the external cause",
+      "note": "The place of occurrence: here. The place of billing: elsewhere."
+    },
+    {
+      "code": "Y92.232",
+      "kind": "places",
+      "description": "Corridor of hospital as the place of occurrence of the external cause",
+      "note": "Also the department, on most evenings."
+    },
+    {
+      "code": "Y92.233",
+      "kind": "places",
+      "description": "Cafeteria of hospital as the place of occurrence of the external cause",
+      "note": "The sandwich is not an external cause. Yet."
+    },
+    {
+      "code": "Y92.234",
+      "kind": "places",
+      "description": "Operating room of hospital as the place of occurrence of the external cause",
+      "note": "Where the time-out happens, and where the schedule argues with it."
+    },
+    {
+      "code": "Y92.238",
+      "kind": "places",
+      "description": "Other place in hospital as the place of occurrence of the external cause",
+      "note": "The code for wherever the map doesn’t show."
+    },
+    {
+      "code": "Y92.239",
+      "kind": "places",
+      "description": "Unspecified place in hospital as the place of occurrence of the external cause",
+      "note": "Where you are when the sign says ‘you are here’ and you are not."
+    },
+    {
+      "code": "Y92.530",
+      "kind": "places",
+      "description": "Ambulatory surgery center as the place of occurrence of the external cause",
+      "note": "Where surgery is done without an overnight stay, and the paperwork stays over."
+    },
+    {
+      "code": "Y92.531",
+      "kind": "places",
+      "description": "Health care provider office as the place of occurrence of the external cause",
+      "note": "The place where the co-pay lives."
+    },
+    {
+      "code": "Y92.538",
+      "kind": "places",
+      "description": "Other ambulatory health services establishments as the place of occurrence of the external cause",
+      "note": "Urgent care, presumably, and somewhere, a very long line."
+    },
+    {
+      "code": "Y92.241",
+      "kind": "places",
+      "description": "Library as the place of occurrence of the external cause",
+      "note": "Silence requested, unlike the hold music (W42.9XXA)."
+    },
+    {
+      "code": "Y92.242",
+      "kind": "places",
+      "description": "Post office as the place of occurrence of the external cause",
+      "note": "Where ‘the check is in the mail’ becomes a place."
+    },
+    {
+      "code": "Y92.240",
+      "kind": "places",
+      "description": "Courthouse as the place of occurrence of the external cause",
+      "note": "Where the appeal ends up, eventually."
+    },
+    {
+      "code": "Y92.250",
+      "kind": "places",
+      "description": "Art Gallery as the place of occurrence of the external cause",
+      "note": "Injuries caused by the art are classified as critical reviews."
+    },
+    {
+      "code": "Y92.251",
+      "kind": "places",
+      "description": "Museum as the place of occurrence of the external cause",
+      "note": "Do not touch, said the sign. The classification agreed."
+    },
+    {
+      "code": "Y92.252",
+      "kind": "places",
+      "description": "Music hall as the place of occurrence of the external cause",
+      "note": "Coded as a place of occurrence. The occurrence was probably the encore."
+    },
+    {
+      "code": "Y92.253",
+      "kind": "places",
+      "description": "Opera house as the place of occurrence of the external cause",
+      "note": "A place of occurrence with better documentation than most encounters: three acts and a libretto."
+    },
+    {
+      "code": "Y92.254",
+      "kind": "places",
+      "description": "Theater (live) as the place of occurrence of the external cause",
+      "note": "Coded here when ‘break a leg’ is taken literally."
+    },
+    {
+      "code": "Y92.26",
+      "kind": "places",
+      "description": "Movie house or cinema as the place of occurrence of the external cause",
+      "note": "Coming soon: your prior authorization."
+    },
+    {
+      "code": "Y92.312",
+      "kind": "places",
+      "description": "Tennis court as the place of occurrence of the external cause",
+      "note": "Love, fifteen, thirty, deductible."
+    },
+    {
+      "code": "Y92.311",
+      "kind": "places",
+      "description": "Squash court as the place of occurrence of the external cause",
+      "note": "A vegetable in the kitchen and a sport here. Coders keep them apart."
+    },
+    {
+      "code": "Y92.481",
+      "kind": "places",
+      "description": "Parking lot as the place of occurrence of the external cause",
+      "note": "Where the visit begins and the patience ends."
+    },
+    {
+      "code": "Y92.510",
+      "kind": "places",
+      "description": "Bank as the place of occurrence of the external cause",
+      "note": "Where the deductible is kept and the co-pay is withdrawn."
+    },
+    {
+      "code": "Y92.512",
+      "kind": "places",
+      "description": "Supermarket, store or market as the place of occurrence of the external cause",
+      "note": "Where the pharmacy hides."
+    },
+    {
+      "code": "Y92.520",
+      "kind": "places",
+      "description": "Airport as the place of occurrence of the external cause",
+      "note": "Boarding time: unspecified. Prior authorization time: also unspecified."
+    },
+    {
+      "code": "Y92.71",
+      "kind": "places",
+      "description": "Barn as the place of occurrence of the external cause",
+      "note": "A place of occurrence with better ventilation than the average waiting room."
+    },
+    {
+      "code": "Y92.72",
+      "kind": "places",
+      "description": "Chicken coop as the place of occurrence of the external cause",
+      "note": "The coop has its own code. The rooster’s testimony has not been entered."
+    },
+    {
+      "code": "Y92.73",
+      "kind": "places",
+      "description": "Farm field as the place of occurrence of the external cause",
+      "note": "Coded as a place. The crop is a separate matter, and a subsidy."
+    },
+    {
+      "code": "Y92.831",
+      "kind": "places",
+      "description": "Amusement park as the place of occurrence of the external cause",
+      "note": "The only place that posts its wait time in advance."
+    },
+    {
+      "code": "Y92.833",
+      "kind": "places",
+      "description": "Campsite as the place of occurrence of the external cause",
+      "note": "The only place in the classification where ‘no signal’ is a feature."
+    },
+    {
+      "code": "Y92.834",
+      "kind": "places",
+      "description": "Zoological garden (Zoo) as the place of occurrence of the external cause",
+      "note": "Where every animal is properly labeled. Unlike the formulary."
+    },
+    {
+      "code": "Y92.9",
+      "kind": "places",
+      "description": "Unspecified place or not applicable",
+      "note": "The code for ‘not applicable’. Applicable, in practice, to most forms."
+    },
+    {
+      "code": "Y93.84",
+      "kind": "activities",
+      "description": "Activity, sleeping",
+      "note": "Sleeping is an activity. Every clinician is encouraged to try it. None can bill for it."
+    },
+    {
+      "code": "Y93.82",
+      "kind": "activities",
+      "description": "Activity, spectator at an event",
+      "note": "Watching is an activity. The classification agrees it is tiring."
+    },
+    {
+      "code": "Y93.83",
+      "kind": "activities",
+      "description": "Activity, rough housing and horseplay",
+      "note": "Horseplay is classified. Horses are not required."
+    },
+    {
+      "code": "Y93.81",
+      "kind": "activities",
+      "description": "Activity, refereeing a sports activity",
+      "note": "The role in which everyone else is wrong. Compare: the utilization reviewer."
+    },
+    {
+      "code": "Y93.C1",
+      "kind": "activities",
+      "description": "Activity, computer keyboarding",
+      "note": "The activity that now occupies most of a clinical day. Not billable, but present."
+    },
+    {
+      "code": "Y93.C2",
+      "kind": "activities",
+      "description": "Activity, hand held interactive electronic device",
+      "note": "The phone. The hold music has its own code (W42.9XXA)."
+    },
+    {
+      "code": "Y93.C9",
+      "kind": "activities",
+      "description": "Activity, other involving computer technology and electronic devices",
+      "note": "The patient portal is in here somewhere."
+    },
+    {
+      "code": "Y93.D1",
+      "kind": "activities",
+      "description": "Activity, knitting and crocheting",
+      "note": "A purl-ous pastime, and a code."
+    },
+    {
+      "code": "Y93.D2",
+      "kind": "activities",
+      "description": "Activity, sewing",
+      "note": "Like suturing, but the thread is not itemized."
+    },
+    {
+      "code": "Y93.D3",
+      "kind": "activities",
+      "description": "Activity, furniture building and finishing",
+      "note": "The classification says nothing about the missing screw."
+    },
+    {
+      "code": "Y93.E4",
+      "kind": "activities",
+      "description": "Activity, ironing",
+      "note": "Ironing is an activity. Wrinkled scrubs are a lifestyle."
+    },
+    {
+      "code": "Y93.E5",
+      "kind": "activities",
+      "description": "Activity, floor mopping and cleaning",
+      "note": "See also: wet floor sign, absent."
+    },
+    {
+      "code": "Y93.E6",
+      "kind": "activities",
+      "description": "Activity, residential relocation",
+      "note": "Also the process of moving a record from one EHR to another. Some things do not survive the move."
+    },
+    {
+      "code": "Y93.F1",
+      "kind": "activities",
+      "description": "Activity, caregiving, bathing",
+      "note": "An activity done at home every day, reimbursed at a rate of zero."
+    },
+    {
+      "code": "Y93.F2",
+      "kind": "activities",
+      "description": "Activity, caregiving, lifting",
+      "note": "The person is lifted. The system, so far, is not."
+    },
+    {
+      "code": "Y93.G1",
+      "kind": "activities",
+      "description": "Activity, food preparation and clean up",
+      "note": "Clean-up, as usual, is part of the activity."
+    },
+    {
+      "code": "Y93.G2",
+      "kind": "activities",
+      "description": "Activity, grilling and smoking food",
+      "note": "The only code where smoking is encouraged."
+    },
+    {
+      "code": "Y93.G3",
+      "kind": "activities",
+      "description": "Activity, cooking and baking",
+      "note": "Every recipe has a step that says ‘to taste’. Every form has one that says ‘other’."
+    },
+    {
+      "code": "Y93.H1",
+      "kind": "activities",
+      "description": "Activity, digging, shoveling and raking",
+      "note": "A leading cause of Saturdays."
+    },
+    {
+      "code": "Y93.H2",
+      "kind": "activities",
+      "description": "Activity, gardening and landscaping",
+      "note": "The tomatoes are not reimbursed either."
+    },
+    {
+      "code": "Y93.H3",
+      "kind": "activities",
+      "description": "Activity, building and construction",
+      "note": "The permit was approved faster than the prior authorization."
+    },
+    {
+      "code": "Y93.I1",
+      "kind": "activities",
+      "description": "Activity, roller coaster riding",
+      "note": "Ups, downs and sudden stops. Also known as the claims process."
+    },
+    {
+      "code": "Y93.J1",
+      "kind": "activities",
+      "description": "Activity, piano playing",
+      "note": "Eighty-eight keys, one code. Efficiency the payer should try."
+    },
+    {
+      "code": "Y93.J2",
+      "kind": "activities",
+      "description": "Activity, drum and other percussion instrument playing",
+      "note": "Percussion is also a physical exam technique. Only one of them is reimbursed."
+    },
+    {
+      "code": "Y93.J3",
+      "kind": "activities",
+      "description": "Activity, string instrument playing",
+      "note": "Strings attached: also known as the fine print."
+    },
+    {
+      "code": "Y93.K1",
+      "kind": "activities",
+      "description": "Activity, walking an animal",
+      "note": "The animal remains uncoded, and unfazed."
+    },
+    {
+      "code": "Y93.K2",
+      "kind": "activities",
+      "description": "Activity, milking an animal",
+      "note": "Milking an animal is an activity. Milking a claim is an art."
+    },
+    {
+      "code": "Y93.K3",
+      "kind": "activities",
+      "description": "Activity, grooming and shearing an animal",
+      "note": "Not to be confused with the payer’s ‘haircut’ on your reimbursement."
+    },
+    {
+      "code": "Y93.L9",
+      "kind": "activities",
+      "description": "Activity, other outdoor activity",
+      "note": "In the classification, everything outside is ‘other’."
+    },
+    {
+      "code": "Y93.01",
+      "kind": "activities",
+      "description": "Activity, walking, marching and hiking",
+      "note": "The cheapest treatment in the classification, and the least reimbursed."
+    },
+    {
+      "code": "Y93.02",
+      "kind": "activities",
+      "description": "Activity, running",
+      "note": "Available in 26.2-mile denominations, none of them covered."
+    },
+    {
+      "code": "Y93.11",
+      "kind": "activities",
+      "description": "Activity, swimming",
+      "note": "The one exercise that keeps you from writing notes at the same time."
+    },
+    {
+      "code": "Y93.15",
+      "kind": "activities",
+      "description": "Activity, underwater diving and snorkeling",
+      "note": "The only place where nobody can page you."
+    },
+    {
+      "code": "Y93.17",
+      "kind": "activities",
+      "description": "Activity, water skiing and wake boarding",
+      "note": "See also V91.07XA, in which the water-skis are on fire."
+    },
+    {
+      "code": "Y93.34",
+      "kind": "activities",
+      "description": "Activity, bungee jumping",
+      "note": "What goes down comes back up, unlike a reimbursement."
+    },
+    {
+      "code": "Y93.41",
+      "kind": "activities",
+      "description": "Activity, dancing",
+      "note": "Two-step is a dance. Two-step authentication is a different code entirely."
+    },
+    {
+      "code": "Y93.42",
+      "kind": "activities",
+      "description": "Activity, yoga",
+      "note": "Flexible in ways the formulary is not."
+    },
+    {
+      "code": "Y93.53",
+      "kind": "activities",
+      "description": "Activity, golf",
+      "note": "Where a great deal of health policy is not decided, but discussed, at length, on the fourth hole."
+    },
+    {
+      "code": "Y93.54",
+      "kind": "activities",
+      "description": "Activity, bowling",
+      "note": "Strikes, spares and the occasional gutter claim."
+    },
+    {
+      "code": "Y93.6A",
+      "kind": "activities",
+      "description": "Activity, physical games generally associated with school recess, summer camp and children",
+      "note": "Tag, you’re it, and so is your deductible."
+    },
+    {
+      "code": "Y93.71",
+      "kind": "activities",
+      "description": "Activity, boxing",
+      "note": "See also: contract negotiations with the payer."
+    },
+    {
+      "code": "Y93.72",
+      "kind": "activities",
+      "description": "Activity, wrestling",
+      "note": "A sport in which each side attempts to pin the other. Compare: the appeals process."
+    },
+    {
+      "code": "Y93.74",
+      "kind": "activities",
+      "description": "Activity, frisbee",
+      "note": "The ultimate outcome is not a diagnosis."
+    },
+    {
+      "code": "Y93.75",
+      "kind": "activities",
+      "description": "Activity, martial arts",
+      "note": "A discipline of controlled conflict. Compare: peer-to-peer review."
+    },
+    {
+      "code": "Y93.A1",
+      "kind": "activities",
+      "description": "Activity, exercise machines primarily for cardiorespiratory conditioning",
+      "note": "The treadmill: a machine that goes nowhere while the billing continues."
+    },
+    {
+      "code": "Y93.A3",
+      "kind": "activities",
+      "description": "Activity, aerobic and step exercise",
+      "note": "Step exercise is a workout. Step therapy is a payer requirement. Both are tiring."
+    },
+    {
+      "code": "Y93.A5",
+      "kind": "activities",
+      "description": "Activity, obstacle course",
+      "note": "Also known as a health plan’s formulary, but shorter."
+    },
+    {
+      "code": "Y93.B3",
+      "kind": "activities",
+      "description": "Activity, free weights",
+      "note": "The only free thing in the classification."
+    },
+    {
+      "code": "Y93.89",
+      "kind": "activities",
+      "description": "Activity, other specified",
+      "note": "Both ‘other’ and ‘specified’. A contradiction, but a billable one."
+    },
+    {
+      "code": "Y93.9",
+      "kind": "activities",
+      "description": "Activity, unspecified",
+      "note": "The most honest code in the classification."
+    },
+    {
+      "code": "Y99.0",
+      "kind": "activities",
+      "description": "Civilian activity done for income or pay",
+      "note": "Compare: documentation, which is done for neither."
+    },
+    {
+      "code": "Y99.2",
+      "kind": "activities",
+      "description": "Volunteer activity",
+      "note": "The category for the work nobody is paid to do, including the forms."
+    },
+    {
+      "code": "Y99.8",
+      "kind": "activities",
+      "description": "Other external cause status",
+      "note": "Reserved for activities done for neither pay nor prestige. Podcasts, we suspect."
+    },
+    {
+      "code": "Y99.9",
+      "kind": "activities",
+      "description": "Unspecified external cause status",
+      "note": "Everyone’s, most days."
+    },
+    {
+      "code": "Z75.2",
+      "kind": "paperwork",
+      "description": "Other waiting period for investigation and treatment",
+      "note": "The official code for waiting. Prior authorization is a subset."
+    },
+    {
+      "code": "Z75.3",
+      "kind": "paperwork",
+      "description": "Unavailability and inaccessibility of health-care facilities",
+      "note": "The only diagnosis whose cure is a budget."
+    },
+    {
+      "code": "Z75.4",
+      "kind": "paperwork",
+      "description": "Unavailability and inaccessibility of other helping agencies",
+      "note": "Also known as ‘your call is important to us’."
+    },
+    {
+      "code": "Z75.1",
+      "kind": "paperwork",
+      "description": "Person awaiting admission to adequate facility elsewhere",
+      "note": "Elsewhere is where all the beds are."
+    },
+    {
+      "code": "Z75.0",
+      "kind": "paperwork",
+      "description": "Medical services not available in home",
+      "note": "House calls: not available in the home, only on the phone."
+    },
+    {
+      "code": "Z75.8",
+      "kind": "paperwork",
+      "description": "Other problems related to medical facilities and other health care",
+      "note": "The code for whatever the system did that no other code could describe."
+    },
+    {
+      "code": "Z75.9",
+      "kind": "paperwork",
+      "description": "Unspecified problem related to medical facilities and other health care",
+      "note": "The patient’s review of the visit, in code."
+    },
+    {
+      "code": "Z76.0",
+      "kind": "paperwork",
+      "description": "Encounter for issue of repeat prescription",
+      "note": "A visit whose entire purpose is to re-request permission you already had."
+    },
+    {
+      "code": "Z76.3",
+      "kind": "paperwork",
+      "description": "Healthy person accompanying sick person",
+      "note": "The only code for someone who is not sick and still has to wait."
+    },
+    {
+      "code": "Z76.4",
+      "kind": "paperwork",
+      "description": "Other boarder to healthcare facility",
+      "note": "A person in a bed with nowhere else to go. Familiar to every emergency department."
+    },
+    {
+      "code": "Z76.89",
+      "kind": "paperwork",
+      "description": "Persons encountering health services in other specified circumstances",
+      "note": "Anyone, anywhere, for any reason. ‘Specified’ is generous."
+    },
+    {
+      "code": "Z02.1",
+      "kind": "paperwork",
+      "description": "Encounter for pre-employment examination",
+      "note": "To establish that you were healthy before the job did what jobs do."
+    },
+    {
+      "code": "Z02.6",
+      "kind": "paperwork",
+      "description": "Encounter for examination for insurance purposes",
+      "note": "The insurer examines you so it can know you better than you do."
+    },
+    {
+      "code": "Z02.79",
+      "kind": "paperwork",
+      "description": "Encounter for issue of other medical certificate",
+      "note": "A letter stating what everyone already knew, with a signature."
+    },
+    {
+      "code": "Z02.89",
+      "kind": "paperwork",
+      "description": "Encounter for other administrative examinations",
+      "note": "Diagnosis: form. Prognosis: further forms."
+    },
+    {
+      "code": "Z53.21",
+      "kind": "paperwork",
+      "description": "Procedure and treatment not carried out due to patient leaving prior to being seen by health care provider",
+      "note": "Coded as the patient’s decision. The wait behind it rarely gets a code (see Z75.2)."
+    },
+    {
+      "code": "Z53.31",
+      "kind": "paperwork",
+      "description": "Laparoscopic surgical procedure converted to open procedure",
+      "note": "The prior authorization was for the other one."
+    },
+    {
+      "code": "Z53.9",
+      "kind": "paperwork",
+      "description": "Procedure and treatment not carried out, unspecified reason",
+      "note": "The operating schedule, in one line."
+    },
+    {
+      "code": "Z55.6",
+      "kind": "paperwork",
+      "description": "Problems related to health literacy",
+      "note": "There is a code for the patient’s literacy. There is none for the discharge instructions."
+    },
+    {
+      "code": "Z56.3",
+      "kind": "paperwork",
+      "description": "Stressful work schedule",
+      "note": "A code the profession has been applying to itself for decades."
+    },
+    {
+      "code": "Z56.4",
+      "kind": "paperwork",
+      "description": "Discord with boss and workmates",
+      "note": "Peer-to-peer review, but internal."
+    },
+    {
+      "code": "Z56.5",
+      "kind": "paperwork",
+      "description": "Uncongenial work environment",
+      "note": "A phrase that could describe the EHR."
+    },
+    {
+      "code": "Z56.6",
+      "kind": "paperwork",
+      "description": "Other physical and mental strain related to work",
+      "note": "A category most clinicians will find covers the whole shift."
+    },
+    {
+      "code": "Z73.0",
+      "kind": "paperwork",
+      "description": "Burn-out",
+      "note": "Burn-out has a diagnosis code. The staffing plan does not."
+    },
+    {
+      "code": "Z73.2",
+      "kind": "paperwork",
+      "description": "Lack of relaxation and leisure",
+      "note": "Recorded in the chart at 11 p.m. by the clinician, who is on call."
+    },
+    {
+      "code": "Z73.3",
+      "kind": "paperwork",
+      "description": "Stress, not elsewhere classified",
+      "note": "‘Elsewhere’ being the rest of the classification, apparently."
+    },
+    {
+      "code": "Z73.9",
+      "kind": "paperwork",
+      "description": "Problem related to life management difficulty, unspecified",
+      "note": "The human condition, coded as such."
+    },
+    {
+      "code": "Z72.820",
+      "kind": "paperwork",
+      "description": "Sleep deprivation",
+      "note": "Also known as residency."
+    },
+    {
+      "code": "Z72.4",
+      "kind": "paperwork",
+      "description": "Inappropriate diet and eating habits",
+      "note": "See also: the hospital cafeteria (Y92.233)."
+    },
+    {
+      "code": "Z72.6",
+      "kind": "paperwork",
+      "description": "Gambling and betting",
+      "note": "Also known as open enrollment."
+    },
+    {
+      "code": "Z71.0",
+      "kind": "paperwork",
+      "description": "Person encountering health services to consult on behalf of another person",
+      "note": "A caregiver: the actual medical system."
+    },
+    {
+      "code": "Z71.1",
+      "kind": "paperwork",
+      "description": "Person with feared health complaint in whom no diagnosis is made",
+      "note": "Nothing found. Something billed."
+    },
+    {
+      "code": "Z71.2",
+      "kind": "paperwork",
+      "description": "Person consulting for explanation of examination or test findings",
+      "note": "The portal released the results before the doctor could. This is the follow-up."
+    },
+    {
+      "code": "Z71.87",
+      "kind": "paperwork",
+      "description": "Encounter for pediatric-to-adult transition counseling",
+      "note": "For the child who ages out of one set of forms and into another."
+    },
+    {
+      "code": "Z71.89",
+      "kind": "paperwork",
+      "description": "Other specified counseling",
+      "note": "Specified in the chart, not here."
+    },
+    {
+      "code": "Z62.891",
+      "kind": "paperwork",
+      "description": "Sibling rivalry",
+      "note": "Yes, it is coded. No, it is not preventable, and the sequelae appear at holiday dinners."
+    },
+    {
+      "code": "Z79.899",
+      "kind": "paperwork",
+      "description": "Other long term (current) drug therapy",
+      "note": "Refill authorizations renew on a schedule, like a subscription nobody wanted."
+    },
+    {
+      "code": "Z99.89",
+      "kind": "paperwork",
+      "description": "Dependence on other enabling machines and devices",
+      "note": "The fax machine, disproportionately."
+    },
+    {
+      "code": "Z00.00",
+      "kind": "paperwork",
+      "description": "Encounter for general adult medical examination without abnormal findings",
+      "note": "Nothing wrong found. Good news, clinically. Neutral news, financially."
+    },
+    {
+      "code": "Z00.01",
+      "kind": "paperwork",
+      "description": "Encounter for general adult medical examination with abnormal findings",
+      "note": "Found something at your free checkup? The checkup stays free. Following up on the finding may not."
+    },
+    {
+      "code": "Z03.89",
+      "kind": "paperwork",
+      "description": "Encounter for observation for other suspected diseases and conditions ruled out",
+      "note": "Ruled out: the best possible diagnosis, and the one that reimburses least."
+    },
+    {
+      "code": "Z09",
+      "kind": "paperwork",
+      "description": "Encounter for follow-up examination after completed treatment for conditions other than malignant neoplasm",
+      "note": "‘Completed treatment’ is an aspiration, and now a diagnosis."
+    },
+    {
+      "code": "R69",
+      "kind": "symptoms",
+      "description": "Illness, unspecified",
+      "note": "The diagnosis of last resort and first triage."
+    },
+    {
+      "code": "R53.83",
+      "kind": "symptoms",
+      "description": "Other fatigue",
+      "note": "A symptom shared by patients, clinicians and the person reading the coding manual."
+    },
+    {
+      "code": "R41.82",
+      "kind": "symptoms",
+      "description": "Altered mental status, unspecified",
+      "note": "Also the state of anyone who has reached the payer’s phone tree."
+    },
+    {
+      "code": "R46.4",
+      "kind": "symptoms",
+      "description": "Slowness and poor responsiveness",
+      "note": "A symptom in patients. A service level in payers."
+    },
+    {
+      "code": "R45.3",
+      "kind": "symptoms",
+      "description": "Demoralization and apathy",
+      "note": "A symptom, and a staff survey result."
+    },
+    {
+      "code": "T14.90XA",
+      "kind": "symptoms",
+      "description": "Injury, unspecified, initial encounter",
+      "note": "The chart says ‘ouch’. The classification agrees."
+    },
+    {
+      "code": "R68.89",
+      "kind": "symptoms",
+      "description": "Other general symptoms and signs",
+      "note": "When the patient says ‘I just don’t feel right’ and the classification says ‘same’."
+    },
+    {
+      "code": "R53.81",
+      "kind": "symptoms",
+      "description": "Other malaise",
+      "note": "From the French for ‘discomfort’, also a fair description of the claims portal."
+    },
+    {
+      "code": "K40.90",
+      "kind": "show",
+      "description": "Unilateral inguinal hernia, without obstruction or gangrene, not specified as recurrent",
+      "note": "The subject of a fictional peace conference on this show. The treaty is still not ratified."
+    },
+    {
+      "code": "K40.20",
+      "kind": "show",
+      "description": "Bilateral inguinal hernia, without obstruction or gangrene, not specified as recurrent",
+      "note": "Two sides, one negotiating table."
+    },
+    {
+      "code": "K40.91",
+      "kind": "show",
+      "description": "Unilateral inguinal hernia, without obstruction or gangrene, recurrent",
+      "note": "Returns, like a denied claim."
+    },
+    {
+      "code": "K80.20",
+      "kind": "show",
+      "description": "Calculus of gallbladder without cholecystitis without obstruction",
+      "note": "The show covers gallbladder surgery as a football game, which the classification does not."
+    },
+    {
+      "code": "K35.80",
+      "kind": "show",
+      "description": "Unspecified acute appendicitis",
+      "note": "McBurney’s point is the sign. This is the code. The paperwork is another matter."
+    }
+  ]
+}

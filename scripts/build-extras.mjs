@@ -985,6 +985,13 @@ function gamesHub(ctx) {
             <span class="coll-desc">One line a day from the episodes, with a card to share and a link to hear it in context.</span>
           </a>
         </li>
+        <li>
+          <a class="coll-card" href="/icd10/">
+            <span class="coll-part">Daily</span>
+            <span class="coll-title">ICD-10 code of the day</span>
+            <span class="coll-desc">One real diagnosis code a day, from “struck by duck” to “burn-out”, with its official description and a deadpan note from a coder who has seen too much.</span>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
@@ -1198,11 +1205,100 @@ function lineOfTheDayPage(ctx) {
       <ol class="line-list">
         ${lines.map((l) => `<li><a href="/episodes/${l.ep.slug}/quotes/${l.n}/">“${esc(l.q.text)}”</a> <span>${esc(l.ep.title)}</span></li>`).join('\n        ')}
       </ol>
-      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/top-10/">The weekly Top 10</a></p>
+      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/icd10/">ICD-10 code of the day</a> · <a href="/top-10/">The weekly Top 10</a></p>
     </div>
   </section>
 
 ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js', 'line.js'] })}`;
+}
+
+// ---- ICD-10 code of the day (/icd10/) ----------------------------------------------------
+// data/icd10.json: real ICD-10-CM codes with their official descriptions (checked against
+// CDC's files by scripts/check-icd10.mjs) and a satirical note. Every code is in the
+// archive table; icd10.js shows today's, counted from the launch date on the reader's
+// calendar, in a fixed shuffled order. The card in the HTML is the build day's code, for
+// readers without JavaScript and for search engines.
+
+const ICD10_URL = `${SITE}/icd10/`;
+const ICD10_LAUNCH = '2026-09-28'; // code #1
+const icd10Id = (code) => code.toLowerCase().replace('.', '-');
+const ICD10_FIRST = ['W61.62XA', 'Z75.2', 'Y93.84']; // the first days' codes; the rest follow in shuffled order
+
+function icd10Page(ctx) {
+  const data = readJson('data/icd10.json', { intro: '', source: {}, kinds: {}, entries: [] });
+  const list = data.entries.map((e) => ({ ...e, id: icd10Id(e.code), kind: data.kinds[e.kind] || e.kind }));
+  const shuffled = seededShuffle(list, 20260928);
+  const order = [...ICD10_FIRST.map((c) => shuffled.find((e) => e.code === c)).filter(Boolean), ...shuffled.filter((e) => !ICD10_FIRST.includes(e.code))];
+  const days = Math.floor((Date.now() - Date.parse(`${ICD10_LAUNCH}T00:00:00Z`)) / 86400000);
+  const today = order[((days % order.length) + order.length) % order.length];
+  const kinds = Object.values(data.kinds).filter((k) => list.some((e) => e.kind === k));
+  const archive = list.slice().sort((a, b) => a.code.localeCompare(b.code));
+  const description = snippet(`One real ICD-10-CM diagnosis code a day, with its official description and a deadpan note. ${list.length} codes, from “struck by duck” to “other waiting period for investigation and treatment”.`);
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage', url: ICD10_URL, name: 'ICD-10 code of the day', description: data.intro, isPartOf: { '@id': `${SITE}/#website` },
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: archive.length,
+          itemListElement: archive.map((e, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'MedicalCode', codeValue: e.code, codingSystem: 'ICD-10-CM', description: e.description, url: `${ICD10_URL}#${e.id}` } })),
+        },
+      },
+      breadcrumbLd([['ICD-10 code of the day', ICD10_URL]]),
+    ],
+  };
+  const rows = archive.map((e) => `<tr id="${e.id}" data-field="${esc(e.kind)}" data-search="${esc(`${e.code} ${e.description} ${e.note} ${e.kind}`.toLowerCase())}">
+          <td class="col-name" data-label="Code"><a href="#${e.id}">${esc(e.code)}</a><span class="row-field">${esc(e.kind)}</span></td>
+          <td class="col-desc" data-label="Official description">${esc(e.description)}</td>
+          <td class="col-note" data-label="Coder’s note">${esc(e.note)}</td>
+        </tr>`).join('\n        ');
+  const feed = order.map((e) => ({ c: e.code, d: e.description, n: e.note, k: e.kind }));
+  return `${pageHead({ title: 'ICD-10 Code of the Day: Real Diagnosis Codes, Deadpan Notes | Medics Musings', description, url: ICD10_URL, ogTitle: 'ICD-10 code of the day', image: shareImage(null), ld })}
+<main>
+  <section class="collection icd-page">
+    <div class="wrap">
+      ${crumbs([['ICD-10 code of the day']])}
+      <span class="eyebrow">Daily · <span data-icd-num>#${Math.max(0, days) + 1}</span></span>
+      <h1>ICD-10 code of the day</h1>
+      <p class="coll-intro">${esc(data.intro)}</p>
+      <article class="icd-card" id="icd10-of-the-day" data-launch="${ICD10_LAUNCH}">
+        <p class="icd-kind" data-icd-kind>${esc(today.kind)}</p>
+        <p class="icd-code" data-icd-code>${esc(today.code)}</p>
+        <p class="icd-desc" data-icd-desc>${esc(today.description)}</p>
+        <p class="icd-label">Coder’s note</p>
+        <p class="icd-note" data-icd-note>${esc(today.note)}</p>
+        <p class="icd-actions"><button type="button" class="btn btn-primary" data-icd-share>Share today’s code</button> <a class="btn btn-ghost" href="#${today.id}" data-icd-more>See it in the list</a></p>
+        <p class="icd-next" aria-live="polite"></p>
+      </article>
+      <section class="icd-recent" data-icd-recent hidden>
+        <h2>Recent codes</h2>
+        <ol class="icd-recent-list"></ol>
+      </section>
+      <h2 id="all-codes">Every code</h2>
+      ${tableControls('icd10', kinds, 'Search codes, descriptions or notes…')}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="icd10">
+          <thead>
+            <tr>
+              <th data-sort="text">Code</th>
+              <th data-sort="text">Official description</th>
+              <th class="no-sort">Coder’s note</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rows}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No codes match that search.</p>
+      <p class="icd-source">Codes and descriptions: <a href="${esc(data.source.url)}" rel="noopener">${esc(data.source.name)}, ${esc(data.source.years)}</a>, published by the ${esc(data.source.publisher)}. The notes are satire, not coding advice. Do not bill from this page.</p>
+      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/line-of-the-day/">Line of the day</a> · <a href="/games/">All games</a></p>
+    </div>
+  </section>
+  <script type="application/json" id="icd10-data">${JSON.stringify(feed).replace(/</g, '\\u003c')}</script>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js', 'icd10.js'] })}`;
 }
 
 // ---- Teaching guides ---------------------------------------------------------------
@@ -1832,6 +1928,7 @@ export function buildExtras(ctx) {
     writePage('news', newsEmptyPage(full));
   }
   writePage('line-of-the-day', lineOfTheDayPage(full));
+  writePage('icd10', icd10Page(full));
   writePage('games', gamesHub(full));
   writePage('games/eponym', eponymGamePage(full));
   writePage('games/word-rounds', wordRoundsPage(full));
@@ -1882,12 +1979,13 @@ export function buildExtras(ctx) {
         ...news.filter((d) => d.status === 'published').map((d) => ({ loc: newsDayUrl(d), lastmod: d.date, changefreq: 'yearly', priority: '0.5' })),
       ] : []),
       { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
+      { loc: ICD10_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
       { loc: WORD_ROUNDS_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: EPONYM_GAME_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'icd10', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
   };
 }
