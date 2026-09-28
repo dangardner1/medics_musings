@@ -416,12 +416,196 @@ function recallsPage(ctx) {
 ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 }
 
+// ---- ER wait times (data/er-wait.json) -----------------------------------------------
+
+const ER_URL = `${SITE}/er-wait-times/`;
+const US_STATES = {
+  AL: 'Alabama', AK: 'Alaska', AS: 'American Samoa', AZ: 'Arizona', AR: 'Arkansas', CA: 'California', CO: 'Colorado',
+  CT: 'Connecticut', DE: 'Delaware', DC: 'District of Columbia', FL: 'Florida', GA: 'Georgia', GU: 'Guam', HI: 'Hawaii',
+  ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine',
+  MD: 'Maryland', MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri', MT: 'Montana',
+  NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York',
+  NC: 'North Carolina', ND: 'North Dakota', MP: 'Northern Mariana Islands', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon',
+  PA: 'Pennsylvania', PR: 'Puerto Rico', RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee',
+  TX: 'Texas', UT: 'Utah', VT: 'Vermont', VI: 'U.S. Virgin Islands', VA: 'Virginia', WA: 'Washington',
+  WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming',
+};
+const stateName = (code) => US_STATES[code] || code;
+const minutes = (n) => (n == null ? '—' : `${n} min`);
+const hoursLabel = (n) => (n == null ? '' : `${Math.floor(n / 60)} h ${String(n % 60).padStart(2, '0')} m`);
+const pct = (n) => (n == null ? '—' : `${n}%`);
+const monthYear = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+const periodLabel = (p) => `${monthYear(p.start)}–${monthYear(p.end)}`;
+// data-label names the value on phones, where the table header is hidden.
+const numCell = (cls, n, text, label) => `<td class="${cls}" data-value="${n ?? ''}" data-label="${label}">${text}</td>`;
+
+const erEmergencyNote = `<p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>`;
+
+function erSourceNote(d) {
+  return `<details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), ${esc(periodLabel(d.periods.OP_18b))}. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), ${esc(periodLabel(d.periods.OP_22))}. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it ${esc(d.sourceModified)}; fetched ${esc(d.fetched)}. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>`;
+}
+
+function erMainPage(ctx) {
+  const d = ctx.erData;
+  const n = d.national;
+  const states = d.states.filter((s) => s.OP_18b != null && s.hospitals);
+  const rows = states.map((s) => `<tr id="${s.state.toLowerCase()}" data-search="${esc(`${stateName(s.state)} ${s.state}`.toLowerCase())}">
+          <td class="col-name"><a href="/er-wait-times/${s.state.toLowerCase()}/">${esc(stateName(s.state))}</a></td>
+          ${numCell('col-num', s.OP_18b, `<strong>${minutes(s.OP_18b)}</strong><span class="row-years">${hoursLabel(s.OP_18b)}</span>`, 'Median time in ER')}
+          ${numCell('col-num', s.OP_18c, minutes(s.OP_18c), 'Mental health')}
+          ${numCell('col-num', s.OP_22, pct(s.OP_22), 'Left before seen')}
+          ${numCell('col-num', s.hospitals, String(s.hospitals), 'Hospitals')}
+        </tr>`).join('\n        ');
+  const fastest = [...states].sort((a, b) => a.OP_18b - b.OP_18b)[0];
+  const slowest = [...states].sort((a, b) => b.OP_18b - a.OP_18b)[0];
+  const changed = d.previousNational?.OP_18b != null
+    ? `<p class="what-changed"><b>What changed:</b> CMS released data through ${esc(monthYear(d.periods.OP_18b.end))}. The national median moved from ${d.previousNational.OP_18b} to ${n.OP_18b} minutes.</p>`
+    : `<p class="what-changed"><b>Latest data:</b> ${esc(periodLabel(d.periods.OP_18b))}. CMS updates about quarterly; this page refreshes automatically when it does.</p>`;
+  const intro = `The typical trip through an American emergency room, door to door, takes ${n.OP_18b} minutes: about the length of a superhero movie, with worse seating and no popcorn. Here is every state, using Medicare's own numbers. The jokes stop here; the minutes below are exactly what CMS reports.`;
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      datasetLd({
+        url: ER_URL,
+        name: 'Emergency department wait times by state and hospital',
+        description: `Median time patients spend in U.S. emergency departments, by state and hospital, from CMS Care Compare (${periodLabel(d.periods.OP_18b)}), plus mental health patient times and the share who left before being seen.`,
+        sourceName: 'CMS Care Compare, Timely and Effective Care',
+        sourceUrl: 'https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care',
+        license: 'https://www.usa.gov/government-works',
+        modified: d.fetched,
+        measured: ['median emergency department time (minutes)', 'median time for mental health patients (minutes)', 'patients who left before being seen (%)'],
+      }),
+      breadcrumbLd([['Health stats', STATS_URL], ['ER wait times', ER_URL]]),
+    ],
+  };
+  return `${pageHead({ title: `ER Wait Times by State: How Long the Emergency Room Takes (${monthYear(d.periods.OP_18b.end)} data) | Medics Musings`, description: snippet(`How long do ER visits take? The U.S. median is ${n.OP_18b} minutes. Compare emergency department times for every state and ${d.hospitals.length.toLocaleString('en-US')} hospitals, from CMS data.`), url: ER_URL, ogTitle: 'How long will the ER take?', image: shareImage(null), ld })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['Health stats', '/stats/'], ['ER wait times']])}
+      <span class="eyebrow">Live data · CMS · ${esc(periodLabel(d.periods.OP_18b))}</span>
+      <h1>How long will the ER take?</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      ${erEmergencyNote}
+      ${statTiles([['U.S. median time in the ER', minutes(n.OP_18b)], ['Mental health patients', minutes(n.OP_18c)], ['Left before being seen', pct(n.OP_22)], ['Hospitals reporting', d.hospitals.length.toLocaleString('en-US')]])}
+      <p class="what-changed"><b>Fastest state:</b> ${esc(stateName(fastest.state))}, ${fastest.OP_18b} minutes. <b>Slowest:</b> ${esc(stateName(slowest.state))}, ${slowest.OP_18b} minutes.</p>
+      ${changed}
+      ${tableControls('er-states', [], 'Search states…', [])}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-states">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">State</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th data-sort="number">Hospitals</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rows}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No states match that search.</p>
+      <p class="related">Pick a state to see every hospital in it. See also: <a href="/stats/">All health stats</a></p>
+      ${erSourceNote(d)}
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+function erStatePage(ctx, s) {
+  const d = ctx.erData;
+  const code = s.state.toLowerCase();
+  const url = `${ER_URL}${code}/`;
+  const name = stateName(s.state);
+  const hs = d.hospitals.filter((h) => h.state === s.state);
+  const ranked = [...hs].sort((a, b) => a.OP_18b - b.OP_18b);
+  const volumes = ['low', 'medium', 'high', 'very high'].filter((v) => hs.some((h) => h.EDV === v));
+  const rows = hs.map((h) => `<tr id="h-${esc(h.id.toLowerCase())}" data-volume="${esc(h.EDV || '')}" data-search="${esc(`${h.name} ${h.city} ${h.zip}`.toLowerCase())}">
+          <td class="col-name"><a href="#h-${esc(h.id.toLowerCase())}">${esc(h.name)}</a><span class="row-field">${esc(h.city)}, ${esc(h.state)} ${esc(h.zip)}</span></td>
+          ${numCell('col-num', h.OP_18b, `<strong>${minutes(h.OP_18b)}</strong><span class="row-years">${hoursLabel(h.OP_18b)}</span>`, 'Median time in ER')}
+          ${numCell('col-num', h.OP_18c, minutes(h.OP_18c), 'Mental health')}
+          ${numCell('col-num', h.OP_22, pct(h.OP_22), 'Left before seen')}
+          <td class="col-class">${h.EDV ? `<span class="class-badge">${esc(h.EDV)}</span>` : '—'}</td>
+        </tr>`).join('\n        ');
+  const diff = s.OP_18b - d.national.OP_18b;
+  const vsNational = diff === 0 ? 'exactly the national median' : `${Math.abs(diff)} minutes ${diff < 0 ? 'faster' : 'slower'} than the national median of ${d.national.OP_18b}`;
+  const intro = hs.length > 1
+    ? `The typical ER visit in ${name} takes ${s.OP_18b} minutes, ${vsNational}. The quickest hospital here has a median of ${ranked[0].OP_18b} minutes and the slowest ${ranked[ranked.length - 1].OP_18b}, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.`
+    : `The typical ER visit in ${name} takes ${s.OP_18b} minutes, ${vsNational}. Numbers below are exactly as CMS reports them.`;
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...datasetLd({
+        url,
+        name: `Emergency department wait times in ${name} hospitals`,
+        description: `Median emergency department times for ${hs.length} hospitals in ${name}, from CMS Care Compare (${periodLabel(d.periods.OP_18b)}).`,
+        sourceName: 'CMS Care Compare, Timely and Effective Care',
+        sourceUrl: 'https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care',
+        license: 'https://www.usa.gov/government-works',
+        modified: d.fetched,
+        measured: ['median emergency department time (minutes)', 'median time for mental health patients (minutes)', 'patients who left before being seen (%)'],
+      }), spatialCoverage: { '@type': 'Place', name } },
+      breadcrumbLd([['Health stats', STATS_URL], ['ER wait times', ER_URL], [name, url]]),
+    ],
+  };
+  return `${pageHead({ title: `ER Wait Times in ${name}: ${hs.length} Hospitals Compared | Medics Musings`, description: snippet(`How long do ER visits take in ${name}? The state median is ${s.OP_18b} minutes. Compare ${hs.length} ${name} hospitals' emergency department times, from CMS data (${periodLabel(d.periods.OP_18b)}).`), url, ogTitle: `ER wait times in ${name}`, image: shareImage(null), ld })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['Health stats', '/stats/'], ['ER wait times', '/er-wait-times/'], [name]])}
+      <span class="eyebrow">Live data · CMS · ${esc(periodLabel(d.periods.OP_18b))}</span>
+      <h1>ER wait times in ${esc(name)}</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      ${erEmergencyNote}
+      ${statTiles([[`${name} median`, minutes(s.OP_18b)], ['U.S. median', minutes(d.national.OP_18b)], ['Mental health patients', minutes(s.OP_18c)], ['Left before being seen', pct(s.OP_22)], ['Hospitals reporting', hs.length]])}
+      ${tableControls(`er-${code}`, [], 'Search hospitals, cities or ZIP codes…', volumes.length ? [{ attr: 'volume', label: 'Filter by ER volume', values: volumes, all: 'Any volume' }] : [])}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-${code}">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rows}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      ${erSourceNote(d)}
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+const erStates = (d) => (d ? d.states.filter((s) => s.OP_18b != null && s.hospitals) : []);
+
 // Hub for the live tables. Each dataset appears once its data file exists.
 function statsHub(ctx) {
   const cards = [];
   if (ctx.recallData) {
     const d = ctx.recallData;
     cards.push(['/recalls/', 'The Recall Roundup', `Updated weekly · ${d.counts.total} recalls`, `FDA drug, device and food recalls from the last ${d.windowDays} days, ${d.counts.classI} of them Class I. Searchable, filterable, and blessedly free of press-release adjectives.`]);
+  }
+  if (ctx.erData) {
+    const d = ctx.erData;
+    cards.push(['/er-wait-times/', 'How long will the ER take?', `CMS data · ${periodLabel(d.periods.OP_18b)}`, `The typical ER visit takes ${d.national.OP_18b} minutes. Compare every state and ${d.hospitals.length.toLocaleString('en-US')} hospitals, plus how many patients gave up and left.`]);
   }
   const intro = 'Live health numbers from public government data, refreshed automatically: what the FDA is recalling, how long the ER takes, and how loudly medicine is talking about AI. The headlines are satire; the numbers are exactly what the sources report.';
   const ld = {
@@ -958,6 +1142,7 @@ export function buildExtras(ctx) {
   const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
   const psychTimelineData = readJson('data/timeline-psychiatry.json', { intro: '', entries: [] });
   const recallData = readJson('data/recalls.json', null);
+  const erData = readJson('data/er-wait.json', null);
   const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));
   const full = {
     ...ctx,
@@ -972,6 +1157,7 @@ export function buildExtras(ctx) {
     timeline: timelineData.entries.filter(onSite),
     psychTimeline: psychTimelineData.entries.filter(onSite),
     recallData,
+    erData,
   };
 
   writePage('explained', explainedHub(full));
@@ -1020,6 +1206,10 @@ export function buildExtras(ctx) {
   }));
   writePage('stats', statsHub(full));
   if (recallData) writePage('recalls', recallsPage(full));
+  if (erData) {
+    writePage('er-wait-times', erMainPage(full));
+    for (const st of erStates(erData)) writePage(`er-wait-times/${st.state.toLowerCase()}`, erStatePage(full, st));
+  }
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -1050,9 +1240,13 @@ export function buildExtras(ctx) {
       { loc: PSYCH_TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: STATS_URL, lastmod: recallData?.fetched || newest, changefreq: 'weekly', priority: '0.7' },
       ...(recallData ? [{ loc: RECALLS_URL, lastmod: recallData.fetched, changefreq: 'weekly', priority: '0.8' }] : []),
+      ...(erData ? [
+        { loc: ER_URL, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.8' },
+        ...erStates(erData).map((st) => ({ loc: `${ER_URL}${st.state.toLowerCase()}/`, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.7' })),
+      ] : []),
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', 'stats', ...(recallData ? ['recalls'] : []), 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', 'stats', ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'submit', 'subscribe'],
   };
 }

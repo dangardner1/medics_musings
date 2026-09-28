@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Tennessee: 90 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Tennessee? The state median is 162 minutes. Compare 90 Tennessee hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/tn/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/tn/">
+<meta property="og:title" content="ER wait times in Tennessee">
+<meta property="og:description" content="How long do ER visits take in Tennessee? The state median is 162 minutes. Compare 90 Tennessee hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Tennessee">
+<meta name="twitter:description" content="How long do ER visits take in Tennessee? The state median is 162 minutes. Compare 90 Tennessee hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/tn/#dataset",
+   "name": "Emergency department wait times in Tennessee hospitals",
+   "description": "Median emergency department times for 90 hospitals in Tennessee, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/tn/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Tennessee"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Tennessee",
+     "item": "https://www.medicsmusings.com/er-wait-times/tn/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Tennessee</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Tennessee</h1>
+      <p class="coll-intro">The typical ER visit in Tennessee takes 162 minutes, exactly the national median. The quickest hospital here has a median of 73 minutes and the slowest 294, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Tennessee median</dt><dd>162 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>308 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>3%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>90</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-tn-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-tn-search" type="search" data-filter-table="er-tn" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-tn">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-440185" data-volume="high" data-search="affiliate of vitruvian health cleveland 37311">
+          <td class="col-name"><a href="#h-440185">Affiliate of Vitruvian Health</a><span class="row-field">Cleveland, TN 37311</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="302" data-label="Mental health">302 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440082" data-volume="" data-search="ascension saint thomas hospital nashville 37205">
+          <td class="col-name"><a href="#h-440082">Ascension Saint Thomas Hospital</a><span class="row-field">Nashville, TN 37205</span></td>
+          <td class="col-num" data-value="197" data-label="Median time in ER"><strong>197 min</strong><span class="row-years">3 h 17 m</span></td>
+          <td class="col-num" data-value="224" data-label="Mental health">224 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-441303" data-volume="low" data-search="ascension saint thomas three rivers waverly 37185">
+          <td class="col-name"><a href="#h-441303">Ascension Saint Thomas Three Rivers</a><span class="row-field">Waverly, TN 37185</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440048" data-volume="very high" data-search="baptist memorial hospital memphis 38120">
+          <td class="col-name"><a href="#h-440048">Baptist Memorial Hospital</a><span class="row-field">Memphis, TN 38120</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440016" data-volume="low" data-search="baptist memorial hospital - carroll county huntingdon 38344">
+          <td class="col-name"><a href="#h-440016">Baptist Memorial Hospital - Carroll County</a><span class="row-field">Huntingdon, TN 38344</span></td>
+          <td class="col-num" data-value="119" data-label="Median time in ER"><strong>119 min</strong><span class="row-years">1 h 59 m</span></td>
+          <td class="col-num" data-value="217" data-label="Mental health">217 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440131" data-volume="medium" data-search="baptist memorial hospital tipton covington 38019">
+          <td class="col-name"><a href="#h-440131">Baptist Memorial Hospital Tipton</a><span class="row-field">Covington, TN 38019</span></td>
+          <td class="col-num" data-value="149" data-label="Median time in ER"><strong>149 min</strong><span class="row-years">2 h 29 m</span></td>
+          <td class="col-num" data-value="262" data-label="Mental health">262 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440130" data-volume="low" data-search="baptist memorial hospital union city union city 38261">
+          <td class="col-name"><a href="#h-440130">Baptist Memorial Hospital Union City</a><span class="row-field">Union City, TN 38261</span></td>
+          <td class="col-num" data-value="139" data-label="Median time in ER"><strong>139 min</strong><span class="row-years">2 h 19 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441323" data-volume="low" data-search="big south fork medical center oneida 37841">
+          <td class="col-name"><a href="#h-441323">Big South Fork Medical Center</a><span class="row-field">Oneida, TN 37841</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="300" data-label="Mental health">300 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440011" data-volume="high" data-search="blount memorial hospital maryville 37804">
+          <td class="col-name"><a href="#h-440011">Blount Memorial Hospital</a><span class="row-field">Maryville, TN 37804</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="316" data-label="Mental health">316 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440057" data-volume="low" data-search="claiborne medical center tazewell 37879">
+          <td class="col-name"><a href="#h-440057">Claiborne Medical Center</a><span class="row-field">Tazewell, TN 37879</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="193" data-label="Mental health">193 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440059" data-volume="medium" data-search="cookeville regional medical center cookeville 38501">
+          <td class="col-name"><a href="#h-440059">Cookeville Regional Medical Center</a><span class="row-field">Cookeville, TN 38501</span></td>
+          <td class="col-num" data-value="268" data-label="Median time in ER"><strong>268 min</strong><span class="row-years">4 h 28 m</span></td>
+          <td class="col-num" data-value="387" data-label="Mental health">387 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440009" data-volume="medium" data-search="cumberland medical center crossville 38555">
+          <td class="col-name"><a href="#h-440009">Cumberland Medical Center</a><span class="row-field">Crossville, TN 38555</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="860" data-label="Mental health">860 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440148" data-volume="" data-search="dekalb community hospital smithville 37166">
+          <td class="col-name"><a href="#h-440148">Dekalb Community Hospital</a><span class="row-field">Smithville, TN 37166</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="246" data-label="Mental health">246 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440072" data-volume="medium" data-search="dyersburg regional medical center dyersburg 38024">
+          <td class="col-name"><a href="#h-440072">Dyersburg Regional Medical Center</a><span class="row-field">Dyersburg, TN 38024</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="328" data-label="Mental health">328 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-441306" data-volume="low" data-search="erlanger bledsoe hospital pikeville 37367">
+          <td class="col-name"><a href="#h-441306">Erlanger Bledsoe Hospital</a><span class="row-field">Pikeville, TN 37367</span></td>
+          <td class="col-num" data-value="96" data-label="Median time in ER"><strong>96 min</strong><span class="row-years">1 h 36 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440104" data-volume="very high" data-search="erlanger medical center chattanooga 37403">
+          <td class="col-name"><a href="#h-440104">Erlanger Medical Center</a><span class="row-field">Chattanooga, TN 37403</span></td>
+          <td class="col-num" data-value="169" data-label="Median time in ER"><strong>169 min</strong><span class="row-years">2 h 49 m</span></td>
+          <td class="col-num" data-value="232" data-label="Mental health">232 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440110" data-volume="medium" data-search="fort loudoun medical center lenoir city 37772">
+          <td class="col-name"><a href="#h-440110">Fort Loudoun Medical Center</a><span class="row-field">Lenoir City, TN 37772</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="466" data-label="Mental health">466 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440125" data-volume="high" data-search="fort sanders regional medical center knoxville 37916">
+          <td class="col-name"><a href="#h-440125">Fort Sanders Regional Medical Center</a><span class="row-field">Knoxville, TN 37916</span></td>
+          <td class="col-num" data-value="234" data-label="Median time in ER"><strong>234 min</strong><span class="row-years">3 h 54 m</span></td>
+          <td class="col-num" data-value="502" data-label="Mental health">502 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440184" data-volume="medium" data-search="franklin woods community hospital johnson city 37604">
+          <td class="col-name"><a href="#h-440184">Franklin Woods Community Hospital</a><span class="row-field">Johnson City, TN 37604</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440050" data-volume="medium" data-search="greeneville community hospital greeneville 37745">
+          <td class="col-name"><a href="#h-440050">Greeneville Community Hospital</a><span class="row-field">Greeneville, TN 37745</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="457" data-label="Mental health">457 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-441313" data-volume="low" data-search="hancock county hospital sneedville 37869">
+          <td class="col-name"><a href="#h-441313">Hancock County Hospital</a><span class="row-field">Sneedville, TN 37869</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440109" data-volume="low" data-search="hardin medical center savannah 38372">
+          <td class="col-name"><a href="#h-440109">Hardin Medical Center</a><span class="row-field">Savannah, TN 38372</span></td>
+          <td class="col-num" data-value="159" data-label="Median time in ER"><strong>159 min</strong><span class="row-years">2 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440032" data-volume="low" data-search="hawkins county memorial hospital rogersville 37857">
+          <td class="col-name"><a href="#h-440032">Hawkins County Memorial Hospital</a><span class="row-field">Rogersville, TN 37857</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440238" data-volume="low" data-search="haywood county community hospital brownsville 38012">
+          <td class="col-name"><a href="#h-440238">Haywood County Community Hospital</a><span class="row-field">Brownsville, TN 38012</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440008" data-volume="low" data-search="henderson county community hospital lexington 38351">
+          <td class="col-name"><a href="#h-440008">Henderson County Community Hospital</a><span class="row-field">Lexington, TN 38351</span></td>
+          <td class="col-num" data-value="151" data-label="Median time in ER"><strong>151 min</strong><span class="row-years">2 h 31 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441307" data-volume="low" data-search="highpoint health-riverview with ascension saint th carthage 37030">
+          <td class="col-name"><a href="#h-441307">Highpoint Health-Riverview With Ascension Saint Th</a><span class="row-field">Carthage, TN 37030</span></td>
+          <td class="col-num" data-value="94" data-label="Median time in ER"><strong>94 min</strong><span class="row-years">1 h 34 m</span></td>
+          <td class="col-num" data-value="139" data-label="Mental health">139 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440003" data-volume="high" data-search="highpoint health-sumner with ascension saint thoma gallatin 37066">
+          <td class="col-name"><a href="#h-440003">Highpoint Health-Sumner With Ascension Saint Thoma</a><span class="row-field">Gallatin, TN 37066</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="720" data-label="Mental health">720 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-441301" data-volume="low" data-search="highpoint health-trousdale with ascension saint hartsville 37074">
+          <td class="col-name"><a href="#h-441301">Highpoint Health-Trousdale With Ascension Saint</a><span class="row-field">Hartsville, TN 37074</span></td>
+          <td class="col-num" data-value="73" data-label="Median time in ER"><strong>73 min</strong><span class="row-years">1 h 13 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441322" data-volume="low" data-search="houston county community hospital erin 37061">
+          <td class="col-name"><a href="#h-441322">Houston County Community Hospital</a><span class="row-field">Erin, TN 37061</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440176" data-volume="medium" data-search="indian path community hospital kingsport 37660">
+          <td class="col-name"><a href="#h-440176">Indian Path Community Hospital</a><span class="row-field">Kingsport, TN 37660</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="362" data-label="Mental health">362 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440002" data-volume="very high" data-search="jackson-madison county general hospital jackson 38301">
+          <td class="col-name"><a href="#h-440002">Jackson-Madison County General Hospital</a><span class="row-field">Jackson, TN 38301</span></td>
+          <td class="col-num" data-value="241" data-label="Median time in ER"><strong>241 min</strong><span class="row-years">4 h 01 m</span></td>
+          <td class="col-num" data-value="258" data-label="Mental health">258 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440063" data-volume="very high" data-search="johnson city medical center johnson city 37604">
+          <td class="col-name"><a href="#h-440063">Johnson City Medical Center</a><span class="row-field">Johnson City, TN 37604</span></td>
+          <td class="col-num" data-value="211" data-label="Median time in ER"><strong>211 min</strong><span class="row-years">3 h 31 m</span></td>
+          <td class="col-num" data-value="251" data-label="Mental health">251 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-441304" data-volume="low" data-search="johnson county community hospital mountain city 37683">
+          <td class="col-name"><a href="#h-441304">Johnson County Community Hospital</a><span class="row-field">Mountain City, TN 37683</span></td>
+          <td class="col-num" data-value="131" data-label="Median time in ER"><strong>131 min</strong><span class="row-years">2 h 11 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440033" data-volume="low" data-search="lafollette medical center la follette 37766">
+          <td class="col-name"><a href="#h-440033">Lafollette Medical Center</a><span class="row-field">La Follette, TN 37766</span></td>
+          <td class="col-num" data-value="147" data-label="Median time in ER"><strong>147 min</strong><span class="row-years">2 h 27 m</span></td>
+          <td class="col-num" data-value="174" data-label="Mental health">174 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441314" data-volume="" data-search="lauderdale community hospital ripley 38063">
+          <td class="col-name"><a href="#h-441314">Lauderdale Community Hospital</a><span class="row-field">Ripley, TN 38063</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="163" data-label="Mental health">163 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440081" data-volume="high" data-search="leconte medical center sevierville 37862">
+          <td class="col-name"><a href="#h-440081">Leconte Medical Center</a><span class="row-field">Sevierville, TN 37862</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="447" data-label="Mental health">447 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440102" data-volume="low" data-search="lincoln medical center fayetteville 37334">
+          <td class="col-name"><a href="#h-440102">Lincoln Medical Center</a><span class="row-field">Fayetteville, TN 37334</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="203" data-label="Mental health">203 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440187" data-volume="low" data-search="livingston regional hospital livingston 38570">
+          <td class="col-name"><a href="#h-440187">Livingston Regional Hospital</a><span class="row-field">Livingston, TN 38570</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="396" data-label="Mental health">396 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441305" data-volume="low" data-search="macon community hospital lafayette 37083">
+          <td class="col-name"><a href="#h-441305">Macon Community Hospital</a><span class="row-field">Lafayette, TN 37083</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="293" data-label="Mental health">293 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441309" data-volume="low" data-search="marshall medical center lewisburg 37091">
+          <td class="col-name"><a href="#h-441309">Marshall Medical Center</a><span class="row-field">Lewisburg, TN 37091</span></td>
+          <td class="col-num" data-value="121" data-label="Median time in ER"><strong>121 min</strong><span class="row-years">2 h 01 m</span></td>
+          <td class="col-num" data-value="181" data-label="Mental health">181 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440073" data-volume="high" data-search="maury regional hospital columbia 38401">
+          <td class="col-name"><a href="#h-440073">Maury Regional Hospital</a><span class="row-field">Columbia, TN 38401</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="358" data-label="Mental health">358 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440091" data-volume="very high" data-search="memorial healthcare system, inc chattanooga 37404">
+          <td class="col-name"><a href="#h-440091">Memorial Healthcare System, Inc</a><span class="row-field">Chattanooga, TN 37404</span></td>
+          <td class="col-num" data-value="210" data-label="Median time in ER"><strong>210 min</strong><span class="row-years">3 h 30 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440049" data-volume="very high" data-search="methodist hospitals of memphis memphis 38104">
+          <td class="col-name"><a href="#h-440049">Methodist Hospitals of Memphis</a><span class="row-field">Memphis, TN 38104</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="351" data-label="Mental health">351 min</td>
+          <td class="col-num" data-value="16" data-label="Left before seen">16%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440034" data-volume="medium" data-search="methodist medical center of oak ridge oak ridge 37830">
+          <td class="col-name"><a href="#h-440034">Methodist Medical Center of Oak Ridge</a><span class="row-field">Oak Ridge, TN 37830</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="390" data-label="Mental health">390 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440111" data-volume="medium" data-search="metro nashville general hospital nashville 37208">
+          <td class="col-name"><a href="#h-440111">Metro Nashville General Hospital</a><span class="row-field">Nashville, TN 37208</span></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="241" data-label="Mental health">241 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440030" data-volume="high" data-search="morristown hamblen hospital association morristown 37814">
+          <td class="col-name"><a href="#h-440030">Morristown Hamblen Hospital Association</a><span class="row-field">Morristown, TN 37814</span></td>
+          <td class="col-num" data-value="198" data-label="Median time in ER"><strong>198 min</strong><span class="row-years">3 h 18 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440156" data-volume="very high" data-search="parkridge medical center chattanooga 37404">
+          <td class="col-name"><a href="#h-440156">Parkridge Medical Center</a><span class="row-field">Chattanooga, TN 37404</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="651" data-label="Mental health">651 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440173" data-volume="high" data-search="parkwest medical center knoxville 37923">
+          <td class="col-name"><a href="#h-440173">Parkwest Medical Center</a><span class="row-field">Knoxville, TN 37923</span></td>
+          <td class="col-num" data-value="259" data-label="Median time in ER"><strong>259 min</strong><span class="row-years">4 h 19 m</span></td>
+          <td class="col-num" data-value="760" data-label="Mental health">760 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440120" data-volume="medium" data-search="physicians regional medical center powell 37849">
+          <td class="col-name"><a href="#h-440120">Physicians Regional Medical Center</a><span class="row-field">Powell, TN 37849</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="476" data-label="Mental health">476 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440152" data-volume="high" data-search="regional one health memphis 38103">
+          <td class="col-name"><a href="#h-440152">Regional One Health</a><span class="row-field">Memphis, TN 38103</span></td>
+          <td class="col-num" data-value="294" data-label="Median time in ER"><strong>294 min</strong><span class="row-years">4 h 54 m</span></td>
+          <td class="col-num" data-value="451" data-label="Mental health">451 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-441310" data-volume="low" data-search="rhea medical center dayton 37321">
+          <td class="col-name"><a href="#h-441310">Rhea Medical Center</a><span class="row-field">Dayton, TN 37321</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="438" data-label="Mental health">438 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440031" data-volume="medium" data-search="roane medical center harriman 37748">
+          <td class="col-name"><a href="#h-440031">Roane Medical Center</a><span class="row-field">Harriman, TN 37748</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="291" data-label="Mental health">291 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440228" data-volume="medium" data-search="saint francis bartlett medical center bartlett 38133">
+          <td class="col-name"><a href="#h-440228">Saint Francis Bartlett Medical Center</a><span class="row-field">Bartlett, TN 38133</span></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="240" data-label="Mental health">240 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-441300" data-volume="low" data-search="saint thomas hickman hospital centerville 37033">
+          <td class="col-name"><a href="#h-441300">Saint Thomas Hickman Hospital</a><span class="row-field">Centerville, TN 37033</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="176" data-label="Mental health">176 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440192" data-volume="" data-search="saint thomas highlands hospital sparta 38583">
+          <td class="col-name"><a href="#h-440192">Saint Thomas Highlands Hospital</a><span class="row-field">Sparta, TN 38583</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="394" data-label="Mental health">394 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440151" data-volume="" data-search="saint thomas river park hospital mcminnville 37110">
+          <td class="col-name"><a href="#h-440151">Saint Thomas River Park Hospital</a><span class="row-field">Mcminnville, TN 37110</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="228" data-label="Mental health">228 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440053" data-volume="" data-search="saint thomas rutherford hospital murfreesboro 37129">
+          <td class="col-name"><a href="#h-440053">Saint Thomas Rutherford Hospital</a><span class="row-field">Murfreesboro, TN 37129</span></td>
+          <td class="col-num" data-value="173" data-label="Median time in ER"><strong>173 min</strong><span class="row-years">2 h 53 m</span></td>
+          <td class="col-num" data-value="258" data-label="Mental health">258 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440175" data-volume="low" data-search="southern tennessee regional health system lawrence lawrenceburg 38464">
+          <td class="col-name"><a href="#h-440175">Southern Tennessee Regional Health System Lawrence</a><span class="row-field">Lawrenceburg, TN 38464</span></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="211" data-label="Mental health">211 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440020" data-volume="low" data-search="southern tennessee regional health system pulaski pulaski 38478">
+          <td class="col-name"><a href="#h-440020">Southern Tennessee Regional Health System Pulaski</a><span class="row-field">Pulaski, TN 38478</span></td>
+          <td class="col-num" data-value="120" data-label="Median time in ER"><strong>120 min</strong><span class="row-years">2 h 00 m</span></td>
+          <td class="col-num" data-value="233" data-label="Mental health">233 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440058" data-volume="low" data-search="southern tennessee regional health system winchest winchester 37398">
+          <td class="col-name"><a href="#h-440058">Southern Tennessee Regional Health System Winchest</a><span class="row-field">Winchester, TN 37398</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="286" data-label="Mental health">286 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440183" data-volume="high" data-search="st francis hospital memphis 38119">
+          <td class="col-name"><a href="#h-440183">St Francis Hospital</a><span class="row-field">Memphis, TN 38119</span></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440068" data-volume="medium" data-search="starr regional medical center athens athens 37371">
+          <td class="col-name"><a href="#h-440068">Starr Regional Medical Center Athens</a><span class="row-field">Athens, TN 37371</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="166" data-label="Mental health">166 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440200" data-volume="" data-search="stones river hospital woodbury 37190">
+          <td class="col-name"><a href="#h-440200">Stones River Hospital</a><span class="row-field">Woodbury, TN 37190</span></td>
+          <td class="col-num" data-value="86" data-label="Median time in ER"><strong>86 min</strong><span class="row-years">1 h 26 m</span></td>
+          <td class="col-num" data-value="144" data-label="Mental health">144 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-440084" data-volume="medium" data-search="sweetwater hospital association sweetwater 37874">
+          <td class="col-name"><a href="#h-440084">Sweetwater Hospital Association</a><span class="row-field">Sweetwater, TN 37874</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440018" data-volume="low" data-search="sycamore shoals hospital elizabethton 37643">
+          <td class="col-name"><a href="#h-440018">Sycamore Shoals Hospital</a><span class="row-field">Elizabethton, TN 37643</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440153" data-volume="medium" data-search="tennova healthcare - newport medical center newport 37821">
+          <td class="col-name"><a href="#h-440153">Tennova Healthcare - Newport Medical Center</a><span class="row-field">Newport, TN 37821</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="482" data-label="Mental health">482 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440056" data-volume="medium" data-search="tennova healthcare-jefferson memorial hospital jefferson city 37760">
+          <td class="col-name"><a href="#h-440056">Tennova Healthcare-Jefferson Memorial Hospital</a><span class="row-field">Jefferson City, TN 37760</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="661" data-label="Mental health">661 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440161" data-volume="very high" data-search="tristar centennial medical center nashville 37203">
+          <td class="col-name"><a href="#h-440161">Tristar Centennial Medical Center</a><span class="row-field">Nashville, TN 37203</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="211" data-label="Mental health">211 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440194" data-volume="high" data-search="tristar hendersonville medical center hendersonville 37075">
+          <td class="col-name"><a href="#h-440194">Tristar Hendersonville Medical Center</a><span class="row-field">Hendersonville, TN 37075</span></td>
+          <td class="col-num" data-value="159" data-label="Median time in ER"><strong>159 min</strong><span class="row-years">2 h 39 m</span></td>
+          <td class="col-num" data-value="398" data-label="Mental health">398 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440046" data-volume="high" data-search="tristar horizon medical center dickson 37055">
+          <td class="col-name"><a href="#h-440046">Tristar Horizon Medical Center</a><span class="row-field">Dickson, TN 37055</span></td>
+          <td class="col-num" data-value="116" data-label="Median time in ER"><strong>116 min</strong><span class="row-years">1 h 56 m</span></td>
+          <td class="col-num" data-value="380" data-label="Mental health">380 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440065" data-volume="medium" data-search="tristar northcrest medical center springfield 37172">
+          <td class="col-name"><a href="#h-440065">Tristar Northcrest Medical Center</a><span class="row-field">Springfield, TN 37172</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="324" data-label="Mental health">324 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440006" data-volume="high" data-search="tristar skyline medical center nashville 37207">
+          <td class="col-name"><a href="#h-440006">Tristar Skyline Medical Center</a><span class="row-field">Nashville, TN 37207</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="998" data-label="Mental health">998 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440197" data-volume="high" data-search="tristar southern hills medical center nashville 37211">
+          <td class="col-name"><a href="#h-440197">Tristar Southern Hills Medical Center</a><span class="row-field">Nashville, TN 37211</span></td>
+          <td class="col-num" data-value="119" data-label="Median time in ER"><strong>119 min</strong><span class="row-years">1 h 59 m</span></td>
+          <td class="col-num" data-value="353" data-label="Mental health">353 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440227" data-volume="high" data-search="tristar stonecrest medical center smyrna 37167">
+          <td class="col-name"><a href="#h-440227">Tristar Stonecrest Medical Center</a><span class="row-field">Smyrna, TN 37167</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="394" data-label="Mental health">394 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440150" data-volume="very high" data-search="tristar summit medical center hermitage 37076">
+          <td class="col-name"><a href="#h-440150">Tristar Summit Medical Center</a><span class="row-field">Hermitage, TN 37076</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="968" data-label="Mental health">968 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440007" data-volume="low" data-search="unity medical center manchester 37355">
+          <td class="col-name"><a href="#h-440007">Unity Medical Center</a><span class="row-field">Manchester, TN 37355</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="299" data-label="Mental health">299 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440015" data-volume="very high" data-search="university health system, inc knoxville 37920">
+          <td class="col-name"><a href="#h-440015">University Health System, Inc</a><span class="row-field">Knoxville, TN 37920</span></td>
+          <td class="col-num" data-value="249" data-label="Median time in ER"><strong>249 min</strong><span class="row-years">4 h 09 m</span></td>
+          <td class="col-num" data-value="753" data-label="Mental health">753 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440137" data-volume="medium" data-search="vanderbilt bedford hospital shelbyville 37160">
+          <td class="col-name"><a href="#h-440137">Vanderbilt Bedford Hospital</a><span class="row-field">Shelbyville, TN 37160</span></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440035" data-volume="very high" data-search="vanderbilt clarksville hospital clarksville 37040">
+          <td class="col-name"><a href="#h-440035">Vanderbilt Clarksville Hospital</a><span class="row-field">Clarksville, TN 37040</span></td>
+          <td class="col-num" data-value="181" data-label="Median time in ER"><strong>181 min</strong><span class="row-years">3 h 01 m</span></td>
+          <td class="col-num" data-value="924" data-label="Mental health">924 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440144" data-volume="medium" data-search="vanderbilt tullahoma-harton hospital tullahoma 37388">
+          <td class="col-name"><a href="#h-440144">Vanderbilt Tullahoma-Harton Hospital</a><span class="row-field">Tullahoma, TN 37388</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="183" data-label="Mental health">183 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440039" data-volume="very high" data-search="vanderbilt university medical center nashville 37232">
+          <td class="col-name"><a href="#h-440039">Vanderbilt University Medical Center</a><span class="row-field">Nashville, TN 37232</span></td>
+          <td class="col-num" data-value="269" data-label="Median time in ER"><strong>269 min</strong><span class="row-years">4 h 29 m</span></td>
+          <td class="col-num" data-value="426" data-label="Mental health">426 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-440193" data-volume="medium" data-search="vanderbilt wilson county hospital lebanon 37087">
+          <td class="col-name"><a href="#h-440193">Vanderbilt Wilson County Hospital</a><span class="row-field">Lebanon, TN 37087</span></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="356" data-label="Mental health">356 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-440061" data-volume="low" data-search="volunteer community hospital martin 38237">
+          <td class="col-name"><a href="#h-440061">Volunteer Community Hospital</a><span class="row-field">Martin, TN 38237</span></td>
+          <td class="col-num" data-value="163" data-label="Median time in ER"><strong>163 min</strong><span class="row-years">2 h 43 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440012" data-volume="high" data-search="wellmont bristol regional medical center bristol 37620">
+          <td class="col-name"><a href="#h-440012">Wellmont Bristol Regional Medical Center</a><span class="row-field">Bristol, TN 37620</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="414" data-label="Mental health">414 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-440017" data-volume="high" data-search="wellmont holston valley medical center kingsport 37662">
+          <td class="col-name"><a href="#h-440017">Wellmont Holston Valley Medical Center</a><span class="row-field">Kingsport, TN 37662</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-441320" data-volume="low" data-search="west tennessee healthcare bolivar hospital bolivar 38008">
+          <td class="col-name"><a href="#h-441320">West Tennessee Healthcare Bolivar Hospital</a><span class="row-field">Bolivar, TN 38008</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-441316" data-volume="low" data-search="west tennessee healthcare camden hospital camden 38320">
+          <td class="col-name"><a href="#h-441316">West Tennessee Healthcare Camden Hospital</a><span class="row-field">Camden, TN 38320</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="215" data-label="Mental health">215 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440132" data-volume="low" data-search="west tennessee healthcare henry county hospital paris 38242">
+          <td class="col-name"><a href="#h-440132">West Tennessee Healthcare Henry County Hospital</a><span class="row-field">Paris, TN 38242</span></td>
+          <td class="col-num" data-value="191" data-label="Median time in ER"><strong>191 min</strong><span class="row-years">3 h 11 m</span></td>
+          <td class="col-num" data-value="428" data-label="Mental health">428 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440060" data-volume="low" data-search="west tennessee healthcare milan hospital milan 38358">
+          <td class="col-name"><a href="#h-440060">West Tennessee Healthcare Milan Hospital</a><span class="row-field">Milan, TN 38358</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="287" data-label="Mental health">287 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-440029" data-volume="high" data-search="williamson medical center franklin 37067">
+          <td class="col-name"><a href="#h-440029">Williamson Medical Center</a><span class="row-field">Franklin, TN 37067</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="285" data-label="Mental health">285 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

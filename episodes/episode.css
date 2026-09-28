@@ -711,3 +711,15 @@ footer {
 @media (max-width: 680px) {
   .data-table td.col-reason::before { content: 'Reason: '; color: var(--pulse); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; font-family: "IBM Plex Mono", monospace; }
 }
+
+/* ---- ER wait times ---- */
+.data-table td.col-num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.data-table td.col-num strong { font-weight: 600; }
+.emergency-note { margin: 20px 0 0; max-width: 760px; padding: 12px 16px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 4px 4px 0; font-size: 0.95rem; color: var(--text-muted); }
+.emergency-note b { color: var(--text); }
+@media (max-width: 680px) {
+  .data-table td.col-num { display: inline-block; width: auto; margin-right: 14px; }
+}
+@media (max-width: 680px) {
+  .data-table td[data-label]::before { content: attr(data-label); display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.66rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--pulse); }
+}

@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Oregon: 54 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Oregon? The state median is 156 minutes. Compare 54 Oregon hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/or/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/or/">
+<meta property="og:title" content="ER wait times in Oregon">
+<meta property="og:description" content="How long do ER visits take in Oregon? The state median is 156 minutes. Compare 54 Oregon hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Oregon">
+<meta name="twitter:description" content="How long do ER visits take in Oregon? The state median is 156 minutes. Compare 54 Oregon hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/or/#dataset",
+   "name": "Emergency department wait times in Oregon hospitals",
+   "description": "Median emergency department times for 54 hospitals in Oregon, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/or/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Oregon"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Oregon",
+     "item": "https://www.medicsmusings.com/er-wait-times/or/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Oregon</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Oregon</h1>
+      <p class="coll-intro">The typical ER visit in Oregon takes 156 minutes, 6 minutes faster than the national median of 162. The quickest hospital here has a median of 92 minutes and the slowest 243, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Oregon median</dt><dd>156 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>222 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>3%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>54</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-or-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-or-search" type="search" data-filter-table="er-or" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-or">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-380060" data-volume="high" data-search="adventist health portland portland 97216">
+          <td class="col-name"><a href="#h-380060">Adventist Health Portland</a><span class="row-field">Portland, OR 97216</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="353" data-label="Mental health">353 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380005" data-volume="low" data-search="asante ashland community hospital ashland 97520">
+          <td class="col-name"><a href="#h-380005">Asante Ashland Community Hospital</a><span class="row-field">Ashland, OR 97520</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="185" data-label="Mental health">185 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380018" data-volume="high" data-search="asante rogue regional medical center medford 97504">
+          <td class="col-name"><a href="#h-380018">Asante Rogue Regional Medical Center</a><span class="row-field">Medford, OR 97504</span></td>
+          <td class="col-num" data-value="243" data-label="Median time in ER"><strong>243 min</strong><span class="row-years">4 h 03 m</span></td>
+          <td class="col-num" data-value="272" data-label="Mental health">272 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380002" data-volume="high" data-search="asante three rivers medical center grants pass 97527">
+          <td class="col-name"><a href="#h-380002">Asante Three Rivers Medical Center</a><span class="row-field">Grants Pass, OR 97527</span></td>
+          <td class="col-num" data-value="203" data-label="Median time in ER"><strong>203 min</strong><span class="row-years">3 h 23 m</span></td>
+          <td class="col-num" data-value="234" data-label="Mental health">234 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380090" data-volume="medium" data-search="bay area hospital coos bay 97420">
+          <td class="col-name"><a href="#h-380090">Bay Area Hospital</a><span class="row-field">Coos Bay, OR 97420</span></td>
+          <td class="col-num" data-value="157" data-label="Median time in ER"><strong>157 min</strong><span class="row-years">2 h 37 m</span></td>
+          <td class="col-num" data-value="182" data-label="Mental health">182 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381305" data-volume="low" data-search="blue mountain hospital john day 97845">
+          <td class="col-name"><a href="#h-381305">Blue Mountain Hospital</a><span class="row-field">John Day, OR 97845</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="137" data-label="Mental health">137 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381320" data-volume="low" data-search="columbia memorial hospital astoria 97103">
+          <td class="col-name"><a href="#h-381320">Columbia Memorial Hospital</a><span class="row-field">Astoria, OR 97103</span></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="183" data-label="Mental health">183 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381312" data-volume="" data-search="coquille valley hospital coquille 97423">
+          <td class="col-name"><a href="#h-381312">Coquille Valley Hospital</a><span class="row-field">Coquille, OR 97423</span></td>
+          <td class="col-num" data-value="119" data-label="Median time in ER"><strong>119 min</strong><span class="row-years">1 h 59 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-381322" data-volume="low" data-search="curry general hospital gold beach 97444">
+          <td class="col-name"><a href="#h-381322">Curry General Hospital</a><span class="row-field">Gold Beach, OR 97444</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="206" data-label="Mental health">206 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380014" data-volume="medium" data-search="good samaritan regional medical center corvallis 97339">
+          <td class="col-name"><a href="#h-380014">Good Samaritan Regional Medical Center</a><span class="row-field">Corvallis, OR 97339</span></td>
+          <td class="col-num" data-value="207" data-label="Median time in ER"><strong>207 min</strong><span class="row-years">3 h 27 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381325" data-volume="medium" data-search="good shepherd medical center hermiston 97838">
+          <td class="col-name"><a href="#h-381325">Good Shepherd Medical Center</a><span class="row-field">Hermiston, OR 97838</span></td>
+          <td class="col-num" data-value="151" data-label="Median time in ER"><strong>151 min</strong><span class="row-years">2 h 31 m</span></td>
+          <td class="col-num" data-value="183" data-label="Mental health">183 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381321" data-volume="low" data-search="grande ronde hospital la grande 97850">
+          <td class="col-name"><a href="#h-381321">Grande Ronde Hospital</a><span class="row-field">La Grande, OR 97850</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="99" data-label="Mental health">99 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381307" data-volume="low" data-search="harney district hospital burns 97720">
+          <td class="col-name"><a href="#h-381307">Harney District Hospital</a><span class="row-field">Burns, OR 97720</span></td>
+          <td class="col-num" data-value="94" data-label="Median time in ER"><strong>94 min</strong><span class="row-years">1 h 34 m</span></td>
+          <td class="col-num" data-value="107" data-label="Mental health">107 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380021" data-volume="high" data-search="hillsboro medical center hillsboro 97123">
+          <td class="col-name"><a href="#h-380021">Hillsboro Medical Center</a><span class="row-field">Hillsboro, OR 97123</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="148" data-label="Mental health">148 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-381309" data-volume="low" data-search="lake district hospital lakeview 97630">
+          <td class="col-name"><a href="#h-381309">Lake District Hospital</a><span class="row-field">Lakeview, OR 97630</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380007" data-volume="very high" data-search="legacy emanuel medical center portland 97227">
+          <td class="col-name"><a href="#h-380007">Legacy Emanuel Medical Center</a><span class="row-field">Portland, OR 97227</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="267" data-label="Mental health">267 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-380017" data-volume="medium" data-search="legacy good samaritan medical center portland 97210">
+          <td class="col-name"><a href="#h-380017">Legacy Good Samaritan Medical Center</a><span class="row-field">Portland, OR 97210</span></td>
+          <td class="col-num" data-value="183" data-label="Median time in ER"><strong>183 min</strong><span class="row-years">3 h 03 m</span></td>
+          <td class="col-num" data-value="162" data-label="Mental health">162 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380089" data-volume="high" data-search="legacy meridian park medical center tualatin 97062">
+          <td class="col-name"><a href="#h-380089">Legacy Meridian Park Medical Center</a><span class="row-field">Tualatin, OR 97062</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="197" data-label="Mental health">197 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380025" data-volume="high" data-search="legacy mount hood medical center gresham 97030">
+          <td class="col-name"><a href="#h-380025">Legacy Mount Hood Medical Center</a><span class="row-field">Gresham, OR 97030</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="202" data-label="Mental health">202 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380029" data-volume="medium" data-search="legacy silverton medical center silverton 97381">
+          <td class="col-name"><a href="#h-380029">Legacy Silverton Medical Center</a><span class="row-field">Silverton, OR 97381</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="127" data-label="Mental health">127 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381311" data-volume="low" data-search="lower umpqua hospital district reedsport 97467">
+          <td class="col-name"><a href="#h-381311">Lower Umpqua Hospital District</a><span class="row-field">Reedsport, OR 97467</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380020" data-volume="very high" data-search="mckenzie-willamette medical center springfield 97477">
+          <td class="col-name"><a href="#h-380020">Mckenzie-Willamette Medical Center</a><span class="row-field">Springfield, OR 97477</span></td>
+          <td class="col-num" data-value="172" data-label="Median time in ER"><strong>172 min</strong><span class="row-years">2 h 52 m</span></td>
+          <td class="col-num" data-value="118" data-label="Mental health">118 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-380027" data-volume="high" data-search="mercy medical center roseburg 97471">
+          <td class="col-name"><a href="#h-380027">Mercy Medical Center</a><span class="row-field">Roseburg, OR 97471</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="234" data-label="Mental health">234 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-380001" data-volume="low" data-search="mid-columbia medical center the dalles 97058">
+          <td class="col-name"><a href="#h-380001">Mid-Columbia Medical Center</a><span class="row-field">The Dalles, OR 97058</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="162" data-label="Mental health">162 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380009" data-volume="high" data-search="ohsu hospital and clinics portland 97239">
+          <td class="col-name"><a href="#h-380009">Ohsu Hospital and Clinics</a><span class="row-field">Portland, OR 97239</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-381316" data-volume="low" data-search="peace harbor medical center florence 97439">
+          <td class="col-name"><a href="#h-381316">Peace Harbor Medical Center</a><span class="row-field">Florence, OR 97439</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381301" data-volume="low" data-search="peacehealth cottage grove community medical center cottage grove 97424">
+          <td class="col-name"><a href="#h-381301">Peacehealth Cottage Grove Community Medical Center</a><span class="row-field">Cottage Grove, OR 97424</span></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381310" data-volume="low" data-search="pioneer memorial hospital heppner 97836">
+          <td class="col-name"><a href="#h-381310">Pioneer Memorial Hospital</a><span class="row-field">Heppner, OR 97836</span></td>
+          <td class="col-num" data-value="124" data-label="Median time in ER"><strong>124 min</strong><span class="row-years">2 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381318" data-volume="low" data-search="providence hood river memorial hospital hood river 97031">
+          <td class="col-name"><a href="#h-381318">Providence Hood River Memorial Hospital</a><span class="row-field">Hood River, OR 97031</span></td>
+          <td class="col-num" data-value="103" data-label="Median time in ER"><strong>103 min</strong><span class="row-years">1 h 43 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380075" data-volume="medium" data-search="providence medford medical center medford 97504">
+          <td class="col-name"><a href="#h-380075">Providence Medford Medical Center</a><span class="row-field">Medford, OR 97504</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="194" data-label="Mental health">194 min</td>
+          <td class="col-num" data-value="13" data-label="Left before seen">13%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380082" data-volume="medium" data-search="providence milwaukie hospital milwaukie 97222">
+          <td class="col-name"><a href="#h-380082">Providence Milwaukie Hospital</a><span class="row-field">Milwaukie, OR 97222</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="324" data-label="Mental health">324 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380037" data-volume="medium" data-search="providence newberg medical center newberg 97132">
+          <td class="col-name"><a href="#h-380037">Providence Newberg Medical Center</a><span class="row-field">Newberg, OR 97132</span></td>
+          <td class="col-num" data-value="185" data-label="Median time in ER"><strong>185 min</strong><span class="row-years">3 h 05 m</span></td>
+          <td class="col-num" data-value="340" data-label="Mental health">340 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380061" data-volume="very high" data-search="providence portland medical center portland 97213">
+          <td class="col-name"><a href="#h-380061">Providence Portland Medical Center</a><span class="row-field">Portland, OR 97213</span></td>
+          <td class="col-num" data-value="215" data-label="Median time in ER"><strong>215 min</strong><span class="row-years">3 h 35 m</span></td>
+          <td class="col-num" data-value="284" data-label="Mental health">284 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-381303" data-volume="low" data-search="providence seaside hospital seaside 97138">
+          <td class="col-name"><a href="#h-381303">Providence Seaside Hospital</a><span class="row-field">Seaside, OR 97138</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="165" data-label="Mental health">165 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380004" data-volume="very high" data-search="providence st vincent medical center portland 97225">
+          <td class="col-name"><a href="#h-380004">Providence St Vincent Medical Center</a><span class="row-field">Portland, OR 97225</span></td>
+          <td class="col-num" data-value="230" data-label="Median time in ER"><strong>230 min</strong><span class="row-years">3 h 50 m</span></td>
+          <td class="col-num" data-value="393" data-label="Mental health">393 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-380038" data-volume="medium" data-search="providence willamette falls medical center oregon city 97045">
+          <td class="col-name"><a href="#h-380038">Providence Willamette Falls Medical Center</a><span class="row-field">Oregon City, OR 97045</span></td>
+          <td class="col-num" data-value="238" data-label="Median time in ER"><strong>238 min</strong><span class="row-years">3 h 58 m</span></td>
+          <td class="col-num" data-value="471" data-label="Mental health">471 min</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380102" data-volume="very high" data-search="sacred heart medical center - riverbend springfield 97477">
+          <td class="col-name"><a href="#h-380102">Sacred Heart Medical Center - Riverbend</a><span class="row-field">Springfield, OR 97477</span></td>
+          <td class="col-num" data-value="242" data-label="Median time in ER"><strong>242 min</strong><span class="row-years">4 h 02 m</span></td>
+          <td class="col-num" data-value="419" data-label="Mental health">419 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-380052" data-volume="low" data-search="saint alphonsus medical center ontario ontario 97914">
+          <td class="col-name"><a href="#h-380052">Saint Alphonsus Medical Center Ontario</a><span class="row-field">Ontario, OR 97914</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="208" data-label="Mental health">208 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381308" data-volume="" data-search="salem health west valley dallas 97338">
+          <td class="col-name"><a href="#h-381308">Salem Health West Valley</a><span class="row-field">Dallas, OR 97338</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-380051" data-volume="very high" data-search="salem hospital salem 97301">
+          <td class="col-name"><a href="#h-380051">Salem Hospital</a><span class="row-field">Salem, OR 97301</span></td>
+          <td class="col-num" data-value="234" data-label="Median time in ER"><strong>234 min</strong><span class="row-years">3 h 54 m</span></td>
+          <td class="col-num" data-value="285" data-label="Mental health">285 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-380022" data-volume="medium" data-search="samaritan albany general hospital albany 97321">
+          <td class="col-name"><a href="#h-380022">Samaritan Albany General Hospital</a><span class="row-field">Albany, OR 97321</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="198" data-label="Mental health">198 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381323" data-volume="medium" data-search="samaritan lebanon community hospital lebanon 97355">
+          <td class="col-name"><a href="#h-381323">Samaritan Lebanon Community Hospital</a><span class="row-field">Lebanon, OR 97355</span></td>
+          <td class="col-num" data-value="179" data-label="Median time in ER"><strong>179 min</strong><span class="row-years">2 h 59 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381302" data-volume="low" data-search="samaritan north lincoln hospital lincoln city 97367">
+          <td class="col-name"><a href="#h-381302">Samaritan North Lincoln Hospital</a><span class="row-field">Lincoln City, OR 97367</span></td>
+          <td class="col-num" data-value="157" data-label="Median time in ER"><strong>157 min</strong><span class="row-years">2 h 37 m</span></td>
+          <td class="col-num" data-value="310" data-label="Mental health">310 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381314" data-volume="low" data-search="samaritan pacific community hospital newport 97365">
+          <td class="col-name"><a href="#h-381314">Samaritan Pacific Community Hospital</a><span class="row-field">Newport, OR 97365</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="309" data-label="Mental health">309 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380056" data-volume="medium" data-search="santiam hospital &amp; clinics stayton 97383">
+          <td class="col-name"><a href="#h-380056">Santiam Hospital &amp; Clinics</a><span class="row-field">Stayton, OR 97383</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-380050" data-volume="medium" data-search="sky lakes medical center klamath falls 97601">
+          <td class="col-name"><a href="#h-380050">Sky Lakes Medical Center</a><span class="row-field">Klamath Falls, OR 97601</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="332" data-label="Mental health">332 min</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-381304" data-volume="low" data-search="southern coos hospital &amp; health center bandon 97411">
+          <td class="col-name"><a href="#h-381304">Southern Coos Hospital &amp; Health Center</a><span class="row-field">Bandon, OR 97411</span></td>
+          <td class="col-num" data-value="100" data-label="Median time in ER"><strong>100 min</strong><span class="row-years">1 h 40 m</span></td>
+          <td class="col-num" data-value="126" data-label="Mental health">126 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381319" data-volume="low" data-search="st anthony hospital pendleton 97801">
+          <td class="col-name"><a href="#h-381319">St Anthony Hospital</a><span class="row-field">Pendleton, OR 97801</span></td>
+          <td class="col-num" data-value="149" data-label="Median time in ER"><strong>149 min</strong><span class="row-years">2 h 29 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381324" data-volume="low" data-search="st charles madras madras 97741">
+          <td class="col-name"><a href="#h-381324">St Charles Madras</a><span class="row-field">Madras, OR 97741</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380047" data-volume="very high" data-search="st charles medical center - bend bend 97701">
+          <td class="col-name"><a href="#h-380047">St Charles Medical Center - Bend</a><span class="row-field">Bend, OR 97701</span></td>
+          <td class="col-num" data-value="173" data-label="Median time in ER"><strong>173 min</strong><span class="row-years">2 h 53 m</span></td>
+          <td class="col-num" data-value="259" data-label="Mental health">259 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-381313" data-volume="low" data-search="st charles medical center prineville prineville 97754">
+          <td class="col-name"><a href="#h-381313">St Charles Medical Center Prineville</a><span class="row-field">Prineville, OR 97754</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381315" data-volume="low" data-search="st. alphonsus medical center - baker city baker city 97814">
+          <td class="col-name"><a href="#h-381315">St. Alphonsus Medical Center - Baker City</a><span class="row-field">Baker City, OR 97814</span></td>
+          <td class="col-num" data-value="92" data-label="Median time in ER"><strong>92 min</strong><span class="row-years">1 h 32 m</span></td>
+          <td class="col-num" data-value="130" data-label="Mental health">130 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-381306" data-volume="low" data-search="wallowa memorial hospital enterprise 97828">
+          <td class="col-name"><a href="#h-381306">Wallowa Memorial Hospital</a><span class="row-field">Enterprise, OR 97828</span></td>
+          <td class="col-num" data-value="105" data-label="Median time in ER"><strong>105 min</strong><span class="row-years">1 h 45 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-380071" data-volume="medium" data-search="willamette valley medical center mcminnville 97128">
+          <td class="col-name"><a href="#h-380071">Willamette Valley Medical Center</a><span class="row-field">Mcminnville, OR 97128</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

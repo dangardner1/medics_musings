@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Washington: 75 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Washington? The state median is 151 minutes. Compare 75 Washington hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/wa/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/wa/">
+<meta property="og:title" content="ER wait times in Washington">
+<meta property="og:description" content="How long do ER visits take in Washington? The state median is 151 minutes. Compare 75 Washington hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Washington">
+<meta name="twitter:description" content="How long do ER visits take in Washington? The state median is 151 minutes. Compare 75 Washington hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/wa/#dataset",
+   "name": "Emergency department wait times in Washington hospitals",
+   "description": "Median emergency department times for 75 hospitals in Washington, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/wa/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Washington"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Washington",
+     "item": "https://www.medicsmusings.com/er-wait-times/wa/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Washington</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Washington</h1>
+      <p class="coll-intro">The typical ER visit in Washington takes 151 minutes, 11 minutes faster than the national median of 162. The quickest hospital here has a median of 82 minutes and the slowest 299, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Washington median</dt><dd>151 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>238 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>3%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>75</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-wa-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-wa-search" type="search" data-filter-table="er-wa" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-wa">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-501319" data-volume="low" data-search="arbor health morton hospital morton 98356">
+          <td class="col-name"><a href="#h-501319">Arbor Health Morton Hospital</a><span class="row-field">Morton, WA 98356</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="92" data-label="Mental health">92 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501330" data-volume="low" data-search="astria sunnyside hospital sunnyside 98944">
+          <td class="col-name"><a href="#h-501330">Astria Sunnyside Hospital</a><span class="row-field">Sunnyside, WA 98944</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="152" data-label="Mental health">152 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500037" data-volume="low" data-search="astria toppenish hospital toppenish 98948">
+          <td class="col-name"><a href="#h-500037">Astria Toppenish Hospital</a><span class="row-field">Toppenish, WA 98948</span></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="148" data-label="Mental health">148 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500139" data-volume="high" data-search="capital medical center olympia 98502">
+          <td class="col-name"><a href="#h-500139">Capital Medical Center</a><span class="row-field">Olympia, WA 98502</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="106" data-label="Mental health">106 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500060" data-volume="medium" data-search="cascade valley hospital arlington 98223">
+          <td class="col-name"><a href="#h-500060">Cascade Valley Hospital</a><span class="row-field">Arlington, WA 98223</span></td>
+          <td class="col-num" data-value="171" data-label="Median time in ER"><strong>171 min</strong><span class="row-years">2 h 51 m</span></td>
+          <td class="col-num" data-value="262" data-label="Mental health">262 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-501317" data-volume="low" data-search="columbia basin hospital ephrata 98823">
+          <td class="col-name"><a href="#h-501317">Columbia Basin Hospital</a><span class="row-field">Ephrata, WA 98823</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="206" data-label="Mental health">206 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500016" data-volume="high" data-search="confluence health hospital wenatchee 98807">
+          <td class="col-name"><a href="#h-500016">Confluence Health Hospital</a><span class="row-field">Wenatchee, WA 98807</span></td>
+          <td class="col-num" data-value="143" data-label="Median time in ER"><strong>143 min</strong><span class="row-years">2 h 23 m</span></td>
+          <td class="col-num" data-value="182" data-label="Mental health">182 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501308" data-volume="" data-search="coulee medical center grand coulee 99133">
+          <td class="col-name"><a href="#h-501308">Coulee Medical Center</a><span class="row-field">Grand Coulee, WA 99133</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="232" data-label="Mental health">232 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-501302" data-volume="low" data-search="dayton general hospital dayton 99328">
+          <td class="col-name"><a href="#h-501302">Dayton General Hospital</a><span class="row-field">Dayton, WA 99328</span></td>
+          <td class="col-num" data-value="105" data-label="Median time in ER"><strong>105 min</strong><span class="row-years">1 h 45 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500044" data-volume="very high" data-search="deaconess medical center spokane 99210">
+          <td class="col-name"><a href="#h-500044">Deaconess Medical Center</a><span class="row-field">Spokane, WA 99210</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="198" data-label="Mental health">198 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500124" data-volume="high" data-search="evergreenhealth medical center kirkland 98034">
+          <td class="col-name"><a href="#h-500124">Evergreenhealth Medical Center</a><span class="row-field">Kirkland, WA 98034</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="230" data-label="Mental health">230 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500084" data-volume="medium" data-search="evergreenhealth monroe monroe 98272">
+          <td class="col-name"><a href="#h-500084">Evergreenhealth Monroe</a><span class="row-field">Monroe, WA 98272</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="298" data-label="Mental health">298 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-501325" data-volume="low" data-search="forks community hospital forks 98331">
+          <td class="col-name"><a href="#h-501325">Forks Community Hospital</a><span class="row-field">Forks, WA 98331</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="188" data-label="Mental health">188 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501301" data-volume="" data-search="garfield county public hospital district #1 pomeroy 99347">
+          <td class="col-name"><a href="#h-501301">Garfield County Public Hospital District #1</a><span class="row-field">Pomeroy, WA 99347</span></td>
+          <td class="col-num" data-value="82" data-label="Median time in ER"><strong>82 min</strong><span class="row-years">1 h 22 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-500031" data-volume="medium" data-search="grays harbor community hospital aberdeen 98520">
+          <td class="col-name"><a href="#h-500031">Grays Harbor Community Hospital</a><span class="row-field">Aberdeen, WA 98520</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="558" data-label="Mental health">558 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500064" data-volume="very high" data-search="harborview medical center seattle 98104">
+          <td class="col-name"><a href="#h-500064">Harborview Medical Center</a><span class="row-field">Seattle, WA 98104</span></td>
+          <td class="col-num" data-value="299" data-label="Median time in ER"><strong>299 min</strong><span class="row-years">4 h 59 m</span></td>
+          <td class="col-num" data-value="425" data-label="Mental health">425 min</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500011" data-volume="high" data-search="highline medical center burien 98166">
+          <td class="col-name"><a href="#h-500011">Highline Medical Center</a><span class="row-field">Burien, WA 98166</span></td>
+          <td class="col-num" data-value="235" data-label="Median time in ER"><strong>235 min</strong><span class="row-years">3 h 55 m</span></td>
+          <td class="col-num" data-value="415" data-label="Mental health">415 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500007" data-volume="low" data-search="island hospital anacortes 98221">
+          <td class="col-name"><a href="#h-500007">Island Hospital</a><span class="row-field">Anacortes, WA 98221</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501323" data-volume="low" data-search="jefferson healthcare port townsend 98368">
+          <td class="col-name"><a href="#h-501323">Jefferson Healthcare</a><span class="row-field">Port Townsend, WA 98368</span></td>
+          <td class="col-num" data-value="139" data-label="Median time in ER"><strong>139 min</strong><span class="row-years">2 h 19 m</span></td>
+          <td class="col-num" data-value="260" data-label="Mental health">260 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500058" data-volume="very high" data-search="kadlec regional medical center richland 99352">
+          <td class="col-name"><a href="#h-500058">Kadlec Regional Medical Center</a><span class="row-field">Richland, WA 99352</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501333" data-volume="low" data-search="kittitas valley community hospital ellensburg 98926">
+          <td class="col-name"><a href="#h-501333">Kittitas Valley Community Hospital</a><span class="row-field">Ellensburg, WA 98926</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="186" data-label="Mental health">186 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501316" data-volume="" data-search="klickitat valley hospital goldendale 98620">
+          <td class="col-name"><a href="#h-501316">Klickitat Valley Hospital</a><span class="row-field">Goldendale, WA 98620</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="185" data-label="Mental health">185 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-501334" data-volume="low" data-search="lake chelan community hospital chelan 98816">
+          <td class="col-name"><a href="#h-501334">Lake Chelan Community Hospital</a><span class="row-field">Chelan, WA 98816</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="218" data-label="Mental health">218 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500150" data-volume="very high" data-search="legacy salmon creek medical center vancouver 98686">
+          <td class="col-name"><a href="#h-500150">Legacy Salmon Creek Medical Center</a><span class="row-field">Vancouver, WA 98686</span></td>
+          <td class="col-num" data-value="260" data-label="Median time in ER"><strong>260 min</strong><span class="row-years">4 h 20 m</span></td>
+          <td class="col-num" data-value="328" data-label="Mental health">328 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501337" data-volume="medium" data-search="lourdes medical center pasco 99301">
+          <td class="col-name"><a href="#h-501337">Lourdes Medical Center</a><span class="row-field">Pasco, WA 99301</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="229" data-label="Mental health">229 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-50005f" data-volume="high" data-search="madigan amc (ft lewis) joint base lewis-mcchord 98431">
+          <td class="col-name"><a href="#h-50005f">Madigan Amc (Ft Lewis)</a><span class="row-field">Joint Base Lewis-Mcchord, WA 98431</span></td>
+          <td class="col-num" data-value="179" data-label="Median time in ER"><strong>179 min</strong><span class="row-years">2 h 59 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501336" data-volume="low" data-search="mason general hospital &amp; family of clinics shelton 98584">
+          <td class="col-name"><a href="#h-501336">Mason General Hospital &amp; Family of Clinics</a><span class="row-field">Shelton, WA 98584</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="687" data-label="Mental health">687 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501328" data-volume="" data-search="mid valley hospital &amp; clinic omak 98841">
+          <td class="col-name"><a href="#h-501328">Mid Valley Hospital &amp; Clinic</a><span class="row-field">Omak, WA 98841</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="322" data-label="Mental health">322 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-500015" data-volume="high" data-search="multicare auburn medical center auburn 98001">
+          <td class="col-name"><a href="#h-500015">Multicare Auburn Medical Center</a><span class="row-field">Auburn, WA 98001</span></td>
+          <td class="col-num" data-value="217" data-label="Median time in ER"><strong>217 min</strong><span class="row-years">3 h 37 m</span></td>
+          <td class="col-num" data-value="279" data-label="Mental health">279 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500154" data-volume="medium" data-search="multicare covington medical center covington 98042">
+          <td class="col-name"><a href="#h-500154">Multicare Covington Medical Center</a><span class="row-field">Covington, WA 98042</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500079" data-volume="very high" data-search="multicare good samaritan hospital puyallup 98372">
+          <td class="col-name"><a href="#h-500079">Multicare Good Samaritan Hospital</a><span class="row-field">Puyallup, WA 98372</span></td>
+          <td class="col-num" data-value="133" data-label="Median time in ER"><strong>133 min</strong><span class="row-years">2 h 13 m</span></td>
+          <td class="col-num" data-value="324" data-label="Mental health">324 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500119" data-volume="high" data-search="multicare valley hospital spokane valley 99216">
+          <td class="col-name"><a href="#h-500119">Multicare Valley Hospital</a><span class="row-field">Spokane Valley, WA 99216</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="273" data-label="Mental health">273 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501321" data-volume="low" data-search="north valley hospital tonasket 98855">
+          <td class="col-name"><a href="#h-501321">North Valley Hospital</a><span class="row-field">Tonasket, WA 98855</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501314" data-volume="low" data-search="ocean beach hospital ilwaco 98624">
+          <td class="col-name"><a href="#h-501314">Ocean Beach Hospital</a><span class="row-field">Ilwaco, WA 98624</span></td>
+          <td class="col-num" data-value="121" data-label="Median time in ER"><strong>121 min</strong><span class="row-years">2 h 01 m</span></td>
+          <td class="col-num" data-value="127" data-label="Mental health">127 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501307" data-volume="" data-search="odessa memorial healthcare center odessa 99159">
+          <td class="col-name"><a href="#h-501307">Odessa Memorial Healthcare Center</a><span class="row-field">Odessa, WA 99159</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="103" data-label="Mental health">103 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-500072" data-volume="medium" data-search="olympic medical center port angeles 98362">
+          <td class="col-name"><a href="#h-500072">Olympic Medical Center</a><span class="row-field">Port Angeles, WA 98362</span></td>
+          <td class="col-num" data-value="251" data-label="Median time in ER"><strong>251 min</strong><span class="row-years">4 h 11 m</span></td>
+          <td class="col-num" data-value="373" data-label="Mental health">373 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500051" data-volume="high" data-search="overlake hospital medical center &amp; clinics bellevue 98004">
+          <td class="col-name"><a href="#h-500051">Overlake Hospital Medical Center &amp; Clinics</a><span class="row-field">Bellevue, WA 98004</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="290" data-label="Mental health">290 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501340" data-volume="low" data-search="peacehealth peace island medical center friday harbor 98250">
+          <td class="col-name"><a href="#h-501340">Peacehealth Peace Island Medical Center</a><span class="row-field">Friday Harbor, WA 98250</span></td>
+          <td class="col-num" data-value="101" data-label="Median time in ER"><strong>101 min</strong><span class="row-years">1 h 41 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500050" data-volume="very high" data-search="peacehealth southwest medical cente vancouver 98664">
+          <td class="col-name"><a href="#h-500050">Peacehealth Southwest Medical Cente</a><span class="row-field">Vancouver, WA 98664</span></td>
+          <td class="col-num" data-value="275" data-label="Median time in ER"><strong>275 min</strong><span class="row-years">4 h 35 m</span></td>
+          <td class="col-num" data-value="677" data-label="Mental health">677 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500041" data-volume="high" data-search="peacehealth st john medical center longview 98632">
+          <td class="col-name"><a href="#h-500041">Peacehealth St John Medical Center</a><span class="row-field">Longview, WA 98632</span></td>
+          <td class="col-num" data-value="214" data-label="Median time in ER"><strong>214 min</strong><span class="row-years">3 h 34 m</span></td>
+          <td class="col-num" data-value="286" data-label="Mental health">286 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500030" data-volume="very high" data-search="peacehealth st joseph medical center bellingham 98225">
+          <td class="col-name"><a href="#h-500030">Peacehealth St Joseph Medical Center</a><span class="row-field">Bellingham, WA 98225</span></td>
+          <td class="col-num" data-value="210" data-label="Median time in ER"><strong>210 min</strong><span class="row-years">3 h 30 m</span></td>
+          <td class="col-num" data-value="329" data-label="Mental health">329 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501329" data-volume="low" data-search="peacehealth united general medical center sedro woolley 98284">
+          <td class="col-name"><a href="#h-501329">Peacehealth United General Medical Center</a><span class="row-field">Sedro Woolley, WA 98284</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="224" data-label="Mental health">224 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501312" data-volume="medium" data-search="prosser memorial hospital prosser 99350">
+          <td class="col-name"><a href="#h-501312">Prosser Memorial Hospital</a><span class="row-field">Prosser, WA 99350</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500054" data-volume="very high" data-search="prov sacred hrt med ctr &amp; childs hosp. spokane 99220">
+          <td class="col-name"><a href="#h-500054">Prov Sacred Hrt Med Ctr &amp; Childs Hosp.</a><span class="row-field">Spokane, WA 99220</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="486" data-label="Mental health">486 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500019" data-volume="medium" data-search="providence centralia hospital centralia 98531">
+          <td class="col-name"><a href="#h-500019">Providence Centralia Hospital</a><span class="row-field">Centralia, WA 98531</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="504" data-label="Mental health">504 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500077" data-volume="high" data-search="providence holy family hospital spokane 99208">
+          <td class="col-name"><a href="#h-500077">Providence Holy Family Hospital</a><span class="row-field">Spokane, WA 99208</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="232" data-label="Mental health">232 min</td>
+          <td class="col-num" data-value="9" data-label="Left before seen">9%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501326" data-volume="low" data-search="providence mount carmel hospital colville 99114">
+          <td class="col-name"><a href="#h-501326">Providence Mount Carmel Hospital</a><span class="row-field">Colville, WA 99114</span></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500014" data-volume="very high" data-search="providence regional medical center everett everett 98201">
+          <td class="col-name"><a href="#h-500014">Providence Regional Medical Center Everett</a><span class="row-field">Everett, WA 98201</span></td>
+          <td class="col-num" data-value="246" data-label="Median time in ER"><strong>246 min</strong><span class="row-years">4 h 06 m</span></td>
+          <td class="col-num" data-value="366" data-label="Mental health">366 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501309" data-volume="low" data-search="providence st joseph hospital chewelah 99109">
+          <td class="col-name"><a href="#h-501309">Providence St Joseph Hospital</a><span class="row-field">Chewelah, WA 99109</span></td>
+          <td class="col-num" data-value="120" data-label="Median time in ER"><strong>120 min</strong><span class="row-years">2 h 00 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500002" data-volume="medium" data-search="providence st mary medical center walla walla 99362">
+          <td class="col-name"><a href="#h-500002">Providence St Mary Medical Center</a><span class="row-field">Walla Walla, WA 99362</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="200" data-label="Mental health">200 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500024" data-volume="high" data-search="providence st peter hospital olympia 98506">
+          <td class="col-name"><a href="#h-500024">Providence St Peter Hospital</a><span class="row-field">Olympia, WA 98506</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="404" data-label="Mental health">404 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-501331" data-volume="low" data-search="pullman regional hospital pullman 99163">
+          <td class="col-name"><a href="#h-501331">Pullman Regional Hospital</a><span class="row-field">Pullman, WA 99163</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500033" data-volume="medium" data-search="samaritan hospital moses lake 98837">
+          <td class="col-name"><a href="#h-500033">Samaritan Hospital</a><span class="row-field">Moses Lake, WA 98837</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="184" data-label="Mental health">184 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500003" data-volume="medium" data-search="skagit valley hospital mount vernon 98274">
+          <td class="col-name"><a href="#h-500003">Skagit Valley Hospital</a><span class="row-field">Mount Vernon, WA 98274</span></td>
+          <td class="col-num" data-value="188" data-label="Median time in ER"><strong>188 min</strong><span class="row-years">3 h 08 m</span></td>
+          <td class="col-num" data-value="269" data-label="Mental health">269 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-501338" data-volume="low" data-search="snoqualmie valley hospital snoqualmie 98065">
+          <td class="col-name"><a href="#h-501338">Snoqualmie Valley Hospital</a><span class="row-field">Snoqualmie, WA 98065</span></td>
+          <td class="col-num" data-value="121" data-label="Median time in ER"><strong>121 min</strong><span class="row-years">2 h 01 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500151" data-volume="high" data-search="st anthony hospital gig harbor 98332">
+          <td class="col-name"><a href="#h-500151">St Anthony Hospital</a><span class="row-field">Gig Harbor, WA 98332</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="378" data-label="Mental health">378 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500021" data-volume="medium" data-search="st clare hospital lakewood 98499">
+          <td class="col-name"><a href="#h-500021">St Clare Hospital</a><span class="row-field">Lakewood, WA 98499</span></td>
+          <td class="col-num" data-value="161" data-label="Median time in ER"><strong>161 min</strong><span class="row-years">2 h 41 m</span></td>
+          <td class="col-num" data-value="245" data-label="Mental health">245 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-501335" data-volume="low" data-search="st elizabeth hospital enumclaw 98022">
+          <td class="col-name"><a href="#h-501335">St Elizabeth Hospital</a><span class="row-field">Enumclaw, WA 98022</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500141" data-volume="high" data-search="st francis community hospital federal way 98003">
+          <td class="col-name"><a href="#h-500141">St Francis Community Hospital</a><span class="row-field">Federal Way, WA 98003</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="428" data-label="Mental health">428 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500108" data-volume="high" data-search="st joseph medical center tacoma 98405">
+          <td class="col-name"><a href="#h-500108">St Joseph Medical Center</a><span class="row-field">Tacoma, WA 98405</span></td>
+          <td class="col-num" data-value="211" data-label="Median time in ER"><strong>211 min</strong><span class="row-years">3 h 31 m</span></td>
+          <td class="col-num" data-value="384" data-label="Mental health">384 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500039" data-volume="very high" data-search="st michael medical center silverdale 98383">
+          <td class="col-name"><a href="#h-500039">St Michael Medical Center</a><span class="row-field">Silverdale, WA 98383</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="480" data-label="Mental health">480 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501304" data-volume="low" data-search="summit pacific medical center elma 98541">
+          <td class="col-name"><a href="#h-501304">Summit Pacific Medical Center</a><span class="row-field">Elma, WA 98541</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500026" data-volume="high" data-search="swedish edmonds hospital edmonds 98026">
+          <td class="col-name"><a href="#h-500026">Swedish Edmonds Hospital</a><span class="row-field">Edmonds, WA 98026</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-500152" data-volume="medium" data-search="swedish issaquah issaquah 98029">
+          <td class="col-name"><a href="#h-500152">Swedish Issaquah</a><span class="row-field">Issaquah, WA 98029</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="215" data-label="Mental health">215 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500027" data-volume="very high" data-search="swedish medical center seattle 98122">
+          <td class="col-name"><a href="#h-500027">Swedish Medical Center</a><span class="row-field">Seattle, WA 98122</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="226" data-label="Mental health">226 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500025" data-volume="medium" data-search="swedish medical center / cherry hill seattle 98122">
+          <td class="col-name"><a href="#h-500025">Swedish Medical Center / Cherry Hill</a><span class="row-field">Seattle, WA 98122</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="390" data-label="Mental health">390 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500129" data-volume="very high" data-search="tacoma general allenmore hospital tacoma 98405">
+          <td class="col-name"><a href="#h-500129">Tacoma General Allenmore Hospital</a><span class="row-field">Tacoma, WA 98405</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="427" data-label="Mental health">427 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-501332" data-volume="low" data-search="tri-state memorial hospital clarkston 99403">
+          <td class="col-name"><a href="#h-501332">Tri-State Memorial Hospital</a><span class="row-field">Clarkston, WA 99403</span></td>
+          <td class="col-num" data-value="143" data-label="Median time in ER"><strong>143 min</strong><span class="row-years">2 h 23 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500053" data-volume="medium" data-search="trios health kennewick 99338">
+          <td class="col-name"><a href="#h-500053">Trios Health</a><span class="row-field">Kennewick, WA 99338</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="272" data-label="Mental health">272 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-500008" data-volume="very high" data-search="university of washington medical ctr seattle 98195">
+          <td class="col-name"><a href="#h-500008">University of Washington Medical Ctr</a><span class="row-field">Seattle, WA 98195</span></td>
+          <td class="col-num" data-value="266" data-label="Median time in ER"><strong>266 min</strong><span class="row-years">4 h 26 m</span></td>
+          <td class="col-num" data-value="328" data-label="Mental health">328 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500088" data-volume="very high" data-search="valley medical center renton 98055">
+          <td class="col-name"><a href="#h-500088">Valley Medical Center</a><span class="row-field">Renton, WA 98055</span></td>
+          <td class="col-num" data-value="199" data-label="Median time in ER"><strong>199 min</strong><span class="row-years">3 h 19 m</span></td>
+          <td class="col-num" data-value="227" data-label="Mental health">227 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-500005" data-volume="medium" data-search="virginia mason medical center seattle 98101">
+          <td class="col-name"><a href="#h-500005">Virginia Mason Medical Center</a><span class="row-field">Seattle, WA 98101</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-501327" data-volume="low" data-search="whitman hospital and medical center colfax 99111">
+          <td class="col-name"><a href="#h-501327">Whitman Hospital and Medical Center</a><span class="row-field">Colfax, WA 99111</span></td>
+          <td class="col-num" data-value="156" data-label="Median time in ER"><strong>156 min</strong><span class="row-years">2 h 36 m</span></td>
+          <td class="col-num" data-value="218" data-label="Mental health">218 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-501303" data-volume="low" data-search="willapa harbor hospital south bend 98586">
+          <td class="col-name"><a href="#h-501303">Willapa Harbor Hospital</a><span class="row-field">South Bend, WA 98586</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-500036" data-volume="high" data-search="yakima valley memorial yakima 98902">
+          <td class="col-name"><a href="#h-500036">Yakima Valley Memorial</a><span class="row-field">Yakima, WA 98902</span></td>
+          <td class="col-num" data-value="161" data-label="Median time in ER"><strong>161 min</strong><span class="row-years">2 h 41 m</span></td>
+          <td class="col-num" data-value="187" data-label="Mental health">187 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

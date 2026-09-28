@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Alabama: 79 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Alabama? The state median is 149 minutes. Compare 79 Alabama hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/al/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/al/">
+<meta property="og:title" content="ER wait times in Alabama">
+<meta property="og:description" content="How long do ER visits take in Alabama? The state median is 149 minutes. Compare 79 Alabama hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Alabama">
+<meta name="twitter:description" content="How long do ER visits take in Alabama? The state median is 149 minutes. Compare 79 Alabama hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/al/#dataset",
+   "name": "Emergency department wait times in Alabama hospitals",
+   "description": "Median emergency department times for 79 hospitals in Alabama, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/al/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Alabama"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Alabama",
+     "item": "https://www.medicsmusings.com/er-wait-times/al/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Alabama</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Alabama</h1>
+      <p class="coll-intro">The typical ER visit in Alabama takes 149 minutes, 13 minutes faster than the national median of 162. The quickest hospital here has a median of 59 minutes and the slowest 244, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Alabama median</dt><dd>149 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>212 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>79</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-al-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-al-search" type="search" data-filter-table="er-al" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-al">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-010036" data-volume="low" data-search="andalusia health andalusia 36420">
+          <td class="col-name"><a href="#h-010036">Andalusia Health</a><span class="row-field">Andalusia, AL 36420</span></td>
+          <td class="col-num" data-value="172" data-label="Median time in ER"><strong>172 min</strong><span class="row-years">2 h 52 m</span></td>
+          <td class="col-num" data-value="324" data-label="Mental health">324 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010079" data-volume="medium" data-search="athens limestone hospital athens 35611">
+          <td class="col-name"><a href="#h-010079">Athens Limestone Hospital</a><span class="row-field">Athens, AL 35611</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="356" data-label="Mental health">356 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010169" data-volume="low" data-search="atmore community hospital atmore 36502">
+          <td class="col-name"><a href="#h-010169">Atmore Community Hospital</a><span class="row-field">Atmore, AL 36502</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010083" data-volume="high" data-search="baldwin health foley 36535">
+          <td class="col-name"><a href="#h-010083">Baldwin Health</a><span class="row-field">Foley, AL 36535</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010139" data-volume="medium" data-search="baptist health brookwood hospital birmingham 35209">
+          <td class="col-name"><a href="#h-010139">Baptist Health Brookwood Hospital</a><span class="row-field">Birmingham, AL 35209</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="212" data-label="Mental health">212 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010149" data-volume="high" data-search="baptist medical center east montgomery 36117">
+          <td class="col-name"><a href="#h-010149">Baptist Medical Center East</a><span class="row-field">Montgomery, AL 36117</span></td>
+          <td class="col-num" data-value="239" data-label="Median time in ER"><strong>239 min</strong><span class="row-years">3 h 59 m</span></td>
+          <td class="col-num" data-value="382" data-label="Mental health">382 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010023" data-volume="high" data-search="baptist medical center south montgomery 36116">
+          <td class="col-name"><a href="#h-010023">Baptist Medical Center South</a><span class="row-field">Montgomery, AL 36116</span></td>
+          <td class="col-num" data-value="220" data-label="Median time in ER"><strong>220 min</strong><span class="row-years">3 h 40 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010058" data-volume="low" data-search="bibb medical center centreville 35042">
+          <td class="col-name"><a href="#h-010058">Bibb Medical Center</a><span class="row-field">Centreville, AL 35042</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010101" data-volume="low" data-search="citizens baptist medical center talladega 35160">
+          <td class="col-name"><a href="#h-010101">Citizens Baptist Medical Center</a><span class="row-field">Talladega, AL 35160</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="113" data-label="Mental health">113 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010073" data-volume="low" data-search="clay county hospital ashland 36251">
+          <td class="col-name"><a href="#h-010073">Clay County Hospital</a><span class="row-field">Ashland, AL 36251</span></td>
+          <td class="col-num" data-value="91" data-label="Median time in ER"><strong>91 min</strong><span class="row-years">1 h 31 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010034" data-volume="low" data-search="community hospital inc tallassee 36078">
+          <td class="col-name"><a href="#h-010034">Community Hospital Inc</a><span class="row-field">Tallassee, AL 36078</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="111" data-label="Mental health">111 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010164" data-volume="medium" data-search="coosa valley medical center sylacauga 35150">
+          <td class="col-name"><a href="#h-010164">Coosa Valley Medical Center</a><span class="row-field">Sylacauga, AL 35150</span></td>
+          <td class="col-num" data-value="124" data-label="Median time in ER"><strong>124 min</strong><span class="row-years">2 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-011308" data-volume="" data-search="crenshaw community hospital luverne 36049">
+          <td class="col-name"><a href="#h-011308">Crenshaw Community Hospital</a><span class="row-field">Luverne, AL 36049</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-010131" data-volume="high" data-search="crestwood medical center huntsville 35801">
+          <td class="col-name"><a href="#h-010131">Crestwood Medical Center</a><span class="row-field">Huntsville, AL 35801</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010035" data-volume="high" data-search="cullman regional medical center cullman 35058">
+          <td class="col-name"><a href="#h-010035">Cullman Regional Medical Center</a><span class="row-field">Cullman, AL 35058</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="346" data-label="Mental health">346 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010099" data-volume="low" data-search="d w mcmillan memorial hospital brewton 36426">
+          <td class="col-name"><a href="#h-010099">D W Mcmillan Memorial Hospital</a><span class="row-field">Brewton, AL 36426</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="226" data-label="Mental health">226 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010021" data-volume="low" data-search="dale medical center ozark 36360">
+          <td class="col-name"><a href="#h-010021">Dale Medical Center</a><span class="row-field">Ozark, AL 36360</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="279" data-label="Mental health">279 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010092" data-volume="very high" data-search="dch regional medical center tuscaloosa 35401">
+          <td class="col-name"><a href="#h-010092">Dch Regional Medical Center</a><span class="row-field">Tuscaloosa, AL 35401</span></td>
+          <td class="col-num" data-value="237" data-label="Median time in ER"><strong>237 min</strong><span class="row-years">3 h 57 m</span></td>
+          <td class="col-num" data-value="521" data-label="Mental health">521 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-010085" data-volume="high" data-search="decatur morgan hospital - decatur campus decatur 35601">
+          <td class="col-name"><a href="#h-010085">Decatur Morgan Hospital - Decatur Campus</a><span class="row-field">Decatur, AL 35601</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="314" data-label="Mental health">314 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010012" data-volume="medium" data-search="dekalb regional medical center fort payne 35968">
+          <td class="col-name"><a href="#h-010012">Dekalb Regional Medical Center</a><span class="row-field">Fort Payne, AL 35968</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="346" data-label="Mental health">346 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010097" data-volume="low" data-search="elmore community hospital wetumpka 36092">
+          <td class="col-name"><a href="#h-010097">Elmore Community Hospital</a><span class="row-field">Wetumpka, AL 36092</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010148" data-volume="low" data-search="evergreen medical center evergreen 36401">
+          <td class="col-name"><a href="#h-010148">Evergreen Medical Center</a><span class="row-field">Evergreen, AL 36401</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010045" data-volume="low" data-search="fayette medical center fayette 35555">
+          <td class="col-name"><a href="#h-010045">Fayette Medical Center</a><span class="row-field">Fayette, AL 35555</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010055" data-volume="high" data-search="flowers hospital dothan 36302">
+          <td class="col-name"><a href="#h-010055">Flowers Hospital</a><span class="row-field">Dothan, AL 36302</span></td>
+          <td class="col-num" data-value="227" data-label="Median time in ER"><strong>227 min</strong><span class="row-years">3 h 47 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010022" data-volume="low" data-search="floyd cherokee medical center centre 35960">
+          <td class="col-name"><a href="#h-010022">Floyd Cherokee Medical Center</a><span class="row-field">Centre, AL 35960</span></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010040" data-volume="medium" data-search="gadsden regional medical center gadsden 35903">
+          <td class="col-name"><a href="#h-010040">Gadsden Regional Medical Center</a><span class="row-field">Gadsden, AL 35903</span></td>
+          <td class="col-num" data-value="201" data-label="Median time in ER"><strong>201 min</strong><span class="row-years">3 h 21 m</span></td>
+          <td class="col-num" data-value="302" data-label="Mental health">302 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010104" data-volume="very high" data-search="grandview medical center birmingham 35243">
+          <td class="col-name"><a href="#h-010104">Grandview Medical Center</a><span class="row-field">Birmingham, AL 35243</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="82" data-label="Mental health">82 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-010051" data-volume="low" data-search="greene county hospital eutaw 35462">
+          <td class="col-name"><a href="#h-010051">Greene County Hospital</a><span class="row-field">Eutaw, AL 35462</span></td>
+          <td class="col-num" data-value="128" data-label="Median time in ER"><strong>128 min</strong><span class="row-years">2 h 08 m</span></td>
+          <td class="col-num" data-value="143" data-label="Mental health">143 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010091" data-volume="low" data-search="grove hill memorial hospital grove hill 36451">
+          <td class="col-name"><a href="#h-010091">Grove Hill Memorial Hospital</a><span class="row-field">Grove Hill, AL 36451</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="179" data-label="Mental health">179 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010095" data-volume="low" data-search="hale county hospital greensboro 36744">
+          <td class="col-name"><a href="#h-010095">Hale County Hospital</a><span class="row-field">Greensboro, AL 36744</span></td>
+          <td class="col-num" data-value="100" data-label="Median time in ER"><strong>100 min</strong><span class="row-years">1 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010019" data-volume="medium" data-search="helen keller hospital sheffield 35660">
+          <td class="col-name"><a href="#h-010019">Helen Keller Hospital</a><span class="row-field">Sheffield, AL 35660</span></td>
+          <td class="col-num" data-value="188" data-label="Median time in ER"><strong>188 min</strong><span class="row-years">3 h 08 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010061" data-volume="low" data-search="highlands medical center scottsboro 35768">
+          <td class="col-name"><a href="#h-010061">Highlands Medical Center</a><span class="row-field">Scottsboro, AL 35768</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="318" data-label="Mental health">318 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010138" data-volume="low" data-search="hill hospital of sumter county york 36925">
+          <td class="col-name"><a href="#h-010138">Hill Hospital of Sumter County</a><span class="row-field">York, AL 36925</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010039" data-volume="very high" data-search="huntsville hospital huntsville 35801">
+          <td class="col-name"><a href="#h-010039">Huntsville Hospital</a><span class="row-field">Huntsville, AL 35801</span></td>
+          <td class="col-num" data-value="238" data-label="Median time in ER"><strong>238 min</strong><span class="row-years">3 h 58 m</span></td>
+          <td class="col-num" data-value="300" data-label="Mental health">300 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-010168" data-volume="low" data-search="jack hughston memorial hospital phenix city 36867">
+          <td class="col-name"><a href="#h-010168">Jack Hughston Memorial Hospital</a><span class="row-field">Phenix City, AL 36867</span></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010024" data-volume="high" data-search="jackson hospital &amp; clinic inc montgomery 36106">
+          <td class="col-name"><a href="#h-010024">Jackson Hospital &amp; Clinic Inc</a><span class="row-field">Montgomery, AL 36106</span></td>
+          <td class="col-num" data-value="138" data-label="Median time in ER"><strong>138 min</strong><span class="row-years">2 h 18 m</span></td>
+          <td class="col-num" data-value="136" data-label="Mental health">136 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010128" data-volume="low" data-search="jackson medical center jackson 36545">
+          <td class="col-name"><a href="#h-010128">Jackson Medical Center</a><span class="row-field">Jackson, AL 36545</span></td>
+          <td class="col-num" data-value="124" data-label="Median time in ER"><strong>124 min</strong><span class="row-years">2 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010052" data-volume="low" data-search="lake martin community hospital dadeville 36853">
+          <td class="col-name"><a href="#h-010052">Lake Martin Community Hospital</a><span class="row-field">Dadeville, AL 36853</span></td>
+          <td class="col-num" data-value="116" data-label="Median time in ER"><strong>116 min</strong><span class="row-years">1 h 56 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010125" data-volume="low" data-search="lakeland community hospital haleyville 35565">
+          <td class="col-name"><a href="#h-010125">Lakeland Community Hospital</a><span class="row-field">Haleyville, AL 35565</span></td>
+          <td class="col-num" data-value="96" data-label="Median time in ER"><strong>96 min</strong><span class="row-years">1 h 36 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010044" data-volume="low" data-search="marion regional medical center hamilton 35570">
+          <td class="col-name"><a href="#h-010044">Marion Regional Medical Center</a><span class="row-field">Hamilton, AL 35570</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010005" data-volume="very high" data-search="marshall medical centers boaz 35957">
+          <td class="col-name"><a href="#h-010005">Marshall Medical Centers</a><span class="row-field">Boaz, AL 35957</span></td>
+          <td class="col-num" data-value="143" data-label="Median time in ER"><strong>143 min</strong><span class="row-years">2 h 23 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-011307" data-volume="low" data-search="medical center barbour eufaula 36027">
+          <td class="col-name"><a href="#h-011307">Medical Center Barbour</a><span class="row-field">Eufaula, AL 36027</span></td>
+          <td class="col-num" data-value="157" data-label="Median time in ER"><strong>157 min</strong><span class="row-years">2 h 37 m</span></td>
+          <td class="col-num" data-value="184" data-label="Mental health">184 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010049" data-volume="medium" data-search="medical center enterprise enterprise 36330">
+          <td class="col-name"><a href="#h-010049">Medical Center Enterprise</a><span class="row-field">Enterprise, AL 36330</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="237" data-label="Mental health">237 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010114" data-volume="medium" data-search="medical west, an affiliate of uab health system bessemer 35022">
+          <td class="col-name"><a href="#h-010114">Medical West, An Affiliate of Uab Health System</a><span class="row-field">Bessemer, AL 35022</span></td>
+          <td class="col-num" data-value="147" data-label="Median time in ER"><strong>147 min</strong><span class="row-years">2 h 27 m</span></td>
+          <td class="col-num" data-value="153" data-label="Mental health">153 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010007" data-volume="low" data-search="mizell memorial hospital opp 36467">
+          <td class="col-name"><a href="#h-010007">Mizell Memorial Hospital</a><span class="row-field">Opp, AL 36467</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010113" data-volume="medium" data-search="mobile infirmary medical center mobile 36607">
+          <td class="col-name"><a href="#h-010113">Mobile Infirmary Medical Center</a><span class="row-field">Mobile, AL 36607</span></td>
+          <td class="col-num" data-value="185" data-label="Median time in ER"><strong>185 min</strong><span class="row-years">3 h 05 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010006" data-volume="high" data-search="north alabama medical center florence 35630">
+          <td class="col-name"><a href="#h-010006">North Alabama Medical Center</a><span class="row-field">Florence, AL 35630</span></td>
+          <td class="col-num" data-value="147" data-label="Median time in ER"><strong>147 min</strong><span class="row-years">2 h 27 m</span></td>
+          <td class="col-num" data-value="218" data-label="Mental health">218 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010157" data-volume="low" data-search="north alabama shoals hospital muscle shoals 35661">
+          <td class="col-name"><a href="#h-010157">North Alabama Shoals Hospital</a><span class="row-field">Muscle Shoals, AL 35661</span></td>
+          <td class="col-num" data-value="103" data-label="Median time in ER"><strong>103 min</strong><span class="row-years">1 h 43 m</span></td>
+          <td class="col-num" data-value="160" data-label="Mental health">160 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010129" data-volume="low" data-search="north baldwin infirmary bay minette 36507">
+          <td class="col-name"><a href="#h-010129">North Baldwin Infirmary</a><span class="row-field">Bay Minette, AL 36507</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010086" data-volume="low" data-search="north mississippi health services - south marion winfield 35594">
+          <td class="col-name"><a href="#h-010086">North Mississippi Health Services - South Marion</a><span class="row-field">Winfield, AL 35594</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="193" data-label="Mental health">193 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010078" data-volume="medium" data-search="northeast alabama regional medical center anniston 36207">
+          <td class="col-name"><a href="#h-010078">Northeast Alabama Regional Medical Center</a><span class="row-field">Anniston, AL 36207</span></td>
+          <td class="col-num" data-value="244" data-label="Median time in ER"><strong>244 min</strong><span class="row-years">4 h 04 m</span></td>
+          <td class="col-num" data-value="263" data-label="Mental health">263 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-011304" data-volume="low" data-search="ochsner choctaw general butler 36904">
+          <td class="col-name"><a href="#h-011304">Ochsner Choctaw General</a><span class="row-field">Butler, AL 36904</span></td>
+          <td class="col-num" data-value="119" data-label="Median time in ER"><strong>119 min</strong><span class="row-years">1 h 59 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010108" data-volume="medium" data-search="prattville baptist hospital prattville 36067">
+          <td class="col-name"><a href="#h-010108">Prattville Baptist Hospital</a><span class="row-field">Prattville, AL 36067</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010103" data-volume="medium" data-search="princeton baptist medical center birmingham 35211">
+          <td class="col-name"><a href="#h-010103">Princeton Baptist Medical Center</a><span class="row-field">Birmingham, AL 35211</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="217" data-label="Mental health">217 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-011302" data-volume="low" data-search="red bay hospital red bay 35582">
+          <td class="col-name"><a href="#h-011302">Red Bay Hospital</a><span class="row-field">Red Bay, AL 35582</span></td>
+          <td class="col-num" data-value="131" data-label="Median time in ER"><strong>131 min</strong><span class="row-years">2 h 11 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010046" data-volume="medium" data-search="riverview regional medical center gadsden 35901">
+          <td class="col-name"><a href="#h-010046">Riverview Regional Medical Center</a><span class="row-field">Gadsden, AL 35901</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010065" data-volume="medium" data-search="russell medical center alexander city 35010">
+          <td class="col-name"><a href="#h-010065">Russell Medical Center</a><span class="row-field">Alexander City, AL 35010</span></td>
+          <td class="col-num" data-value="138" data-label="Median time in ER"><strong>138 min</strong><span class="row-years">2 h 18 m</span></td>
+          <td class="col-num" data-value="243" data-label="Mental health">243 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010158" data-volume="low" data-search="russellville hospital russellville 35653">
+          <td class="col-name"><a href="#h-010158">Russellville Hospital</a><span class="row-field">Russellville, AL 35653</span></td>
+          <td class="col-num" data-value="101" data-label="Median time in ER"><strong>101 min</strong><span class="row-years">1 h 41 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010016" data-volume="medium" data-search="shelby baptist medical center alabaster 35007">
+          <td class="col-name"><a href="#h-010016">Shelby Baptist Medical Center</a><span class="row-field">Alabaster, AL 35007</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="96" data-label="Mental health">96 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010001" data-volume="very high" data-search="southeast health medical center dothan 36301">
+          <td class="col-name"><a href="#h-010001">Southeast Health Medical Center</a><span class="row-field">Dothan, AL 36301</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-010144" data-volume="high" data-search="springhill medical center mobile 36608">
+          <td class="col-name"><a href="#h-010144">Springhill Medical Center</a><span class="row-field">Mobile, AL 36608</span></td>
+          <td class="col-num" data-value="147" data-label="Median time in ER"><strong>147 min</strong><span class="row-years">2 h 27 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010056" data-volume="" data-search="st vincent&#x27;s birmingham birmingham 35205">
+          <td class="col-name"><a href="#h-010056">St Vincent&#x27;s Birmingham</a><span class="row-field">Birmingham, AL 35205</span></td>
+          <td class="col-num" data-value="243" data-label="Median time in ER"><strong>243 min</strong><span class="row-years">4 h 03 m</span></td>
+          <td class="col-num" data-value="441" data-label="Mental health">441 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-010173" data-volume="" data-search="st vincent&#x27;s chilton clanton 35045">
+          <td class="col-name"><a href="#h-010173">St Vincent&#x27;s Chilton</a><span class="row-field">Clanton, AL 35045</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-010130" data-volume="" data-search="st vincent&#x27;s st clair pell city 35125">
+          <td class="col-name"><a href="#h-010130">St Vincent&#x27;s St Clair</a><span class="row-field">Pell City, AL 35125</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-011305" data-volume="low" data-search="st vincents blount oneonta 35121">
+          <td class="col-name"><a href="#h-011305">St Vincents Blount</a><span class="row-field">Oneonta, AL 35121</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="144" data-label="Mental health">144 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010011" data-volume="" data-search="st. vincent&#x27;s east birmingham 35235">
+          <td class="col-name"><a href="#h-010011">St. Vincent&#x27;s East</a><span class="row-field">Birmingham, AL 35235</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-011306" data-volume="low" data-search="tanner medical center-east alabama wedowee 36278">
+          <td class="col-name"><a href="#h-011306">Tanner Medical Center-East Alabama</a><span class="row-field">Wedowee, AL 36278</span></td>
+          <td class="col-num" data-value="96" data-label="Median time in ER"><strong>96 min</strong><span class="row-years">1 h 36 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010029" data-volume="high" data-search="the east alabama healthcare authority opelika 36801">
+          <td class="col-name"><a href="#h-010029">The East Alabama Healthcare Authority</a><span class="row-field">Opelika, AL 36801</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-010150" data-volume="low" data-search="the health care authority of the city of greenville- lv stabler hospital greenville 36037">
+          <td class="col-name"><a href="#h-010150">The Health Care Authority of the City of Greenville- Lv Stabler Hospital</a><span class="row-field">Greenville, AL 36037</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="154" data-label="Mental health">154 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010100" data-volume="medium" data-search="thomas hospital fairhope 36532">
+          <td class="col-name"><a href="#h-010100">Thomas Hospital</a><span class="row-field">Fairhope, AL 36532</span></td>
+          <td class="col-num" data-value="188" data-label="Median time in ER"><strong>188 min</strong><span class="row-years">3 h 08 m</span></td>
+          <td class="col-num" data-value="206" data-label="Mental health">206 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010126" data-volume="medium" data-search="troy regional medical center troy 36081">
+          <td class="col-name"><a href="#h-010126">Troy Regional Medical Center</a><span class="row-field">Troy, AL 36081</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010033" data-volume="very high" data-search="university of alabama hospital birmingham 35233">
+          <td class="col-name"><a href="#h-010033">University of Alabama Hospital</a><span class="row-field">Birmingham, AL 35233</span></td>
+          <td class="col-num" data-value="211" data-label="Median time in ER"><strong>211 min</strong><span class="row-years">3 h 31 m</span></td>
+          <td class="col-num" data-value="399" data-label="Mental health">399 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-010090" data-volume="medium" data-search="usa health hca providence hospital, llc mobile 36608">
+          <td class="col-name"><a href="#h-010090">Usa Health Hca Providence Hospital, LLC</a><span class="row-field">Mobile, AL 36608</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010087" data-volume="medium" data-search="usa health university hospital mobile 36617">
+          <td class="col-name"><a href="#h-010087">Usa Health University Hospital</a><span class="row-field">Mobile, AL 36617</span></td>
+          <td class="col-num" data-value="211" data-label="Median time in ER"><strong>211 min</strong><span class="row-years">3 h 31 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010118" data-volume="medium" data-search="vaughan regional medical center parkway campus selma 36701">
+          <td class="col-name"><a href="#h-010118">Vaughan Regional Medical Center Parkway Campus</a><span class="row-field">Selma, AL 36701</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="764" data-label="Mental health">764 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010089" data-volume="medium" data-search="walker baptist medical center jasper 35502">
+          <td class="col-name"><a href="#h-010089">Walker Baptist Medical Center</a><span class="row-field">Jasper, AL 35502</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="151" data-label="Mental health">151 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-010112" data-volume="low" data-search="whitfield regional hospital demopolis 36732">
+          <td class="col-name"><a href="#h-010112">Whitfield Regional Hospital</a><span class="row-field">Demopolis, AL 36732</span></td>
+          <td class="col-num" data-value="119" data-label="Median time in ER"><strong>119 min</strong><span class="row-years">1 h 59 m</span></td>
+          <td class="col-num" data-value="162" data-label="Mental health">162 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-010062" data-volume="low" data-search="wiregrass medical center geneva 36340">
+          <td class="col-name"><a href="#h-010062">Wiregrass Medical Center</a><span class="row-field">Geneva, AL 36340</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-011309" data-volume="" data-search="wiregrass medical center geneva 36340">
+          <td class="col-name"><a href="#h-011309">Wiregrass Medical Center</a><span class="row-field">Geneva, AL 36340</span></td>
+          <td class="col-num" data-value="59" data-label="Median time in ER"><strong>59 min</strong><span class="row-years">0 h 59 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

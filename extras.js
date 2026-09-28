@@ -207,7 +207,14 @@
           var sorted = rows.slice().sort(function (a, b) {
             var av, bv;
             if (type === 'number') {
-              av = parseFloat(a.getAttribute('data-year')); bv = parseFloat(b.getAttribute('data-year'));
+              // A cell's data-value wins (tables with several numeric columns);
+              // otherwise the row's data-year. Blanks sort last either way.
+              var numOf = function (row) {
+                var cell = row.children[cellIndex];
+                var v = parseFloat(cell && cell.hasAttribute('data-value') ? cell.getAttribute('data-value') : row.getAttribute('data-year'));
+                return isNaN(v) ? (dir === 'asc' ? Infinity : -Infinity) : v;
+              };
+              av = numOf(a); bv = numOf(b);
             } else {
               // The cell's own text (its link/label), lowercased; ignores the small
               // secondary line (row-field/row-years) some cells carry.

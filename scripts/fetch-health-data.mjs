@@ -95,9 +95,91 @@ async function recalls() {
   return `${rows.length} recalls (${newIds.length} new since last run)`;
 }
 
+// ---- ER wait times (CMS Care Compare, Timely and Effective Care) -----------------------
+// OP_18b: median minutes from ER arrival to leaving (patients sent home).
+// OP_18c: the same for psychiatric/mental health patients.
+// OP_22: percent of patients who left before being seen.  EDV: ER volume band.
+// CMS refreshes these quarterly; weekly runs only change the file when CMS does.
+
+const CMS = 'https://data.cms.gov/provider-data/api/1';
+const CMS_SETS = { national: 'isrn-hqyy', state: 'apyc-v239', hospital: 'yv7e-xc69' };
+const ER_MEASURES = ['OP_18b', 'OP_18c', 'OP_22', 'EDV'];
+const num = (v) => (v != null && v !== '' && !Number.isNaN(Number(v)) ? Number(v) : null);
+const usDate = (s) => (s ? `${s.slice(6, 10)}-${s.slice(0, 2)}-${s.slice(3, 5)}` : '');
+// CMS names are upper case; make them readable without mangling initialisms.
+const SMALL = new Set(['of', 'and', 'the', 'at', 'in', 'for', 'on', 'by']);
+const titleCase = (s) => String(s || '').toLowerCase().replace(/\b[\w']+/g, (w, i) =>
+  (i > 0 && SMALL.has(w) ? w : /^(llc|lp|inc|pc|ii|iii|iv|va|us|st)$/.test(w) ? (w === 'st' ? 'St' : w.length <= 3 && w !== 'inc' ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)) : w[0].toUpperCase() + w.slice(1)));
+
+async function cmsQuery(set, measure) {
+  const out = [];
+  for (let offset = 0; ; ) {
+    const url = `${CMS}/datastore/query/${set}/0?conditions%5B0%5D%5Bproperty%5D=measure_id&conditions%5B0%5D%5Bvalue%5D=${measure}&limit=1500&offset=${offset}&count=true`;
+    const json = await getJson(url);
+    if (!json || !Array.isArray(json.results)) throw new Error(`CMS ${set} ${measure}: unexpected response`);
+    out.push(...json.results);
+    offset += json.results.length;
+    if (!json.results.length || offset >= (json.count || 0)) break;
+  }
+  return out;
+}
+
+async function erWait() {
+  const file = 'data/er-wait.json';
+  const old = readOld(file);
+  const meta = await getJson(`${CMS}/metastore/schemas/dataset/items/${CMS_SETS.hospital}`);
+
+  const byMeasure = {};
+  for (const level of ['national', 'state', 'hospital']) {
+    byMeasure[level] = {};
+    for (const m of ER_MEASURES) {
+      if (level !== 'hospital' && m === 'EDV') continue;
+      byMeasure[level][m] = await cmsQuery(CMS_SETS[level], m);
+    }
+  }
+  const nat = Object.fromEntries(Object.entries(byMeasure.national).map(([m, rows]) => [m, num(rows[0]?.score)]));
+  if (!nat.OP_18b) throw new Error('CMS returned no national ER median; keeping the old file');
+
+  const states = {};
+  for (const [m, rows] of Object.entries(byMeasure.state)) {
+    for (const r of rows) (states[r.state] ||= { state: r.state })[m] = num(r.score);
+  }
+  const hospitals = {};
+  for (const [m, rows] of Object.entries(byMeasure.hospital)) {
+    for (const r of rows) {
+      const h = (hospitals[r.facility_id] ||= {
+        id: r.facility_id, name: titleCase(r.facility_name), city: titleCase(r.citytown), state: r.state, zip: r.zip_code,
+      });
+      h[m] = m === 'EDV' ? (r.score && r.score !== 'Not Available' ? r.score : null) : num(r.score);
+    }
+  }
+  // Keep hospitals that report the headline measure; count them per state.
+  const reporting = Object.values(hospitals).filter((h) => h.OP_18b != null);
+  for (const h of reporting) if (states[h.state]) states[h.state].hospitals = (states[h.state].hospitals || 0) + 1;
+
+  const first = (m) => byMeasure.hospital[m]?.find((r) => r.start_date) || {};
+  const period = (m) => ({ start: usDate(first(m).start_date), end: usDate(first(m).end_date) });
+  const periods = { OP_18b: period('OP_18b'), OP_22: period('OP_22') };
+  const newData = !old || old.periods?.OP_18b?.end !== periods.OP_18b.end;
+
+  save(file, {
+    source: 'CMS Care Compare, Timely and Effective Care (data.cms.gov/provider-data)',
+    sourceModified: meta?.modified || '',
+    fetched: ymd(new Date()),
+    periods,
+    national: nat,
+    // When CMS releases a new period, remember the previous national median for "what changed".
+    previousNational: newData ? old?.national || null : old?.previousNational || null,
+    previousPeriodEnd: newData ? old?.periods?.OP_18b?.end || null : old?.previousPeriodEnd || null,
+    states: Object.values(states).sort((a, b) => a.state.localeCompare(b.state)),
+    hospitals: reporting.map((h) => ({ ...h, name: h.name })).sort((a, b) => a.state.localeCompare(b.state) || a.name.localeCompare(b.name)),
+  });
+  return `national median ${nat.OP_18b} min; ${reporting.length} hospitals in ${Object.keys(states).length} states/territories${newData && old ? ' (new CMS period)' : ''}`;
+}
+
 // ---- Run ----------------------------------------------------------------------------
 
-const DATASETS = { recalls };
+const DATASETS = { recalls, 'er-wait': erWait };
 const only = process.argv.slice(2);
 let failed = 0;
 for (const [name, run] of Object.entries(DATASETS)) {

@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Montana: 56 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Montana? The state median is 123 minutes. Compare 56 Montana hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/mt/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/mt/">
+<meta property="og:title" content="ER wait times in Montana">
+<meta property="og:description" content="How long do ER visits take in Montana? The state median is 123 minutes. Compare 56 Montana hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Montana">
+<meta name="twitter:description" content="How long do ER visits take in Montana? The state median is 123 minutes. Compare 56 Montana hospitals&#x27; emergency department times, from CMS data (Oct 2024–Sep…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/mt/#dataset",
+   "name": "Emergency department wait times in Montana hospitals",
+   "description": "Median emergency department times for 56 hospitals in Montana, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/mt/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Montana"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Montana",
+     "item": "https://www.medicsmusings.com/er-wait-times/mt/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Montana</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Montana</h1>
+      <p class="coll-intro">The typical ER visit in Montana takes 123 minutes, 39 minutes faster than the national median of 162. The quickest hospital here has a median of 70 minutes and the slowest 214, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Montana median</dt><dd>123 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>162 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>56</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-mt-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-mt-search" type="search" data-filter-table="er-mt" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-mt">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-271318" data-volume="low" data-search="barrett hospital &amp; healthcare dillon 59725">
+          <td class="col-name"><a href="#h-271318">Barrett Hospital &amp; Healthcare</a><span class="row-field">Dillon, MT 59725</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="342" data-label="Mental health">342 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271326" data-volume="low" data-search="beartooth billings clinic red lodge 59068">
+          <td class="col-name"><a href="#h-271326">Beartooth Billings Clinic</a><span class="row-field">Red Lodge, MT 59068</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270012" data-volume="medium" data-search="benefis hospitals inc great falls 59405">
+          <td class="col-name"><a href="#h-270012">Benefis Hospitals Inc</a><span class="row-field">Great Falls, MT 59405</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="188" data-label="Mental health">188 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-271307" data-volume="low" data-search="benefis teton medical center choteau 59422">
+          <td class="col-name"><a href="#h-271307">Benefis Teton Medical Center</a><span class="row-field">Choteau, MT 59422</span></td>
+          <td class="col-num" data-value="94" data-label="Median time in ER"><strong>94 min</strong><span class="row-years">1 h 34 m</span></td>
+          <td class="col-num" data-value="93" data-label="Mental health">93 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271338" data-volume="low" data-search="big horn hospital hardin 59034">
+          <td class="col-name"><a href="#h-271338">Big Horn Hospital</a><span class="row-field">Hardin, MT 59034</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="244" data-label="Mental health">244 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271311" data-volume="low" data-search="big sandy medical center big sandy 59520">
+          <td class="col-name"><a href="#h-271311">Big Sandy Medical Center</a><span class="row-field">Big Sandy, MT 59520</span></td>
+          <td class="col-num" data-value="77" data-label="Median time in ER"><strong>77 min</strong><span class="row-years">1 h 17 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271333" data-volume="low" data-search="billings clinic broadwater townsend 59644">
+          <td class="col-name"><a href="#h-271333">Billings Clinic Broadwater</a><span class="row-field">Townsend, MT 59644</span></td>
+          <td class="col-num" data-value="76" data-label="Median time in ER"><strong>76 min</strong><span class="row-years">1 h 16 m</span></td>
+          <td class="col-num" data-value="79" data-label="Mental health">79 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270004" data-volume="high" data-search="billings clinic hospital billings 59101">
+          <td class="col-name"><a href="#h-270004">Billings Clinic Hospital</a><span class="row-field">Billings, MT 59101</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="154" data-label="Mental health">154 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-271340" data-volume="low" data-search="bitterroot health - daly hospital hamilton 59840">
+          <td class="col-name"><a href="#h-271340">Bitterroot Health - Daly Hospital</a><span class="row-field">Hamilton, MT 59840</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271389" data-volume="low" data-search="bozeman health big sky medical center big sky 59716">
+          <td class="col-name"><a href="#h-271389">Bozeman Health Big Sky Medical Center</a><span class="row-field">Big Sky, MT 59716</span></td>
+          <td class="col-num" data-value="107" data-label="Median time in ER"><strong>107 min</strong><span class="row-years">1 h 47 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270057" data-volume="medium" data-search="bozeman health deaconess hospital bozeman 59715">
+          <td class="col-name"><a href="#h-270057">Bozeman Health Deaconess Hospital</a><span class="row-field">Bozeman, MT 59715</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="179" data-label="Mental health">179 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-271320" data-volume="low" data-search="cabinet peaks medical center libby 59923">
+          <td class="col-name"><a href="#h-271320">Cabinet Peaks Medical Center</a><span class="row-field">Libby, MT 59923</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271345" data-volume="low" data-search="central montana medical center lewistown 59457">
+          <td class="col-name"><a href="#h-271345">Central Montana Medical Center</a><span class="row-field">Lewistown, MT 59457</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271323" data-volume="low" data-search="clark fork valley hospital plains 59859">
+          <td class="col-name"><a href="#h-271323">Clark Fork Valley Hospital</a><span class="row-field">Plains, MT 59859</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271335" data-volume="low" data-search="community hospital of anaconda anaconda 59711">
+          <td class="col-name"><a href="#h-271335">Community Hospital of Anaconda</a><span class="row-field">Anaconda, MT 59711</span></td>
+          <td class="col-num" data-value="97" data-label="Median time in ER"><strong>97 min</strong><span class="row-years">1 h 37 m</span></td>
+          <td class="col-num" data-value="149" data-label="Mental health">149 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270023" data-volume="low" data-search="community medical center missoula 59804">
+          <td class="col-name"><a href="#h-270023">Community Medical Center</a><span class="row-field">Missoula, MT 59804</span></td>
+          <td class="col-num" data-value="138" data-label="Median time in ER"><strong>138 min</strong><span class="row-years">2 h 18 m</span></td>
+          <td class="col-num" data-value="250" data-label="Mental health">250 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271302" data-volume="" data-search="dahl memorial healthcare association inc ekalaka 59324">
+          <td class="col-name"><a href="#h-271302">Dahl Memorial Healthcare Association Inc</a><span class="row-field">Ekalaka, MT 59324</span></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271342" data-volume="" data-search="daniels memorial hospital scobey 59263">
+          <td class="col-name"><a href="#h-271342">Daniels Memorial Hospital</a><span class="row-field">Scobey, MT 59263</span></td>
+          <td class="col-num" data-value="106" data-label="Median time in ER"><strong>106 min</strong><span class="row-years">1 h 46 m</span></td>
+          <td class="col-num" data-value="114" data-label="Mental health">114 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271314" data-volume="low" data-search="deer lodge medical center deer lodge 59722">
+          <td class="col-name"><a href="#h-271314">Deer Lodge Medical Center</a><span class="row-field">Deer Lodge, MT 59722</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271301" data-volume="low" data-search="fallon medical complex hospital baker 59313">
+          <td class="col-name"><a href="#h-271301">Fallon Medical Complex Hospital</a><span class="row-field">Baker, MT 59313</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271316" data-volume="" data-search="frances mahon deaconess hospital glasgow 59230">
+          <td class="col-name"><a href="#h-271316">Frances Mahon Deaconess Hospital</a><span class="row-field">Glasgow, MT 59230</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271310" data-volume="low" data-search="garfield county health center jordan 59337">
+          <td class="col-name"><a href="#h-271310">Garfield County Health Center</a><span class="row-field">Jordan, MT 59337</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271332" data-volume="low" data-search="glendive medical center glendive 59330">
+          <td class="col-name"><a href="#h-271332">Glendive Medical Center</a><span class="row-field">Glendive, MT 59330</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270086" data-volume="low" data-search="great falls clinic hospital great falls 59405">
+          <td class="col-name"><a href="#h-270086">Great Falls Clinic Hospital</a><span class="row-field">Great Falls, MT 59405</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="149" data-label="Mental health">149 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271347" data-volume="low" data-search="holy rosary hospital miles city 59301">
+          <td class="col-name"><a href="#h-271347">Holy Rosary Hospital</a><span class="row-field">Miles City, MT 59301</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="177" data-label="Mental health">177 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270049" data-volume="high" data-search="intermountain health st vincent regional hospital billings 59107">
+          <td class="col-name"><a href="#h-270049">Intermountain Health St Vincent Regional Hospital</a><span class="row-field">Billings, MT 59107</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="150" data-label="Mental health">150 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-271317" data-volume="low" data-search="livingston healthcare livingston 59047">
+          <td class="col-name"><a href="#h-271317">Livingston Healthcare</a><span class="row-field">Livingston, MT 59047</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="146" data-label="Mental health">146 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271334" data-volume="" data-search="logan health - chester chester 59522">
+          <td class="col-name"><a href="#h-271334">Logan Health - Chester</a><span class="row-field">Chester, MT 59522</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271328" data-volume="low" data-search="logan health - shelby shelby 59474">
+          <td class="col-name"><a href="#h-271328">Logan Health - Shelby</a><span class="row-field">Shelby, MT 59474</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="114" data-label="Mental health">114 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271336" data-volume="low" data-search="logan health - whitefish whitefish 59937">
+          <td class="col-name"><a href="#h-271336">Logan Health - Whitefish</a><span class="row-field">Whitefish, MT 59937</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="174" data-label="Mental health">174 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270051" data-volume="medium" data-search="logan health medical center kalispell 59901">
+          <td class="col-name"><a href="#h-270051">Logan Health Medical Center</a><span class="row-field">Kalispell, MT 59901</span></td>
+          <td class="col-num" data-value="214" data-label="Median time in ER"><strong>214 min</strong><span class="row-years">3 h 34 m</span></td>
+          <td class="col-num" data-value="246" data-label="Mental health">246 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-271329" data-volume="" data-search="madison valley medical center ennis 59729">
+          <td class="col-name"><a href="#h-271329">Madison Valley Medical Center</a><span class="row-field">Ennis, MT 59729</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="230" data-label="Mental health">230 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271305" data-volume="low" data-search="mccone county health center circle 59215">
+          <td class="col-name"><a href="#h-271305">Mccone County Health Center</a><span class="row-field">Circle, MT 59215</span></td>
+          <td class="col-num" data-value="70" data-label="Median time in ER"><strong>70 min</strong><span class="row-years">1 h 10 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271331" data-volume="low" data-search="mineral community hospital superior 59872">
+          <td class="col-name"><a href="#h-271331">Mineral Community Hospital</a><span class="row-field">Superior, MT 59872</span></td>
+          <td class="col-num" data-value="84" data-label="Median time in ER"><strong>84 min</strong><span class="row-years">1 h 24 m</span></td>
+          <td class="col-num" data-value="136" data-label="Mental health">136 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271304" data-volume="" data-search="missouri river medical center fort benton 59442">
+          <td class="col-name"><a href="#h-271304">Missouri River Medical Center</a><span class="row-field">Fort Benton, MT 59442</span></td>
+          <td class="col-num" data-value="106" data-label="Median time in ER"><strong>106 min</strong><span class="row-years">1 h 46 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271306" data-volume="low" data-search="mountainview medical center white sulphur spring 59645">
+          <td class="col-name"><a href="#h-271306">Mountainview Medical Center</a><span class="row-field">White Sulphur Spring, MT 59645</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="112" data-label="Mental health">112 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271348" data-volume="" data-search="northern montana hospital havre 59501">
+          <td class="col-name"><a href="#h-271348">Northern Montana Hospital</a><span class="row-field">Havre, MT 59501</span></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="119" data-label="Mental health">119 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271337" data-volume="" data-search="northern rockies medical center cut bank 59427">
+          <td class="col-name"><a href="#h-271337">Northern Rockies Medical Center</a><span class="row-field">Cut Bank, MT 59427</span></td>
+          <td class="col-num" data-value="77" data-label="Median time in ER"><strong>77 min</strong><span class="row-years">1 h 17 m</span></td>
+          <td class="col-num" data-value="134" data-label="Mental health">134 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271312" data-volume="" data-search="phillips county hospital - cah malta 59538">
+          <td class="col-name"><a href="#h-271312">Phillips County Hospital - Cah</a><span class="row-field">Malta, MT 59538</span></td>
+          <td class="col-num" data-value="78" data-label="Median time in ER"><strong>78 min</strong><span class="row-years">1 h 18 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271313" data-volume="" data-search="pioneer medical center big timber 59011">
+          <td class="col-name"><a href="#h-271313">Pioneer Medical Center</a><span class="row-field">Big Timber, MT 59011</span></td>
+          <td class="col-num" data-value="88" data-label="Median time in ER"><strong>88 min</strong><span class="row-years">1 h 28 m</span></td>
+          <td class="col-num" data-value="168" data-label="Mental health">168 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271324" data-volume="low" data-search="pondera medical center conrad 59425">
+          <td class="col-name"><a href="#h-271324">Pondera Medical Center</a><span class="row-field">Conrad, MT 59425</span></td>
+          <td class="col-num" data-value="89" data-label="Median time in ER"><strong>89 min</strong><span class="row-years">1 h 29 m</span></td>
+          <td class="col-num" data-value="137" data-label="Mental health">137 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271300" data-volume="" data-search="poplar community hospital poplar 59255">
+          <td class="col-name"><a href="#h-271300">Poplar Community Hospital</a><span class="row-field">Poplar, MT 59255</span></td>
+          <td class="col-num" data-value="89" data-label="Median time in ER"><strong>89 min</strong><span class="row-years">1 h 29 m</span></td>
+          <td class="col-num" data-value="144" data-label="Mental health">144 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271309" data-volume="low" data-search="prairie community cah terry 59349">
+          <td class="col-name"><a href="#h-271309">Prairie Community Cah</a><span class="row-field">Terry, MT 59349</span></td>
+          <td class="col-num" data-value="84" data-label="Median time in ER"><strong>84 min</strong><span class="row-years">1 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271343" data-volume="low" data-search="providence st joseph medical center polson 59860">
+          <td class="col-name"><a href="#h-271343">Providence St Joseph Medical Center</a><span class="row-field">Polson, MT 59860</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="171" data-label="Mental health">171 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271308" data-volume="" data-search="roosevelt medical center culbertson 59218">
+          <td class="col-name"><a href="#h-271308">Roosevelt Medical Center</a><span class="row-field">Culbertson, MT 59218</span></td>
+          <td class="col-num" data-value="100" data-label="Median time in ER"><strong>100 min</strong><span class="row-years">1 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271327" data-volume="" data-search="rosebud health care center forsyth 59327">
+          <td class="col-name"><a href="#h-271327">Rosebud Health Care Center</a><span class="row-field">Forsyth, MT 59327</span></td>
+          <td class="col-num" data-value="97" data-label="Median time in ER"><strong>97 min</strong><span class="row-years">1 h 37 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271346" data-volume="" data-search="roundup memorial healthcare roundup 59072">
+          <td class="col-name"><a href="#h-271346">Roundup Memorial Healthcare</a><span class="row-field">Roundup, MT 59072</span></td>
+          <td class="col-num" data-value="101" data-label="Median time in ER"><strong>101 min</strong><span class="row-years">1 h 41 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271322" data-volume="low" data-search="sheridan memorial hosptial plentywood 59254">
+          <td class="col-name"><a href="#h-271322">Sheridan Memorial Hosptial</a><span class="row-field">Plentywood, MT 59254</span></td>
+          <td class="col-num" data-value="157" data-label="Median time in ER"><strong>157 min</strong><span class="row-years">2 h 37 m</span></td>
+          <td class="col-num" data-value="244" data-label="Mental health">244 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271344" data-volume="low" data-search="sidney health center sidney 59270">
+          <td class="col-name"><a href="#h-271344">Sidney Health Center</a><span class="row-field">Sidney, MT 59270</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="198" data-label="Mental health">198 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270017" data-volume="low" data-search="st james hospital butte 59701">
+          <td class="col-name"><a href="#h-270017">St James Hospital</a><span class="row-field">Butte, MT 59701</span></td>
+          <td class="col-num" data-value="153" data-label="Median time in ER"><strong>153 min</strong><span class="row-years">2 h 33 m</span></td>
+          <td class="col-num" data-value="183" data-label="Mental health">183 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271325" data-volume="low" data-search="st luke community hospital ronan 59864">
+          <td class="col-name"><a href="#h-271325">St Luke Community Hospital</a><span class="row-field">Ronan, MT 59864</span></td>
+          <td class="col-num" data-value="109" data-label="Median time in ER"><strong>109 min</strong><span class="row-years">1 h 49 m</span></td>
+          <td class="col-num" data-value="135" data-label="Mental health">135 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-270003" data-volume="medium" data-search="st peters health helena 59601">
+          <td class="col-name"><a href="#h-270003">St Peters Health</a><span class="row-field">Helena, MT 59601</span></td>
+          <td class="col-num" data-value="179" data-label="Median time in ER"><strong>179 min</strong><span class="row-years">2 h 59 m</span></td>
+          <td class="col-num" data-value="234" data-label="Mental health">234 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-270014" data-volume="medium" data-search="st. patrick hospital missoula 59802">
+          <td class="col-name"><a href="#h-270014">St. Patrick Hospital</a><span class="row-field">Missoula, MT 59802</span></td>
+          <td class="col-num" data-value="163" data-label="Median time in ER"><strong>163 min</strong><span class="row-years">2 h 43 m</span></td>
+          <td class="col-num" data-value="216" data-label="Mental health">216 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-271330" data-volume="low" data-search="stillwater billings clinic columbus 59019">
+          <td class="col-name"><a href="#h-271330">Stillwater Billings Clinic</a><span class="row-field">Columbus, MT 59019</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-271341" data-volume="" data-search="trinity hospital wolf point 59201">
+          <td class="col-name"><a href="#h-271341">Trinity Hospital</a><span class="row-field">Wolf Point, MT 59201</span></td>
+          <td class="col-num" data-value="116" data-label="Median time in ER"><strong>116 min</strong><span class="row-years">1 h 56 m</span></td>
+          <td class="col-num" data-value="168" data-label="Mental health">168 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-271321" data-volume="" data-search="wheatland memorial hospital harlowton 59036">
+          <td class="col-name"><a href="#h-271321">Wheatland Memorial Hospital</a><span class="row-field">Harlowton, MT 59036</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

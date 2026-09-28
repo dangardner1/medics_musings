@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in New Jersey: 60 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in New Jersey? The state median is 186 minutes. Compare 60 New Jersey hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/nj/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/nj/">
+<meta property="og:title" content="ER wait times in New Jersey">
+<meta property="og:description" content="How long do ER visits take in New Jersey? The state median is 186 minutes. Compare 60 New Jersey hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in New Jersey">
+<meta name="twitter:description" content="How long do ER visits take in New Jersey? The state median is 186 minutes. Compare 60 New Jersey hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/nj/#dataset",
+   "name": "Emergency department wait times in New Jersey hospitals",
+   "description": "Median emergency department times for 60 hospitals in New Jersey, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/nj/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "New Jersey"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "New Jersey",
+     "item": "https://www.medicsmusings.com/er-wait-times/nj/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>New Jersey</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in New Jersey</h1>
+      <p class="coll-intro">The typical ER visit in New Jersey takes 186 minutes, 24 minutes slower than the national median of 162. The quickest hospital here has a median of 114 minutes and the slowest 307, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>New Jersey median</dt><dd>186 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>292 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>60</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-nj-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-nj-search" type="search" data-filter-table="er-nj" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-nj">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-310115" data-volume="medium" data-search="ahs hospital corp hackettstown 07840">
+          <td class="col-name"><a href="#h-310115">Ahs Hospital Corp</a><span class="row-field">Hackettstown, NJ 07840</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310064" data-volume="very high" data-search="atlanticare regional medical center - city campus atlantic city 08401">
+          <td class="col-name"><a href="#h-310064">Atlanticare Regional Medical Center - City Campus</a><span class="row-field">Atlantic City, NJ 08401</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="341" data-label="Mental health">341 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310112" data-volume="high" data-search="bayshore medical center holmdel 07733">
+          <td class="col-name"><a href="#h-310112">Bayshore Medical Center</a><span class="row-field">Holmdel, NJ 07733</span></td>
+          <td class="col-num" data-value="161" data-label="Median time in ER"><strong>161 min</strong><span class="row-years">2 h 41 m</span></td>
+          <td class="col-num" data-value="436" data-label="Mental health">436 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310058" data-volume="low" data-search="bergen new bridge medical center paramus 07652">
+          <td class="col-name"><a href="#h-310058">Bergen New Bridge Medical Center</a><span class="row-field">Paramus, NJ 07652</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="188" data-label="Mental health">188 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-310011" data-volume="medium" data-search="cape regional medical center inc cape may court house 08210">
+          <td class="col-name"><a href="#h-310011">Cape Regional Medical Center Inc</a><span class="row-field">Cape May Court House, NJ 08210</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="338" data-label="Mental health">338 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310044" data-volume="very high" data-search="capital health medical center - hopewell pennington 08534">
+          <td class="col-name"><a href="#h-310044">Capital Health Medical Center - Hopewell</a><span class="row-field">Pennington, NJ 08534</span></td>
+          <td class="col-num" data-value="209" data-label="Median time in ER"><strong>209 min</strong><span class="row-years">3 h 29 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310092" data-volume="very high" data-search="capital health regional medical center trenton 08638">
+          <td class="col-name"><a href="#h-310092">Capital Health Regional Medical Center</a><span class="row-field">Trenton, NJ 08638</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="247" data-label="Mental health">247 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310025" data-volume="low" data-search="carepoint health - bayonne medical center bayonne 07002">
+          <td class="col-name"><a href="#h-310025">Carepoint Health - Bayonne Medical Center</a><span class="row-field">Bayonne, NJ 07002</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="306" data-label="Mental health">306 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-310040" data-volume="medium" data-search="carepoint health-hoboken university medical center hoboken 07030">
+          <td class="col-name"><a href="#h-310040">Carepoint Health-Hoboken University Medical Center</a><span class="row-field">Hoboken, NJ 07030</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="236" data-label="Mental health">236 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310083" data-volume="medium" data-search="carewell health medical center east orange 07018">
+          <td class="col-name"><a href="#h-310083">Carewell Health Medical Center</a><span class="row-field">East Orange, NJ 07018</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310111" data-volume="high" data-search="centrastate medical center freehold 07728">
+          <td class="col-name"><a href="#h-310111">Centrastate Medical Center</a><span class="row-field">Freehold, NJ 07728</span></td>
+          <td class="col-num" data-value="219" data-label="Median time in ER"><strong>219 min</strong><span class="row-years">3 h 39 m</span></td>
+          <td class="col-num" data-value="335" data-label="Mental health">335 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310017" data-volume="high" data-search="chilton medical center pompton plains 07444">
+          <td class="col-name"><a href="#h-310017">Chilton Medical Center</a><span class="row-field">Pompton Plains, NJ 07444</span></td>
+          <td class="col-num" data-value="207" data-label="Median time in ER"><strong>207 min</strong><span class="row-years">3 h 27 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310009" data-volume="very high" data-search="clara maass medical center belleville 07109">
+          <td class="col-name"><a href="#h-310009">Clara Maass Medical Center</a><span class="row-field">Belleville, NJ 07109</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="206" data-label="Mental health">206 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310041" data-volume="very high" data-search="community medical center toms river 08755">
+          <td class="col-name"><a href="#h-310041">Community Medical Center</a><span class="row-field">Toms River, NJ 08755</span></td>
+          <td class="col-num" data-value="180" data-label="Median time in ER"><strong>180 min</strong><span class="row-years">3 h 00 m</span></td>
+          <td class="col-num" data-value="148" data-label="Mental health">148 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310014" data-volume="very high" data-search="cooper university hospital camden 08103">
+          <td class="col-name"><a href="#h-310014">Cooper University Hospital</a><span class="row-field">Camden, NJ 08103</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="279" data-label="Mental health">279 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310076" data-volume="very high" data-search="cooperman barnabas medical center livingston 07039">
+          <td class="col-name"><a href="#h-310076">Cooperman Barnabas Medical Center</a><span class="row-field">Livingston, NJ 07039</span></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310045" data-volume="very high" data-search="englewood hospital and medical center englewood 07631">
+          <td class="col-name"><a href="#h-310045">Englewood Hospital and Medical Center</a><span class="row-field">Englewood, NJ 07631</span></td>
+          <td class="col-num" data-value="183" data-label="Median time in ER"><strong>183 min</strong><span class="row-years">3 h 03 m</span></td>
+          <td class="col-num" data-value="247" data-label="Mental health">247 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310130" data-volume="low" data-search="hackensack meridian health pascack valley medical westwood 07675">
+          <td class="col-name"><a href="#h-310130">Hackensack Meridian Health Pascack Valley Medical</a><span class="row-field">Westwood, NJ 07675</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-310054" data-volume="high" data-search="hackensack meridian mountainside medical montclair 07042">
+          <td class="col-name"><a href="#h-310054">Hackensack Meridian Mountainside Medical</a><span class="row-field">Montclair, NJ 07042</span></td>
+          <td class="col-num" data-value="229" data-label="Median time in ER"><strong>229 min</strong><span class="row-years">3 h 49 m</span></td>
+          <td class="col-num" data-value="385" data-label="Mental health">385 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310001" data-volume="very high" data-search="hackensack university medical center hackensack 07601">
+          <td class="col-name"><a href="#h-310001">Hackensack University Medical Center</a><span class="row-field">Hackensack, NJ 07601</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="249" data-label="Mental health">249 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310016" data-volume="medium" data-search="heights university hospital jersey city 07306">
+          <td class="col-name"><a href="#h-310016">Heights University Hospital</a><span class="row-field">Jersey City, NJ 07306</span></td>
+          <td class="col-num" data-value="159" data-label="Median time in ER"><strong>159 min</strong><span class="row-years">2 h 39 m</span></td>
+          <td class="col-num" data-value="240" data-label="Mental health">240 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310008" data-volume="high" data-search="holy name medical center teaneck 07666">
+          <td class="col-name"><a href="#h-310008">Holy Name Medical Center</a><span class="row-field">Teaneck, NJ 07666</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="390" data-label="Mental health">390 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310118" data-volume="low" data-search="hudson regional hospital secaucus 07094">
+          <td class="col-name"><a href="#h-310118">Hudson Regional Hospital</a><span class="row-field">Secaucus, NJ 07094</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="328" data-label="Mental health">328 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-310005" data-volume="medium" data-search="hunterdon medical center flemington 08822">
+          <td class="col-name"><a href="#h-310005">Hunterdon Medical Center</a><span class="row-field">Flemington, NJ 08822</span></td>
+          <td class="col-num" data-value="230" data-label="Median time in ER"><strong>230 min</strong><span class="row-years">3 h 50 m</span></td>
+          <td class="col-num" data-value="397" data-label="Mental health">397 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310069" data-volume="very high" data-search="inspira medical center mullica hill elmer 08318">
+          <td class="col-name"><a href="#h-310069">Inspira Medical Center Mullica Hill</a><span class="row-field">Elmer, NJ 08318</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="384" data-label="Mental health">384 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310032" data-volume="very high" data-search="inspira medical center vineland vineland 08360">
+          <td class="col-name"><a href="#h-310032">Inspira Medical Center Vineland</a><span class="row-field">Vineland, NJ 08360</span></td>
+          <td class="col-num" data-value="201" data-label="Median time in ER"><strong>201 min</strong><span class="row-years">3 h 21 m</span></td>
+          <td class="col-num" data-value="304" data-label="Mental health">304 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310086" data-volume="very high" data-search="jefferson stratford hospital stratford 08084">
+          <td class="col-name"><a href="#h-310086">Jefferson Stratford Hospital</a><span class="row-field">Stratford, NJ 08084</span></td>
+          <td class="col-num" data-value="215" data-label="Median time in ER"><strong>215 min</strong><span class="row-years">3 h 35 m</span></td>
+          <td class="col-num" data-value="243" data-label="Mental health">243 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310074" data-volume="very high" data-search="jersey city medical center jersey city 07302">
+          <td class="col-name"><a href="#h-310074">Jersey City Medical Center</a><span class="row-field">Jersey City, NJ 07302</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="338" data-label="Mental health">338 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310073" data-volume="very high" data-search="jersey shore university medical center neptune 07754">
+          <td class="col-name"><a href="#h-310073">Jersey Shore University Medical Center</a><span class="row-field">Neptune, NJ 07754</span></td>
+          <td class="col-num" data-value="210" data-label="Median time in ER"><strong>210 min</strong><span class="row-years">3 h 30 m</span></td>
+          <td class="col-num" data-value="911" data-label="Mental health">911 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310108" data-volume="very high" data-search="jfk university medical center edison 08818">
+          <td class="col-name"><a href="#h-310108">Jfk University Medical Center</a><span class="row-field">Edison, NJ 08818</span></td>
+          <td class="col-num" data-value="197" data-label="Median time in ER"><strong>197 min</strong><span class="row-years">3 h 17 m</span></td>
+          <td class="col-num" data-value="452" data-label="Mental health">452 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310075" data-volume="high" data-search="monmouth medical center long branch 07740">
+          <td class="col-name"><a href="#h-310075">Monmouth Medical Center</a><span class="row-field">Long Branch, NJ 07740</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310084" data-volume="medium" data-search="monmouth medical center-southern campus lakewood 08701">
+          <td class="col-name"><a href="#h-310084">Monmouth Medical Center-Southern Campus</a><span class="row-field">Lakewood, NJ 08701</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="376" data-label="Mental health">376 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310015" data-volume="very high" data-search="morristown medical center morristown 07962">
+          <td class="col-name"><a href="#h-310015">Morristown Medical Center</a><span class="row-field">Morristown, NJ 07962</span></td>
+          <td class="col-num" data-value="250" data-label="Median time in ER"><strong>250 min</strong><span class="row-years">4 h 10 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310002" data-volume="very high" data-search="newark beth israel medical center newark 07112">
+          <td class="col-name"><a href="#h-310002">Newark Beth Israel Medical Center</a><span class="row-field">Newark, NJ 07112</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="246" data-label="Mental health">246 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310028" data-volume="medium" data-search="newton medical center newton 07860">
+          <td class="col-name"><a href="#h-310028">Newton Medical Center</a><span class="row-field">Newton, NJ 07860</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310052" data-volume="very high" data-search="ocean medical center brick 08724">
+          <td class="col-name"><a href="#h-310052">Ocean Medical Center</a><span class="row-field">Brick, NJ 08724</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310051" data-volume="very high" data-search="overlook medical center summit 07901">
+          <td class="col-name"><a href="#h-310051">Overlook Medical Center</a><span class="row-field">Summit, NJ 07901</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310003" data-volume="high" data-search="palisades medical center north bergen 07047">
+          <td class="col-name"><a href="#h-310003">Palisades Medical Center</a><span class="row-field">North Bergen, NJ 07047</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="346" data-label="Mental health">346 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310039" data-volume="high" data-search="raritan bay medical center perth amboy 08861">
+          <td class="col-name"><a href="#h-310039">Raritan Bay Medical Center</a><span class="row-field">Perth Amboy, NJ 08861</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="412" data-label="Mental health">412 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310034" data-volume="medium" data-search="riverview medical center red bank 07701">
+          <td class="col-name"><a href="#h-310034">Riverview Medical Center</a><span class="row-field">Red Bank, NJ 07701</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="684" data-label="Mental health">684 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310038" data-volume="very high" data-search="robert wood johnson university hospital new brunswick 08901">
+          <td class="col-name"><a href="#h-310038">Robert Wood Johnson University Hospital</a><span class="row-field">New Brunswick, NJ 08901</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="156" data-label="Mental health">156 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310048" data-volume="high" data-search="robert wood johnson university hospital - somerset somerville 08876">
+          <td class="col-name"><a href="#h-310048">Robert Wood Johnson University Hospital - Somerset</a><span class="row-field">Somerville, NJ 08876</span></td>
+          <td class="col-num" data-value="188" data-label="Median time in ER"><strong>188 min</strong><span class="row-years">3 h 08 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310110" data-volume="medium" data-search="robert wood johnson university hospital at hamilton hamilton 08690">
+          <td class="col-name"><a href="#h-310110">Robert Wood Johnson University Hospital at Hamilton</a><span class="row-field">Hamilton, NJ 08690</span></td>
+          <td class="col-num" data-value="172" data-label="Median time in ER"><strong>172 min</strong><span class="row-years">2 h 52 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310024" data-volume="medium" data-search="robert wood johnson university hospital at rahway rahway 07065">
+          <td class="col-name"><a href="#h-310024">Robert Wood Johnson University Hospital at Rahway</a><span class="row-field">Rahway, NJ 07065</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310050" data-volume="high" data-search="saint clare&#x27;s hospital/ denville campus denville 07834">
+          <td class="col-name"><a href="#h-310050">Saint Clare&#x27;s Hospital/ Denville Campus</a><span class="row-field">Denville, NJ 07834</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="570" data-label="Mental health">570 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310096" data-volume="medium" data-search="saint michael&#x27;s medical center newark 07102">
+          <td class="col-name"><a href="#h-310096">Saint Michael&#x27;s Medical Center</a><span class="row-field">Newark, NJ 07102</span></td>
+          <td class="col-num" data-value="169" data-label="Median time in ER"><strong>169 min</strong><span class="row-years">2 h 49 m</span></td>
+          <td class="col-num" data-value="235" data-label="Mental health">235 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310070" data-volume="high" data-search="saint peter&#x27;s university hospital new brunswick 08901">
+          <td class="col-name"><a href="#h-310070">Saint Peter&#x27;s University Hospital</a><span class="row-field">New Brunswick, NJ 08901</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="748" data-label="Mental health">748 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310047" data-volume="high" data-search="shore medical center somers point 08244">
+          <td class="col-name"><a href="#h-310047">Shore Medical Center</a><span class="row-field">Somers Point, NJ 08244</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="249" data-label="Mental health">249 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310113" data-volume="high" data-search="southern ocean medical center manahawkin 08050">
+          <td class="col-name"><a href="#h-310113">Southern Ocean Medical Center</a><span class="row-field">Manahawkin, NJ 08050</span></td>
+          <td class="col-num" data-value="163" data-label="Median time in ER"><strong>163 min</strong><span class="row-years">2 h 43 m</span></td>
+          <td class="col-num" data-value="249" data-label="Mental health">249 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310019" data-volume="very high" data-search="st joseph&#x27;s university medical center inc paterson 07503">
+          <td class="col-name"><a href="#h-310019">St Joseph&#x27;s University Medical Center Inc</a><span class="row-field">Paterson, NJ 07503</span></td>
+          <td class="col-num" data-value="217" data-label="Median time in ER"><strong>217 min</strong><span class="row-years">3 h 37 m</span></td>
+          <td class="col-num" data-value="380" data-label="Mental health">380 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310060" data-volume="medium" data-search="st luke&#x27;s warren hospital phillipsburg 08865">
+          <td class="col-name"><a href="#h-310060">St Luke&#x27;s Warren Hospital</a><span class="row-field">Phillipsburg, NJ 08865</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310006" data-volume="medium" data-search="st mary&#x27;s general hospital passaic 07055">
+          <td class="col-name"><a href="#h-310006">St Mary&#x27;s General Hospital</a><span class="row-field">Passaic, NJ 07055</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="388" data-label="Mental health">388 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310119" data-volume="very high" data-search="the university hospital newark 07103">
+          <td class="col-name"><a href="#h-310119">The University Hospital</a><span class="row-field">Newark, NJ 07103</span></td>
+          <td class="col-num" data-value="307" data-label="Median time in ER"><strong>307 min</strong><span class="row-years">5 h 07 m</span></td>
+          <td class="col-num" data-value="794" data-label="Mental health">794 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310027" data-volume="high" data-search="trinitas regional medical center elizabeth 07207">
+          <td class="col-name"><a href="#h-310027">Trinitas Regional Medical Center</a><span class="row-field">Elizabeth, NJ 07207</span></td>
+          <td class="col-num" data-value="209" data-label="Median time in ER"><strong>209 min</strong><span class="row-years">3 h 29 m</span></td>
+          <td class="col-num" data-value="187" data-label="Mental health">187 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310010" data-volume="high" data-search="university medical center of princeton at plainsboro plainsboro 08536">
+          <td class="col-name"><a href="#h-310010">University Medical Center of Princeton at Plainsboro</a><span class="row-field">Plainsboro, NJ 08536</span></td>
+          <td class="col-num" data-value="221" data-label="Median time in ER"><strong>221 min</strong><span class="row-years">3 h 41 m</span></td>
+          <td class="col-num" data-value="445" data-label="Mental health">445 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310012" data-volume="very high" data-search="valley hospital paramus 07652">
+          <td class="col-name"><a href="#h-310012">Valley Hospital</a><span class="row-field">Paramus, NJ 07652</span></td>
+          <td class="col-num" data-value="227" data-label="Median time in ER"><strong>227 min</strong><span class="row-years">3 h 47 m</span></td>
+          <td class="col-num" data-value="338" data-label="Mental health">338 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-310057" data-volume="high" data-search="virtua mount holly hospital mount holly 08060">
+          <td class="col-name"><a href="#h-310057">Virtua Mount Holly Hospital</a><span class="row-field">Mount Holly, NJ 08060</span></td>
+          <td class="col-num" data-value="198" data-label="Median time in ER"><strong>198 min</strong><span class="row-years">3 h 18 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310029" data-volume="high" data-search="virtua our lady of lourdes hospital camden 08103">
+          <td class="col-name"><a href="#h-310029">Virtua Our Lady of Lourdes Hospital</a><span class="row-field">Camden, NJ 08103</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="299" data-label="Mental health">299 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-310061" data-volume="medium" data-search="virtua willingboro hospital willingboro 08046">
+          <td class="col-name"><a href="#h-310061">Virtua Willingboro Hospital</a><span class="row-field">Willingboro, NJ 08046</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="335" data-label="Mental health">335 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-310022" data-volume="very high" data-search="west jersey hospital voorhees 08043">
+          <td class="col-name"><a href="#h-310022">West Jersey Hospital</a><span class="row-field">Voorhees, NJ 08043</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

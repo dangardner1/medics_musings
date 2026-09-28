@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Maryland: 40 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Maryland? The state median is 246 minutes. Compare 40 Maryland hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/md/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/md/">
+<meta property="og:title" content="ER wait times in Maryland">
+<meta property="og:description" content="How long do ER visits take in Maryland? The state median is 246 minutes. Compare 40 Maryland hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Maryland">
+<meta name="twitter:description" content="How long do ER visits take in Maryland? The state median is 246 minutes. Compare 40 Maryland hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/md/#dataset",
+   "name": "Emergency department wait times in Maryland hospitals",
+   "description": "Median emergency department times for 40 hospitals in Maryland, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/md/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Maryland"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Maryland",
+     "item": "https://www.medicsmusings.com/er-wait-times/md/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Maryland</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Maryland</h1>
+      <p class="coll-intro">The typical ER visit in Maryland takes 246 minutes, 84 minutes slower than the national median of 162. The quickest hospital here has a median of 126 minutes and the slowest 367, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Maryland median</dt><dd>246 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>415 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>3%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>40</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-md-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-md-search" type="search" data-filter-table="er-md" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-md">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-210060" data-volume="medium" data-search="adventist healthcare fort washington medical ctr fort washington 20744">
+          <td class="col-name"><a href="#h-210060">Adventist Healthcare Fort Washington Medical Ctr</a><span class="row-field">Fort Washington, MD 20744</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210057" data-volume="very high" data-search="adventist healthcare shady grove medical center rockville 20850">
+          <td class="col-name"><a href="#h-210057">Adventist Healthcare Shady Grove Medical Center</a><span class="row-field">Rockville, MD 20850</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="236" data-label="Mental health">236 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210016" data-volume="high" data-search="adventist healthcare white oak medical center silver spring 20904">
+          <td class="col-name"><a href="#h-210016">Adventist Healthcare White Oak Medical Center</a><span class="row-field">Silver Spring, MD 20904</span></td>
+          <td class="col-num" data-value="296" data-label="Median time in ER"><strong>296 min</strong><span class="row-years">4 h 56 m</span></td>
+          <td class="col-num" data-value="514" data-label="Mental health">514 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210061" data-volume="medium" data-search="atlantic general hospital berlin 21811">
+          <td class="col-name"><a href="#h-210061">Atlantic General Hospital</a><span class="row-field">Berlin, MD 21811</span></td>
+          <td class="col-num" data-value="147" data-label="Median time in ER"><strong>147 min</strong><span class="row-years">2 h 27 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210039" data-volume="medium" data-search="calverthealth medical center prince frederick 20678">
+          <td class="col-name"><a href="#h-210039">Calverthealth Medical Center</a><span class="row-field">Prince Frederick, MD 20678</span></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="330" data-label="Mental health">330 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210033" data-volume="high" data-search="carroll hospital center westminster 21157">
+          <td class="col-name"><a href="#h-210033">Carroll Hospital Center</a><span class="row-field">Westminster, MD 21157</span></td>
+          <td class="col-num" data-value="214" data-label="Median time in ER"><strong>214 min</strong><span class="row-years">3 h 34 m</span></td>
+          <td class="col-num" data-value="324" data-label="Mental health">324 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210005" data-volume="very high" data-search="frederick health hospital frederick 21701">
+          <td class="col-name"><a href="#h-210005">Frederick Health Hospital</a><span class="row-field">Frederick, MD 21701</span></td>
+          <td class="col-num" data-value="230" data-label="Median time in ER"><strong>230 min</strong><span class="row-years">3 h 50 m</span></td>
+          <td class="col-num" data-value="326" data-label="Mental health">326 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210017" data-volume="low" data-search="garrett regional medical center oakland 21550">
+          <td class="col-name"><a href="#h-210017">Garrett Regional Medical Center</a><span class="row-field">Oakland, MD 21550</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="178" data-label="Mental health">178 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-210044" data-volume="high" data-search="greater baltimore medical center baltimore 21204">
+          <td class="col-name"><a href="#h-210044">Greater Baltimore Medical Center</a><span class="row-field">Baltimore, MD 21204</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="457" data-label="Mental health">457 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210065" data-volume="medium" data-search="holy cross germantown hospital germantown 20876">
+          <td class="col-name"><a href="#h-210065">Holy Cross Germantown Hospital</a><span class="row-field">Germantown, MD 20876</span></td>
+          <td class="col-num" data-value="233" data-label="Median time in ER"><strong>233 min</strong><span class="row-years">3 h 53 m</span></td>
+          <td class="col-num" data-value="524" data-label="Mental health">524 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210004" data-volume="very high" data-search="holy cross hospital silver spring 20910">
+          <td class="col-name"><a href="#h-210004">Holy Cross Hospital</a><span class="row-field">Silver Spring, MD 20910</span></td>
+          <td class="col-num" data-value="314" data-label="Median time in ER"><strong>314 min</strong><span class="row-years">5 h 14 m</span></td>
+          <td class="col-num" data-value="440" data-label="Mental health">440 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210029" data-volume="high" data-search="johns hopkins bayview medical center baltimore 21224">
+          <td class="col-name"><a href="#h-210029">Johns Hopkins Bayview Medical Center</a><span class="row-field">Baltimore, MD 21224</span></td>
+          <td class="col-num" data-value="322" data-label="Median time in ER"><strong>322 min</strong><span class="row-years">5 h 22 m</span></td>
+          <td class="col-num" data-value="848" data-label="Mental health">848 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210009" data-volume="very high" data-search="johns hopkins hospital, the baltimore 21287">
+          <td class="col-name"><a href="#h-210009">Johns Hopkins Hospital, the</a><span class="row-field">Baltimore, MD 21287</span></td>
+          <td class="col-num" data-value="308" data-label="Median time in ER"><strong>308 min</strong><span class="row-years">5 h 08 m</span></td>
+          <td class="col-num" data-value="538" data-label="Mental health">538 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210048" data-volume="very high" data-search="johns hopkins howard county medical center columbia 21044">
+          <td class="col-name"><a href="#h-210048">Johns Hopkins Howard County Medical Center</a><span class="row-field">Columbia, MD 21044</span></td>
+          <td class="col-num" data-value="266" data-label="Median time in ER"><strong>266 min</strong><span class="row-years">4 h 26 m</span></td>
+          <td class="col-num" data-value="1166" data-label="Mental health">1166 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210023" data-volume="" data-search="luminis health anne arundel medical center, inc annapolis 21401">
+          <td class="col-name"><a href="#h-210023">Luminis Health Anne Arundel Medical Center, Inc</a><span class="row-field">Annapolis, MD 21401</span></td>
+          <td class="col-num" data-value="245" data-label="Median time in ER"><strong>245 min</strong><span class="row-years">4 h 05 m</span></td>
+          <td class="col-num" data-value="454" data-label="Mental health">454 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210051" data-volume="" data-search="luminis health doctors community medical ctr, inc lanham 20706">
+          <td class="col-name"><a href="#h-210051">Luminis Health Doctors Community Medical Ctr, Inc</a><span class="row-field">Lanham, MD 20706</span></td>
+          <td class="col-num" data-value="272" data-label="Median time in ER"><strong>272 min</strong><span class="row-years">4 h 32 m</span></td>
+          <td class="col-num" data-value="432" data-label="Mental health">432 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210015" data-volume="very high" data-search="medstar franklin square medical center rosedale 21237">
+          <td class="col-name"><a href="#h-210015">Medstar Franklin Square Medical Center</a><span class="row-field">Rosedale, MD 21237</span></td>
+          <td class="col-num" data-value="367" data-label="Median time in ER"><strong>367 min</strong><span class="row-years">6 h 07 m</span></td>
+          <td class="col-num" data-value="332" data-label="Mental health">332 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210056" data-volume="high" data-search="medstar good samaritan hospital baltimore 21239">
+          <td class="col-name"><a href="#h-210056">Medstar Good Samaritan Hospital</a><span class="row-field">Baltimore, MD 21239</span></td>
+          <td class="col-num" data-value="247" data-label="Median time in ER"><strong>247 min</strong><span class="row-years">4 h 07 m</span></td>
+          <td class="col-num" data-value="281" data-label="Mental health">281 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210034" data-volume="high" data-search="medstar harbor hospital baltimore 21225">
+          <td class="col-name"><a href="#h-210034">Medstar Harbor Hospital</a><span class="row-field">Baltimore, MD 21225</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="287" data-label="Mental health">287 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210018" data-volume="medium" data-search="medstar montgomery medical center olney 20832">
+          <td class="col-name"><a href="#h-210018">Medstar Montgomery Medical Center</a><span class="row-field">Olney, MD 20832</span></td>
+          <td class="col-num" data-value="259" data-label="Median time in ER"><strong>259 min</strong><span class="row-years">4 h 19 m</span></td>
+          <td class="col-num" data-value="391" data-label="Mental health">391 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210028" data-volume="high" data-search="medstar saint mary&#x27;s hospital leonardtown 20650">
+          <td class="col-name"><a href="#h-210028">Medstar Saint Mary&#x27;s Hospital</a><span class="row-field">Leonardtown, MD 20650</span></td>
+          <td class="col-num" data-value="256" data-label="Median time in ER"><strong>256 min</strong><span class="row-years">4 h 16 m</span></td>
+          <td class="col-num" data-value="251" data-label="Mental health">251 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210062" data-volume="high" data-search="medstar southern maryland hospital center clinton 20735">
+          <td class="col-name"><a href="#h-210062">Medstar Southern Maryland Hospital Center</a><span class="row-field">Clinton, MD 20735</span></td>
+          <td class="col-num" data-value="356" data-label="Median time in ER"><strong>356 min</strong><span class="row-years">5 h 56 m</span></td>
+          <td class="col-num" data-value="372" data-label="Mental health">372 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210024" data-volume="high" data-search="medstar union memorial hospital baltimore 21218">
+          <td class="col-name"><a href="#h-210024">Medstar Union Memorial Hospital</a><span class="row-field">Baltimore, MD 21218</span></td>
+          <td class="col-num" data-value="218" data-label="Median time in ER"><strong>218 min</strong><span class="row-years">3 h 38 m</span></td>
+          <td class="col-num" data-value="931" data-label="Mental health">931 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210008" data-volume="" data-search="mercy medical center inc baltimore 21202">
+          <td class="col-name"><a href="#h-210008">Mercy Medical Center Inc</a><span class="row-field">Baltimore, MD 21202</span></td>
+          <td class="col-num" data-value="237" data-label="Median time in ER"><strong>237 min</strong><span class="row-years">3 h 57 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210001" data-volume="very high" data-search="meritus medical center hagerstown 21742">
+          <td class="col-name"><a href="#h-210001">Meritus Medical Center</a><span class="row-field">Hagerstown, MD 21742</span></td>
+          <td class="col-num" data-value="250" data-label="Median time in ER"><strong>250 min</strong><span class="row-years">4 h 10 m</span></td>
+          <td class="col-num" data-value="335" data-label="Mental health">335 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210040" data-volume="high" data-search="northwest hospital center randallstown 21133">
+          <td class="col-name"><a href="#h-210040">Northwest Hospital Center</a><span class="row-field">Randallstown, MD 21133</span></td>
+          <td class="col-num" data-value="251" data-label="Median time in ER"><strong>251 min</strong><span class="row-years">4 h 11 m</span></td>
+          <td class="col-num" data-value="358" data-label="Mental health">358 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210012" data-volume="very high" data-search="sinai hospital of baltimore baltimore 21215">
+          <td class="col-name"><a href="#h-210012">Sinai Hospital of Baltimore</a><span class="row-field">Baltimore, MD 21215</span></td>
+          <td class="col-num" data-value="257" data-label="Median time in ER"><strong>257 min</strong><span class="row-years">4 h 17 m</span></td>
+          <td class="col-num" data-value="592" data-label="Mental health">592 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210022" data-volume="high" data-search="suburban hospital bethesda 20814">
+          <td class="col-name"><a href="#h-210022">Suburban Hospital</a><span class="row-field">Bethesda, MD 20814</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="337" data-label="Mental health">337 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210019" data-volume="very high" data-search="tidalhealth peninsula regional, inc salisbury 21801">
+          <td class="col-name"><a href="#h-210019">Tidalhealth Peninsula Regional, Inc</a><span class="row-field">Salisbury, MD 21801</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="266" data-label="Mental health">266 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210049" data-volume="" data-search="umd upper chesapeake medical center bel air 21014">
+          <td class="col-name"><a href="#h-210049">Umd Upper Chesapeake Medical Center</a><span class="row-field">Bel Air, MD 21014</span></td>
+          <td class="col-num" data-value="239" data-label="Median time in ER"><strong>239 min</strong><span class="row-years">3 h 59 m</span></td>
+          <td class="col-num" data-value="586" data-label="Mental health">586 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210032" data-volume="medium" data-search="union hospital of cecil county elkton 21921">
+          <td class="col-name"><a href="#h-210032">Union Hospital of Cecil County</a><span class="row-field">Elkton, MD 21921</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="426" data-label="Mental health">426 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210002" data-volume="" data-search="university of maryland medical center baltimore 21201">
+          <td class="col-name"><a href="#h-210002">University of Maryland Medical Center</a><span class="row-field">Baltimore, MD 21201</span></td>
+          <td class="col-num" data-value="309" data-label="Median time in ER"><strong>309 min</strong><span class="row-years">5 h 09 m</span></td>
+          <td class="col-num" data-value="291" data-label="Mental health">291 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210003" data-volume="very high" data-search="university of md capital region medical center upper marlboro 20774">
+          <td class="col-name"><a href="#h-210003">University of Md Capital Region Medical Center</a><span class="row-field">Upper Marlboro, MD 20774</span></td>
+          <td class="col-num" data-value="246" data-label="Median time in ER"><strong>246 min</strong><span class="row-years">4 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210035" data-volume="high" data-search="university of md charles regional  medical center la plata 20646">
+          <td class="col-name"><a href="#h-210035">University of Md Charles Regional  Medical Center</a><span class="row-field">La Plata, MD 20646</span></td>
+          <td class="col-num" data-value="262" data-label="Median time in ER"><strong>262 min</strong><span class="row-years">4 h 22 m</span></td>
+          <td class="col-num" data-value="534" data-label="Mental health">534 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-210038" data-volume="" data-search="university of md medical center midtown campus baltimore 21201">
+          <td class="col-name"><a href="#h-210038">University of Md Medical Center Midtown Campus</a><span class="row-field">Baltimore, MD 21201</span></td>
+          <td class="col-num" data-value="243" data-label="Median time in ER"><strong>243 min</strong><span class="row-years">4 h 03 m</span></td>
+          <td class="col-num" data-value="392" data-label="Mental health">392 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-210037" data-volume="very high" data-search="university of md shore medical center at easton easton 21601">
+          <td class="col-name"><a href="#h-210037">University of Md Shore Medical Center at Easton</a><span class="row-field">Easton, MD 21601</span></td>
+          <td class="col-num" data-value="179" data-label="Median time in ER"><strong>179 min</strong><span class="row-years">2 h 59 m</span></td>
+          <td class="col-num" data-value="246" data-label="Mental health">246 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-210030" data-volume="low" data-search="university of md shore medical ctr at chestertown chestertown 21620">
+          <td class="col-name"><a href="#h-210030">University of Md Shore Medical Ctr at Chestertown</a><span class="row-field">Chestertown, MD 21620</span></td>
+          <td class="col-num" data-value="185" data-label="Median time in ER"><strong>185 min</strong><span class="row-years">3 h 05 m</span></td>
+          <td class="col-num" data-value="334" data-label="Mental health">334 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-210063" data-volume="high" data-search="university of md st joseph medical center towson 21204">
+          <td class="col-name"><a href="#h-210063">University of Md St Joseph Medical Center</a><span class="row-field">Towson, MD 21204</span></td>
+          <td class="col-num" data-value="264" data-label="Median time in ER"><strong>264 min</strong><span class="row-years">4 h 24 m</span></td>
+          <td class="col-num" data-value="360" data-label="Mental health">360 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-21007f" data-volume="medium" data-search="walter reed national military med cen bethesda 20814">
+          <td class="col-name"><a href="#h-21007f">Walter Reed National Military Med Cen</a><span class="row-field">Bethesda, MD 20814</span></td>
+          <td class="col-num" data-value="184" data-label="Median time in ER"><strong>184 min</strong><span class="row-years">3 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-210027" data-volume="medium" data-search="western maryland regional medical center cumberland 21502">
+          <td class="col-name"><a href="#h-210027">Western Maryland Regional Medical Center</a><span class="row-field">Cumberland, MD 21502</span></td>
+          <td class="col-num" data-value="235" data-label="Median time in ER"><strong>235 min</strong><span class="row-years">3 h 55 m</span></td>
+          <td class="col-num" data-value="282" data-label="Mental health">282 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

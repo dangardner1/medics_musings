@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in New York: 140 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in New York? The state median is 194 minutes. Compare 140 New York hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/ny/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/ny/">
+<meta property="og:title" content="ER wait times in New York">
+<meta property="og:description" content="How long do ER visits take in New York? The state median is 194 minutes. Compare 140 New York hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in New York">
+<meta name="twitter:description" content="How long do ER visits take in New York? The state median is 194 minutes. Compare 140 New York hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/ny/#dataset",
+   "name": "Emergency department wait times in New York hospitals",
+   "description": "Median emergency department times for 140 hospitals in New York, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/ny/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "New York"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "New York",
+     "item": "https://www.medicsmusings.com/er-wait-times/ny/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>New York</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in New York</h1>
+      <p class="coll-intro">The typical ER visit in New York takes 194 minutes, 32 minutes slower than the national median of 162. The quickest hospital here has a median of 48 minutes and the slowest 341, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>New York median</dt><dd>194 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>294 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>140</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-ny-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-ny-search" type="search" data-filter-table="er-ny" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-ny">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-330079" data-volume="low" data-search="adirondack medical center - saranac lake saranac lake 12983">
+          <td class="col-name"><a href="#h-330079">Adirondack Medical Center - Saranac Lake</a><span class="row-field">Saranac Lake, NY 12983</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="231" data-label="Mental health">231 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330013" data-volume="very high" data-search="albany medical center hospital albany 12208">
+          <td class="col-name"><a href="#h-330013">Albany Medical Center Hospital</a><span class="row-field">Albany, NY 12208</span></td>
+          <td class="col-num" data-value="266" data-label="Median time in ER"><strong>266 min</strong><span class="row-years">4 h 26 m</span></td>
+          <td class="col-num" data-value="445" data-label="Mental health">445 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330090" data-volume="medium" data-search="arnot ogden medical center elmira 14905">
+          <td class="col-name"><a href="#h-330090">Arnot Ogden Medical Center</a><span class="row-field">Elmira, NY 14905</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="331" data-label="Mental health">331 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330235" data-volume="medium" data-search="auburn  community  hospital auburn 13021">
+          <td class="col-name"><a href="#h-330235">Auburn  Community  Hospital</a><span class="row-field">Auburn, NY 13021</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="126" data-label="Mental health">126 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330085" data-volume="medium" data-search="aurelia osborn fox memorial hospital oneonta 13820">
+          <td class="col-name"><a href="#h-330085">Aurelia Osborn Fox Memorial Hospital</a><span class="row-field">Oneonta, NY 13820</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="520" data-label="Mental health">520 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330136" data-volume="medium" data-search="bassett healthcare cooperstown 13326">
+          <td class="col-name"><a href="#h-330136">Bassett Healthcare</a><span class="row-field">Cooperstown, NY 13326</span></td>
+          <td class="col-num" data-value="199" data-label="Median time in ER"><strong>199 min</strong><span class="row-years">3 h 19 m</span></td>
+          <td class="col-num" data-value="1168" data-label="Mental health">1168 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330204" data-volume="very high" data-search="bellevue hospital center new york 10016">
+          <td class="col-name"><a href="#h-330204">Bellevue Hospital Center</a><span class="row-field">New York, NY 10016</span></td>
+          <td class="col-num" data-value="181" data-label="Median time in ER"><strong>181 min</strong><span class="row-years">3 h 01 m</span></td>
+          <td class="col-num" data-value="296" data-label="Mental health">296 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330111" data-volume="low" data-search="bertrand chaffee hospital springville 14141">
+          <td class="col-name"><a href="#h-330111">Bertrand Chaffee Hospital</a><span class="row-field">Springville, NY 14141</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330135" data-volume="low" data-search="bon secours community hospital port jervis 12771">
+          <td class="col-name"><a href="#h-330135">Bon Secours Community Hospital</a><span class="row-field">Port Jervis, NY 12771</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="294" data-label="Mental health">294 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330009" data-volume="very high" data-search="bronxcare hospital center bronx 10456">
+          <td class="col-name"><a href="#h-330009">Bronxcare Hospital Center</a><span class="row-field">Bronx, NY 10456</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330233" data-volume="very high" data-search="brookdale hospital medical center brooklyn 11212">
+          <td class="col-name"><a href="#h-330233">Brookdale Hospital Medical Center</a><span class="row-field">Brooklyn, NY 11212</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="257" data-label="Mental health">257 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330056" data-volume="high" data-search="brooklyn hospital center - downtown campus brooklyn 11201">
+          <td class="col-name"><a href="#h-330056">Brooklyn Hospital Center - Downtown Campus</a><span class="row-field">Brooklyn, NY 11201</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330229" data-volume="low" data-search="brooks-tlc hospital system, inc dunkirk 14048">
+          <td class="col-name"><a href="#h-330229">Brooks-Tlc Hospital System, Inc</a><span class="row-field">Dunkirk, NY 14048</span></td>
+          <td class="col-num" data-value="156" data-label="Median time in ER"><strong>156 min</strong><span class="row-years">2 h 36 m</span></td>
+          <td class="col-num" data-value="176" data-label="Mental health">176 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330197" data-volume="medium" data-search="canton-potsdam hospital potsdam 13676">
+          <td class="col-name"><a href="#h-330197">Canton-Potsdam Hospital</a><span class="row-field">Potsdam, NY 13676</span></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="220" data-label="Mental health">220 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330307" data-volume="medium" data-search="cayuga medical center at ithaca ithaca 14850">
+          <td class="col-name"><a href="#h-330307">Cayuga Medical Center at Ithaca</a><span class="row-field">Ithaca, NY 14850</span></td>
+          <td class="col-num" data-value="244" data-label="Median time in ER"><strong>244 min</strong><span class="row-years">4 h 04 m</span></td>
+          <td class="col-num" data-value="382" data-label="Mental health">382 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330033" data-volume="low" data-search="chenango memorial hospital norwich 13815">
+          <td class="col-name"><a href="#h-330033">Chenango Memorial Hospital</a><span class="row-field">Norwich, NY 13815</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330332" data-volume="medium" data-search="chsli st joseph hospital bethpage 11714">
+          <td class="col-name"><a href="#h-330332">Chsli St Joseph Hospital</a><span class="row-field">Bethpage, NY 11714</span></td>
+          <td class="col-num" data-value="214" data-label="Median time in ER"><strong>214 min</strong><span class="row-years">3 h 34 m</span></td>
+          <td class="col-num" data-value="343" data-label="Mental health">343 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330265" data-volume="low" data-search="clifton springs hospital and clinic clifton springs 14432">
+          <td class="col-name"><a href="#h-330265">Clifton Springs Hospital and Clinic</a><span class="row-field">Clifton Springs, NY 14432</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="228" data-label="Mental health">228 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-331320" data-volume="low" data-search="cobleskill regional hospital cobleskill 12043">
+          <td class="col-name"><a href="#h-331320">Cobleskill Regional Hospital</a><span class="row-field">Cobleskill, NY 12043</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="173" data-label="Mental health">173 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330094" data-volume="medium" data-search="columbia memorial hospital hudson 12534">
+          <td class="col-name"><a href="#h-330094">Columbia Memorial Hospital</a><span class="row-field">Hudson, NY 12534</span></td>
+          <td class="col-num" data-value="243" data-label="Median time in ER"><strong>243 min</strong><span class="row-years">4 h 03 m</span></td>
+          <td class="col-num" data-value="863" data-label="Mental health">863 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-331316" data-volume="low" data-search="community memorial hospital, inc hamilton 13346">
+          <td class="col-name"><a href="#h-331316">Community Memorial Hospital, Inc</a><span class="row-field">Hamilton, NY 13346</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330277" data-volume="medium" data-search="corning hospital corning 14830">
+          <td class="col-name"><a href="#h-330277">Corning Hospital</a><span class="row-field">Corning, NY 14830</span></td>
+          <td class="col-num" data-value="210" data-label="Median time in ER"><strong>210 min</strong><span class="row-years">3 h 30 m</span></td>
+          <td class="col-num" data-value="273" data-label="Mental health">273 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330203" data-volume="very high" data-search="crouse hospital syracuse 13210">
+          <td class="col-name"><a href="#h-330203">Crouse Hospital</a><span class="row-field">Syracuse, NY 13210</span></td>
+          <td class="col-num" data-value="220" data-label="Median time in ER"><strong>220 min</strong><span class="row-years">3 h 40 m</span></td>
+          <td class="col-num" data-value="230" data-label="Mental health">230 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331301" data-volume="low" data-search="cuba memorial hospital, inc cuba 14727">
+          <td class="col-name"><a href="#h-331301">Cuba Memorial Hospital, Inc</a><span class="row-field">Cuba, NY 14727</span></td>
+          <td class="col-num" data-value="48" data-label="Median time in ER"><strong>48 min</strong><span class="row-years">0 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-331312" data-volume="low" data-search="delaware valley hospital, inc walton 13856">
+          <td class="col-name"><a href="#h-331312">Delaware Valley Hospital, Inc</a><span class="row-field">Walton, NY 13856</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="169" data-label="Mental health">169 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-331302" data-volume="low" data-search="elizabethtown community hospital elizabethtown 12932">
+          <td class="col-name"><a href="#h-331302">Elizabethtown Community Hospital</a><span class="row-field">Elizabethtown, NY 12932</span></td>
+          <td class="col-num" data-value="109" data-label="Median time in ER"><strong>109 min</strong><span class="row-years">1 h 49 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-331310" data-volume="low" data-search="ellenville regional hospital ellenville 12428">
+          <td class="col-name"><a href="#h-331310">Ellenville Regional Hospital</a><span class="row-field">Ellenville, NY 12428</span></td>
+          <td class="col-num" data-value="92" data-label="Median time in ER"><strong>92 min</strong><span class="row-years">1 h 32 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330153" data-volume="high" data-search="ellis hospital schenectady 12308">
+          <td class="col-name"><a href="#h-330153">Ellis Hospital</a><span class="row-field">Schenectady, NY 12308</span></td>
+          <td class="col-num" data-value="232" data-label="Median time in ER"><strong>232 min</strong><span class="row-years">3 h 52 m</span></td>
+          <td class="col-num" data-value="287" data-label="Mental health">287 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330128" data-volume="very high" data-search="elmhurst hospital center elmhurst 11373">
+          <td class="col-name"><a href="#h-330128">Elmhurst Hospital Center</a><span class="row-field">Elmhurst, NY 11373</span></td>
+          <td class="col-num" data-value="278" data-label="Median time in ER"><strong>278 min</strong><span class="row-years">4 h 38 m</span></td>
+          <td class="col-num" data-value="500" data-label="Mental health">500 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330219" data-volume="medium" data-search="erie county medical center buffalo 14215">
+          <td class="col-name"><a href="#h-330219">Erie County Medical Center</a><span class="row-field">Buffalo, NY 14215</span></td>
+          <td class="col-num" data-value="325" data-label="Median time in ER"><strong>325 min</strong><span class="row-years">5 h 25 m</span></td>
+          <td class="col-num" data-value="320" data-label="Mental health">320 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330074" data-volume="medium" data-search="f f thompson hospital canandaigua 14424">
+          <td class="col-name"><a href="#h-330074">F F Thompson Hospital</a><span class="row-field">Canandaigua, NY 14424</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="322" data-label="Mental health">322 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330193" data-volume="medium" data-search="flushing hospital medical center flushing 11355">
+          <td class="col-name"><a href="#h-330193">Flushing Hospital Medical Center</a><span class="row-field">Flushing, NY 11355</span></td>
+          <td class="col-num" data-value="220" data-label="Median time in ER"><strong>220 min</strong><span class="row-years">3 h 40 m</span></td>
+          <td class="col-num" data-value="239" data-label="Mental health">239 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330386" data-volume="medium" data-search="garnet health  medical center catskills harris 12742">
+          <td class="col-name"><a href="#h-330386">Garnet Health  Medical Center Catskills</a><span class="row-field">Harris, NY 12742</span></td>
+          <td class="col-num" data-value="183" data-label="Median time in ER"><strong>183 min</strong><span class="row-years">3 h 03 m</span></td>
+          <td class="col-num" data-value="260" data-label="Mental health">260 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330126" data-volume="very high" data-search="garnet health medical center middletown 10940">
+          <td class="col-name"><a href="#h-330126">Garnet Health Medical Center</a><span class="row-field">Middletown, NY 10940</span></td>
+          <td class="col-num" data-value="252" data-label="Median time in ER"><strong>252 min</strong><span class="row-years">4 h 12 m</span></td>
+          <td class="col-num" data-value="285" data-label="Mental health">285 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331303" data-volume="low" data-search="garnet health medical center catskills callicoon 12723">
+          <td class="col-name"><a href="#h-331303">Garnet Health Medical Center Catskills</a><span class="row-field">Callicoon, NY 12723</span></td>
+          <td class="col-num" data-value="81" data-label="Median time in ER"><strong>81 min</strong><span class="row-years">1 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="15" data-label="Left before seen">15%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330058" data-volume="medium" data-search="geneva general hospital geneva 14456">
+          <td class="col-name"><a href="#h-330058">Geneva General Hospital</a><span class="row-field">Geneva, NY 14456</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330191" data-volume="high" data-search="glens falls hospital glens falls 12801">
+          <td class="col-name"><a href="#h-330191">Glens Falls Hospital</a><span class="row-field">Glens Falls, NY 12801</span></td>
+          <td class="col-num" data-value="260" data-label="Median time in ER"><strong>260 min</strong><span class="row-years">4 h 20 m</span></td>
+          <td class="col-num" data-value="396" data-label="Mental health">396 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330286" data-volume="very high" data-search="good samaritan hospital medical center west islip 11795">
+          <td class="col-name"><a href="#h-330286">Good Samaritan Hospital Medical Center</a><span class="row-field">West Islip, NY 11795</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="396" data-label="Mental health">396 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330158" data-volume="medium" data-search="good samaritan hospital of suffern suffern 10901">
+          <td class="col-name"><a href="#h-330158">Good Samaritan Hospital of Suffern</a><span class="row-field">Suffern, NY 10901</span></td>
+          <td class="col-num" data-value="215" data-label="Median time in ER"><strong>215 min</strong><span class="row-years">3 h 35 m</span></td>
+          <td class="col-num" data-value="349" data-label="Mental health">349 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-331315" data-volume="low" data-search="gouverneur hospital gouverneur 13642">
+          <td class="col-name"><a href="#h-331315">Gouverneur Hospital</a><span class="row-field">Gouverneur, NY 13642</span></td>
+          <td class="col-num" data-value="73" data-label="Median time in ER"><strong>73 min</strong><span class="row-years">1 h 13 m</span></td>
+          <td class="col-num" data-value="127" data-label="Mental health">127 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330175" data-volume="medium" data-search="guthrie cortland regional medical center cortland 13045">
+          <td class="col-name"><a href="#h-330175">Guthrie Cortland Regional Medical Center</a><span class="row-field">Cortland, NY 13045</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="302" data-label="Mental health">302 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330240" data-volume="very high" data-search="harlem hospital center new york 10037">
+          <td class="col-name"><a href="#h-330240">Harlem Hospital Center</a><span class="row-field">New York, NY 10037</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="301" data-label="Mental health">301 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330224" data-volume="medium" data-search="healthalliance hospital marys avenue campus kingston 12401">
+          <td class="col-name"><a href="#h-330224">Healthalliance Hospital Marys Avenue Campus</a><span class="row-field">Kingston, NY 12401</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="450" data-label="Mental health">450 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330164" data-volume="high" data-search="highland hospital rochester 14617">
+          <td class="col-name"><a href="#h-330164">Highland Hospital</a><span class="row-field">Rochester, NY 14617</span></td>
+          <td class="col-num" data-value="304" data-label="Median time in ER"><strong>304 min</strong><span class="row-years">5 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330267" data-volume="high" data-search="hudson valley hospital center cortlandt manor 10567">
+          <td class="col-name"><a href="#h-330267">Hudson Valley Hospital Center</a><span class="row-field">Cortlandt Manor, NY 10567</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="201" data-label="Mental health">201 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330127" data-volume="very high" data-search="jacobi medical center bronx 10461">
+          <td class="col-name"><a href="#h-330127">Jacobi Medical Center</a><span class="row-field">Bronx, NY 10461</span></td>
+          <td class="col-num" data-value="220" data-label="Median time in ER"><strong>220 min</strong><span class="row-years">3 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330014" data-volume="very high" data-search="jamaica hospital medical center jamaica 11418">
+          <td class="col-name"><a href="#h-330014">Jamaica Hospital Medical Center</a><span class="row-field">Jamaica, NY 11418</span></td>
+          <td class="col-num" data-value="227" data-label="Median time in ER"><strong>227 min</strong><span class="row-years">3 h 47 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330185" data-volume="medium" data-search="john t mather memorial hospital  of port jefferson port jefferson 11777">
+          <td class="col-name"><a href="#h-330185">John T Mather Memorial Hospital  of Port Jefferson</a><span class="row-field">Port Jefferson, NY 11777</span></td>
+          <td class="col-num" data-value="235" data-label="Median time in ER"><strong>235 min</strong><span class="row-years">3 h 55 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330096" data-volume="low" data-search="jones memorial hospital wellsville 14895">
+          <td class="col-name"><a href="#h-330096">Jones Memorial Hospital</a><span class="row-field">Wellsville, NY 14895</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330005" data-volume="very high" data-search="kaleida health buffalo 14210">
+          <td class="col-name"><a href="#h-330005">Kaleida Health</a><span class="row-field">Buffalo, NY 14210</span></td>
+          <td class="col-num" data-value="230" data-label="Median time in ER"><strong>230 min</strong><span class="row-years">3 h 50 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-33025f" data-volume="low" data-search="keller ach (west point) west point 10996">
+          <td class="col-name"><a href="#h-33025f">Keller Ach (West Point)</a><span class="row-field">West Point, NY 10996</span></td>
+          <td class="col-num" data-value="67" data-label="Median time in ER"><strong>67 min</strong><span class="row-years">1 h 07 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330102" data-volume="medium" data-search="kenmore mercy hospital kenmore 14217">
+          <td class="col-name"><a href="#h-330102">Kenmore Mercy Hospital</a><span class="row-field">Kenmore, NY 14217</span></td>
+          <td class="col-num" data-value="236" data-label="Median time in ER"><strong>236 min</strong><span class="row-years">3 h 56 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330202" data-volume="" data-search="kings county hospital center brooklyn 11203">
+          <td class="col-name"><a href="#h-330202">Kings County Hospital Center</a><span class="row-field">Brooklyn, NY 11203</span></td>
+          <td class="col-num" data-value="261" data-label="Median time in ER"><strong>261 min</strong><span class="row-years">4 h 21 m</span></td>
+          <td class="col-num" data-value="634" data-label="Mental health">634 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-330119" data-volume="very high" data-search="lenox hill hospital new york 10075">
+          <td class="col-name"><a href="#h-330119">Lenox Hill Hospital</a><span class="row-field">New York, NY 10075</span></td>
+          <td class="col-num" data-value="184" data-label="Median time in ER"><strong>184 min</strong><span class="row-years">3 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330080" data-volume="medium" data-search="lincoln medical &amp; mental health center bronx 10451">
+          <td class="col-name"><a href="#h-330080">Lincoln Medical &amp; Mental Health Center</a><span class="row-field">Bronx, NY 10451</span></td>
+          <td class="col-num" data-value="234" data-label="Median time in ER"><strong>234 min</strong><span class="row-years">3 h 54 m</span></td>
+          <td class="col-num" data-value="336" data-label="Mental health">336 min</td>
+          <td class="col-num" data-value="9" data-label="Left before seen">9%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-331311" data-volume="low" data-search="little falls hospital little falls 13365">
+          <td class="col-name"><a href="#h-331311">Little Falls Hospital</a><span class="row-field">Little Falls, NY 13365</span></td>
+          <td class="col-num" data-value="109" data-label="Median time in ER"><strong>109 min</strong><span class="row-years">1 h 49 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330141" data-volume="high" data-search="long island community hospital patchogue 11772">
+          <td class="col-name"><a href="#h-330141">Long Island Community Hospital</a><span class="row-field">Patchogue, NY 11772</span></td>
+          <td class="col-num" data-value="261" data-label="Median time in ER"><strong>261 min</strong><span class="row-years">4 h 21 m</span></td>
+          <td class="col-num" data-value="430" data-label="Mental health">430 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330195" data-volume="very high" data-search="long island jewish medical center new hyde park 11040">
+          <td class="col-name"><a href="#h-330195">Long Island Jewish Medical Center</a><span class="row-field">New Hyde Park, NY 11040</span></td>
+          <td class="col-num" data-value="252" data-label="Median time in ER"><strong>252 min</strong><span class="row-years">4 h 12 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330194" data-volume="very high" data-search="maimonides medical center brooklyn 11219">
+          <td class="col-name"><a href="#h-330194">Maimonides Medical Center</a><span class="row-field">Brooklyn, NY 11219</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="372" data-label="Mental health">372 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331319" data-volume="low" data-search="medina memorial hospital medina 14103">
+          <td class="col-name"><a href="#h-331319">Medina Memorial Hospital</a><span class="row-field">Medina, NY 14103</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330279" data-volume="very high" data-search="mercy hospital of buffalo buffalo 14220">
+          <td class="col-name"><a href="#h-330279">Mercy Hospital of Buffalo</a><span class="row-field">Buffalo, NY 14220</span></td>
+          <td class="col-num" data-value="307" data-label="Median time in ER"><strong>307 min</strong><span class="row-years">5 h 07 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330259" data-volume="medium" data-search="mercy medical center rockville centre 11571">
+          <td class="col-name"><a href="#h-330259">Mercy Medical Center</a><span class="row-field">Rockville Centre, NY 11571</span></td>
+          <td class="col-num" data-value="238" data-label="Median time in ER"><strong>238 min</strong><span class="row-years">3 h 58 m</span></td>
+          <td class="col-num" data-value="396" data-label="Mental health">396 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330199" data-volume="" data-search="metropolitan hospital center new york 10029">
+          <td class="col-name"><a href="#h-330199">Metropolitan Hospital Center</a><span class="row-field">New York, NY 10029</span></td>
+          <td class="col-num" data-value="171" data-label="Median time in ER"><strong>171 min</strong><span class="row-years">2 h 51 m</span></td>
+          <td class="col-num" data-value="189" data-label="Mental health">189 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-330059" data-volume="very high" data-search="montefiore medical center bronx 10467">
+          <td class="col-name"><a href="#h-330059">Montefiore Medical Center</a><span class="row-field">Bronx, NY 10467</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="746" data-label="Mental health">746 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330086" data-volume="low" data-search="montefiore mount vernon hospital mount vernon 10550">
+          <td class="col-name"><a href="#h-330086">Montefiore Mount Vernon Hospital</a><span class="row-field">Mount Vernon, NY 10550</span></td>
+          <td class="col-num" data-value="195" data-label="Median time in ER"><strong>195 min</strong><span class="row-years">3 h 15 m</span></td>
+          <td class="col-num" data-value="352" data-label="Mental health">352 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330184" data-volume="medium" data-search="montefiore new rochelle hospital new rochelle 10802">
+          <td class="col-name"><a href="#h-330184">Montefiore New Rochelle Hospital</a><span class="row-field">New Rochelle, NY 10802</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="279" data-label="Mental health">279 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330264" data-volume="high" data-search="montefiore st luke&#x27;s cornwall newburgh 12550">
+          <td class="col-name"><a href="#h-330264">Montefiore St Luke&#x27;s Cornwall</a><span class="row-field">Newburgh, NY 12550</span></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="359" data-label="Mental health">359 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330169" data-volume="very high" data-search="mount sinai beth israel new york 10003">
+          <td class="col-name"><a href="#h-330169">Mount Sinai Beth Israel</a><span class="row-field">New York, NY 10003</span></td>
+          <td class="col-num" data-value="239" data-label="Median time in ER"><strong>239 min</strong><span class="row-years">3 h 59 m</span></td>
+          <td class="col-num" data-value="262" data-label="Mental health">262 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330024" data-volume="very high" data-search="mount sinai hospital new york 10029">
+          <td class="col-name"><a href="#h-330024">Mount Sinai Hospital</a><span class="row-field">New York, NY 10029</span></td>
+          <td class="col-num" data-value="248" data-label="Median time in ER"><strong>248 min</strong><span class="row-years">4 h 08 m</span></td>
+          <td class="col-num" data-value="362" data-label="Mental health">362 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330198" data-volume="very high" data-search="mount sinai south nassau oceanside 11572">
+          <td class="col-name"><a href="#h-330198">Mount Sinai South Nassau</a><span class="row-field">Oceanside, NY 11572</span></td>
+          <td class="col-num" data-value="219" data-label="Median time in ER"><strong>219 min</strong><span class="row-years">3 h 39 m</span></td>
+          <td class="col-num" data-value="349" data-label="Mental health">349 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330046" data-volume="very high" data-search="mount sinai west new york 10019">
+          <td class="col-name"><a href="#h-330046">Mount Sinai West</a><span class="row-field">New York, NY 10019</span></td>
+          <td class="col-num" data-value="272" data-label="Median time in ER"><strong>272 min</strong><span class="row-years">4 h 32 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330188" data-volume="high" data-search="mount st. mary&#x27;s hospital &amp; health center lewiston 14092">
+          <td class="col-name"><a href="#h-330188">Mount St. Mary&#x27;s Hospital &amp; Health Center</a><span class="row-field">Lewiston, NY 14092</span></td>
+          <td class="col-num" data-value="156" data-label="Median time in ER"><strong>156 min</strong><span class="row-years">2 h 36 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330027" data-volume="very high" data-search="nassau university medical center east meadow 11554">
+          <td class="col-name"><a href="#h-330027">Nassau University Medical Center</a><span class="row-field">East Meadow, NY 11554</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330276" data-volume="medium" data-search="nathan littauer hospital gloversville 12078">
+          <td class="col-name"><a href="#h-330276">Nathan Littauer Hospital</a><span class="row-field">Gloversville, NY 12078</span></td>
+          <td class="col-num" data-value="169" data-label="Median time in ER"><strong>169 min</strong><span class="row-years">2 h 49 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330019" data-volume="" data-search="new york community hospital of brooklyn, inc. brooklyn 11229">
+          <td class="col-name"><a href="#h-330019">New York Community Hospital of Brooklyn, Inc.</a><span class="row-field">Brooklyn, NY 11229</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="182" data-label="Mental health">182 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-330101" data-volume="very high" data-search="new york-presbyterian hospital new york 10065">
+          <td class="col-name"><a href="#h-330101">New York-Presbyterian Hospital</a><span class="row-field">New York, NY 10065</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="319" data-label="Mental health">319 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330055" data-volume="very high" data-search="new york-presbyterian/queens flushing 11355">
+          <td class="col-name"><a href="#h-330055">New York-Presbyterian/Queens</a><span class="row-field">Flushing, NY 11355</span></td>
+          <td class="col-num" data-value="280" data-label="Median time in ER"><strong>280 min</strong><span class="row-years">4 h 40 m</span></td>
+          <td class="col-num" data-value="368" data-label="Mental health">368 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330030" data-volume="medium" data-search="newark-wayne community hospital newark 14513">
+          <td class="col-name"><a href="#h-330030">Newark-Wayne Community Hospital</a><span class="row-field">Newark, NY 14513</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="306" data-label="Mental health">306 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330065" data-volume="medium" data-search="niagara falls memorial medical center niagara falls 14302">
+          <td class="col-name"><a href="#h-330065">Niagara Falls Memorial Medical Center</a><span class="row-field">Niagara Falls, NY 14302</span></td>
+          <td class="col-num" data-value="229" data-label="Median time in ER"><strong>229 min</strong><span class="row-years">3 h 49 m</span></td>
+          <td class="col-num" data-value="474" data-label="Mental health">474 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330238" data-volume="low" data-search="nicholas h noyes memorial hospital dansville 14437">
+          <td class="col-name"><a href="#h-330238">Nicholas H Noyes Memorial Hospital</a><span class="row-field">Dansville, NY 14437</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="218" data-label="Mental health">218 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330106" data-volume="very high" data-search="north shore university hospital manhasset 11030">
+          <td class="col-name"><a href="#h-330106">North Shore University Hospital</a><span class="row-field">Manhasset, NY 11030</span></td>
+          <td class="col-num" data-value="252" data-label="Median time in ER"><strong>252 min</strong><span class="row-years">4 h 12 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330049" data-volume="medium" data-search="northern dutchess hospital rhinebeck 12572">
+          <td class="col-name"><a href="#h-330049">Northern Dutchess Hospital</a><span class="row-field">Rhinebeck, NY 12572</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="290" data-label="Mental health">290 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330162" data-volume="medium" data-search="northern westchester hospital mount kisco 10549">
+          <td class="col-name"><a href="#h-330162">Northern Westchester Hospital</a><span class="row-field">Mount Kisco, NY 10549</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="201" data-label="Mental health">201 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330181" data-volume="medium" data-search="northwell hospital glen cove glen cove 11542">
+          <td class="col-name"><a href="#h-330181">Northwell Hospital Glen Cove</a><span class="row-field">Glen Cove, NY 11542</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="215" data-label="Mental health">215 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330045" data-volume="high" data-search="ns/lij hs huntington hospital huntington 11743">
+          <td class="col-name"><a href="#h-330045">Ns/Lij Hs Huntington Hospital</a><span class="row-field">Huntington, NY 11743</span></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="298" data-label="Mental health">298 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330043" data-volume="very high" data-search="ns/lij hs southside hospital bay shore 11706">
+          <td class="col-name"><a href="#h-330043">Ns/Lij Hs Southside Hospital</a><span class="row-field">Bay Shore, NY 11706</span></td>
+          <td class="col-num" data-value="284" data-label="Median time in ER"><strong>284 min</strong><span class="row-years">4 h 44 m</span></td>
+          <td class="col-num" data-value="422" data-label="Mental health">422 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330104" data-volume="high" data-search="nyack hospital nyack 10960">
+          <td class="col-name"><a href="#h-330104">Nyack Hospital</a><span class="row-field">Nyack, NY 10960</span></td>
+          <td class="col-num" data-value="239" data-label="Median time in ER"><strong>239 min</strong><span class="row-years">3 h 59 m</span></td>
+          <td class="col-num" data-value="272" data-label="Mental health">272 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330214" data-volume="very high" data-search="nyu langone hospitals new york 10016">
+          <td class="col-name"><a href="#h-330214">Nyu Langone Hospitals</a><span class="row-field">New York, NY 10016</span></td>
+          <td class="col-num" data-value="203" data-label="Median time in ER"><strong>203 min</strong><span class="row-years">3 h 23 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331305" data-volume="low" data-search="o&#x27;connor hospital delhi 13753">
+          <td class="col-name"><a href="#h-331305">O&#x27;connor Hospital</a><span class="row-field">Delhi, NY 13753</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330103" data-volume="medium" data-search="olean general hospital olean 14760">
+          <td class="col-name"><a href="#h-330103">Olean General Hospital</a><span class="row-field">Olean, NY 14760</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="203" data-label="Mental health">203 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330115" data-volume="medium" data-search="oneida health hospital oneida 13421">
+          <td class="col-name"><a href="#h-330115">Oneida Health Hospital</a><span class="row-field">Oneida, NY 13421</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330218" data-volume="medium" data-search="oswego hospital oswego 13069">
+          <td class="col-name"><a href="#h-330218">Oswego Hospital</a><span class="row-field">Oswego, NY 13069</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="263" data-label="Mental health">263 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330011" data-volume="low" data-search="our lady of lourdes memorial hospital, inc binghamton 13905">
+          <td class="col-name"><a href="#h-330011">Our Lady of Lourdes Memorial Hospital, Inc</a><span class="row-field">Binghamton, NY 13905</span></td>
+          <td class="col-num" data-value="219" data-label="Median time in ER"><strong>219 min</strong><span class="row-years">3 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330107" data-volume="high" data-search="peconic bay medical center riverhead 11901">
+          <td class="col-name"><a href="#h-330107">Peconic Bay Medical Center</a><span class="row-field">Riverhead, NY 11901</span></td>
+          <td class="col-num" data-value="218" data-label="Median time in ER"><strong>218 min</strong><span class="row-years">3 h 38 m</span></td>
+          <td class="col-num" data-value="485" data-label="Mental health">485 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330261" data-volume="medium" data-search="phelps hospital sleepy hollow 10591">
+          <td class="col-name"><a href="#h-330261">Phelps Hospital</a><span class="row-field">Sleepy Hollow, NY 10591</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="192" data-label="Mental health">192 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330331" data-volume="medium" data-search="plainview hospital plainview 11803">
+          <td class="col-name"><a href="#h-330331">Plainview Hospital</a><span class="row-field">Plainview, NY 11803</span></td>
+          <td class="col-num" data-value="245" data-label="Median time in ER"><strong>245 min</strong><span class="row-years">4 h 05 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330273" data-volume="medium" data-search="putnam hospital center carmel 10512">
+          <td class="col-name"><a href="#h-330273">Putnam Hospital Center</a><span class="row-field">Carmel, NY 10512</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="269" data-label="Mental health">269 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330231" data-volume="very high" data-search="queens hospital center jamaica 11432">
+          <td class="col-name"><a href="#h-330231">Queens Hospital Center</a><span class="row-field">Jamaica, NY 11432</span></td>
+          <td class="col-num" data-value="245" data-label="Median time in ER"><strong>245 min</strong><span class="row-years">4 h 05 m</span></td>
+          <td class="col-num" data-value="450" data-label="Mental health">450 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330028" data-volume="high" data-search="richmond university medical center staten island 10310">
+          <td class="col-name"><a href="#h-330028">Richmond University Medical Center</a><span class="row-field">Staten Island, NY 10310</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="214" data-label="Mental health">214 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330125" data-volume="very high" data-search="rochester general hospital rochester 14621">
+          <td class="col-name"><a href="#h-330125">Rochester General Hospital</a><span class="row-field">Rochester, NY 14621</span></td>
+          <td class="col-num" data-value="233" data-label="Median time in ER"><strong>233 min</strong><span class="row-years">3 h 53 m</span></td>
+          <td class="col-num" data-value="355" data-label="Mental health">355 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330215" data-volume="medium" data-search="rome memorial hospital, inc rome 13440">
+          <td class="col-name"><a href="#h-330215">Rome Memorial Hospital, Inc</a><span class="row-field">Rome, NY 13440</span></td>
+          <td class="col-num" data-value="173" data-label="Median time in ER"><strong>173 min</strong><span class="row-years">2 h 53 m</span></td>
+          <td class="col-num" data-value="271" data-label="Mental health">271 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330180" data-volume="high" data-search="samaritan hospital of troy, new york troy 12180">
+          <td class="col-name"><a href="#h-330180">Samaritan Hospital of Troy, New York</a><span class="row-field">Troy, NY 12180</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="375" data-label="Mental health">375 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330157" data-volume="medium" data-search="samaritan medical center watertown 13601">
+          <td class="col-name"><a href="#h-330157">Samaritan Medical Center</a><span class="row-field">Watertown, NY 13601</span></td>
+          <td class="col-num" data-value="260" data-label="Median time in ER"><strong>260 min</strong><span class="row-years">4 h 20 m</span></td>
+          <td class="col-num" data-value="405" data-label="Mental health">405 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330222" data-volume="high" data-search="saratoga hospital saratoga springs 12866">
+          <td class="col-name"><a href="#h-330222">Saratoga Hospital</a><span class="row-field">Saratoga Springs, NY 12866</span></td>
+          <td class="col-num" data-value="296" data-label="Median time in ER"><strong>296 min</strong><span class="row-years">4 h 56 m</span></td>
+          <td class="col-num" data-value="579" data-label="Mental health">579 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-331313" data-volume="" data-search="schuyler hospital montour falls 14865">
+          <td class="col-name"><a href="#h-331313">Schuyler Hospital</a><span class="row-field">Montour Falls, NY 14865</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-330078" data-volume="very high" data-search="sisters of charity hospital buffalo 14214">
+          <td class="col-name"><a href="#h-330078">Sisters of Charity Hospital</a><span class="row-field">Buffalo, NY 14214</span></td>
+          <td class="col-num" data-value="203" data-label="Median time in ER"><strong>203 min</strong><span class="row-years">3 h 23 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331322" data-volume="low" data-search="slhs massena, inc massena 13662">
+          <td class="col-name"><a href="#h-331322">Slhs Massena, Inc</a><span class="row-field">Massena, NY 13662</span></td>
+          <td class="col-num" data-value="116" data-label="Median time in ER"><strong>116 min</strong><span class="row-years">1 h 56 m</span></td>
+          <td class="col-num" data-value="181" data-label="Mental health">181 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-331314" data-volume="low" data-search="soldiers and sailors memorial hospital of yates penn yan 14527">
+          <td class="col-name"><a href="#h-331314">Soldiers and Sailors Memorial Hospital of Yates</a><span class="row-field">Penn Yan, NY 14527</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="221" data-label="Mental health">221 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330196" data-volume="very high" data-search="south brooklyn health brooklyn 11235">
+          <td class="col-name"><a href="#h-330196">South Brooklyn Health</a><span class="row-field">Brooklyn, NY 11235</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="152" data-label="Mental health">152 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330205" data-volume="low" data-search="st anthony community hospital warwick 10990">
+          <td class="col-name"><a href="#h-330205">St Anthony Community Hospital</a><span class="row-field">Warwick, NY 10990</span></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330399" data-volume="very high" data-search="st barnabas hospital bronx 10457">
+          <td class="col-name"><a href="#h-330399">St Barnabas Hospital</a><span class="row-field">Bronx, NY 10457</span></td>
+          <td class="col-num" data-value="301" data-label="Median time in ER"><strong>301 min</strong><span class="row-years">5 h 01 m</span></td>
+          <td class="col-num" data-value="495" data-label="Mental health">495 min</td>
+          <td class="col-num" data-value="8" data-label="Left before seen">8%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330401" data-volume="medium" data-search="st catherine of siena hospital smithtown 11787">
+          <td class="col-name"><a href="#h-330401">St Catherine of Siena Hospital</a><span class="row-field">Smithtown, NY 11787</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="327" data-label="Mental health">327 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330246" data-volume="low" data-search="st charles hospital port jefferson 11777">
+          <td class="col-name"><a href="#h-330246">St Charles Hospital</a><span class="row-field">Port Jefferson, NY 11777</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="351" data-label="Mental health">351 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330182" data-volume="medium" data-search="st francis hospital - the heart center roslyn 11576">
+          <td class="col-name"><a href="#h-330182">St Francis Hospital - the Heart Center</a><span class="row-field">Roslyn, NY 11576</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330151" data-volume="low" data-search="st james hospital hornell 14843">
+          <td class="col-name"><a href="#h-330151">St James Hospital</a><span class="row-field">Hornell, NY 14843</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="396" data-label="Mental health">396 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330395" data-volume="high" data-search="st john&#x27;s episcopal hospital at south shore far rockaway 11691">
+          <td class="col-name"><a href="#h-330395">St John&#x27;s Episcopal Hospital at South Shore</a><span class="row-field">Far Rockaway, NY 11691</span></td>
+          <td class="col-num" data-value="233" data-label="Median time in ER"><strong>233 min</strong><span class="row-years">3 h 53 m</span></td>
+          <td class="col-num" data-value="461" data-label="Mental health">461 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330208" data-volume="medium" data-search="st john&#x27;s riverside hospital yonkers 10701">
+          <td class="col-name"><a href="#h-330208">St John&#x27;s Riverside Hospital</a><span class="row-field">Yonkers, NY 10701</span></td>
+          <td class="col-num" data-value="218" data-label="Median time in ER"><strong>218 min</strong><span class="row-years">3 h 38 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330140" data-volume="high" data-search="st joseph&#x27;s hospital health center syracuse 13203">
+          <td class="col-name"><a href="#h-330140">St Joseph&#x27;s Hospital Health Center</a><span class="row-field">Syracuse, NY 13203</span></td>
+          <td class="col-num" data-value="226" data-label="Median time in ER"><strong>226 min</strong><span class="row-years">3 h 46 m</span></td>
+          <td class="col-num" data-value="212" data-label="Mental health">212 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330006" data-volume="medium" data-search="st joseph&#x27;s medical center yonkers 10701">
+          <td class="col-name"><a href="#h-330006">St Joseph&#x27;s Medical Center</a><span class="row-field">Yonkers, NY 10701</span></td>
+          <td class="col-num" data-value="201" data-label="Median time in ER"><strong>201 min</strong><span class="row-years">3 h 21 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330047" data-volume="low" data-search="st marys healthcare amsterdam 12010">
+          <td class="col-name"><a href="#h-330047">St Marys Healthcare</a><span class="row-field">Amsterdam, NY 12010</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330057" data-volume="high" data-search="st peter&#x27;s hospital albany 12208">
+          <td class="col-name"><a href="#h-330057">St Peter&#x27;s Hospital</a><span class="row-field">Albany, NY 12208</span></td>
+          <td class="col-num" data-value="341" data-label="Median time in ER"><strong>341 min</strong><span class="row-years">5 h 41 m</span></td>
+          <td class="col-num" data-value="389" data-label="Mental health">389 min</td>
+          <td class="col-num" data-value="7" data-label="Left before seen">7%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330160" data-volume="very high" data-search="staten island university hospital staten island 10305">
+          <td class="col-name"><a href="#h-330160">Staten Island University Hospital</a><span class="row-field">Staten Island, NY 10305</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330285" data-volume="very high" data-search="strong memorial hospital rochester 14642">
+          <td class="col-name"><a href="#h-330285">Strong Memorial Hospital</a><span class="row-field">Rochester, NY 14642</span></td>
+          <td class="col-num" data-value="247" data-label="Median time in ER"><strong>247 min</strong><span class="row-years">4 h 07 m</span></td>
+          <td class="col-num" data-value="278" data-label="Mental health">278 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330350" data-volume="high" data-search="suny/downstate university hospital of brooklyn brooklyn 11203">
+          <td class="col-name"><a href="#h-330350">Suny/Downstate University Hospital of Brooklyn</a><span class="row-field">Brooklyn, NY 11203</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="265" data-label="Mental health">265 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330393" data-volume="very high" data-search="suny/stony brook university hospital stony brook 11794">
+          <td class="col-name"><a href="#h-330393">Suny/Stony Brook University Hospital</a><span class="row-field">Stony Brook, NY 11794</span></td>
+          <td class="col-num" data-value="223" data-label="Median time in ER"><strong>223 min</strong><span class="row-years">3 h 43 m</span></td>
+          <td class="col-num" data-value="612" data-label="Mental health">612 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330250" data-volume="high" data-search="the university of vermont health network  - champl plattsburgh 12901">
+          <td class="col-name"><a href="#h-330250">The University of Vermont Health Network  - Champl</a><span class="row-field">Plattsburgh, NY 12901</span></td>
+          <td class="col-num" data-value="223" data-label="Median time in ER"><strong>223 min</strong><span class="row-years">3 h 43 m</span></td>
+          <td class="col-num" data-value="398" data-label="Mental health">398 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-331321" data-volume="low" data-search="the university of vermont health network-alice hy malone 12953">
+          <td class="col-name"><a href="#h-331321">The University of Vermont Health Network-Alice Hy</a><span class="row-field">Malone, NY 12953</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="301" data-label="Mental health">301 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330394" data-volume="very high" data-search="united health services hospitals, inc binghamton 13903">
+          <td class="col-name"><a href="#h-330394">United Health Services Hospitals, Inc</a><span class="row-field">Binghamton, NY 13903</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="394" data-label="Mental health">394 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330073" data-volume="medium" data-search="united memorial medical center batavia 14020">
+          <td class="col-name"><a href="#h-330073">United Memorial Medical Center</a><span class="row-field">Batavia, NY 14020</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="192" data-label="Mental health">192 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330226" data-volume="high" data-search="unity hospital rochester 14626">
+          <td class="col-name"><a href="#h-330226">Unity Hospital</a><span class="row-field">Rochester, NY 14626</span></td>
+          <td class="col-num" data-value="299" data-label="Median time in ER"><strong>299 min</strong><span class="row-years">4 h 59 m</span></td>
+          <td class="col-num" data-value="320" data-label="Mental health">320 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330241" data-volume="very high" data-search="university hospital s u n y health science center syracuse 13210">
+          <td class="col-name"><a href="#h-330241">University Hospital S U N Y Health Science Center</a><span class="row-field">Syracuse, NY 13210</span></td>
+          <td class="col-num" data-value="291" data-label="Median time in ER"><strong>291 min</strong><span class="row-years">4 h 51 m</span></td>
+          <td class="col-num" data-value="269" data-label="Mental health">269 min</td>
+          <td class="col-num" data-value="9" data-label="Left before seen">9%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330239" data-volume="medium" data-search="upmc chautauqua at wca jamestown 14701">
+          <td class="col-name"><a href="#h-330239">Upmc Chautauqua at Wca</a><span class="row-field">Jamestown, NY 14701</span></td>
+          <td class="col-num" data-value="171" data-label="Median time in ER"><strong>171 min</strong><span class="row-years">2 h 51 m</span></td>
+          <td class="col-num" data-value="184" data-label="Mental health">184 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-330023" data-volume="high" data-search="vassar brothers medical center poughkeepsie 12601">
+          <td class="col-name"><a href="#h-330023">Vassar Brothers Medical Center</a><span class="row-field">Poughkeepsie, NY 12601</span></td>
+          <td class="col-num" data-value="295" data-label="Median time in ER"><strong>295 min</strong><span class="row-years">4 h 55 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-330234" data-volume="very high" data-search="westchester medical center valhalla 10595">
+          <td class="col-name"><a href="#h-330234">Westchester Medical Center</a><span class="row-field">Valhalla, NY 10595</span></td>
+          <td class="col-num" data-value="235" data-label="Median time in ER"><strong>235 min</strong><span class="row-years">3 h 55 m</span></td>
+          <td class="col-num" data-value="346" data-label="Mental health">346 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330166" data-volume="low" data-search="westfield memorial hospital, inc westfield 14787">
+          <td class="col-name"><a href="#h-330166">Westfield Memorial Hospital, Inc</a><span class="row-field">Westfield, NY 14787</span></td>
+          <td class="col-num" data-value="120" data-label="Median time in ER"><strong>120 min</strong><span class="row-years">2 h 00 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-330304" data-volume="very high" data-search="white plains hospital center white plains 10601">
+          <td class="col-name"><a href="#h-330304">White Plains Hospital Center</a><span class="row-field">White Plains, NY 10601</span></td>
+          <td class="col-num" data-value="167" data-label="Median time in ER"><strong>167 min</strong><span class="row-years">2 h 47 m</span></td>
+          <td class="col-num" data-value="330" data-label="Mental health">330 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330396" data-volume="very high" data-search="woodhull medical &amp; mental health center brooklyn 11206">
+          <td class="col-name"><a href="#h-330396">Woodhull Medical &amp; Mental Health Center</a><span class="row-field">Brooklyn, NY 11206</span></td>
+          <td class="col-num" data-value="198" data-label="Median time in ER"><strong>198 min</strong><span class="row-years">3 h 18 m</span></td>
+          <td class="col-num" data-value="417" data-label="Mental health">417 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330221" data-volume="very high" data-search="wyckoff heights medical center brooklyn 11237">
+          <td class="col-name"><a href="#h-330221">Wyckoff Heights Medical Center</a><span class="row-field">Brooklyn, NY 11237</span></td>
+          <td class="col-num" data-value="218" data-label="Median time in ER"><strong>218 min</strong><span class="row-years">3 h 38 m</span></td>
+          <td class="col-num" data-value="244" data-label="Mental health">244 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-330044" data-volume="very high" data-search="wynn hospital utica 13503">
+          <td class="col-name"><a href="#h-330044">Wynn Hospital</a><span class="row-field">Utica, NY 13503</span></td>
+          <td class="col-num" data-value="211" data-label="Median time in ER"><strong>211 min</strong><span class="row-years">3 h 31 m</span></td>
+          <td class="col-num" data-value="352" data-label="Mental health">352 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-331323" data-volume="low" data-search="wyoming county warsaw 14569">
+          <td class="col-name"><a href="#h-331323">Wyoming County</a><span class="row-field">Warsaw, NY 14569</span></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="181" data-label="Mental health">181 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

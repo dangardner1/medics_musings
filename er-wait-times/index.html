@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times by State: How Long the Emergency Room Takes (Sep 2025 data) | Medics Musings</title>
+<meta name="description" content="How long do ER visits take? The U.S. median is 162 minutes. Compare emergency department times for every state and 4,081 hospitals, from CMS data.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/">
+<meta property="og:title" content="How long will the ER take?">
+<meta property="og:description" content="How long do ER visits take? The U.S. median is 162 minutes. Compare emergency department times for every state and 4,081 hospitals, from CMS data.">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How long will the ER take?">
+<meta name="twitter:description" content="How long do ER visits take? The U.S. median is 162 minutes. Compare emergency department times for every state and 4,081 hospitals, from CMS data.">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/#dataset",
+   "name": "Emergency department wait times by state and hospital",
+   "description": "Median time patients spend in U.S. emergency departments, by state and hospital, from CMS Care Compare (Oct 2024–Sep 2025), plus mental health patient times and the share who left before being seen.",
+   "url": "https://www.medicsmusings.com/er-wait-times/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <span>ER wait times</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>How long will the ER take?</h1>
+      <p class="coll-intro">The typical trip through an American emergency room, door to door, takes 162 minutes: about the length of a superhero movie, with worse seating and no popcorn. Here is every state, using Medicare&#x27;s own numbers. The jokes stop here; the minutes below are exactly what CMS reports.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>U.S. median time in the ER</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>257 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>4,081</dd></div>
+      </dl>
+      <p class="what-changed"><b>Fastest state:</b> North Dakota, 110 minutes. <b>Slowest:</b> District of Columbia, 303 minutes.</p>
+      <p class="what-changed"><b>Latest data:</b> Oct 2024–Sep 2025. CMS updates about quarterly; this page refreshes automatically when it does.</p>
+      <div class="table-controls">
+        <label class="sr-only" for="er-states-search">Search states…</label>
+        <input id="er-states-search" type="search" data-filter-table="er-states" placeholder="Search states…">
+        
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-states">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">State</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th data-sort="number">Hospitals</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="ak" data-search="alaska ak">
+          <td class="col-name"><a href="/er-wait-times/ak/">Alaska</a></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="198" data-label="Mental health">198 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="17" data-label="Hospitals">17</td>
+        </tr>
+        <tr id="al" data-search="alabama al">
+          <td class="col-name"><a href="/er-wait-times/al/">Alabama</a></td>
+          <td class="col-num" data-value="149" data-label="Median time in ER"><strong>149 min</strong><span class="row-years">2 h 29 m</span></td>
+          <td class="col-num" data-value="212" data-label="Mental health">212 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="79" data-label="Hospitals">79</td>
+        </tr>
+        <tr id="ar" data-search="arkansas ar">
+          <td class="col-name"><a href="/er-wait-times/ar/">Arkansas</a></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="226" data-label="Mental health">226 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="66" data-label="Hospitals">66</td>
+        </tr>
+        <tr id="az" data-search="arizona az">
+          <td class="col-name"><a href="/er-wait-times/az/">Arizona</a></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="273" data-label="Mental health">273 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="61" data-label="Hospitals">61</td>
+        </tr>
+        <tr id="ca" data-search="california ca">
+          <td class="col-name"><a href="/er-wait-times/ca/">California</a></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="260" data-label="Mental health">260 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="267" data-label="Hospitals">267</td>
+        </tr>
+        <tr id="co" data-search="colorado co">
+          <td class="col-name"><a href="/er-wait-times/co/">Colorado</a></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="235" data-label="Mental health">235 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="77" data-label="Hospitals">77</td>
+        </tr>
+        <tr id="ct" data-search="connecticut ct">
+          <td class="col-name"><a href="/er-wait-times/ct/">Connecticut</a></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="247" data-label="Mental health">247 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="25" data-label="Hospitals">25</td>
+        </tr>
+        <tr id="dc" data-search="district of columbia dc">
+          <td class="col-name"><a href="/er-wait-times/dc/">District of Columbia</a></td>
+          <td class="col-num" data-value="303" data-label="Median time in ER"><strong>303 min</strong><span class="row-years">5 h 03 m</span></td>
+          <td class="col-num" data-value="361" data-label="Mental health">361 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-num" data-value="6" data-label="Hospitals">6</td>
+        </tr>
+        <tr id="de" data-search="delaware de">
+          <td class="col-name"><a href="/er-wait-times/de/">Delaware</a></td>
+          <td class="col-num" data-value="217" data-label="Median time in ER"><strong>217 min</strong><span class="row-years">3 h 37 m</span></td>
+          <td class="col-num" data-value="368" data-label="Mental health">368 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-num" data-value="6" data-label="Hospitals">6</td>
+        </tr>
+        <tr id="fl" data-search="florida fl">
+          <td class="col-name"><a href="/er-wait-times/fl/">Florida</a></td>
+          <td class="col-num" data-value="156" data-label="Median time in ER"><strong>156 min</strong><span class="row-years">2 h 36 m</span></td>
+          <td class="col-num" data-value="220" data-label="Mental health">220 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="175" data-label="Hospitals">175</td>
+        </tr>
+        <tr id="ga" data-search="georgia ga">
+          <td class="col-name"><a href="/er-wait-times/ga/">Georgia</a></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="123" data-label="Hospitals">123</td>
+        </tr>
+        <tr id="hi" data-search="hawaii hi">
+          <td class="col-name"><a href="/er-wait-times/hi/">Hawaii</a></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="202" data-label="Mental health">202 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="20" data-label="Hospitals">20</td>
+        </tr>
+        <tr id="ia" data-search="iowa ia">
+          <td class="col-name"><a href="/er-wait-times/ia/">Iowa</a></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="217" data-label="Mental health">217 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="112" data-label="Hospitals">112</td>
+        </tr>
+        <tr id="id" data-search="idaho id">
+          <td class="col-name"><a href="/er-wait-times/id/">Idaho</a></td>
+          <td class="col-num" data-value="142" data-label="Median time in ER"><strong>142 min</strong><span class="row-years">2 h 22 m</span></td>
+          <td class="col-num" data-value="203" data-label="Mental health">203 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="38" data-label="Hospitals">38</td>
+        </tr>
+        <tr id="il" data-search="illinois il">
+          <td class="col-name"><a href="/er-wait-times/il/">Illinois</a></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="155" data-label="Hospitals">155</td>
+        </tr>
+        <tr id="in" data-search="indiana in">
+          <td class="col-name"><a href="/er-wait-times/in/">Indiana</a></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="231" data-label="Mental health">231 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="107" data-label="Hospitals">107</td>
+        </tr>
+        <tr id="ks" data-search="kansas ks">
+          <td class="col-name"><a href="/er-wait-times/ks/">Kansas</a></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="190" data-label="Mental health">190 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="117" data-label="Hospitals">117</td>
+        </tr>
+        <tr id="ky" data-search="kentucky ky">
+          <td class="col-name"><a href="/er-wait-times/ky/">Kentucky</a></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="82" data-label="Hospitals">82</td>
+        </tr>
+        <tr id="la" data-search="louisiana la">
+          <td class="col-name"><a href="/er-wait-times/la/">Louisiana</a></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="234" data-label="Mental health">234 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="89" data-label="Hospitals">89</td>
+        </tr>
+        <tr id="ma" data-search="massachusetts ma">
+          <td class="col-name"><a href="/er-wait-times/ma/">Massachusetts</a></td>
+          <td class="col-num" data-value="214" data-label="Median time in ER"><strong>214 min</strong><span class="row-years">3 h 34 m</span></td>
+          <td class="col-num" data-value="338" data-label="Mental health">338 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-num" data-value="54" data-label="Hospitals">54</td>
+        </tr>
+        <tr id="md" data-search="maryland md">
+          <td class="col-name"><a href="/er-wait-times/md/">Maryland</a></td>
+          <td class="col-num" data-value="246" data-label="Median time in ER"><strong>246 min</strong><span class="row-years">4 h 06 m</span></td>
+          <td class="col-num" data-value="415" data-label="Mental health">415 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="40" data-label="Hospitals">40</td>
+        </tr>
+        <tr id="me" data-search="maine me">
+          <td class="col-name"><a href="/er-wait-times/me/">Maine</a></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="279" data-label="Mental health">279 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="30" data-label="Hospitals">30</td>
+        </tr>
+        <tr id="mi" data-search="michigan mi">
+          <td class="col-name"><a href="/er-wait-times/mi/">Michigan</a></td>
+          <td class="col-num" data-value="159" data-label="Median time in ER"><strong>159 min</strong><span class="row-years">2 h 39 m</span></td>
+          <td class="col-num" data-value="266" data-label="Mental health">266 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="118" data-label="Hospitals">118</td>
+        </tr>
+        <tr id="mn" data-search="minnesota mn">
+          <td class="col-name"><a href="/er-wait-times/mn/">Minnesota</a></td>
+          <td class="col-num" data-value="131" data-label="Median time in ER"><strong>131 min</strong><span class="row-years">2 h 11 m</span></td>
+          <td class="col-num" data-value="204" data-label="Mental health">204 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="120" data-label="Hospitals">120</td>
+        </tr>
+        <tr id="mo" data-search="missouri mo">
+          <td class="col-name"><a href="/er-wait-times/mo/">Missouri</a></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="263" data-label="Mental health">263 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="97" data-label="Hospitals">97</td>
+        </tr>
+        <tr id="ms" data-search="mississippi ms">
+          <td class="col-name"><a href="/er-wait-times/ms/">Mississippi</a></td>
+          <td class="col-num" data-value="129" data-label="Median time in ER"><strong>129 min</strong><span class="row-years">2 h 09 m</span></td>
+          <td class="col-num" data-value="179" data-label="Mental health">179 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="68" data-label="Hospitals">68</td>
+        </tr>
+        <tr id="mt" data-search="montana mt">
+          <td class="col-name"><a href="/er-wait-times/mt/">Montana</a></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="162" data-label="Mental health">162 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="56" data-label="Hospitals">56</td>
+        </tr>
+        <tr id="nc" data-search="north carolina nc">
+          <td class="col-name"><a href="/er-wait-times/nc/">North Carolina</a></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="300" data-label="Mental health">300 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="94" data-label="Hospitals">94</td>
+        </tr>
+        <tr id="nd" data-search="north dakota nd">
+          <td class="col-name"><a href="/er-wait-times/nd/">North Dakota</a></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="164" data-label="Mental health">164 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="43" data-label="Hospitals">43</td>
+        </tr>
+        <tr id="ne" data-search="nebraska ne">
+          <td class="col-name"><a href="/er-wait-times/ne/">Nebraska</a></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="161" data-label="Mental health">161 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="83" data-label="Hospitals">83</td>
+        </tr>
+        <tr id="nh" data-search="new hampshire nh">
+          <td class="col-name"><a href="/er-wait-times/nh/">New Hampshire</a></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="234" data-label="Mental health">234 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="26" data-label="Hospitals">26</td>
+        </tr>
+        <tr id="nj" data-search="new jersey nj">
+          <td class="col-name"><a href="/er-wait-times/nj/">New Jersey</a></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="60" data-label="Hospitals">60</td>
+        </tr>
+        <tr id="nm" data-search="new mexico nm">
+          <td class="col-name"><a href="/er-wait-times/nm/">New Mexico</a></td>
+          <td class="col-num" data-value="163" data-label="Median time in ER"><strong>163 min</strong><span class="row-years">2 h 43 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="32" data-label="Hospitals">32</td>
+        </tr>
+        <tr id="nv" data-search="nevada nv">
+          <td class="col-name"><a href="/er-wait-times/nv/">Nevada</a></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="243" data-label="Mental health">243 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="35" data-label="Hospitals">35</td>
+        </tr>
+        <tr id="ny" data-search="new york ny">
+          <td class="col-name"><a href="/er-wait-times/ny/">New York</a></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="294" data-label="Mental health">294 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="140" data-label="Hospitals">140</td>
+        </tr>
+        <tr id="oh" data-search="ohio oh">
+          <td class="col-name"><a href="/er-wait-times/oh/">Ohio</a></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="139" data-label="Hospitals">139</td>
+        </tr>
+        <tr id="ok" data-search="oklahoma ok">
+          <td class="col-name"><a href="/er-wait-times/ok/">Oklahoma</a></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="174" data-label="Mental health">174 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="101" data-label="Hospitals">101</td>
+        </tr>
+        <tr id="or" data-search="oregon or">
+          <td class="col-name"><a href="/er-wait-times/or/">Oregon</a></td>
+          <td class="col-num" data-value="156" data-label="Median time in ER"><strong>156 min</strong><span class="row-years">2 h 36 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="54" data-label="Hospitals">54</td>
+        </tr>
+        <tr id="pa" data-search="pennsylvania pa">
+          <td class="col-name"><a href="/er-wait-times/pa/">Pennsylvania</a></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="297" data-label="Mental health">297 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="137" data-label="Hospitals">137</td>
+        </tr>
+        <tr id="pr" data-search="puerto rico pr">
+          <td class="col-name"><a href="/er-wait-times/pr/">Puerto Rico</a></td>
+          <td class="col-num" data-value="292" data-label="Median time in ER"><strong>292 min</strong><span class="row-years">4 h 52 m</span></td>
+          <td class="col-num" data-value="284" data-label="Mental health">284 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="7" data-label="Hospitals">7</td>
+        </tr>
+        <tr id="ri" data-search="rhode island ri">
+          <td class="col-name"><a href="/er-wait-times/ri/">Rhode Island</a></td>
+          <td class="col-num" data-value="223" data-label="Median time in ER"><strong>223 min</strong><span class="row-years">3 h 43 m</span></td>
+          <td class="col-num" data-value="316" data-label="Mental health">316 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-num" data-value="10" data-label="Hospitals">10</td>
+        </tr>
+        <tr id="sc" data-search="south carolina sc">
+          <td class="col-name"><a href="/er-wait-times/sc/">South Carolina</a></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="244" data-label="Mental health">244 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="52" data-label="Hospitals">52</td>
+        </tr>
+        <tr id="sd" data-search="south dakota sd">
+          <td class="col-name"><a href="/er-wait-times/sd/">South Dakota</a></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="147" data-label="Mental health">147 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="50" data-label="Hospitals">50</td>
+        </tr>
+        <tr id="tn" data-search="tennessee tn">
+          <td class="col-name"><a href="/er-wait-times/tn/">Tennessee</a></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="308" data-label="Mental health">308 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="90" data-label="Hospitals">90</td>
+        </tr>
+        <tr id="tx" data-search="texas tx">
+          <td class="col-name"><a href="/er-wait-times/tx/">Texas</a></td>
+          <td class="col-num" data-value="145" data-label="Median time in ER"><strong>145 min</strong><span class="row-years">2 h 25 m</span></td>
+          <td class="col-num" data-value="233" data-label="Mental health">233 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="332" data-label="Hospitals">332</td>
+        </tr>
+        <tr id="ut" data-search="utah ut">
+          <td class="col-name"><a href="/er-wait-times/ut/">Utah</a></td>
+          <td class="col-num" data-value="133" data-label="Median time in ER"><strong>133 min</strong><span class="row-years">2 h 13 m</span></td>
+          <td class="col-num" data-value="205" data-label="Mental health">205 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="44" data-label="Hospitals">44</td>
+        </tr>
+        <tr id="va" data-search="virginia va">
+          <td class="col-name"><a href="/er-wait-times/va/">Virginia</a></td>
+          <td class="col-num" data-value="161" data-label="Median time in ER"><strong>161 min</strong><span class="row-years">2 h 41 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="79" data-label="Hospitals">79</td>
+        </tr>
+        <tr id="vt" data-search="vermont vt">
+          <td class="col-name"><a href="/er-wait-times/vt/">Vermont</a></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="402" data-label="Mental health">402 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="9" data-label="Hospitals">9</td>
+        </tr>
+        <tr id="wa" data-search="washington wa">
+          <td class="col-name"><a href="/er-wait-times/wa/">Washington</a></td>
+          <td class="col-num" data-value="151" data-label="Median time in ER"><strong>151 min</strong><span class="row-years">2 h 31 m</span></td>
+          <td class="col-num" data-value="238" data-label="Mental health">238 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-num" data-value="75" data-label="Hospitals">75</td>
+        </tr>
+        <tr id="wi" data-search="wisconsin wi">
+          <td class="col-name"><a href="/er-wait-times/wi/">Wisconsin</a></td>
+          <td class="col-num" data-value="137" data-label="Median time in ER"><strong>137 min</strong><span class="row-years">2 h 17 m</span></td>
+          <td class="col-num" data-value="203" data-label="Mental health">203 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="117" data-label="Hospitals">117</td>
+        </tr>
+        <tr id="wv" data-search="west virginia wv">
+          <td class="col-name"><a href="/er-wait-times/wv/">West Virginia</a></td>
+          <td class="col-num" data-value="137" data-label="Median time in ER"><strong>137 min</strong><span class="row-years">2 h 17 m</span></td>
+          <td class="col-num" data-value="228" data-label="Mental health">228 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-num" data-value="44" data-label="Hospitals">44</td>
+        </tr>
+        <tr id="wy" data-search="wyoming wy">
+          <td class="col-name"><a href="/er-wait-times/wy/">Wyoming</a></td>
+          <td class="col-num" data-value="131" data-label="Median time in ER"><strong>131 min</strong><span class="row-years">2 h 11 m</span></td>
+          <td class="col-num" data-value="184" data-label="Mental health">184 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-num" data-value="22" data-label="Hospitals">22</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No states match that search.</p>
+      <p class="related">Pick a state to see every hospital in it. See also: <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Oklahoma: 101 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Oklahoma? The state median is 117 minutes. Compare 101 Oklahoma hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/ok/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/ok/">
+<meta property="og:title" content="ER wait times in Oklahoma">
+<meta property="og:description" content="How long do ER visits take in Oklahoma? The state median is 117 minutes. Compare 101 Oklahoma hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Oklahoma">
+<meta name="twitter:description" content="How long do ER visits take in Oklahoma? The state median is 117 minutes. Compare 101 Oklahoma hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/ok/#dataset",
+   "name": "Emergency department wait times in Oklahoma hospitals",
+   "description": "Median emergency department times for 101 hospitals in Oklahoma, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/ok/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Oklahoma"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Oklahoma",
+     "item": "https://www.medicsmusings.com/er-wait-times/ok/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Oklahoma</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Oklahoma</h1>
+      <p class="coll-intro">The typical ER visit in Oklahoma takes 117 minutes, 45 minutes faster than the national median of 162. The quickest hospital here has a median of 57 minutes and the slowest 230, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Oklahoma median</dt><dd>117 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>174 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>101</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-ok-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-ok-search" type="search" data-filter-table="er-ok" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-ok">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-370014" data-volume="medium" data-search="alliancehealth durant durant 74702">
+          <td class="col-name"><a href="#h-370014">Alliancehealth Durant</a><span class="row-field">Durant, OK 74702</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="172" data-label="Mental health">172 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-371326" data-volume="low" data-search="alliancehealth madill madill 73446">
+          <td class="col-name"><a href="#h-371326">Alliancehealth Madill</a><span class="row-field">Madill, OK 73446</span></td>
+          <td class="col-num" data-value="75" data-label="Median time in ER"><strong>75 min</strong><span class="row-years">1 h 15 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371328" data-volume="" data-search="arbuckle memorial hospital authority sulphur 73086">
+          <td class="col-name"><a href="#h-371328">Arbuckle Memorial Hospital Authority</a><span class="row-field">Sulphur, OK 73086</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370235" data-volume="" data-search="ascension st john broken arrow broken arrow 74012">
+          <td class="col-name"><a href="#h-370235">Ascension St John Broken Arrow</a><span class="row-field">Broken Arrow, OK 74012</span></td>
+          <td class="col-num" data-value="175" data-label="Median time in ER"><strong>175 min</strong><span class="row-years">2 h 55 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370018" data-volume="" data-search="ascension st john jane phillips bartlesville 74006">
+          <td class="col-name"><a href="#h-370018">Ascension St John Jane Phillips</a><span class="row-field">Bartlesville, OK 74006</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="232" data-label="Mental health">232 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370114" data-volume="" data-search="ascension st john medical center tulsa 74104">
+          <td class="col-name"><a href="#h-370114">Ascension St John Medical Center</a><span class="row-field">Tulsa, OK 74104</span></td>
+          <td class="col-num" data-value="197" data-label="Median time in ER"><strong>197 min</strong><span class="row-years">3 h 17 m</span></td>
+          <td class="col-num" data-value="273" data-label="Mental health">273 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-371305" data-volume="low" data-search="ascension st john nowata nowata 74048">
+          <td class="col-name"><a href="#h-371305">Ascension St John Nowata</a><span class="row-field">Nowata, OK 74048</span></td>
+          <td class="col-num" data-value="92" data-label="Median time in ER"><strong>92 min</strong><span class="row-years">1 h 32 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371312" data-volume="low" data-search="ascension st john sapulpa sapulpa 74066">
+          <td class="col-name"><a href="#h-371312">Ascension St John Sapulpa</a><span class="row-field">Sapulpa, OK 74066</span></td>
+          <td class="col-num" data-value="137" data-label="Median time in ER"><strong>137 min</strong><span class="row-years">2 h 17 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371300" data-volume="low" data-search="atoka county medical center atoka 74525">
+          <td class="col-name"><a href="#h-371300">Atoka County Medical Center</a><span class="row-field">Atoka, OK 74525</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="144" data-label="Mental health">144 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370228" data-volume="low" data-search="bailey medical center, llc owasso 74055">
+          <td class="col-name"><a href="#h-370228">Bailey Medical Center, LLC</a><span class="row-field">Owasso, OK 74055</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371322" data-volume="low" data-search="beaver county memorial hospital beaver 73932">
+          <td class="col-name"><a href="#h-371322">Beaver County Memorial Hospital</a><span class="row-field">Beaver, OK 73932</span></td>
+          <td class="col-num" data-value="114" data-label="Median time in ER"><strong>114 min</strong><span class="row-years">1 h 54 m</span></td>
+          <td class="col-num" data-value="323" data-label="Mental health">323 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371334" data-volume="low" data-search="carnegie tri-county municipal hospital carnegie 73015">
+          <td class="col-name"><a href="#h-371334">Carnegie Tri-County Municipal Hospital</a><span class="row-field">Carnegie, OK 73015</span></td>
+          <td class="col-num" data-value="78" data-label="Median time in ER"><strong>78 min</strong><span class="row-years">1 h 18 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370246" data-volume="" data-search="carrus lakeside hospital bristow 74010">
+          <td class="col-name"><a href="#h-370246">Carrus Lakeside Hospital</a><span class="row-field">Bristow, OK 74010</span></td>
+          <td class="col-num" data-value="82" data-label="Median time in ER"><strong>82 min</strong><span class="row-years">1 h 22 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370100" data-volume="low" data-search="choctaw memorial hospital hugo 74743">
+          <td class="col-name"><a href="#h-370100">Choctaw Memorial Hospital</a><span class="row-field">Hugo, OK 74743</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371307" data-volume="" data-search="cimarron memorial hospital boise city 73933">
+          <td class="col-name"><a href="#h-371307">Cimarron Memorial Hospital</a><span class="row-field">Boise City, OK 73933</span></td>
+          <td class="col-num" data-value="107" data-label="Median time in ER"><strong>107 min</strong><span class="row-years">1 h 47 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-371320" data-volume="" data-search="cleveland area hospital cleveland 74020">
+          <td class="col-name"><a href="#h-371320">Cleveland Area Hospital</a><span class="row-field">Cleveland, OK 74020</span></td>
+          <td class="col-num" data-value="78" data-label="Median time in ER"><strong>78 min</strong><span class="row-years">1 h 18 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370245" data-volume="low" data-search="clinton regional hospital clinton 73601">
+          <td class="col-name"><a href="#h-370245">Clinton Regional Hospital</a><span class="row-field">Clinton, OK 73601</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371319" data-volume="low" data-search="coal county general hospital, inc. coalgate 74538">
+          <td class="col-name"><a href="#h-371319">Coal County General Hospital, Inc.</a><span class="row-field">Coalgate, OK 74538</span></td>
+          <td class="col-num" data-value="100" data-label="Median time in ER"><strong>100 min</strong><span class="row-years">1 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370203" data-volume="low" data-search="community hospital, llc oklahoma city 73159">
+          <td class="col-name"><a href="#h-370203">Community Hospital, LLC</a><span class="row-field">Oklahoma City, OK 73159</span></td>
+          <td class="col-num" data-value="82" data-label="Median time in ER"><strong>82 min</strong><span class="row-years">1 h 22 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371325" data-volume="low" data-search="cordell memorial hospital cordell 73632">
+          <td class="col-name"><a href="#h-371325">Cordell Memorial Hospital</a><span class="row-field">Cordell, OK 73632</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371333" data-volume="low" data-search="creek nation community hospital okemah 74859">
+          <td class="col-name"><a href="#h-371333">Creek Nation Community Hospital</a><span class="row-field">Okemah, OK 74859</span></td>
+          <td class="col-num" data-value="87" data-label="Median time in ER"><strong>87 min</strong><span class="row-years">1 h 27 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371331" data-volume="" data-search="drumright regional hospital drumright 74030">
+          <td class="col-name"><a href="#h-371331">Drumright Regional Hospital</a><span class="row-field">Drumright, OK 74030</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370023" data-volume="medium" data-search="duncan regional hospital, inc duncan 73533">
+          <td class="col-name"><a href="#h-370023">Duncan Regional Hospital, Inc</a><span class="row-field">Duncan, OK 73533</span></td>
+          <td class="col-num" data-value="149" data-label="Median time in ER"><strong>149 min</strong><span class="row-years">2 h 29 m</span></td>
+          <td class="col-num" data-value="237" data-label="Mental health">237 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-371337" data-volume="low" data-search="eastern oklahoma medical center poteau 74953">
+          <td class="col-name"><a href="#h-371337">Eastern Oklahoma Medical Center</a><span class="row-field">Poteau, OK 74953</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="206" data-label="Mental health">206 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371329" data-volume="low" data-search="fairview regional medical center authority fairview 73737">
+          <td class="col-name"><a href="#h-371329">Fairview Regional Medical Center Authority</a><span class="row-field">Fairview, OK 73737</span></td>
+          <td class="col-num" data-value="105" data-label="Median time in ER"><strong>105 min</strong><span class="row-years">1 h 45 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370054" data-volume="low" data-search="grady memorial hospital chickasha 73018">
+          <td class="col-name"><a href="#h-370054">Grady Memorial Hospital</a><span class="row-field">Chickasha, OK 73018</span></td>
+          <td class="col-num" data-value="113" data-label="Median time in ER"><strong>113 min</strong><span class="row-years">1 h 53 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370019" data-volume="low" data-search="great plains regional medical center elk city 73644">
+          <td class="col-name"><a href="#h-370019">Great Plains Regional Medical Center</a><span class="row-field">Elk City, OK 73644</span></td>
+          <td class="col-num" data-value="88" data-label="Median time in ER"><strong>88 min</strong><span class="row-years">1 h 28 m</span></td>
+          <td class="col-num" data-value="158" data-label="Mental health">158 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371338" data-volume="low" data-search="harmon memorial hospital hollis 73550">
+          <td class="col-name"><a href="#h-371338">Harmon Memorial Hospital</a><span class="row-field">Hollis, OK 73550</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371335" data-volume="low" data-search="haskell regional hospital, inc stigler 74462">
+          <td class="col-name"><a href="#h-371335">Haskell Regional Hospital, Inc</a><span class="row-field">Stigler, OK 74462</span></td>
+          <td class="col-num" data-value="120" data-label="Median time in ER"><strong>120 min</strong><span class="row-years">2 h 00 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370039" data-volume="medium" data-search="hillcrest hospital claremore claremore 74017">
+          <td class="col-name"><a href="#h-370039">Hillcrest Hospital Claremore</a><span class="row-field">Claremore, OK 74017</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="177" data-label="Mental health">177 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370099" data-volume="low" data-search="hillcrest hospital cushing cushing 74023">
+          <td class="col-name"><a href="#h-370099">Hillcrest Hospital Cushing</a><span class="row-field">Cushing, OK 74023</span></td>
+          <td class="col-num" data-value="98" data-label="Median time in ER"><strong>98 min</strong><span class="row-years">1 h 38 m</span></td>
+          <td class="col-num" data-value="112" data-label="Mental health">112 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370183" data-volume="low" data-search="hillcrest hospital henryetta henryetta 74437">
+          <td class="col-name"><a href="#h-370183">Hillcrest Hospital Henryetta</a><span class="row-field">Henryetta, OK 74437</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370015" data-volume="low" data-search="hillcrest hospital pryor pryor 74361">
+          <td class="col-name"><a href="#h-370015">Hillcrest Hospital Pryor</a><span class="row-field">Pryor, OK 74361</span></td>
+          <td class="col-num" data-value="91" data-label="Median time in ER"><strong>91 min</strong><span class="row-years">1 h 31 m</span></td>
+          <td class="col-num" data-value="184" data-label="Mental health">184 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370202" data-volume="medium" data-search="hillcrest hospital south tulsa 74133">
+          <td class="col-name"><a href="#h-370202">Hillcrest Hospital South</a><span class="row-field">Tulsa, OK 74133</span></td>
+          <td class="col-num" data-value="185" data-label="Median time in ER"><strong>185 min</strong><span class="row-years">3 h 05 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370001" data-volume="high" data-search="hillcrest medical center tulsa 74104">
+          <td class="col-name"><a href="#h-370001">Hillcrest Medical Center</a><span class="row-field">Tulsa, OK 74104</span></td>
+          <td class="col-num" data-value="223" data-label="Median time in ER"><strong>223 min</strong><span class="row-years">3 h 43 m</span></td>
+          <td class="col-num" data-value="269" data-label="Mental health">269 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-371321" data-volume="low" data-search="holdenville general hospital holdenville 74848">
+          <td class="col-name"><a href="#h-371321">Holdenville General Hospital</a><span class="row-field">Holdenville, OK 74848</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370028" data-volume="very high" data-search="integris baptist medical center, inc oklahoma city 73112">
+          <td class="col-name"><a href="#h-370028">Integris Baptist Medical Center, Inc</a><span class="row-field">Oklahoma City, OK 73112</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="151" data-label="Mental health">151 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-370211" data-volume="medium" data-search="integris canadian valley hospital yukon 73099">
+          <td class="col-name"><a href="#h-370211">Integris Canadian Valley Hospital</a><span class="row-field">Yukon, OK 73099</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="150" data-label="Mental health">150 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370240" data-volume="very high" data-search="integris community hospital - council crossing oklahoma city 73162">
+          <td class="col-name"><a href="#h-370240">Integris Community Hospital - Council Crossing</a><span class="row-field">Oklahoma City, OK 73162</span></td>
+          <td class="col-num" data-value="64" data-label="Median time in ER"><strong>64 min</strong><span class="row-years">1 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-370113" data-volume="low" data-search="integris grove hospital grove 74344">
+          <td class="col-name"><a href="#h-370113">Integris Grove Hospital</a><span class="row-field">Grove, OK 74344</span></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="195" data-label="Mental health">195 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370236" data-volume="medium" data-search="integris health edmond hospital edmond 73034">
+          <td class="col-name"><a href="#h-370236">Integris Health Edmond Hospital</a><span class="row-field">Edmond, OK 73034</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="251" data-label="Mental health">251 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370016" data-volume="medium" data-search="integris health enid hospital enid 73701">
+          <td class="col-name"><a href="#h-370016">Integris Health Enid Hospital</a><span class="row-field">Enid, OK 73701</span></td>
+          <td class="col-num" data-value="138" data-label="Median time in ER"><strong>138 min</strong><span class="row-years">2 h 18 m</span></td>
+          <td class="col-num" data-value="172" data-label="Mental health">172 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370006" data-volume="low" data-search="integris health ponca city ponca city 74601">
+          <td class="col-name"><a href="#h-370006">Integris Health Ponca City</a><span class="row-field">Ponca City, OK 74601</span></td>
+          <td class="col-num" data-value="128" data-label="Median time in ER"><strong>128 min</strong><span class="row-years">2 h 08 m</span></td>
+          <td class="col-num" data-value="130" data-label="Mental health">130 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370002" data-volume="low" data-search="integris health woodward hospital woodward 73801">
+          <td class="col-name"><a href="#h-370002">Integris Health Woodward Hospital</a><span class="row-field">Woodward, OK 73801</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370004" data-volume="low" data-search="integris miami hospital miami 74355">
+          <td class="col-name"><a href="#h-370004">Integris Miami Hospital</a><span class="row-field">Miami, OK 74355</span></td>
+          <td class="col-num" data-value="92" data-label="Median time in ER"><strong>92 min</strong><span class="row-years">1 h 32 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370106" data-volume="very high" data-search="integris southwest medical center oklahoma city 73109">
+          <td class="col-name"><a href="#h-370106">Integris Southwest Medical Center</a><span class="row-field">Oklahoma City, OK 73109</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="214" data-label="Mental health">214 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-370022" data-volume="low" data-search="jackson county memorial hospital authority altus 73521">
+          <td class="col-name"><a href="#h-370022">Jackson County Memorial Hospital Authority</a><span class="row-field">Altus, OK 73521</span></td>
+          <td class="col-num" data-value="108" data-label="Median time in ER"><strong>108 min</strong><span class="row-years">1 h 48 m</span></td>
+          <td class="col-num" data-value="364" data-label="Mental health">364 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371311" data-volume="low" data-search="jefferson county hospital waurika 73573">
+          <td class="col-name"><a href="#h-371311">Jefferson County Hospital</a><span class="row-field">Waurika, OK 73573</span></td>
+          <td class="col-num" data-value="89" data-label="Median time in ER"><strong>89 min</strong><span class="row-years">1 h 29 m</span></td>
+          <td class="col-num" data-value="158" data-label="Mental health">158 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371330" data-volume="low" data-search="mangum regional medical center mangum 73554">
+          <td class="col-name"><a href="#h-371330">Mangum Regional Medical Center</a><span class="row-field">Mangum, OK 73554</span></td>
+          <td class="col-num" data-value="72" data-label="Median time in ER"><strong>72 min</strong><span class="row-years">1 h 12 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370034" data-volume="medium" data-search="mcalester regional health center mcalester 74501">
+          <td class="col-name"><a href="#h-370034">Mcalester Regional Health Center</a><span class="row-field">Mcalester, OK 74501</span></td>
+          <td class="col-num" data-value="155" data-label="Median time in ER"><strong>155 min</strong><span class="row-years">2 h 35 m</span></td>
+          <td class="col-num" data-value="157" data-label="Mental health">157 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370222" data-volume="low" data-search="mcbride orthopedic hospital oklahoma city 73114">
+          <td class="col-name"><a href="#h-370222">Mcbride Orthopedic Hospital</a><span class="row-field">Oklahoma City, OK 73114</span></td>
+          <td class="col-num" data-value="57" data-label="Median time in ER"><strong>57 min</strong><span class="row-years">0 h 57 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371342" data-volume="" data-search="mccurtain memorial hospital idabel 74745">
+          <td class="col-name"><a href="#h-371342">Mccurtain Memorial Hospital</a><span class="row-field">Idabel, OK 74745</span></td>
+          <td class="col-num" data-value="84" data-label="Median time in ER"><strong>84 min</strong><span class="row-years">1 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370056" data-volume="high" data-search="memorial health lawton 73505">
+          <td class="col-name"><a href="#h-370056">Memorial Health</a><span class="row-field">Lawton, OK 73505</span></td>
+          <td class="col-num" data-value="121" data-label="Median time in ER"><strong>121 min</strong><span class="row-years">2 h 01 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-370178" data-volume="low" data-search="memorial hospital stilwell 74960">
+          <td class="col-name"><a href="#h-370178">Memorial Hospital</a><span class="row-field">Stilwell, OK 74960</span></td>
+          <td class="col-num" data-value="82" data-label="Median time in ER"><strong>82 min</strong><span class="row-years">1 h 22 m</span></td>
+          <td class="col-num" data-value="228" data-label="Mental health">228 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371340" data-volume="low" data-search="memorial hospital of texas county authority guymon 73942">
+          <td class="col-name"><a href="#h-371340">Memorial Hospital of Texas County Authority</a><span class="row-field">Guymon, OK 73942</span></td>
+          <td class="col-num" data-value="146" data-label="Median time in ER"><strong>146 min</strong><span class="row-years">2 h 26 m</span></td>
+          <td class="col-num" data-value="190" data-label="Mental health">190 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370020" data-volume="medium" data-search="mercy hospital ada ada 74820">
+          <td class="col-name"><a href="#h-370020">Mercy Hospital Ada</a><span class="row-field">Ada, OK 74820</span></td>
+          <td class="col-num" data-value="137" data-label="Median time in ER"><strong>137 min</strong><span class="row-years">2 h 17 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370047" data-volume="medium" data-search="mercy hospital ardmore, inc ardmore 73401">
+          <td class="col-name"><a href="#h-370047">Mercy Hospital Ardmore, Inc</a><span class="row-field">Ardmore, OK 73401</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="298" data-label="Mental health">298 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-371310" data-volume="low" data-search="mercy hospital healdton, inc. healdton 73438">
+          <td class="col-name"><a href="#h-371310">Mercy Hospital Healdton, Inc.</a><span class="row-field">Healdton, OK 73438</span></td>
+          <td class="col-num" data-value="68" data-label="Median time in ER"><strong>68 min</strong><span class="row-years">1 h 08 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371313" data-volume="low" data-search="mercy hospital kingfisher, inc kingfisher 73750">
+          <td class="col-name"><a href="#h-371313">Mercy Hospital Kingfisher, Inc</a><span class="row-field">Kingfisher, OK 73750</span></td>
+          <td class="col-num" data-value="79" data-label="Median time in ER"><strong>79 min</strong><span class="row-years">1 h 19 m</span></td>
+          <td class="col-num" data-value="82" data-label="Mental health">82 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371317" data-volume="low" data-search="mercy hospital logan county guthrie 73044">
+          <td class="col-name"><a href="#h-371317">Mercy Hospital Logan County</a><span class="row-field">Guthrie, OK 73044</span></td>
+          <td class="col-num" data-value="68" data-label="Median time in ER"><strong>68 min</strong><span class="row-years">1 h 08 m</span></td>
+          <td class="col-num" data-value="76" data-label="Mental health">76 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371306" data-volume="low" data-search="mercy hospital marietta marietta 73448">
+          <td class="col-name"><a href="#h-371306">Mercy Hospital Marietta</a><span class="row-field">Marietta, OK 73448</span></td>
+          <td class="col-num" data-value="81" data-label="Median time in ER"><strong>81 min</strong><span class="row-years">1 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370013" data-volume="very high" data-search="mercy hospital oklahoma city, inc oklahoma city 73120">
+          <td class="col-name"><a href="#h-370013">Mercy Hospital Oklahoma City, Inc</a><span class="row-field">Oklahoma City, OK 73120</span></td>
+          <td class="col-num" data-value="151" data-label="Median time in ER"><strong>151 min</strong><span class="row-years">2 h 31 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-371304" data-volume="low" data-search="mercy hospital tishomingo inc tishomingo 73460">
+          <td class="col-name"><a href="#h-371304">Mercy Hospital Tishomingo Inc</a><span class="row-field">Tishomingo, OK 73460</span></td>
+          <td class="col-num" data-value="66" data-label="Median time in ER"><strong>66 min</strong><span class="row-years">1 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371302" data-volume="low" data-search="mercy hospital watonga, inc watonga 73772">
+          <td class="col-name"><a href="#h-371302">Mercy Hospital Watonga, Inc</a><span class="row-field">Watonga, OK 73772</span></td>
+          <td class="col-num" data-value="92" data-label="Median time in ER"><strong>92 min</strong><span class="row-years">1 h 32 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370057" data-volume="medium" data-search="muscogee (creek) nation medical center okmulgee 74447">
+          <td class="col-name"><a href="#h-370057">Muscogee (Creek) Nation Medical Center</a><span class="row-field">Okmulgee, OK 74447</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-371336" data-volume="low" data-search="newman memorial hospital shattuck 73858">
+          <td class="col-name"><a href="#h-371336">Newman Memorial Hospital</a><span class="row-field">Shattuck, OK 73858</span></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370008" data-volume="very high" data-search="norman regional norman 73072">
+          <td class="col-name"><a href="#h-370008">Norman Regional</a><span class="row-field">Norman, OK 73072</span></td>
+          <td class="col-num" data-value="131" data-label="Median time in ER"><strong>131 min</strong><span class="row-years">2 h 11 m</span></td>
+          <td class="col-num" data-value="270" data-label="Mental health">270 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-370089" data-volume="low" data-search="northeastern health system tahlequah 74465">
+          <td class="col-name"><a href="#h-370089">Northeastern Health System</a><span class="row-field">Tahlequah, OK 74465</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="276" data-label="Mental health">276 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370093" data-volume="very high" data-search="o u medical center oklahoma city 73104">
+          <td class="col-name"><a href="#h-370093">O U Medical Center</a><span class="row-field">Oklahoma City, OK 73104</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="232" data-label="Mental health">232 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-371327" data-volume="low" data-search="okeene municipal hospital okeene 73763">
+          <td class="col-name"><a href="#h-371327">Okeene Municipal Hospital</a><span class="row-field">Okeene, OK 73763</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="333" data-label="Mental health">333 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370234" data-volume="low" data-search="oklahoma heart hospital south, llc oklahoma city 73135">
+          <td class="col-name"><a href="#h-370234">Oklahoma Heart Hospital South, LLC</a><span class="row-field">Oklahoma City, OK 73135</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370215" data-volume="low" data-search="oklahoma heart hospital, llc oklahoma city 73120">
+          <td class="col-name"><a href="#h-370215">Oklahoma Heart Hospital, LLC</a><span class="row-field">Oklahoma City, OK 73120</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370206" data-volume="low" data-search="oklahoma spine hospital oklahoma city 73134">
+          <td class="col-name"><a href="#h-370206">Oklahoma Spine Hospital</a><span class="row-field">Oklahoma City, OK 73134</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370078" data-volume="high" data-search="oklahoma state university medical center tulsa 74127">
+          <td class="col-name"><a href="#h-370078">Oklahoma State University Medical Center</a><span class="row-field">Tulsa, OK 74127</span></td>
+          <td class="col-num" data-value="105" data-label="Median time in ER"><strong>105 min</strong><span class="row-years">1 h 45 m</span></td>
+          <td class="col-num" data-value="111" data-label="Mental health">111 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-370210" data-volume="low" data-search="oklahoma surgical hospital, llc tulsa 74137">
+          <td class="col-name"><a href="#h-370210">Oklahoma Surgical Hospital, LLC</a><span class="row-field">Tulsa, OK 74137</span></td>
+          <td class="col-num" data-value="198" data-label="Median time in ER"><strong>198 min</strong><span class="row-years">3 h 18 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371309" data-volume="low" data-search="pawhuska hospital, inc pawhuska 74056">
+          <td class="col-name"><a href="#h-371309">Pawhuska Hospital, Inc</a><span class="row-field">Pawhuska, OK 74056</span></td>
+          <td class="col-num" data-value="81" data-label="Median time in ER"><strong>81 min</strong><span class="row-years">1 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371301" data-volume="low" data-search="prague regional memorial hospital prague 74864">
+          <td class="col-name"><a href="#h-371301">Prague Regional Memorial Hospital</a><span class="row-field">Prague, OK 74864</span></td>
+          <td class="col-num" data-value="106" data-label="Median time in ER"><strong>106 min</strong><span class="row-years">1 h 46 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370158" data-volume="low" data-search="purcell municipal hospital purcell 73080">
+          <td class="col-name"><a href="#h-370158">Purcell Municipal Hospital</a><span class="row-field">Purcell, OK 73080</span></td>
+          <td class="col-num" data-value="74" data-label="Median time in ER"><strong>74 min</strong><span class="row-years">1 h 14 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370083" data-volume="low" data-search="pushmataha hospital antlers 74523">
+          <td class="col-name"><a href="#h-370083">Pushmataha Hospital</a><span class="row-field">Antlers, OK 74523</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="146" data-label="Mental health">146 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371303" data-volume="low" data-search="roger mills memorial hospital cheyenne 73628">
+          <td class="col-name"><a href="#h-371303">Roger Mills Memorial Hospital</a><span class="row-field">Cheyenne, OK 73628</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371318" data-volume="low" data-search="rural wellness fairfax hospital fairfax 74637">
+          <td class="col-name"><a href="#h-371318">Rural Wellness Fairfax Hospital</a><span class="row-field">Fairfax, OK 74637</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="228" data-label="Mental health">228 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371316" data-volume="low" data-search="rural wellness stroud hospital stroud 74079">
+          <td class="col-name"><a href="#h-371316">Rural Wellness Stroud Hospital</a><span class="row-field">Stroud, OK 74079</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370025" data-volume="medium" data-search="saint francis hospital muskogee muskogee 74401">
+          <td class="col-name"><a href="#h-370025">Saint Francis Hospital Muskogee</a><span class="row-field">Muskogee, OK 74401</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="212" data-label="Mental health">212 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370218" data-volume="high" data-search="saint francis hospital south, llc tulsa 74133">
+          <td class="col-name"><a href="#h-370218">Saint Francis Hospital South, LLC</a><span class="row-field">Tulsa, OK 74133</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-370237" data-volume="low" data-search="saint francis hospital vinita, inc vinita 74301">
+          <td class="col-name"><a href="#h-370237">Saint Francis Hospital Vinita, Inc</a><span class="row-field">Vinita, OK 74301</span></td>
+          <td class="col-num" data-value="100" data-label="Median time in ER"><strong>100 min</strong><span class="row-years">1 h 40 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370091" data-volume="very high" data-search="saint francis hospital, inc tulsa 74136">
+          <td class="col-name"><a href="#h-370091">Saint Francis Hospital, Inc</a><span class="row-field">Tulsa, OK 74136</span></td>
+          <td class="col-num" data-value="230" data-label="Median time in ER"><strong>230 min</strong><span class="row-years">3 h 50 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-371332" data-volume="" data-search="seiling municipal hospital seiling 73663">
+          <td class="col-name"><a href="#h-371332">Seiling Municipal Hospital</a><span class="row-field">Seiling, OK 73663</span></td>
+          <td class="col-num" data-value="95" data-label="Median time in ER"><strong>95 min</strong><span class="row-years">1 h 35 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370112" data-volume="low" data-search="sequoyah county-city of sallisaw hospital authorit sallisaw 74955">
+          <td class="col-name"><a href="#h-370112">Sequoyah County-City of Sallisaw Hospital Authorit</a><span class="row-field">Sallisaw, OK 74955</span></td>
+          <td class="col-num" data-value="124" data-label="Median time in ER"><strong>124 min</strong><span class="row-years">2 h 04 m</span></td>
+          <td class="col-num" data-value="155" data-label="Mental health">155 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371341" data-volume="low" data-search="share medical center alva 73717">
+          <td class="col-name"><a href="#h-371341">Share Medical Center</a><span class="row-field">Alva, OK 73717</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370097" data-volume="medium" data-search="southwestern medical center lawton 73505">
+          <td class="col-name"><a href="#h-370097">Southwestern Medical Center</a><span class="row-field">Lawton, OK 73505</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="197" data-label="Mental health">197 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370094" data-volume="medium" data-search="ssm health st anthony hospital - midwest midwest city 73110">
+          <td class="col-name"><a href="#h-370094">Ssm Health St Anthony Hospital - Midwest</a><span class="row-field">Midwest City, OK 73110</span></td>
+          <td class="col-num" data-value="150" data-label="Median time in ER"><strong>150 min</strong><span class="row-years">2 h 30 m</span></td>
+          <td class="col-num" data-value="124" data-label="Mental health">124 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370037" data-volume="very high" data-search="ssm health st anthony hospital - oklahoma city oklahoma city 73101">
+          <td class="col-name"><a href="#h-370037">Ssm Health St Anthony Hospital - Oklahoma City</a><span class="row-field">Oklahoma City, OK 73101</span></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="165" data-label="Mental health">165 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-370149" data-volume="high" data-search="ssm health st anthony hospital - shawnee shawnee 74801">
+          <td class="col-name"><a href="#h-370149">Ssm Health St Anthony Hospital - Shawnee</a><span class="row-field">Shawnee, OK 74801</span></td>
+          <td class="col-num" data-value="124" data-label="Median time in ER"><strong>124 min</strong><span class="row-years">2 h 04 m</span></td>
+          <td class="col-num" data-value="153" data-label="Mental health">153 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-370227" data-volume="" data-search="st john owasso owasso 74055">
+          <td class="col-name"><a href="#h-370227">St John Owasso</a><span class="row-field">Owasso, OK 74055</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="209" data-label="Mental health">209 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370026" data-volume="low" data-search="st mary&#x27;s regional medical center enid 73701">
+          <td class="col-name"><a href="#h-370026">St Mary&#x27;s Regional Medical Center</a><span class="row-field">Enid, OK 73701</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="262" data-label="Mental health">262 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370049" data-volume="medium" data-search="stillwater medical center stillwater 74076">
+          <td class="col-name"><a href="#h-370049">Stillwater Medical Center</a><span class="row-field">Stillwater, OK 74076</span></td>
+          <td class="col-num" data-value="149" data-label="Median time in ER"><strong>149 min</strong><span class="row-years">2 h 29 m</span></td>
+          <td class="col-num" data-value="196" data-label="Mental health">196 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-370225" data-volume="low" data-search="summit medical center, llc edmond 73034">
+          <td class="col-name"><a href="#h-370225">Summit Medical Center, LLC</a><span class="row-field">Edmond, OK 73034</span></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371314" data-volume="" data-search="the physicians&#x27; hospital in anadarko anadarko 73005">
+          <td class="col-name"><a href="#h-371314">The Physicians&#x27; Hospital in Anadarko</a><span class="row-field">Anadarko, OK 73005</span></td>
+          <td class="col-num" data-value="84" data-label="Median time in ER"><strong>84 min</strong><span class="row-years">1 h 24 m</span></td>
+          <td class="col-num" data-value="126" data-label="Mental health">126 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-370216" data-volume="low" data-search="tulsa spine &amp; specialty hospital tulsa 74132">
+          <td class="col-name"><a href="#h-370216">Tulsa Spine &amp; Specialty Hospital</a><span class="row-field">Tulsa, OK 74132</span></td>
+          <td class="col-num" data-value="191" data-label="Median time in ER"><strong>191 min</strong><span class="row-years">3 h 11 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-370166" data-volume="low" data-search="wagoner community hospital wagoner 74467">
+          <td class="col-name"><a href="#h-370166">Wagoner Community Hospital</a><span class="row-field">Wagoner, OK 74467</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-371323" data-volume="low" data-search="weatherford regional hospital, inc of weatherford weatherford 73096">
+          <td class="col-name"><a href="#h-371323">Weatherford Regional Hospital, Inc of Weatherford</a><span class="row-field">Weatherford, OK 73096</span></td>
+          <td class="col-num" data-value="128" data-label="Median time in ER"><strong>128 min</strong><span class="row-years">2 h 08 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

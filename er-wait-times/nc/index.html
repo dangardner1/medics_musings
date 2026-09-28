@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in North Carolina: 94 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in North Carolina? The state median is 187 minutes. Compare 94 North Carolina hospitals&#x27; emergency department times, from CMS data…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/nc/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/nc/">
+<meta property="og:title" content="ER wait times in North Carolina">
+<meta property="og:description" content="How long do ER visits take in North Carolina? The state median is 187 minutes. Compare 94 North Carolina hospitals&#x27; emergency department times, from CMS data…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in North Carolina">
+<meta name="twitter:description" content="How long do ER visits take in North Carolina? The state median is 187 minutes. Compare 94 North Carolina hospitals&#x27; emergency department times, from CMS data…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/nc/#dataset",
+   "name": "Emergency department wait times in North Carolina hospitals",
+   "description": "Median emergency department times for 94 hospitals in North Carolina, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/nc/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "North Carolina"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "North Carolina",
+     "item": "https://www.medicsmusings.com/er-wait-times/nc/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>North Carolina</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in North Carolina</h1>
+      <p class="coll-intro">The typical ER visit in North Carolina takes 187 minutes, 25 minutes slower than the national median of 162. The quickest hospital here has a median of 81 minutes and the slowest 317, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>North Carolina median</dt><dd>187 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>300 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>2%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>94</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-nc-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-nc-search" type="search" data-filter-table="er-nc" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-nc">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-341322" data-volume="" data-search="advent health polk columbus 28722">
+          <td class="col-name"><a href="#h-341322">Advent Health Polk</a><span class="row-field">Columbus, NC 28722</span></td>
+          <td class="col-num" data-value="136" data-label="Median time in ER"><strong>136 min</strong><span class="row-years">2 h 16 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-340023" data-volume="medium" data-search="adventhealth hendersonville hendersonville 28792">
+          <td class="col-name"><a href="#h-340023">Adventhealth Hendersonville</a><span class="row-field">Hendersonville, NC 28792</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340070" data-volume="very high" data-search="alamance regional medical center burlington 27216">
+          <td class="col-name"><a href="#h-340070">Alamance Regional Medical Center</a><span class="row-field">Burlington, NC 27216</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="370" data-label="Mental health">370 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-341326" data-volume="medium" data-search="angel medical center franklin 28734">
+          <td class="col-name"><a href="#h-341326">Angel Medical Center</a><span class="row-field">Franklin, NC 28734</span></td>
+          <td class="col-num" data-value="120" data-label="Median time in ER"><strong>120 min</strong><span class="row-years">2 h 00 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341325" data-volume="low" data-search="ashe memorial hospital jefferson 28640">
+          <td class="col-name"><a href="#h-341325">Ashe Memorial Hospital</a><span class="row-field">Jefferson, NC 28640</span></td>
+          <td class="col-num" data-value="178" data-label="Median time in ER"><strong>178 min</strong><span class="row-years">2 h 58 m</span></td>
+          <td class="col-num" data-value="263" data-label="Mental health">263 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340084" data-volume="low" data-search="atrium health anson wadesboro 28170">
+          <td class="col-name"><a href="#h-340084">Atrium Health Anson</a><span class="row-field">Wadesboro, NC 28170</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="702" data-label="Mental health">702 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340021" data-volume="very high" data-search="atrium health cleveland shelby 28150">
+          <td class="col-name"><a href="#h-340021">Atrium Health Cleveland</a><span class="row-field">Shelby, NC 28150</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="158" data-label="Mental health">158 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340145" data-volume="high" data-search="atrium health lincoln lincolnton 28092">
+          <td class="col-name"><a href="#h-340145">Atrium Health Lincoln</a><span class="row-field">Lincolnton, NC 28092</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340098" data-volume="very high" data-search="atrium health pineville charlotte 28210">
+          <td class="col-name"><a href="#h-340098">Atrium Health Pineville</a><span class="row-field">Charlotte, NC 28210</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="316" data-label="Mental health">316 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340130" data-volume="very high" data-search="atrium health union monroe 28112">
+          <td class="col-name"><a href="#h-340130">Atrium Health Union</a><span class="row-field">Monroe, NC 28112</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="157" data-label="Mental health">157 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340166" data-volume="very high" data-search="atrium health university city charlotte 28262">
+          <td class="col-name"><a href="#h-340166">Atrium Health University City</a><span class="row-field">Charlotte, NC 28262</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="194" data-label="Mental health">194 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340071" data-volume="high" data-search="betsy johnson regional hospital dunn 28334">
+          <td class="col-name"><a href="#h-340071">Betsy Johnson Regional Hospital</a><span class="row-field">Dunn, NC 28334</span></td>
+          <td class="col-num" data-value="210" data-label="Median time in ER"><strong>210 min</strong><span class="row-years">3 h 30 m</span></td>
+          <td class="col-num" data-value="285" data-label="Mental health">285 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340075" data-volume="high" data-search="blue ridge healthcare hospitals, inc morganton 28655">
+          <td class="col-name"><a href="#h-340075">Blue Ridge Healthcare Hospitals, Inc</a><span class="row-field">Morganton, NC 28655</span></td>
+          <td class="col-num" data-value="173" data-label="Median time in ER"><strong>173 min</strong><span class="row-years">2 h 53 m</span></td>
+          <td class="col-num" data-value="311" data-label="Mental health">311 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-341329" data-volume="low" data-search="blue ridge regional hospital spruce pine 28777">
+          <td class="col-name"><a href="#h-341329">Blue Ridge Regional Hospital</a><span class="row-field">Spruce Pine, NC 28777</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="245" data-label="Mental health">245 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340041" data-volume="medium" data-search="caldwell memorial hospital lenoir 28645">
+          <td class="col-name"><a href="#h-340041">Caldwell Memorial Hospital</a><span class="row-field">Lenoir, NC 28645</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="297" data-label="Mental health">297 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340188" data-volume="high" data-search="cape fear valley hoke hospital raeford 28376">
+          <td class="col-name"><a href="#h-340188">Cape Fear Valley Hoke Hospital</a><span class="row-field">Raeford, NC 28376</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340028" data-volume="very high" data-search="cape fear valley medical center fayetteville 28302">
+          <td class="col-name"><a href="#h-340028">Cape Fear Valley Medical Center</a><span class="row-field">Fayetteville, NC 28302</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="852" data-label="Mental health">852 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-341315" data-volume="low" data-search="cape fear valley-bladen county hospital elizabethtown 28337">
+          <td class="col-name"><a href="#h-341315">Cape Fear Valley-Bladen County Hospital</a><span class="row-field">Elizabethtown, NC 28337</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="752" data-label="Mental health">752 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340131" data-volume="very high" data-search="carolina east medical center new bern 28560">
+          <td class="col-name"><a href="#h-340131">Carolina East Medical Center</a><span class="row-field">New Bern, NC 28560</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="427" data-label="Mental health">427 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340001" data-volume="very high" data-search="carolinas medical center-northeast concord 28025">
+          <td class="col-name"><a href="#h-340001">Carolinas Medical Center-Northeast</a><span class="row-field">Concord, NC 28025</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340113" data-volume="very high" data-search="carolinas medical center/behav health charlotte 28203">
+          <td class="col-name"><a href="#h-340113">Carolinas Medical Center/Behav Health</a><span class="row-field">Charlotte, NC 28203</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="316" data-label="Mental health">316 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340032" data-volume="very high" data-search="caromont regional medical center gastonia 28052">
+          <td class="col-name"><a href="#h-340032">Caromont Regional Medical Center</a><span class="row-field">Gastonia, NC 28052</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="290" data-label="Mental health">290 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340142" data-volume="high" data-search="carteret general hospital morehead city 28557">
+          <td class="col-name"><a href="#h-340142">Carteret General Hospital</a><span class="row-field">Morehead City, NC 28557</span></td>
+          <td class="col-num" data-value="225" data-label="Median time in ER"><strong>225 min</strong><span class="row-years">3 h 45 m</span></td>
+          <td class="col-num" data-value="1212" data-label="Mental health">1212 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340143" data-volume="high" data-search="catawba valley medical center hickory 28602">
+          <td class="col-name"><a href="#h-340143">Catawba Valley Medical Center</a><span class="row-field">Hickory, NC 28602</span></td>
+          <td class="col-num" data-value="228" data-label="Median time in ER"><strong>228 min</strong><span class="row-years">3 h 48 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340020" data-volume="medium" data-search="central carolina hospital sanford 27330">
+          <td class="col-name"><a href="#h-340020">Central Carolina Hospital</a><span class="row-field">Sanford, NC 27330</span></td>
+          <td class="col-num" data-value="172" data-label="Median time in ER"><strong>172 min</strong><span class="row-years">2 h 52 m</span></td>
+          <td class="col-num" data-value="352" data-label="Mental health">352 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341323" data-volume="low" data-search="charles a cannon jr memorial hospital linville 28646">
+          <td class="col-name"><a href="#h-341323">Charles A Cannon Jr Memorial Hospital</a><span class="row-field">Linville, NC 28646</span></td>
+          <td class="col-num" data-value="112" data-label="Median time in ER"><strong>112 min</strong><span class="row-years">1 h 52 m</span></td>
+          <td class="col-num" data-value="249" data-label="Mental health">249 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-341311" data-volume="" data-search="chatham hospital inc siler city 27344">
+          <td class="col-name"><a href="#h-341311">Chatham Hospital Inc</a><span class="row-field">Siler City, NC 27344</span></td>
+          <td class="col-num" data-value="222" data-label="Median time in ER"><strong>222 min</strong><span class="row-years">3 h 42 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-340068" data-volume="medium" data-search="columbus regional healthcare system whiteville 28472">
+          <td class="col-name"><a href="#h-340068">Columbus Regional Healthcare System</a><span class="row-field">Whiteville, NC 28472</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="303" data-label="Mental health">303 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341305" data-volume="low" data-search="dlp swain county hospital llc bryson city 28713">
+          <td class="col-name"><a href="#h-341305">Dlp Swain County Hospital LLC</a><span class="row-field">Bryson City, NC 28713</span></td>
+          <td class="col-num" data-value="81" data-label="Median time in ER"><strong>81 min</strong><span class="row-years">1 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340129" data-volume="medium" data-search="duke health lake norman hospital mooresville 28117">
+          <td class="col-name"><a href="#h-340129">Duke Health Lake Norman Hospital</a><span class="row-field">Mooresville, NC 28117</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="304" data-label="Mental health">304 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340155" data-volume="very high" data-search="duke regional hospital durham 27704">
+          <td class="col-name"><a href="#h-340155">Duke Regional Hospital</a><span class="row-field">Durham, NC 27704</span></td>
+          <td class="col-num" data-value="255" data-label="Median time in ER"><strong>255 min</strong><span class="row-years">4 h 15 m</span></td>
+          <td class="col-num" data-value="358" data-label="Mental health">358 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340030" data-volume="very high" data-search="duke university hospital durham 27705">
+          <td class="col-name"><a href="#h-340030">Duke University Hospital</a><span class="row-field">Durham, NC 27705</span></td>
+          <td class="col-num" data-value="317" data-label="Median time in ER"><strong>317 min</strong><span class="row-years">5 h 17 m</span></td>
+          <td class="col-num" data-value="417" data-label="Mental health">417 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-341304" data-volume="low" data-search="ecu health bertie hospital windsor 27983">
+          <td class="col-name"><a href="#h-341304">Ecu Health Bertie Hospital</a><span class="row-field">Windsor, NC 27983</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="504" data-label="Mental health">504 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340040" data-volume="very high" data-search="ecu health medical center greenville 27834">
+          <td class="col-name"><a href="#h-340040">Ecu Health Medical Center</a><span class="row-field">Greenville, NC 27834</span></td>
+          <td class="col-num" data-value="289" data-label="Median time in ER"><strong>289 min</strong><span class="row-years">4 h 49 m</span></td>
+          <td class="col-num" data-value="848" data-label="Mental health">848 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340151" data-volume="medium" data-search="ecu health north hospital roanoke rapids 27870">
+          <td class="col-name"><a href="#h-340151">Ecu Health North Hospital</a><span class="row-field">Roanoke Rapids, NC 27870</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="378" data-label="Mental health">378 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341328" data-volume="low" data-search="erlanger murphy medical center murphy 28906">
+          <td class="col-name"><a href="#h-341328">Erlanger Murphy Medical Center</a><span class="row-field">Murphy, NC 28906</span></td>
+          <td class="col-num" data-value="177" data-label="Median time in ER"><strong>177 min</strong><span class="row-years">2 h 57 m</span></td>
+          <td class="col-num" data-value="264" data-label="Mental health">264 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-341303" data-volume="" data-search="firsthealth montgomery memorial hosp troy 27371">
+          <td class="col-name"><a href="#h-341303">Firsthealth Montgomery Memorial Hosp</a><span class="row-field">Troy, NC 27371</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="244" data-label="Mental health">244 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-340115" data-volume="very high" data-search="firsthealth moore regional hospital pinehurst 28374">
+          <td class="col-name"><a href="#h-340115">Firsthealth Moore Regional Hospital</a><span class="row-field">Pinehurst, NC 28374</span></td>
+          <td class="col-num" data-value="201" data-label="Median time in ER"><strong>201 min</strong><span class="row-years">3 h 21 m</span></td>
+          <td class="col-num" data-value="292" data-label="Mental health">292 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340116" data-volume="medium" data-search="frye regional medical center hickory 28601">
+          <td class="col-name"><a href="#h-340116">Frye Regional Medical Center</a><span class="row-field">Hickory, NC 28601</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="215" data-label="Mental health">215 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340127" data-volume="medium" data-search="granville health systems oxford 27565">
+          <td class="col-name"><a href="#h-340127">Granville Health Systems</a><span class="row-field">Oxford, NC 27565</span></td>
+          <td class="col-num" data-value="191" data-label="Median time in ER"><strong>191 min</strong><span class="row-years">3 h 11 m</span></td>
+          <td class="col-num" data-value="432" data-label="Mental health">432 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340016" data-volume="medium" data-search="harris regional hospital sylva 28779">
+          <td class="col-name"><a href="#h-340016">Harris Regional Hospital</a><span class="row-field">Sylva, NC 28779</span></td>
+          <td class="col-num" data-value="174" data-label="Median time in ER"><strong>174 min</strong><span class="row-years">2 h 54 m</span></td>
+          <td class="col-num" data-value="505" data-label="Mental health">505 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340184" data-volume="medium" data-search="haywood regional medical center clyde 28721">
+          <td class="col-name"><a href="#h-340184">Haywood Regional Medical Center</a><span class="row-field">Clyde, NC 28721</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="222" data-label="Mental health">222 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340004" data-volume="high" data-search="high point regional health system high point 27261">
+          <td class="col-name"><a href="#h-340004">High Point Regional Health System</a><span class="row-field">High Point, NC 27261</span></td>
+          <td class="col-num" data-value="247" data-label="Median time in ER"><strong>247 min</strong><span class="row-years">4 h 07 m</span></td>
+          <td class="col-num" data-value="240" data-label="Mental health">240 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-341316" data-volume="low" data-search="highlands cashiers hospital highlands 28741">
+          <td class="col-name"><a href="#h-341316">Highlands Cashiers Hospital</a><span class="row-field">Highlands, NC 28741</span></td>
+          <td class="col-num" data-value="104" data-label="Median time in ER"><strong>104 min</strong><span class="row-years">1 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340097" data-volume="medium" data-search="hugh chatham memorial hospital elkin 28621">
+          <td class="col-name"><a href="#h-340097">Hugh Chatham Memorial Hospital</a><span class="row-field">Elkin, NC 28621</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="688" data-label="Mental health">688 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340039" data-volume="high" data-search="iredell memorial hospital inc statesville 28677">
+          <td class="col-name"><a href="#h-340039">Iredell Memorial Hospital Inc</a><span class="row-field">Statesville, NC 28677</span></td>
+          <td class="col-num" data-value="186" data-label="Median time in ER"><strong>186 min</strong><span class="row-years">3 h 06 m</span></td>
+          <td class="col-num" data-value="274" data-label="Mental health">274 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-341327" data-volume="low" data-search="j arthur dosher memorial hospital southport 28461">
+          <td class="col-name"><a href="#h-341327">J Arthur Dosher Memorial Hospital</a><span class="row-field">Southport, NC 28461</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340090" data-volume="very high" data-search="johnston health smithfield 27577">
+          <td class="col-name"><a href="#h-340090">Johnston Health</a><span class="row-field">Smithfield, NC 27577</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340096" data-volume="medium" data-search="lexington memorial hospital inc lexington 27293">
+          <td class="col-name"><a href="#h-340096">Lexington Memorial Hospital Inc</a><span class="row-field">Lexington, NC 27293</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="133" data-label="Mental health">133 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340132" data-volume="high" data-search="maria parham medical center henderson 27536">
+          <td class="col-name"><a href="#h-340132">Maria Parham Medical Center</a><span class="row-field">Henderson, NC 27536</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="690" data-label="Mental health">690 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340002" data-volume="very high" data-search="memorial mission hospital and asheville surgery ce asheville 28801">
+          <td class="col-name"><a href="#h-340002">Memorial Mission Hospital and Asheville Surgery Ce</a><span class="row-field">Asheville, NC 28801</span></td>
+          <td class="col-num" data-value="163" data-label="Median time in ER"><strong>163 min</strong><span class="row-years">2 h 43 m</span></td>
+          <td class="col-num" data-value="307" data-label="Mental health">307 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340091" data-volume="very high" data-search="moses h. cone memorial hospital, the greensboro 27401">
+          <td class="col-name"><a href="#h-340091">Moses H. Cone Memorial Hospital, the</a><span class="row-field">Greensboro, NC 27401</span></td>
+          <td class="col-num" data-value="224" data-label="Median time in ER"><strong>224 min</strong><span class="row-years">3 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-34011f" data-volume="high" data-search="nmc camp lejeune camp lejeune 28547">
+          <td class="col-name"><a href="#h-34011f">Nmc Camp Lejeune</a><span class="row-field">Camp Lejeune, NC 28547</span></td>
+          <td class="col-num" data-value="201" data-label="Median time in ER"><strong>201 min</strong><span class="row-years">3 h 21 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340047" data-volume="very high" data-search="north carolina baptist hospital winston-salem 27157">
+          <td class="col-name"><a href="#h-340047">North Carolina Baptist Hospital</a><span class="row-field">Winston-Salem, NC 27157</span></td>
+          <td class="col-num" data-value="183" data-label="Median time in ER"><strong>183 min</strong><span class="row-years">3 h 03 m</span></td>
+          <td class="col-num" data-value="256" data-label="Mental health">256 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340003" data-volume="medium" data-search="northern regional hospital mount airy 27030">
+          <td class="col-name"><a href="#h-340003">Northern Regional Hospital</a><span class="row-field">Mount Airy, NC 27030</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340195" data-volume="low" data-search="novant health ballantyne medical center charlotte 28277">
+          <td class="col-name"><a href="#h-340195">Novant Health Ballantyne Medical Center</a><span class="row-field">Charlotte, NC 28277</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="313" data-label="Mental health">313 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340158" data-volume="medium" data-search="novant health brunswick medical center supply 28462">
+          <td class="col-name"><a href="#h-340158">Novant Health Brunswick Medical Center</a><span class="row-field">Supply, NC 28462</span></td>
+          <td class="col-num" data-value="181" data-label="Median time in ER"><strong>181 min</strong><span class="row-years">3 h 01 m</span></td>
+          <td class="col-num" data-value="533" data-label="Mental health">533 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340014" data-volume="very high" data-search="novant health forsyth medical center winston-salem 27103">
+          <td class="col-name"><a href="#h-340014">Novant Health Forsyth Medical Center</a><span class="row-field">Winston-Salem, NC 27103</span></td>
+          <td class="col-num" data-value="206" data-label="Median time in ER"><strong>206 min</strong><span class="row-years">3 h 26 m</span></td>
+          <td class="col-num" data-value="284" data-label="Mental health">284 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340183" data-volume="high" data-search="novant health huntersville medical center huntersville 28078">
+          <td class="col-name"><a href="#h-340183">Novant Health Huntersville Medical Center</a><span class="row-field">Huntersville, NC 28078</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340171" data-volume="medium" data-search="novant health matthews medical center matthews 28106">
+          <td class="col-name"><a href="#h-340171">Novant Health Matthews Medical Center</a><span class="row-field">Matthews, NC 28106</span></td>
+          <td class="col-num" data-value="244" data-label="Median time in ER"><strong>244 min</strong><span class="row-years">4 h 04 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340190" data-volume="medium" data-search="novant health mint hill medical center charlotte 28215">
+          <td class="col-name"><a href="#h-340190">Novant Health Mint Hill Medical Center</a><span class="row-field">Charlotte, NC 28215</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="378" data-label="Mental health">378 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340141" data-volume="very high" data-search="novant health new hanover regional medical center wilmington 28402">
+          <td class="col-name"><a href="#h-340141">Novant Health New Hanover Regional Medical Center</a><span class="row-field">Wilmington, NC 28402</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="351" data-label="Mental health">351 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340053" data-volume="very high" data-search="novant health presbyterian medical center charlotte 28233">
+          <td class="col-name"><a href="#h-340053">Novant Health Presbyterian Medical Center</a><span class="row-field">Charlotte, NC 28233</span></td>
+          <td class="col-num" data-value="162" data-label="Median time in ER"><strong>162 min</strong><span class="row-years">2 h 42 m</span></td>
+          <td class="col-num" data-value="621" data-label="Mental health">621 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340015" data-volume="high" data-search="novant health rowan medical center salisbury 28144">
+          <td class="col-name"><a href="#h-340015">Novant Health Rowan Medical Center</a><span class="row-field">Salisbury, NC 28144</span></td>
+          <td class="col-num" data-value="205" data-label="Median time in ER"><strong>205 min</strong><span class="row-years">3 h 25 m</span></td>
+          <td class="col-num" data-value="918" data-label="Mental health">918 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340085" data-volume="medium" data-search="novant health thomasville medical center thomasville 27360">
+          <td class="col-name"><a href="#h-340085">Novant Health Thomasville Medical Center</a><span class="row-field">Thomasville, NC 27360</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="972" data-label="Mental health">972 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340042" data-volume="high" data-search="onslow memorial hospital jacksonville 28546">
+          <td class="col-name"><a href="#h-340042">Onslow Memorial Hospital</a><span class="row-field">Jacksonville, NC 28546</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="488" data-label="Mental health">488 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340017" data-volume="medium" data-search="pardee hospital henderson county hendersonville 28791">
+          <td class="col-name"><a href="#h-340017">Pardee Hospital Henderson County</a><span class="row-field">Hendersonville, NC 28791</span></td>
+          <td class="col-num" data-value="158" data-label="Median time in ER"><strong>158 min</strong><span class="row-years">2 h 38 m</span></td>
+          <td class="col-num" data-value="183" data-label="Mental health">183 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340159" data-volume="low" data-search="person memorial hospital roxboro 27573">
+          <td class="col-name"><a href="#h-340159">Person Memorial Hospital</a><span class="row-field">Roxboro, NC 27573</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="282" data-label="Mental health">282 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340123" data-volume="medium" data-search="randolph hospital asheboro 27203">
+          <td class="col-name"><a href="#h-340123">Randolph Hospital</a><span class="row-field">Asheboro, NC 27203</span></td>
+          <td class="col-num" data-value="216" data-label="Median time in ER"><strong>216 min</strong><span class="row-years">3 h 36 m</span></td>
+          <td class="col-num" data-value="196" data-label="Mental health">196 min</td>
+          <td class="col-num" data-value="6" data-label="Left before seen">6%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340114" data-volume="very high" data-search="rex hospital raleigh 27607">
+          <td class="col-name"><a href="#h-340114">Rex Hospital</a><span class="row-field">Raleigh, NC 27607</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="297" data-label="Mental health">297 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340013" data-volume="medium" data-search="rutherford regional medical center rutherfordton 28139">
+          <td class="col-name"><a href="#h-340013">Rutherford Regional Medical Center</a><span class="row-field">Rutherfordton, NC 28139</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340024" data-volume="medium" data-search="sampson regional medical center clinton 28328">
+          <td class="col-name"><a href="#h-340024">Sampson Regional Medical Center</a><span class="row-field">Clinton, NC 28328</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="155" data-label="Mental health">155 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340008" data-volume="high" data-search="scotland memorial hospital laurinburg 28352">
+          <td class="col-name"><a href="#h-340008">Scotland Memorial Hospital</a><span class="row-field">Laurinburg, NC 28352</span></td>
+          <td class="col-num" data-value="195" data-label="Median time in ER"><strong>195 min</strong><span class="row-years">3 h 15 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340109" data-volume="high" data-search="sentara albemarle medical center elizabeth city 27909">
+          <td class="col-name"><a href="#h-340109">Sentara Albemarle Medical Center</a><span class="row-field">Elizabeth City, NC 27909</span></td>
+          <td class="col-num" data-value="148" data-label="Median time in ER"><strong>148 min</strong><span class="row-years">2 h 28 m</span></td>
+          <td class="col-num" data-value="250" data-label="Mental health">250 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340050" data-volume="high" data-search="southeastern regional medical center lumberton 28359">
+          <td class="col-name"><a href="#h-340050">Southeastern Regional Medical Center</a><span class="row-field">Lumberton, NC 28359</span></td>
+          <td class="col-num" data-value="248" data-label="Median time in ER"><strong>248 min</strong><span class="row-years">4 h 08 m</span></td>
+          <td class="col-num" data-value="306" data-label="Mental health">306 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340119" data-volume="medium" data-search="stanly regional medical center albemarle 28001">
+          <td class="col-name"><a href="#h-340119">Stanly Regional Medical Center</a><span class="row-field">Albemarle, NC 28001</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="125" data-label="Mental health">125 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340087" data-volume="medium" data-search="the mcdowell hospital marion 28752">
+          <td class="col-name"><a href="#h-340087">The Mcdowell Hospital</a><span class="row-field">Marion, NC 28752</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="640" data-label="Mental health">640 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341324" data-volume="medium" data-search="the outer banks hospital, inc nags head 27959">
+          <td class="col-name"><a href="#h-341324">The Outer Banks Hospital, Inc</a><span class="row-field">Nags Head, NC 27959</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="246" data-label="Mental health">246 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341319" data-volume="low" data-search="transylvania regional hospital, inc brevard 28712">
+          <td class="col-name"><a href="#h-341319">Transylvania Regional Hospital, Inc</a><span class="row-field">Brevard, NC 28712</span></td>
+          <td class="col-num" data-value="98" data-label="Median time in ER"><strong>98 min</strong><span class="row-years">1 h 38 m</span></td>
+          <td class="col-num" data-value="260" data-label="Mental health">260 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340010" data-volume="very high" data-search="unc health care wayne goldsboro 27534">
+          <td class="col-name"><a href="#h-340010">Unc Health Care Wayne</a><span class="row-field">Goldsboro, NC 27534</span></td>
+          <td class="col-num" data-value="190" data-label="Median time in ER"><strong>190 min</strong><span class="row-years">3 h 10 m</span></td>
+          <td class="col-num" data-value="625" data-label="Mental health">625 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340147" data-volume="very high" data-search="unc health nash rocky mount 27804">
+          <td class="col-name"><a href="#h-340147">Unc Health Nash</a><span class="row-field">Rocky Mount, NC 27804</span></td>
+          <td class="col-num" data-value="200" data-label="Median time in ER"><strong>200 min</strong><span class="row-years">3 h 20 m</span></td>
+          <td class="col-num" data-value="440" data-label="Mental health">440 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340061" data-volume="very high" data-search="unc hospitals chapel hill 27514">
+          <td class="col-name"><a href="#h-340061">Unc Hospitals</a><span class="row-field">Chapel Hill, NC 27514</span></td>
+          <td class="col-num" data-value="268" data-label="Median time in ER"><strong>268 min</strong><span class="row-years">4 h 28 m</span></td>
+          <td class="col-num" data-value="301" data-label="Mental health">301 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340027" data-volume="high" data-search="unc lenoir health care kinston 28501">
+          <td class="col-name"><a href="#h-340027">Unc Lenoir Health Care</a><span class="row-field">Kinston, NC 28501</span></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-340060" data-volume="medium" data-search="unc rockingham eden 27288">
+          <td class="col-name"><a href="#h-340060">Unc Rockingham</a><span class="row-field">Eden, NC 27288</span></td>
+          <td class="col-num" data-value="187" data-label="Median time in ER"><strong>187 min</strong><span class="row-years">3 h 07 m</span></td>
+          <td class="col-num" data-value="481" data-label="Mental health">481 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-341318" data-volume="low" data-search="vidant chowan hospital edenton 27932">
+          <td class="col-name"><a href="#h-341318">Vidant Chowan Hospital</a><span class="row-field">Edenton, NC 27932</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-340120" data-volume="medium" data-search="vidant duplin hospital kenansville 28349">
+          <td class="col-name"><a href="#h-340120">Vidant Duplin Hospital</a><span class="row-field">Kenansville, NC 28349</span></td>
+          <td class="col-num" data-value="170" data-label="Median time in ER"><strong>170 min</strong><span class="row-years">2 h 50 m</span></td>
+          <td class="col-num" data-value="238" data-label="Mental health">238 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340107" data-volume="medium" data-search="vidant edgecombe hospital tarboro 27886">
+          <td class="col-name"><a href="#h-340107">Vidant Edgecombe Hospital</a><span class="row-field">Tarboro, NC 27886</span></td>
+          <td class="col-num" data-value="239" data-label="Median time in ER"><strong>239 min</strong><span class="row-years">3 h 59 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340099" data-volume="medium" data-search="vidant roanoke chowan hospital ahoskie 27910">
+          <td class="col-name"><a href="#h-340099">Vidant Roanoke Chowan Hospital</a><span class="row-field">Ahoskie, NC 27910</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340173" data-volume="very high" data-search="wakemed, cary hospital cary 27518">
+          <td class="col-name"><a href="#h-340173">Wakemed, Cary Hospital</a><span class="row-field">Cary, NC 27518</span></td>
+          <td class="col-num" data-value="196" data-label="Median time in ER"><strong>196 min</strong><span class="row-years">3 h 16 m</span></td>
+          <td class="col-num" data-value="609" data-label="Mental health">609 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340069" data-volume="very high" data-search="wakemed, raleigh campus raleigh 27610">
+          <td class="col-name"><a href="#h-340069">Wakemed, Raleigh Campus</a><span class="row-field">Raleigh, NC 27610</span></td>
+          <td class="col-num" data-value="204" data-label="Median time in ER"><strong>204 min</strong><span class="row-years">3 h 24 m</span></td>
+          <td class="col-num" data-value="586" data-label="Mental health">586 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-340051" data-volume="medium" data-search="watauga medical center boone 28607">
+          <td class="col-name"><a href="#h-340051">Watauga Medical Center</a><span class="row-field">Boone, NC 28607</span></td>
+          <td class="col-num" data-value="192" data-label="Median time in ER"><strong>192 min</strong><span class="row-years">3 h 12 m</span></td>
+          <td class="col-num" data-value="211" data-label="Mental health">211 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340064" data-volume="medium" data-search="wilkes regional medical center north wilkesboro 28659">
+          <td class="col-name"><a href="#h-340064">Wilkes Regional Medical Center</a><span class="row-field">North Wilkesboro, NC 28659</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="115" data-label="Mental health">115 min</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-340126" data-volume="medium" data-search="wilson medical center wilson 27893">
+          <td class="col-name"><a href="#h-340126">Wilson Medical Center</a><span class="row-field">Wilson, NC 27893</span></td>
+          <td class="col-num" data-value="191" data-label="Median time in ER"><strong>191 min</strong><span class="row-years">3 h 11 m</span></td>
+          <td class="col-num" data-value="471" data-label="Mental health">471 min</td>
+          <td class="col-num" data-value="5" data-label="Left before seen">5%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-34014f" data-volume="" data-search="womack amc (ft bragg) fort bragg 28310">
+          <td class="col-name"><a href="#h-34014f">Womack Amc (Ft Bragg)</a><span class="row-field">Fort Bragg, NC 28310</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>

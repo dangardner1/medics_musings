@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ER Wait Times in Colorado: 77 Hospitals Compared | Medics Musings</title>
+<meta name="description" content="How long do ER visits take in Colorado? The state median is 134 minutes. Compare 77 Colorado hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://www.medicsmusings.com/er-wait-times/co/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Leo A. Gordon, MD and Dan Gardner, MD">
+<meta name="theme-color" content="#0b0f14">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Medics Musings">
+<meta property="og:url" content="https://www.medicsmusings.com/er-wait-times/co/">
+<meta property="og:title" content="ER wait times in Colorado">
+<meta property="og:description" content="How long do ER visits take in Colorado? The state median is 134 minutes. Compare 77 Colorado hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta property="og:image" content="https://www.medicsmusings.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medics Musings podcast artwork featuring hosts Leo A. Gordon, MD and Dan Gardner, MD">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ER wait times in Colorado">
+<meta name="twitter:description" content="How long do ER visits take in Colorado? The state median is 134 minutes. Compare 77 Colorado hospitals&#x27; emergency department times, from CMS data (Oct…">
+<meta name="twitter:image" content="https://www.medicsmusings.com/og-image.jpg">
+<link rel="alternate" type="application/rss+xml" title="Medics Musings podcast feed" href="https://anchor.fm/s/117844514/podcast/rss">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HPV5BLPF1B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HPV5BLPF1B');
+</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/episodes/episode.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://www.medicsmusings.com/er-wait-times/co/#dataset",
+   "name": "Emergency department wait times in Colorado hospitals",
+   "description": "Median emergency department times for 77 hospitals in Colorado, from CMS Care Compare (Oct 2024–Sep 2025).",
+   "url": "https://www.medicsmusings.com/er-wait-times/co/",
+   "dateModified": "2026-09-28",
+   "license": "https://www.usa.gov/government-works",
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Organization",
+    "name": "Medics Musings",
+    "url": "https://www.medicsmusings.com/"
+   },
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "CMS Care Compare, Timely and Effective Care",
+    "url": "https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care"
+   },
+   "variableMeasured": [
+    "median emergency department time (minutes)",
+    "median time for mental health patients (minutes)",
+    "patients who left before being seen (%)"
+   ],
+   "spatialCoverage": {
+    "@type": "Place",
+    "name": "Colorado"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Medics Musings",
+     "item": "https://www.medicsmusings.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Health stats",
+     "item": "https://www.medicsmusings.com/stats/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "ER wait times",
+     "item": "https://www.medicsmusings.com/er-wait-times/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Colorado",
+     "item": "https://www.medicsmusings.com/er-wait-times/co/"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/" aria-label="Medics Musings home"><img src="/favicon.svg" width="30" height="30" alt="">Medics<span>Musings</span></a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/explained/">Explainers</a>
+      <a href="/teach/">Teach</a>
+      <a href="/eponyms/">Eponyms</a>
+      <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
+      <a href="/submit/">Submit</a>
+    </nav>
+    <a class="btn btn-ghost" href="/#episodes">All episodes</a>
+  </div>
+</header>
+
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/stats/">Health stats</a> <span aria-hidden="true">/</span> <a href="/er-wait-times/">ER wait times</a> <span aria-hidden="true">/</span> <span>Colorado</span></nav>
+      <span class="eyebrow">Live data · CMS · Oct 2024–Sep 2025</span>
+      <h1>ER wait times in Colorado</h1>
+      <p class="coll-intro">The typical ER visit in Colorado takes 134 minutes, 28 minutes faster than the national median of 162. The quickest hospital here has a median of 45 minutes and the slowest 212, a spread wide enough to fit a full season of prestige television. Numbers below are exactly as CMS reports them.</p>
+      <p class="emergency-note"><b>Having an emergency?</b> Call 911 or go to the nearest emergency department. Don't choose an ER by these numbers in an emergency: they're medians from a past year, not today's wait.</p>
+      <dl class="stat-tiles">
+        <div><dt>Colorado median</dt><dd>134 min</dd></div>
+        <div><dt>U.S. median</dt><dd>162 min</dd></div>
+        <div><dt>Mental health patients</dt><dd>235 min</dd></div>
+        <div><dt>Left before being seen</dt><dd>1%</dd></div>
+        <div><dt>Hospitals reporting</dt><dd>77</dd></div>
+      </dl>
+      <div class="table-controls">
+        <label class="sr-only" for="er-co-search">Search hospitals, cities or ZIP codes…</label>
+        <input id="er-co-search" type="search" data-filter-table="er-co" placeholder="Search hospitals, cities or ZIP codes…">
+        <div class="chips" role="group" aria-label="Filter by ER volume">
+          <button type="button" class="chip is-active" data-filter-attr="volume" data-filter-value="">Any volume</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="low">low</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="medium">medium</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="high">high</button>
+          <button type="button" class="chip" data-filter-attr="volume" data-filter-value="very high">very high</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="er-co">
+          <thead>
+            <tr>
+              <th data-sort="text" class="is-sorted" data-dir="asc">Hospital</th>
+              <th data-sort="number">Median time in ER</th>
+              <th data-sort="number">Mental health patients</th>
+              <th data-sort="number">Left before being seen</th>
+              <th class="no-sort">ER volume</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr id="h-060103" data-volume="low" data-search="adventhealth avista louisville 80027">
+          <td class="col-name"><a href="#h-060103">Adventhealth Avista</a><span class="row-field">Louisville, CO 80027</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="393" data-label="Mental health">393 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060125" data-volume="medium" data-search="adventhealth castle rock castle rock 80109">
+          <td class="col-name"><a href="#h-060125">Adventhealth Castle Rock</a><span class="row-field">Castle Rock, CO 80109</span></td>
+          <td class="col-num" data-value="165" data-label="Median time in ER"><strong>165 min</strong><span class="row-years">2 h 45 m</span></td>
+          <td class="col-num" data-value="404" data-label="Mental health">404 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060113" data-volume="medium" data-search="adventhealth littleton littleton 80122">
+          <td class="col-name"><a href="#h-060113">Adventhealth Littleton</a><span class="row-field">Littleton, CO 80122</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="304" data-label="Mental health">304 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060114" data-volume="high" data-search="adventhealth parker parker 80138">
+          <td class="col-name"><a href="#h-060114">Adventhealth Parker</a><span class="row-field">Parker, CO 80138</span></td>
+          <td class="col-num" data-value="165" data-label="Median time in ER"><strong>165 min</strong><span class="row-years">2 h 45 m</span></td>
+          <td class="col-num" data-value="520" data-label="Mental health">520 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060064" data-volume="low" data-search="adventhealth porter denver 80210">
+          <td class="col-name"><a href="#h-060064">Adventhealth Porter</a><span class="row-field">Denver, CO 80210</span></td>
+          <td class="col-num" data-value="199" data-label="Median time in ER"><strong>199 min</strong><span class="row-years">3 h 19 m</span></td>
+          <td class="col-num" data-value="477" data-label="Mental health">477 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060117" data-volume="low" data-search="animas surgical hospital, llc durango 81301">
+          <td class="col-name"><a href="#h-060117">Animas Surgical Hospital, LLC</a><span class="row-field">Durango, CO 81301</span></td>
+          <td class="col-num" data-value="99" data-label="Median time in ER"><strong>99 min</strong><span class="row-years">1 h 39 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060126" data-volume="low" data-search="banner fort collins medical center fort collins 80528">
+          <td class="col-name"><a href="#h-060126">Banner Fort Collins Medical Center</a><span class="row-field">Fort Collins, CO 80528</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="95" data-label="Mental health">95 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060030" data-volume="low" data-search="banner north co medical center - loveland campus loveland 80538">
+          <td class="col-name"><a href="#h-060030">Banner North Co Medical Center - Loveland Campus</a><span class="row-field">Loveland, CO 80538</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="238" data-label="Mental health">238 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060001" data-volume="high" data-search="banner north colorado medical center greeley 80631">
+          <td class="col-name"><a href="#h-060001">Banner North Colorado Medical Center</a><span class="row-field">Greeley, CO 80631</span></td>
+          <td class="col-num" data-value="137" data-label="Median time in ER"><strong>137 min</strong><span class="row-years">2 h 17 m</span></td>
+          <td class="col-num" data-value="170" data-label="Mental health">170 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060027" data-volume="high" data-search="boulder community health boulder 80304">
+          <td class="col-name"><a href="#h-060027">Boulder Community Health</a><span class="row-field">Boulder, CO 80304</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="140" data-label="Mental health">140 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060031" data-volume="very high" data-search="centura health-penrose st francis health services colorado springs 80907">
+          <td class="col-name"><a href="#h-060031">Centura Health-Penrose St Francis Health Services</a><span class="row-field">Colorado Springs, CO 80907</span></td>
+          <td class="col-num" data-value="193" data-label="Median time in ER"><strong>193 min</strong><span class="row-years">3 h 13 m</span></td>
+          <td class="col-num" data-value="299" data-label="Mental health">299 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060015" data-volume="high" data-search="centura health-st anthony hospital lakewood 80228">
+          <td class="col-name"><a href="#h-060015">Centura Health-St Anthony Hospital</a><span class="row-field">Lakewood, CO 80228</span></td>
+          <td class="col-num" data-value="212" data-label="Median time in ER"><strong>212 min</strong><span class="row-years">3 h 32 m</span></td>
+          <td class="col-num" data-value="310" data-label="Mental health">310 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060104" data-volume="high" data-search="centura health-st anthony north health campus westminster 80023">
+          <td class="col-name"><a href="#h-060104">Centura Health-St Anthony North Health Campus</a><span class="row-field">Westminster, CO 80023</span></td>
+          <td class="col-num" data-value="160" data-label="Median time in ER"><strong>160 min</strong><span class="row-years">2 h 40 m</span></td>
+          <td class="col-num" data-value="302" data-label="Mental health">302 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060054" data-volume="medium" data-search="community hospital grand junction 81505">
+          <td class="col-name"><a href="#h-060054">Community Hospital</a><span class="row-field">Grand Junction, CO 81505</span></td>
+          <td class="col-num" data-value="135" data-label="Median time in ER"><strong>135 min</strong><span class="row-years">2 h 15 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060071" data-volume="low" data-search="delta county memorial hospital delta 81416">
+          <td class="col-name"><a href="#h-060071">Delta County Memorial Hospital</a><span class="row-field">Delta, CO 81416</span></td>
+          <td class="col-num" data-value="143" data-label="Median time in ER"><strong>143 min</strong><span class="row-years">2 h 23 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="3" data-label="Left before seen">3%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060011" data-volume="very high" data-search="denver health &amp; hospital authority denver 80204">
+          <td class="col-name"><a href="#h-060011">Denver Health &amp; Hospital Authority</a><span class="row-field">Denver, CO 80204</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="310" data-label="Mental health">310 min</td>
+          <td class="col-num" data-value="4" data-label="Left before seen">4%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-061303" data-volume="low" data-search="east morgan county hospital brush 80723">
+          <td class="col-name"><a href="#h-061303">East Morgan County Hospital</a><span class="row-field">Brush, CO 80723</span></td>
+          <td class="col-num" data-value="111" data-label="Median time in ER"><strong>111 min</strong><span class="row-years">1 h 51 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061325" data-volume="" data-search="eastern rio blanco county health service district meeker 81641">
+          <td class="col-name"><a href="#h-061325">Eastern Rio Blanco County Health Service District</a><span class="row-field">Meeker, CO 81641</span></td>
+          <td class="col-num" data-value="208" data-label="Median time in ER"><strong>208 min</strong><span class="row-years">3 h 28 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-06003f" data-volume="high" data-search="evans ach (ft carson) fort carson 80913">
+          <td class="col-name"><a href="#h-06003f">Evans Ach (Ft Carson)</a><span class="row-field">Fort Carson, CO 80913</span></td>
+          <td class="col-num" data-value="128" data-label="Median time in ER"><strong>128 min</strong><span class="row-years">2 h 08 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-061302" data-volume="" data-search="family health west hospital fruita 81521">
+          <td class="col-name"><a href="#h-061302">Family Health West Hospital</a><span class="row-field">Fruita, CO 81521</span></td>
+          <td class="col-num" data-value="48" data-label="Median time in ER"><strong>48 min</strong><span class="row-years">0 h 48 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-060116" data-volume="medium" data-search="good samaritan medical center llc lafayette 80026">
+          <td class="col-name"><a href="#h-060116">Good Samaritan Medical Center LLC</a><span class="row-field">Lafayette, CO 80026</span></td>
+          <td class="col-num" data-value="176" data-label="Median time in ER"><strong>176 min</strong><span class="row-years">2 h 56 m</span></td>
+          <td class="col-num" data-value="283" data-label="Mental health">283 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-061317" data-volume="low" data-search="grand river hospital district rifle 81650">
+          <td class="col-name"><a href="#h-061317">Grand River Hospital District</a><span class="row-field">Rifle, CO 81650</span></td>
+          <td class="col-num" data-value="110" data-label="Median time in ER"><strong>110 min</strong><span class="row-years">1 h 50 m</span></td>
+          <td class="col-num" data-value="250" data-label="Mental health">250 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061320" data-volume="low" data-search="gunnison valley hospital gunnison 81230">
+          <td class="col-name"><a href="#h-061320">Gunnison Valley Hospital</a><span class="row-field">Gunnison, CO 81230</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="489" data-label="Mental health">489 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061304" data-volume="" data-search="haxtun hospital district haxtun 80731">
+          <td class="col-name"><a href="#h-061304">Haxtun Hospital District</a><span class="row-field">Haxtun, CO 80731</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="191" data-label="Mental health">191 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-060065" data-volume="high" data-search="hca healthone mountain ridge thornton 80229">
+          <td class="col-name"><a href="#h-060065">Hca Healthone Mountain Ridge</a><span class="row-field">Thornton, CO 80229</span></td>
+          <td class="col-num" data-value="126" data-label="Median time in ER"><strong>126 min</strong><span class="row-years">2 h 06 m</span></td>
+          <td class="col-num" data-value="199" data-label="Mental health">199 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060014" data-volume="medium" data-search="hca healthone presbyterian st. lukes denver 80218">
+          <td class="col-name"><a href="#h-060014">Hca Healthone Presbyterian St. Lukes</a><span class="row-field">Denver, CO 80218</span></td>
+          <td class="col-num" data-value="121" data-label="Median time in ER"><strong>121 min</strong><span class="row-years">2 h 01 m</span></td>
+          <td class="col-num" data-value="350" data-label="Mental health">350 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060032" data-volume="medium" data-search="hca healthone rose denver 80220">
+          <td class="col-name"><a href="#h-060032">Hca Healthone Rose</a><span class="row-field">Denver, CO 80220</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="172" data-label="Mental health">172 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060034" data-volume="very high" data-search="hca-healthone dba swedish medical center englewood 80113">
+          <td class="col-name"><a href="#h-060034">Hca-Healthone Dba Swedish Medical Center</a><span class="row-field">Englewood, CO 80113</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="411" data-label="Mental health">411 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060009" data-volume="high" data-search="intermountain health lutheran hospital wheat ridge 80033">
+          <td class="col-name"><a href="#h-060009">Intermountain Health Lutheran Hospital</a><span class="row-field">Wheat Ridge, CO 80033</span></td>
+          <td class="col-num" data-value="194" data-label="Median time in ER"><strong>194 min</strong><span class="row-years">3 h 14 m</span></td>
+          <td class="col-num" data-value="280" data-label="Mental health">280 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060004" data-volume="medium" data-search="intermountain health platte valley hospital brighton 80601">
+          <td class="col-name"><a href="#h-060004">Intermountain Health Platte Valley Hospital</a><span class="row-field">Brighton, CO 80601</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="195" data-label="Mental health">195 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060023" data-volume="high" data-search="intermountain health st. mary&#x27;s regional hospital grand junction 81501">
+          <td class="col-name"><a href="#h-060023">Intermountain Health St. Mary&#x27;s Regional Hospital</a><span class="row-field">Grand Junction, CO 81501</span></td>
+          <td class="col-num" data-value="202" data-label="Median time in ER"><strong>202 min</strong><span class="row-years">3 h 22 m</span></td>
+          <td class="col-num" data-value="282" data-label="Mental health">282 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-061343" data-volume="" data-search="keefe memorial hospital cheyenne wells 80810">
+          <td class="col-name"><a href="#h-061343">Keefe Memorial Hospital</a><span class="row-field">Cheyenne Wells, CO 80810</span></td>
+          <td class="col-num" data-value="144" data-label="Median time in ER"><strong>144 min</strong><span class="row-years">2 h 24 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-061313" data-volume="low" data-search="kit carson county memorial hospital burlington 80807">
+          <td class="col-name"><a href="#h-061313">Kit Carson County Memorial Hospital</a><span class="row-field">Burlington, CO 80807</span></td>
+          <td class="col-num" data-value="115" data-label="Median time in ER"><strong>115 min</strong><span class="row-years">1 h 55 m</span></td>
+          <td class="col-num" data-value="221" data-label="Mental health">221 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061306" data-volume="low" data-search="lincoln health hospital hugo 80821">
+          <td class="col-name"><a href="#h-061306">Lincoln Health Hospital</a><span class="row-field">Hugo, CO 80821</span></td>
+          <td class="col-num" data-value="94" data-label="Median time in ER"><strong>94 min</strong><span class="row-years">1 h 34 m</span></td>
+          <td class="col-num" data-value="179" data-label="Mental health">179 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060003" data-volume="low" data-search="longmont united hospital longmont 80501">
+          <td class="col-name"><a href="#h-060003">Longmont United Hospital</a><span class="row-field">Longmont, CO 80501</span></td>
+          <td class="col-num" data-value="153" data-label="Median time in ER"><strong>153 min</strong><span class="row-years">2 h 33 m</span></td>
+          <td class="col-num" data-value="412" data-label="Mental health">412 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060128" data-volume="medium" data-search="longs peak hospital longmont 80504">
+          <td class="col-name"><a href="#h-060128">Longs Peak Hospital</a><span class="row-field">Longmont, CO 80504</span></td>
+          <td class="col-num" data-value="130" data-label="Median time in ER"><strong>130 min</strong><span class="row-years">2 h 10 m</span></td>
+          <td class="col-num" data-value="268" data-label="Mental health">268 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-060119" data-volume="high" data-search="medical center of the rockies loveland 80538">
+          <td class="col-name"><a href="#h-060119">Medical Center of the Rockies</a><span class="row-field">Loveland, CO 80538</span></td>
+          <td class="col-num" data-value="133" data-label="Median time in ER"><strong>133 min</strong><span class="row-years">2 h 13 m</span></td>
+          <td class="col-num" data-value="164" data-label="Mental health">164 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-061305" data-volume="low" data-search="melissa memorial hospital holyoke 80734">
+          <td class="col-name"><a href="#h-061305">Melissa Memorial Hospital</a><span class="row-field">Holyoke, CO 80734</span></td>
+          <td class="col-num" data-value="140" data-label="Median time in ER"><strong>140 min</strong><span class="row-years">2 h 20 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061314" data-volume="low" data-search="memorial hospital, the craig 81625">
+          <td class="col-name"><a href="#h-061314">Memorial Hospital, the</a><span class="row-field">Craig, CO 81625</span></td>
+          <td class="col-num" data-value="122" data-label="Median time in ER"><strong>122 min</strong><span class="row-years">2 h 02 m</span></td>
+          <td class="col-num" data-value="212" data-label="Mental health">212 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060013" data-volume="medium" data-search="mercy regional medical center durango 81301">
+          <td class="col-name"><a href="#h-060013">Mercy Regional Medical Center</a><span class="row-field">Durango, CO 81301</span></td>
+          <td class="col-num" data-value="166" data-label="Median time in ER"><strong>166 min</strong><span class="row-years">2 h 46 m</span></td>
+          <td class="col-num" data-value="198" data-label="Mental health">198 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-061318" data-volume="low" data-search="middle park medical center kremmling 80459">
+          <td class="col-name"><a href="#h-061318">Middle Park Medical Center</a><span class="row-field">Kremmling, CO 80459</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060006" data-volume="medium" data-search="montrose regional health montrose 81401">
+          <td class="col-name"><a href="#h-060006">Montrose Regional Health</a><span class="row-field">Montrose, CO 81401</span></td>
+          <td class="col-num" data-value="146" data-label="Median time in ER"><strong>146 min</strong><span class="row-years">2 h 26 m</span></td>
+          <td class="col-num" data-value="174" data-label="Mental health">174 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-061321" data-volume="low" data-search="mt san rafael hospital trinidad 81082">
+          <td class="col-name"><a href="#h-061321">Mt San Rafael Hospital</a><span class="row-field">Trinidad, CO 81082</span></td>
+          <td class="col-num" data-value="107" data-label="Median time in ER"><strong>107 min</strong><span class="row-years">1 h 47 m</span></td>
+          <td class="col-num" data-value="122" data-label="Mental health">122 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061328" data-volume="low" data-search="pagosa springs medical center pagosa springs 81147">
+          <td class="col-name"><a href="#h-061328">Pagosa Springs Medical Center</a><span class="row-field">Pagosa Springs, CO 81147</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="160" data-label="Mental health">160 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060020" data-volume="very high" data-search="parkview medical center, inc pueblo 81003">
+          <td class="col-name"><a href="#h-060020">Parkview Medical Center, Inc</a><span class="row-field">Pueblo, CO 81003</span></td>
+          <td class="col-num" data-value="171" data-label="Median time in ER"><strong>171 min</strong><span class="row-years">2 h 51 m</span></td>
+          <td class="col-num" data-value="248" data-label="Mental health">248 min</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060010" data-volume="high" data-search="poudre valley hospital fort collins 80524">
+          <td class="col-name"><a href="#h-060010">Poudre Valley Hospital</a><span class="row-field">Fort Collins, CO 80524</span></td>
+          <td class="col-num" data-value="127" data-label="Median time in ER"><strong>127 min</strong><span class="row-years">2 h 07 m</span></td>
+          <td class="col-num" data-value="210" data-label="Mental health">210 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-061323" data-volume="low" data-search="prowers medical center lamar 81052">
+          <td class="col-name"><a href="#h-061323">Prowers Medical Center</a><span class="row-field">Lamar, CO 81052</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="288" data-label="Mental health">288 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061307" data-volume="low" data-search="rangely district hospital rangely 81648">
+          <td class="col-name"><a href="#h-061307">Rangely District Hospital</a><span class="row-field">Rangely, CO 81648</span></td>
+          <td class="col-num" data-value="182" data-label="Median time in ER"><strong>182 min</strong><span class="row-years">3 h 02 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="2" data-label="Left before seen">2%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061301" data-volume="" data-search="rio grande hospital del norte 81132">
+          <td class="col-name"><a href="#h-061301">Rio Grande Hospital</a><span class="row-field">Del Norte, CO 81132</span></td>
+          <td class="col-num" data-value="45" data-label="Median time in ER"><strong>45 min</strong><span class="row-years">0 h 45 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-060028" data-volume="very high" data-search="saint joseph hospital denver 80218">
+          <td class="col-name"><a href="#h-060028">Saint Joseph Hospital</a><span class="row-field">Denver, CO 80218</span></td>
+          <td class="col-num" data-value="165" data-label="Median time in ER"><strong>165 min</strong><span class="row-years">2 h 45 m</span></td>
+          <td class="col-num" data-value="236" data-label="Mental health">236 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-061308" data-volume="low" data-search="san luis valley health conejos county hospital la jara 81140">
+          <td class="col-name"><a href="#h-061308">San Luis Valley Health Conejos County Hospital</a><span class="row-field">La Jara, CO 81140</span></td>
+          <td class="col-num" data-value="94" data-label="Median time in ER"><strong>94 min</strong><span class="row-years">1 h 34 m</span></td>
+          <td class="col-num" data-value="115" data-label="Mental health">115 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060008" data-volume="low" data-search="san luis valley regional  medical center alamosa 81101">
+          <td class="col-name"><a href="#h-060008">San Luis Valley Regional  Medical Center</a><span class="row-field">Alamosa, CO 81101</span></td>
+          <td class="col-num" data-value="168" data-label="Median time in ER"><strong>168 min</strong><span class="row-years">2 h 48 m</span></td>
+          <td class="col-num" data-value="242" data-label="Mental health">242 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061310" data-volume="" data-search="sedgwick county memorial hospital julesburg 80737">
+          <td class="col-name"><a href="#h-061310">Sedgwick County Memorial Hospital</a><span class="row-field">Julesburg, CO 80737</span></td>
+          <td class="col-num" data-value="123" data-label="Median time in ER"><strong>123 min</strong><span class="row-years">2 h 03 m</span></td>
+          <td class="col-num" data-value="316" data-label="Mental health">316 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-060112" data-volume="high" data-search="sky ridge medical center lone tree 80124">
+          <td class="col-name"><a href="#h-060112">Sky Ridge Medical Center</a><span class="row-field">Lone Tree, CO 80124</span></td>
+          <td class="col-num" data-value="139" data-label="Median time in ER"><strong>139 min</strong><span class="row-years">2 h 19 m</span></td>
+          <td class="col-num" data-value="275" data-label="Mental health">275 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-061311" data-volume="low" data-search="southeast colorado hospital district springfield 81073">
+          <td class="col-name"><a href="#h-061311">Southeast Colorado Hospital District</a><span class="row-field">Springfield, CO 81073</span></td>
+          <td class="col-num" data-value="154" data-label="Median time in ER"><strong>154 min</strong><span class="row-years">2 h 34 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061327" data-volume="" data-search="southwest memorial hospital cortez 81321">
+          <td class="col-name"><a href="#h-061327">Southwest Memorial Hospital</a><span class="row-field">Cortez, CO 81321</span></td>
+          <td class="col-num" data-value="106" data-label="Median time in ER"><strong>106 min</strong><span class="row-years">1 h 46 m</span></td>
+          <td class="col-num" data-value="190" data-label="Mental health">190 min</td>
+          <td class="col-num" data-value="" data-label="Left before seen">—</td>
+          <td class="col-class">—</td>
+        </tr>
+        <tr id="h-061316" data-volume="low" data-search="spanish peaks regional health center walsenburg 81089">
+          <td class="col-name"><a href="#h-061316">Spanish Peaks Regional Health Center</a><span class="row-field">Walsenburg, CO 81089</span></td>
+          <td class="col-num" data-value="117" data-label="Median time in ER"><strong>117 min</strong><span class="row-years">1 h 57 m</span></td>
+          <td class="col-num" data-value="180" data-label="Mental health">180 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060118" data-volume="low" data-search="st anthony summit medical center frisco 80443">
+          <td class="col-name"><a href="#h-060118">St Anthony Summit Medical Center</a><span class="row-field">Frisco, CO 80443</span></td>
+          <td class="col-num" data-value="151" data-label="Median time in ER"><strong>151 min</strong><span class="row-years">2 h 31 m</span></td>
+          <td class="col-num" data-value="392" data-label="Mental health">392 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060044" data-volume="low" data-search="st elizabeth hospital fort morgan 80701">
+          <td class="col-name"><a href="#h-060044">St Elizabeth Hospital</a><span class="row-field">Fort Morgan, CO 80701</span></td>
+          <td class="col-num" data-value="106" data-label="Median time in ER"><strong>106 min</strong><span class="row-years">1 h 46 m</span></td>
+          <td class="col-num" data-value="337" data-label="Mental health">337 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060133" data-volume="low" data-search="st francis hospital - interquest colorado springs 80921">
+          <td class="col-name"><a href="#h-060133">St Francis Hospital - Interquest</a><span class="row-field">Colorado Springs, CO 80921</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="200" data-label="Mental health">200 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060012" data-volume="medium" data-search="st mary-corwin hospital pueblo 81004">
+          <td class="col-name"><a href="#h-060012">St Mary-Corwin Hospital</a><span class="row-field">Pueblo, CO 81004</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="199" data-label="Mental health">199 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-061344" data-volume="low" data-search="st thomas more hospital canon city 81212">
+          <td class="col-name"><a href="#h-061344">St Thomas More Hospital</a><span class="row-field">Canon City, CO 81212</span></td>
+          <td class="col-num" data-value="143" data-label="Median time in ER"><strong>143 min</strong><span class="row-years">2 h 23 m</span></td>
+          <td class="col-num" data-value="209" data-label="Mental health">209 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060076" data-volume="low" data-search="sterling regional medcenter sterling 80751">
+          <td class="col-name"><a href="#h-060076">Sterling Regional Medcenter</a><span class="row-field">Sterling, CO 80751</span></td>
+          <td class="col-num" data-value="97" data-label="Median time in ER"><strong>97 min</strong><span class="row-years">1 h 37 m</span></td>
+          <td class="col-num" data-value="151" data-label="Mental health">151 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060100" data-volume="very high" data-search="the medical center of aurora &amp; south hospital aurora 80012">
+          <td class="col-name"><a href="#h-060100">The Medical Center of Aurora &amp; South Hospital</a><span class="row-field">Aurora, CO 80012</span></td>
+          <td class="col-num" data-value="134" data-label="Median time in ER"><strong>134 min</strong><span class="row-years">2 h 14 m</span></td>
+          <td class="col-num" data-value="350" data-label="Mental health">350 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060022" data-volume="very high" data-search="uch-memorial health system colorado springs 80909">
+          <td class="col-name"><a href="#h-060022">Uch-Memorial Health System</a><span class="row-field">Colorado Springs, CO 80909</span></td>
+          <td class="col-num" data-value="103" data-label="Median time in ER"><strong>103 min</strong><span class="row-years">1 h 43 m</span></td>
+          <td class="col-num" data-value="166" data-label="Mental health">166 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060129" data-volume="low" data-search="uchealth broomfield hospital broomfield 80021">
+          <td class="col-name"><a href="#h-060129">Uchealth Broomfield Hospital</a><span class="row-field">Broomfield, CO 80021</span></td>
+          <td class="col-num" data-value="105" data-label="Median time in ER"><strong>105 min</strong><span class="row-years">1 h 45 m</span></td>
+          <td class="col-num" data-value="107" data-label="Mental health">107 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060130" data-volume="low" data-search="uchealth grandview hospital colorado springs 80918">
+          <td class="col-name"><a href="#h-060130">Uchealth Grandview Hospital</a><span class="row-field">Colorado Springs, CO 80918</span></td>
+          <td class="col-num" data-value="101" data-label="Median time in ER"><strong>101 min</strong><span class="row-years">1 h 41 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060131" data-volume="high" data-search="uchealth greeley hospital greeley 80634">
+          <td class="col-name"><a href="#h-060131">Uchealth Greeley Hospital</a><span class="row-field">Greeley, CO 80634</span></td>
+          <td class="col-num" data-value="132" data-label="Median time in ER"><strong>132 min</strong><span class="row-years">2 h 12 m</span></td>
+          <td class="col-num" data-value="200" data-label="Mental health">200 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">high</span></td>
+        </tr>
+        <tr id="h-060132" data-volume="medium" data-search="uchealth highlands ranch hospital highlands ranch 80129">
+          <td class="col-name"><a href="#h-060132">Uchealth Highlands Ranch Hospital</a><span class="row-field">Highlands Ranch, CO 80129</span></td>
+          <td class="col-num" data-value="164" data-label="Median time in ER"><strong>164 min</strong><span class="row-years">2 h 44 m</span></td>
+          <td class="col-num" data-value="224" data-label="Mental health">224 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">medium</span></td>
+        </tr>
+        <tr id="h-061326" data-volume="low" data-search="uchealth pikes peak regional hospital woodland park 80863">
+          <td class="col-name"><a href="#h-061326">Uchealth Pikes Peak Regional Hospital</a><span class="row-field">Woodland Park, CO 80863</span></td>
+          <td class="col-num" data-value="109" data-label="Median time in ER"><strong>109 min</strong><span class="row-years">1 h 49 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060049" data-volume="low" data-search="uchealth yampa valley medical center steamboat springs 80487">
+          <td class="col-name"><a href="#h-060049">Uchealth Yampa Valley Medical Center</a><span class="row-field">Steamboat Springs, CO 80487</span></td>
+          <td class="col-num" data-value="116" data-label="Median time in ER"><strong>116 min</strong><span class="row-years">1 h 56 m</span></td>
+          <td class="col-num" data-value="188" data-label="Mental health">188 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060024" data-volume="very high" data-search="university of colorado hospital authority aurora 80045">
+          <td class="col-name"><a href="#h-060024">University of Colorado Hospital Authority</a><span class="row-field">Aurora, CO 80045</span></td>
+          <td class="col-num" data-value="102" data-label="Median time in ER"><strong>102 min</strong><span class="row-years">1 h 42 m</span></td>
+          <td class="col-num" data-value="129" data-label="Mental health">129 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">very high</span></td>
+        </tr>
+        <tr id="h-060096" data-volume="low" data-search="vail health hospital vail 81657">
+          <td class="col-name"><a href="#h-060096">Vail Health Hospital</a><span class="row-field">Vail, CO 81657</span></td>
+          <td class="col-num" data-value="141" data-label="Median time in ER"><strong>141 min</strong><span class="row-years">2 h 21 m</span></td>
+          <td class="col-num" data-value="304" data-label="Mental health">304 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-060075" data-volume="low" data-search="valley view hospital association glenwood springs 81601">
+          <td class="col-name"><a href="#h-060075">Valley View Hospital Association</a><span class="row-field">Glenwood Springs, CO 81601</span></td>
+          <td class="col-num" data-value="152" data-label="Median time in ER"><strong>152 min</strong><span class="row-years">2 h 32 m</span></td>
+          <td class="col-num" data-value="275" data-label="Mental health">275 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061300" data-volume="low" data-search="weisbrod memorial county hospital eads 81036">
+          <td class="col-name"><a href="#h-061300">Weisbrod Memorial County Hospital</a><span class="row-field">Eads, CO 81036</span></td>
+          <td class="col-num" data-value="118" data-label="Median time in ER"><strong>118 min</strong><span class="row-years">1 h 58 m</span></td>
+          <td class="col-num" data-value="114" data-label="Mental health">114 min</td>
+          <td class="col-num" data-value="1" data-label="Left before seen">1%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061309" data-volume="low" data-search="wray community district hospital wray 80758">
+          <td class="col-name"><a href="#h-061309">Wray Community District Hospital</a><span class="row-field">Wray, CO 80758</span></td>
+          <td class="col-num" data-value="109" data-label="Median time in ER"><strong>109 min</strong><span class="row-years">1 h 49 m</span></td>
+          <td class="col-num" data-value="" data-label="Mental health">—</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+        <tr id="h-061315" data-volume="low" data-search="yuma district hospital yuma 80759">
+          <td class="col-name"><a href="#h-061315">Yuma District Hospital</a><span class="row-field">Yuma, CO 80759</span></td>
+          <td class="col-num" data-value="125" data-label="Median time in ER"><strong>125 min</strong><span class="row-years">2 h 05 m</span></td>
+          <td class="col-num" data-value="304" data-label="Mental health">304 min</td>
+          <td class="col-num" data-value="0" data-label="Left before seen">0%</td>
+          <td class="col-class"><span class="class-badge">low</span></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No hospitals match that search.</p>
+      <p class="related"><a href="/er-wait-times/">All states</a> · <a href="/stats/">All health stats</a></p>
+      <details class="faq-item source-note">
+        <summary>What these numbers mean, and where they come from</summary>
+        <p><b>Median time in the ER:</b> the typical time from arriving at the emergency department to leaving it, for patients who were sent home (CMS measure OP-18b), Oct 2024–Sep 2025. Half of visits took longer. Patients transferred elsewhere are excluded.</p>
+        <p><b>Mental health patients:</b> the same median for psychiatric and mental health patients (OP-18c), who often wait far longer for a bed or transfer.</p>
+        <p><b>Left before being seen:</b> the percentage of patients who left the ER before a clinician saw them (OP-22), Jan 2024–Dec 2024. Volume bands (low to very high) are CMS's own categories.</p>
+        <p>Source: <a href="https://data.cms.gov/provider-data/topics/hospitals/timely-effective-care">CMS Care Compare, Timely and Effective Care</a>, the hospital data behind <a href="https://www.medicare.gov/care-compare/">Medicare's Care Compare</a>. CMS last updated it 2026-07-22; fetched 2026-09-28. CMS refreshes it about quarterly, and hospitals with too few cases don't report a number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="wrap">
+      <span class="eyebrow">Refill Reminder</span>
+      <h2>New episodes, straight to your inbox.</h2>
+      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <form class="signup" data-location="episode_page">
+        <label class="sr-only" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <details class="signup-prefs">
+          <summary>Only want some topics?</summary>
+          <p class="prefs-note">Tick what you want. Leave everything blank to get every episode.</p>
+          <div class="prefs">
+            <label class="pref"><input type="checkbox" name="topics" value="ai"> AI &amp; Tech</label>
+            <label class="pref"><input type="checkbox" name="topics" value="surgery"> Surgery</label>
+            <label class="pref"><input type="checkbox" name="topics" value="aging"> Aging</label>
+            <label class="pref"><input type="checkbox" name="topics" value="mind"> Mind &amp; Mood</label>
+            <label class="pref"><input type="checkbox" name="topics" value="hospital"> Hospital Life</label>
+            <label class="pref"><input type="checkbox" name="topics" value="culture"> Culture &amp; Sports</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-pax-inguinalis"> Pax Inguinalis</label>
+            <label class="pref"><input type="checkbox" name="topics" value="series-play-by-play"> Play by Play</label>
+          </div>
+        </details>
+        <p class="signup-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="newsletter-alt">Prefer a feed reader? <a href="/subscribe/">RSS feeds for every topic and series →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-nav">
+    <a href="/#about">About</a>
+    <a href="/#episodes">All episodes</a>
+    <a href="/topics/">Topics</a>
+    <a href="/explained/">Explainers</a>
+    <a href="/teach/">Teaching guides</a>
+    <a href="/eponyms/">Eponym index</a>
+    <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
+    <a href="/submit/">Submit a story</a>
+    <a href="/subscribe/">Subscribe</a>
+    <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>
+    <span>© 2026 Medics Musings Productions — no prior authorization required.</span>
+  </div>
+  <div class="wrap">
+    <p class="disclaimer"><b>For entertainment only.</b> Medics Musings episodes are satirical, AI-generated conversations; characters, stories and “facts” may be fictional. Nothing on this site, including the AI chat assistant, is medical advice or creates a doctor–patient relationship. For medical concerns, see your own clinician. In an emergency, call 911.</p>
+  </div>
+</footer>
+
+<script src="/signup.js" defer></script>
+<script src="/site.js" defer></script>
+<script src="/extras.js" defer></script>
+</body>
+</html>
