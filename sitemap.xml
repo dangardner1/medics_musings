@@ -415,6 +415,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.medicsmusings.com/timeline/psychiatry/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.medicsmusings.com/submit/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>

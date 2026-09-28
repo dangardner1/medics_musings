@@ -53,7 +53,11 @@ const quotes = readJson('data/quotes.json', {});
 const explainers = readJson('data/explainers.json', { explainers: [] }).explainers;
 const guides = readJson('data/teaching.json', { guides: [] }).guides;
 const eponyms = readJson('data/eponyms.json', { entries: [] }).entries;
-const timeline = readJson('data/timeline.json', { entries: [] }).entries;
+// Both timelines, each row tagged with the page it lives on.
+const timeline = [
+  ...readJson('data/timeline.json', { entries: [] }).entries.map((r) => ({ ...r, page: '/timeline/' })),
+  ...readJson('data/timeline-psychiatry.json', { entries: [] }).entries.map((r) => ({ ...r, page: '/timeline/psychiatry/' })),
+];
 
 const partsOf = (series) => episodes.filter((e) => e.series === series).sort((a, b) => a.part - b.part);
 const partLabel = (e) => e.partLabel || `Part ${e.part}`;
@@ -199,6 +203,7 @@ function updateHomepage() {
             <p>${eponyms.length} real eponyms from the episodes, and a timeline from Hippocrates to the robot in the room.</p>
             <a class="chips-link" href="eponyms/">The eponym index →</a>
             <a class="chips-link" href="timeline/">The history timeline →</a>
+            <a class="chips-link" href="timeline/psychiatry/">The psychiatry timeline →</a>
           </div>
         </div>`);
 
@@ -325,7 +330,7 @@ function episodePage(ep, newer, older) {
         <p><span class="eyebrow">The real medicine</span> ${exps.map((x) => `<a href="/explained/${x.slug}/">${esc(x.title)}</a>`).join(' · ')}</p>` : ''}${guide ? `
         <p><span class="eyebrow">Teaching this?</span> <a href="/teach/${ep.slug}/">Free discussion guide: ${esc(guide.theme.toLowerCase())}</a></p>` : ''}${eponymHits.length ? `
         <p><span class="eyebrow">Names in this episode</span> ${eponymHits.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')}</p>` : ''}${timelineHits.length ? `
-        <p><span class="eyebrow">On the timeline</span> ${timelineHits.map((r) => `<a href="/timeline/#${r.slug}">${esc(r.yearLabel)}: ${esc(snippet(r.event, 60))}</a>`).join(' · ')}</p>` : ''}
+        <p><span class="eyebrow">On the timeline</span> ${timelineHits.map((r) => `<a href="${r.page}#${r.slug}">${esc(r.yearLabel)}: ${esc(snippet(r.event, 60))}</a>`).join(' · ')}</p>` : ''}
       </aside>` : '';
 
   const embed = player ? `

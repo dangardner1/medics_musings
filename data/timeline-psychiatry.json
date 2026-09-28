@@ -1,0 +1,258 @@
+{
+  "title": "Psychiatry and psychoanalysis timeline",
+  "heading": "From black bile to the 988 hotline",
+  "intro": "Twenty-five centuries of trying to understand the mind, from humors and asylums to Freud's couch, lithium, the DSM and a three-digit crisis line. The satire is ours; the dates and facts are real. Where an episode touches the moment, the link takes you there.",
+  "entries": [
+    {
+      "slug": "black-bile",
+      "year": -400,
+      "yearLabel": "c. 400 BC",
+      "event": "Hippocratic writers blame melancholia on an excess of black bile, which is what the word literally means. Treatment options were limited, but at least the diagnosis came with a color.",
+      "field": "ancient",
+      "episodes": []
+    },
+    {
+      "slug": "bethlem-1247",
+      "year": 1247,
+      "yearLabel": "1247",
+      "event": "The Priory of St Mary of Bethlehem is founded in London. By around 1400 it houses people with mental illness, and its nickname, Bedlam, becomes the English word for chaos. Branding is forever.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "narrenturm-1784",
+      "year": 1784,
+      "yearLabel": "1784",
+      "event": "Emperor Joseph II opens Vienna's General Hospital, the Allgemeines Krankenhaus, along with the Narrenturm, a round “Fools' Tower” for mentally ill patients. A century later Freud trains there, and in our fictional telling its doctors get a comedy club.",
+      "field": "asylums & reform",
+      "episodes": [{ "slug": "from-burnout-to-punchlines-freuds-solution", "t": 15 }]
+    },
+    {
+      "slug": "pinel-1793",
+      "year": 1793,
+      "yearLabel": "1790s",
+      "event": "Philippe Pinel and hospital superintendent Jean-Baptiste Pussin are credited with removing chains from patients in Paris asylums and championing “moral treatment.” The famous unchaining scene is part legend, but the reform was real, which is more than most legends manage.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "york-retreat-1796",
+      "year": 1796,
+      "yearLabel": "1796",
+      "event": "Quaker merchant William Tuke opens the York Retreat in England, offering kindness, work and fresh air instead of chains. Radical at the time. Still radical in some insurance plans.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "dix-1841",
+      "year": 1841,
+      "yearLabel": "1841",
+      "event": "Dorothea Dix visits a Massachusetts jail, finds mentally ill people held in freezing cells, and begins a decades-long campaign that helps found dozens of state hospitals. One schoolteacher, one notebook, a lot of legislators who wished she'd go away.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "apa-1844",
+      "year": 1844,
+      "yearLabel": "1844",
+      "event": "Thirteen asylum superintendents form the Association of Medical Superintendents of American Institutions for the Insane, the ancestor of the American Psychiatric Association. The name was later shortened, mercifully.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "breuer-freud-1895",
+      "year": 1895,
+      "yearLabel": "1895",
+      "event": "Josef Breuer and Sigmund Freud publish Studies on Hysteria, including the case of “Anna O.,” the patient who named it the “talking cure.” Psychoanalysis is born, and so, arguably, is transference.",
+      "field": "psychoanalysis",
+      "episodes": [{ "slug": "transference-analysis-play-by-play", "t": 35 }]
+    },
+    {
+      "slug": "kraepelin-1899",
+      "year": 1899,
+      "yearLabel": "1899",
+      "event": "Emil Kraepelin's textbook separates “dementia praecox” from “manic-depressive insanity,” a split that still shapes how schizophrenia and bipolar disorder are classified. Psychiatry gets its first great filing system.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "dreams-1900",
+      "year": 1900,
+      "yearLabel": "1900",
+      "event": "Freud's The Interpretation of Dreams appears, released in November 1899 but dated 1900 by its publisher so it could belong to the new century. Its first printing of 600 copies took about eight years to sell. The unconscious was a slow burn.",
+      "field": "psychoanalysis",
+      "episodes": []
+    },
+    {
+      "slug": "freud-1905",
+      "year": 1905,
+      "yearLabel": "1905",
+      "event": "Freud publishes Three Essays on the Theory of Sexuality, introducing the psychosexual stages, and Jokes and Their Relation to the Unconscious. One book gave us “anal-retentive”; the other gave our Freud episode its premise.",
+      "field": "psychoanalysis",
+      "episodes": [
+        { "slug": "from-burnout-to-punchlines-freuds-solution", "t": 108 },
+        { "slug": "the-robot-who-wipes-my-butt", "t": 96 }
+      ]
+    },
+    {
+      "slug": "bleuler-1908",
+      "year": 1908,
+      "yearLabel": "1908",
+      "event": "Swiss psychiatrist Eugen Bleuler coins the word “schizophrenia” to replace “dementia praecox.” The new name means “split mind,” which has been misunderstood as “split personality” ever since.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "clark-1909",
+      "year": 1909,
+      "yearLabel": "1909",
+      "event": "Freud gives his only lectures in America, at Clark University in Worcester, Massachusetts, with Carl Jung along for the trip. Psychoanalysis takes off in the U.S.; Freud reportedly never much liked the place.",
+      "field": "psychoanalysis",
+      "episodes": []
+    },
+    {
+      "slug": "ipa-1910",
+      "year": 1910,
+      "yearLabel": "1910",
+      "event": "The International Psychoanalytical Association is founded, with Jung as its first president. Three years later Freud and Jung split for good, establishing the grand psychoanalytic tradition of dramatic falling-outs.",
+      "field": "psychoanalysis",
+      "episodes": []
+    },
+    {
+      "slug": "malaria-1917",
+      "year": 1917,
+      "yearLabel": "1917",
+      "event": "Julius Wagner-Jauregg treats the psychosis of late-stage syphilis by deliberately infecting patients with malaria, whose fevers help. It earns him the 1927 Nobel Prize, the first for psychiatry. Desperate times, feverish measures.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "ego-id-1923",
+      "year": 1923,
+      "yearLabel": "1923",
+      "event": "Freud's The Ego and the Id lays out the id, ego and superego: three roommates, one kitchen, no chore chart.",
+      "field": "psychoanalysis",
+      "episodes": [{ "slug": "from-burnout-to-punchlines-freuds-solution", "t": 188 }]
+    },
+    {
+      "slug": "anna-freud-1936",
+      "year": 1936,
+      "yearLabel": "1936",
+      "event": "Anna Freud publishes The Ego and the Mechanisms of Defence, organizing denial, projection and the rest into a list. The family business expands.",
+      "field": "psychoanalysis",
+      "episodes": []
+    },
+    {
+      "slug": "ect-1938",
+      "year": 1938,
+      "yearLabel": "1938",
+      "event": "Ugo Cerletti and Lucio Bini give the first electroconvulsive therapy in Rome. Much refined since, with anesthesia and muscle relaxants, ECT remains an effective treatment for severe depression, despite what the movies say.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "freud-london-1938",
+      "year": 1938.5,
+      "yearLabel": "1938–39",
+      "event": "After the Nazi annexation of Austria, Freud flees Vienna for London, bringing his famous couch. He dies there in September 1939. The couch is still in London, at the Freud Museum, receiving visitors but no patients.",
+      "field": "psychoanalysis",
+      "episodes": []
+    },
+    {
+      "slug": "lithium-1949",
+      "year": 1949,
+      "yearLabel": "1949",
+      "event": "Australian psychiatrist John Cade reports that lithium calms mania, after experiments that began with guinea pigs. A cheap salt becomes one of psychiatry's most effective drugs, much to the disappointment of anyone hoping to patent it.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "moniz-1949",
+      "year": 1949.5,
+      "yearLabel": "1949",
+      "event": "Portuguese neurologist Egas Moniz wins the Nobel Prize for prefrontal leucotomy, the operation that became the lobotomy. It remains one of the most regretted Nobels in history, and people have petitioned to rescind it.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "chlorpromazine-dsm-1952",
+      "year": 1952,
+      "yearLabel": "1952",
+      "event": "Chlorpromazine, the first antipsychotic, is tried in psychiatric patients in Paris, and the American Psychiatric Association publishes the first DSM. Psychiatry gets a pill and a manual in the same year; arguments about both begin immediately.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "asylum-peak-1955",
+      "year": 1955,
+      "yearLabel": "1955",
+      "event": "The number of patients in U.S. state psychiatric hospitals peaks at about 560,000. Deinstitutionalization follows, and so does the unresolved question of where everyone was supposed to go.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "beck-1960s",
+      "year": 1960,
+      "yearLabel": "1960s",
+      "event": "Aaron Beck, trained as a psychoanalyst, develops cognitive therapy after finding that depressed patients' thoughts mattered more than their dreams. The worksheet enters the therapy room and never leaves.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "cmha-1963",
+      "year": 1963,
+      "yearLabel": "1963",
+      "event": "President Kennedy signs the Community Mental Health Act to replace large institutions with local community centers. Far fewer of the centers were built than planned; the institutions closed anyway.",
+      "field": "asylums & reform",
+      "episodes": []
+    },
+    {
+      "slug": "rosenhan-1973",
+      "year": 1973,
+      "yearLabel": "1973",
+      "event": "Science publishes David Rosenhan's “On Being Sane in Insane Places,” in which healthy volunteers were admitted to psychiatric hospitals. It shook the field, though later investigation raised serious doubts about how the study was done. A study about misdiagnosis, possibly misdescribed.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "dsm-homosexuality-1973",
+      "year": 1973.5,
+      "yearLabel": "1973",
+      "event": "The American Psychiatric Association votes to remove homosexuality from the DSM as a mental disorder. Science, activism and a long-overdue correction arrive at the same meeting.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "dsm-iii-1980",
+      "year": 1980,
+      "yearLabel": "1980",
+      "event": "DSM-III introduces explicit diagnostic criteria and checklists, largely replacing psychoanalytic language in the manual. Freud is politely shown the door; the checklist gets his office.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "prozac-1987",
+      "year": 1987,
+      "yearLabel": "1987",
+      "event": "The FDA approves fluoxetine, sold as Prozac, the first widely used SSRI antidepressant. It becomes a household name, a book title and a punchline, in roughly that order.",
+      "field": "treatment",
+      "episodes": []
+    },
+    {
+      "slug": "dsm-5-2013",
+      "year": 2013,
+      "yearLabel": "2013",
+      "event": "DSM-5 is published, the fifth edition of the manual, about 60 years after the first. Arguments about what counts as a disorder remain the manual's most reliable feature.",
+      "field": "diagnosis",
+      "episodes": []
+    },
+    {
+      "slug": "988-2022",
+      "year": 2022,
+      "yearLabel": "2022",
+      "event": "The U.S. launches 988, a three-digit Suicide & Crisis Lifeline you can call or text any time. After 25 centuries, some progress: the help line is now shorter than most prior authorization forms.",
+      "field": "treatment",
+      "episodes": [{ "slug": "healing-by-hashtag-unpack-your-baggage-in-30-seconds" }]
+    }
+  ]
+}

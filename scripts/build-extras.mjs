@@ -112,6 +112,8 @@ function explainerPage(x, ctx) {
       </section>${related.length ? `
       <p class="related">Related: ${related.map((r) => `<a href="/explained/${r.slug}/">${esc(r.title)}</a>`).join(' · ')}</p>` : ''}${relatedEponyms.length ? `
       <p class="related">Related names: ${relatedEponyms.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')} <a href="/eponyms/">(full index)</a></p>` : ''}
+${(x.topics || []).includes('mind') ? `
+      <p class="related">History: <a href="/timeline/psychiatry/">The psychiatry and psychoanalysis timeline</a></p>` : ''}
       <p class="satire-note"><b>Not medical advice.</b> This page is general information, written to explain terms our satire leans on; it isn't a substitute for advice from your own clinician. In an emergency, call 911.</p>
     </div>
   </article>
@@ -164,6 +166,7 @@ ${pageEnd(ctx.data)}`;
 
 const EPONYMS_URL = `${SITE}/eponyms/`;
 const TIMELINE_URL = `${SITE}/timeline/`;
+const PSYCH_TIMELINE_URL = `${SITE}/timeline/psychiatry/`;
 export const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // A row's "hear it" links: one per episode it's tied to, timestamped when we have one.
@@ -249,27 +252,30 @@ function eponymsPage(ctx) {
 ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 }
 
-function timelinePage(ctx) {
-  const rows = [...ctx.timeline].sort((a, b) => a.year - b.year);
+// Two timelines share this template: surgery/medicine (/timeline/) and
+// psychiatry/psychoanalysis (/timeline/psychiatry/).
+function timelinePage(ctx, t) {
+  const rows = [...t.entries].sort((a, b) => a.year - b.year);
   const fields = [...new Set(rows.map((r) => r.field))].sort();
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'ItemList',
-        '@id': `${TIMELINE_URL}#list`,
-        name: 'Surgery and medicine history timeline',
-        description: ctx.timelineData.intro,
-        url: TIMELINE_URL,
+        '@id': `${t.url}#list`,
+        name: t.name,
+        description: t.intro,
+        url: t.url,
         itemListOrder: 'https://schema.org/ItemListOrderAscending',
         numberOfItems: rows.length,
         itemListElement: rows.map((r, i) => ({
           '@type': 'ListItem',
           position: i + 1,
-          item: { '@type': 'Event', name: r.event, startDate: String(r.year), url: `${TIMELINE_URL}#${r.slug}` },
+          // BC years and fractional sort keys (1938.5) aren't valid dates; omit them.
+          item: { '@type': 'Event', name: r.event, ...(r.year > 0 && { startDate: String(Math.floor(r.year)) }), url: `${t.url}#${r.slug}` },
         })),
       },
-      breadcrumbLd([['History timeline', TIMELINE_URL]]),
+      breadcrumbLd(t.crumbs.map(([label, path]) => [label, `${SITE}${path}`])),
     ],
   };
   const rowsHtml = rows.map((r) => `<tr id="${r.slug}" data-field="${esc(r.field)}" data-year="${r.year}" data-search="${esc(`${r.yearLabel} ${r.event}`.toLowerCase())}">
@@ -277,14 +283,14 @@ function timelinePage(ctx) {
           <td class="col-what">${esc(r.event)}<span class="row-field">${esc(r.field)}</span></td>
           <td class="col-hear">${heardLinks(r.episodes, ctx)}</td>
         </tr>`).join('\n        ');
-  return `${pageHead({ title: 'A Timeline of Surgery and Medicine History | Medics Musings', description: snippet(ctx.timelineData.intro), url: TIMELINE_URL, ogTitle: 'The surgery history timeline', image: shareImage(null), ld })}
+  return `${pageHead({ title: t.pageTitle, description: snippet(t.intro), url: t.url, ogTitle: t.name, image: shareImage(null), ld })}
 <main>
   <section class="collection data-page">
     <div class="wrap">
-      ${crumbs([['History timeline']])}
+      ${crumbs(t.crumbs.map(([label, path], i) => [label, i < t.crumbs.length - 1 ? path : null]))}
       <span class="eyebrow">Reference · ${rows.length} milestones</span>
-      <h1>From Hippocrates to the robot</h1>
-      <p class="coll-intro">${esc(ctx.timelineData.intro)}</p>
+      <h1>${esc(t.heading)}</h1>
+      <p class="coll-intro">${esc(t.intro)}</p>
       ${tableControls('timeline', fields, 'Search years or events…')}
       <div class="table-wrap">
         <table class="data-table" data-sortable="timeline">
@@ -301,7 +307,7 @@ function timelinePage(ctx) {
         </table>
       </div>
       <p class="table-empty" hidden>No events match that search.</p>
-      <p class="related">See also: <a href="/eponyms/">The eponym index</a></p>
+      <p class="related">See also: ${t.seeAlso}</p>
     </div>
   </section>
 
@@ -794,6 +800,8 @@ export function buildExtras(ctx) {
   const teachData = readJson('data/teaching.json', { intro: '', note: '', guides: [] });
   const eponymData = readJson('data/eponyms.json', { intro: '', entries: [] });
   const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
+  const psychTimelineData = readJson('data/timeline-psychiatry.json', { intro: '', entries: [] });
+  const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));
   const full = {
     ...ctx,
     explainedData,
@@ -803,7 +811,8 @@ export function buildExtras(ctx) {
     eponymData,
     eponyms: eponymData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))),
     timelineData,
-    timeline: timelineData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))),
+    timeline: timelineData.entries.filter(onSite),
+    psychTimeline: psychTimelineData.entries.filter(onSite),
   };
 
   writePage('explained', explainedHub(full));
@@ -811,7 +820,26 @@ export function buildExtras(ctx) {
   writePage('teach', teachHub(full));
   for (const g of full.guides) writePage(`teach/${g.slug}`, teachPage(g, full));
   writePage('eponyms', eponymsPage(full));
-  writePage('timeline', timelinePage(full));
+  writePage('timeline', timelinePage(full, {
+    url: TIMELINE_URL,
+    name: 'Surgery and medicine history timeline',
+    pageTitle: 'A Timeline of Surgery and Medicine History | Medics Musings',
+    heading: 'From Hippocrates to the robot',
+    intro: timelineData.intro,
+    entries: full.timeline,
+    crumbs: [['History timeline', '/timeline/']],
+    seeAlso: '<a href="/timeline/psychiatry/">The psychiatry and psychoanalysis timeline</a> · <a href="/eponyms/">The eponym index</a>',
+  }));
+  writePage('timeline/psychiatry', timelinePage(full, {
+    url: PSYCH_TIMELINE_URL,
+    name: psychTimelineData.title,
+    pageTitle: 'A Satirical Timeline of Psychiatry and Psychoanalysis | Medics Musings',
+    heading: psychTimelineData.heading,
+    intro: psychTimelineData.intro,
+    entries: full.psychTimeline,
+    crumbs: [['History timeline', '/timeline/'], ['Psychiatry & psychoanalysis', '/timeline/psychiatry/']],
+    seeAlso: '<a href="/timeline/">The surgery and medicine timeline</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a> · <a href="/explained/">All explainers</a>',
+  }));
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -830,6 +858,7 @@ export function buildExtras(ctx) {
     guides: full.guides,
     eponyms: full.eponyms,
     timeline: full.timeline,
+    psychTimeline: full.psychTimeline,
     sitemap: [
       { loc: EXPLAINED_URL, lastmod: newest, changefreq: 'monthly', priority: '0.8' },
       ...full.explainers.map((x) => ({ loc: `${EXPLAINED_URL}${x.slug}/`, lastmod: newest, changefreq: 'monthly', priority: '0.8' })),
@@ -837,9 +866,10 @@ export function buildExtras(ctx) {
       ...full.guides.map((g) => ({ loc: `${TEACH_URL}${g.slug}/`, lastmod: newest, changefreq: 'monthly', priority: '0.7' })),
       { loc: EPONYMS_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
+      { loc: PSYCH_TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'timeline', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'timeline', 'timeline/psychiatry', 'submit', 'subscribe'],
   };
 }
