@@ -1,0 +1,120 @@
+{
+ "date": "2026-09-28",
+ "status": "published",
+ "generated": "2026-09-28T07:07:04.863Z",
+ "pick": {
+  "title": "Indonesian ruling against ‘patent evergreening’ by pharma industry sends critical message, patient advocates say",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/09/24/indonesian-court-rules-against-patent-evergreening-boosting-access-medicines/",
+  "date": "2026-09-24",
+  "headline": "Pharma Stunned to Learn Patents Were Supposed to Expire",
+  "take": "Evergreening, for the uninitiated, is the art of changing a drug’s coating, dose or delivery just enough to reset the patent clock. An Indonesian court just said no to it. It remains the only corner of medicine where the old treatment keeps getting newer and the price never gets lower."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Opinion: FDA commissioner nominee Heidi Overton is ignoring the science on abortion drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/25/heidi-overton-confirmation-hearing-mifepristone-abortion-evasive/",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about a reticent FDA commish nominee, a Novo deal, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/09/25/reticent-fda-commish-nominee-novo-deal/",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 2,
+   "title": "FDA commissioner nominee Heidi Overton keeps opinions to herself in Senate hearing",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/fda-commissioner-nominee-heidi-overton-senate-hearing-dodges-questions/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 3,
+   "title": "The FDA’s Overton era, and dispatches from Shanghai",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/chronicling-chinese-drug-development-from-shanghai-readout-loud/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 4,
+   "title": "Indonesian ruling against ‘patent evergreening’ by pharma industry sends critical message, patient advocates say",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/09/24/indonesian-court-rules-against-patent-evergreening-boosting-access-medicines/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 5,
+   "title": "Pharmalittle: We’re reading about the FDA commissioner nominee, a Lilly partnership in China, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/09/24/fda-commissioner-nominee-heidi-overton-lilly-china-partnership/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 6,
+   "title": "The rise of the AI-native radiology practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/the-rise-of-the-ai-native-radiology-practice-health-tech/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 7,
+   "title": "Did FDA Advisors Support a Cancer Early-Detection Blood Test?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/quizzes/news-quiz/123155",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 8,
+   "title": "FDA Approves Efsitora Weekly Insulin for Type 2 Diabetes",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/endocrinology/diabetes/123153",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 9,
+   "title": "Nursing Society Ousts CEO Accused of Using Racial Slur",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/nursing/nursing/123152",
+   "date": "2026-09-25"
+  },
+  {
+   "id": 10,
+   "title": "FDA Nominee Voices Support for Vaccines at Senate Hearing Scrutinizing Trump's Moves",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/fdageneral/123140",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 11,
+   "title": "FDA Approves New Option for Previously Treated Bile Duct Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123137",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 12,
+   "title": "FDA nominee Overton parries vaccine questions at Senate hearing",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/overton-senate-hearing-fda-vaccines-abortion-china/831352/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 13,
+   "title": "AI will inflate healthcare costs before lowering them, Oz says",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-will-inflate-healthcare-costs-before-lowering-them-oz-says/831277/",
+   "date": "2026-09-24"
+  },
+  {
+   "id": 14,
+   "title": "In radiology, AI is blurring the line between technology development and clinical practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice/",
+   "date": "2026-09-24"
+  }
+ ]
+}

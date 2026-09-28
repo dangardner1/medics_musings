@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medics Musings: Health Care News of the Day</title>
+    <link>https://www.medicsmusings.com/news/</link>
+    <atom:link href="https://www.medicsmusings.com/feeds/news.xml" rel="self" type="application/rss+xml"/>
+    <description>One real health care story a day, with a satirical headline and take from two doctors.</description>
+    <language>en-us</language>
+    <image><url>https://www.medicsmusings.com/icon-512.png</url><title>Medics Musings: Health Care News of the Day</title><link>https://www.medicsmusings.com/news/</link></image>
+    <lastBuildDate>Mon, 28 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Pharma Stunned to Learn Patents Were Supposed to Expire</title>
+      <link>https://www.medicsmusings.com/news/2026-09-28/</link>
+      <guid isPermaLink="true">https://www.medicsmusings.com/news/2026-09-28/</guid>
+      <pubDate>Mon, 28 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Evergreening, for the uninitiated, is the art of changing a drug’s coating, dose or delivery just enough to reset the patent clock. An Indonesian court just said no to it. It remains the only corner of medicine where the old treatment keeps getting newer and the price never gets lower. The real story: Indonesian ruling against ‘patent evergreening’ by pharma industry sends critical message, patient advocates say (STAT) https://www.statnews.com/pharmalot/2026/09/24/indonesian-court-rules-against-patent-evergreening-boosting-access-medicines/</description>
+    </item>
+  </channel>
+</rss>

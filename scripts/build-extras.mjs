@@ -992,6 +992,105 @@ function gamesHub(ctx) {
 ${pageEnd(ctx.data)}`;
 }
 
+// ---- Health Care News of the Day (/news/) ---------------------------------------------
+// data/news/<YYYY-MM-DD>.json, drafted by scripts/fetch-daily-news.mjs. Only days
+// marked "published" are built; NEWS_PREVIEW=1 also builds "review" days (noindex).
+
+const NEWS_URL = `${SITE}/news/`;
+const NEWS_NOTE = 'The real story is linked. The headline above it and the commentary are satire, written by Medics Musings; we quote no article text and aim the jokes at the system, never at patients or reporters.';
+
+function loadNews() {
+  const preview = process.env.NEWS_PREVIEW === '1';
+  const dir = join(ROOT, 'data', 'news');
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse()
+    .map((f) => readJson(`data/news/${f}`, null))
+    .filter((d) => d?.pick?.headline && d.pick.take && (d.status === 'published' || (preview && d.status === 'review')));
+}
+
+const newsDayLabel = (iso) => new Date(`${iso}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+const newsDayUrl = (d) => `${NEWS_URL}${d.date}/`;
+
+function newsItemHtml(d, { lead }) {
+  const p = d.pick;
+  const H = lead ? 'h1' : 'h2';
+  return `<article class="news-item">
+        <span class="eyebrow">News of the day · ${esc(newsDayLabel(d.date))}${d.status === 'published' ? '' : ' · DRAFT, not published'}</span>
+        <${H} class="news-headline">${esc(p.headline)}</${H}>
+        <p class="news-source">The real story: <a href="${esc(p.url)}" rel="noopener" target="_blank">${esc(p.title)}</a> <span>${esc(p.source)} · ${esc(dateLabel(p.date))}</span></p>
+        <p class="news-take"><b>Our take:</b> ${esc(p.take)}</p>
+      </article>`;
+}
+
+function newsPage(ctx, d, { latest }) {
+  const days = ctx.news;
+  const url = latest ? NEWS_URL : newsDayUrl(d);
+  const i = days.indexOf(d);
+  const newer = days[i - 1];
+  const older = days[i + 1];
+  const title = latest ? 'Health Care News of the Day, With Satire | Medics Musings' : `${d.pick.headline} (${dateLabel(d.date)}) | Medics Musings`;
+  const description = snippet(`${d.pick.headline}. The real story: ${d.pick.title} (${d.pick.source}). A satirical take on the day's health care news from two doctors.`);
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'SatiricalArticle',
+        '@id': `${newsDayUrl(d)}#article`,
+        headline: d.pick.headline,
+        description: d.pick.take,
+        datePublished: d.date,
+        url: newsDayUrl(d),
+        author: { '@type': 'Organization', name: 'Medics Musings', url: `${SITE}/` },
+        publisher: { '@type': 'Organization', name: 'Medics Musings', url: `${SITE}/` },
+        about: { '@type': 'NewsArticle', headline: d.pick.title, url: d.pick.url, publisher: { '@type': 'Organization', name: d.pick.source } },
+        citation: d.pick.url,
+        isPartOf: { '@id': `${SITE}/#website` },
+      },
+      breadcrumbLd([['News of the day', NEWS_URL], ...(latest ? [] : [[dateLabel(d.date), url]])]),
+    ],
+  };
+  const feeds = [{ title: 'Medics Musings: Health Care News of the Day', href: `${SITE}/feeds/news.xml` }];
+  return `${pageHead({ title, description, url, ogTitle: d.pick.headline, image: shareImage(null), type: 'article', ld, feeds, robots: d.status === 'published' ? undefined : 'noindex, nofollow' })}
+<main>
+  <section class="collection news-page">
+    <div class="wrap">
+      ${crumbs([['News of the day', latest ? undefined : '/news/'], ...(latest ? [] : [[dateLabel(d.date)]])])}
+      ${newsItemHtml(d, { lead: true })}
+      <div class="source-note">
+        <p>${esc(NEWS_NOTE)}</p>
+        <p>A new story every morning. Follow it: <a href="/feeds/news.xml">RSS feed</a> <button type="button" class="link-btn" data-copy="${SITE}/feeds/news.xml">Copy feed URL</button> · <a href="#newsletter">Get episodes by email</a></p>
+      </div>
+      <nav class="top10-nav" aria-label="Other days">
+        ${older ? `<a href="/news/${older.date}/">← ${esc(newsDayLabel(older.date))}</a>` : '<span></span>'}
+        ${newer ? `<a href="/news/${newer.date}/">${esc(newsDayLabel(newer.date))} →</a>` : ''}
+      </nav>
+      ${days.length > 1 ? `<h2>Earlier editions</h2>
+      <ul class="top10-archive">
+        ${days.filter((x) => x !== d).slice(0, 30).map((x) => `<li><a href="/news/${x.date}/">${esc(x.pick.headline)}</a> <span>${esc(newsDayLabel(x.date))} · ${esc(x.pick.source)}</span></li>`).join('\n        ')}
+      </ul>` : ''}
+      <p class="related">See also: <a href="/top-10/">The weekly Top 10</a> · <a href="/line-of-the-day/">Line of the day</a> · <a href="/games/">Games</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+function newsEmptyPage(ctx) {
+  const intro = 'One real health care story a day, with a satirical headline and a take from two doctors.';
+  return `${pageHead({ title: 'Health Care News of the Day, With Satire | Medics Musings', description: intro, url: NEWS_URL, ogTitle: 'Health Care News of the Day', image: shareImage(null), robots: 'noindex, nofollow', ld: { '@context': 'https://schema.org', '@graph': [breadcrumbLd([['News of the day', NEWS_URL]])] } })}
+<main>
+  <section class="collection news-page">
+    <div class="wrap">
+      ${crumbs([['News of the day']])}
+      <span class="eyebrow">News of the day</span>
+      <h1>Health Care News of the Day</h1>
+      <p class="coll-intro">${esc(intro)} The first edition arrives tomorrow morning.</p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data)}`;
+}
+
 // ---- Word Rounds (/games/word-rounds/): the daily medical word search ------------------
 // Themes live in data/wordsearch.json; wordsearch.js builds each day's grid in
 // the browser from a seed, so every player gets the same puzzle.
@@ -1354,6 +1453,20 @@ function writeFeeds(ctx) {
     mkdirSync(join(ROOT, rel, '..'), { recursive: true });
     writeFileSync(join(ROOT, rel), xml);
   };
+  const pubNews = ctx.news.filter((d) => d.status === 'published');
+  if (pubNews.length) {
+    put('feeds/news.xml', rss({
+      title: 'Medics Musings: Health Care News of the Day',
+      description: 'One real health care story a day, with a satirical headline and take from two doctors.',
+      link: NEWS_URL, self: `${SITE}/feeds/news.xml`,
+      items: pubNews.slice(0, 60).map((d) => ({
+        title: d.pick.headline,
+        url: newsDayUrl(d),
+        date: d.date,
+        feedDescription: `${d.pick.take} The real story: ${d.pick.title} (${d.pick.source}) ${d.pick.url}`,
+      })),
+    }));
+  }
   for (const list of ctx.top10) {
     if (!list.weeks.some((w) => w.status === 'published')) continue;
     put(`feeds/top-10-${list.key}.xml`, rss({
@@ -1626,6 +1739,7 @@ export function buildExtras(ctx) {
   const recallData = SHOW_HEALTH_STATS ? readJson('data/recalls.json', null) : null;
   const erData = SHOW_HEALTH_STATS ? readJson('data/er-wait.json', null) : null;
   const top10 = loadTop10();
+  const news = loadNews();
   const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));
   const full = {
     ...ctx,
@@ -1642,6 +1756,7 @@ export function buildExtras(ctx) {
     recallData,
     erData,
     top10,
+    news,
   };
 
   writePage('explained', explainedHub(full));
@@ -1707,6 +1822,15 @@ export function buildExtras(ctx) {
     writePage('er-wait-times', erMainPage(full));
     for (const st of erStates(erData)) writePage(`er-wait-times/${st.state.toLowerCase()}`, erStatePage(full, st));
   }
+  // News of the day, rebuilt from scratch so a day taken back to draft disappears.
+  rmSync(join(ROOT, 'news'), { recursive: true, force: true });
+  const newsPages = ['news'];
+  if (news.length) {
+    writePage('news', newsPage(full, news[0], { latest: true }));
+    for (const d of news) { writePage(`news/${d.date}`, newsPage(full, d, { latest: false })); newsPages.push(`news/${d.date}`); }
+  } else {
+    writePage('news', newsEmptyPage(full));
+  }
   writePage('line-of-the-day', lineOfTheDayPage(full));
   writePage('games', gamesHub(full));
   writePage('games/eponym', eponymGamePage(full));
@@ -1753,6 +1877,10 @@ export function buildExtras(ctx) {
         { loc: ER_URL, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.8' },
         ...erStates(erData).map((st) => ({ loc: `${ER_URL}${st.state.toLowerCase()}/`, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.7' })),
       ] : []),
+      ...(news.filter((d) => d.status === 'published').length ? [
+        { loc: NEWS_URL, lastmod: news.filter((d) => d.status === 'published')[0].date, changefreq: 'daily', priority: '0.8' },
+        ...news.filter((d) => d.status === 'published').map((d) => ({ loc: newsDayUrl(d), lastmod: d.date, changefreq: 'yearly', priority: '0.5' })),
+      ] : []),
       { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
       { loc: WORD_ROUNDS_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
@@ -1760,6 +1888,6 @@ export function buildExtras(ctx) {
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'line-of-the-day', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
   };
 }

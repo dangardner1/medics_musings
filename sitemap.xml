@@ -457,6 +457,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.medicsmusings.com/news/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.medicsmusings.com/news/2026-09-28/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.medicsmusings.com/line-of-the-day/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>daily</changefreq>

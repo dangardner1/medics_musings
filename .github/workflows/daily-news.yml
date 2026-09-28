@@ -1,0 +1,92 @@
+name: News of the Day
+
+# Health Care News of the Day: one real story with a satirical headline and take.
+#
+# Every morning: gathers candidates (scripts/fetch-daily-news.mjs), commits the
+# draft to data/news/ and opens an issue to review it. Drafts are never built
+# into pages. If the repo has an ANTHROPIC_API_KEY secret, Claude drafts the
+# pick, headline and take; otherwise the issue lists candidates.
+#
+# Publishing: when a day's "status" is changed to "published" and pushed to main
+# (edited on GitHub or locally), the publish job rebuilds the site.
+on:
+  schedule:
+    - cron: '7 11 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['data/news/**']
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Gather candidates
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/fetch-daily-news.mjs
+
+      - name: Commit draft
+        run: |
+          if [ -n "$(git status --porcelain data/news)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/news
+            git commit -m "Draft today's News of the Day"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "No new draft."
+          fi
+
+      - name: Open a review issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node scripts/news-issue.mjs > body.md
+          if [ -s body.md ]; then
+            gh issue create --title "News of the Day draft ready ($(date -u +%Y-%m-%d))" --body-file body.md
+          fi
+
+  publish:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Rebuild the site
+        run: node scripts/build-episodes.mjs
+
+      - name: Publish
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Publish News of the Day"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "Nothing to publish."
+          fi

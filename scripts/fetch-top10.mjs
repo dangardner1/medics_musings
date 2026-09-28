@@ -18,9 +18,9 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { UA, ymd, decode, feed } from './lib/feeds.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; medicsmusings.com top10 bot)' };
 const DAY = 86400000;
 const CANDIDATES = 30;
 
@@ -38,37 +38,6 @@ function isoWeek(d) {
 const now = new Date();
 const WEEK = isoWeek(new Date(now - DAY));
 const since = new Date(now - 7 * DAY);
-const ymd = (d) => d.toISOString().slice(0, 10);
-
-// ---- Feeds --------------------------------------------------------------------------
-
-const decode = (s) => String(s || '')
-  .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-  .replace(/<[^>]+>/g, ' ')
-  .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
-  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
-  .replace(/&(quot|apos|#39|lt|gt|nbsp|amp);/g, (_, e) => ({ quot: '"', apos: "'", '#39': "'", lt: '<', gt: '>', nbsp: ' ', amp: '&' }[e]))
-  .replace(/\s+/g, ' ').trim();
-const tag = (xml, name) => (xml.match(new RegExp(`<${name}\\b[^>]*>([\\s\\S]*?)</${name}>`, 'i')) || [])[1];
-
-async function feed(source, url) {
-  const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(25000) });
-  if (!res.ok) throw new Error(`${source}: HTTP ${res.status}`);
-  const xml = await res.text();
-  const blocks = xml.match(/<item\b[\s\S]*?<\/item>|<entry\b[\s\S]*?<\/entry>/gi) || [];
-  return blocks.map((b) => {
-    const link = decode(tag(b, 'link')) || (b.match(/<link\b[^>]*href="([^"]+)"/i) || [])[1] || '';
-    const when = new Date(decode(tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'updated') || tag(b, 'dc:date')));
-    return {
-      title: decode(tag(b, 'title')).replace(/^STAT\+:\s*/, ''),
-      url: link.trim().replace(/[?&]utm_[^#]*$/, ''),
-      source,
-      date: Number.isNaN(+when) ? '' : ymd(when),
-      time: +when || 0,
-      about: decode(tag(b, 'description') || tag(b, 'summary') || tag(b, 'content')).slice(0, 400),
-    };
-  }).filter((i) => i.title && /^https?:\/\//.test(i.url));
-}
 
 // ---- PubMed -------------------------------------------------------------------------
 

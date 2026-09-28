@@ -211,6 +211,7 @@ function updateHomepage() {
             <a class="chips-link" href="games/eponym/">Play the daily eponym game →</a>
             <a class="chips-link" href="games/word-rounds/">Play Word Rounds, the daily word search →</a>
             <a class="chips-link" href="line-of-the-day/">Today’s line from the show →</a>
+            <a class="chips-link" href="news/">Health care news of the day, with satire →</a>
           </div>
         </div>`);
 
