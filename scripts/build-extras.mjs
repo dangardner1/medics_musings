@@ -972,6 +972,13 @@ function gamesHub(ctx) {
           </a>
         </li>
         <li>
+          <a class="coll-card" href="/games/word-rounds/">
+            <span class="coll-part">Daily</span>
+            <span class="coll-title">Word Rounds</span>
+            <span class="coll-desc">A medical word search on a new theme every day, from the biliary tract to Freud’s couch. Beat the clock, keep the streak.</span>
+          </a>
+        </li>
+        <li>
           <a class="coll-card" href="/line-of-the-day/">
             <span class="coll-part">Daily</span>
             <span class="coll-title">Line of the day</span>
@@ -983,6 +990,66 @@ function gamesHub(ctx) {
   </section>
 
 ${pageEnd(ctx.data)}`;
+}
+
+// ---- Word Rounds (/games/word-rounds/): the daily medical word search ------------------
+// Themes live in data/wordsearch.json; wordsearch.js builds each day's grid in
+// the browser from a seed, so every player gets the same puzzle.
+
+const WORD_ROUNDS_URL = `${SITE}/games/word-rounds/`;
+const WORD_ROUNDS_LAUNCH = '2026-09-27'; // puzzle #1
+
+function wordRoundsPage(ctx) {
+  const data = readJson('data/wordsearch.json', { themes: [] });
+  for (const t of data.themes) {
+    for (const w of t.words) if (!/^[A-Z]{3,10}$/.test(w)) console.warn(`word rounds: "${w}" in ${t.slug} must be 3-10 capital letters`);
+    if (new Set(t.words).size !== t.words.length) console.warn(`word rounds: duplicate word in ${t.slug}`);
+  }
+  const themes = seededShuffle(data.themes, 3141592).map(({ title, subtitle, words, link }) => ({ title, subtitle, words, link }));
+  const intro = 'A new medical word search every day, themed on the show. Find every word; the clock is running, like a surgical time-out that nobody called.';
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebPage', url: WORD_ROUNDS_URL, name: 'Word Rounds: a daily medical word search', description: intro, isPartOf: { '@id': `${SITE}/#website` } },
+      breadcrumbLd([['Games', GAMES_URL], ['Word Rounds', WORD_ROUNDS_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Word Rounds: a Daily Medical Word Search | Medics Musings', description: snippet(`${intro} ${themes.length} themes, from the biliary tract to Freud's couch.`), url: WORD_ROUNDS_URL, ogTitle: 'Word Rounds: the daily medical word search', image: shareImage(null), ld })}
+<main>
+  <section class="collection game-page">
+    <div class="wrap">
+      ${crumbs([['Games', '/games/'], ['Word Rounds']])}
+      <span class="eyebrow">Daily game · <span data-ws-num>new puzzle every day</span></span>
+      <h1>Word Rounds</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      <div class="ws" id="word-rounds" data-launch="${WORD_ROUNDS_LAUNCH}">
+        <noscript><p class="game-note">This game needs JavaScript.</p></noscript>
+        <div class="ws-head">
+          <h2 class="ws-theme"></h2>
+          <p class="ws-sub"></p>
+          <p class="ws-status"><span class="ws-count"></span> · <span class="ws-clock">0:00</span></p>
+        </div>
+        <div class="ws-board">
+          <div class="ws-grid" role="grid" aria-label="Word search grid"></div>
+          <ul class="ws-words" aria-label="Words to find"></ul>
+        </div>
+        <p class="ws-help">Drag across a word, or tap its first and last letter. Keyboard: arrow keys to move, Enter to pick the start and end.</p>
+        <p class="sr-only" aria-live="polite" data-ws-say></p>
+        <div class="game-result" hidden tabindex="-1">
+          <h2 class="game-verdict"></h2>
+          <p class="game-links"></p>
+          <p><button type="button" class="btn btn-primary" data-ws-share>Share your time</button></p>
+          <pre class="game-share" aria-label="Your result"></pre>
+          <p class="game-next"></p>
+        </div>
+        <dl class="stat-tiles game-stats" hidden></dl>
+      </div>
+      <p class="related">More daily games: <a href="/games/eponym/">Name that eponym</a> · <a href="/line-of-the-day/">Line of the day</a> · <a href="/games/">All games</a></p>
+    </div>
+  </section>
+  <script type="application/json" id="ws-data">${JSON.stringify(themes).replace(/</g, '\\u003c')}</script>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'wordsearch.js'] })}`;
 }
 
 // ---- Line of the day (/line-of-the-day/) --------------------------------------------
@@ -1643,6 +1710,7 @@ export function buildExtras(ctx) {
   writePage('line-of-the-day', lineOfTheDayPage(full));
   writePage('games', gamesHub(full));
   writePage('games/eponym', eponymGamePage(full));
+  writePage('games/word-rounds', wordRoundsPage(full));
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -1687,10 +1755,11 @@ export function buildExtras(ctx) {
       ] : []),
       { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
+      { loc: WORD_ROUNDS_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: EPONYM_GAME_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'line-of-the-day', 'games', 'games/eponym', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'line-of-the-day', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
   };
 }

@@ -853,3 +853,40 @@ footer {
 .line-list a { color: var(--text); text-decoration: none; }
 .line-list a:hover { color: var(--accent); }
 .line-list span { display: block; color: var(--text-muted); font-size: 0.85rem; }
+
+/* ---- Word Rounds (word search) ---- */
+.ws { margin-top: 26px; max-width: 900px; }
+.ws-head h2 { margin: 0; font-size: 1.6rem; }
+.ws-sub { margin: 4px 0 0; color: var(--text-muted); }
+.ws-status { margin: 8px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pulse); }
+.ws-board { display: flex; flex-wrap: wrap; gap: 22px; align-items: flex-start; margin-top: 16px; }
+.ws-grid {
+  display: grid;
+  grid-template-columns: repeat(10, min(8.4vw, 44px));
+  grid-auto-rows: min(8.4vw, 44px);
+  gap: 2px;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ws-cell {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0; border: 0; border-radius: 4px;
+  background: transparent; color: var(--text);
+  font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: min(4.4vw, 1.15rem);
+  cursor: pointer;
+}
+.ws-cell:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; }
+.ws-cell.is-found { background: color-mix(in srgb, var(--accent) 30%, transparent); color: var(--text); }
+.ws-cell.is-picking, .ws-cell.is-anchor { background: var(--pulse); color: var(--bg); }
+.ws-words { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, auto)); gap: 6px 18px; align-content: start; font-family: "IBM Plex Mono", monospace; font-size: 0.9rem; letter-spacing: 0.04em; }
+.ws-words li.is-found { color: var(--text-muted); text-decoration: line-through; }
+.ws-help { margin: 14px 0 0; color: var(--text-muted); font-size: 0.88rem; }
+.ws.is-done .ws-help { display: none; }
+@media (max-width: 680px) {
+  .ws-words { grid-template-columns: repeat(3, minmax(0, auto)); font-size: 0.82rem; }
+}
