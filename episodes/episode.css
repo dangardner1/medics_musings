@@ -807,3 +807,49 @@ footer {
   .topbar-inner > a.btn-ghost { display: none; }
   .site-menu { margin-left: auto; }
 }
+
+/* ---- Games ---- */
+.game { max-width: 680px; margin-top: 26px; }
+.game-note { color: var(--text-muted); }
+.game-clues { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.game-clue { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+.game-clue:last-child { border-color: var(--pulse); }
+.game-clue-n { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pulse); }
+.game-clue-text { line-height: 1.5; }
+.game-form { margin-top: 18px; }
+.game-form[hidden], .game-result[hidden], .game-stats[hidden] { display: none; }
+.game-form label { display: block; margin-bottom: 6px; font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.game-row { display: flex; gap: 8px; }
+.game-row input { flex: 1 1 auto; min-width: 0; padding: 11px 14px; border: 1px solid var(--border); border-radius: 3px; background: var(--surface); color: var(--text); font: inherit; font-size: 1rem; }
+.game-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+.game-left { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-muted); }
+.game-guesses { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.game-guesses li { padding: 5px 10px; border: 1px solid var(--border); border-radius: 3px; font-size: 0.9rem; }
+.game-guesses li.is-wrong { color: var(--text-muted); text-decoration: line-through; }
+.game-guesses li.is-wrong .game-mark { color: var(--accent); }
+.game-guesses li.is-right { border-color: var(--pulse); color: var(--pulse); font-weight: 600; }
+.game-result { margin-top: 24px; padding: 20px; background: var(--surface); border: 1px solid var(--pulse); border-radius: 6px; }
+.game-result:focus { outline: none; }
+.game-result h2 { margin: 0; font-size: 1.6rem; }
+.game-answer { margin: 10px 0 0; color: var(--text-muted); }
+.game-answer strong { color: var(--text); }
+.game-links { margin: 12px 0 0; }
+.game-share { margin: 12px 0 0; padding: 10px 12px; background: var(--surface-2); border-radius: 4px; font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.game-next { margin: 10px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; color: var(--pulse); }
+.game-stats { margin-top: 20px; }
+
+/* ---- Line of the day ---- */
+.line-days { max-width: 760px; margin-top: 26px; }
+.line-day[hidden] { display: none; }
+.line-day .quote-card { display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border); }
+.line-text { margin: 20px 0 0; padding: 0; }
+.line-text p:not(.line-src) { margin: 0; font-size: clamp(1.25rem, 3vw, 1.6rem); line-height: 1.35; font-weight: 600; }
+.line-text .line-src { margin: 8px 0 0; color: var(--text-muted); }
+.line-text .line-src a { color: var(--pulse); }
+.line-hear { margin: 18px 0 0; }
+.line-next { margin: 14px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; color: var(--pulse); }
+.line-list { max-width: 760px; margin: 14px 0 0; padding-left: 1.4em; }
+.line-list li { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.line-list a { color: var(--text); text-decoration: none; }
+.line-list a:hover { color: var(--accent); }
+.line-list span { display: block; color: var(--text-muted); font-size: 0.85rem; }

@@ -801,6 +801,244 @@ function top10Hub(ctx, lists) {
 ${pageEnd(ctx.data)}`;
 }
 
+// ---- Games (/games/): the daily "Name that eponym" puzzle ----------------------------
+// All play happens in games.js; the build embeds the puzzles as JSON. Clues come
+// straight from data/eponyms*.json, with the answer blanked out.
+
+const GAMES_URL = `${SITE}/games/`;
+const EPONYM_GAME_URL = `${SITE}/games/eponym/`;
+const GAME_LAUNCH = '2026-09-27'; // puzzle #1
+
+// Short answers for entries whose index name is a phrase.
+const GAME_ALIASES = {
+  'bobbs-cholecystotomy': ['Bobbs'], 'heber-fitz-appendicitis': ['Fitz'], 'erle-peacock-wound-healing': ['Peacock'],
+  'parviz-amid-neurectomy': ['Amid'], 'semmelweis-handwashing': ['Semmelweis'], 'barany-caloric-test': ['Bárány'],
+  'billroth-gastrectomy': ['Billroth'],
+};
+// Extra giveaways to blank in a clue (the show's own pun on the name).
+const GAME_REDACT = { 'kluver-bucy-syndrome': ['Bucey-Cleaver'] };
+// Clue 3 for eponyms named after a place, a myth or a character, not a person.
+const GAME_SOURCE = {
+  'oedipus-complex': 'Named after a figure from Greek myth', 'electra-complex': 'Named after a figure from Greek myth',
+  narcissism: 'Named after a figure from Greek myth', 'othello-syndrome': 'Named after a character in Shakespeare',
+  'stockholm-syndrome': 'Named after a city', 'hawthorne-effect': 'Named after a factory',
+};
+// Words that describe rather than name, so clues can keep them.
+const GAME_GENERIC = new Set(('syndrome delusion test effect analysis disease complex model scale inventory rating depression conditioning box '
+  + 'hierarchy needs triad point suture repair fascia triangle catheter basket shunt maneuver encephalopathy ducts first gallbladder '
+  + 'operation wound healing triple neurectomy handwashing caloric good-enough mother dichotomy and the via greek myth works western '
+  + 'electric bank robbery with from').split(' '));
+const gameNorm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/['’]s\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+function gameTokens(...texts) {
+  const words = texts.join(' ').normalize('NFC').match(/[\p{L}][\p{L}'’-]*/gu) || [];
+  return [...new Set(words.map((w) => w.replace(/['’]s$/, '').replace(/['’-]+$/, '')).filter((w) => w.length >= 4 && !GAME_GENERIC.has(w.toLowerCase())))];
+}
+
+function redact(text, tokens) {
+  let out = text;
+  for (const t of tokens.sort((a, b) => b.length - a.length)) {
+    // The token itself plus words built on it (Freud -> Freudian, Mesmer -> mesmerized).
+    const base = t.length <= 5 ? t : t.slice(0, Math.max(5, t.length - 3));
+    const esc2 = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    out = out.replace(new RegExp(`(?<![\\p{L}])${esc2(base)}[\\p{L}'’-]*`, 'giu'), '▇▇▇');
+    const plain = t.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    if (plain !== t) out = out.replace(new RegExp(`(?<![\\p{L}])${esc2(plain)}[\\p{L}'’-]*`, 'giu'), '▇▇▇');
+  }
+  return out;
+}
+
+// Same shuffled order every build (mulberry32), so puzzle numbers never move.
+function seededShuffle(list, seed) {
+  const out = list.slice();
+  let a = seed;
+  const rand = () => { a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+  for (let i = out.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [out[i], out[j]] = [out[j], out[i]]; }
+  return out;
+}
+
+function eponymPuzzles(ctx) {
+  const all = [...ctx.eponyms, ...ctx.psychEponyms].sort((a, b) => a.slug.localeCompare(b.slug));
+  return seededShuffle(all, 20260928).map((e) => {
+    const tokens = [...gameTokens(e.name, e.person, ...(GAME_ALIASES[e.slug] || [])), ...(GAME_REDACT[e.slug] || [])];
+    const clue = redact(e.what, tokens);
+    const left = tokens.filter((t) => new RegExp(`(?<![\\p{L}])${t}`, 'iu').test(clue));
+    if (left.length) console.warn(`games: clue for ${e.slug} still shows ${left.join(', ')}`);
+    const ep = e.episodes.map((x) => ({ x, ep: ctx.bySlug.get(x.slug) })).find((o) => o.ep);
+    const answer = GAME_ALIASES[e.slug]?.[0] || e.name;
+    const words = answer.split(/\s+/);
+    // "Hippocrates of Kos" -> Hippocrates; drops Jr./Sr. and lowercase particles.
+    const capWords = (p) => p.split(/\s+of\s+/)[0].split(/\s+/).filter((w) => /^\p{Lu}/u.test(w) && !/^(Jr|Sr)\.?$/.test(w));
+    const people = e.person.split(/\s+and\s+/).map((p) => capWords(p).map((w) => `${w[0]}.`).join(' '));
+    const letters = answer.replace(/[^\p{L}]/gu, '');
+    const count = `${words.length > 1 ? `${words.length} words, ` : ''}${letters.length} letters`;
+    const pattern = `Starts with “${letters[0].toUpperCase()}” · ${count}`;
+    const clues = [
+      clue,
+      `${e.field === 'person' ? 'A person, not a thing' : `Type: ${e.field}`} · ${e.years}`,
+      GAME_SOURCE[e.slug] || `Named for someone with the initials ${people.join(' and ')}`,
+      ep ? `Comes up in the episode “${redact(ep.ep.title, tokens)}”` : pattern,
+      ep ? pattern : `Starts with “${letters.slice(0, 2)}” · ${count}`,
+    ];
+    // People can be guessed by surname too (Osler for William Osler).
+    const surname = e.field === 'person' ? [capWords(e.person).at(-1)] : [];
+    return {
+      name: e.name,
+      accept: [...new Set([e.name, ...(GAME_ALIASES[e.slug] || []), ...surname].map(gameNorm))],
+      clues,
+      what: e.what,
+      person: e.person,
+      listen: ep ? { title: ep.ep.title, url: ep.x.t != null ? `${ep.ep.path}?t=${Math.floor(ep.x.t)}` : ep.ep.path } : null,
+      more: `${e.page}#${slugify(e.name)}`,
+    };
+  });
+}
+
+function eponymGamePage(ctx) {
+  const puzzles = eponymPuzzles(ctx);
+  const names = [...new Set(puzzles.map((p) => p.name))].sort((a, b) => a.localeCompare(b));
+  const intro = 'One real medical or psychiatric eponym a day. Five guesses, one new clue after each miss. Guessing is free, unlike the MRI.';
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebPage', url: EPONYM_GAME_URL, name: 'Name that eponym: a daily medical word game', description: intro, isPartOf: { '@id': `${SITE}/#website` }, about: [{ '@type': 'DefinedTermSet', url: EPONYMS_URL }, { '@type': 'DefinedTermSet', url: PSYCH_EPONYMS_URL }] },
+      breadcrumbLd([['Games', GAMES_URL], ['Name that eponym', EPONYM_GAME_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Name That Eponym: a Daily Medical Word Game | Medics Musings', description: snippet(`A daily puzzle for doctors, students and the medically curious: name the eponym from its clues in five guesses. ${puzzles.length} real eponyms, from McBurney's point to the Capgras delusion.`), url: EPONYM_GAME_URL, ogTitle: 'Name that eponym: the daily game', image: shareImage(null), ld })}
+<main>
+  <section class="collection game-page">
+    <div class="wrap">
+      ${crumbs([['Games', '/games/'], ['Name that eponym']])}
+      <span class="eyebrow">Daily game · <span data-game-num>new puzzle every day</span></span>
+      <h1>Name that eponym</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      <div class="game" id="eponym-game" data-launch="${GAME_LAUNCH}">
+        <noscript><p class="game-note">This game needs JavaScript. Meanwhile, the answers live in the <a href="/eponyms/">eponym index</a>.</p></noscript>
+        <ol class="game-clues" aria-live="polite" aria-label="Clues"></ol>
+        <form class="game-form" hidden>
+          <label for="game-guess">Your guess</label>
+          <div class="game-row">
+            <input id="game-guess" name="guess" type="text" list="game-names" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Start typing a name…" required>
+            <button type="submit" class="btn btn-primary">Guess</button>
+          </div>
+          <datalist id="game-names">
+            ${names.map((n) => `<option value="${esc(n)}"></option>`).join('\n            ')}
+          </datalist>
+          <p class="game-left" aria-live="polite"></p>
+        </form>
+        <ul class="game-guesses" aria-label="Your guesses"></ul>
+        <div class="game-result" hidden tabindex="-1">
+          <h2 class="game-verdict"></h2>
+          <p class="game-answer"></p>
+          <p class="game-links"></p>
+          <p><button type="button" class="btn btn-primary" data-game-share>Share your result</button></p>
+          <pre class="game-share" aria-label="Your result"></pre>
+          <p class="game-next"></p>
+        </div>
+        <dl class="stat-tiles game-stats" hidden></dl>
+      </div>
+      <p class="related">Study up: <a href="/eponyms/">Surgical and medical eponyms</a> · <a href="/eponyms/psychiatry/">Psychiatric eponyms</a> · <a href="/games/">All games</a></p>
+    </div>
+  </section>
+  <script type="application/json" id="game-data">${JSON.stringify(puzzles).replace(/</g, '\\u003c')}</script>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'games.js'] })}`;
+}
+
+function gamesHub(ctx) {
+  const intro = 'Quick games built from the show’s real medicine. Come back tomorrow; the answers change and the co-pay doesn’t.';
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'CollectionPage', url: GAMES_URL, name: 'Games', description: intro, isPartOf: { '@id': `${SITE}/#website` } },
+      breadcrumbLd([['Games', GAMES_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Medical Games: Daily Eponym Puzzle and More | Medics Musings', description: snippet(intro), url: GAMES_URL, ogTitle: 'Games', image: shareImage(null), ld })}
+<main>
+  <section class="collection">
+    <div class="wrap">
+      ${crumbs([['Games']])}
+      <span class="eyebrow">Play</span>
+      <h1>Games</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      <ul class="coll-list">
+        <li>
+          <a class="coll-card" href="/games/eponym/">
+            <span class="coll-part">Daily</span>
+            <span class="coll-title">Name that eponym</span>
+            <span class="coll-desc">Who’s behind McBurney’s point, the Capgras delusion or the Kocher maneuver? Five guesses, one new clue after each miss, a streak to protect.</span>
+          </a>
+        </li>
+        <li>
+          <a class="coll-card" href="/line-of-the-day/">
+            <span class="coll-part">Daily</span>
+            <span class="coll-title">Line of the day</span>
+            <span class="coll-desc">One line a day from the episodes, with a card to share and a link to hear it in context.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+${pageEnd(ctx.data)}`;
+}
+
+// ---- Line of the day (/line-of-the-day/) --------------------------------------------
+// One line from the show per day, from data/quotes.json (lines that have a quote
+// card). Every line is in the HTML; line.js shows today's, counted from the
+// launch date on the reader's calendar, in a fixed shuffled order.
+
+const LINE_URL = `${SITE}/line-of-the-day/`;
+const LINE_LAUNCH = '2026-09-27'; // line #1
+
+function lineOfTheDayPage(ctx) {
+  const lines = seededShuffle(ctx.episodes.flatMap((ep) => (ctx.quotes[ep.slug] || [])
+    .map((q, i) => ({ ep, q, n: i + 1 }))
+    .filter((l) => existsSync(join(ROOT, quoteCardPath(l.ep.slug, l.n))))), 19721972);
+  const days = Math.floor((Date.now() - Date.parse(`${LINE_LAUNCH}T00:00:00Z`)) / 86400000);
+  const fallback = ((days % lines.length) + lines.length) % lines.length;
+  const hear = (l) => (l.q.t != null ? `${l.ep.path}?t=${Math.max(0, Math.floor(l.q.t))}` : l.ep.path);
+  const intro = 'One line a day from the Medics Musings episodes, straight from the transcript: no AI punch-ups, no laugh track. Share it, then hear it in context.';
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage', url: LINE_URL, name: 'Line of the day', description: intro, isPartOf: { '@id': `${SITE}/#website` },
+        mainEntity: { '@type': 'ItemList', numberOfItems: lines.length, itemListElement: lines.map((l, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Quotation', text: l.q.text, url: `${SITE}/episodes/${l.ep.slug}/quotes/${l.n}/`, isPartOf: { '@type': 'PodcastEpisode', name: l.ep.title, url: `${SITE}${l.ep.path}` } } })) },
+      },
+      breadcrumbLd([['Line of the day', LINE_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Line of the Day: Medical Satire Quotes From Two Doctors | Medics Musings', description: snippet(`${intro} ${lines.length} lines and counting.`), url: LINE_URL, ogTitle: 'Line of the day', image: { url: `${SITE}/${quoteCardPath(lines[fallback].ep.slug, lines[fallback].n)}`, alt: `Quote card: “${lines[fallback].q.text}”` }, ld })}
+<main>
+  <section class="collection line-page">
+    <div class="wrap">
+      ${crumbs([['Line of the day']])}
+      <span class="eyebrow">Daily · <span data-line-num>#${fallback + 1}</span></span>
+      <h1>Line of the day</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      <div class="line-days" id="line-of-the-day" data-launch="${LINE_LAUNCH}">
+        ${lines.map((l, i) => `<article class="line-day"${i === fallback ? '' : ' hidden'}>
+          <a href="/episodes/${l.ep.slug}/quotes/${l.n}/"><img class="quote-card" src="/${quoteCardPath(l.ep.slug, l.n)}" width="1200" height="630" loading="lazy" alt="Quote card: “${esc(l.q.text)}”"></a>
+          <blockquote class="line-text"><p>“${esc(l.q.text)}”</p><p class="line-src">— <a href="${l.ep.path}">${esc(l.ep.title)}</a></p></blockquote>
+          <p class="line-hear"><a class="btn btn-primary" href="${hear(l)}">▶ Hear it in the episode${l.q.t != null ? ` (${clock(l.q.t)})` : ''}</a></p>
+          ${quoteShareRow(l.ep, l.q, l.n)}
+        </article>`).join('\n        ')}
+        <p class="line-next" aria-live="polite"></p>
+      </div>
+      <h2>Every line so far</h2>
+      <ol class="line-list">
+        ${lines.map((l) => `<li><a href="/episodes/${l.ep.slug}/quotes/${l.n}/">“${esc(l.q.text)}”</a> <span>${esc(l.ep.title)}</span></li>`).join('\n        ')}
+      </ol>
+      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/top-10/">The weekly Top 10</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js', 'line.js'] })}`;
+}
+
 // ---- Teaching guides ---------------------------------------------------------------
 
 function embedFrame(ep, lazy = true) {
@@ -1402,6 +1640,9 @@ export function buildExtras(ctx) {
     writePage('er-wait-times', erMainPage(full));
     for (const st of erStates(erData)) writePage(`er-wait-times/${st.state.toLowerCase()}`, erStatePage(full, st));
   }
+  writePage('line-of-the-day', lineOfTheDayPage(full));
+  writePage('games', gamesHub(full));
+  writePage('games/eponym', eponymGamePage(full));
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -1444,9 +1685,12 @@ export function buildExtras(ctx) {
         { loc: ER_URL, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.8' },
         ...erStates(erData).map((st) => ({ loc: `${ER_URL}${st.state.toLowerCase()}/`, lastmod: erData.sourceModified || erData.fetched, changefreq: 'monthly', priority: '0.7' })),
       ] : []),
+      { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
+      { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
+      { loc: EPONYM_GAME_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), 'line-of-the-day', 'games', 'games/eponym', 'submit', 'subscribe'],
   };
 }

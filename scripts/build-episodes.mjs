@@ -208,6 +208,8 @@ function updateHomepage() {
             <a class="chips-link" href="eponyms/psychiatry/">Psychiatric eponyms →</a>
             <a class="chips-link" href="timeline/">The history timeline →</a>
             <a class="chips-link" href="timeline/psychiatry/">The psychiatry timeline →</a>
+            <a class="chips-link" href="games/eponym/">Play the daily eponym game →</a>
+            <a class="chips-link" href="line-of-the-day/">Today’s line from the show →</a>
           </div>
         </div>`);
 
