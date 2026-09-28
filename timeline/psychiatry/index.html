@@ -401,6 +401,7 @@
       <a href="/teach/">Teach</a>
       <a href="/eponyms/">Eponyms</a>
       <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
       <a href="/submit/">Submit</a>
     </nav>
     <a class="btn btn-ghost" href="/#episodes">All episodes</a>
@@ -418,12 +419,12 @@
         <label class="sr-only" for="timeline-search">Search years or events…</label>
         <input id="timeline-search" type="search" data-filter-table="timeline" placeholder="Search years or events…">
         <div class="chips" role="group" aria-label="Filter by category">
-          <button type="button" class="chip is-active" data-field-filter="">All</button>
-          <button type="button" class="chip" data-field-filter="ancient">ancient</button>
-          <button type="button" class="chip" data-field-filter="asylums &amp; reform">asylums &amp; reform</button>
-          <button type="button" class="chip" data-field-filter="diagnosis">diagnosis</button>
-          <button type="button" class="chip" data-field-filter="psychoanalysis">psychoanalysis</button>
-          <button type="button" class="chip" data-field-filter="treatment">treatment</button>
+          <button type="button" class="chip is-active" data-filter-attr="field" data-filter-value="">All</button>
+          <button type="button" class="chip" data-filter-attr="field" data-filter-value="ancient">ancient</button>
+          <button type="button" class="chip" data-filter-attr="field" data-filter-value="asylums &amp; reform">asylums &amp; reform</button>
+          <button type="button" class="chip" data-filter-attr="field" data-filter-value="diagnosis">diagnosis</button>
+          <button type="button" class="chip" data-filter-attr="field" data-filter-value="psychoanalysis">psychoanalysis</button>
+          <button type="button" class="chip" data-filter-attr="field" data-filter-value="treatment">treatment</button>
         </div>
       </div>
       <div class="table-wrap">
@@ -595,7 +596,7 @@
         </table>
       </div>
       <p class="table-empty" hidden>No events match that search.</p>
-      <p class="related">See also: <a href="/timeline/">The surgery and medicine timeline</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a> · <a href="/explained/">All explainers</a></p>
+      <p class="related">See also: <a href="/timeline/">The surgery and medicine timeline</a> · <a href="/eponyms/psychiatry/">Psychiatric and psychoanalytic eponyms</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a></p>
     </div>
   </section>
 
@@ -638,6 +639,7 @@
     <a href="/teach/">Teaching guides</a>
     <a href="/eponyms/">Eponym index</a>
     <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
     <a href="/submit/">Submit a story</a>
     <a href="/subscribe/">Subscribe</a>
     <a href="mailto:BialystockMDandBloomMD@Gmail.com">Contact</a>

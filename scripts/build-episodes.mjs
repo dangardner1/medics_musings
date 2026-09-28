@@ -52,7 +52,10 @@ const chapters = readJson('data/chapters.json', {});
 const quotes = readJson('data/quotes.json', {});
 const explainers = readJson('data/explainers.json', { explainers: [] }).explainers;
 const guides = readJson('data/teaching.json', { guides: [] }).guides;
-const eponyms = readJson('data/eponyms.json', { entries: [] }).entries;
+const eponyms = [
+  ...readJson('data/eponyms.json', { entries: [] }).entries.map((r) => ({ ...r, page: '/eponyms/' })),
+  ...readJson('data/eponyms-psychiatry.json', { entries: [] }).entries.map((r) => ({ ...r, page: '/eponyms/psychiatry/' })),
+];
 // Both timelines, each row tagged with the page it lives on.
 const timeline = [
   ...readJson('data/timeline.json', { entries: [] }).entries.map((r) => ({ ...r, page: '/timeline/' })),
@@ -200,8 +203,9 @@ function updateHomepage() {
           </div>
           <div class="beyond-card">
             <h3>Names &amp; dates</h3>
-            <p>${eponyms.length} real eponyms from the episodes, and a timeline from Hippocrates to the robot in the room.</p>
+            <p>${eponyms.length} real eponyms, surgical and psychiatric, and timelines from Hippocrates to the robot in the room.</p>
             <a class="chips-link" href="eponyms/">The eponym index →</a>
+            <a class="chips-link" href="eponyms/psychiatry/">Psychiatric eponyms →</a>
             <a class="chips-link" href="timeline/">The history timeline →</a>
             <a class="chips-link" href="timeline/psychiatry/">The psychiatry timeline →</a>
           </div>
@@ -329,7 +333,7 @@ function episodePage(ep, newer, older) {
       <aside class="learn-more" aria-label="Learn more">${exps.length ? `
         <p><span class="eyebrow">The real medicine</span> ${exps.map((x) => `<a href="/explained/${x.slug}/">${esc(x.title)}</a>`).join(' · ')}</p>` : ''}${guide ? `
         <p><span class="eyebrow">Teaching this?</span> <a href="/teach/${ep.slug}/">Free discussion guide: ${esc(guide.theme.toLowerCase())}</a></p>` : ''}${eponymHits.length ? `
-        <p><span class="eyebrow">Names in this episode</span> ${eponymHits.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')}</p>` : ''}${timelineHits.length ? `
+        <p><span class="eyebrow">Names in this episode</span> ${eponymHits.map((r) => `<a href="${r.page}#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')}</p>` : ''}${timelineHits.length ? `
         <p><span class="eyebrow">On the timeline</span> ${timelineHits.map((r) => `<a href="${r.page}#${r.slug}">${esc(r.yearLabel)}: ${esc(snippet(r.event, 60))}</a>`).join(' · ')}</p>` : ''}
       </aside>` : '';
 

@@ -150,17 +150,20 @@
       var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
       var wrap = table.closest('.data-page') || document;
       var search = wrap.querySelector('[data-filter-table="' + id + '"]');
-      var chips = wrap.querySelectorAll('[data-field-filter]');
+      var chips = wrap.querySelectorAll('[data-filter-attr]');
       var empty = wrap.querySelector('.table-empty');
-      var state = { q: '', field: '' };
+      // One active value per chip group, keyed by the row attribute it filters (data-<attr>).
+      var state = { q: '', filters: {} };
       var searchTimer = null;
 
       function applyFilter() {
         var shown = 0;
         rows.forEach(function (row) {
-          var matchesField = !state.field || row.getAttribute('data-field') === state.field;
+          var matchesFilters = Object.keys(state.filters).every(function (attr) {
+            return !state.filters[attr] || row.getAttribute('data-' + attr) === state.filters[attr];
+          });
           var matchesText = !state.q || (row.getAttribute('data-search') || '').indexOf(state.q) !== -1;
-          var show = matchesField && matchesText;
+          var show = matchesFilters && matchesText;
           row.hidden = !show;
           if (show) shown++;
         });
@@ -179,10 +182,13 @@
       }
       Array.prototype.forEach.call(chips, function (chip) {
         chip.addEventListener('click', function () {
-          state.field = chip.getAttribute('data-field-filter') || '';
-          Array.prototype.forEach.call(chips, function (c) { c.classList.toggle('is-active', c === chip); });
+          var attr = chip.getAttribute('data-filter-attr');
+          state.filters[attr] = chip.getAttribute('data-filter-value') || '';
+          Array.prototype.forEach.call(chips, function (c) {
+            if (c.getAttribute('data-filter-attr') === attr) c.classList.toggle('is-active', c === chip);
+          });
           applyFilter();
-          track('table_filter', { table: id, field: state.field || 'all' });
+          track('table_filter', { table: id, filter: attr, value: state.filters[attr] || 'all' });
         });
       });
 

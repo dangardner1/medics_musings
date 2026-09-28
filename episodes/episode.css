@@ -671,3 +671,43 @@ footer {
   .data-table td { padding: 4px 0; border: 0; }
   .data-table td.col-what::before { content: 'What: '; color: var(--pulse); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; font-family: "IBM Plex Mono", monospace; }
 }
+
+/* ---- Live health stats ---- */
+.stat-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin: 24px 0 0; max-width: 980px; }
+.stat-tiles div { padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; }
+.stat-tiles dt { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.stat-tiles dd { margin: 6px 0 0; font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 800; font-size: 2rem; line-height: 1; }
+.what-changed { margin: 16px 0 0; font-size: 0.95rem; color: var(--text-muted); }
+.what-changed b { color: var(--text); }
+.badge-new {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.class-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.class-badge.class-i { border-color: var(--accent); color: var(--accent); }
+.data-table td.col-reason { color: var(--text-muted); min-width: 220px; }
+.data-table td.col-what strong { font-weight: 600; }
+.source-note { margin-top: 28px; }
+.source-note p { color: var(--text-muted); font-size: 0.92rem; }
+.source-note a { color: var(--pulse); }
+.table-controls .chips + .chips { margin-top: -4px; }
+@media (max-width: 680px) {
+  .data-table td.col-reason::before { content: 'Reason: '; color: var(--pulse); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; font-family: "IBM Plex Mono", monospace; }
+}

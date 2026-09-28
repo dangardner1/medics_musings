@@ -68,7 +68,7 @@ function explainerPage(x, ctx) {
   const related = (x.related || []).map((s) => ctx.explainers.find((e) => e.slug === s)).filter(Boolean);
   // Eponyms named in the same episodes this explainer links to, not just a shared topic
   // (most eponyms share the "surgery" topic, which would otherwise match almost all of them).
-  const relatedEponyms = (ctx.eponyms || []).filter((r) => r.episodes.some((e) => x.episodes.includes(e.slug)));
+  const relatedEponyms = [...(ctx.eponyms || []), ...(ctx.psychEponyms || [])].filter((r) => r.episodes.some((e) => x.episodes.includes(e.slug)));
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -111,7 +111,7 @@ function explainerPage(x, ctx) {
         </ul>
       </section>${related.length ? `
       <p class="related">Related: ${related.map((r) => `<a href="/explained/${r.slug}/">${esc(r.title)}</a>`).join(' · ')}</p>` : ''}${relatedEponyms.length ? `
-      <p class="related">Related names: ${relatedEponyms.map((r) => `<a href="/eponyms/#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')} <a href="/eponyms/">(full index)</a></p>` : ''}
+      <p class="related">Related names: ${relatedEponyms.map((r) => `<a href="${r.page}#${slugify(r.name)}">${esc(r.name)}</a>`).join(' · ')} <a href="${relatedEponyms[0].page}">(full index)</a></p>` : ''}
 ${(x.topics || []).includes('mind') ? `
       <p class="related">History: <a href="/timeline/psychiatry/">The psychiatry and psychoanalysis timeline</a></p>` : ''}
       <p class="satire-note"><b>Not medical advice.</b> This page is general information, written to explain terms our satire leans on; it isn't a substitute for advice from your own clinician. In an emergency, call 911.</p>
@@ -167,7 +167,9 @@ ${pageEnd(ctx.data)}`;
 const EPONYMS_URL = `${SITE}/eponyms/`;
 const TIMELINE_URL = `${SITE}/timeline/`;
 const PSYCH_TIMELINE_URL = `${SITE}/timeline/psychiatry/`;
-export const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const PSYCH_EPONYMS_URL = `${SITE}/eponyms/psychiatry/`;
+// Accents are stripped (Klüver -> kluver) so anchors stay readable.
+export const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 // A row's "hear it" links: one per episode it's tied to, timestamped when we have one.
 function heardLinks(rows, ctx) {
@@ -180,38 +182,42 @@ function heardLinks(rows, ctx) {
   }).filter(Boolean).join(' ');
 }
 
-function tableControls(id, fields, searchLabel) {
-  const chips = fields.map((f) => `<button type="button" class="chip" data-field-filter="${esc(f)}">${esc(f)}</button>`).join('\n          ');
+// Search box plus one row of filter chips per group. Each group filters rows on
+// a data-<attr> attribute; extras.js combines the groups (a row must match all).
+function tableControls(id, fields, searchLabel, groups = [{ attr: 'field', label: 'Filter by category', values: fields }]) {
+  const chipRow = (g) => `<div class="chips" role="group" aria-label="${esc(g.label)}">
+          <button type="button" class="chip is-active" data-filter-attr="${g.attr}" data-filter-value="">${esc(g.all || 'All')}</button>
+          ${g.values.map((v) => `<button type="button" class="chip" data-filter-attr="${g.attr}" data-filter-value="${esc(v)}">${esc(v)}</button>`).join('\n          ')}
+        </div>`;
   return `<div class="table-controls">
         <label class="sr-only" for="${id}-search">${esc(searchLabel)}</label>
         <input id="${id}-search" type="search" data-filter-table="${id}" placeholder="${esc(searchLabel)}">
-        <div class="chips" role="group" aria-label="Filter by category">
-          <button type="button" class="chip is-active" data-field-filter="">All</button>
-          ${chips}
-        </div>
+        ${groups.map(chipRow).join('\n        ')}
       </div>`;
 }
 
-function eponymsPage(ctx) {
-  const rows = ctx.eponyms;
+// Two eponym indexes share this template: surgery/medicine (/eponyms/) and
+// psychiatry/psychoanalysis (/eponyms/psychiatry/).
+function eponymsPage(ctx, c) {
+  const rows = c.entries;
   const fields = [...new Set(rows.map((r) => r.field))].sort();
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'DefinedTermSet',
-        '@id': `${EPONYMS_URL}#terms`,
-        name: 'Medics Musings eponym index',
-        description: ctx.eponymData.intro,
-        url: EPONYMS_URL,
+        '@id': `${c.url}#terms`,
+        name: c.name,
+        description: c.intro,
+        url: c.url,
         hasDefinedTerm: rows.map((r) => ({
           '@type': 'DefinedTerm',
           name: r.name,
           description: r.what,
-          url: `${EPONYMS_URL}#${slugify(r.name)}`,
+          url: `${c.url}#${slugify(r.name)}`,
         })),
       },
-      breadcrumbLd([['Eponym index', EPONYMS_URL]]),
+      breadcrumbLd(c.crumbs.map(([label, path]) => [label, `${SITE}${path}`])),
     ],
   };
   const rowsHtml = rows.map((r) => `<tr id="${slugify(r.name)}" data-field="${esc(r.field)}" data-search="${esc(`${r.name} ${r.person} ${r.what}`.toLowerCase())}">
@@ -220,14 +226,14 @@ function eponymsPage(ctx) {
           <td class="col-what">${esc(r.what)}</td>
           <td class="col-hear">${heardLinks(r.episodes, ctx)}</td>
         </tr>`).join('\n        ');
-  return `${pageHead({ title: 'Medical Eponym Index: Who’s Behind the Names | Medics Musings', description: snippet(ctx.eponymData.intro), url: EPONYMS_URL, ogTitle: 'The eponym index', image: shareImage(null), ld })}
+  return `${pageHead({ title: c.pageTitle, description: snippet(c.intro), url: c.url, ogTitle: c.name, image: shareImage(null), ld })}
 <main>
   <section class="collection data-page">
     <div class="wrap">
-      ${crumbs([['Eponym index']])}
+      ${crumbs(c.crumbs.map(([label, path], i) => [label, i < c.crumbs.length - 1 ? path : null]))}
       <span class="eyebrow">Reference · ${rows.length} names</span>
-      <h1>Who's behind the name?</h1>
-      <p class="coll-intro">${esc(ctx.eponymData.intro)}</p>
+      <h1>${esc(c.heading)}</h1>
+      <p class="coll-intro">${esc(c.intro)}</p>
       ${tableControls('eponyms', fields, 'Search names, people or terms…')}
       <div class="table-wrap">
         <table class="data-table" data-sortable="eponyms">
@@ -245,7 +251,7 @@ function eponymsPage(ctx) {
         </table>
       </div>
       <p class="table-empty" hidden>No names match that search.</p>
-      <p class="related">See also: <a href="/timeline/">The surgery history timeline</a></p>
+      <p class="related">See also: ${c.seeAlso}</p>
     </div>
   </section>
 
@@ -312,6 +318,140 @@ function timelinePage(ctx, t) {
   </section>
 
 ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+// ---- Live health stats (data/*.json from scripts/fetch-health-data.mjs) ------------
+
+const STATS_URL = `${SITE}/stats/`;
+const RECALLS_URL = `${SITE}/recalls/`;
+const shortDate = (iso) => new Date(iso + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const statTiles = (tiles) => `<dl class="stat-tiles">
+        ${tiles.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(String(value))}</dd></div>`).join('\n        ')}
+      </dl>`;
+
+// Google Dataset Search reads this; keeps the source and license attached to the numbers.
+const datasetLd = ({ url, name, description, sourceName, sourceUrl, license, modified, measured }) => ({
+  '@type': 'Dataset',
+  '@id': `${url}#dataset`,
+  name,
+  description,
+  url,
+  dateModified: modified,
+  license,
+  isAccessibleForFree: true,
+  creator: { '@type': 'Organization', name: 'Medics Musings', url: `${SITE}/` },
+  isBasedOn: { '@type': 'Dataset', name: sourceName, url: sourceUrl },
+  variableMeasured: measured,
+});
+
+function recallsPage(ctx) {
+  const d = ctx.recallData;
+  const isNew = new Set(d.newIds || []);
+  const rows = d.recalls.map((r) => `<tr id="${esc(r.id.toLowerCase())}" data-field="${esc(r.category)}" data-class="${esc(r.classification)}" data-year="${r.date.replace(/-/g, '')}" data-search="${esc(`${r.product} ${r.firm} ${r.reason} ${r.category} ${r.classification}`.toLowerCase())}">
+          <td class="col-year"><a href="#${esc(r.id.toLowerCase())}">${esc(shortDate(r.date))}</a></td>
+          <td class="col-what"><strong>${esc(r.product)}</strong>${isNew.has(r.id) ? ' <span class="badge-new">New</span>' : ''}<span class="row-field">${esc(r.category)} · ${esc(r.status)} · ${esc(r.distribution)}</span></td>
+          <td class="col-person">${esc(r.firm)}</td>
+          <td class="col-reason">${esc(r.reason)}</td>
+          <td class="col-class"><span class="class-badge class-${r.classification.split(' ').pop().toLowerCase()}">${esc(r.classification)}</span></td>
+        </tr>`).join('\n        ');
+  const changed = d.previousTotal == null ? '' : `<p class="what-changed"><b>Since the last update:</b> ${d.newIds.length} new recall${d.newIds.length === 1 ? '' : 's'} added.</p>`;
+  const intro = `Everything the FDA has asked companies to take back in the last ${d.windowDays} days: drugs with things floating in them, devices doing things devices shouldn't, and food with ingredients it forgot to mention. The jokes stop at this paragraph. Every recall below is exactly as the FDA reported it.`;
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      datasetLd({
+        url: RECALLS_URL,
+        name: `FDA drug, device and food recalls, last ${d.windowDays} days`,
+        description: `Drug, medical device and food recalls reported by the U.S. FDA in the last ${d.windowDays} days, updated weekly from openFDA enforcement reports.`,
+        sourceName: 'openFDA enforcement reports, U.S. Food and Drug Administration',
+        sourceUrl: 'https://open.fda.gov/apis/',
+        license: 'https://open.fda.gov/license/',
+        modified: d.fetched,
+        measured: ['recall classification', 'product type', 'reason for recall', 'recalling firm'],
+      }),
+      breadcrumbLd([['Health stats', STATS_URL], ['Recall roundup', RECALLS_URL]]),
+    ],
+  };
+  return `${pageHead({ title: `FDA Recalls This Month: Drugs, Devices and Food (Updated ${shortDate(d.fetched)}) | Medics Musings`, description: snippet(`The latest FDA drug, medical device and food recalls from the last ${d.windowDays} days, updated weekly: ${d.counts.total} recalls, ${d.counts.classI} of them Class I. Search by product, company or reason.`), url: RECALLS_URL, ogTitle: 'The Recall Roundup', image: shareImage(null), ld, feeds: [{ title: 'Medics Musings: FDA recall roundup', href: `${SITE}/feeds/recalls.xml` }] })}
+<main>
+  <section class="collection data-page">
+    <div class="wrap">
+      ${crumbs([['Health stats', '/stats/'], ['Recall roundup']])}
+      <span class="eyebrow">Live data · updated weekly · ${d.counts.total} recalls in ${d.windowDays} days</span>
+      <h1>The Recall Roundup</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      ${statTiles([['Recalls', d.counts.total], ['Class I (most serious)', d.counts.classI], ['Drugs', d.counts.drug], ['Devices', d.counts.device], ['Food', d.counts.food]])}
+      ${changed}
+      ${tableControls('recalls', [], 'Search products, companies or reasons…', [
+        { attr: 'field', label: 'Filter by type', values: ['Drug', 'Device', 'Food'], all: 'All types' },
+        { attr: 'class', label: 'Filter by severity', values: ['Class I', 'Class II', 'Class III'], all: 'Any class' },
+      ])}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="recalls">
+          <thead>
+            <tr>
+              <th data-sort="number" class="is-sorted" data-dir="desc">Date</th>
+              <th class="no-sort">Product</th>
+              <th data-sort="text">Company</th>
+              <th class="no-sort">Reason</th>
+              <th class="no-sort">Class</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rows}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No recalls match that search.</p>
+      <details class="faq-item source-note" open>
+        <summary>What the classes mean, and where this comes from</summary>
+        <p><b>Class I:</b> a reasonable chance the product could cause serious health problems or death. <b>Class II:</b> could cause temporary or medically reversible health problems, or the chance of serious harm is remote. <b>Class III:</b> unlikely to cause health problems, but breaks FDA rules.</p>
+        <p>If you have a recalled product, follow the instructions from the company or the FDA. Don't stop a prescription medicine without asking your pharmacist or clinician first.</p>
+        <p>Source: <a href="https://open.fda.gov/apis/">openFDA enforcement reports</a>, U.S. Food and Drug Administration, via FDA's public API. FDA data as of ${esc(d.sourceUpdated)}; fetched ${esc(d.fetched)}. openFDA data is unvalidated and shouldn't be used alone for medical decisions. Official notices: <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts">FDA recalls, market withdrawals and safety alerts</a>.</p>
+        <p>Follow new recalls: <a href="/feeds/recalls.xml">RSS feed</a> <button type="button" class="link-btn" data-copy="${SITE}/feeds/recalls.xml">Copy feed URL</button></p>
+      </details>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
+// Hub for the live tables. Each dataset appears once its data file exists.
+function statsHub(ctx) {
+  const cards = [];
+  if (ctx.recallData) {
+    const d = ctx.recallData;
+    cards.push(['/recalls/', 'The Recall Roundup', `Updated weekly · ${d.counts.total} recalls`, `FDA drug, device and food recalls from the last ${d.windowDays} days, ${d.counts.classI} of them Class I. Searchable, filterable, and blessedly free of press-release adjectives.`]);
+  }
+  const intro = 'Live health numbers from public government data, refreshed automatically: what the FDA is recalling, how long the ER takes, and how loudly medicine is talking about AI. The headlines are satire; the numbers are exactly what the sources report.';
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'CollectionPage', url: STATS_URL, name: 'Health stats', description: intro, isPartOf: { '@id': `${SITE}/#website` } },
+      breadcrumbLd([['Health stats', STATS_URL]]),
+    ],
+  };
+  return `${pageHead({ title: 'Live Health Stats: FDA Recalls and More, Updated Automatically | Medics Musings', description: snippet(intro), url: STATS_URL, ogTitle: 'Health stats', image: shareImage(null), ld })}
+<main>
+  <section class="collection">
+    <div class="wrap">
+      ${crumbs([['Health stats']])}
+      <span class="eyebrow">Live data</span>
+      <h1>Health stats</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      <ul class="coll-list">
+        ${cards.map(([href, title, meta, desc]) => `<li>
+          <a class="coll-card" href="${href}">
+            <span class="coll-title">${esc(title)}</span>
+            <span class="ep-meta">${esc(meta)}</span>
+            <span class="coll-desc">${esc(desc)}</span>
+          </a>
+        </li>`).join('\n        ')}
+      </ul>
+    </div>
+  </section>
+
+${pageEnd(ctx.data)}`;
 }
 
 // ---- Teaching guides ---------------------------------------------------------------
@@ -534,9 +674,9 @@ function rss({ title, description, link, self, items }) {
     return `    <item>
       <title>${x(e.title)}</title>
       <link>${e.url}</link>
-      <guid isPermaLink="true">${e.url}</guid>
+      <guid isPermaLink="${e.guid ? 'false' : 'true'}">${e.guid || e.url}</guid>
       <pubDate>${new Date(e.date + 'T12:00:00Z').toUTCString()}</pubDate>
-      <description>${x(`${e.summary} (${e.minutes} min)`)}</description>${size ? `
+      <description>${x(e.feedDescription ?? `${e.summary} (${e.minutes} min)`)}</description>${size ? `
       <enclosure url="${SITE}/${e.audio}" length="${size}" type="audio/mpeg"/>` : ''}
     </item>`;
   };
@@ -562,6 +702,21 @@ function writeFeeds(ctx) {
     mkdirSync(join(ROOT, rel, '..'), { recursive: true });
     writeFileSync(join(ROOT, rel), xml);
   };
+  if (ctx.recallData) {
+    const d = ctx.recallData;
+    put('feeds/recalls.xml', rss({
+      title: 'Medics Musings: FDA recall roundup',
+      description: `FDA drug, device and food recalls from the last ${d.windowDays} days, updated weekly from openFDA.`,
+      link: RECALLS_URL, self: `${SITE}/feeds/recalls.xml`,
+      items: d.recalls.slice(0, 60).map((r) => ({
+        title: `${r.classification} ${r.category.toLowerCase()} recall: ${r.product.slice(0, 90)} (${r.firm})`,
+        url: `${RECALLS_URL}#${r.id.toLowerCase()}`,
+        guid: r.id,
+        date: r.date,
+        feedDescription: `${r.reason} Recalling firm: ${r.firm}. Status: ${r.status}.`,
+      })),
+    }));
+  }
   put('feeds/episodes.xml', rss({
     title: 'Medics Musings: all episodes', description: 'Every Medics Musings episode, newest first.',
     link: `${SITE}/`, self: feedHref('all'), items: episodes,
@@ -799,8 +954,10 @@ export function buildExtras(ctx) {
   const explainedData = readJson('data/explainers.json', { intro: '', explainers: [] });
   const teachData = readJson('data/teaching.json', { intro: '', note: '', guides: [] });
   const eponymData = readJson('data/eponyms.json', { intro: '', entries: [] });
+  const psychEponymData = readJson('data/eponyms-psychiatry.json', { intro: '', entries: [] });
   const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
   const psychTimelineData = readJson('data/timeline-psychiatry.json', { intro: '', entries: [] });
+  const recallData = readJson('data/recalls.json', null);
   const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));
   const full = {
     ...ctx,
@@ -809,17 +966,38 @@ export function buildExtras(ctx) {
     teachData,
     guides: teachData.guides.filter((g) => ctx.bySlug.has(g.slug)),
     eponymData,
-    eponyms: eponymData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))),
+    eponyms: eponymData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))).map((r) => ({ ...r, page: '/eponyms/' })),
+    psychEponyms: psychEponymData.entries.filter((r) => r.episodes.every((e) => ctx.bySlug.has(e.slug))).map((r) => ({ ...r, page: '/eponyms/psychiatry/' })),
     timelineData,
     timeline: timelineData.entries.filter(onSite),
     psychTimeline: psychTimelineData.entries.filter(onSite),
+    recallData,
   };
 
   writePage('explained', explainedHub(full));
   for (const x of full.explainers) writePage(`explained/${x.slug}`, explainerPage(x, full));
   writePage('teach', teachHub(full));
   for (const g of full.guides) writePage(`teach/${g.slug}`, teachPage(g, full));
-  writePage('eponyms', eponymsPage(full));
+  writePage('eponyms', eponymsPage(full, {
+    url: EPONYMS_URL,
+    name: 'Medics Musings eponym index',
+    pageTitle: 'Medical Eponym Index: Who’s Behind the Names | Medics Musings',
+    heading: "Who's behind the name?",
+    intro: eponymData.intro,
+    entries: full.eponyms,
+    crumbs: [['Eponym index', '/eponyms/']],
+    seeAlso: '<a href="/eponyms/psychiatry/">Psychiatric and psychoanalytic eponyms</a> · <a href="/timeline/">The surgery history timeline</a>',
+  }));
+  writePage('eponyms/psychiatry', eponymsPage(full, {
+    url: PSYCH_EPONYMS_URL,
+    name: psychEponymData.title,
+    pageTitle: 'Psychiatric Eponyms: Freudian Slips, Capgras, Cotard and More | Medics Musings',
+    heading: psychEponymData.heading,
+    intro: psychEponymData.intro,
+    entries: full.psychEponyms,
+    crumbs: [['Eponym index', '/eponyms/'], ['Psychiatry & psychoanalysis', '/eponyms/psychiatry/']],
+    seeAlso: '<a href="/timeline/psychiatry/">The psychiatry and psychoanalysis timeline</a> · <a href="/eponyms/">Surgical and medical eponyms</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a>',
+  }));
   writePage('timeline', timelinePage(full, {
     url: TIMELINE_URL,
     name: 'Surgery and medicine history timeline',
@@ -838,8 +1016,10 @@ export function buildExtras(ctx) {
     intro: psychTimelineData.intro,
     entries: full.psychTimeline,
     crumbs: [['History timeline', '/timeline/'], ['Psychiatry & psychoanalysis', '/timeline/psychiatry/']],
-    seeAlso: '<a href="/timeline/">The surgery and medicine timeline</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a> · <a href="/explained/">All explainers</a>',
+    seeAlso: '<a href="/timeline/">The surgery and medicine timeline</a> · <a href="/eponyms/psychiatry/">Psychiatric and psychoanalytic eponyms</a> · <a href="/explained/psychoanalysis/">What is psychoanalysis?</a>',
   }));
+  writePage('stats', statsHub(full));
+  if (recallData) writePage('recalls', recallsPage(full));
   writePage('submit', submitPage(full));
   writePage('subscribe', subscribePage(full));
   writeFeeds(full);
@@ -865,11 +1045,14 @@ export function buildExtras(ctx) {
       { loc: TEACH_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       ...full.guides.map((g) => ({ loc: `${TEACH_URL}${g.slug}/`, lastmod: newest, changefreq: 'monthly', priority: '0.7' })),
       { loc: EPONYMS_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
+      { loc: PSYCH_EPONYMS_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
       { loc: PSYCH_TIMELINE_URL, lastmod: newest, changefreq: 'monthly', priority: '0.7' },
+      { loc: STATS_URL, lastmod: recallData?.fetched || newest, changefreq: 'weekly', priority: '0.7' },
+      ...(recallData ? [{ loc: RECALLS_URL, lastmod: recallData.fetched, changefreq: 'weekly', priority: '0.8' }] : []),
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'timeline', 'timeline/psychiatry', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', 'stats', ...(recallData ? ['recalls'] : []), 'submit', 'subscribe'],
   };
 }

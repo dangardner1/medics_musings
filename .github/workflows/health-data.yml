@@ -1,0 +1,49 @@
+name: Health data
+
+# Refreshes the live health-stats tables (FDA recalls, and more as they're
+# added) from public government data, rebuilds the site and publishes it.
+# openFDA publishes new enforcement reports weekly, usually by Wednesday; this
+# runs Thursday. "Run workflow" on the Actions tab refreshes on demand.
+on:
+  schedule:
+    - cron: '17 15 * * 4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: health-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # A source that's down keeps its last good data and shows up as a
+      # warning on the run summary; the rest still update.
+      - name: Fetch health data
+        run: node scripts/fetch-health-data.mjs
+
+      - name: Rebuild the site
+        run: node scripts/build-episodes.mjs
+
+      - name: Publish
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Refresh health data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "No changes."
+          fi

@@ -126,6 +126,7 @@ ${jsonLd(ld)}
       <a href="/teach/">Teach</a>
       <a href="/eponyms/">Eponyms</a>
       <a href="/timeline/">Timeline</a>
+      <a href="/stats/">Stats</a>
       <a href="/submit/">Submit</a>
     </nav>
     <a class="btn btn-ghost" href="/#episodes">All episodes</a>
@@ -177,6 +178,7 @@ export const footer = () => `<footer>
     <a href="/teach/">Teaching guides</a>
     <a href="/eponyms/">Eponym index</a>
     <a href="/timeline/">History timeline</a>
+    <a href="/stats/">Health stats</a>
     <a href="/submit/">Submit a story</a>
     <a href="/subscribe/">Subscribe</a>
     <a href="mailto:${INBOX}">Contact</a>

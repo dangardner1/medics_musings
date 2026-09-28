@@ -1,0 +1,367 @@
+{
+  "title": "Psychiatric and psychoanalytic eponym index",
+  "heading": "Whose name is on your diagnosis?",
+  "intro": "Psychiatry names its conditions after the doctors who described them, the patients who inspired them, the myths that explain them and, in one case, a baron famous for lying. Here is who each name really belongs to. The descriptions are straight; where an episode borrows the name, the link takes you to the moment.",
+  "entries": [
+    {
+      "slug": "freudian-slip",
+      "name": "Freudian slip",
+      "person": "Sigmund Freud",
+      "years": "1856–1939",
+      "field": "psychoanalysis",
+      "topics": ["mind"],
+      "what": "A slip of the tongue or memory thought to reveal an unconscious wish. Freud called it a parapraxis and described it in The Psychopathology of Everyday Life (1901).",
+      "episodes": [{ "slug": "from-burnout-to-punchlines-freuds-solution", "t": 212 }]
+    },
+    {
+      "slug": "oedipus-complex",
+      "name": "Oedipus complex",
+      "person": "Oedipus, via Sigmund Freud",
+      "years": "term from 1910",
+      "field": "myth & literature",
+      "topics": ["mind"],
+      "what": "Freud's idea that young children feel desire for one parent and rivalry with the other, named for the Greek king in Sophocles' play who unknowingly killed his father and married his mother. Few modern clinicians take it literally.",
+      "episodes": []
+    },
+    {
+      "slug": "electra-complex",
+      "name": "Electra complex",
+      "person": "Electra, via Carl Jung",
+      "years": "term from 1913",
+      "field": "myth & literature",
+      "topics": ["mind"],
+      "what": "Carl Jung's proposed female counterpart to the Oedipus complex, named for the Greek heroine who avenged her father's murder by her mother. Freud rejected the term.",
+      "episodes": []
+    },
+    {
+      "slug": "jungian-analysis",
+      "name": "Jungian analysis",
+      "person": "Carl Gustav Jung",
+      "years": "1875–1961",
+      "field": "psychoanalysis",
+      "topics": ["mind"],
+      "what": "Jung's analytical psychology, built on the collective unconscious and archetypes such as the shadow and the persona. He broke with Freud in 1913 and popularized the words introvert and extravert.",
+      "episodes": []
+    },
+    {
+      "slug": "kleinian-analysis",
+      "name": "Kleinian analysis",
+      "person": "Melanie Klein",
+      "years": "1882–1960",
+      "field": "psychoanalysis",
+      "topics": ["mind"],
+      "what": "Austrian-British psychoanalyst who pioneered analysis of young children through play and helped found object relations theory, which focuses on how early relationships shape the mind.",
+      "episodes": []
+    },
+    {
+      "slug": "good-enough-mother",
+      "name": "Winnicott's good-enough mother",
+      "person": "Donald Winnicott",
+      "years": "1896–1971",
+      "field": "psychoanalysis",
+      "topics": ["mind"],
+      "what": "British pediatrician and psychoanalyst who argued in the 1950s that ordinary, imperfect parenting is what children need, not perfection. He also named the transitional object, such as a security blanket.",
+      "episodes": []
+    },
+    {
+      "slug": "narcissism",
+      "name": "Narcissism",
+      "person": "Narcissus (Greek myth)",
+      "years": "psychology term from 1898",
+      "field": "myth & literature",
+      "topics": ["mind"],
+      "what": "Named for the youth who fell in love with his own reflection. Havelock Ellis brought the term into psychology in 1898 and Freud wrote On Narcissism in 1914. Narcissistic personality disorder is a formal diagnosis; the internet uses the word far more loosely.",
+      "episodes": []
+    },
+    {
+      "slug": "sadism-masochism",
+      "name": "Sadism and masochism",
+      "person": "Marquis de Sade and Leopold von Sacher-Masoch",
+      "years": "1740–1814 and 1836–1895",
+      "field": "myth & literature",
+      "topics": ["mind"],
+      "what": "Both terms were coined by psychiatrist Richard von Krafft-Ebing in Psychopathia Sexualis (1886), after two writers whose novels made the themes famous. Sacher-Masoch was still alive to see his name become a diagnosis.",
+      "episodes": []
+    },
+    {
+      "slug": "mesmerism",
+      "name": "Mesmerism",
+      "person": "Franz Anton Mesmer",
+      "years": "1734–1815",
+      "field": "treatment",
+      "topics": ["mind"],
+      "what": "The German physician's “animal magnetism” drew crowds in 1780s Paris until a 1784 royal commission that included Benjamin Franklin concluded the effects came from imagination. He left behind the verb mesmerize and an early ancestor of hypnosis.",
+      "episodes": []
+    },
+    {
+      "slug": "kraepelinian-dichotomy",
+      "name": "Kraepelinian dichotomy",
+      "person": "Emil Kraepelin",
+      "years": "1856–1926",
+      "field": "diagnosis",
+      "topics": ["mind"],
+      "what": "Kraepelin's 1899 split between dementia praecox, later called schizophrenia, and manic-depressive illness, still the backbone of how psychotic and mood disorders are classified.",
+      "episodes": []
+    },
+    {
+      "slug": "alzheimers-disease",
+      "name": "Alzheimer's disease",
+      "person": "Alois Alzheimer",
+      "years": "1864–1915",
+      "field": "syndrome",
+      "topics": ["mind", "aging"],
+      "what": "The German psychiatrist described the plaques and tangles in the brain of his patient Auguste Deter in 1906. His colleague Emil Kraepelin put Alzheimer's name on the disease in his textbook a few years later.",
+      "episodes": []
+    },
+    {
+      "slug": "wernicke-encephalopathy",
+      "name": "Wernicke encephalopathy",
+      "person": "Carl Wernicke",
+      "years": "1848–1905",
+      "field": "syndrome",
+      "topics": ["mind", "hospital"],
+      "what": "Confusion, abnormal eye movements and unsteady gait caused by thiamine (vitamin B1) deficiency, often with heavy alcohol use, described by the German neuropsychiatrist in 1881. It is a medical emergency treated with thiamine.",
+      "episodes": []
+    },
+    {
+      "slug": "korsakoff-syndrome",
+      "name": "Korsakoff syndrome",
+      "person": "Sergei Korsakoff",
+      "years": "1854–1900",
+      "field": "syndrome",
+      "topics": ["mind"],
+      "what": "Severe memory loss with confabulation, described by the Russian psychiatrist in 1887 in people with long-term alcohol use. It is caused by thiamine deficiency and often follows Wernicke encephalopathy.",
+      "episodes": []
+    },
+    {
+      "slug": "kluver-bucy-syndrome",
+      "name": "Klüver–Bucy syndrome",
+      "person": "Heinrich Klüver and Paul Bucy",
+      "years": "1897–1979 and 1904–1992",
+      "field": "syndrome",
+      "topics": ["mind"],
+      "what": "Described in monkeys in the late 1930s after removal of both temporal lobes: placidity, putting objects in the mouth, hypersexuality and trouble recognizing objects. The Iceman Cometh's “Bucey-Cleaver syndrome” of hunger, lust and anxiety is the show's affectionate remix.",
+      "episodes": [{ "slug": "the-iceman-cometh-and-the-patient-goeth", "t": 142 }]
+    },
+    {
+      "slug": "capgras-delusion",
+      "name": "Capgras delusion",
+      "person": "Joseph Capgras",
+      "years": "1873–1950",
+      "field": "delusion",
+      "topics": ["mind"],
+      "what": "The belief that a familiar person has been replaced by an identical impostor, described by Capgras and Jean Reboul-Lachaux in 1923.",
+      "episodes": []
+    },
+    {
+      "slug": "fregoli-delusion",
+      "name": "Fregoli delusion",
+      "person": "Leopoldo Fregoli",
+      "years": "1867–1936",
+      "field": "delusion",
+      "topics": ["mind"],
+      "what": "The belief that different people are really one person in disguise, named in 1927 after an Italian stage actor famous for lightning-fast costume changes.",
+      "episodes": []
+    },
+    {
+      "slug": "cotard-delusion",
+      "name": "Cotard delusion",
+      "person": "Jules Cotard",
+      "years": "1840–1889",
+      "field": "delusion",
+      "topics": ["mind"],
+      "what": "The belief that one is dead, doesn't exist or has lost internal organs, described by the French neurologist in the early 1880s as the “délire des négations.”",
+      "episodes": []
+    },
+    {
+      "slug": "de-clerambault-syndrome",
+      "name": "De Clérambault syndrome",
+      "person": "Gaëtan Gatian de Clérambault",
+      "years": "1872–1934",
+      "field": "delusion",
+      "topics": ["mind"],
+      "what": "Erotomania: the delusional belief that someone, usually of higher status, is secretly in love with you, described by the French psychiatrist in 1921.",
+      "episodes": []
+    },
+    {
+      "slug": "othello-syndrome",
+      "name": "Othello syndrome",
+      "person": "Othello (Shakespeare)",
+      "years": "term from 1955",
+      "field": "myth & literature",
+      "topics": ["mind"],
+      "what": "Delusional jealousy about a partner's infidelity, named in 1955 by psychiatrists John Todd and Kenneth Dewhurst after Shakespeare's jealous general.",
+      "episodes": []
+    },
+    {
+      "slug": "ganser-syndrome",
+      "name": "Ganser syndrome",
+      "person": "Sigbert Ganser",
+      "years": "1853–1931",
+      "field": "syndrome",
+      "topics": ["mind"],
+      "what": "Giving approximate answers to simple questions (“2 + 2 = 5”), described by the German psychiatrist in 1898 among prisoners awaiting trial.",
+      "episodes": []
+    },
+    {
+      "slug": "charles-bonnet-syndrome",
+      "name": "Charles Bonnet syndrome",
+      "person": "Charles Bonnet",
+      "years": "1720–1793",
+      "field": "syndrome",
+      "topics": ["mind", "aging"],
+      "what": "Vivid visual hallucinations in people with significant vision loss who know the images aren't real. The Swiss naturalist described it in 1760 in his grandfather, who had cataracts.",
+      "episodes": []
+    },
+    {
+      "slug": "diogenes-syndrome",
+      "name": "Diogenes syndrome",
+      "person": "Diogenes of Sinope",
+      "years": "c. 412–323 BC",
+      "field": "myth & literature",
+      "topics": ["mind", "aging"],
+      "what": "Severe self-neglect and squalor, often in older adults, named in 1975 after the Greek philosopher who lived in a large jar. Diogenes was famous for owning almost nothing, which makes the name an odd fit for a syndrome that often includes hoarding.",
+      "episodes": []
+    },
+    {
+      "slug": "munchausen-syndrome",
+      "name": "Munchausen syndrome",
+      "person": "Baron Münchhausen",
+      "years": "1720–1797",
+      "field": "syndrome",
+      "topics": ["mind", "hospital"],
+      "what": "Now called factitious disorder: feigning or causing illness in order to be a patient. Named in 1951 by Richard Asher after a German baron famous for tall tales.",
+      "episodes": []
+    },
+    {
+      "slug": "tourette-syndrome",
+      "name": "Tourette syndrome",
+      "person": "Georges Gilles de la Tourette",
+      "years": "1857–1904",
+      "field": "syndrome",
+      "topics": ["mind"],
+      "what": "A neurodevelopmental disorder of motor and vocal tics, described in 1885 by a student of Jean-Martin Charcot. Involuntary swearing, the popular image of it, affects only a minority of people with Tourette's.",
+      "episodes": []
+    },
+    {
+      "slug": "asperger-syndrome",
+      "name": "Asperger syndrome",
+      "person": "Hans Asperger",
+      "years": "1906–1980",
+      "field": "diagnosis",
+      "topics": ["mind"],
+      "what": "Described by the Austrian pediatrician in 1944 and folded into autism spectrum disorder in DSM-5 (2013). Use of the name has fallen off since historians documented his role in referring children to a Nazi-era Vienna clinic where children were killed.",
+      "episodes": []
+    },
+    {
+      "slug": "rorschach-test",
+      "name": "Rorschach test",
+      "person": "Hermann Rorschach",
+      "years": "1884–1922",
+      "field": "test & scale",
+      "topics": ["mind"],
+      "what": "The inkblot test the Swiss psychiatrist published in 1921, asking people what they see. How much it reveals is still debated. Rorschach died the next year, at 37.",
+      "episodes": []
+    },
+    {
+      "slug": "beck-depression-inventory",
+      "name": "Beck Depression Inventory",
+      "person": "Aaron T. Beck",
+      "years": "1921–2021",
+      "field": "test & scale",
+      "topics": ["mind"],
+      "what": "A 21-question self-report scale for depression that Beck published in 1961, still among the most widely used. Beck, trained as a psychoanalyst, went on to found cognitive therapy.",
+      "episodes": []
+    },
+    {
+      "slug": "hamilton-depression-scale",
+      "name": "Hamilton Depression Rating Scale",
+      "person": "Max Hamilton",
+      "years": "1912–1988",
+      "field": "test & scale",
+      "topics": ["mind"],
+      "what": "A clinician-rated depression scale published in 1960 that became the long-standing yardstick in antidepressant trials.",
+      "episodes": []
+    },
+    {
+      "slug": "kubler-ross-model",
+      "name": "Kübler-Ross model",
+      "person": "Elisabeth Kübler-Ross",
+      "years": "1926–2004",
+      "field": "theory & effect",
+      "topics": ["mind", "aging"],
+      "what": "The five stages of grief (denial, anger, bargaining, depression, acceptance) from On Death and Dying (1969), based on interviews with dying patients. Research doesn't support them as a fixed sequence, and she later wrote that grief isn't that tidy.",
+      "episodes": []
+    },
+    {
+      "slug": "maslows-hierarchy",
+      "name": "Maslow's hierarchy of needs",
+      "person": "Abraham Maslow",
+      "years": "1908–1970",
+      "field": "theory & effect",
+      "topics": ["mind"],
+      "what": "Maslow's 1943 theory that human needs rise from physical survival up to self-actualization. The famous pyramid diagram was popularized by others after him.",
+      "episodes": []
+    },
+    {
+      "slug": "pavlovian-conditioning",
+      "name": "Pavlovian conditioning",
+      "person": "Ivan Pavlov",
+      "years": "1849–1936",
+      "field": "theory & effect",
+      "topics": ["mind"],
+      "what": "Learning by association, from Pavlov's dogs that began salivating at signals linked to food. His 1904 Nobel Prize was for research on digestion, not the dogs' famous drool.",
+      "episodes": []
+    },
+    {
+      "slug": "skinner-box",
+      "name": "Skinner box",
+      "person": "B. F. Skinner",
+      "years": "1904–1990",
+      "field": "theory & effect",
+      "topics": ["mind"],
+      "what": "An operant conditioning chamber in which animals learn through rewards and punishments. Skinner's work underpins behavior therapy, and, in spirit, most phone apps.",
+      "episodes": []
+    },
+    {
+      "slug": "dunning-kruger-effect",
+      "name": "Dunning–Kruger effect",
+      "person": "David Dunning and Justin Kruger",
+      "years": "published 1999",
+      "field": "theory & effect",
+      "topics": ["mind"],
+      "what": "The finding that people with low skill in an area tend to overestimate their ability. Most often cited by people certain it describes someone else.",
+      "episodes": []
+    },
+    {
+      "slug": "hawthorne-effect",
+      "name": "Hawthorne effect",
+      "person": "Hawthorne Works, Western Electric",
+      "years": "studies 1924–1932",
+      "field": "theory & effect",
+      "topics": ["mind", "hospital"],
+      "what": "People change their behavior when they know they're being studied, named for worker-productivity experiments at a Western Electric factory near Chicago.",
+      "episodes": []
+    },
+    {
+      "slug": "stockholm-syndrome",
+      "name": "Stockholm syndrome",
+      "person": "Norrmalmstorg bank robbery, Stockholm",
+      "years": "1973",
+      "field": "theory & effect",
+      "topics": ["mind"],
+      "what": "Hostages developing positive feelings toward their captors, named after a 1973 Stockholm bank siege. It isn't a formal diagnosis, and research behind it is thin.",
+      "episodes": []
+    },
+    {
+      "slug": "jumping-frenchmen-of-maine",
+      "name": "Jumping Frenchmen of Maine",
+      "person": "George Miller Beard",
+      "years": "reported 1878",
+      "field": "syndrome",
+      "topics": ["mind"],
+      "what": "An exaggerated startle reaction the American neurologist reported in 1878 among French-Canadian lumberjacks in Maine. It's a real entry in the medical literature, exactly as The Iceman Cometh says.",
+      "episodes": [{ "slug": "the-iceman-cometh-and-the-patient-goeth", "t": 133 }]
+    }
+  ]
+}
