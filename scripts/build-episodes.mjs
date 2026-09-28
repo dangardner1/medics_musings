@@ -167,7 +167,7 @@ function updateHomepage() {
   html = region(html, 'cards', episodes.map(card).join('\n        '));
   html = region(html, 'chips', filterChips());
   html = region(html, 'startHere',
-    `<p class="start-here">New here? Start with <a href="episodes/${startHere.slug}/">${esc(startHere.title)}</a> (${startHere.minutes} min).</p>`);
+    `<p class="start-here">New here? Start here: <a href="video/medics-musings-explainer.mp4">Medics Musings, explained</a> (2 min).</p>`);
   html = region(html, 'playLatest',
     `<button type="button" class="btn btn-latest" data-play-latest title="${esc(episodes[0].title)}">▶ Play the latest episode</button>`);
   html = region(html, 'signupPrefs', `<details class="signup-prefs">
