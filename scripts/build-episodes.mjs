@@ -213,6 +213,7 @@ function updateHomepage() {
             <a class="chips-link" href="line-of-the-day/">Today’s line from the show →</a>
             <a class="chips-link" href="icd10/">Today’s ICD-10 code, with a deadpan note →</a>
             <a class="chips-link" href="generic-price-check/">This week’s Generic Price Check: real pharmacy costs, satirical bills →</a>
+            <a class="chips-link" href="break-room/">The Break Room: a pizza-party certificate, a memo translator, bingo and a breathing pause →</a>
             <a class="chips-link" href="news/">Health care news of the day, with satire →</a>
           </div>
         </div>`);

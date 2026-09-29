@@ -150,6 +150,7 @@ const MENU_LINKS = [
   ['top-10/', 'Top 10', true],
   ['news/', 'News of the day'],
   ['games/', 'Games'],
+  ['break-room/', 'The Break Room'],
   ['line-of-the-day/', 'Line of the day'],
   ['submit/', 'Submit a story', true],
   ['subscribe/', 'Subscribe'],
@@ -217,6 +218,7 @@ export const footer = () => `<footer>
     <a href="/news/">News of the day</a>
     <a href="/top-10/">Weekly Top 10</a>
     <a href="/games/">Games</a>
+    <a href="/break-room/">Break Room</a>
     <a href="/line-of-the-day/">Line of the day</a>
     <a href="/submit/">Submit a story</a>
     <a href="/subscribe/">Subscribe</a>

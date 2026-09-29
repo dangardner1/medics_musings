@@ -11,6 +11,7 @@
 // Returns the sitemap entries for the indexable ones.
 import { writeFileSync, mkdirSync, existsSync, statSync, readdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
+import { breakRoomPages } from './build-breakroom.mjs';
 import {
   ROOT, SITE, SHOW, INBOX, esc, jsonLd, readJson, dateLabel, snippet, clock,
   writePage, shareImage, pageHead, signupSection, footer, prefChoices,
@@ -997,6 +998,13 @@ function gamesHub(ctx) {
             <span class="coll-part">Daily</span>
             <span class="coll-title">ICD-10 code of the day</span>
             <span class="coll-desc">One real diagnosis code a day, from “struck by duck” to “burn-out”, with its official description and a deadpan note from a coder who has seen too much.</span>
+          </a>
+        </li>
+        <li>
+          <a class="coll-card" href="/break-room/">
+            <span class="coll-part">For the shift</span>
+            <span class="coll-title">The Break Room</span>
+            <span class="coll-desc">A pizza-party certificate, an admin-memo translator, Burnout Bingo, an out-of-office generator, and a one-minute breathing pause.</span>
           </a>
         </li>
       </ul>
@@ -2173,6 +2181,8 @@ export function buildExtras(ctx) {
   const priceData = readJson('data/generic-prices.json', null);
   if (priceData?.drugs?.length) writePage('generic-price-check', genericPricesPage(full, priceData));
   writePage('games', gamesHub(full));
+  const breakRoom = breakRoomPages(full, { crumbs, breadcrumbLd, pageEnd });
+  for (const pg of breakRoom.pages) writePage(pg.path, pg.html);
   writePage('games/eponym', eponymGamePage(full));
   writePage('games/word-rounds', wordRoundsPage(full));
   writePage('submit', submitPage(full));
@@ -2224,12 +2234,13 @@ export function buildExtras(ctx) {
       { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: ICD10_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       ...(existsSync(join(ROOT, 'data', 'generic-prices.json')) ? [{ loc: PRICES_URL, lastmod: readJson('data/generic-prices.json', {}).fetched || newest, changefreq: 'weekly', priority: '0.7' }] : []),
+      ...breakRoom.sitemap,
       { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
       { loc: WORD_ROUNDS_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: EPONYM_GAME_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'icd10', ...(existsSync(join(ROOT, 'data', 'generic-prices.json')) ? ['generic-price-check'] : []), 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'icd10', ...(existsSync(join(ROOT, 'data', 'generic-prices.json')) ? ['generic-price-check'] : []), 'games', 'games/eponym', 'games/word-rounds', ...breakRoom.pages.map((pg) => pg.path), 'submit', 'subscribe'],
   };
 }
