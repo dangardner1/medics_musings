@@ -986,6 +986,13 @@ function gamesHub(ctx) {
           </a>
         </li>
         <li>
+          <a class="coll-card" href="/generic-price-check/">
+            <span class="coll-part">Weekly</span>
+            <span class="coll-title">Generic Price Check</span>
+            <span class="coll-desc">What common generics really cost a pharmacy this week, from Medicaid’s price survey, next to a satirical bill with itemized fees.</span>
+          </a>
+        </li>
+        <li>
           <a class="coll-card" href="/icd10/">
             <span class="coll-part">Daily</span>
             <span class="coll-title">ICD-10 code of the day</span>
@@ -1212,6 +1219,240 @@ function lineOfTheDayPage(ctx) {
 ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js', 'line.js'] })}`;
 }
 
+// ---- Generic Price Check (/generic-price-check/) ----------------------------------------
+// data/generic-prices.json, fetched weekly from CMS's NADAC survey by
+// scripts/fetch-generic-prices.mjs: what a pharmacy actually pays for common generics.
+// Every real number comes from that file. The "billed as" figures, the itemized
+// receipt and the commentary are satire, generated here from a fixed seed so a
+// rebuild never changes them; they are labeled as satire wherever they appear.
+
+const PRICES_URL = `${SITE}/generic-price-check/`;
+const PRICES_LAUNCH = '2026-09-23'; // the first NADAC week on the page
+
+// Small deterministic generator, so a given drug and week always get the same joke.
+function seeded(...parts) {
+  let h = 2166136261;
+  for (const ch of parts.join('|')) h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+  return () => { h = Math.imul(h ^ (h >>> 15), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); h ^= h >>> 16; return (h >>> 0) / 4294967296; };
+}
+const pick = (rand, list) => list[Math.floor(rand() * list.length)];
+const usd = (n, digits = 2) => `$${n.toLocaleString('en-US', { minimumFractionDigits: digits, maximumFractionDigits: digits })}`;
+const pctAbs = (n) => `${Math.abs(n) < 0.05 ? '0.0' : Math.abs(n).toFixed(1)}%`;
+
+const PRICE_UP = [
+  'Up {p} this week. Please allow six to eight weeks for an explanation.',
+  'Up {p}. The increase has been reviewed and approved by the increase.',
+  'Up {p}, which the plan will round to “considerably”.',
+  'Up {p}. A memo is being drafted to explain it to the memo.',
+  'Up {p}. Somewhere, a rebate is being renegotiated.',
+  'Up {p}. This has been forwarded to a department that does not exist.',
+  'Up {p}. Someone is calling it “market dynamics”. Someone is paid to.',
+  'Up {p}. A rounding error, but only in one direction.',
+];
+const PRICE_DOWN = [
+  'Down {p} this week. The savings are being kept somewhere safe.',
+  'Down {p}. The copay has been informed and remains unmoved.',
+  'Down {p}. Somewhere, a spreadsheet noticed.',
+  'Down {p}. The bill will reflect this in a future fiscal year.',
+  'Down {p}. Savings will be passed along, to someone.',
+  'Down {p}. A rebate was renegotiated. You were not invited.',
+  'Down {p}. Please do not tell the bill.',
+  'Down {p}. The price you pay is out of the office until further notice.',
+];
+const PRICE_FLAT = [
+  'Unchanged this week, like the fax machine.',
+  'Flat. Stability: the one thing the formulary lacks.',
+  'No change. The price, like the hold music, continues.',
+  'Flat. Even the price has learned to wait.',
+];
+const RECEIPT_FEES = [
+  'Dispensing ceremony', 'Prior authorization convenience fee', 'Formulary tier reassessment', 'Proprietary spread (confidential)',
+  'Fax transmission, outbound', 'Fax transmission, lost', 'Claims adjudication by committee', 'Coupon processing fee',
+  'Pill counting (by five)', 'Label printing, small font surcharge', 'Hold music licensing', 'Explanation of benefits, 14 pages',
+];
+
+function pricesWeek(d) {
+  const h = Object.entries(d.history).sort(([a], [b]) => a.localeCompare(b));
+  return h.length > 1 ? ((d.perUnit - h.at(-2)[1]) / h.at(-2)[1]) * 100 : null;
+}
+
+function priceStory(d, asOf, tpl) {
+  const hist = Object.entries(d.history).sort(([a], [b]) => a.localeCompare(b));
+  const prev = hist.length > 1 ? hist.at(-2)[1] : null;
+  const first = hist[0][1];
+  const week = pricesWeek(d);
+  const year = ((d.perUnit - first) / first) * 100;
+  const cost = d.perUnit * d.qty;
+  const costCents = Math.round(cost * 100) / 100; // the receipt adds up in whole cents
+  const rand = seeded(d.slug, asOf);
+  // The satirical bill: the real cost times a large, random number, plus itemized fees.
+  const multiple = 180 + Math.floor(rand() * 720);
+  const fees = [];
+  const pool = RECEIPT_FEES.slice();
+  for (let i = 0; i < 4; i++) {
+    const [name] = pool.splice(Math.floor(rand() * pool.length), 1);
+    fees.push({ name, amount: Math.round((3 + rand() * 38) * 100) / 100 });
+  }
+  const markup = Math.round(cost * multiple * 100) / 100;
+  const coupon = -Math.round((5 + rand() * 20) * 100) / 100;
+  const billed = Math.round((costCents + markup + fees.reduce((s, f) => s + f.amount, 0) + coupon) * 100) / 100;
+  return {
+    ...d, cost, week, year, billed, firstDate: hist[0][0],
+    receipt: [
+      { name: `${d.name} × ${d.qty} (what the pharmacy paid)`, amount: costCents, real: true },
+      { name: 'Markup, as a courtesy', amount: markup },
+      ...fees,
+      { name: 'Manufacturer coupon (applied to the fees)', amount: coupon },
+    ],
+    weekly: tpl.replace('{p}', week == null ? '' : pctAbs(week)),
+    points: hist.map(([, v]) => v),
+  };
+}
+
+function sparkline(points, { width = 280, height = 56 } = {}) {
+  const lo = Math.min(...points), hi = Math.max(...points);
+  const span = hi - lo || 1;
+  const xy = points.map((v, i) => [
+    ((i / Math.max(1, points.length - 1)) * (width - 8) + 4).toFixed(1),
+    (height - 4 - ((v - lo) / span) * (height - 8)).toFixed(1),
+  ]);
+  const last = xy.at(-1);
+  return `<svg class="price-spark" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" aria-hidden="true" focusable="false">
+            <polyline points="${xy.map((p) => p.join(',')).join(' ')}" />
+            <circle cx="${last[0]}" cy="${last[1]}" r="3.5" />
+          </svg>`;
+}
+
+function genericPricesPage(ctx, data) {
+  const asOf = data.asOf;
+  const weeks = Math.max(0, Math.round((Date.parse(`${asOf}T00:00:00Z`) - Date.parse(`${PRICES_LAUNCH}T00:00:00Z`)) / (7 * 86400000)));
+  // Jokes go round in rotation (by drug name, shifted each week) so neighbors rarely repeat.
+  const dir = (d) => { const w = pricesWeek(d); return w == null || Math.abs(w) < 0.05 ? 'flat' : w > 0 ? 'up' : 'down'; };
+  const groups = { up: [], down: [], flat: [] };
+  for (const d of data.drugs.slice().sort((a, b) => a.slug.localeCompare(b.slug))) groups[dir(d)].push(d.slug);
+  const lines = { up: PRICE_UP, down: PRICE_DOWN, flat: PRICE_FLAT };
+  const template = (d) => { const k = dir(d); return lines[k][(groups[k].indexOf(d.slug) + weeks) % lines[k].length]; };
+  const drugs = data.drugs.map((d) => priceStory(d, asOf, template(d)));
+  const order = seededShuffle(drugs.map((d) => d.slug).sort(), 90210);
+  const featured = drugs.find((d) => d.slug === order[weeks % order.length]) || drugs[0];
+  const up = drugs.filter((d) => d.week != null && d.week >= 0.05).length;
+  const down = drugs.filter((d) => d.week != null && d.week <= -0.05).length;
+  const realTotal = drugs.reduce((s, d) => s + d.cost, 0);
+  const billedTotal = drugs.reduce((s, d) => s + d.billed, 0);
+  const cheapest = drugs.slice().sort((a, b) => a.perUnit - b.perUnit)[0];
+  const mover = drugs.filter((d) => d.week != null).sort((a, b) => Math.abs(b.week) - Math.abs(a.week))[0];
+  const asOfLabel = dateLabel(asOf);
+  const since = dateLabel(featured.firstDate);
+  const intro = 'Every week, Medicaid surveys what retail pharmacies actually pay for drugs. Here is what a basket of the most common generics really costs the pharmacy, next to what a satirical bill says it costs. The pharmacy costs are real. The bills are not.';
+  const report = [
+    `This week ${down} of ${drugs.length} generics got cheaper for the pharmacy and ${up} got more expensive.`,
+    mover ? `The biggest mover: ${mover.name}, ${mover.week > 0 ? 'up' : 'down'} ${pctAbs(mover.week)}.` : '',
+    `The cheapest pill on the list is ${cheapest.name}, at ${usd(cheapest.perUnit, 4)} a tablet: about a penny, with change.`,
+    `One typical supply of all ${drugs.length} costs the pharmacy ${usd(realTotal)}. Our satirical bill for the same basket comes to ${usd(billedTotal)}. Nobody can explain the difference, which is how you know it’s working.`,
+  ].filter(Boolean).join(' ');
+
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage', url: PRICES_URL, name: 'Generic Price Check', description: intro, isPartOf: { '@id': `${SITE}/#website` },
+        dateModified: data.fetched,
+      },
+      datasetLd({
+        url: PRICES_URL,
+        name: 'Generic Price Check: pharmacy acquisition cost of common generic drugs',
+        description: `Weekly National Average Drug Acquisition Cost (NADAC) for ${drugs.length} common generic drugs, as of ${asOf}. The “billed as” figures on the page are satire and are not part of this data.`,
+        sourceName: data.source.name,
+        sourceUrl: data.source.url,
+        license: 'https://www.usa.gov/government-works',
+        modified: data.fetched,
+        measured: ['NADAC per unit (US dollars)', 'Cost of a typical supply (US dollars)'],
+      }),
+      breadcrumbLd([['Generic Price Check', PRICES_URL]]),
+    ],
+  };
+
+  const receiptRows = featured.receipt.map((r) => `<tr${r.real ? ' class="is-real"' : ''}><td>${esc(r.name)}</td><td>${esc(r.amount < 0 ? `−${usd(-r.amount)}` : usd(r.amount))}</td></tr>`).join('\n              ');
+  const rows = drugs.slice().sort((a, b) => a.name.localeCompare(b.name)).map((d) => `<tr id="${d.slug}" data-search="${esc(`${d.name} ${d.nadac} ${d.note}`.toLowerCase())}">
+          <td class="col-name" data-label="Generic"><a href="#${d.slug}">${esc(d.name)}</a><span class="row-field">${esc(d.qty)} tablets · ${esc(d.supply)}</span></td>
+          <td class="col-num" data-label="Pharmacy pays" data-value="${d.cost.toFixed(4)}"><strong>${usd(d.cost)}</strong><span class="row-field">${usd(d.perUnit, 4)} each</span></td>
+          <td class="col-num" data-label="This week" data-value="${d.week == null ? '' : d.week.toFixed(2)}">${d.week == null ? '—' : `<span class="price-${d.week >= 0.05 ? 'up' : d.week <= -0.05 ? 'down' : 'flat'}">${d.week >= 0.05 ? '▲' : d.week <= -0.05 ? '▼' : '■'} ${pctAbs(d.week)}</span>`}<span class="row-field">${d.year >= 0 ? '+' : '−'}${pctAbs(d.year)} since ${esc(shortDate(d.firstDate))}</span></td>
+          <td class="col-num col-billed" data-label="Billed as (satire)" data-value="${d.billed.toFixed(2)}">${usd(d.billed)}</td>
+          <td class="col-note" data-label="Commentary">${esc(d.note)} ${esc(d.weekly)}${d.stale ? ' <em>(price from an earlier week: this one was missing from CMS’s file)</em>' : ''}</td>
+        </tr>`).join('\n        ');
+
+  return `${pageHead({ title: 'Generic Price Check: What Common Generics Really Cost the Pharmacy | Medics Musings', description: snippet(`What ${drugs.length} common generic drugs actually cost a pharmacy this week, from CMS’s NADAC survey, next to a satirical “billed as” price. Updated weekly; as of ${asOfLabel}.`), url: PRICES_URL, ogTitle: 'Generic Price Check', image: shareImage(null), ld })}
+<main>
+  <section class="collection data-page prices-page">
+    <div class="wrap">
+      ${crumbs([['Generic Price Check']])}
+      <span class="eyebrow">Weekly · pharmacy prices as of ${esc(asOfLabel)}</span>
+      <h1>Generic Price Check</h1>
+      <p class="coll-intro">${esc(intro)}</p>
+      ${statTiles([
+        [`${drugs.length} generics, one supply each`, usd(realTotal)],
+        ['Billed as (satire)', usd(billedTotal, 0)],
+        ['Cheaper this week', down],
+        ['Pricier this week', up],
+      ])}
+      <p class="prices-report">${esc(report)}</p>
+
+      <article class="price-feature" aria-labelledby="price-feature-h">
+        <div class="price-feature-main">
+          <span class="eyebrow">Generic of the week</span>
+          <h2 id="price-feature-h">${esc(featured.name)}</h2>
+          <p class="price-feature-cost"><b>${usd(featured.cost)}</b> for ${esc(featured.supply)} (${featured.qty} tablets)</p>
+          <p class="price-feature-unit">${usd(featured.perUnit, 5)} a tablet, what pharmacies pay on average, per CMS. ${featured.year >= 0 ? 'Up' : 'Down'} ${pctAbs(featured.year)} since ${esc(since)}.</p>
+          ${sparkline(featured.points)}
+          <p class="price-spark-label">Weekly pharmacy cost per tablet, ${esc(since)} to ${esc(asOfLabel)}</p>
+          <p class="price-feature-note">${esc(featured.note)} ${esc(featured.weekly)}</p>
+        </div>
+        <div class="price-receipt" aria-label="Satirical itemized bill">
+          <p class="price-receipt-head">Statement of charges <span>(satire)</span></p>
+          <table>
+            <tbody>
+              ${receiptRows}
+            </tbody>
+            <tfoot>
+              <tr><td>Billed as</td><td>${usd(featured.billed)}</td></tr>
+            </tfoot>
+          </table>
+          <p class="price-receipt-foot">Only the first line is real. This is not a real bill or price from any pharmacy, insurer or pharmacy benefit manager.</p>
+        </div>
+      </article>
+
+      <h2 class="prices-all">The whole basket</h2>
+      ${tableControls('prices', [], 'Search generics…', [])}
+      <div class="table-wrap">
+        <table class="data-table" data-sortable="prices">
+          <thead>
+            <tr>
+              <th data-sort="text">Generic</th>
+              <th data-sort="number">Pharmacy pays</th>
+              <th data-sort="number">This week</th>
+              <th data-sort="number">Billed as <span class="th-note">(satire)</span></th>
+              <th class="no-sort">Commentary</th>
+            </tr>
+          </thead>
+          <tbody>
+        ${rows}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-empty" hidden>No generics match that search.</p>
+
+      <section class="source-note" aria-label="About the numbers">
+        <h2>About the numbers</h2>
+        <p><b>Real:</b> “Pharmacy pays” is the National Average Drug Acquisition Cost (NADAC), Medicaid’s weekly survey of what retail pharmacies pay wholesalers and manufacturers for a drug. Figures are from <a href="${esc(data.source.url)}" rel="noopener">${esc(data.source.name)}</a>, published by ${esc(data.source.publisher)}, as of ${esc(asOfLabel)}. A month’s supply here assumes a typical dose; the per-tablet price is CMS’s. NADAC leaves out the pharmacy’s dispensing costs, and what you pay depends on your plan, your pharmacy and your deductible. <a href="${esc(data.source.about)}" rel="noopener">How NADAC works</a>.</p>
+        <p><b>Satire:</b> the “billed as” figures, the statement of charges and the commentary are made up. They are not prices, bills or charges from any pharmacy, insurer or pharmacy benefit manager, and they are not financial or medical advice. The jokes are about the pricing system, never about anyone who takes these medicines.</p>
+      </section>
+      <p class="related">More weekly and daily habits: <a href="/icd10/">ICD-10 code of the day</a> · <a href="/news/">News of the day</a> · <a href="/top-10/">The weekly Top 10</a></p>
+    </div>
+  </section>
+
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
+}
+
 // ---- ICD-10 code of the day (/icd10/) ----------------------------------------------------
 // data/icd10.json: real ICD-10-CM codes with their official descriptions (checked against
 // CDC's files by scripts/check-icd10.mjs) and a satirical note. Every code is in the
@@ -1293,7 +1534,7 @@ function icd10Page(ctx) {
       </div>
       <p class="table-empty" hidden>No codes match that search.</p>
       <p class="icd-source">Codes and descriptions: <a href="${esc(data.source.url)}" rel="noopener">${esc(data.source.name)}, ${esc(data.source.years)}</a>, published by the ${esc(data.source.publisher)}. The notes are satire, not coding advice. Do not bill from this page.</p>
-      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/line-of-the-day/">Line of the day</a> · <a href="/games/">All games</a></p>
+      <p class="related">More daily habits: <a href="/games/eponym/">Name that eponym</a> · <a href="/line-of-the-day/">Line of the day</a> · <a href="/generic-price-check/">Generic Price Check</a> · <a href="/games/">All games</a></p>
     </div>
   </section>
   <script type="application/json" id="icd10-data">${JSON.stringify(feed).replace(/</g, '\\u003c')}</script>
@@ -1929,6 +2170,8 @@ export function buildExtras(ctx) {
   }
   writePage('line-of-the-day', lineOfTheDayPage(full));
   writePage('icd10', icd10Page(full));
+  const priceData = readJson('data/generic-prices.json', null);
+  if (priceData?.drugs?.length) writePage('generic-price-check', genericPricesPage(full, priceData));
   writePage('games', gamesHub(full));
   writePage('games/eponym', eponymGamePage(full));
   writePage('games/word-rounds', wordRoundsPage(full));
@@ -1980,12 +2223,13 @@ export function buildExtras(ctx) {
       ] : []),
       { loc: LINE_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: ICD10_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
+      ...(existsSync(join(ROOT, 'data', 'generic-prices.json')) ? [{ loc: PRICES_URL, lastmod: readJson('data/generic-prices.json', {}).fetched || newest, changefreq: 'weekly', priority: '0.7' }] : []),
       { loc: GAMES_URL, lastmod: newest, changefreq: 'monthly', priority: '0.6' },
       { loc: WORD_ROUNDS_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: EPONYM_GAME_URL, lastmod: newest, changefreq: 'daily', priority: '0.7' },
       { loc: `${SITE}/submit/`, lastmod: newest, changefreq: 'yearly', priority: '0.5' },
       { loc: `${SITE}/subscribe/`, lastmod: newest, changefreq: 'monthly', priority: '0.5' },
     ],
-    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'icd10', 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
+    pages: ['explained', ...full.explainers.map((x) => `explained/${x.slug}`), 'teach', ...full.guides.map((g) => `teach/${g.slug}`), 'eponyms', 'eponyms/psychiatry', 'timeline', 'timeline/psychiatry', ...top10Pages, ...(SHOW_HEALTH_STATS ? ['stats'] : []), ...(recallData ? ['recalls'] : []), ...(erData ? ['er-wait-times', ...erStates(erData).map((st) => `er-wait-times/${st.state.toLowerCase()}`)] : []), ...newsPages, 'line-of-the-day', 'icd10', ...(existsSync(join(ROOT, 'data', 'generic-prices.json')) ? ['generic-price-check'] : []), 'games', 'games/eponym', 'games/word-rounds', 'submit', 'subscribe'],
   };
 }

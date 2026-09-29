@@ -1,0 +1,49 @@
+name: Generic Price Check
+
+# Weekly Generic Price Check (/generic-price-check/): what common generics really
+# cost a pharmacy, from CMS's NADAC survey (data.medicaid.gov), next to satirical
+# "billed as" figures. CMS posts a new NADAC file every Wednesday; this runs
+# Thursday. The satire is generated from a fixed seed at build time, so nothing
+# here needs review. "Run workflow" on the Actions tab refreshes on demand.
+on:
+  schedule:
+    - cron: '41 14 * * 4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generic-prices
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # If CMS is down the step fails and the site keeps last week's prices.
+      - name: Fetch NADAC prices
+        run: node scripts/fetch-generic-prices.mjs
+
+      - name: Rebuild the site
+        run: node scripts/build-episodes.mjs
+
+      - name: Publish
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Generic Price Check for NADAC as of $(node -p "require('./data/generic-prices.json').asOf")"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "No changes."
+          fi
