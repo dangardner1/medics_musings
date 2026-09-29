@@ -402,14 +402,14 @@
     var audio = $('[data-five-audio]');
     var bVoice = $('[data-five-voice]'), bSilent = $('[data-five-silent]'), bStop = $('[data-five-stop]');
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var TOTAL = 61, START = 6, CYCLE = 10, IN = 4, CYCLES = 5;
+    var TOTAL = 66, START = 8, CYCLE = 10, IN = 4, CYCLES = 5;
     var raf = 0, t0 = 0, running = false;
     var ease = function (x) { return 0.5 - 0.5 * Math.cos(Math.PI * x); };
     var setScale = function (s) { if (!reduce) circle.style.transform = 'scale(' + s.toFixed(3) + ')'; };
     var phase = function (t) {
       if (t < START) return { text: t < 0.6 ? 'Let your shoulders drop.' : 'Let your shoulders drop.', s: 1 };
       var c = Math.floor((t - START) / CYCLE);
-      if (c >= CYCLES) return { text: t >= TOTAL - 5 ? 'That is it. You had this minute.' : 'Rest.', s: 1 };
+      if (c >= CYCLES) return { text: t >= TOTAL - 8 ? 'That is it. You had this minute.' : 'Rest.', s: 1 };
       var p = (t - START) - c * CYCLE;
       if (p < IN) return { text: 'Breathe in', s: 1 + 0.55 * ease(p / IN) };
       return { text: 'Breathe out', s: 1.55 - 0.55 * ease((p - IN) / (CYCLE - IN)) };

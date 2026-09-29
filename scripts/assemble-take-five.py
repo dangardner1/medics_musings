@@ -1,6 +1,6 @@
-"""Assemble the "Take Five" breathing pause: eight short voice clips (clips/takefive/,
-generated with the Dan voice) placed on a fixed timeline so they line up with the
-breathing circle on /break-room/take-five/ (5 cycles of 4 s in, 6 s out, starting at 6 s).
+"""Assemble the "Take Five" breathing pause: eight short voice clips (clips/takefive/calm/,
+the Dan voice on ElevenLabs v3, softly and slowly) placed on a fixed timeline so they line up with the
+breathing circle on /break-room/take-five/ (5 cycles of 4 s in, 6 s out, starting at 8 s).
 
     python scripts/assemble-take-five.py
 
@@ -10,21 +10,21 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CLIPS = ROOT / "clips" / "takefive"
+CLIPS = ROOT / "clips" / "takefive" / "calm"
 OUT = ROOT / "audio" / "take-five.mp3"
-TOTAL = 61.0
+TOTAL = 66.0
 
 # (clip, start second)
 TIMELINE = [
-    ("A_intro", 0.6),
-    ("B_in1", 6.0), ("C_out1", 10.0),
-    ("D_in", 16.0), ("E_out", 20.0),
-    ("D_in", 26.0), ("E_out", 30.0),
-    ("F_feet", 32.6),
-    ("D_in", 36.0), ("E_out", 40.0),
-    ("G_tired", 42.4),
-    ("D_in", 46.0), ("E_out", 50.0),
-    ("H_close", 56.0),
+    ("A_intro", 0.5),
+    ("B_in1", 8.0), ("C_out1", 12.2),
+    ("D_in", 18.0), ("E_out", 22.0),
+    ("D_in", 28.0), ("E_out", 32.0),
+    ("F_feet", 34.5),
+    ("D_in", 38.0), ("E_out", 42.0),
+    ("G_tired", 44.5),
+    ("D_in", 48.0), ("E_out", 52.0),
+    ("H_close", 58.0),
 ]
 
 
