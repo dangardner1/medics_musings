@@ -5,7 +5,7 @@
 //
 // For each episode in the RSS feed that the site doesn't have yet, it creates an
 // entry with the title, date, length and show notes from the feed, plus the
-// Spotify, Apple Podcasts and YouTube links it can find. It waits a few hours for
+// Spotify, Apple Podcasts and YouTube links it can find. It waits up to an hour for
 // Spotify to list a brand-new episode (so the page can embed it), then adds it
 // anyway with a link to the Spotify for Creators page. Topic tags are guessed from
 // keywords; edit them in data/episodes.json any time.
@@ -19,7 +19,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = process.env.DATA_FILE || join(ROOT, 'data', 'episodes.json');
 const WRITE = process.argv.includes('--write');
 const MAX_AGE_DAYS = 14;
-const SPOTIFY_WAIT_HOURS = 4;
+const SPOTIFY_WAIT_HOURS = 1;
 const MAX_ADDS = 5;
 const SPOTIFY_SHOW = 'https://open.spotify.com/show/7zknqhZkTKZ8WA8SuMlWlj';
 const APPLE_ID = '1780716650';

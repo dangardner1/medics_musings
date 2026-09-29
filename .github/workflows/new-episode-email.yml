@@ -1,6 +1,10 @@
 name: New episode email
 
-# Runs every 2 hours. When a new episode appears in the podcast RSS feed it:
+# Checks the podcast RSS feed every 15 minutes. (GitHub delays scheduled runs when
+# it is busy, and a 2-hour schedule was really firing every 4 to 9 hours, which left
+# new episodes waiting most of a day. Frequent, cheap runs shorten the wait; a run
+# that finds nothing new takes about 15 seconds and changes nothing.)
+# When a new episode appears in the feed it:
 #   1. adds the episode to the site (data/episodes.json, its page, the sitemap)
 #      and publishes that, then
 #   2. emails the Mailchimp audience, linking to the new page once it is live.
@@ -9,7 +13,7 @@ name: New episode email
 # episode to the site and record the feed; nothing is emailed.
 on:
   schedule:
-    - cron: '23 */2 * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -47,6 +51,7 @@ jobs:
 
       # Only real ("send") runs change the site; manual test runs just report.
       - name: Add new episodes to the site
+        id: sync
         continue-on-error: true
         run: |
           if [ "${{ github.event.inputs.mode || 'send' }}" = "send" ]; then
@@ -54,6 +59,12 @@ jobs:
           else
             node scripts/sync-episodes.mjs
           fi
+
+      # continue-on-error keeps the email step running, but it also hides a failure,
+      # so say so in the run summary.
+      - name: Flag a failed sync
+        if: ${{ steps.sync.outcome == 'failure' }}
+        run: echo "::warning::Adding new episodes to the site failed, so the site was not updated. See the step above."
 
       - uses: actions/setup-python@v5
         if: ${{ (github.event.inputs.mode || 'send') == 'send' }}
@@ -71,10 +82,12 @@ jobs:
       - name: Publish the site update
         if: ${{ (github.event.inputs.mode || 'send') == 'send' }}
         run: |
-          if [ -n "$(git status --porcelain -- data index.html sitemap.xml sw.js episodes og topics series)" ]; then
+          # Everything the build wrote: the episode page and short link (/e/N/), its embed,
+          # the RSS feeds, topic and series pages, share image, sitemap and service worker.
+          if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data index.html sitemap.xml sw.js episodes og topics series
+            git add -A
             git commit -m "Add new episode(s) from the podcast feed"
             git pull --rebase origin main
             git push origin HEAD:main
