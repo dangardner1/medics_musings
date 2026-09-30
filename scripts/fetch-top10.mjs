@@ -177,10 +177,12 @@ ${candidates.map((c, n) => `${n}. [${c.source}, ${c.date}] ${c.title}${c.about ?
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
-    body: JSON.stringify({ model: process.env.TOP10_MODEL || 'claude-sonnet-5-5', max_tokens: 3000, messages: [{ role: 'user', content: prompt }] }),
+    body: JSON.stringify({ model: process.env.TOP10_MODEL || 'claude-sonnet-5-5', max_tokens: 4000, messages: [{ role: 'user', content: prompt }] }),
   });
   if (!res.ok) throw new Error(`Claude API: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-  const text = (await res.json()).content?.map((b) => b.text || '').join('') || '';
+  const body = await res.json();
+  const text = body.content?.map((b) => b.text || '').join('') || '';
+  if (!text.includes('{')) throw new Error(`Claude API: no JSON in reply (stop_reason: ${body.stop_reason}) — max_tokens may be too low for thinking + output`);
   const json = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
   const picks = (json.picks || [])
     .filter((p) => candidates[p.id] && typeof p.take === 'string' && p.take.trim())

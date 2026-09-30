@@ -91,7 +91,9 @@ async function claude(prompt, maxTokens) {
     body: JSON.stringify({ model: process.env.NEWS_MODEL || 'claude-sonnet-5-5', max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
   });
   if (!res.ok) throw new Error(`Claude API: HTTP ${res.status} ${(await res.text()).slice(0, 200)}`);
-  const text = (await res.json()).content?.map((b) => b.text || '').join('') || '';
+  const body = await res.json();
+  const text = body.content?.map((b) => b.text || '').join('') || '';
+  if (!text.includes('{')) throw new Error(`Claude API: no JSON in reply (stop_reason: ${body.stop_reason}) — max_tokens may be too low for thinking + output`);
   return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
 }
 
@@ -106,7 +108,7 @@ Our satirical headline: ${pick.headline}
 Our take: ${pick.take}
 
 Fail it if it makes fun of patients in any way, targets a private individual, mocks the reporter or authors, states an invented fact or number as real, quotes the article, or covers death, children, violence or suicide. Also fail it if it isn't actually satirical.
-Reply with only JSON: {"ok": true or false, "reason": "..."}`, 300);
+Reply with only JSON: {"ok": true or false, "reason": "..."}`, 1024);
   return { ok: verdict.ok === true, reason: String(verdict.reason || '') };
 }
 
@@ -125,7 +127,7 @@ Reply with only JSON: {"id": <candidate number>, "headline": "...", "take": "...
 
 Candidates:
 ${candidates.map((c, n) => `${n}. [${c.source}, ${c.date}] ${c.title}${c.about ? ` — ${c.about.slice(0, 240)}` : ''}`).join('\n')}`;
-  const json = await claude(prompt, 800);
+  const json = await claude(prompt, 1500);
   const c = candidates[json.id];
   if (!c || !json.headline || !json.take) return null;
   return { ...pickOf(c), headline: String(json.headline).trim(), take: String(json.take).trim() };
