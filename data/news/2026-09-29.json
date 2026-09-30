@@ -1,8 +1,15 @@
 {
  "date": "2026-09-29",
- "status": "draft",
+ "status": "published",
  "generated": "2026-09-29T16:52:30.644Z",
- "pick": null,
+ "pick": {
+  "title": "Here’s how much insurers are cutting Medicare Advantage plans for 2027",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/medicare-advantage-cuts-2027-cms-landscape/831563/",
+  "date": "2026-09-29",
+  "headline": "Insurers Discover Generosity Was Never in the Business Plan",
+  "take": "Every fall, Medicare Advantage plans trim a benefit or two and call it right-sizing. The pattern holds again for 2027: fewer extras, same premiums, and an insurer newsletter next spring wondering why satisfaction scores dropped."
+ },
  "candidates": [
   {
    "id": 0,
