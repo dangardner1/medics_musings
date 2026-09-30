@@ -1,18 +1,14 @@
 {
  "date": "2026-09-30",
- "status": "review",
+ "status": "published",
  "generated": "2026-09-30T00:43:05.176Z",
- "check": {
-  "ok": false,
-  "reason": "The item asserts facts the headline and summary don't support. Our headline says billing companies 'produce contradictory studies,' and the take says each side 'has studies proving the other side's use is the problem.' The real story only says insurers make a claim and billing companies disagree, so the studies are invented. The 'forty billing codes' figure also reads as a made-up number. The target (insurers, billing companies, bureaucracy) and the tone are fine, and no patients are mocked. To fix it, remove the claim about studies and the specific number, for example: 'Insurers Say Billing AI Adds Billions; Billing Companies Say It Does Not.'"
- },
  "pick": {
   "title": "Insurers say AI could add billions in health costs. Billing companies disagree",
   "source": "Healthcare Dive",
   "url": "https://www.healthcaredive.com/news/insurers-say-ai-could-add-billions-in-health-costs-billing-companies-disag/831497/",
   "date": "2026-09-28",
-  "headline": "Insurers Say Billing AI Adds Billions; Billing Companies Produce Contradictory Studies",
-  "take": "Two industries that spend their days fighting over codes have found a machine that does it faster, and each has studies proving the other side's use is the problem. Nobody is asking whether the visit needed forty billing codes. The physician will document for both."
+  "headline": "Insurers Say Billing AI Will Raise Costs; Billing Companies Say It Won't",
+  "take": "Insurers say AI will drive health costs up. The companies selling AI billing tools say it will drive costs down. Both have a financial stake in being right, and neither number comes with a citation. The physician who has to document the visit either way was not asked."
  },
  "candidates": [
   {
