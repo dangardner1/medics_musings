@@ -253,6 +253,10 @@
       memoIn.value = data.examples[exIdx++ % data.examples.length];
       render(); track('memo_translate', { source: 'example' });
     });
+    $('[data-memo-translate]').addEventListener('click', function () {
+      clearTimeout(timer); render(); counted = true;
+      track('memo_translate', { source: 'button' });
+    });
     $('[data-memo-clear]').addEventListener('click', function () { memoIn.value = ''; render(); memoIn.focus(); });
     copyBtn.addEventListener('click', function () { copyText(plainText, copyBtn); });
     var counted = false;

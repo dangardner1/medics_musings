@@ -132,7 +132,8 @@ ${pageEnd(ctx.data, { js: ['signup.js', 'site.js'] })}`,
         <label for="br-memo-in">Paste a line from the email</label>
         <textarea id="br-memo-in" rows="5" maxlength="4000" placeholder="We're rightsizing to better align resources with our mission…" data-memo-in></textarea>
         <p class="br-actions">
-          <button type="button" class="btn btn-primary" data-memo-example>Try an example</button>
+          <button type="button" class="btn btn-primary" data-memo-translate>Translate</button>
+          <button type="button" class="btn btn-ghost" data-memo-example>Try an example</button>
           <button type="button" class="btn btn-ghost" data-memo-clear>Clear</button>
           <button type="button" class="btn btn-ghost" data-memo-copy hidden>Copy translation</button>
         </p>
