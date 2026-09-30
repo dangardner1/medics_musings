@@ -316,7 +316,7 @@
     var shareBtn2 = $('[data-bingo-share]');
     shareBtn2.addEventListener('click', function () {
       var rows = [];
-      for (var r2 = 0; r2 < 5; r2++) rows.push([0, 1, 2, 3, 4].map(function (c) { return st.marks.indexOf(r2 * 5 + c) >= 0 ? '🟩' : '⬜'; }).join(''));
+      for (var r2 = 0; r2 < 5; r2++) rows.push([0, 1, 2, 3, 4].map(function (c) { var i3 = r2 * 5 + c; return i3 === 12 ? '⭐' : (st.marks.indexOf(i3) >= 0 ? '🟩' : '⬜'); }).join(''));
       var text = 'Burnout Bingo #' + day + ': ' + (st.marks.length - 1) + '/24' + (winEl.hidden ? '' : ' · BINGO') + '\n' + rows.join('\n') + '\nhttps://www.medicsmusings.com/break-room/burnout-bingo/';
       shareText(text).then(function (r3) {
         if (r3) { track('share', { method: r3, content_type: 'bingo' }); return; }
