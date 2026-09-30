@@ -173,19 +173,35 @@
     else { showClues(game.guesses.length + 1); input.focus(); }
   });
 
+  function cardOpts() {
+    var grid = game.guesses.map(function (g, i) { return i === game.guesses.length - 1 && game.won ? '🟩' : '🟥'; }).join('');
+    return { game: 'Name that eponym', number: day, result: grid, detail: (game.won ? game.guesses.length : 'X') + '/' + MAX + ' guesses', url: 'medicsmusings.com/games/eponym/' };
+  }
+
   root.querySelector('[data-game-share]').addEventListener('click', function (e) {
     var btn = e.currentTarget;
     var text = shareText();
     var label = btn.textContent;
-    var copied = function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = label; }, 2000); };
-    if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-      navigator.share({ text: text }).catch(function () {});
-      track('game_share', { game: 'eponym', method: 'native' });
+    var reset = function () { setTimeout(function () { btn.textContent = label; }, 2000); };
+    if (window.MMResultCard) {
+      btn.textContent = 'Preparing…';
+      window.MMResultCard.share(cardOpts(), text, 'medics-musings-eponym-' + day + '.png').then(function (method) {
+        btn.textContent = method === 'clipboard' ? 'Copied!' : label;
+        track('game_share', { game: 'eponym', method: method, with_image: method === 'native-image' });
+        if (method !== 'cancelled') reset();
+      });
       return;
     }
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(copied, function () { window.prompt('Copy your result:', text); });
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied!'; reset(); }, function () { window.prompt('Copy your result:', text); });
     else window.prompt('Copy your result:', text);
-    track('game_share', { game: 'eponym', method: 'clipboard' });
+    track('game_share', { game: 'eponym', method: 'clipboard', with_image: false });
+  });
+
+  var dlBtn = root.querySelector('[data-game-download]');
+  if (dlBtn) dlBtn.addEventListener('click', function () {
+    if (!window.MMResultCard) return;
+    track('game_share', { game: 'eponym', method: 'download' });
+    window.MMResultCard.download(cardOpts(), 'medics-musings-eponym-' + day + '.png');
   });
 
   // Restore today's progress (a reload mid-game keeps the guesses).

@@ -743,7 +743,7 @@ function top10Page(ctx, list, w, { latest }) {
     ],
   };
   const feeds = [{ title: `Medics Musings: ${list.name}`, href: `${SITE}/feeds/top-10-${list.key}.xml` }];
-  return `${pageHead({ title, description, url, ogTitle: `${list.name}: ${weekLabel(w)}`, image: shareImage(null), ld, feeds, robots: top10Robots(w) })}
+  return `${pageHead({ title, description, url, ogTitle: `${list.name}: ${weekLabel(w)}`, image: promoImage('top-10', `${list.name}: ${weekLabel(w)}`), ld, feeds, robots: top10Robots(w) })}
 <main>
   <section class="collection data-page">
     <div class="wrap">
@@ -807,6 +807,7 @@ ${pageEnd(ctx.data)}`;
 // straight from data/eponyms*.json, with the answer blanked out.
 
 const GAMES_URL = `${SITE}/games/`;
+const promoImage = (slug, alt) => (existsSync(join(ROOT, 'og', 'promo', `${slug}.jpg`)) ? { url: `${SITE}/og/promo/${slug}.jpg`, alt } : shareImage(null));
 const EPONYM_GAME_URL = `${SITE}/games/eponym/`;
 const GAME_LAUNCH = '2026-09-27'; // puzzle #1
 
@@ -906,7 +907,7 @@ function eponymGamePage(ctx) {
       breadcrumbLd([['Games', GAMES_URL], ['Name that eponym', EPONYM_GAME_URL]]),
     ],
   };
-  return `${pageHead({ title: 'Name That Eponym: a Daily Medical Word Game | Medics Musings', description: snippet(`A daily puzzle for doctors, students and the medically curious: name the eponym from its clues in five guesses. ${puzzles.length} real eponyms, from McBurney's point to the Capgras delusion.`), url: EPONYM_GAME_URL, ogTitle: 'Name that eponym: the daily game', image: shareImage(null), ld })}
+  return `${pageHead({ title: 'Name That Eponym: a Daily Medical Word Game | Medics Musings', description: snippet(`A daily puzzle for doctors, students and the medically curious: name the eponym from its clues in five guesses. ${puzzles.length} real eponyms, from McBurney's point to the Capgras delusion.`), url: EPONYM_GAME_URL, ogTitle: 'Name that eponym: the daily game', image: promoImage('eponym-game', 'Name that eponym: a daily medical word game'), ld })}
 <main>
   <section class="collection game-page">
     <div class="wrap">
@@ -933,7 +934,7 @@ function eponymGamePage(ctx) {
           <h2 class="game-verdict"></h2>
           <p class="game-answer"></p>
           <p class="game-links"></p>
-          <p><button type="button" class="btn btn-primary" data-game-share>Share your result</button></p>
+          <p><button type="button" class="btn btn-primary" data-game-share>Share your result</button> <button type="button" class="btn btn-ghost" data-game-download>Download image</button></p>
           <pre class="game-share" aria-label="Your result"></pre>
           <p class="game-next"></p>
         </div>
@@ -944,7 +945,7 @@ function eponymGamePage(ctx) {
   </section>
   <script type="application/json" id="game-data">${JSON.stringify(puzzles).replace(/</g, '\\u003c')}</script>
 
-${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'games.js'] })}`;
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'result-card.js', 'games.js'] })}`;
 }
 
 function gamesHub(ctx) {
@@ -1072,7 +1073,7 @@ function newsPage(ctx, d, { latest }) {
     ],
   };
   const feeds = [{ title: 'Medics Musings: Health Care News of the Day', href: `${SITE}/feeds/news.xml` }];
-  return `${pageHead({ title, description, url, ogTitle: d.pick.headline, image: shareImage(null), type: 'article', ld, feeds, robots: d.status === 'published' ? undefined : 'noindex, nofollow' })}
+  return `${pageHead({ title, description, url, ogTitle: d.pick.headline, image: promoImage('news-of-the-day', d.pick.headline), type: 'article', ld, feeds, robots: d.status === 'published' ? undefined : 'noindex, nofollow' })}
 <main>
   <section class="collection news-page">
     <div class="wrap">
@@ -1135,7 +1136,7 @@ function wordRoundsPage(ctx) {
       breadcrumbLd([['Games', GAMES_URL], ['Word Rounds', WORD_ROUNDS_URL]]),
     ],
   };
-  return `${pageHead({ title: 'Word Rounds: a Daily Medical Word Search | Medics Musings', description: snippet(`${intro} ${themes.length} themes, from the biliary tract to Freud's couch.`), url: WORD_ROUNDS_URL, ogTitle: 'Word Rounds: the daily medical word search', image: shareImage(null), ld })}
+  return `${pageHead({ title: 'Word Rounds: a Daily Medical Word Search | Medics Musings', description: snippet(`${intro} ${themes.length} themes, from the biliary tract to Freud's couch.`), url: WORD_ROUNDS_URL, ogTitle: 'Word Rounds: the daily medical word search', image: promoImage('word-rounds', 'Word Rounds: a daily medical word search'), ld })}
 <main>
   <section class="collection game-page">
     <div class="wrap">
@@ -1159,7 +1160,7 @@ function wordRoundsPage(ctx) {
         <div class="game-result" hidden tabindex="-1">
           <h2 class="game-verdict"></h2>
           <p class="game-links"></p>
-          <p><button type="button" class="btn btn-primary" data-ws-share>Share your time</button></p>
+          <p><button type="button" class="btn btn-primary" data-ws-share>Share your time</button> <button type="button" class="btn btn-ghost" data-ws-download>Download image</button></p>
           <pre class="game-share" aria-label="Your result"></pre>
           <p class="game-next"></p>
         </div>
@@ -1170,7 +1171,7 @@ function wordRoundsPage(ctx) {
   </section>
   <script type="application/json" id="ws-data">${JSON.stringify(themes).replace(/</g, '\\u003c')}</script>
 
-${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'wordsearch.js'] })}`;
+${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'result-card.js', 'wordsearch.js'] })}`;
 }
 
 // ---- Line of the day (/line-of-the-day/) --------------------------------------------

@@ -310,17 +310,32 @@
     if (fresh) result.focus();
   }
 
+  function cardOpts() {
+    return { game: 'Word Rounds', number: day, result: '✅', detail: theme.words.length + '/' + theme.words.length + ' found in ' + mmss(game.elapsed), url: 'medicsmusings.com/games/word-rounds/' };
+  }
+
   root.querySelector('[data-ws-share]').addEventListener('click', function (e) {
     var btn = e.currentTarget, text = shareText(), label = btn.textContent;
-    var copied = function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = label; }, 2000); };
-    if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-      navigator.share({ text: text }).catch(function () {});
-      track('ws_share', { method: 'native' });
+    var reset = function () { setTimeout(function () { btn.textContent = label; }, 2000); };
+    if (window.MMResultCard) {
+      btn.textContent = 'Preparing…';
+      window.MMResultCard.share(cardOpts(), text, 'medics-musings-word-rounds-' + day + '.png').then(function (method) {
+        btn.textContent = method === 'clipboard' ? 'Copied!' : label;
+        track('ws_share', { method: method, with_image: method === 'native-image' });
+        if (method !== 'cancelled') reset();
+      });
       return;
     }
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(copied, function () { window.prompt('Copy your result:', text); });
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied!'; reset(); }, function () { window.prompt('Copy your result:', text); });
     else window.prompt('Copy your result:', text);
-    track('ws_share', { method: 'clipboard' });
+    track('ws_share', { method: 'clipboard', with_image: false });
+  });
+
+  var wsDl = root.querySelector('[data-ws-download]');
+  if (wsDl) wsDl.addEventListener('click', function () {
+    if (!window.MMResultCard) return;
+    track('ws_share', { method: 'download' });
+    window.MMResultCard.download(cardOpts(), 'medics-musings-word-rounds-' + day + '.png');
   });
 
   paintFound();
