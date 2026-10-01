@@ -1108,6 +1108,10 @@
   .art-feature figcaption { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
   .art-title { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 800; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 0.01em; }
   .art-credit { color: var(--text-muted); font-size: 0.95rem; }
+  .bonus-track { border-top: 1px solid var(--border); }
+  .bonus-track h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 680px; }
+  .bonus-card { margin: 28px 0 0; max-width: 520px; }
+  .bonus-art { margin: -16px -16px 0; width: calc(100% + 32px); max-width: none; height: auto; border-radius: 6px 6px 0 0; }
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
@@ -1808,6 +1812,22 @@
         <img src="assets/art/toursade-de-poultry.jpg" width="1800" height="1018" loading="lazy" alt="Toursade de Poultry: an abstract swirl of red, blue, yellow and green paint on a black background, loosely suggesting a rooster in motion">
         <figcaption><span class="art-title">Toursade de Poultry</span> <span class="art-credit">by Eli Miller, MD</span></figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="bonus-track">
+    <div class="wrap">
+      <span class="eyebrow">B-Side</span>
+      <h2>Bonus track</h2>
+      <article class="ep-card bonus-card">
+        <img class="bonus-art" src="assets/art/the-old-white-coat-comes-off.jpg" width="1200" height="655" loading="lazy" alt="An older physician sits at a cluttered desk in his office, looking out the window, a stethoscope and a framed diploma beside him">
+        <h3>The Old White Coat Comes Off</h3>
+        <p class="ep-meta">KLEZMER · CABARET · ORIGINAL SONG</p>
+        <p class="ep-desc">A retired chief physician gets used to a world that no longer needs his signature — a clarinet-and-violin klezmer number about identity after the badge comes off.</p>
+        <div class="ep-actions">
+          <a class="btn btn-ghost" href="https://suno.com/s/fvTWtCTWzwe7IrmU" target="_blank" rel="noopener">▶ Listen on Suno</a>
+        </div>
+      </article>
     </div>
   </section>
 
