@@ -5,6 +5,10 @@
     { "source": "/stats(/?)", "destination": "/top-10/", "permanent": false },
     { "source": "/recalls(/.*)?", "destination": "/top-10/", "permanent": false },
     { "source": "/er-wait-times(/.*)?", "destination": "/top-10/", "permanent": false },
-    { "source": "/feeds/recalls.xml", "destination": "/top-10/", "permanent": false }
+    { "source": "/feeds/recalls.xml", "destination": "/top-10/", "permanent": false },
+    { "source": "/episodes/the-robot-who-wipes-my-butt(/.*)?", "destination": "/#episodes", "permanent": false },
+    { "source": "/embed/the-robot-who-wipes-my-butt(/?)", "destination": "/", "permanent": false },
+    { "source": "/teach/the-robot-who-wipes-my-butt(/?)", "destination": "/teach/", "permanent": false },
+    { "source": "/e/25(/?)", "destination": "/#episodes", "permanent": false }
   ]
 }

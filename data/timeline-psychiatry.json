@@ -90,8 +90,7 @@
       "event": "Freud publishes Three Essays on the Theory of Sexuality, introducing the psychosexual stages, and Jokes and Their Relation to the Unconscious. One book gave us “anal-retentive”; the other gave our Freud episode its premise.",
       "field": "psychoanalysis",
       "episodes": [
-        { "slug": "from-burnout-to-punchlines-freuds-solution", "t": 108 },
-        { "slug": "the-robot-who-wipes-my-butt", "t": 96 }
+        { "slug": "from-burnout-to-punchlines-freuds-solution", "t": 108 }
       ]
     },
     {

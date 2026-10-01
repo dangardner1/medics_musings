@@ -29,10 +29,14 @@ import {
 // ---- Data --------------------------------------------------------------------
 
 const data = JSON.parse(read('data/episodes.json'));
-const episodes = data.episodes
+// A hidden episode (data.episodes[].hidden) is dropped from everything below -
+// its own page, feeds, the homepage/topic/series grids, sitemap - but keeps its
+// place in the numbering below, so other episodes' short links never shift.
+const allEpisodes = data.episodes
   .map((e, i) => [e, i])
   .sort((a, b) => b[0].date.localeCompare(a[0].date) || a[1] - b[1])
   .map(([e]) => ({ ...e, url: `${SITE}/episodes/${e.slug}/`, path: `/episodes/${e.slug}/` }));
+const episodes = allEpisodes.filter((e) => !e.hidden);
 const bySlug = new Map(episodes.map((e) => [e.slug, e]));
 for (const e of episodes) {
   for (const t of e.tags || []) if (!data.topics[t]) throw new Error(`${e.slug}: unknown topic "${t}"`);
@@ -47,7 +51,8 @@ const isoSeconds = (iso) => {
 };
 
 // Stable episode numbers, oldest = 1, for short links (medicsmusings.com/e/12).
-const num = new Map([...episodes].reverse().map((e, i) => [e.slug, i + 1]));
+// Computed from allEpisodes (hidden included) so hiding one never renumbers the rest.
+const num = new Map([...allEpisodes].reverse().map((e, i) => [e.slug, i + 1]));
 const chapters = readJson('data/chapters.json', {});
 const quotes = readJson('data/quotes.json', {});
 const explainers = readJson('data/explainers.json', { explainers: [] }).explainers;
