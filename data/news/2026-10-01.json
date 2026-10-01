@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-01",
+ "status": "review",
+ "generated": "2026-10-01T17:21:15.827Z",
+ "check": {
+  "ok": false,
+  "reason": "The item states that the rule 'applies to four companies' as fact, and in the headline as well. The real headline supports only the 96% reduction in savings. The four-company figure is not in the material we have, so it counts as an invented number. The target is right (regulators and pharma policy), the tone is dry, and nothing mocks patients or the reporter. To fix it, remove the four-company claim and keep the joke on the 96% dilution, for example: 'Medicare Drug Rule's Savings Trimmed 96%, Now Mostly Vehicle.'"
+ },
+ "pick": {
+  "title": "Trump’s watered-down Medicare drug pricing rule saves 96% less than initial proposal",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/09/30/trump-final-globe-rule-will-save-medicare-much-less-money-on-drugs/",
+  "date": "2026-09-30",
+  "headline": "Medicare Drug Rule's Savings Trimmed 96%, Now Bravely Confronts Four Companies",
+  "take": "The final rule saves 96% less than the proposal and applies to four companies. In pharmacologic terms, that's a dose so diluted it's mostly vehicle. Everyone else in the industry can stand down, having survived the rigors of a comment period."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "A major insurer on how it may replicate Medicare’s chronic-care experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/major-insurer-on-medicare-access-model-health-tech/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about a plan to lower Medicare drug prices, a Lilly obesity drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/01/trump-plan-to-lower-medicare-drug-prices-lilly-obesity-drug/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 2,
+   "title": "Invivyd’s pursuit of a Covid vaccine alternative gets a lift, but an FDA hurdle may await",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/invivyds-covid-antibody-development/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 3,
+   "title": "Can a top Republican from a bygone political era fix pharma’s woes in Washington?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/eric-cantor-phrma-populist-drug-policy/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 4,
+   "title": "Trump’s watered-down Medicare drug pricing rule saves 96% less than initial proposal",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/30/trump-final-globe-rule-will-save-medicare-much-less-money-on-drugs/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 5,
+   "title": "HHS announces new efforts to speed up, expand clinical trials with AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 6,
+   "title": "U.S. poised to boot legal immigrants from Medicaid, including refugees and sex-trafficking victims",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/09/30/legal-immigrants-risk-losing-medicaid-coverage-trump/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 7,
+   "title": "US Poised To Boot Legal Immigrants From Medicaid, Including Refugees and Sex-Trafficking Victims",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/immigrants-kicked-off-medicaid-refugees-asylum-seekers-trump-big-beautiful-bill-cbo-2/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 8,
+   "title": "Data privacy concerns could hold patients back from using AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/data-privacy-concerns-could-hold-patients-back-from-using-ai/831902/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 9,
+   "title": "Epic Fail: Robots Don't Improve Joint Replacement Outcomes in Big U.K. Studies",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/surgery/orthopedics/123201",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 10,
+   "title": "Who Should Manage a Hospital Cyberattack?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123208",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 11,
+   "title": "Elevance cracks down on hospital billing for off-campus care",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/elevance-cracks-down-on-hospital-billing-for-off-campus-care/831802/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 12,
+   "title": "Cigna unveils $3B productivity initiative, including use of AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cigna-3-billion-productivity-initiative-ai/831798/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 13,
+   "title": "Essentia, HealthPartners seek to combine amid wave of Minnesota hospital mergers",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/essentia-healthpartners-combine-amid-wave-minnesota-hospital-mergers/831685/",
+   "date": "2026-09-30"
+  },
+  {
+   "id": 14,
+   "title": "GE HealthCare hires new global chief AI officer",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ge-healthcare-hires-new-global-chief-ai-officer/831864/",
+   "date": "2026-09-30"
+  }
+ ]
+}
