@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-02",
+ "status": "review",
+ "generated": "2026-10-02T16:36:46.570Z",
+ "check": {
+  "ok": false,
+  "reason": "The item states specific figures as fact: the rule covers 'four companies' and saves '96% less than the initial proposal'. The only source material is a headline for a Pharmalittle roundup, which says nothing about these numbers, so they appear to be invented. The take also presents a final rule on doctor-administered drugs as the story's subject, but the real item is a multi-topic news roundup that mentions a plan to lower Medicare drug prices and a Lilly obesity drug. That misstates what the story is about. The target (the system and lobbyists) and the deadpan tone are fine, and nothing mocks patients or reporters. To pass, remove or verify the numbers and keep the claims to what the headline supports."
+ },
+ "pick": {
+  "title": "Pharmalittle: We’re reading about a plan to lower Medicare drug prices, a Lilly obesity drug, and more",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/10/01/trump-plan-to-lower-medicare-drug-prices-lilly-obesity-drug/",
+  "date": "2026-10-01",
+  "headline": "Historic Drug Price Rule Bravely Applies to Four Companies and Most of a Rounding Error",
+  "take": "The final Medicare rule on doctor-administered drugs covers four companies and saves 96% less than the initial proposal. That is a rare feat: a reform whittled down until the only thing it lowers is expectations. Somewhere, a lobbyist is billing for the victory lap."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Medicare Advantage plans shift more costs onto seniors in 2027",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/medicare-advantage-plans-have-higher-deductibles-fewer-benefits-in-2027/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 1,
+   "title": "A major insurer on how it may replicate Medicare’s chronic-care experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/major-insurer-on-medicare-access-model-health-tech/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 2,
+   "title": "Pharmalittle: We’re reading about a plan to lower Medicare drug prices, a Lilly obesity drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/01/trump-plan-to-lower-medicare-drug-prices-lilly-obesity-drug/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 3,
+   "title": "Invivyd’s pursuit of a Covid vaccine alternative gets a lift, but an FDA hurdle may await",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/invivyds-covid-antibody-development/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 4,
+   "title": "Governors ask HHS for more time to implement Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicaid-work-requirements-governors-ask-hhs-delay-letter/831992/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 5,
+   "title": "Doctors Push Back on RFK Jr.'s AI Comments",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/123236",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 6,
+   "title": "Data privacy concerns could hold patients back from using AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/data-privacy-concerns-could-hold-patients-back-from-using-ai/831902/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 7,
+   "title": "Insurers say their 2027 Medicare Advantage offerings preserve benefits. The data tells a different story",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-advantage-benefit-cuts-2027-unh-hum/831861/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 8,
+   "title": "Midterms Have Revived Universal Healthcare Debate. These States Are Ahead of Everyone.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/single-payer-universal-healthcare-debate-midterms-oregon-proposal/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 9,
+   "title": "MAHA goes corporate",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/01/maha-goes-corporate-trump-waters-down-medicare-drug-pricing-model/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 10,
+   "title": "What it’s like to wait for the call from the Nobel Prize committee",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/nobel-prize-2026-geneticist-mary-claire-king-long-waiting-not-getting-winner-call/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 11,
+   "title": "Access to addiction meds for young people has improved — but retention hasn’t",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/youth-opioid-treatment-retention-study-barriers-to-care/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 12,
+   "title": "Lilly bypasses Australian pharmacies with DTC model",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/biotech-news-lilly-bypasses-australian-phramacies-with-dtc-model/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 13,
+   "title": "Independence Blue Cross to pay $22.5M to resolve MA fraud allegations",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/independence-blue-cross-to-pay-to-resolve-ma-fraud-allegations/831998/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 14,
+   "title": "Up and down the ladder: The latest comings and goings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/02/up-and-down-the-ladder-comings-goings-pharma-biotech-jobs/",
+   "date": "2026-10-02"
+  }
+ ]
+}
