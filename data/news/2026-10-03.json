@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-03",
+ "status": "published",
+ "generated": "2026-10-03T15:07:46.351Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: state governors, HHS and the bureaucracy of verification. The joke is that administrators need an extension to build a system that will penalize enrollees for late paperwork, which sides with the patients. It doesn't misstate the story, which is about governors asking HHS for more time. It has no invented numbers or quotes, no mockery of reporters, and none of the excluded topics. The tone is dry and deadpan, and it is actually satirical."
+ },
+ "pick": {
+  "title": "Governors ask HHS for more time to implement Medicaid work requirements",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/medicaid-work-requirements-governors-ask-hhs-delay-letter/831992/",
+  "date": "2026-10-02",
+  "headline": "Governors Request Extension on Assignment Requiring Others to Submit Paperwork on Time",
+  "take": "States have asked HHS for more time to implement Medicaid work requirements. Nothing signals confidence in a verification system like the administrators needing a deadline extension to build it. We trust the same flexibility will be offered to everyone who has to navigate it."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Cancer GoFundMe Shut Down; 'Dialed Down' Drug Price Plan; Binge Drinking and Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123254",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 1,
+   "title": "Governors ask HHS for more time to implement Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicaid-work-requirements-governors-ask-hhs-delay-letter/831992/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 2,
+   "title": "Midterms Have Revived Universal Healthcare Debate. These States Are Ahead of Everyone.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/single-payer-universal-healthcare-debate-midterms-oregon-proposal/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 3,
+   "title": "Journalists Evaluate Rural Voter Sentiment, MAHA Movement, and Gene-Editing Finding",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-october-3-2026-kff-ap-rural-voter-poll-glp1-rfk-maha-summit-claude/",
+   "date": "2026-10-03"
+  },
+  {
+   "id": 4,
+   "title": "Non-Covalent BTK Drug Wins Broad Approval in Most Common Leukemia",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/leukemia/123263",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 5,
+   "title": "New Poll on Vaccines and Autism: Here's Where Americans Stand",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/vaccines/123258",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 6,
+   "title": "NIH rolling out streamlined website to help public find information more easily",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/nih-launching-streamlined-website-to-help-public-find-information/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 7,
+   "title": "What it’s like to wait for the call from the Nobel Prize committee",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/nobel-prize-2026-geneticist-mary-claire-king-long-waiting-not-getting-winner-call/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 8,
+   "title": "Access to addiction meds for young people has improved — but retention hasn’t",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/youth-opioid-treatment-retention-study-barriers-to-care/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 9,
+   "title": "Lilly bypasses Australian pharmacies with DTC model",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/biotech-news-lilly-bypasses-australian-phramacies-with-dtc-model/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 10,
+   "title": "Independence Blue Cross to pay $22.5M to resolve MA fraud allegations",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/independence-blue-cross-to-pay-to-resolve-ma-fraud-allegations/831998/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 11,
+   "title": "Up and down the ladder: The latest comings and goings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/02/up-and-down-the-ladder-comings-goings-pharma-biotech-jobs/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 12,
+   "title": "Pharmalittle: We’re reading about the 340B drug pilot program, an obesity drug disappointment, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/02/340b-drug-pilot-program-boehringer-zealand-obesity-trial/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 13,
+   "title": "How big is Pennsylvania’s measles outbreak?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/health-news-how-big-is-pennsylvania-measles-outbreak/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 14,
+   "title": "NIH awarded all its grant funding, but delayed and opaque decisions stymied researchers",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/02/nih-grant-funding-fy2026-analysis/",
+   "date": "2026-10-02"
+  }
+ ]
+}
