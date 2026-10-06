@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-06",
+ "status": "published",
+ "generated": "2026-10-06T17:10:24.518Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is regulators and the health-system rush to deploy AI, with a side jab at bureaucracy (prior authorization, fax machines). It doesn't mock patients, authors, or private individuals, doesn't quote the article, and doesn't invent numbers or quotes. It doesn't touch death, children, or violence. It is dry, deadpan satire without emojis or hashtags. The headline exaggerates the lack of review for effect, and the take hedges with 'presumably' and acknowledges the sandbox is real, so it reads as hyperbole rather than a false factual claim."
+ },
+ "pick": {
+  "title": "Utah plows ahead with more health AI pilots for prescriptions, women’s health",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/",
+  "date": "2026-10-05",
+  "headline": "Utah Streamlines Prescribing by Removing Step Where Anyone Reviews Anything First",
+  "take": "Prior authorization will presumably still require a human, ideally one on hold. Still, it's inspiring to watch regulators innovate on the single step of care involving a licensed clinician, rather than the dozens involving a fax machine. The sandbox is real. The accountability remains in a pilot phase."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "What are hospital longevity programs, and what can they tell you about your health?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/hospital-longevity-programs-health-status-report-alex-hogan/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 1,
+   "title": "FDA spells out 2027 AI guidance plans",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 2,
+   "title": "In this hospital, pulse oximeters went from overestimating to underestimating blood oxygen. Why?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/pulse-oximeters-overestimate-and-underestimate-blood-oxygen-study/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 3,
+   "title": "Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: Why the FDA should not approve an ineffective multicancer screening test",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/grail-multi-cancer-screening-test-criticism/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 5,
+   "title": "Judges skewer HHS arguments in hearing over Medicare Advantage audits lawsuit",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/05/humana-medicare-advantage-radv-audits-lawsuit-hearing/",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 6,
+   "title": "New Trump regulations would clean up health care pricing disclosures",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/05/trump-kennedy-transparency-in-coverage-regulations-health-care-prices-disclosure/",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 7,
+   "title": "Utah plows ahead with more health AI pilots for prescriptions, women’s health",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors/",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 8,
+   "title": "Vaxcyte claims success in bid to beat Pfizer and Merck in lucrative vaccine market",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/05/vaxcyte-pneumococcal-vaccine-study-pfizer-merck/",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 9,
+   "title": "FTC escalates price transparency crackdown with warning letters to hospitals",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ftc-escalates-price-transparency-crackdown-with-warning-letters-to-hospital/832247/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 10,
+   "title": "RFK Jr. Launches Vaccine Injury Clinic; Outbreak Spreads; Starbucks Sued Over Claims",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123284",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 11,
+   "title": "Private Equity in Medicine: At Odds With Doing What's Best for Patients?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123282",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 12,
+   "title": "Trump Announces $90 Payments for Seniors on Medicare Ahead of the Midterms",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123269",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 13,
+   "title": "Trump administration revamps insurer price transparency reporting",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hhs-health-insurer-price-transparency-overhaul-final-rule/832105/",
+   "date": "2026-10-05"
+  },
+  {
+   "id": 14,
+   "title": "Trump pledges to send $90 Medicare Part B rebates to seniors",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/trump-medicare-part-b-premium-rebate-pledge/832100/",
+   "date": "2026-10-05"
+  }
+ ]
+}
