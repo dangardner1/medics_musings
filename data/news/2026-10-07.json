@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-07",
+ "status": "published",
+ "generated": "2026-10-07T17:47:37.667Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is PhRMA and the pharma pricing system, with no jokes at patients' expense. The headline and take match the real story, a trade group suing over a Medicare pricing pilot tied to peer-country prices. There are no invented numbers or quotes, no article quotes, and none of the excluded topics. The tone is dry and deadpan, and it is clearly satirical."
+ },
+ "pick": {
+  "title": "PhRMA sues over Trump policy mandating lower drug prices in Medicare",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+  "date": "2026-10-07",
+  "headline": "Drug Industry Sues to Preserve America's Exclusive Right to Overpay for Medications",
+  "take": "The industry's main trade group is suing over a pilot that ties Medicare prices to what peer countries pay. Those countries have been paying these prices for years and, remarkably, still have medicines. Apparently the American price is a delicate ecosystem that cannot survive comparison."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "PhRMA sues over Trump policy mandating lower drug prices in Medicare",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 1,
+   "title": "Why health AI pilots in Utah may be on a collision course with the FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 2,
+   "title": "‘Medicare for All’ Message Attracts Voters Buckling Under Medical Bills",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/medicare-for-all-abdul-el-sayed-michigan-midterm-elections/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 3,
+   "title": "What are hospital longevity programs, and what can they tell you about your health?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/hospital-longevity-programs-health-status-report-alex-hogan/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 4,
+   "title": "FDA spells out 2027 AI guidance plans",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 5,
+   "title": "In this hospital, pulse oximeters went from overestimating to underestimating blood oxygen. Why?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/pulse-oximeters-overestimate-and-underestimate-blood-oxygen-study/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 6,
+   "title": "Pill Peddling Doc Convicted; Digital Schizophrenia Therapeutic Cleared; AI Anxiety",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/psychiatry/generalpsychiatry/123304",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 7,
+   "title": "Texas attorney general investigates UnitedHealth over care denials",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/texas-ken-paxton-unitedhealth-investigation-care-denials/832221/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 8,
+   "title": "Highmark Health taps Karen Hanlon as CEO",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/highmark-health-karen-hanlon-ceo/832350/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 9,
+   "title": "Teladoc unveils remote monitoring, ambient AI features",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/teladoc-unveils-remote-monitoring-ambient-ai-features/832328/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 10,
+   "title": "Utah approves slew of health AI pilots for drug management, women’s health",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/utah-approves-health-ai-pilots-drug-management-womens-health/832318/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 11,
+   "title": "FTC escalates price transparency crackdown with warning letters to hospitals",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ftc-escalates-price-transparency-crackdown-with-warning-letters-to-hospital/832247/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 12,
+   "title": "RFK Jr. Launches Vaccine Injury Clinic; Outbreak Spreads; Starbucks Sued Over Claims",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123284",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 13,
+   "title": "Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 14,
+   "title": "Food Aid Enrollment Tanks After SNAP Rule Changes",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/louisiana-snap-food-stamps-enrollment-decline-hunger-work-requirements-obbba/",
+   "date": "2026-10-07"
+  }
+ ]
+}
