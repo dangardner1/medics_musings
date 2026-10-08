@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-08",
+ "status": "published",
+ "generated": "2026-10-08T17:51:14.548Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the drug industry and its lobby (PhRMA), not patients. The headline and take are consistent with the real story: a lawsuit over tying Medicare drug prices to those in peer countries. No numbers or quotes are invented, and it quotes nothing from the article. It names no private individual and doesn't mock the reporter. It avoids death, children and violence. The tone is dry and deadpan with no emojis or hashtags, and it is clearly satirical. The closing 'demanding transparency' line is sarcasm, since the suit opposes price comparison, but it reads as irony and not as a factual claim."
+ },
+ "pick": {
+  "title": "PhRMA sues over Trump policy mandating lower drug prices in Medicare",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+  "date": "2026-10-07",
+  "headline": "Drug Industry Sues to Defend Americans' Right to Pay More Than Everyone",
+  "take": "PhRMA is suing over a pilot that would tie Medicare drug prices to those in peer countries. Innovation, we're told, is a delicate ecosystem that apparently cannot survive being compared to a price list from Germany. The lawsuit is, at least, a rare instance of the industry demanding transparency."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "AI for breast cancer risk prediction goes DTC, regulatory cloud over Utah sandbox, and AI psychosis",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/breast-cancer-ai-goes-dtc-utah-sandbox-ai-psychosis-health-tech/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 1,
+   "title": "FDA says its safety review of abortion pill will continue into next year",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/fda-mifepristone-abortion-pill-safety-review-continue-into-2027/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 2,
+   "title": "‘Medicare for All’ Is Back. Now Comes the Hard Part.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicare-for-all-proposals-universal-healthcare-implementation-difficult/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 3,
+   "title": "Medical Debt Is Crushing Hospital Patients in Los Angeles. Health Officials May Have a Fix.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/medical-debt-hospital-patients-los-angeles-county-charity-care-presumptive-eligibility/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: How CMS plans to fix a major flaw in the 340B drug discount program",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/340b-drug-discount-program-cms-reform-proposal/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 5,
+   "title": "Why this startup is taking its AI to predict breast cancer risk directly to patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 6,
+   "title": "PhRMA sues over Trump policy mandating lower drug prices in Medicare",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/07/phrma-sues-over-drug-pricing-model-globe/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 7,
+   "title": "‘Medicare for All’ Message Attracts Voters Buckling Under Medical Bills",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/medicare-for-all-abdul-el-sayed-michigan-midterm-elections/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 8,
+   "title": "Royal Family Doctor Murdered; $155M Spine Surgery Settlement; Telehealth Conviction",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123319",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 9,
+   "title": "Outpatient shift accelerates as hospital margins rebound",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/outpatient-shift-accelerates-hospital-margins-rebound-strata/832490/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 10,
+   "title": "Medicare penalizes more hospitals for readmissions",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospital-readmission-reduction-program-penalties-rise-2027-cms/832473/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 11,
+   "title": "FDA Expands Indication for Urticaria Drug to Treat Symptomatic Dermographism",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/dermatology/generaldermatology/123309",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 12,
+   "title": "FDA Warns Amazon Over Herpes Treatments",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/stds/123308",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 13,
+   "title": "RFK Jr.'s Embrace of AI Confounds Some MAHA Allies and Medical Experts",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/123306",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 14,
+   "title": "Pill Peddling Doc Convicted; Digital Schizophrenia Therapeutic Cleared; AI Anxiety",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/psychiatry/generalpsychiatry/123304",
+   "date": "2026-10-07"
+  }
+ ]
+}
