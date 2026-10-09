@@ -4,11 +4,9 @@ name: Health data
 # added) from public government data, rebuilds the site and publishes it.
 # openFDA publishes new enforcement reports weekly, usually by Wednesday; this
 # runs Thursday. "Run workflow" on the Actions tab refreshes on demand.
-# Paused while the health-stats pages are hidden (SHOW_HEALTH_STATS in
-# scripts/build-extras.mjs). Restore the schedule when they come back.
 on:
-  # schedule:
-  #   - cron: '17 15 * * 4'
+  schedule:
+    - cron: '17 15 * * 4'
   workflow_dispatch:
 
 permissions:
@@ -32,7 +30,7 @@ jobs:
       # A source that's down keeps its last good data and shows up as a
       # warning on the run summary; the rest still update.
       - name: Fetch health data
-        run: node scripts/fetch-health-data.mjs
+        run: node scripts/fetch-health-data.mjs recalls
 
       - name: Rebuild the site
         run: node scripts/build-episodes.mjs

@@ -323,9 +323,10 @@ ${pageEnd(ctx.data, { js: ['signup.js', 'site.js', 'extras.js'] })}`;
 }
 
 // ---- Live health stats (data/*.json from scripts/fetch-health-data.mjs) ------------
-// Hidden for now: the pages aren't built or linked. Set to true to bring back
-// /stats/, /recalls/ and /er-wait-times/ (and restart the health-data workflow).
-const SHOW_HEALTH_STATS = false;
+// SHOW_HEALTH_STATS builds /stats/ and /recalls/ (with the weekly recall trend chart);
+// SHOW_ER_WAIT builds /er-wait-times/ (still hidden; its pages redirect to /top-10/).
+const SHOW_HEALTH_STATS = true;
+const SHOW_ER_WAIT = false;
 
 const STATS_URL = `${SITE}/stats/`;
 const RECALLS_URL = `${SITE}/recalls/`;
@@ -348,6 +349,55 @@ const datasetLd = ({ url, name, description, sourceName, sourceUrl, license, mod
   isBasedOn: { '@type': 'Dataset', name: sourceName, url: sourceUrl },
   variableMeasured: measured,
 });
+
+// Weekly recalls by class as a stacked bar chart: inline SVG drawn at build time, themed
+// through the page's CSS variables, with the same numbers in a table for screen readers.
+function recallTrendChart(d) {
+  const t = (d.trend || []).slice(-26);
+  if (t.length < 4) return '';
+  const total = (r) => r.I + r.II + r.III;
+  const max = Math.max(...t.map(total));
+  const step = max <= 40 ? 10 : max <= 100 ? 20 : max <= 200 ? 50 : 100;
+  const top = Math.ceil(max / step) * step;
+  const W = 720, H = 300, L = 44, R = 10, T = 14, B = 44;
+  const pw = W - L - R, ph = H - T - B, slot = pw / t.length, bar = Math.max(4, slot * 0.68);
+  const y = (v) => T + ph - (v / top) * ph;
+  const grid = [];
+  for (let v = 0; v <= top; v += step) grid.push(`<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" class="trend-grid"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" class="trend-tick">${v}</text>`);
+  const bars = t.map((r, i) => {
+    const x = L + i * slot + (slot - bar) / 2;
+    let acc = 0;
+    const parts = [['III', r.III, 'trend-c3'], ['II', r.II, 'trend-c2'], ['I', r.I, 'trend-c1']].map(([name, n, cls]) => {
+      if (!n) return '';
+      const rect = `<rect x="${x.toFixed(1)}" y="${y(acc + n).toFixed(1)}" width="${bar.toFixed(1)}" height="${(y(acc) - y(acc + n)).toFixed(1)}" class="${cls}"><title>Class ${name}: ${n}</title></rect>`;
+      acc += n;
+      return rect;
+    }).join('');
+    return `<g>${parts}<title>Week of ${shortDate(r.week)}: ${total(r)} recalls (Class I ${r.I}, II ${r.II}, III ${r.III})</title></g>`;
+  }).join('');
+  const labels = t.map((r, i) => (i % 4 === (t.length - 1) % 4 ? `<text x="${(L + i * slot + slot / 2).toFixed(1)}" y="${H - 22}" text-anchor="middle" class="trend-tick">${esc(shortDate(r.week))}</text>` : '')).join('');
+  const sum = (arr, k) => arr.reduce((n, r) => n + (k ? r[k] : total(r)), 0);
+  const recent = t.slice(-5, -1), prior = t.slice(-9, -5);
+  const trendNote = prior.length === 4 && sum(prior)
+    ? `In the last four full weeks the FDA posted ${sum(recent)} recalls, ${sum(recent) >= sum(prior) ? 'up' : 'down'} from ${sum(prior)} in the four weeks before; ${sum(recent, 'I')} were Class I (${sum(prior, 'I')} before).`
+    : '';
+  const first = t[0].week;
+  return `<figure class="trend">
+        <figcaption><b>Recalls per week, by class</b> · weeks starting ${esc(shortDate(first))} to ${esc(shortDate(t.at(-1).week))}${t.length ? ' (latest week may be partial)' : ''}</figcaption>
+        <svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="trend-t trend-d" class="trend-svg">
+          <title id="trend-t">FDA recalls per week, stacked by class</title>
+          <desc id="trend-d">${esc(trendNote || 'Weekly counts of Class I, II and III FDA recalls.')}</desc>
+          ${grid.join('')}${bars}${labels}
+        </svg>
+        <p class="trend-legend"><span><i class="trend-c1"></i>Class I (most serious)</span><span><i class="trend-c2"></i>Class II</span><span><i class="trend-c3"></i>Class III</span></p>
+        ${trendNote ? `<p class="what-changed">${esc(trendNote)}</p>` : ''}
+        <details class="trend-data"><summary>See the numbers</summary>
+          <div class="table-wrap"><table class="data-table"><thead><tr><th>Week of</th><th>Class I</th><th>Class II</th><th>Class III</th><th>Total</th></tr></thead><tbody>
+          ${[...t].reverse().map((r) => `<tr><td>${esc(shortDate(r.week))}</td><td>${r.I}</td><td>${r.II}</td><td>${r.III}</td><td>${total(r)}</td></tr>`).join('')}
+          </tbody></table></div>
+        </details>
+      </figure>`;
+}
 
 function recallsPage(ctx) {
   const d = ctx.recallData;
@@ -387,6 +437,7 @@ function recallsPage(ctx) {
       <p class="coll-intro">${esc(intro)}</p>
       ${statTiles([['Recalls', d.counts.total], ['Class I (most serious)', d.counts.classI], ['Drugs', d.counts.drug], ['Devices', d.counts.device], ['Food', d.counts.food]])}
       ${changed}
+      ${recallTrendChart(d)}
       ${tableControls('recalls', [], 'Search products, companies or reasons…', [
         { attr: 'field', label: 'Filter by type', values: ['Drug', 'Device', 'Food'], all: 'All types' },
         { attr: 'class', label: 'Filter by severity', values: ['Class I', 'Class II', 'Class III'], all: 'Any class' },
@@ -612,7 +663,7 @@ function statsHub(ctx) {
     const d = ctx.erData;
     cards.push(['/er-wait-times/', 'How long will the ER take?', `CMS data · ${periodLabel(d.periods.OP_18b)}`, `The typical ER visit takes ${d.national.OP_18b} minutes. Compare every state and ${d.hospitals.length.toLocaleString('en-US')} hospitals, plus how many patients gave up and left.`]);
   }
-  const intro = 'Live health numbers from public government data, refreshed automatically: what the FDA is recalling, how long the ER takes, and how loudly medicine is talking about AI. The headlines are satire; the numbers are exactly what the sources report.';
+  const intro = 'Live health numbers from public government data, refreshed weekly: what the FDA is recalling, and whether the pile is growing. The headlines are satire; the numbers are exactly what the sources report.';
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -622,12 +673,13 @@ function statsHub(ctx) {
   };
   return `${pageHead({ title: 'Live Health Stats: FDA Recalls and More, Updated Automatically | Medics Musings', description: snippet(intro), url: STATS_URL, ogTitle: 'Health stats', image: shareImage(null), ld })}
 <main>
-  <section class="collection">
+  <section class="collection data-page">
     <div class="wrap">
       ${crumbs([['Health stats']])}
       <span class="eyebrow">Live data</span>
       <h1>Health stats</h1>
       <p class="coll-intro">${esc(intro)}</p>
+      ${ctx.recallData ? recallTrendChart(ctx.recallData) : ''}
       <ul class="coll-list">
         ${cards.map(([href, title, meta, desc]) => `<li>
           <a class="coll-card" href="${href}">
@@ -2083,7 +2135,7 @@ export function buildExtras(ctx) {
   const timelineData = readJson('data/timeline.json', { intro: '', entries: [] });
   const psychTimelineData = readJson('data/timeline-psychiatry.json', { intro: '', entries: [] });
   const recallData = SHOW_HEALTH_STATS ? readJson('data/recalls.json', null) : null;
-  const erData = SHOW_HEALTH_STATS ? readJson('data/er-wait.json', null) : null;
+  const erData = SHOW_ER_WAIT ? readJson('data/er-wait.json', null) : null;
   const top10 = loadTop10();
   const news = loadNews();
   const onSite = (r) => r.episodes.every((e) => ctx.bySlug.has(e.slug));

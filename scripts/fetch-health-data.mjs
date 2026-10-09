@@ -38,6 +38,33 @@ async function getJson(url) {
 const RECALL_DAYS = 30;
 const CATEGORIES = { drug: 'Drug', device: 'Device', food: 'Food' };
 
+// Weekly recall counts by class, for the trend chart: one openFDA count query per
+// type and class, summed into Monday-start weeks. The newest week is partial.
+const TREND_WEEKS = 26;
+const CLASSES = { 'Class I': 'I', 'Class II': 'II', 'Class III': 'III' };
+const weekStart = (yyyymmdd) => {
+  const d = new Date(Date.UTC(+yyyymmdd.slice(0, 4), +yyyymmdd.slice(4, 6) - 1, +yyyymmdd.slice(6, 8)));
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return ymd(d);
+};
+async function recallTrend(end) {
+  const first = new Date(end.getTime() - TREND_WEEKS * 7 * 86400000);
+  const range = `report_date:%5B${compact(first)}+TO+${compact(end)}%5D`;
+  const weeks = new Map();
+  for (const key of Object.keys(CATEGORIES)) {
+    for (const [cls, code] of Object.entries(CLASSES)) {
+      const json = await getJson(`https://api.fda.gov/${key}/enforcement.json?search=${range}+AND+classification.exact:%22${cls.replace(' ', '+')}%22&count=report_date`);
+      for (const r of json?.results || []) {
+        const w = weekStart(r.time);
+        const row = weeks.get(w) || { week: w, I: 0, II: 0, III: 0 };
+        row[code] += r.count;
+        weeks.set(w, row);
+      }
+    }
+  }
+  return [...weeks.values()].sort((a, b) => a.week.localeCompare(b.week));
+}
+
 async function recalls() {
   const file = 'data/recalls.json';
   const old = readOld(file);
@@ -78,6 +105,9 @@ async function recalls() {
   const newIds = old ? rows.filter((r) => !oldIds.has(r.id)).map((r) => r.id) : [];
   const count = (pred) => rows.filter(pred).length;
 
+  let trend = old?.trend || [];
+  try { trend = await recallTrend(end); } catch (e) { console.log(`::warning::recall trend not updated: ${e.message}`); }
+
   save(file, {
     source: 'openFDA enforcement reports (api.fda.gov/{drug,device,food}/enforcement)',
     sourceUpdated,
@@ -88,6 +118,7 @@ async function recalls() {
       classI: count((r) => r.classification === 'Class I'),
       ...Object.fromEntries(Object.values(CATEGORIES).map((c) => [c.toLowerCase(), count((r) => r.category === c)])),
     },
+    trend,
     previousTotal: old?.counts?.total ?? null,
     newIds,
     recalls: rows,

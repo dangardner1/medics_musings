@@ -457,6 +457,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.medicsmusings.com/stats/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.medicsmusings.com/recalls/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.medicsmusings.com/news/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>

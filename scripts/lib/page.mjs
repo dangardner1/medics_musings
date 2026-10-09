@@ -148,6 +148,7 @@ const MENU_LINKS = [
   ['eponyms/', 'Eponyms', true],
   ['timeline/', 'Timeline', true],
   ['top-10/', 'Top 10', true],
+  ['stats/', 'Health stats'],
   ['news/', 'News of the day'],
   ['games/', 'Games'],
   ['break-room/', 'The Break Room'],
@@ -216,6 +217,7 @@ export const footer = () => `<footer>
     <a href="/eponyms/">Eponym index</a>
     <a href="/timeline/">History timeline</a>
     <a href="/news/">News of the day</a>
+    <a href="/stats/">Health stats</a>
     <a href="/top-10/">Weekly Top 10</a>
     <a href="/games/">Games</a>
     <a href="/break-room/">Break Room</a>
