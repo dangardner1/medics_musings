@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-09",
+ "status": "review",
+ "generated": "2026-10-09T17:25:32.743Z",
+ "check": {
+  "ok": false,
+  "reason": "The target is right (pharma marketing), and the piece doesn't mock patients, authors or individuals, so it is satirical and on-target. The problem is the line 'Few interventions in medicine show such a clean dose-response relationship.' The summary only says gifts and payments increase inappropriate prescribing and likely raise costs. It says nothing about a dose-response finding, so this reads as a specific result the story doesn't support. Remove or soften it, for example: 'Few interventions in medicine are so consistently effective,' and it can pass."
+ },
+ "pick": {
+  "title": "Pharma’s free lunches for doctors boost inappropriate prescribing, analysis finds",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
+  "date": "2026-10-09",
+  "headline": "Study Finds Catered Lunch Remains Pharma's Most Cost-Effective Prescribing Intervention",
+  "take": "A new review finds that gifts and payments from drugmakers increase inappropriate prescribing, likely driving up costs. Few interventions in medicine show such a clean dose-response relationship. The sandwich was never the point, but it is still the only part of the educational program that reliably gets attended."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharma’s free lunches for doctors boost inappropriate prescribing, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Advantage star ratings trigger new bonuses, and uncertainty",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/medicare-advantage-insurers-star-ratings-2027-humana-alignment/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 2,
+   "title": "AI, Tech Leaders Are Lobbying Trump Health Officials in a Government-Run Chat Room",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 3,
+   "title": "AI for breast cancer risk prediction goes DTC, regulatory cloud over Utah sandbox, and AI psychosis",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/breast-cancer-ai-goes-dtc-utah-sandbox-ai-psychosis-health-tech/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 4,
+   "title": "FDA says its safety review of abortion pill will continue into next year",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/fda-mifepristone-abortion-pill-safety-review-continue-into-2027/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 5,
+   "title": "‘Medicare for All’ Is Back. Now Comes the Hard Part.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicare-for-all-proposals-universal-healthcare-implementation-difficult/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 6,
+   "title": "Medical Debt Is Crushing Hospital Patients in Los Angeles. Health Officials May Have a Fix.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/medical-debt-hospital-patients-los-angeles-county-charity-care-presumptive-eligibility/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 7,
+   "title": "HHS Touts New Vaccine-Injury Initiatives",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123340",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 8,
+   "title": "FDA Approves Adjuvant Atezolizumab for Certain Colon Cancers",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/coloncancer/123339",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 9,
+   "title": "Humana soars, Alignment plummets in 2027 Medicare Advantage star ratings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-advantage-stars-2027-winners-losers/832582/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 10,
+   "title": "Straight to the Top: Patients Email Insurance CEOs Over Care Denials",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123327",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 11,
+   "title": "Royal Family Doctor Murdered; $155M Spine Surgery Settlement; Telehealth Conviction",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123319",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 12,
+   "title": "Outpatient shift accelerates as hospital margins rebound",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/outpatient-shift-accelerates-hospital-margins-rebound-strata/832490/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 13,
+   "title": "Medicare penalizes more hospitals for readmissions",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospital-readmission-reduction-program-penalties-rise-2027-cms/832473/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 14,
+   "title": "Why this startup is taking its AI to predict breast cancer risk directly to patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+   "date": "2026-10-08"
+  }
+ ]
+}
