@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-10",
+ "status": "published",
+ "generated": "2026-10-10T16:13:00.018Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is pharma marketing and the cost it passes on to the system. Patients are not mocked, and the closing line about everyone else getting the invoice sides with them. It names no private individual, does not mock the reporter, and quotes nothing. It adds no invented numbers or results, and its claims stay within the summary (inappropriate prescribing, likely higher costs). The deadpan 'return on investment' and 'free lunch program' framing is satirical and does not misstate the story. It involves no death, children or violence."
+ },
+ "pick": {
+  "title": "Pharma’s free lunches for doctors boost inappropriate prescribing, analysis finds",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
+  "date": "2026-10-09",
+  "headline": "Drugmakers' Free Lunch Program Delivers Strong Returns, Analysis Finds",
+  "take": "A new review finds industry gifts and payments increased inappropriate prescribing, likely raising costs. Pharma has long treated the catered sandwich as purely educational, but the marketing budget clearly tracks its return on investment. The lunch was free only to the person eating it. Everyone else gets the invoice, itemized as premiums."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharma’s free lunches for doctors boost inappropriate prescribing, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/09/pharma-free-lunches-to-doctors-boost-inappropriate-prescribing/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Advantage star ratings trigger new bonuses, and uncertainty",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/medicare-advantage-insurers-star-ratings-2027-humana-alignment/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 2,
+   "title": "AI, Tech Leaders Are Lobbying Trump Health Officials in a Government-Run Chat Room",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 3,
+   "title": "Cost of Drugs From Canada Set to Soar for Millions of Americans Due to Federal Rule",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123323",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 4,
+   "title": "HHS Touts New Vaccine-Injury Initiatives",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123340",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 5,
+   "title": "FDA Approves Adjuvant Atezolizumab for Certain Colon Cancers",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/coloncancer/123339",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 6,
+   "title": "Humana soars, Alignment plummets in 2027 Medicare Advantage star ratings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-advantage-stars-2027-winners-losers/832582/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 7,
+   "title": "Pharmalittle: We’re reading about a setback for Argenx, Lilly suits over copycat versions of an obesity drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/09/pharmalittle-were-reading-about-a-setback-for-argenx-lilly-suits-over-copycat-versions-of-an-obesity-drug-and-more/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 8,
+   "title": "The fall of Roe dramatically changed abortion access. This researcher used Reddit to capture how",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/betsy-pleasants-stat-wunderkind-abortion-access-reddit-nlp/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 9,
+   "title": "Journalists Go Behind Health Headlines From Georgia, Michigan, and Russia",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-october-10-2026-dementia-sedation-drugs-russia-lab-death-rural-voters/",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 10,
+   "title": "Decades-Old Schizophrenia Drug Wins Approval for New Formulation",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/psychiatry/schizophrenia/123353",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 11,
+   "title": "New Oral Drug Approved for Herpes Lesions",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/generalinfectiousdisease/123352",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 12,
+   "title": "Biotech leader, leading lab leak theorist no longer in consideration for top infectious disease role",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/steven-quay-no-longer-in-consideration-for-top-infectious-disease-role/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 13,
+   "title": "Hospitals sue – again – to halt Trump administration’s 340B rebate pilot",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/hospitals-sue-to-halt-340b-rebate-pilot-trump/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 14,
+   "title": "Christa Pike's Survival Wasn't a Miracle. That's What Should Scare Us.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/unchartedterritory/123344",
+   "date": "2026-10-09"
+  }
+ ]
+}
