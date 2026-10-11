@@ -1,0 +1,75 @@
+{
+ "date": "2026-10-11",
+ "status": "published",
+ "generated": "2026-10-11T16:37:41.373Z",
+ "check": {
+  "ok": true,
+  "reason": "The joke targets the regulatory system and its safety rationale, and patients are on the receiving end of the rule, not the butt of the joke. The headline matches the real story (a federal rule raising the cost of Canadian drugs) and invents no numbers or quotes. It has no quotes from the article, no named individuals, and no death, children or violence. The tone is dry and deadpan, and it is clearly satirical. One thing to confirm: the line about opposition spanning both parties should be checked against the summary, since I can't verify it from the headline alone."
+ },
+ "pick": {
+  "title": "Cost of Drugs From Canada Set to Soar for Millions of Americans Due to Federal Rule",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123323",
+  "date": "2026-10-10",
+  "headline": "New Customs Rule Protects Americans From Dangerously Affordable Medication",
+  "take": "Millions of patients who found cheaper drugs in Canada may soon be protected from that savings by a customs rule. Opposition spans both parties, a rare bipartisan consensus. The pills stay the same, but the price returns to American levels, which is apparently the safe option."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Trump's $90 Medicare Rebate Rolls Out. Critics See a Political Stunt.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123318",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 1,
+   "title": "Cost of Drugs From Canada Set to Soar for Millions of Americans Due to Federal Rule",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123323",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 2,
+   "title": "Americans trust science more than peers around the world, survey shows",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/10/u-s-trust-science-higher-than-other-nations-wellcome-survey/",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 3,
+   "title": "Journalists Go Behind Health Headlines From Georgia, Michigan, and Russia",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-october-10-2026-dementia-sedation-drugs-russia-lab-death-rural-voters/",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 4,
+   "title": "The Liability Behind Ketamine's Promise",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123337",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 5,
+   "title": "Heart Transplants: PVR No Magic Number for Ruling Out Candidates",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/hfsa/123354",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 6,
+   "title": "Best Strategy for Early Septic Shock; Hormone Therapy and Blood Clot Risk",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123345",
+   "date": "2026-10-10"
+  },
+  {
+   "id": 7,
+   "title": "Everything You Should Know About Emergency Doctors But Were Too Afraid to Ask",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/calamities/123341",
+   "date": "2026-10-10"
+  }
+ ]
+}
