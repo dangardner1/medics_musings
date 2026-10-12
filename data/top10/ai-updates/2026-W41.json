@@ -1,0 +1,302 @@
+{
+ "list": "ai-updates",
+ "week": "2026-W41",
+ "start": "2026-10-05",
+ "end": "2026-10-11",
+ "status": "review",
+ "generated": "2026-10-12T21:46:43.193Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+   "date": "2026-10-12",
+   "take": "An AI chatbot reportedly filed a false murder tip with Philadelphia police. Clinicians know this pattern: a confident historian with no insight, fabricating collateral information. Nobody has yet proposed a capacity assessment for the software."
+  },
+  {
+   "rank": 2,
+   "title": "GPT-6 and Intelligent UI for everyone",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/gpt-6-for-everyone",
+   "date": "2026-10-07",
+   "take": "GPT-6 arrives with an interface that generates visuals on demand. Medicine has long mastered the confident explanation delivered alongside a colorful diagram. Now the hallucinations get graphics, which will help in malpractice depositions."
+  },
+  {
+   "rank": 3,
+   "title": "Disrupting AI-enabled “false front” operations",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "date": "2026-10-08",
+   "take": "OpenAI reports disrupting influence operations that used fake journalists and a fake think tank. Health misinformation has run this playbook for years, but it's reassuring to see the arsonist's equipment supplier doing the fire inspection."
+  },
+  {
+   "rank": 4,
+   "title": "Sharing AI progress in mathematics",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "date": "2026-10-06",
+   "take": "OpenAI shares new results on open math problems, with formal Lean proofs posted for checking. Verifiable claims and public data: a standard clinical AI vendors could try, if the white paper and the pitch deck ever agreed on anything."
+  },
+  {
+   "rank": 5,
+   "title": "Microsoft president says UK is best placed to drive AI regulation",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+   "date": "2026-10-12",
+   "take": "Microsoft's president says milk and washing machines get more oversight than AI companies. Fair, though in medicine we'd note that the milk never offered to summarize a patient chart and then confidently invented an allergy."
+  },
+  {
+   "rank": 6,
+   "title": "Google rolls out improved SynthID AI content detector, now available globally",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+   "date": "2026-10-07",
+   "take": "Google's improved SynthID detector now flags AI content from several vendors, globally. Useful, though in medicine we've learned that a screening test is only as good as its sensitivity, specificity, and what anyone does after it comes back positive."
+  },
+  {
+   "rank": 7,
+   "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+   "date": "2026-10-12",
+   "take": "A startup raised $26M for an app that listens to you in the background so it can help better. Ambient scribes already taught clinicians this model: constant listening, then a note nobody asked for."
+  },
+  {
+   "rank": 8,
+   "title": "Meta releases its first frontier model, Muse Wonder",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+   "date": "2026-10-12",
+   "take": "Meta releases Muse Wonder, its first frontier model, with higher benchmark scores. Benchmarks remain the AI industry's equivalent of surrogate endpoints: impressive, measurable, and only loosely related to whether the patient gets better."
+  },
+  {
+   "rank": 9,
+   "title": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+   "date": "2026-10-12",
+   "take": "Microsoft unveils its third-generation in-house Maia chip to reduce dependence on Nvidia. Every hospital understands vendor dependence, and that the best remedy is paying a different, much larger vendor to build your own."
+  },
+  {
+   "rank": 10,
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/oracle",
+   "date": "2026-10-08",
+   "take": "Oracle reports turning days of work into minutes with ChatGPT and Codex. Healthcare administrators will recognize the promise: a saved week, reinvested immediately into additional documentation requirements for the same clinicians who were supposed to be saved."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "GPT-6 and Intelligent UI for everyone",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/gpt-6-for-everyone",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 1,
+   "title": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 2,
+   "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 3,
+   "title": "“Software is over”: Bold AI developer takes aim at Adobe with open source clones",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 4,
+   "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 5,
+   "title": "Google rolls out improved SynthID AI content detector, now available globally",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 6,
+   "title": "Introducing Playground: Create and play custom games",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 7,
+   "title": "Meta releases its first frontier model, Muse Wonder",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 8,
+   "title": "Elon Musk Bragged About His Grok Lego Star Wars Haul. Then X Users Punked Him",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/elon-musk-bragged-about-his-grok-lego-star-wars-haul-then-x-users-punked-him/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 9,
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/oracle",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 10,
+   "title": "Disrupting AI-enabled “false front” operations",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 11,
+   "title": "Helping teens learn, plan, and shape the future of AI",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/teens-learn-and-plan",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 12,
+   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/radisson",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 13,
+   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/atlassian-partnership",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 14,
+   "title": "How Jump Trading is scaling quant research with ChatGPT",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/jump-trading",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 15,
+   "title": "Sharing AI progress in mathematics",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 16,
+   "title": "Introducing Falcon ASR",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 17,
+   "title": "Epic Games reportedly pivoting to \"AI first\" game development model",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 18,
+   "title": "Muse Wonder Puts Meta Back at the AI Frontier",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/muse-wonder-puts-meta-back-at-the-ai-frontier/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 19,
+   "title": "Meta has some Wonder Full new AI models",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 20,
+   "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 21,
+   "title": "Microsoft president says UK is best placed to drive AI regulation",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 22,
+   "title": "This AI startup says it can generate permit-ready blueprints in minutes",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 23,
+   "title": "Microsoft’s new AI chip makes it less reliant on Nvidia’s GPUs",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 24,
+   "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 25,
+   "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 26,
+   "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 27,
+   "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 28,
+   "title": "I Made Terrible Games With Google’s AI Playground",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/i-made-terrible-games-with-googles-ai-playground/",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 29,
+   "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+   "date": "2026-10-11"
+  }
+ ]
+}

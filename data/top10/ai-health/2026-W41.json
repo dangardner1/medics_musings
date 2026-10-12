@@ -1,0 +1,190 @@
+{
+ "list": "ai-health",
+ "week": "2026-W41",
+ "start": "2026-10-05",
+ "end": "2026-10-11",
+ "status": "review",
+ "generated": "2026-10-12T21:46:43.193Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Conversational diagnostic artificial intelligence in ambulatory primary care: a prospective feasibility study",
+   "source": "Lancet",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42849491/",
+   "date": "2026-10-08",
+   "take": "A conversational diagnostic AI gets a prospective feasibility study in actual ambulatory primary care. Feasibility is the right word: it measures whether the thing can enter the clinic, not whether the clinic can survive the thing's follow-up questions."
+  },
+  {
+   "rank": 2,
+   "title": "AI, Tech Leaders Are Lobbying Trump Health Officials in a Government-Run Chat Room",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
+   "date": "2026-10-09",
+   "take": "CMS reportedly runs a Slack workspace where AI industry insiders and administration officials coordinate a campaign to get Americans to manage their health with AI. Public-private partnership has finally reached the stage of a shared emoji reaction."
+  },
+  {
+   "rank": 3,
+   "title": "More Than 1 in 5 Children Report Using AI for Emotional Support-Is It Good News or Bad?",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826013/",
+   "date": "2026-10-02",
+   "take": "More than one in five children report using AI for emotional support, and JAMA asks whether that is good or bad. Pediatrics now has a new screening question: have you told your chatbot, or only your parents, about the thing you won't tell us?"
+  },
+  {
+   "rank": 4,
+   "title": "Why health AI pilots in Utah may be on a collision course with the FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis/",
+   "date": "2026-10-07",
+   "take": "Utah's AI sandbox may be on a collision course with the FDA over unresolved regulatory questions. The sandbox concept assumes regulators and innovators will meet in the middle; so far they appear to have chosen different middles."
+  },
+  {
+   "rank": 5,
+   "title": "Why this startup is taking its AI to predict breast cancer risk directly to patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+   "date": "2026-10-08",
+   "take": "A breast cancer risk startup didn't wait for doctors and insurers to endorse its AI, so it is going straight to patients. Skipping the gatekeepers is efficient, until the patient arrives at clinic holding a risk score and a lot of questions."
+  },
+  {
+   "rank": 6,
+   "title": "Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+   "date": "2026-10-06",
+   "take": "A physician argues that AI tools can help us document honestly and still inflate hospital bills. Technology promised to reduce administrative burden, and has instead found a more thorough way to describe it, at a higher billing level."
+  },
+  {
+   "rank": 7,
+   "title": "FDA spells out 2027 AI guidance plans",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+   "date": "2026-10-06",
+   "take": "The FDA has laid out its AI guidance plans, with new documents expected in 2027. Medical AI products will continue to be deployed in 2026, which is the regulatory equivalent of building the airplane while the safety manual is in drafting."
+  },
+  {
+   "rank": 8,
+   "title": "A Precedent for Regulating Clinical AI Models",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42848381/",
+   "date": "2026-10-02",
+   "take": "JAMA Health Forum looks for a precedent for regulating clinical AI models. Medicine has regulated drugs and devices for decades, and now explores whether a software update that changes behavior every Tuesday can borrow the paperwork."
+  },
+  {
+   "rank": 9,
+   "title": "Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42823427/",
+   "date": "2026-10-01",
+   "take": "A letter in NPJ Digital Medicine argues for AI that is neither sycophantic nor cold, but emotionally intelligent. Patients are asked to wait for a chatbot with good bedside manner, a standard some of us are still working toward ourselves."
+  },
+  {
+   "rank": 10,
+   "title": "AI-assisted scoping review of code sharing in clinical prediction model research",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42855584/",
+   "date": "2026-10-09",
+   "take": "An AI-assisted review examines code sharing in clinical prediction model research. Using AI to count how often researchers share their code is a nicely recursive way to ask why we're still asked to trust models we can't run."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "AI-assisted scoping review of code sharing in clinical prediction model research",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42855584/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 1,
+   "title": "More Than 1 in 5 Children Report Using AI for Emotional Support-Is It Good News or Bad?",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826013/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 2,
+   "title": "MAGIC: an international network for evaluating generative artificial intelligence in global health",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42839102/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 3,
+   "title": "A Precedent for Regulating Clinical AI Models",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42848381/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 4,
+   "title": "Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42823427/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 5,
+   "title": "Conversational diagnostic artificial intelligence in ambulatory primary care: a prospective feasibility study",
+   "source": "Lancet",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42849491/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 6,
+   "title": "AI for breast cancer risk prediction goes DTC, regulatory cloud over Utah sandbox, and AI psychosis",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/breast-cancer-ai-goes-dtc-utah-sandbox-ai-psychosis-health-tech/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 7,
+   "title": "Why this startup is taking its AI to predict breast cancer risk directly to patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients/",
+   "date": "2026-10-08"
+  },
+  {
+   "id": 8,
+   "title": "Why health AI pilots in Utah may be on a collision course with the FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis/",
+   "date": "2026-10-07"
+  },
+  {
+   "id": 9,
+   "title": "FDA spells out 2027 AI guidance plans",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/fda-spells-out-2027-ai-guidance-plans-health-tech/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 10,
+   "title": "Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research/",
+   "date": "2026-10-06"
+  },
+  {
+   "id": 11,
+   "title": "AI, Tech Leaders Are Lobbying Trump Health Officials in a Government-Run Chat Room",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/ai-tech-lobbying-medicare-medical-records-apps-trump-cms-slack-fda/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 12,
+   "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 13,
+   "title": "The fall of Roe dramatically changed abortion access. This researcher used Reddit to capture how",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/09/betsy-pleasants-stat-wunderkind-abortion-access-reddit-nlp/",
+   "date": "2026-10-09"
+  }
+ ]
+}
