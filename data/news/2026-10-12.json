@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-12",
+ "status": "published",
+ "generated": "2026-10-12T20:15:21.053Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is NIH grant bureaucracy, which is a system target. The piece has no patients, no private individuals, no mockery of the author, no quotes from the article, no invented numbers, and no death, children or violence. The headline's irony of 'streamlining' by adding a supplement fits the story's theme of redundancy, and the closing line repeats 'redundant' on purpose as a joke. The tone is dry and deadpan with no emojis or hashtags. It counts as satire, not a misstatement of the story."
+ },
+ "pick": {
+  "title": "Lessons in Redundancy From an NIH Grant Application",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/opinion/patientcenteredmedicalhome/123370",
+  "date": "2026-10-12",
+  "headline": "NIH Streamlines Paperwork by Adding Supplement to Common Form",
+  "take": "A Common Form that needs a Supplement is a one-size-fits-all garment with its own alterations department. Scientists who could be doing research spend their Sundays telling the government what the government already has on file. Harmonization has never looked so redundant, or so thoroughly redundant."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Trump's $90 Medicare Rebate Rolls Out. Critics See a Political Stunt.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123318",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 1,
+   "title": "Hospitals sue over revamped 340B rebate pilot",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospitals-sue-over-revamped-340b-rebate-pilot/832720/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 2,
+   "title": "'The Public Should Not be Subject to These Quack Medicines': What We Heard This Week",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/what-we-heard/123348",
+   "date": "2026-10-11"
+  },
+  {
+   "id": 3,
+   "title": "Are Concerns Over Avacopan Efficacy Overblown?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/rheumatology/generalrheumatology/123371",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 4,
+   "title": "Lessons in Redundancy From an NIH Grant Application",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/patientcenteredmedicalhome/123370",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 5,
+   "title": "Pan-Amyloid Radiotracer Excels at Early Cardiac Amyloidosis Detection",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/hfsa/123369",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 6,
+   "title": "After Positive Fecal Test, Here's What Gets Patients to Colonoscopy",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/gastroenterology/coloncancer/123368",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 7,
+   "title": "Meth Use Disorder May Benefit From Accelerated Transcranial Magnetic Stimulation",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asfnr/123367",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 8,
+   "title": "The Wrong Parties Are Paying for the Health Consequences of Climate Change",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/climate-checkup/123366",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 9,
+   "title": "Long COVID Linked With Altered Airway Microbiome",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/longcovid/123364",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 10,
+   "title": "Clinical Obesity Rising Among U.S. Adolescents",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/spotlight/obesity/123363",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 11,
+   "title": "Joint Pain Supplement Tied to Patient's Weight Gain, Stretch Marks",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/casestudies/endocrinology/123362",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 12,
+   "title": "Microvascular Measure Gives Clues to Poor Response to Successful Thrombectomy",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asfnr/123361",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 13,
+   "title": "Your service area is not your market",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/your-service-area-is-not-your-market/832390/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 14,
+   "title": "What Gen Z healthcare workers are really looking for",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/what-gen-z-healthcare-workers-are-really-looking-for/832325/",
+   "date": "2026-10-12"
+  }
+ ]
+}
