@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-13",
+ "status": "review",
+ "generated": "2026-10-13T18:12:55.606Z",
+ "check": {
+  "ok": false,
+  "reason": "The take states 'Nearly 40% of advisory committee meetings over 20 years' as fact. Nothing in the real headline supports that figure or time span, and the rules prohibit inventing numbers. Unless the 40% and 20-year figures appear verbatim in the source summary, remove them or use a non-numeric phrase such as 'a large share of meetings.' The rest passes. The target is the system (pharma funding and FDA process), patients are treated as the ones being failed, no reporter is mocked, nothing is quoted, and the tone is dry and deadpan."
+ },
+ "pick": {
+  "title": "Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
+  "date": "2026-10-13",
+  "headline": "FDA Panels Hear From Patients Through Generous Support of Pharmaceutical Industry",
+  "take": "Nearly 40% of advisory committee meetings over 20 years included a patient or consumer rep tied to an advocacy group that pharma funds. The sponsor presents the data and helps underwrite the group that responds to it. Patients deserve a seat at the table that nobody else is paying for."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 1,
+   "title": "FTC demands Martin Shkreli divest his pharma stocks",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/martin-shkreli-pharma-bro-ftc-contempt-stock-trades/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 2,
+   "title": "Pharmalittle: We’re reading about concerns over a rare disease drug, pharma payments to docs, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/13/neurocrine-rare-disease-drug-concerns-pharma-payments-to-doctors/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 3,
+   "title": "Suki raises $90M in Series E round to create AI agents",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 4,
+   "title": "Fact Check: Posts Falsely Claim Senate Candidate Talarico Was at a Mental Facility",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123380",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 5,
+   "title": "Alignment sues CMS over 2027 Medicare Advantage star ratings crash",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/alignment-lawsuit-2027-medicare-advantage-star-ratings-cms/832774/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 6,
+   "title": "UnitedHealth eyes Medicare Advantage opportunities, bolstered by Q3 profit growth",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/unitedhealth-q3-2026-profits-soar-medicare-advantage-strategy/832827/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 7,
+   "title": "New bill would overhaul the No Surprises Act’s arbitration process",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/new-bill-would-overhaul-no-surprises-acts-arbitration-process-frank-pallone/832713/",
+   "date": "2026-10-12"
+  },
+  {
+   "id": 8,
+   "title": "Doctors are giving generously to doctors running for office",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/health-policy-news-doctor-donations-maha-midterms/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 9,
+   "title": "Celeb Accused of Assaulting Nurse; 24M New Dementia Cases; Inappropriate Prescribing",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/nursing/nursing/123379",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 10,
+   "title": "Takeaways from an evaluation of Google’s diagnostic chatbot, AMIE",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/google-amie-diagnostic-chatbot-study-lancet-health-tech/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 11,
+   "title": "How many ways can the Trump administration clamp down on international researchers?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/health-news-trump-admin-clamps-down-on-international-researchers/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 12,
+   "title": "The Sometimes-Awkward Art of Asking for a Second Opinion",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/healthq-second-opinions-doctors-how-to-ask-for/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 13,
+   "title": "People Say These Peptides Hurt Them. Their Stories Are Muffled in MAHA’s Push for Medical Freedom.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/peptides-experimental-drugs-patient-harms-maha-medical-freedom/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: Lethal injection will never be the same after Christa Pike’s botched execution",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/christa-pike-botched-execution-bioethics-end-of-lethal-injection/",
+   "date": "2026-10-13"
+  }
+ ]
+}
