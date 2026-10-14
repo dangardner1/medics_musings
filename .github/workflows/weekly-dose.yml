@@ -1,0 +1,72 @@
+name: Weekly Dose
+
+# The Weekly Dose newsletter: two satirical health care jokes and a cartoon.
+# Hark writes each issue (data/weekly-dose/<date>.json + weekly-dose/<date>/cartoon.jpg)
+# and pushes it. This workflow builds the issue pages, publishes them, waits for
+# them to go live, then emails the issue to the Mailchimp audience (or sends a
+# single test copy when the issue's status is "test"). See scripts/weekly-dose.mjs.
+on:
+  push:
+    branches: [main]
+    paths: ['data/weekly-dose/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-dose
+  cancel-in-progress: false
+
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    environment: MAILCHIMP_API_KEY
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build the pages
+        run: MODE=build node scripts/weekly-dose.mjs
+
+      - name: Publish the pages
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add weekly-dose sitemap.xml index.html
+            git commit -m "Publish The Weekly Dose"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Email the issue
+        run: node scripts/weekly-dose.mjs
+        env:
+          MODE: email
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+
+      - name: Keep a copy of the email
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-dose-preview
+          path: weekly-dose-preview.html
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Record what was emailed
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -n "$(git status --porcelain data/weekly-dose)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/weekly-dose
+            git commit -m "Record Weekly Dose send"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
