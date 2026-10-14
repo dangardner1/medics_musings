@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-14",
+ "status": "review",
+ "generated": "2026-10-14T15:48:12.127Z",
+ "check": {
+  "ok": false,
+  "reason": "The satire is on target. It goes after the system, the patients are on the right side of the joke, and there are no quotes, no mockery of authors, and no death or children. The problem is the take's specific statistic, 'Nearly 40% of FDA advisory meetings over twenty years'. The real headline only says 'many', and nothing visible here confirms that figure or the twenty-year span. Under the rule against inventing numbers, it should be verified against the STAT summary or removed. Rewording it to 'many' or 'a large share' would pass."
+ },
+ "pick": {
+  "title": "Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
+  "date": "2026-10-13",
+  "headline": "FDA Panels Ensure Patient Voice Is Heard, Pending Review by Its Funders",
+  "take": "Nearly 40% of FDA advisory meetings over twenty years included a patient or consumer rep tied to an advocacy group funded by pharma. Patients deserve a real seat at the table. The system keeps handing out seats with a sponsor's logo on the back."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA adcomm members’ ties to industry under scrutiny",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/biotech-news-fda-adcomm-member-ties-to-industry-under-scrutiny/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about Sanofi settling an EU antitrust probe, ‘pharma bro’ Shkreli, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/14/sanofi-settling-european-antitrust-probe-pharma-bro-shkreli/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 2,
+   "title": "The startup chasing ‘general biological intelligence’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/the-startup-chasing-general-biological-intelligence-ai-prognosis/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 3,
+   "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/lobbyists-trade-groups-ama-push-autonomous-clinical-ai-regulations/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 4,
+   "title": "Many patient, consumer reps on FDA advisory panels have ties to groups funded by pharma, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/13/many-patient-and-consumer-reps-on-fda-advisory-committees-ties-to-groups-funded-by-pharma/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 5,
+   "title": "FTC demands Martin Shkreli divest his pharma stocks",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/martin-shkreli-pharma-bro-ftc-contempt-stock-trades/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 6,
+   "title": "Pharmalittle: We’re reading about concerns over a rare disease drug, pharma payments to docs, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/13/neurocrine-rare-disease-drug-concerns-pharma-payments-to-doctors/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 7,
+   "title": "Tylenol Recall; 'Pharma Bro' Violated Ban, FTC Says; Mini Organs Launched Into Space",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/productalert/123396",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 8,
+   "title": "AI Has a Darker Side in Healthcare, Expert Says",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/123393",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 9,
+   "title": "Suki raises $90M in Series E round to create AI agents",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 10,
+   "title": "Fact Check: Posts Falsely Claim Senate Candidate Talarico Was at a Mental Facility",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123380",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 11,
+   "title": "Alignment sues CMS over 2027 Medicare Advantage star ratings crash",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/alignment-lawsuit-2027-medicare-advantage-star-ratings-cms/832774/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 12,
+   "title": "UnitedHealth eyes Medicare Advantage opportunities, bolstered by Q3 profit growth",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/unitedhealth-q3-2026-profits-soar-medicare-advantage-strategy/832827/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 13,
+   "title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 14,
+   "title": "Aging Life Care Managers Can Be a ‘Godsend’ for Families",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/aging/new-old-age-aging-life-care-managers-geriatric-help/",
+   "date": "2026-10-14"
+  }
+ ]
+}
