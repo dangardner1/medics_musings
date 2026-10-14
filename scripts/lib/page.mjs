@@ -154,6 +154,7 @@ const MENU_LINKS = [
   ['break-room/', 'The Break Room'],
   ['line-of-the-day/', 'Line of the day'],
   ['submit/', 'Submit a story', true],
+  ['weekly-dose/', 'The Weekly Dose'],
   ['subscribe/', 'Subscribe'],
   ['#about', 'About'],
 ];
@@ -188,8 +189,10 @@ export function signupSection(data, { location = 'episode_page', picked = [], he
     <div class="wrap">
       <span class="eyebrow">Refill Reminder</span>
       <h2>${esc(heading)}</h2>
-      <p class="newsletter-sub">One short email when a new episode drops. No spam, no upsell, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
+      <p class="newsletter-sub">A short email when a new episode drops, plus The Weekly Dose every Friday: two satirical health care jokes and an original cartoon. No spam, no prior authorization. By subscribing you agree to get these emails; unsubscribe anytime.</p>
       <form class="signup" data-location="${location}">
+        <label class="sr-only" for="signup-name">Your name</label>
+        <input id="signup-name" type="text" name="fname" required autocomplete="name" placeholder="Your name">
         <label class="sr-only" for="signup-email">Email address</label>
         <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
         <button type="submit" class="btn btn-primary">Subscribe</button>
