@@ -1,0 +1,55 @@
+name: Announcement email
+
+# One-off announcement to the Mailchimp audience. Run it by hand from the
+# Actions tab. The content comes from data/announcements/<announce_id>.json.
+# Needs the MAILCHIMP_API_KEY secret in the "MAILCHIMP_API_KEY" environment
+# (same one the new-episode email uses).
+on:
+  workflow_dispatch:
+    inputs:
+      announce_id:
+        description: 'File name (without .json) in data/announcements/'
+        type: string
+        default: pick-a-plan
+      mode:
+        description: 'dry-run = preview only, draft = create in Mailchimp without sending, test = email one address, send = email the audience'
+        type: choice
+        default: dry-run
+        options: [dry-run, draft, test, send]
+      test_email:
+        description: 'Address for mode=test (blank = the audience''s from address)'
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: announce-email
+  cancel-in-progress: false
+
+jobs:
+  email:
+    runs-on: ubuntu-latest
+    environment: MAILCHIMP_API_KEY
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build and send the announcement
+        run: node scripts/announce-email.mjs
+        env:
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          ANNOUNCE_ID: ${{ github.event.inputs.announce_id }}
+          MODE: ${{ github.event.inputs.mode }}
+          TEST_EMAIL: ${{ github.event.inputs.test_email }}
+      - name: Keep a copy of the email that was built
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: announcement-preview
+          path: announcement-preview.html
+          if-no-files-found: ignore
+          retention-days: 14

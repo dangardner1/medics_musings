@@ -1136,6 +1136,8 @@
   .bonus-track h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); max-width: 680px; }
   .bonus-card { margin: 28px 0 0; max-width: 520px; }
   .bonus-art { margin: -16px -16px 0; width: calc(100% + 32px); max-width: none; height: auto; border-radius: 6px 6px 0 0; }
+  .plan-card { margin: 0 0 24px; max-width: 520px; }
+  .plan-video { display: block; width: 100%; max-width: 300px; max-height: 70vh; height: auto; margin: 16px auto 0; border-radius: 6px; background: #000; }
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
@@ -1458,6 +1460,16 @@
       </div>
       <p class="ep-status" id="ep-status" role="status" hidden></p>
       <p class="ep-new-note" id="ep-new-note" hidden></p>
+        <article class="ep-card plan-card" id="pick-a-plan">
+        <img class="bonus-art" src="assets/art/pick-a-plan.jpg" width="1024" height="572" loading="lazy" alt="Pick a Plan: a worried woman at a desk buried in insurance paperwork, folders labeled Medicare, Premiums and Deductibles, with signs reading Hospitals, Choices and Cost">
+        <h3>Pick a Plan</h3>
+        <p class="ep-meta">VIDEO · 1:54</p>
+        <p class="ep-desc">Making sense of healthcare coverage: the podcast for consumers.</p>
+        <video class="plan-video" controls preload="none" playsinline poster="assets/art/pick-a-plan-video-poster.jpg" src="video/pick-a-plan.mp4" aria-label="Play Pick a Plan"></video>
+        <div class="ep-actions">
+          <a class="ep-link" href="video/pick-a-plan.mp4" download>Download MP4</a>
+        </div>
+      </article>
       <div class="ep-grid is-collapsed" id="ep-grid">
         <!-- build:cards -->
         <article class="ep-card" id="scalpel-shennanigans" data-tags="surgery">
