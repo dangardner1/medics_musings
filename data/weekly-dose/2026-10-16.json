@@ -1,0 +1,23 @@
+{
+  "issue": 1,
+  "date": "2026-10-16",
+  "title": "Documented, Therefore It Happened",
+  "preview": "Our AI scribe billed a Level 5 visit for a chat with the parking attendant.",
+  "jokes": [
+    {
+      "setup": "The hospital rolled out an AI scribe that documents every word I say to patients.",
+      "punchline": "Yesterday it billed a Level 5 visit for my chat with the parking attendant."
+    },
+    {
+      "setup": "Our clinic finally hit its patient satisfaction target.",
+      "punchline": "We just stopped telling anyone their blood pressure."
+    }
+  ],
+  "cartoon": {
+    "file": "cartoon.jpg",
+    "caption": "“I’ll be right with you. I’m just documenting how much time I spent with you.”",
+    "alt": "A patient in a paper gown waits on an exam table while the doctor, back turned, types furiously at a computer."
+  },
+  "status": "test",
+  "test_email": "dangardner01@gmail.com"
+}
