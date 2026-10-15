@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-15",
+ "status": "review",
+ "generated": "2026-10-15T15:34:29.665Z",
+ "check": {
+  "ok": false,
+  "reason": "The target is right (nonprofit hospitals and billing bureaucracy), patients are not mocked, and the tone is dry. But the take states a specific statistic, 'nearly half of nonprofit hospitals in Texas say they will bill patients before screening them for financial aid.' Nothing in the real headline supports that figure, and I have no summary confirming it. It also asserts that 'the charity care is real,' which is another unsupported factual claim. Rewrite without the number, using only what the headline supports (obstacles to getting hospital financial aid in Texas), or confirm the figure against the linked story's summary before running it."
+ },
+ "pick": {
+  "title": "What Texas Reveals About the Obstacles to Getting Hospital Financial Aid",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/health-industry/hospital-financial-aid-obstacles-presumptive-eligibility-texas-oregon/",
+  "date": "2026-10-15",
+  "headline": "Nonprofit Hospitals Proud to Offer Financial Aid, Pending Receipt of Bill It Would Have Prevented",
+  "take": "Nearly half of nonprofit hospitals in Texas say they will bill patients before screening them for financial aid. It is a bit like offering a fire extinguisher after the invoice for the house arrives. The charity care is real, the sequencing is a masterpiece of administrative design."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about former FDA head calling DOGE a ‘disaster,’ an AstraZeneca AI deal, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/15/former-fda-commissioner-califf-criticized-doge-astrazeneca-ai-deal/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 1,
+   "title": "‘AI sandboxes’ are all the rage. Advocates scramble to control their future",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/15/scramble-to-shape-regulations-around-state-ai-sandboxes-health-tech/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 2,
+   "title": "What Texas Reveals About the Obstacles to Getting Hospital Financial Aid",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/hospital-financial-aid-obstacles-presumptive-eligibility-texas-oregon/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 3,
+   "title": "Compass Pathways CEO: Psychedelics company will ‘go slow before we go fast’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/compass-pathways-psychedelics-stat-summit/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 4,
+   "title": "Former FDA officials blast DOGE as ‘one of the biggest disasters in American history’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/former-fda-commissioners-say-recruit-defend-support-agency-workforce/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 5,
+   "title": "As White House shifts focus toward AI and tech, U.S. science leaders defend role of the American university",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/american-science-funding-university-industry-shift-stat-summit-boston-2026/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 6,
+   "title": "How consumer tech company Whoop is building for Medicare patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/whoop-ami-bhatt-population-health-stat-summit-boston-2026/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 7,
+   "title": "FDA adcomm members’ ties to industry under scrutiny",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/biotech-news-fda-adcomm-member-ties-to-industry-under-scrutiny/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 8,
+   "title": "Pharmalittle: We’re reading about Sanofi settling an EU antitrust probe, ‘pharma bro’ Shkreli, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/14/sanofi-settling-european-antitrust-probe-pharma-bro-shkreli/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 9,
+   "title": "The startup chasing ‘general biological intelligence’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/the-startup-chasing-general-biological-intelligence-ai-prognosis/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 10,
+   "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/lobbyists-trade-groups-ama-push-autonomous-clinical-ai-regulations/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 11,
+   "title": "AI-Generated Viruses Pose a Threat. But Natural Viruses Are a Greater Risk.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123404",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 12,
+   "title": "7 Takeaways From an Investigation Into Financial Aid at Texas Hospitals",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/patient-financial-aid-texas-hospitals-charity-care-seven-takeaways/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 13,
+   "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 14,
+   "title": "FDA Approves First Treatment for Certain People With BCG-Unresponsive Bladder Cancer",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-certain-people-bcg-unresponsive-bladder-cancer",
+   "date": "2026-10-14"
+  }
+ ]
+}
