@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-17",
+ "status": "published",
+ "generated": "2026-10-17T14:10:52.774Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is hospital and health-system executives and their business strategy, not patients. The 'healthy as an untapped revenue source' framing mocks the system's monetization instincts, and the evidence-base jab is aimed at the industry. It does not misstate the story, which is about hospitals launching longevity clinics for revenue. It invents no numbers or quotes, quotes nothing from the article, and does not mock the reporter. It avoids death, children and violence. The tone is dry and deadpan with no emojis or hashtags, and it is genuinely satirical."
+ },
+ "pick": {
+  "title": "Hospitals’ next lucrative bet — longevity clinics",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/16/readout-loud-podcast-hospitals-longevity-clinics-northwestern/",
+  "date": "2026-10-16",
+  "headline": "Hospitals, Having Monetized Illness, Move Upstream to Monetize Not Being Sick",
+  "take": "Health systems have identified a new service line: the healthy, who until now were an untapped revenue source. The business case is sound, since a well person is just a patient the system hasn't billed yet. Expect a rigorous prospectus and a much thinner evidence base."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about an HHS peptide push, Trump’s pharma stock holdings, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/16/hhs-peptide-push-trump-pharma-stock-holdings/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 1,
+   "title": "Next Governor To Face Thorny Choices After California’s Rapid Medicaid Expansion",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/medicaid-cuts-medi-cal-insurance-immigrants-hilton-becerra-california-governor/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 2,
+   "title": "OTC Alpha-Agonist Drops for Eye Redness Get FDA Green Light",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/ophthalmology/generalophthalmology/123455",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 3,
+   "title": "Keytruda Biosimilar Advances; Oncologist Turned Patient; Will AI Cure Cancer?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123448",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 4,
+   "title": "RevMed’s pancreatic cancer drug nears European approval",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/biotech-news-revmed-pancreatic-cancer-drug-nears-european-approval/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 5,
+   "title": "Jury rules in favor of ousted Cambridge scientist David Sabatini, with $6 million in damages to be awarded",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/david-sabatini-wins-sexual-misconduct-lawsuit-metoo/",
+   "date": "2026-10-17"
+  },
+  {
+   "id": 6,
+   "title": "Hospitals’ next lucrative bet — longevity clinics",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/readout-loud-podcast-hospitals-longevity-clinics-northwestern/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 7,
+   "title": "Up and down the ladder: The latest comings and goings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/16/up-down-ladder-jobs-pharma-biotech-gilead-bausch-sanofi/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 8,
+   "title": "Trade association sues Trump administration over ACA broker, agent freeze",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hhs-cms-aca-broker-freeze-lawsuit-nabip/833209/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 9,
+   "title": "What to read before you go see that new documentary on Elizabeth Holmes",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/health-news-what-to-read-before-elizabeth-holmes-you-can-see-everything/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 10,
+   "title": "After Booting 760K People From ACA Plans, Trump Administration Has Added Some Back",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/trump-aca-affordable-care-act-obamacare-cms-fraud-cancellations-reinstatements/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 11,
+   "title": "Coerced sex or a jealous ex? Jury weighs dueling accounts of star scientist David Sabatini’s downfall",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/david-sabatini-civil-trial-highlights-permissive-sexual-norms-whitehead-metoo/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 12,
+   "title": "In DOGE’s aftermath, federal health workers bristle at new performance reviews",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/federal-performance-reviews-health-agency-employees-wary-after-doge/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 13,
+   "title": "Opinion: Is Milton Friedman to blame for America’s health care woes?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/neoliberalism-health-care-milton-friedman-john-mcdonough-stuart-butler-debate/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: I thought I knew why patients stopped taking their medicine. I was wrong",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/nonadherence-medication-stopped-identity-pharmacist-side-effects-prevent/",
+   "date": "2026-10-16"
+  }
+ ]
+}
