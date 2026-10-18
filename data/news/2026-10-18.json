@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-18",
+ "status": "review",
+ "generated": "2026-10-18T14:32:17.866Z",
+ "check": {
+  "ok": false,
+  "reason": "The take states that 'nearly half of Texas nonprofit hospitals in this investigation' will send the bill before screening for aid. The real headline gives no such figure, and nothing provided supports it, so it risks being an invented statistic presented as fact. The target (hospital billing workflows) and the tone are fine, and the penicillin-allergy analogy is a good deadpan clinical joke. It would pass if the number were removed or replaced with wording the source supports, such as 'some' or 'many' hospitals, or if the figure were confirmed against the article."
+ },
+ "pick": {
+  "title": "What Texas Reveals About the Obstacles to Getting Hospital Financial Aid",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/health-industry/hospital-financial-aid-obstacles-presumptive-eligibility-texas-oregon/",
+  "date": "2026-10-15",
+  "headline": "Some Nonprofit Hospitals Happy to Discuss Financial Aid After Billing You First",
+  "take": "Nearly half of Texas nonprofit hospitals in this investigation say they'll send the bill before screening for financial help. It's like checking for a penicillin allergy after the infusion. Charity care exists, but the workflow ensures the first thing patients receive is the invoice, not the help."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about an HHS peptide push, Trump’s pharma stock holdings, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/16/hhs-peptide-push-trump-pharma-stock-holdings/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 1,
+   "title": "Next Governor To Face Thorny Choices After California’s Rapid Medicaid Expansion",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/medicaid-cuts-medi-cal-insurance-immigrants-hilton-becerra-california-governor/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 2,
+   "title": "Former FDA commissioners Califf, Gottlieb, Sharpless lay into current HHS leadership",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/15/health-policy-news-fda-califf-gottlieb-sharpless-criticize-hhs-leadership/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 3,
+   "title": "Pharmalittle: We’re reading about former FDA head calling DOGE a ‘disaster,’ an AstraZeneca AI deal, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/15/former-fda-commissioner-califf-criticized-doge-astrazeneca-ai-deal/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 4,
+   "title": "‘AI sandboxes’ are all the rage. Advocates scramble to control their future",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/15/scramble-to-shape-regulations-around-state-ai-sandboxes-health-tech/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 5,
+   "title": "What Texas Reveals About the Obstacles to Getting Hospital Financial Aid",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/hospital-financial-aid-obstacles-presumptive-eligibility-texas-oregon/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 6,
+   "title": "Trump Invested More in Drugmakers That Benefited From Medicare Exemptions, Dems Say",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123445",
+   "date": "2026-10-18"
+  },
+  {
+   "id": 7,
+   "title": "Adult ADHD; Encouraging Advance Care Planning; Hospital Closures in the U.S.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123450",
+   "date": "2026-10-17"
+  },
+  {
+   "id": 8,
+   "title": "OTC Alpha-Agonist Drops for Eye Redness Get FDA Green Light",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/ophthalmology/generalophthalmology/123455",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 9,
+   "title": "Keytruda Biosimilar Advances; Oncologist Turned Patient; Will AI Cure Cancer?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123448",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 10,
+   "title": "Are Med Students Cheating if They Use AI?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicaleducation/123439",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 11,
+   "title": "AMA releases governance framework for agentic AI in healthcare",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 12,
+   "title": "FDA ‘reset’ continues with new plan for reviewing rare disease drugs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/fda-rare-disease-framework-initiative-drug-development/833119/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 13,
+   "title": "How consumer tech company Whoop is building for Medicare patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/whoop-ami-bhatt-population-health-stat-summit-boston-2026/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 14,
+   "title": "RevMed’s pancreatic cancer drug nears European approval",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/16/biotech-news-revmed-pancreatic-cancer-drug-nears-european-approval/",
+   "date": "2026-10-16"
+  }
+ ]
+}
