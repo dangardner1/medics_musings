@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-19",
+ "status": "published",
+ "generated": "2026-10-19T17:26:49.683Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: payers, providers and vendors automating the same dispute while selling each other tools. The patient is shown as the person left on hold, so the joke is on their side. It has no invented numbers or quotes, no article quotes, no mockery of authors, and no death, children or violence. The headline is a clear satirical extension of the real story about AI payer intelligence in revenue cycle, not a misstatement of it. The tone is dry and deadpan with no emojis or hashtags, and it reads as satire rather than a plain summary."
+ },
+ "pick": {
+  "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+  "date": "2026-10-19",
+  "headline": "Hospital Buys Software to Predict Which Insurer Denials It Will Pay Software to Appeal",
+  "take": "Payers use AI to deny claims. Providers now use AI to anticipate the denials. Everyone is automating the same argument, and the only fixed cost is the invoice for the tools. Meanwhile the patient still waits on hold for a prior authorization that two algorithms have already discussed without them."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "CMS proposes rule to clean up MA provider directories, shine light on PBMs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-rule-clean-up-ma-provider-directories-pbms/833325/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 1,
+   "title": "3 things healthcare leaders should know about AI-native EHRs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/3-things-healthcare-leaders-should-know-about-ai-native-ehrs/832643/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 2,
+   "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 3,
+   "title": "Trump Invested More in Drugmakers That Benefited From Medicare Exemptions, Dems Say",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123445",
+   "date": "2026-10-18"
+  },
+  {
+   "id": 4,
+   "title": "Pharmalittle: We’re reading about Roche investments in Germany, a Gilead bowel disease drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/19/roche-investments-in-germany-gilead-bowel-disease-drug/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 5,
+   "title": "The umpires getting rich off surprise medical bills, and MLB job lock",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/no-surprises-act-arbitrators-getting-rich-jake-bauers-health-insurance/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 6,
+   "title": "China moves to restrict foreign biotech acquisitions",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/biotech-news-china-moves-to-restrict-foreign-biotech-acquisitons/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 7,
+   "title": "Two former Republican lawmakers say the GOP’s vaccine position is a liability",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/health-news-two-former-republican-congressmen-against-gop-vaccine-liability/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 8,
+   "title": "Four Red Flags and One Truth Amid the Peptide Hype",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/peptide-hype-experimental-unproven-drugs-red-flags/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 9,
+   "title": "GOP Focuses on Fraud, Seeking To Redirect Voters’ Ire Over Healthcare Costs",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/republicans-gop-fraud-midterms-election-voters-medicaid-obamacare-costs-affordability/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 10,
+   "title": "Readers Are Pleading To Make American Healthcare Greater",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/letter-to-the-editor/readers-plead-make-american-healthcare-greater-dementia-care-sedation-er-triage-upcoding-october-2026/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 11,
+   "title": "Gilead’s IBD drug eliminated symptoms for patients, mid-stage study finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/gilead-ibs-drug-succeeds-phase-2-trial/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 12,
+   "title": "Top immunology association divided over $8.4-billion California ballot measure to fund the field, emails show",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/california-prop-38-immunology-research-bond-oddly-specific-earmark/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 13,
+   "title": "Does Isomorphic Labs have what it takes to revolutionize drugmaking?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/can-isomorphic-labs-revolutionize-drugmaking/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: Measles is back — and becoming a midterm liability for Republicans",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/19/measles-2026-midterms-vaccine-hesitancy-liability-republicans/",
+   "date": "2026-10-19"
+  }
+ ]
+}
