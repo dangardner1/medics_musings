@@ -1,0 +1,253 @@
+{
+ "list": "ai-health",
+ "week": "2026-W42",
+ "start": "2026-10-12",
+ "end": "2026-10-18",
+ "status": "review",
+ "generated": "2026-10-19T19:22:40.860Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Longitudinal effects of ambient artificial intelligence scribe use on documentation burden and financial productivity in primary care: a quasi-experimental study",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893542/",
+   "date": "2026-10-18",
+   "take": "A study of ambient AI scribes measures documentation burden and financial productivity. Guess which outcome the budget committee will read first."
+  },
+  {
+   "rank": 2,
+   "title": "Takeaways from an evaluation of Google’s diagnostic chatbot, AMIE",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/google-amie-diagnostic-chatbot-study-lancet-health-tech/",
+   "date": "2026-10-13",
+   "take": "Google's diagnostic chatbot gets a Lancet evaluation. Next comes the harder test: a patient whose history changes depending on who is asking."
+  },
+  {
+   "rank": 3,
+   "title": "Transparency features alone are insufficient for trust calibration in artificial intelligence diagnostic support",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42872605/",
+   "date": "2026-10-14",
+   "take": "Showing clinicians how the AI works isn't enough to calibrate their trust. Vendors will respond by making the info icon slightly bigger."
+  },
+  {
+   "rank": 4,
+   "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/lobbyists-trade-groups-ama-push-autonomous-clinical-ai-regulations/",
+   "date": "2026-10-14",
+   "take": "Doctor groups, hospital groups and trade groups are working behind the scenes on state medical AI rules. Nothing says patient safety like a well-attended stakeholder meeting."
+  },
+  {
+   "rank": 5,
+   "title": "Reporting completeness of clinical trials evaluating large language model interventions in medicine: systematic review",
+   "source": "BMJ",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869550/",
+   "date": "2026-10-13",
+   "take": "A BMJ systematic review checks how completely trials of LLM interventions are reported. The field raced to deploy these tools, so someone had to read the paperwork."
+  },
+  {
+   "rank": 6,
+   "title": "AMA releases governance framework for agentic AI in healthcare",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/",
+   "date": "2026-10-15",
+   "take": "The AMA releases a governance framework for agentic AI. Reassuring, since the agents are surely waiting politely for it."
+  },
+  {
+   "rank": 7,
+   "title": "Avoiding a 2-Tier AI Ecosystem in Health Care",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886495/",
+   "date": "2026-10-02",
+   "take": "JAMA Health Forum worries about a two-tier AI ecosystem, where well-resourced hospitals get the copilots and everyone else gets a webinar."
+  },
+  {
+   "rank": 8,
+   "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+   "date": "2026-10-19",
+   "take": "AI to stop denials before they happen, presumably to be met by AI that issues them. Healthcare's arms race continues, now with better dashboards and the same paperwork."
+  },
+  {
+   "rank": 9,
+   "title": "Human-artificial intelligence collaboration for comanaging epilepsy in real time",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869994/",
+   "date": "2026-10-13",
+   "take": "Nature Medicine reports human-AI co-management of epilepsy in real time. A colleague who responds instantly is welcome, though the prior authorization remains stubbornly human."
+  },
+  {
+   "rank": 10,
+   "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+   "date": "2026-10-17",
+   "take": "Wired reports AI lacks the data to decode our dynamic genomes. A rare case of limits being acknowledged before the funding round."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Reporting completeness of clinical trials evaluating large language model interventions in medicine: systematic review",
+   "source": "BMJ",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869550/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 1,
+   "title": "Current status and future outlook of artificial intelligence and automation in intravenous infusion systems",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42875479/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 2,
+   "title": "Avoiding a 2-Tier AI Ecosystem in Health Care",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886495/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 3,
+   "title": "Transparency features alone are insufficient for trust calibration in artificial intelligence diagnostic support",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42872605/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 4,
+   "title": "The missing layer: decision integrity as a verifiable assurance layer in interpretive clinical artificial intelligence",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886569/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 5,
+   "title": "Keeping artificial intelligence agents within the clinical task",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42888106/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 6,
+   "title": "Public Perceptions of Timeliness for AI Use and Human Oversight",
+   "source": "JAMA Netw Open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42873502/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 7,
+   "title": "Human-artificial intelligence collaboration for comanaging epilepsy in real time",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42869994/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 8,
+   "title": "AI-assisted scoping review of code sharing in clinical prediction model research",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42855584/",
+   "date": "2026-10-09"
+  },
+  {
+   "id": 9,
+   "title": "Physician Training for the AI Era: Rethinking a Century-Old Wager",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42873529/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 10,
+   "title": "Longitudinal effects of ambient artificial intelligence scribe use on documentation burden and financial productivity in primary care: a quasi-experimental study",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893542/",
+   "date": "2026-10-18"
+  },
+  {
+   "id": 11,
+   "title": "‘AI sandboxes’ are all the rage. Advocates scramble to control their future",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/15/scramble-to-shape-regulations-around-state-ai-sandboxes-health-tech/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 12,
+   "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/lobbyists-trade-groups-ama-push-autonomous-clinical-ai-regulations/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 13,
+   "title": "Takeaways from an evaluation of Google’s diagnostic chatbot, AMIE",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/13/google-amie-diagnostic-chatbot-study-lancet-health-tech/",
+   "date": "2026-10-13"
+  },
+  {
+   "id": 14,
+   "title": "3 things healthcare leaders should know about AI-native EHRs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/3-things-healthcare-leaders-should-know-about-ai-native-ehrs/832643/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 15,
+   "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 16,
+   "title": "Keytruda Biosimilar Advances; Oncologist Turned Patient; Will AI Cure Cancer?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123448",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 17,
+   "title": "AMA releases governance framework for agentic AI in healthcare",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ama-releases-governance-framework-for-agentic-ai-in-healthcare/833120/",
+   "date": "2026-10-15"
+  },
+  {
+   "id": 18,
+   "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+   "date": "2026-10-17"
+  },
+  {
+   "id": 19,
+   "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 20,
+   "title": "Researchers use AI to design proteins that cut up other proteins",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/science/2026/10/researchers-use-ai-to-design-proteins-that-cut-up-other-proteins/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 21,
+   "title": "The startup chasing ‘general biological intelligence’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/14/the-startup-chasing-general-biological-intelligence-ai-prognosis/",
+   "date": "2026-10-14"
+  },
+  {
+   "id": 22,
+   "title": "'Tech Is Not Good or Bad, But Neither Is it Neutral': What We Heard This Week",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/what-we-heard/123452",
+   "date": "2026-10-18"
+  }
+ ]
+}
