@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-20",
+ "status": "published",
+ "generated": "2026-10-20T15:38:00.900Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: hospital revenue-cycle AI, insurer AI and the denial bureaucracy. Patients are not mocked, and the line about the explanation of benefits and the unasked question of whether care was needed puts them on the right side of the joke. The take matches the real story (AI that anticipates payer denials), hedges the insurer-AI link with 'presumably,' and invents no numbers or quotes. It doesn't quote the article, mock the author, or touch death, children or violence. The tone is dry and deadpan, with no emojis or hashtags, and it is clearly satirical."
+ },
+ "pick": {
+  "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+  "date": "2026-10-19",
+  "headline": "Hospital AI Now Predicts What Insurer AI Will Deny, Calls It Progress",
+  "take": "Revenue cycle teams can now use AI to anticipate denials before they happen, presumably from the insurer's AI. Two algorithms will negotiate coverage while the clinician waits on hold, and the patient gets an explanation of benefits. Nobody has yet asked whether the care was needed."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about drug launch prices, an AstraZeneca AI deal, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/20/drug-launch-prices-rose-astrazeneca-ai-deal/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 1,
+   "title": "Dana-Farber, Beth Israel to begin construction of new $1.68 billion cancer hospital",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/20/dana-farber-beth-israel-new-cancer-hospital-construction/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 2,
+   "title": "Democrats Demand Tougher Standards for Companies Running Medicaid Systems",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/medicaid-eligibility-computer-systems-deloitte-democratic-senators-demand-tougher-standards/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 3,
+   "title": "Scientist Wins Defamation Suit; 1.5M Pounds of Meat Recalled; Measles May Cost Votes",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/ethics/123474",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 4,
+   "title": "FDA Expands Ryzumvi Approval to Include Presbyopia",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/ophthalmology/generalophthalmology/123467",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 5,
+   "title": "CMS proposes rule to clean up MA provider directories, shine light on PBMs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-rule-clean-up-ma-provider-directories-pbms/833325/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 6,
+   "title": "3 things healthcare leaders should know about AI-native EHRs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/3-things-healthcare-leaders-should-know-about-ai-native-ehrs/832643/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 7,
+   "title": "Why AI-driven payer intelligence is a revenue cycle imperative",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/why-ai-driven-payer-intelligence-is-a-revenue-cycle-imperative/832756/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 8,
+   "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 9,
+   "title": "Launch prices for new medicines dipped slightly last year but remain high, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/20/launch-price-of-new-medicines-drop-very-slightly-2025/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 10,
+   "title": "The key health care ballot measures we’re watching in the midterms",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/20/what-health-policy-battles-reveal-about-america-midterms-2026/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 11,
+   "title": "Opinion: Resident physicians may lose some of their most important work hour protections",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/20/acgme-resident-physicians-work-hour-rules-time-off-between-shifts/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 12,
+   "title": "FDA Approves Immunotherapy That May Allow Certain Patients with Rectal Cancer to Avoid Chemotherapy, Radiation and Surgery",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 13,
+   "title": "Pharmalittle: We’re reading about Roche investments in Germany, a Gilead bowel disease drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/19/roche-investments-in-germany-gilead-bowel-disease-drug/",
+   "date": "2026-10-19"
+  },
+  {
+   "id": 14,
+   "title": "Woman's 3-Year Wait for Intestine Shows the Organ Transplant System's Complexity",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/transplantation/transplantation/123475",
+   "date": "2026-10-20"
+  }
+ ]
+}
