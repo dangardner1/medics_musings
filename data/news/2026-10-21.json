@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-21",
+ "status": "published",
+ "generated": "2026-10-21T15:55:47.447Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is hospitals and their lobbying, and patients are treated as the ones the system fails. It has no invented numbers or quotes, doesn't mock the reporter, and avoids death, children and violence. The 'relief from relief' wordplay and the closing line about who gets screened for relief are dry and deadpan, so it counts as satire. The claim that hospitals want the law rolled back over federal cuts is a factual assertion we can't verify from the headline alone, so it's worth a quick check against the article before recording."
+ },
+ "pick": {
+  "title": "States Are Forcing Hospitals To Offer More People Financial Aid. In Oregon, It’s Working.",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/health-care-costs/oregon-hospitals-presumptive-eligibility-screening-law-medical-debt-tradeoffs/",
+  "date": "2026-10-21",
+  "headline": "Oregon Financial Aid Law Works; Hospitals Seek Relief From Relief",
+  "take": "Oregon required hospitals to screen patients for aid they might already qualify for, and patients got immediate relief. Hospitals now want the law rolled back, citing federal cuts. Relief is clearly available in this system. The only open question is who gets screened for it."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "A bipartisan group of lawmakers urges the FDA to close a peptide loophole",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/20/health-policy-news-bipartisan-group-of-lawmaker-urges-fda-to-close-peptide-loophole/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about drug launch prices, an AstraZeneca AI deal, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/20/drug-launch-prices-rose-astrazeneca-ai-deal/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 2,
+   "title": "Dana-Farber, Beth Israel to begin construction of new $1.68 billion cancer hospital",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/20/dana-farber-beth-israel-new-cancer-hospital-construction/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 3,
+   "title": "Democrats Demand Tougher Standards for Companies Running Medicaid Systems",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/medicaid-eligibility-computer-systems-deloitte-democratic-senators-demand-tougher-standards/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 4,
+   "title": "Tele-ICU Program Shortened Hospital Stays",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/chest/123499",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 5,
+   "title": "FDA Green Lights Potential Functional Cure for Chronic Hep B",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/hepatitis/123498",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 6,
+   "title": "Doctors Push Back on Claim That El-Sayed Is Not a Physician",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123497",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 7,
+   "title": "OpenEvidence, Doximity settle thorny AI legal battle",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/openevidence-doximity-settle-explosive-ai-legal-battle/833480/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 8,
+   "title": "GSK picks up hep B drug approval",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/biotech-news-gsk-picks-up-hep-b-drug-approval/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 9,
+   "title": "Pharmalittle: We’re reading about Mark Cuban eyeing rare disease drugs, a ketamine gold rush, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/21/mark-cuban-eyes-rare-disease-drugs-ketamine-gold-rush/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 10,
+   "title": "States Are Forcing Hospitals To Offer More People Financial Aid. In Oregon, It’s Working.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/oregon-hospitals-presumptive-eligibility-screening-law-medical-debt-tradeoffs/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 11,
+   "title": "Mark Cuban wants to crack open the market for rare disease treatments",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/mark-cuban-cost-plus-drugs-rare-disease-medicines/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 12,
+   "title": "FDA Approves First-of-Its-Kind Chronic Hepatitis B Treatment",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 13,
+   "title": "FDA Approves Once-Weekly Generic Hormone Therapy Patch for Women",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 14,
+   "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
+   "date": "2026-10-20"
+  }
+ ]
+}
