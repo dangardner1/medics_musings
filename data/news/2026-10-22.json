@@ -1,0 +1,113 @@
+{
+ "date": "2026-10-22",
+ "status": "draft",
+ "generated": "2026-10-22T15:51:58.314Z",
+ "pick": null,
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about a U.S. rule on Chinese deals, Belgium refusing Mounjaro coverage, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/22/chinese-biotech-deals-scrutiny-belgium-refuses-mounjaro-coverage/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 1,
+   "title": "FDA has finalized its guidance on apps related to drugs, pharma rejoices",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/fda-pdurs-guidance-dtx-telehealth-glp1-addiction-health-tech/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 2,
+   "title": "Health insurance premiums jump 9%, and more Americans don’t have access to coverage",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/health-news-insurance-premiums-jump-more-americans-lose-coverage/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 3,
+   "title": "Workers are paying 9% more for family health coverage this year, a higher jump than in the recent past",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/kff-2026-benefits-survey-9-percent-premium-increase/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 4,
+   "title": "Trump Dangles Rural Health Dollars To Push States To Change Hospital Laws",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/rural-health/rhtp-funding-certificate-of-need-con-laws-hospitals-tennessee/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 5,
+   "title": "Telehealth leapfrogs FDA approval with off-label GLP-1 prescriptions for addiction",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/glp-1-drugs-substance-use-disorder-telehealth-off-label-prescription/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 6,
+   "title": "CMS extends fraud crackdown to New York’s adult day care program",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/cms-medicaid-fraud-nyc-adult-daycare-operators/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 7,
+   "title": "Hackensack Meridian, Hunterdon pen merger agreement",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hackensack-meridian-hunterdon-pen-merger-agreement/833610/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 8,
+   "title": "Tele-ICU Program Shortened Hospital Stays",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/chest/123499",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 9,
+   "title": "Elevance sees Medicaid momentum in Q3",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/elevance-medicaid-momentum-q3-2026-elv/833559/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 10,
+   "title": "Job-Based Health Plan Costs Rise, With Little Relief in Sight",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/kff-survey-employer-based-health-plan-costs-rise-2026-2027/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 11,
+   "title": "What’s the deal with Isomorphic Labs?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/whats-the-deal-with-isomorphic-labs-ai-prognosis/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 12,
+   "title": "GSK picks up hep B drug approval",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/biotech-news-gsk-picks-up-hep-b-drug-approval/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 13,
+   "title": "Pharmalittle: We’re reading about Mark Cuban eyeing rare disease drugs, a ketamine gold rush, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/21/mark-cuban-eyes-rare-disease-drugs-ketamine-gold-rush/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 14,
+   "title": "States Are Forcing Hospitals To Offer More People Financial Aid. In Oregon, It’s Working.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/oregon-hospitals-presumptive-eligibility-screening-law-medical-debt-tradeoffs/",
+   "date": "2026-10-21"
+  }
+ ]
+}
