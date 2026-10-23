@@ -1,0 +1,22 @@
+{
+  "issue": 2,
+  "date": "2026-10-23",
+  "title": "Your Call Is Important To Us",
+  "preview": "Prior auth, patient portals, and a very patient patient.",
+  "jokes": [
+    {
+      "setup": "My insurer told me prior authorization usually takes just five to seven business days.",
+      "punchline": "Fortunately, my appendix has a very flexible schedule and a strong sense of customer loyalty."
+    },
+    {
+      "setup": "The new patient portal lets you view your test results the instant they're ready.",
+      "punchline": "You'll be thrilled to see them before your doctor does, and to learn that \"abnormal\" is a lowercase word with a very uppercase font."
+    }
+  ],
+  "cartoon": {
+    "file": "cartoon.jpg",
+    "caption": "“Thank you for your patience, Mr. Hale. Your estimated wait is still ‘about fifteen minutes.’”",
+    "alt": "A bearded patient with a beard reaching the floor and tangled in cobwebs sits calmly in a waiting room while a receptionist holds up a clipboard."
+  },
+  "status": "send"
+}
