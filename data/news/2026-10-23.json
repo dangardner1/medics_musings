@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-23",
+ "status": "review",
+ "generated": "2026-10-23T15:43:21.825Z",
+ "check": {
+  "ok": false,
+  "reason": "The patient angle is fine: the target is the system, and the forms line sympathizes with patients. The problem is invented specifics. The real headline says only that state officials are meeting to swap notes. Our headline adds 'Maryland' and upgrades 'state officials' to 'Medicaid Directors', and the take adds 'behind closed doors'. None of these is supported by the headline we were given, so they risk misstating the story. 'Unreleased homework' also implies missing federal guidance that the headline doesn't mention. Remove or verify the location, the title and the closed-door detail, and keep the joke about officials comparing notes on a policy that is already law."
+ },
+ "pick": {
+  "title": "State officials scrambling to implement Medicaid work requirements meet up to swap notes",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/23/state-medicaid-officials-prepare-for-new-work-requirements/",
+  "date": "2026-10-23",
+  "headline": "Medicaid Directors Convene in Maryland to Compare Notes on Unreleased Homework",
+  "take": "State officials are gathering behind closed doors to figure out how to verify work requirements that are already law. Nothing says confidence in a policy like a conference where everyone asks what the others are doing. The patients, as usual, will be the ones filling out the forms."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Anxiety builds over Medicaid work requirements",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/medicaid-work-requirements-anxiety-morning-rounds-health-news/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 1,
+   "title": "AI drug firm Pathos raises $237 million, pushing valuation to $3 billion",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/pathos-ai-bristol-myers-squibb-tempus-deal/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 2,
+   "title": "Medicaid at Risk for Hundreds of Thousands of Lawfully Present Immigrants",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/wamu-health-hub-medicaid-legal-immigrants-lose-coverage-gop-law/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 3,
+   "title": "GOP Congressman in California Swing-District Race Defends Vote for Medicaid Cuts",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/valadao-villegas-california-22nd-house-district-healthcare-costs-ads-swing/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 4,
+   "title": "State officials scrambling to implement Medicaid work requirements meet up to swap notes",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/state-medicaid-officials-prepare-for-new-work-requirements/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 5,
+   "title": "Opinion: New Medicare policies will keep important pain relief from some patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/severe-pain-policy-medicare-coverage-macs-nerve-block/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 6,
+   "title": "Trump Dangles Rural Health Dollars To Push States To Change Hospital Laws",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/rural-health/rhtp-funding-certificate-of-need-con-laws-hospitals-tennessee/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 7,
+   "title": "National Plan for Alzheimer's and Dementia Gets an Update From HHS",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/alzheimersdisease/123535",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 8,
+   "title": "Ob/Gyn Reacts to 'Love Is Blind'; Epic, Stop Adding Clicks; Celsius for Lunch",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/popmedicine/popmedicine/123532",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 9,
+   "title": "Molina joins Medicaid recovery bandwagon despite mixed Q3",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/molina-q3-2026-medicaid-recovery-momentum/833650/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 10,
+   "title": "Developers, not doctors, should be held accountable for generative AI medical devices, providers say",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/developers-not-doctors-held-accountable-generative-ai-medical-devices-fda/833738/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 11,
+   "title": "FDA finalizes its guidance on apps related to drugs, pharma rejoices",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/fda-pdurs-guidance-dtx-telehealth-glp1-addiction-health-tech/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 12,
+   "title": "Telehealth leapfrogs FDA approval with off-label GLP-1 prescriptions for addiction",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/22/glp-1-drugs-substance-use-disorder-telehealth-off-label-prescription/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 13,
+   "title": "Shopping for an ACA Plan This Year? Here’s What You Need To Know",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/aca-obamacare-open-enrollment-marketplace-shopping-tips-premiums-costs-cms-changes/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 14,
+   "title": "Gilead to pay $45 million to settle kickback charges filed by Texas attorney general",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/22/gilead-settles-kickback-lawsuit-texas-attorney-general/",
+   "date": "2026-10-22"
+  }
+ ]
+}
