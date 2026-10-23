@@ -18,5 +18,7 @@
     "caption": "“Thank you for your patience, Mr. Hale. Your estimated wait is still ‘about fifteen minutes.’”",
     "alt": "A bearded patient with a beard reaching the floor and tangled in cobwebs sits calmly in a waiting room while a receptionist holds up a clipboard."
   },
-  "status": "send"
+  "status": "sent",
+  "sent_at": "2026-10-23T13:03:18.052Z",
+  "campaign_id": "67e42a926b"
 }
