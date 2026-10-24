@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-24",
+ "status": "published",
+ "generated": "2026-10-24T14:28:36.253Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is insurers and prior authorization bureaucracy. Patients are not mocked, and the joke sits with the clinician stuck on hold. There is no reporter mockery, private individual, article quote, death, children or violence. The tone is dry and clinically literate ('refractory', 'titrated', 'peer-to-peer'), and it is clearly satire. The 'up to 84%' figure and the 'initially denied' framing do not appear in the headline shown, so confirm them against the source summary before publishing. If the figure isn't there, it must be cut."
+ },
+ "pick": {
+  "title": "Blood Cancer Drug Denials; Body Fat and Pancreas Cancer; Studies With Fake Citations",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/hematologyoncology/hematology/123555",
+  "date": "2026-10-23",
+  "headline": "Insurers Deny Cancer Pills Up to 84% of the Time, Call It Process",
+  "take": "Up to 84% of specialty oral blood cancer prescriptions were initially denied, which suggests the prior authorization form is the only treatment guaranteed to be refractory. Somewhere a clinician is on hold, rehearsing the peer-to-peer. The pill works fine. The paperwork is what's being titrated."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Anxiety builds over Medicaid work requirements",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/medicaid-work-requirements-anxiety-morning-rounds-health-news/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 1,
+   "title": "AI drug firm Pathos raises $237 million, pushing valuation to $3 billion",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/pathos-ai-bristol-myers-squibb-tempus-deal/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 2,
+   "title": "Medicaid at Risk for Hundreds of Thousands of Lawfully Present Immigrants",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/wamu-health-hub-medicaid-legal-immigrants-lose-coverage-gop-law/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 3,
+   "title": "GOP Congressman in California Swing-District Race Defends Vote for Medicaid Cuts",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/valadao-villegas-california-22nd-house-district-healthcare-costs-ads-swing/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 4,
+   "title": "State officials scrambling to implement Medicaid work requirements meet up to swap notes",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/state-medicaid-officials-prepare-for-new-work-requirements/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 5,
+   "title": "Opinion: New Medicare policies will keep important pain relief from some patients",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/severe-pain-policy-medicare-coverage-macs-nerve-block/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 6,
+   "title": "Health Insurance Costs Keep Climbing for American Workers, New Survey Finds",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123541",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 7,
+   "title": "Blood Cancer Drug Denials; Body Fat and Pancreas Cancer; Studies With Fake Citations",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/hematology/123555",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 8,
+   "title": "Shopping for an ACA Plan This Year? Here’s What You Need To Know",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/aca-obamacare-open-enrollment-marketplace-shopping-tips-premiums-costs-cms-changes/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 9,
+   "title": "Opinion: Christina Applegate puts a face on one of the most consequential challenges in neurology",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/24/christina-applegate-multiple-sclerosis-why-ms-misdiagnosis-happens/",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 10,
+   "title": "Opinion: STAT readers on Elizabeth Holmes, cancer screening, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/24/you-can-see-everything-stat-letters-to-editor/",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 11,
+   "title": "Highly anticipated Moderna-Merck melanoma cancer vaccine data arrived early",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/moderna-merck-melanoma-cancer-vaccine-data-arrived-early-esmo/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 12,
+   "title": "Diabetes association says ‘threat’ preceded members’ ejections, but admits policies were unclear",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/ada-new-orleans-convention-new-report-on-controversial-june-ejections/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 13,
+   "title": "Most cancer drugs approved by European regulators lack a high clinical benefit, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/23/cancer-drugs-approved-europe-lack-high-clinical-benefit/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 14,
+   "title": "Novartis multiple sclerosis treatment cuts rates of relapse in pivotal trials",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/novartis-remibrutinib-multiple-sclerosis-trial-results/",
+   "date": "2026-10-23"
+  }
+ ]
+}
