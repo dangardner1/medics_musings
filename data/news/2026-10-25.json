@@ -1,0 +1,110 @@
+{
+ "date": "2026-10-25",
+ "status": "published",
+ "generated": "2026-10-25T14:56:11.665Z",
+ "check": {
+  "ok": true,
+  "reason": "The joke targets the system: insurers, premium pricing, deductibles, and employers' press-release tone. It does not mock patients, the reporter, or any private individual. It quotes nothing from the article and invents no numbers. It doesn't touch death, children, or violence. It is dry, deadpan, and actually satirical, and it stays true to the story's subject of rising health insurance costs. One note: the 'especially for small businesses' detail isn't in the headline shown, so the writer should confirm it against the article summary before publishing."
+ },
+ "pick": {
+  "title": "Health Insurance Costs Keep Climbing for American Workers, New Survey Finds",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123541",
+  "date": "2026-10-24",
+  "headline": "Employers Proud to Offer Workers Same Health Coverage at Exciting New Price",
+  "take": "Premiums rose again, especially for small businesses, which now get to experience the full insurance market the way a patient experiences a surprise bill. Nobody is sure what the extra money bought, but the deductible remains in excellent health."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Health Insurance Costs Keep Climbing for American Workers, New Survey Finds",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123541",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 1,
+   "title": "After a cancer vaccine’s first success, the race is on to expand the impact",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/25/mrna-cancer-vaccine-merck-moderna-esmo-intismeran-next-applications/",
+   "date": "2026-10-25"
+  },
+  {
+   "id": 2,
+   "title": "RSV Hospitalization May Be Taking a Surprising Mortality Toll, CDC Finds",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/idweek/123563",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 3,
+   "title": "The ESMO presentation everyone’s been waiting for",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/24/the-esmo-2026-merck-moderna-presentation-amgen-imdelltra-news/",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: Christina Applegate puts a face on one of the most consequential challenges in neurology",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/24/christina-applegate-multiple-sclerosis-why-ms-misdiagnosis-happens/",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 5,
+   "title": "Opinion: STAT readers on Elizabeth Holmes, cancer screening, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/24/you-can-see-everything-stat-letters-to-editor/",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 6,
+   "title": "Execution Staff Warned That Christa Pike's IV Site Might Have 'Blown'",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/ethics/123550",
+   "date": "2026-10-25"
+  },
+  {
+   "id": 7,
+   "title": "Another Unprecedented OS Win in Extensive-Stage SCLC With Tarlatamab Maintenance",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/esmo/123569",
+   "date": "2026-10-25"
+  },
+  {
+   "id": 8,
+   "title": "SGLT2 Inhibitors Tied to Uptick in Hemoglobin and Hematocrit",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asn/123568",
+   "date": "2026-10-25"
+  },
+  {
+   "id": 9,
+   "title": "Tovecimig-Based Doublet Boosts Response and PFS in Advanced Biliary Tract Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/esmo/123567",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 10,
+   "title": "Novel ADC Achieves Impressive PFS Advantage in HER2-Low Metastatic Breast Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/esmo/123566",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 11,
+   "title": "Atacicpet, Sibeprenlimab Halt Decline in Kidney Function in IgA Nephropathy",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asn/123564",
+   "date": "2026-10-24"
+  },
+  {
+   "id": 12,
+   "title": "An Accurate Census Protects Our Health",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123540",
+   "date": "2026-10-24"
+  }
+ ]
+}
