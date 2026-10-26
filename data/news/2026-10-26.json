@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-26",
+ "status": "published",
+ "generated": "2026-10-26T17:18:46.481Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is Centene and the insurance industry's attitude toward quality accountability, which is the system. The headline and take match the real story: Centene is suing CMS over its 2027 star ratings, and the link between star ratings and bonus payments is accurate. No numbers or quotes are invented or taken from the article. The closing line about a patient on hold for a prior authorization is sympathetic to patients and aims at bureaucracy, not at the patient. It doesn't mock the reporter or any private individual, and it avoids death, children and violence. The tone is dry and deadpan, with no emojis or hashtags, and it is clearly satirical."
+ },
+ "pick": {
+  "title": "Centene sues the CMS over 2027 Medicare Advantage star ratings",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/centene-medicare-advantage-stars-lawsuit-cms-2027/833922/",
+  "date": "2026-10-26",
+  "headline": "Centene Sues Government Over Report Card, Remains Committed to Quality Measurement in Principle",
+  "take": "Medicare Advantage star ratings are tied to bonus payments, so the stakes of a quality grade are admittedly high. Centene is now taking its 2027 score to court. Every insurer supports accountability right up until the grade arrives. Somewhere, a patient waits on hold for a prior authorization."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Rising premiums, a sad Medicaid gathering, and a new fraud crackdown",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/health-insurance-costs-medicaid-challenges-cms-fraud-crackdown-dc-diagnosis/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 1,
+   "title": "The Cost of Healthcare Is Hitting America Where It Hurts: The Wallet",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/priced-out-healthcare-costs-medical-debt-insurance-disability-chronic-conditions/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 2,
+   "title": "Many Medicare Patients Could Lose Access to Remote Monitoring Devices",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicare/remote-patient-monitoring-cms-medicare-rule-reimbursements-access-rural-health/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 3,
+   "title": "Moderna CEO on what’s next after success in cancer vaccine",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/moderna-ceo-stephane-bancel-interview-cancer-vaccine-intismeran/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: Could long-term AI use lead to isolation? We need to find out — but researchers need better access to data",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/cumulative-ai-use-isolation-research-data-missing/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 5,
+   "title": "CMS proposes heightened standards for ACA financial assistance",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-tighten-financial-assistance-aca-enrollees/833917/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 6,
+   "title": "Uninsured rate rises to 11% ahead of Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/uninsured-rate-rises-ahead-medicaid-work-requirements/833832/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 7,
+   "title": "Prior authorization in the real world: Takeaways from Epic ahead of looming API deadline",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/prior-authorization-takeaways-from-epic-ahead-of-looming-API-deadline/833919/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 8,
+   "title": "Centene sues the CMS over 2027 Medicare Advantage star ratings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/centene-medicare-advantage-stars-lawsuit-cms-2027/833922/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 9,
+   "title": "Beyond the screen: How AI can give physicians their attention back",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/beyond-the-screen-how-ai-can-give-physicians-their-attention-back/833312/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 10,
+   "title": "Medicare Will Pay $50k for Your Heart Attack. It Should Pay $100 to Prevent It.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123553",
+   "date": "2026-10-25"
+  },
+  {
+   "id": 11,
+   "title": "Five biotech updates to read after ESMO this weekend",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/biotech-news-moderna-ceo-on-whats-next-after-intismeran-success/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 12,
+   "title": "House lawmaker probes PBMs for ‘punitive’ audits of independent pharmacies",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/26/lawmaker-probes-pbms-for-punitive-audits-independent-pharmacies/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 13,
+   "title": "GSK sees its return to cancer start to pay off",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/gsk-cancer-esmo-adcs-jemperli/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 14,
+   "title": "Incyte pancreatic cancer medicine induces lasting tumor responses, company says at ESMO",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/incyte-esmo-pancreatic-cancer-incb161734-results/",
+   "date": "2026-10-26"
+  }
+ ]
+}
