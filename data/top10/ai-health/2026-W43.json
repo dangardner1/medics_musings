@@ -1,0 +1,211 @@
+{
+ "list": "ai-health",
+ "week": "2026-W43",
+ "start": "2026-10-19",
+ "end": "2026-10-25",
+ "status": "review",
+ "generated": "2026-10-26T19:24:59.568Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "The $15 billion ad-powered AI startup your doctor may already be using",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+   "date": "2026-10-21",
+   "take": "OpenEvidence is valued at $15 billion, is reportedly already in your doctor's pocket, and is funded by ads, with questions about accuracy attached. Nothing says evidence-based medicine like a sponsor wondering what the clinician is about to prescribe."
+  },
+  {
+   "rank": 2,
+   "title": "Longitudinal effects of ambient artificial intelligence scribe use on documentation burden and financial productivity in primary care: a quasi-experimental study",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893542/",
+   "date": "2026-10-18",
+   "take": "A study asks whether ambient AI scribes reduce documentation burden and also improve financial productivity in primary care. Finally, the note-writing robot gets a productivity target, so the doctor can enjoy the time saved by seeing more patients."
+  },
+  {
+   "rank": 3,
+   "title": "AI doctors' orders come with a sky-high bill",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42918873/",
+   "date": "2026-10-21",
+   "take": "Nature reports that AI doctors' orders come with a sky-high bill. The technology that promised to cut costs has discovered the one thing healthcare reliably scales: the invoice."
+  },
+  {
+   "rank": 4,
+   "title": "Examining reliance patterns on AI advice in medical imaging: a mixed-methods, randomised, crossover experiment",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919730/",
+   "date": "2026-10-23",
+   "take": "A randomised crossover experiment examines how clinicians rely on AI advice in imaging. Medicine's long-awaited second opinion arrives, and we now study whether anyone is still forming a first one."
+  },
+  {
+   "rank": 5,
+   "title": "Putting conversational AI to the test in primary care",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919916/",
+   "date": "2026-10-23",
+   "take": "Nature Medicine looks at putting conversational AI to the test in primary care. Testing before deployment is a bold and refreshing sequence of events, and we should encourage it before someone stops it."
+  },
+  {
+   "rank": 6,
+   "title": "AI drug firm Pathos raises $237 million, pushing valuation to $3 billion",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/pathos-ai-bristol-myers-squibb-tempus-deal/",
+   "date": "2026-10-23",
+   "take": "Pathos raises $237 million at a $3 billion valuation, combining Tempus data, Pathos AI and BMS drug development. Three organizations, one pipeline, and a valuation that arrives well ahead of the clinical trial results."
+  },
+  {
+   "rank": 7,
+   "title": "Avoiding a 2-Tier AI Ecosystem in Health Care",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886495/",
+   "date": "2026-10-02",
+   "take": "JAMA Health Forum warns about avoiding a two-tier AI ecosystem in health care. Medicine has been so successful at equitable access that it naturally worries about whether the algorithms will be the exception."
+  },
+  {
+   "rank": 8,
+   "title": "What’s the deal with Isomorphic Labs?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/whats-the-deal-with-isomorphic-labs-ai-prognosis/",
+   "date": "2026-10-21",
+   "take": "STAT asks what the deal is with Isomorphic Labs, and what its high valuation says about AI in drug development and the cost of care. The valuation is certain; the molecules are still being worked out."
+  },
+  {
+   "rank": 9,
+   "title": "Keeping artificial intelligence agents within the clinical task",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42888106/",
+   "date": "2026-10-16",
+   "take": "The Lancet Digital Health argues that AI agents should be kept within the clinical task. A reasonable request, given that every other staff member also needs a job description and a badge."
+  },
+  {
+   "rank": 10,
+   "title": "Association of ambient artificial intelligence scribe availability with patient instruction documentation and readability in ambulatory care",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42914097/",
+   "date": "2026-10-22",
+   "take": "A study asks whether ambient AI scribe availability changes patient instruction documentation and readability in ambulatory care. Patients may finally get instructions they can read, written by software that the physician then has to proofread after clinic."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "TRAM-AI: A Framework for Transparency in Reporting of Medical Imaging Datasets for Artificial Intelligence Development",
+   "source": "Radiol Artif Intell",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42905015/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 1,
+   "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42897078/",
+   "date": "2027-06-16"
+  },
+  {
+   "id": 2,
+   "title": "Keeping artificial intelligence agents within the clinical task",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42888106/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 3,
+   "title": "Using AI to offer personalized health advice",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42907541/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 4,
+   "title": "Avoiding a 2-Tier AI Ecosystem in Health Care",
+   "source": "JAMA Health Forum",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886495/",
+   "date": "2026-10-02"
+  },
+  {
+   "id": 5,
+   "title": "AI doctors' orders come with a sky-high bill",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42918873/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 6,
+   "title": "Putting conversational AI to the test in primary care",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919916/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 7,
+   "title": "Agentic artificial intelligence for code status extraction from clinical notes: a cross-model comparison of single agent, reflective agent, and multiagent extractor-reviewer system",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42901486/",
+   "date": "2026-10-20"
+  },
+  {
+   "id": 8,
+   "title": "Longitudinal effects of ambient artificial intelligence scribe use on documentation burden and financial productivity in primary care: a quasi-experimental study",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893542/",
+   "date": "2026-10-18"
+  },
+  {
+   "id": 9,
+   "title": "Association of ambient artificial intelligence scribe availability with patient instruction documentation and readability in ambulatory care",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42914097/",
+   "date": "2026-10-22"
+  },
+  {
+   "id": 10,
+   "title": "Examining reliance patterns on AI advice in medical imaging: a mixed-methods, randomised, crossover experiment",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919730/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 11,
+   "title": "The missing layer: decision integrity as a verifiable assurance layer in interpretive clinical artificial intelligence",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42886569/",
+   "date": "2026-10-16"
+  },
+  {
+   "id": 12,
+   "title": "Opinion: Could long-term AI use lead to isolation? We need to find out — but researchers need better access to data",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/cumulative-ai-use-isolation-research-data-missing/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 13,
+   "title": "AI drug firm Pathos raises $237 million, pushing valuation to $3 billion",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/23/pathos-ai-bristol-myers-squibb-tempus-deal/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 14,
+   "title": "Beyond the screen: How AI can give physicians their attention back",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/beyond-the-screen-how-ai-can-give-physicians-their-attention-back/833312/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 15,
+   "title": "The $15 billion ad-powered AI startup your doctor may already be using",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+   "date": "2026-10-21"
+  },
+  {
+   "id": 16,
+   "title": "What’s the deal with Isomorphic Labs?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/21/whats-the-deal-with-isomorphic-labs-ai-prognosis/",
+   "date": "2026-10-21"
+  }
+ ]
+}
