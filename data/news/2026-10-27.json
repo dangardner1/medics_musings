@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-27",
+ "status": "published",
+ "generated": "2026-10-27T16:32:33.360Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: the tech hype, billing incentives and unchanged schedule and inbox. Patients, authors and reporters are not mocked, and no private individual is targeted. There are no quotes, invented numbers, or death, children or violence. The headline and take match the real story's core finding, that note time improved while productivity did not. The 'longer notes' detail goes beyond the real headline, but it is plausibly from the summary and is framed as a finding, not invented data. The deadpan irony ('billing department may be thrilled', 'Productivity Remains Unmoved by Progress') makes it satirical."
+ },
+ "pick": {
+  "title": "AI Scribes Improved Note-Taking Time but Not Productivity, Study Finds",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/123591",
+  "date": "2026-10-26",
+  "headline": "AI Scribe Makes Notes Longer, Faster; Productivity Remains Unmoved by Progress",
+  "take": "Ambient AI cut the time physicians spend on notes and made the notes longer, while other productivity measures barely moved. No clinician has ever asked for longer notes, but the billing department may be thrilled. Revolutionary technology, meet the same schedule, the same inbox and the same system."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA offers new details on quicker approval pathway for personalized gene therapies",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/27/fda-personalized-gene-therapy-guidance-individualized-feature-space/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 1,
+   "title": "Nonprofit resurrects shelved gene therapy after startup shuts down",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/27/biotech-news-nonprofit-resurrects-shelved-gene-therapy/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 2,
+   "title": "HHS relaxes security, transparency rules for health record software used by hospitals",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/health-data-interoperability-hti5-relaxes-privacy-security-requirements/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 3,
+   "title": "Rising premiums, a sad Medicaid gathering, and a new fraud crackdown",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/health-insurance-costs-medicaid-challenges-cms-fraud-crackdown-dc-diagnosis/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 4,
+   "title": "The Cost of Healthcare Is Hitting America Where It Hurts: The Wallet",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/priced-out-healthcare-costs-medical-debt-insurance-disability-chronic-conditions/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 5,
+   "title": "Many Medicare Patients Could Lose Access to Remote Monitoring Devices",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicare/remote-patient-monitoring-cms-medicare-rule-reimbursements-access-rural-health/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 6,
+   "title": "AI Scribes Improved Note-Taking Time but Not Productivity, Study Finds",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/informationtechnology/123591",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 7,
+   "title": "CMS proposes heightened standards for ACA financial assistance",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-tighten-financial-assistance-aca-enrollees/833917/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 8,
+   "title": "Uninsured rate rises to 11% ahead of Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/uninsured-rate-rises-ahead-medicaid-work-requirements/833832/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 9,
+   "title": "Prior authorization in the real world: Takeaways from Epic ahead of looming API deadline",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/prior-authorization-takeaways-from-epic-ahead-of-looming-API-deadline/833919/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 10,
+   "title": "Centene sues the CMS over 2027 Medicare Advantage star ratings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/centene-medicare-advantage-stars-lawsuit-cms-2027/833922/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 11,
+   "title": "Beyond the screen: How AI can give physicians their attention back",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/beyond-the-screen-how-ai-can-give-physicians-their-attention-back/833312/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 12,
+   "title": "Opinion: Could long-term AI use lead to isolation? We need to find out — but researchers need better access to data",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/cumulative-ai-use-isolation-research-data-missing/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 13,
+   "title": "Pharmalittle: We’re reading about a Novo setback in court, a House probe into big PBMs, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/27/novo-setback-in-court-house-probe-into-big-pbms/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 14,
+   "title": "Five biotech updates to read after ESMO this weekend",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/26/biotech-news-moderna-ceo-on-whats-next-after-intismeran-success/",
+   "date": "2026-10-26"
+  }
+ ]
+}
