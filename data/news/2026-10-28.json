@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-28",
+ "status": "published",
+ "generated": "2026-10-28T17:08:44.929Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is CVS, an insurer, which fits the system rule. The headline matches the real story and uses only the $2B figure from the real headline, so nothing is invented or quoted. Patients are treated as the underserved party, with the jab about denial disputes and callbacks aimed at the insurer. It doesn't mock the reporter or any private individual, and it avoids death, children and violence. The tone is dry and deadpan with no emojis or hashtags, and the take is satirical enough to pass."
+ },
+ "pick": {
+  "title": "CVS sues to prevent $2B Medicare Advantage star ratings hit",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/cvs-aetna-lawsuit-medicare-advantage-star-ratings-2027-cms-2-billion/873000/",
+  "date": "2026-10-28",
+  "headline": "CVS Sues to Keep Star Ratings From Costing It $2 Billion",
+  "take": "Nothing says confidence in your quality score like a lawsuit about it. At $2 billion, we understand the motivation. We just wish patients disputing a denial got the same energetic legal representation, or even a callback within the plan year."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "HHS moves to allow compounding of some unapproved peptides",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/hhs-enforcement-discretion-policy-allows-peptide-compounding/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 1,
+   "title": "Senate candidate El-Sayed wants to ‘grill’ RFK Jr., calls him the ‘most incompetent HHS secretary ever’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/abdul-el-sayed-profile-midterm-policy-issues-health-care/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 2,
+   "title": "Why every health care AI company must face Epic",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/health-care-ai-innovation-challenge-epic-ai-prognosis/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 3,
+   "title": "In California and Other States, Dads Are Now Even With Moms in Paid Leave Claims",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/paid-parental-leave-dads-popularity-california/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 4,
+   "title": "Have you been impacted by Epic’s actions?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/epic-systems-electronic-health-records-reader-callout/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 5,
+   "title": "As Epic’s dominance grows, its iron grip is choking innovation in health technology",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/epic-systems-ehr-dominance-health-tech-antitrust-scrutiny/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 6,
+   "title": "FDA offers new details on quicker approval pathway for personalized gene therapies",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/27/fda-personalized-gene-therapy-guidance-individualized-feature-space/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 7,
+   "title": "Nonprofit resurrects shelved gene therapy after startup shuts down",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/27/biotech-news-nonprofit-resurrects-shelved-gene-therapy/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 8,
+   "title": "Zocdoc invites AI agents to book appointments on behalf of patients",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/zocdoc-invites-ai-agents-to-book-appointments-on-behalf-of-patients/873035/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 9,
+   "title": "HCA’s bottom line suffers as ACA coverage losses mount",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hcas-bottom-line-suffers-aca-coverage-losses-mount/873032/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 10,
+   "title": "CVS sues to prevent $2B Medicare Advantage star ratings hit",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cvs-aetna-lawsuit-medicare-advantage-star-ratings-2027-cms-2-billion/873000/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 11,
+   "title": "Congress Mulls Ways to Fix the Surprise Billing Law",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/reimbursement/123612",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 12,
+   "title": "AI May Help Detect Rare Sperm in Men With Azoospermia",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asrm/123609",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 13,
+   "title": "RFK Jr.'s Claim That Arabs 'Don't Produce Science' Meets a Nobel Prize Reality Check",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123608",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 14,
+   "title": "Pharmalittle: We’re reading about 340B battles, new results for a Lilly weight loss drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/28/battles-over-340b-lilly-reports-weight-loss-drug-results/",
+   "date": "2026-10-28"
+  }
+ ]
+}
