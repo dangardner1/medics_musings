@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-29",
+ "status": "published",
+ "generated": "2026-10-29T17:24:12.190Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: Epic's gatekeeping and integration review, and the tech hype around health care AI. It does not mock patients, the reporter, or any private individual. It stays consistent with the story's premise that AI companies must contend with Epic. It invents no numbers, quotes, or results, and it quotes nothing from the article. It avoids death, children, and violence. The tone is dry and deadpan, and the irony of 'disruption pending integration review' makes it satirical. The line about physicians being encouraged to be excited is aimed at the pipeline, not at physicians themselves."
+ },
+ "pick": {
+  "title": "Why every health care AI company must face Epic",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/28/health-care-ai-innovation-challenge-epic-ai-prognosis/",
+  "date": "2026-10-28",
+  "headline": "Health Tech Startups Free to Disrupt Anywhere Epic Has Already Approved",
+  "take": "Every AI company promises to transform clinical care, and every one needs access to the system where clinical care is documented. Disruption is available to all, pending integration review. Physicians, who will use whatever survives that process, are encouraged to be excited about the pipeline."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "The EPIC investigation, and a Teladoc surprise",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/epic-investigation-teladoc-surprise-ai-payment-model-health-tech/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 1,
+   "title": "El-Sayed claps back at RFK Jr., and FDA’s ‘enforcement discretion’ on peptides",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/el-sayed-claps-back-at-rfk-jr-fda-peptide-policy-dc-diagnosis/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 2,
+   "title": "HHS green lights six peptides, despite concerns from FDA scientists",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/biotech-news-hhs-green-lights-six-peptides-for-now/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 3,
+   "title": "Pharmalittle: We’re reading about a new policy for compounding peptides, a PBM disclosure rule, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/29/peptides-policy-released-by-hhs-pbm-disclosure-requirements/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: STAT+: Is AI more a partner, competitor, or crutch for biomedical scientists?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/ai-science-biology-dependence-ethics-research/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 5,
+   "title": "Lawmaker wants government watchdog to probe TrumpRx over claims about drug savings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/28/lawmaker-wants-gao-probe-trumprx-drug-pricing/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 6,
+   "title": "HHS moves to allow compounding of some unapproved peptides",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/hhs-enforcement-discretion-policy-allows-peptide-compounding/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 7,
+   "title": "Senate candidate El-Sayed wants to ‘grill’ RFK Jr., calls him the ‘most incompetent HHS secretary ever’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/abdul-el-sayed-profile-midterm-policy-issues-health-care/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 8,
+   "title": "Why every health care AI company must face Epic",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/health-care-ai-innovation-challenge-epic-ai-prognosis/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 9,
+   "title": "In California and Other States, Dads Are Now Even With Moms in Paid Leave Claims",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/paid-parental-leave-dads-popularity-california/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 10,
+   "title": "Nurse's Remains Identified; Surgeon Alleges Retaliation; 20-Year Telehealth Sentence",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123639",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 11,
+   "title": "Popular AI models get medication doses wrong, some dangerously: Doximity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 12,
+   "title": "Softer surgery volumes, hospital woes dampened UHS’ Q3 earnings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/softer-surgery-volumes-hospital-woes-dampened-uhs-q3-earnings/873190/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 13,
+   "title": "RFK Jr. Eases Access to Unproven Peptides Despite Opposition From FDA Scientists",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/fdageneral/123632",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 14,
+   "title": "Insurers, employers urge CMS to pause No Surprises arbiter recertifications",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/insurers-employers-urge-cms-pause-no-surprises-arbiter-recertifications/873080/",
+   "date": "2026-10-28"
+  }
+ ]
+}
