@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-30",
+ "status": "published",
+ "generated": "2026-10-30T16:59:53.781Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: billing codes, facility fees and ER-style pricing. Patients are treated as the people being failed, and nothing mocks them, the reporter, or a private individual. It has no quotes, no invented figures and no death, children or violence. The tone is dry and deadpan, and the closing line about a diagnosis that appears only after discharge is a real satirical joke. It matches the real story of a simple UTI visit producing a large bill. One minor caution: 'in the thousands' is loose next to a $1,756 example, so the producer should confirm the coughs-and-congestion detail and the ER-billing framing against the linked story."
+ },
+ "pick": {
+  "title": "How a simple UTI turns into a $1,756 bill",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+  "date": "2026-10-30",
+  "headline": "Urgent Care Visit Mysteriously Upgraded to Emergency Room Pricing, No Emergency Required",
+  "take": "Patients went in for coughs, congestion and a UTI, and came out with ER bills in the thousands. Apparently the acuity of the visit matters less than what the billing code and the sign on the door say. It is the only diagnosis in medicine that reliably appears after discharge."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about AstraZeneca cost-cutting, Sun Pharma facility problems, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/30/astrazeneca-cost-cutting-sun-pharma-facility-problems/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Drug Plans Are Hiking Premiums While Trump Claims Victory on Medicine Prices",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicare/medicare-drug-plans-premium-hikes-affordability-trump-cms/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 2,
+   "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 3,
+   "title": "How a simple UTI turns into a $1,756 bill",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 4,
+   "title": "Federal judge rejects new Medicaid ‘frailty’ definition for work requirements",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/medicaid-work-requirements-judge-blocks-new-limits-medical-frailty/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 5,
+   "title": "The EPIC investigation, and a Teladoc surprise",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/epic-investigation-teladoc-surprise-ai-payment-model-health-tech/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 6,
+   "title": "El-Sayed claps back at RFK Jr., and FDA’s ‘enforcement discretion’ on peptides",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/el-sayed-claps-back-at-rfk-jr-fda-peptide-policy-dc-diagnosis/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 7,
+   "title": "HHS green lights six peptides, despite concerns from FDA scientists",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/biotech-news-hhs-green-lights-six-peptides-for-now/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 8,
+   "title": "Pharmalittle: We’re reading about a new policy for compounding peptides, a PBM disclosure rule, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/29/peptides-policy-released-by-hhs-pbm-disclosure-requirements/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 9,
+   "title": "Should AI Replace Doctors? A Conversation With Zeke Emanuel",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/faustfiles/123660",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 10,
+   "title": "Judge strikes down CMS ‘medical frailty’ policy for Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/judge-strikes-down-cms-medical-frailty-policy-medicaid-work-requirements/873284/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 11,
+   "title": "Judge Blocks Trump Admin's Medicaid Rule Forcing Sick Recipients to Prove Frailty",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicaid/123647",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 12,
+   "title": "Labor Department finalizes sweeping PBM disclosure rule",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/pbm-transparency-final-rule-labor-department-employer/873089/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 13,
+   "title": "Nurse's Remains Identified; Surgeon Alleges Retaliation; 20-Year Telehealth Sentence",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/special-reports/features/123639",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 14,
+   "title": "Popular AI models get medication doses wrong, some dangerously: Doximity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+   "date": "2026-10-29"
+  }
+ ]
+}
