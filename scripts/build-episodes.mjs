@@ -15,6 +15,7 @@
 //   scripts/make-quote-cards.py in og/quotes/.
 // Also builds the explainer, teaching, submit, subscribe, embed, short-link and
 // feed pages (see build-extras.mjs).
+import { buildSearchIndex } from './lib/search-index.mjs';
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
@@ -729,12 +730,15 @@ ${urls.map((u) => `  <url>
 </urlset>
 `);
 
+// Site-wide search index (read by search.js).
+console.log(`Search index: ${buildSearchIndex(ROOT, { episodes, data })} entries`);
+
 // Service worker: versioned by a hash of the files it precaches, so a deploy
 // with any change invalidates the old cache.
 const PRECACHE = [
   '/', '/tools.html', '/offline.html', '/manifest.webmanifest',
   '/episodes/episode.css', '/episodes/episode.js',
-  '/signup.js', '/feedback.js', '/player.js', '/discover.js', '/site.js', '/extras.js',
+  '/signup.js', '/feedback.js', '/player.js', '/discover.js', '/site.js', '/search.js', '/extras.js',
   '/favicon.svg', '/icon-192.png', '/icon-512.png', '/channel-poster.webp', '/host-leo.jpg', '/host-dan.jpg',
 ].filter((u) => u === '/' || existsSync(join(ROOT, u.slice(1))));
 const hash = createHash('sha1');

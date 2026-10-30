@@ -3,6 +3,14 @@
 (function () {
   var RSS = 'https://anchor.fm/s/117844514/podcast/rss';
 
+  // Header search lives in search.js.
+  try {
+    var ss = document.createElement('script');
+    ss.src = '/search.js';
+    ss.defer = true;
+    document.head.appendChild(ss);
+  } catch (e) {}
+
   function track(name, params) {
     try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {}
   }
