@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-31",
+ "status": "review",
+ "generated": "2026-10-31T16:03:16.631Z",
+ "check": {
+  "ok": false,
+  "reason": "The 50% premium increase appears in both the satirical headline and the take ('up 50% on average'), but the real headline gives no figure and nothing else supplied confirms it. That counts as an invented number presented as fact. The take also asserts specifics, such as enrollees being able to avoid the increase by switching plans, that the supplied material doesn't establish. The tone is fine: it targets the system and political spin, not patients, and it is dry and satirical. To pass, remove the percentage (e.g., 'Medicare Drug Plans Raise Premiums; Prices Declared Victorious Anyway') or replace it with a figure confirmed from the article, and keep the plan-switching point general or verify it."
+ },
+ "pick": {
+  "title": "Medicare Drug Plans Are Hiking Premiums While Trump Claims Victory on Medicine Prices",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/medicare/medicare-drug-plans-premium-hikes-affordability-trump-cms/",
+  "date": "2026-10-30",
+  "headline": "Medicare Drug Plans Raise Premiums 50%; Prices Declared Victorious Anyway",
+  "take": "Drug prices have reportedly been conquered, though the cost of insurance to reach them is up 50% on average. Enrollees can dodge the increase by switching plans, which the system offers each autumn as a complimentary comparison-shopping puzzle with real consequences. Victory is clearly a matter of which line item you read."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about AstraZeneca cost-cutting, Sun Pharma facility problems, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/30/astrazeneca-cost-cutting-sun-pharma-facility-problems/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Drug Plans Are Hiking Premiums While Trump Claims Victory on Medicine Prices",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicare/medicare-drug-plans-premium-hikes-affordability-trump-cms/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 2,
+   "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 3,
+   "title": "How a simple UTI turns into a $1,756 bill",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 4,
+   "title": "Should AI Replace Doctors? A Conversation With Zeke Emanuel",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/faustfiles/123660",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 5,
+   "title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 6,
+   "title": "Frights, Fangs, and Healthcare Nightmares in Winning Halloween Haikus",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/news/halloween-haiku-winners-2026-healthcare-nightmares/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 7,
+   "title": "What are the health stakes of the midterms? Policymakers, lobbyists, and experts weigh in",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/31/midterm-election-tipping-point-healthcare-policy/",
+   "date": "2026-10-31"
+  },
+  {
+   "id": 8,
+   "title": "Christa Pike Says She's in Constant Pain, Blames Failed Execution on 'Incompetence'",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/ethics/123666",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 9,
+   "title": "Extra Genetic Testing in Young IVF Patients Cut Costs but Came With a Downside",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/asrm/123665",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 10,
+   "title": "Up and down the ladder: The latest comings and goings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/30/up-and-down-the-ladder-jobs-pharma-biotech-lilly/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 11,
+   "title": "High-acuity strategy helped Tenet weather surgery, uninsured headwinds in Q3",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/high-acuity-strategy-helped-tenet-weather-surgery-uninsured-headwinds-q3/873305/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 12,
+   "title": "How Election Day can affect your heart",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/election-stress-heart-attack-risk/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 13,
+   "title": "Assessing Merck and Moderna’s mRNA cancer vaccine",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/readout-loud-podcast-oncology-cancer-vaccine-moderna-merck-amgen-roche/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 14,
+   "title": "The persisting paradox of men’s health",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/health-news-the-paradox-of-men-health/",
+   "date": "2026-10-30"
+  }
+ ]
+}
