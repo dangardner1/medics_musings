@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-01",
+ "status": "review",
+ "generated": "2026-11-01T17:05:33.371Z",
+ "check": {
+  "ok": false,
+  "reason": "The item misstates the story. The real headline is about a simple UTI that turns into a $1,756 bill. The take invents a different scenario: an urgent care visit retroactively billed as an emergency department visit, over a 'cough'. Nothing in the headline or summary says this happened, and the cough is unrelated to a UTI. This presents an invented fact about the case as if it were the story. The target (billing) is acceptable and patients aren't mocked, but the premise needs to be rewritten around what the story reports, such as how a routine UTI visit becomes a $1,756 bill, without made-up details like the urgent-care-to-ER upgrade or the cough."
+ },
+ "pick": {
+  "title": "How a simple UTI turns into a $1,756 bill",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+  "date": "2026-10-30",
+  "headline": "Urgent Care Visit Upgraded to Emergency Room, Retroactively, on Invoice Only",
+  "take": "The sign out front said urgent care. The claim said emergency department. Nothing about the cough changed, but billing has a gift for promoting a visit after the patient has gone home. Patients can't verify which description will be honored, and the one with a dollar amount attached usually wins."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about AstraZeneca cost-cutting, Sun Pharma facility problems, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/30/astrazeneca-cost-cutting-sun-pharma-facility-problems/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Drug Plans Are Hiking Premiums While Trump Claims Victory on Medicine Prices",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicare/medicare-drug-plans-premium-hikes-affordability-trump-cms/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 2,
+   "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 3,
+   "title": "How a simple UTI turns into a $1,756 bill",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/hybrid-er-urgent-care-clinics-hidden-billing-complaints-intuitive-health/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 4,
+   "title": "Federal judge rejects new Medicaid ‘frailty’ definition for work requirements",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/medicaid-work-requirements-judge-blocks-new-limits-medical-frailty/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 5,
+   "title": "The EPIC investigation, and a Teladoc surprise",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/epic-investigation-teladoc-surprise-ai-payment-model-health-tech/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 6,
+   "title": "El-Sayed claps back at RFK Jr., and FDA’s ‘enforcement discretion’ on peptides",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/el-sayed-claps-back-at-rfk-jr-fda-peptide-policy-dc-diagnosis/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 7,
+   "title": "HHS green lights six peptides, despite concerns from FDA scientists",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/biotech-news-hhs-green-lights-six-peptides-for-now/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 8,
+   "title": "Pharmalittle: We’re reading about a new policy for compounding peptides, a PBM disclosure rule, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/10/29/peptides-policy-released-by-hhs-pbm-disclosure-requirements/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 9,
+   "title": "Pancreatic Cancer Vaccine; AI Collaboration for Managing Epilepsy",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123663",
+   "date": "2026-10-31"
+  },
+  {
+   "id": 10,
+   "title": "Should AI Replace Doctors? A Conversation With Zeke Emanuel",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/faustfiles/123660",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 11,
+   "title": "Judge Blocks Trump Admin's Medicaid Rule Forcing Sick Recipients to Prove Frailty",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicaid/123647",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 12,
+   "title": "Labor Department finalizes sweeping PBM disclosure rule",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/pbm-transparency-final-rule-labor-department-employer/873089/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 13,
+   "title": "Popular AI models get medication doses wrong, some dangerously: Doximity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 14,
+   "title": "Softer surgery volumes, hospital woes dampened UHS’ Q3 earnings",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/softer-surgery-volumes-hospital-woes-dampened-uhs-q3-earnings/873190/",
+   "date": "2026-10-29"
+  }
+ ]
+}
