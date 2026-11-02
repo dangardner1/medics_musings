@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-02",
+ "status": "published",
+ "generated": "2026-11-02T20:44:00.082Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: billing practices, facility fees and 'revenue cycle optimization' euphemism. Patients are treated sympathetically, since the 'emergency' is the bill they receive. The headline matches the story's topic of urgent care billed as ER. It invents no numbers or quotes, doesn't quote the article, and doesn't mock the reporter or any private individual. It avoids death, children and violence. The tone is dry and deadpan with no emojis or hashtags, and it is satirical, with the joke resting on the gap between what a clinic looks like and what it bills."
+ },
+ "pick": {
+  "title": "The health care affordability midterms, and billing urgent care as ER",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/02/health-care-affordability-midterms-hybrid-er-urgent-care-clinics-health-care-inc/",
+  "date": "2026-11-02",
+  "headline": "Clinic Resembling Urgent Care Discovers Billing Code for Emergency Room",
+  "take": "Nothing in medicine transforms faster than an urgent care visit in a building with the right billing designation. The waiting room is unchanged, but the facility fee is new, and the only emergency is the one arriving in the mail. Politicians call it affordability; the clinic calls it revenue cycle optimization."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "The health care affordability midterms, and billing urgent care as ER",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/health-care-affordability-midterms-hybrid-er-urgent-care-clinics-health-care-inc/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 1,
+   "title": "Georgia Helped Inspire the Medicaid Work Rules. Its Own Rules Could Soon End.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/medicaid-work-requirements-federal-rules-georgia-pathways-expiration/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 2,
+   "title": "A GOP Congressman Backed Medicaid Work Requirements. His Voters Might Be Exempt.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/medicaid-work-rules-california-valadao-villegas-22nd-district-unemployment-exempt/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 3,
+   "title": "Rising Health Costs, Coverage Changes Worry Older Adults as Election Day Nears",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/electioncoverage/123679",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 4,
+   "title": "Medicare Part D premiums are spiking 50% on average next year, KFF finds",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-part-d-premiums-skyrocket-2027-kff/873421/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 5,
+   "title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-provides-clarity-support-cell-and-gene-therapy-development-and-quality",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 6,
+   "title": "Opinion: The economics of the U.S. health care system are broken",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/american-health-care-costs-broken-economics-solutions/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 7,
+   "title": "Psilocybin’s lasting benefits prove elusive in mice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/biotech-news-psilocybin-lasting-benefits-prove-elusive-in-mice/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 8,
+   "title": "Obamacare Premiums to Rise by Double Digits in 2027",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/repeal-and-replace/123673",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 9,
+   "title": "CHS lowers 2026 earnings forecast on uninsured volumes, surgery snags",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/chs-lowers-full-year-earnings-forecast-uninsured-volumes-surgery-snags/873444/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 10,
+   "title": "Pharmalittle: We’re reading about payments to Russian middlemen, a possible Dupixent rival, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/02/drugmaker-payments-to-russian-middlemen-possible-dupixent-rival/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 11,
+   "title": "A STAT reporter on covering MRT as an experimental fertility treatment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/health-news-stat-reporter-qa-on-mit-as-experimental-fertility-treatment/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 12,
+   "title": "Are you pursuing MRT as a treatment for infertility? Tell us about your experience",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/mrt-fertility-treatment-advanced-maternal-age-three-parent-ivf-reader-callout/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 13,
+   "title": "Coming readout of Kymera eczema trial is a high-stakes moment in a bid to rival Dupixent",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/kymera-therapeutics-trial-results-eczema-dupixent-rival/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: Cancer patients are often pressured to end a pregnancy early. They shouldn’t be",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/02/pregnant-cancer-patients-abortion-early-labor-research/",
+   "date": "2026-11-02"
+  }
+ ]
+}
