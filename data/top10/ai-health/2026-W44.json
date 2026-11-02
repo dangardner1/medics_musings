@@ -1,0 +1,239 @@
+{
+ "list": "ai-health",
+ "week": "2026-W44",
+ "start": "2026-10-26",
+ "end": "2026-11-01",
+ "status": "review",
+ "generated": "2026-11-02T22:22:23.971Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Changes in Service Use Following the Introduction of AI-Enabled Prior Authorization in Medicare",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932180/",
+   "date": "2026-10-26",
+   "take": "JAMA examines what happened to service use after Medicare introduced AI-enabled prior authorization. Nothing says efficiency like teaching software to ask whether you really need that, then measuring how many people stop asking the doctor."
+  },
+  {
+   "rank": 2,
+   "title": "Popular AI models get medication doses wrong, some dangerously: Doximity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+   "date": "2026-10-29",
+   "take": "Doximity reports that popular AI models get medication doses wrong, some dangerously. Reassuring news for anyone worried the chatbot might take their job: it can't yet be trusted to count milligrams."
+  },
+  {
+   "rank": 3,
+   "title": "AI vendors, health systems join physicians in liability for clinical AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-vendors-health-systems-join-physicians-in-liability-for-clinical-ai/873492/",
+   "date": "2026-11-02",
+   "take": "The AMA says AI vendors and health systems now share liability with physicians. Finally, a true multidisciplinary team: everyone gets a seat at the table when the lawsuit arrives, though the doctor still signs the note."
+  },
+  {
+   "rank": 4,
+   "title": "AI doctors' orders come with a sky-high bill",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42918873/",
+   "date": "2026-10-01",
+   "take": "Nature reports that AI doctors' orders come with a sky-high bill. Turns out the machine that never tires also never skips the extra test, and someone still has to pay for the full workup."
+  },
+  {
+   "rank": 5,
+   "title": "Why every health care AI company must face Epic",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/health-care-ai-innovation-challenge-epic-ai-prognosis/",
+   "date": "2026-10-28",
+   "take": "STAT investigates how Epic's market dominance shapes health tech innovation and AI adoption. Every startup has a bold vision for transforming care, right up until it needs a login to the one system everyone already uses."
+  },
+  {
+   "rank": 6,
+   "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+   "date": "2026-10-30",
+   "take": "FDA and CMS are reportedly scrambling to avoid a logjam as states move to test AI in clinical settings. Federalism, where fifty laboratories of democracy meet one regulatory agency trying to keep the experiment from becoming the standard of care."
+  },
+  {
+   "rank": 7,
+   "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+   "date": "2026-10-31",
+   "take": "Wired reports a startup let an AI agent choose a gene therapy and inject it into a live mouse's brain. The mouse never signed a consent form, but the IRB paperwork for the next step will be extraordinary."
+  },
+  {
+   "rank": 8,
+   "title": "Putting conversational AI to the test in primary care",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919916/",
+   "date": "2026-10-23",
+   "take": "Nature Medicine looks at putting conversational AI to the test in primary care. Testing before deployment is a refreshing idea in a field where the usual order is deploy, enthuse, then study."
+  },
+  {
+   "rank": 9,
+   "title": "Health Systems Govern Only the Tip of the AI Iceberg",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932485/",
+   "date": "2026-04-01",
+   "take": "NEJM AI editorial argues health systems govern only the tip of the AI iceberg. Medicine's relationship with the iceberg is well documented: committees convene, charters are drafted, and the hull is somebody else's department."
+  },
+  {
+   "rank": 10,
+   "title": "Frights, Fangs, and Healthcare Nightmares in Winning Halloween Haikus",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/news/halloween-haiku-winners-2026-healthcare-nightmares/",
+   "date": "2026-10-30",
+   "take": "KFF Health News publishes winning Halloween haikus about measles, dental costs and AI-powered insurance denials. Satire struggles when the actual healthcare system already supplies the horror, but seventeen syllables is a decent appeal length."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Letter: Generative AI Dual-Use Risks in Infectious Diseases: An Overlooked Challenge for Global Health",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932721/",
+   "date": "2025-11-01"
+  },
+  {
+   "id": 1,
+   "title": "Reproducibility without vendor names: emphasizing design over branding in AI evaluation",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42956827/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 2,
+   "title": "Trial Emulation, Simulation, and Augmentation Using Electronic Health Records and Generative AI",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932613/",
+   "date": "2025-10-01"
+  },
+  {
+   "id": 3,
+   "title": "AI doctors' orders come with a sky-high bill",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42918873/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 4,
+   "title": "Can Personalized Generative AI Bridge Cultural Distance?",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932473/",
+   "date": "2026-11-01"
+  },
+  {
+   "id": 5,
+   "title": "Response: Enforceable Safeguards - Verification, Deterrence, and LMIC Agency in Generative AI; A Reply to Rizzo et al",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932720/",
+   "date": "2025-11-01"
+  },
+  {
+   "id": 6,
+   "title": "Changes in Service Use Following the Introduction of AI-Enabled Prior Authorization in Medicare",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932180/",
+   "date": "2026-10-26"
+  },
+  {
+   "id": 7,
+   "title": "Agentic AI Systems in Radiology: Design, Applications, Evaluation, and Challenges",
+   "source": "Radiology",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42937535/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 8,
+   "title": "Comprehensive or Wasteful? Clinical AI and the Up-front Workup",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932476/",
+   "date": "2026-11-01"
+  },
+  {
+   "id": 9,
+   "title": "Putting conversational AI to the test in primary care",
+   "source": "Nat Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42919916/",
+   "date": "2026-10-23"
+  },
+  {
+   "id": 10,
+   "title": "Health Systems Govern Only the Tip of the AI Iceberg",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932485/",
+   "date": "2026-04-01"
+  },
+  {
+   "id": 11,
+   "title": "The Missing Dimension in Clinical AI: Making Hidden Values Visible",
+   "source": "NEJM AI",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42932574/",
+   "date": "2026-02-01"
+  },
+  {
+   "id": 12,
+   "title": "FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/30/fda-cms-health-ai-regulation-state-sandboxes-run-into-federal-rules/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 13,
+   "title": "Why every health care AI company must face Epic",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/28/health-care-ai-innovation-challenge-epic-ai-prognosis/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 14,
+   "title": "AI, Digital Pathology in Early Breast Cancer Among Highlights at SABCS",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/sabcsfuturefocus/123689",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 15,
+   "title": "AI vendors, health systems join physicians in liability for clinical AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-vendors-health-systems-join-physicians-in-liability-for-clinical-ai/873492/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 16,
+   "title": "Popular AI models get medication doses wrong, some dangerously: Doximity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/popular-ai-models-get-medication-doses-wrong-some-dangerously-doximity/873207/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 17,
+   "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+   "date": "2026-10-31"
+  },
+  {
+   "id": 18,
+   "title": "The EPIC investigation, and a Teladoc surprise",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/10/29/epic-investigation-teladoc-surprise-ai-payment-model-health-tech/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 19,
+   "title": "Frights, Fangs, and Healthcare Nightmares in Winning Halloween Haikus",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/news/halloween-haiku-winners-2026-healthcare-nightmares/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 20,
+   "title": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/science/2026/10/vibe-genes-naturalish-language-comes-to-protein-genome-design-software/",
+   "date": "2026-10-27"
+  }
+ ]
+}

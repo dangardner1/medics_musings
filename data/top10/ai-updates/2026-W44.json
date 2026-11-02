@@ -1,0 +1,302 @@
+{
+ "list": "ai-updates",
+ "week": "2026-W44",
+ "start": "2026-10-26",
+ "end": "2026-11-01",
+ "status": "review",
+ "generated": "2026-11-02T22:22:23.971Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+   "date": "2026-11-02",
+   "take": "Anthropic warns it is close to AI that builds itself, which in clinical terms is a company announcing a dramatic acceleration while also filing for an IPO. Informed consent has never been so well timed."
+  },
+  {
+   "rank": 2,
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "date": "2026-10-28",
+   "take": "Google unveils Gemini 4 Carbon, a frontier model nobody can use yet. Like many promising therapies, it is wildly effective in the press release and still awaiting enrollment."
+  },
+  {
+   "rank": 3,
+   "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+   "date": "2026-11-02",
+   "take": "Wired found about 400 apps posing as ordinary AI tools while hiding abusive deepfake features. Apparently the app store review process screens as thoroughly as a pre-op checklist filled out by the vending machine."
+  },
+  {
+   "rank": 4,
+   "title": "How a Contractor’s Claude Agent Got Into the Pentagon",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+   "date": "2026-10-30",
+   "take": "A contractor's Claude agent reportedly reached the Pentagon, a reminder that access controls are only as strong as whoever delegated them to a chatbot. Healthcare IT, we see you nodding and also sweating."
+  },
+  {
+   "rank": 5,
+   "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/announcing-project-protostar",
+   "date": "2026-10-29",
+   "take": "Hugging Face wants publicly funded science to be AI-ready. Fine, but first perhaps make it PDF-readable, reproducible, and not hidden behind a paywall the taxpayer already bought once."
+  },
+  {
+   "rank": 6,
+   "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+   "date": "2026-11-02",
+   "take": "OpenAI pitches data center power plants as protection for nearby communities, offering up to 1,000 megawatts during emergencies. A rare case where the side effect is marketed as the indication."
+  },
+  {
+   "rank": 7,
+   "title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+   "date": "2026-11-02",
+   "take": "The New York Times and other publishers sue Brave over alleged AI scraping and paywall bypassing. The newsroom's business model is now in the differential, alongside the rest of the content economy."
+  },
+  {
+   "rank": 8,
+   "title": "An updated Model Spec for more capable and beneficial AI",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/updated-model-spec",
+   "date": "2026-10-29",
+   "take": "OpenAI updates its Model Spec around five core values, including human agency and faithfulness to intent. Every medical school has a similar document, and we all know how closely residents follow the mission statement at 3 a.m."
+  },
+  {
+   "rank": 9,
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/credit-saison",
+   "date": "2026-10-29",
+   "take": "Credit Saison reports 954% ROI from a ChatGPT Enterprise pilot. In medicine we would ask for the confidence interval, the control group, and who exactly counted the hours saved."
+  },
+  {
+   "rank": 10,
+   "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+   "date": "2026-11-02",
+   "take": "Musk throttles Grok Bot limits because costs are 'unsustainably high,' mere days after touting record growth. Turns out that growth is great until someone has to pay for the dose."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "An updated Model Spec for more capable and beneficial AI",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/updated-model-spec",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 1,
+   "title": "The latest AI news we announced in October 2026",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 2,
+   "title": "Introducing the Grid Protectors Program",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/grid-protectors-program",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 3,
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 4,
+   "title": "Anthropic clamps down on Claude’s AI video game clones",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 5,
+   "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 6,
+   "title": "How a Contractor’s Claude Agent Got Into the Pentagon",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/uncanny-valley-podcast-how-a-contractors-claude-agent-got-into-the-pentagon/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 7,
+   "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 8,
+   "title": "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 9,
+   "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 10,
+   "title": "Making it easier for websites to express AI training preferences",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 11,
+   "title": "How Ropes & Gray is developing AI for transactional diligence",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/ropes-gray-ai-diligence",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 12,
+   "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/credit-saison",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 13,
+   "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/announcing-project-protostar",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 14,
+   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 15,
+   "title": "Legora is building the agentic operating system for legal work",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/legora",
+   "date": "2026-10-28"
+  },
+  {
+   "id": 16,
+   "title": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 17,
+   "title": "Retell uses OpenAI models to help power 100M monthly calls",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/retell-ai",
+   "date": "2026-10-27"
+  },
+  {
+   "id": 18,
+   "title": "Speeding up planning decisions with AI",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 19,
+   "title": "Granite Switch 4.1.1 — Update models like you update software",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 20,
+   "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/mistral-large4",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 21,
+   "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/anydecisionmodel",
+   "date": "2026-10-29"
+  },
+  {
+   "id": 22,
+   "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 23,
+   "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 24,
+   "title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 25,
+   "title": "Raising the quality of insights in agentic analytics",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 26,
+   "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 27,
+   "title": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 28,
+   "title": "When You Should—and Shouldn’t—Use AI to Search the Web",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/when-you-should-and-shouldnt-use-ai-to-search-the-web/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 29,
+   "title": "Hundreds of Mundane AI Apps Are Hiding Sexually Abusive Deepfake Features",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+   "date": "2026-11-02"
+  }
+ ]
+}
