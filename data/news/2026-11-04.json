@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-04",
+ "status": "published",
+ "generated": "2026-11-04T18:36:11.949Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is CVS and its corporate strategy: the integration rhetoric and the press-release culture. Patients are not mocked, and no individual, reporter or author is targeted. There are no invented numbers or quotes, and no death, children or violence. The take matches the real story, a split that reverses years of combining pharmacy and insurance. 'Amicable' and 'a second press release' are clearly framed as satirical expectation, not reported fact. The tone is dry and deadpan, with no emojis or hashtags. 'As regulators look on' is vague enough not to misstate the story."
+ },
+ "pick": {
+  "title": "CVS Health to split, reversing years of deal-making to combine pharmacies and insurance",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/",
+  "date": "2026-11-04",
+  "headline": "CVS Discovers Pharmacy and Insurer Were Never Meant to Be Together",
+  "take": "After years of assembling the pharmacy, the insurer and the clinics into one seamless entity, CVS will now take it apart as regulators look on. We expect the breakup to be amicable and the integration to be described as a strategic success, with the savings reinvested in a second press release."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "CVS Health to split, reversing years of deal-making to combine pharmacies and insurance",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 1,
+   "title": "Five midterm winners and losers: MAHA mowed down, Dem docs scrub in, ‘Medicare for All’ returns",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/midterm-health-policy-winners-losers-medicare-for-all-rfk-jr/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 2,
+   "title": "Pharmalittle: We’re reading about CVS plans to split up, FDA inspections in India and China and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/04/cvs-plans-to-split-up-fda-inspections-in-india-and-china/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 3,
+   "title": "Sens. Wyden and Sanders, backers of ‘Medicare for All,’ set to take charge of key committees",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/democratic-wins-medicare-for-all-momentum/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 4,
+   "title": "The biotech startups skipping AI for drug discovery",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/the-biotech-startups-skipping-ai-for-drug-discovery-ai-prognosis/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 5,
+   "title": "Amid Mass General Brigham layoffs, CEO pens vague letter, stirring staff anxiety",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/03/mass-general-brigham-layoffs-ceo-letter-staff-anxiety/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 6,
+   "title": "FDA, CMS look to collaborate with states on health AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/03/fda-cms-collaborate-with-states-on-ai-heath-tech/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 7,
+   "title": "PubMed Pauses Major Journal; CDC Alert Blocked; DOGE Chief's Spouse Hired at HHS",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123713",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 8,
+   "title": "Patients want a human in the loop for AI healthcare tools",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/patients-want-human-in-loop-ai-healthcare-tools/873704/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 9,
+   "title": "America’s hospital brand deserts: Why clinicians keep pointing to the same few regions",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/americas-hospital-brand-deserts-why-clinicians-keep-pointing-to-the-same/873696/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 10,
+   "title": "FDA Panel Largely Pans Trial Data for Myopia Eye Drops",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/ophthalmology/generalophthalmology/123708",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 11,
+   "title": "How should the FDA regulate generative AI in medtech? Here are 5 takes",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/how-should-the-fda-regulate-generative-ai-in-medtech-here-are-5-takes/873708/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 12,
+   "title": "MultiCare, Samaritan complete merger",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/multicare-samaritan-complete-merger/873595/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 13,
+   "title": "A looming deadline to fund the government will shape Congress’ unusual lame duck session",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/lame-duck-session-congress-health-policy-aca-subsidies-medicaid-funding/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 14,
+   "title": "What do the midterms mean for health care?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/03/midterm-election-health-care-issues-dc-diagnosis-newsletter/",
+   "date": "2026-11-03"
+  }
+ ]
+}
