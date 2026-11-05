@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-05",
+ "status": "published",
+ "generated": "2026-11-05T18:41:28.871Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is CVS and its corporate strategy, with no mockery of patients, authors or private individuals. It invents no numbers, quotes or results, and it covers no death, children or violence. The deadpan joke about 'synergy' being reversible and the anticipated press release is clearly satire. The regulator-scrutiny framing is an editorial reading of the company's motives, not a stated fact, and CVS's 'coordinated care' pitch for owning both pharmacy and insurer is well known. It stays accurate to the story's subject, the split reversing the combination of pharmacies and insurance."
+ },
+ "pick": {
+  "title": "CVS Health to split, reversing years of deal-making to combine pharmacies and insurance",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/",
+  "date": "2026-11-04",
+  "headline": "CVS Health Realizes Synergy Is Reversible Once Regulators Start Asking Questions",
+  "take": "After years of explaining that owning the pharmacy and the insurer was essential to coordinated care, CVS has found that care coordinates equally well apart, as scrutiny arrives. We await the press release describing the breakup as another bold step toward the patient."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Medicare delays controversial remote patient monitoring rule to 2029",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/health-tech-news-medicare-delays-controversial-rpm-rule-update/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 1,
+   "title": "What the midterms could mean for the future of health AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/midterms-shape-future-ai-in-health-care-fda/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 2,
+   "title": "Pharma critic Bernie Sanders is set to hold major sway over FDA funding bill",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/bernie-sanders-senate-help-key-role-pdufa-reauthorization/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 3,
+   "title": "CVS Health to split, reversing years of deal-making to combine pharmacies and insurance",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/cvs-splits-pharmacy-from-insurance/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 4,
+   "title": "Mayo Clinic Platform launches AI tool to streamline clinical decision-making",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/mayo-clinic-platform-launches-ai-tool-to-streamline-clinical-decision-makin/873901/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 5,
+   "title": "Cigna boosts 2026 outlook as insurance, specialty pharmacy profits climb",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cigna-boosts-2026-outlook-insurance-specialty-pharmacy-profits-climb/873787/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 6,
+   "title": "The hospital hiding in a strip mall",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/the-hospital-hiding-in-a-strip-mall/833249/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 7,
+   "title": "Medicare finalizes physician pay cut for 2027",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-finalizes-physician-pay-cut-for-2027/873862/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 8,
+   "title": "CMS Finalizes Physician Fees; Cancer Drug Crystals in Orbit; KFC Shift Curse Tested",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123726",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 9,
+   "title": "Medicare will cut billions from 340B, expand site-neutral payments in 2027",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-will-cut-billions-from-340b-expand-site-neutral-payments-in-2027/873846/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 10,
+   "title": "Investigating RFK Jr., Fixing Surprise Billing Law May Be on Agenda for New Congress",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/electioncoverage/123725",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 11,
+   "title": "Medicare spends more on hospices owned by private equity firms, study finds",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-spends-more-hospices-owned-private-equity-firms-study-finds/873773/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 12,
+   "title": "PubMed Pauses Major Journal; CDC Alert Blocked; DOGE Chief's Spouse Hired at HHS",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123713",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 13,
+   "title": "Patients want a human in the loop for AI healthcare tools",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/patients-want-human-in-loop-ai-healthcare-tools/873704/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 14,
+   "title": "America’s hospital brand deserts: Why clinicians keep pointing to the same few regions",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/americas-hospital-brand-deserts-why-clinicians-keep-pointing-to-the-same/873696/",
+   "date": "2026-11-04"
+  }
+ ]
+}
