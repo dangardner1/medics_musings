@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-06",
+ "status": "review",
+ "generated": "2026-11-06T17:55:22.146Z",
+ "check": {
+  "ok": false,
+  "reason": "The headline and the take both give a specific figure, '$59 million', that doesn't appear in the real headline ('spent heavily') or in anything provided about the story. Calling it 'estimated' doesn't fix this, because it still presents an unsupported number as the story's fact. The rest passes: the target is PhRMA and the industry, patients aren't mocked, no one is quoted, and the tone is dry and satirical. To fix it, remove the dollar figure, for example 'PhRMA Spends Heavily Teaching Google Why Drugs Cost So Much', or confirm the number against the article and cite it."
+ },
+ "pick": {
+  "title": "Pharma’s trade group spent heavily on search ads to sway public opinion",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/11/05/phrma-blamed-pbms-high-drug-prices-search-ads/",
+  "date": "2026-11-05",
+  "headline": "PhRMA Spends Estimated $59 Million Teaching Google Why Drugs Cost So Much",
+  "take": "For an estimated $59 million in search ads, the industry made sure that people asking why their prescriptions cost so much get an answer from the people who set the price. It's a bold strategy: pay to explain the price, rather than change it."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Midterm Wave Sets a Course for ‘Medicare for All’ Fight",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/medicare-for-all-single-payer-insurance-el-sayed-midterms-democratic-congress-voter-appeal/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 1,
+   "title": "After Medicare punts RPM overhaul to 2029, advocates see window to fight back",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/new-medicare-overhaul-of-remote-patient-monitoring-hospital-pushback/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 2,
+   "title": "Opinion: AI depends on medical records that don’t always tell the full truth about women",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/women-medical-records-artificial-intelligence-diagnosis-mental-health-pain/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 3,
+   "title": "Pharma’s trade group spent heavily on search ads to sway public opinion",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/05/phrma-blamed-pbms-high-drug-prices-search-ads/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 4,
+   "title": "FDA Approves Dual-Targeted Therapy for Head and Neck Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123751",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 5,
+   "title": "CMS ousts 2 No Surprises arbiters as critics question impartiality",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-ousts-two-no-surprises-arbiters-island-peer-network-medical/873896/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 6,
+   "title": "New CMS rule ties Medicare billing privileges to owners’ misconduct",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/new-cms-rule-ties-medicare-billing-privileges-to-owners-misconduct/873975/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 7,
+   "title": "Physician Groups Give Mixed Reviews on Medicare Fee Schedule Final Rule",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/practicemanagement/reimbursement/123744",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 8,
+   "title": "Most Accurate Medical TV Show; Resident Crashes Epic? APHA's Midterms Watch Party",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/popmedicine/popmedicine/123739",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 9,
+   "title": "Mayo Clinic Platform launches AI tool to streamline clinical decision-making",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/mayo-clinic-platform-launches-ai-tool-to-streamline-clinical-decision-makin/873901/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 10,
+   "title": "Cigna boosts 2026 outlook as insurance, specialty pharmacy profits climb",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cigna-boosts-2026-outlook-insurance-specialty-pharmacy-profits-climb/873787/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 11,
+   "title": "The hospital hiding in a strip mall",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/the-hospital-hiding-in-a-strip-mall/833249/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 12,
+   "title": "Medicare finalizes physician pay cut for 2027",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-finalizes-physician-pay-cut-for-2027/873862/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 13,
+   "title": "Medicare will cut billions from 340B, expand site-neutral payments in 2027",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-will-cut-billions-from-340b-expand-site-neutral-payments-in-2027/873846/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 14,
+   "title": "Medicare delays controversial remote patient monitoring rule to 2029",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/health-tech-news-medicare-delays-controversial-rpm-rule-update/",
+   "date": "2026-11-05"
+  }
+ ]
+}
