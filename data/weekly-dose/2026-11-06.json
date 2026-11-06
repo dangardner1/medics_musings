@@ -1,0 +1,22 @@
+{
+  "issue": 4,
+  "date": "2026-11-06",
+  "title": "Innovation Is Not Staffing",
+  "preview": "A new kiosk, an old chair, and the hospital's priorities in order.",
+  "jokes": [
+    {
+      "setup": "The hospital announced a bold new AI initiative to reduce clinician burnout.",
+      "punchline": "It will generate a weekly wellness survey, and clinicians will be asked to complete it on their own time."
+    },
+    {
+      "setup": "My health system just introduced a patient-centered care model.",
+      "punchline": "The patient is now at the center of a floor plan, three forms, and a parking structure."
+    }
+  ],
+  "cartoon": {
+    "file": "cartoon.jpg",
+    "caption": "“The kiosk is a huge win. The chair is still under review.”",
+    "alt": "A smiling administrator cuts a ribbon on a gleaming kiosk while exhausted nurses queue behind him with a broken chair and carts of paperwork."
+  },
+  "status": "send"
+}
