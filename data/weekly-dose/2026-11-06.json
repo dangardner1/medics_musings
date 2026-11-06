@@ -18,5 +18,7 @@
     "caption": "“The kiosk is a huge win. The chair is still under review.”",
     "alt": "A smiling administrator cuts a ribbon on a gleaming kiosk while exhausted nurses queue behind him with a broken chair and carts of paperwork."
   },
-  "status": "send"
+  "status": "sent",
+  "sent_at": "2026-11-06T14:02:58.295Z",
+  "campaign_id": "ff159878c7"
 }
