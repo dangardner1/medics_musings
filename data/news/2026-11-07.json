@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-07",
+ "status": "published",
+ "generated": "2026-11-07T16:49:37.152Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is pharma and the industry's reliance on surrogate endpoints, with no mockery of patients, authors, or private individuals. It stays consistent with the real story, a failed Lp(a) drug that raises questions about strategy, and it invents no numbers or quotes. The 'Learnings' deck line is plainly a joke and not a quotation from the article. The tone is dry and deadpan, it is actually satirical, and it avoids death, children, and violence."
+ },
+ "pick": {
+  "title": "Failure of Novartis Lp(a) drug raises questions about cardiovascular strategy",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/07/aha-conference-news-novartis-lp-a-pelacarsen-heart-disease-trial-mystery/",
+  "date": "2026-11-07",
+  "headline": "Novartis Drug Lowers Lp(a) Successfully, Leaves Heart Attacks Out of the Celebration",
+  "take": "The drug moved the marker, but heart attacks and strokes didn't follow. The surrogate endpoint remains the industry's most reliable route to being right on a slide. Somewhere, a strategy deck is being retitled 'Learnings.'"
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "States sue Trump administration again to delay Medicaid work requirements",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/states-sue-trump-delay-medicaid-work-requirements/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 1,
+   "title": "Midterm Wave Sets a Course for ‘Medicare for All’ Fight",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/medicare-for-all-single-payer-insurance-el-sayed-midterms-democratic-congress-voter-appeal/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 2,
+   "title": "After Medicare punts RPM overhaul to 2029, advocates see window to fight back",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/new-medicare-overhaul-of-remote-patient-monitoring-hospital-pushback/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 3,
+   "title": "Opinion: AI depends on medical records that don’t always tell the full truth about women",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/women-medical-records-artificial-intelligence-diagnosis-mental-health-pain/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 4,
+   "title": "FDA Approves Dual-Targeted Therapy for Head and Neck Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123751",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 5,
+   "title": "CMS ousts 2 No Surprises arbiters as critics question impartiality",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-ousts-two-no-surprises-arbiters-island-peer-network-medical/873896/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 6,
+   "title": "New CMS rule ties Medicare billing privileges to owners’ misconduct",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/new-cms-rule-ties-medicare-billing-privileges-to-owners-misconduct/873975/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 7,
+   "title": "Democrats’ midterm landslide spells relief for hospitals",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/why-democrats-midterm-landslide-helps-hospital-industry/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 8,
+   "title": "Democrats’ midterm victory, and a questionable fertility procedure",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/06/readout-loud-podcast-midterm-elections-fertility-ivf-mrt-therapy/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 9,
+   "title": "Failure of Novartis Lp(a) drug raises questions about cardiovascular strategy",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/aha-conference-news-novartis-lp-a-pelacarsen-heart-disease-trial-mystery/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 10,
+   "title": "Despite Novo drug’s failure, cardiologists say they will still pursue anti-inflammatories",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/aha-2026-conference-novo-nordisk-zeus-trial-ziltivekimab-results/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 11,
+   "title": "Our Reporters Discuss Healthcare Costs — And What Changes the Midterms May Portend",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-november-7-2026-midterm-election-healthcare-costs-reform-media-appearances/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 12,
+   "title": "Texas Democrats Swept Statewide Races. Now Comes the Hard Part of Solving Healthcare Angst.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/texas-democrats-state-healthcare-agenda-election-blue-wave-hinojosa-goodwin/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 13,
+   "title": "Will RFK Jr. Face Impeachment Under New Congress?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123770",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 14,
+   "title": "Gene Therapy Under Scrutiny After Nine Tumor Reports",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/generalneurology/123769",
+   "date": "2026-11-06"
+  }
+ ]
+}
