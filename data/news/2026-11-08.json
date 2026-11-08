@@ -1,0 +1,117 @@
+{
+ "date": "2026-11-08",
+ "status": "published",
+ "generated": "2026-11-08T17:01:03.421Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: pharma, investor hype and surrogate-endpoint culture. Patients are not mocked, and 'patients' hearts' is framed sympathetically. No reporters or private individuals are targeted, and there are no invented numbers or quotes. The headline is hyperbolic but consistent with the real story's 'disconnect with outcomes.' It is dry, deadpan and clearly satirical. It does not dwell on death, children or violence."
+ },
+ "pick": {
+  "title": "Lp(a)-Lowering Pelacarsen Shows Huge Disconnect With Cardiovascular Outcomes",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/meetingcoverage/aha/123771",
+  "date": "2026-11-07",
+  "headline": "Drug Flawlessly Improves Lab Value, Declines to Improve Anything Else",
+  "take": "Lowering the biomarker was the investment thesis, the conference slide, and a healthy share of the stock price. Only the outcomes trial thought to ask whether patients' hearts agreed. The surrogate endpoint remains the one part of the pipeline that reliably delivers on schedule."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Why the latest heart drug failures should make us all more skeptical of AI hype",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/08/heart-drug-failures-lessons-for-artificial-intelligence-from-aha-conference/",
+   "date": "2026-11-08"
+  },
+  {
+   "id": 1,
+   "title": "BIO joins the legal fight against Medicare pilot that ties drug prices to peer countries",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/bio-sues-to-block-globe-drug-pricing-model/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 2,
+   "title": "Lowering blood pressure after stroke or with diabetes poses challenges, in research and practice",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/new-studies-on-blood-pressure-management-aha-conference-news/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 3,
+   "title": "Failure of Novartis Lp(a) drug raises questions about cardiovascular strategy",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/aha-conference-news-novartis-lp-a-pelacarsen-heart-disease-trial-mystery/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 4,
+   "title": "Despite Novo drug’s failure, cardiologists say they will still pursue anti-inflammatories",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/07/aha-2026-conference-novo-nordisk-zeus-trial-ziltivekimab-results/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 5,
+   "title": "Our Reporters Discuss Healthcare Costs — And What Changes the Midterms May Portend",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-november-7-2026-midterm-election-healthcare-costs-reform-media-appearances/",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 6,
+   "title": "Student Loan Limits for PAs, Other Health Workers Steering Many to Private Lenders",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicaleducation/123760",
+   "date": "2026-11-08"
+  },
+  {
+   "id": 7,
+   "title": "Ditching Primary Prevention Statins in Old Age? Technically 'Safe' With Caveats",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/aha/123774",
+   "date": "2026-11-08"
+  },
+  {
+   "id": 8,
+   "title": "Ziltivekimab Falls Short for Cutting Cardiovascular Events in ASCVD, CKD",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/aha/123773",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 9,
+   "title": "Oral LSD Drug Hits Phase III Endpoints in Anxiety, Depression",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/neicongress/123772",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 10,
+   "title": "Avoiding Chemo in Breast Cancer; Psychedelic Medication for Depression",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123762",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 11,
+   "title": "Lp(a)-Lowering Pelacarsen Shows Huge Disconnect With Cardiovascular Outcomes",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/aha/123771",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 12,
+   "title": "Retatrutide Is One Click Away. That Doesn't Make it Safe.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123757",
+   "date": "2026-11-07"
+  },
+  {
+   "id": 13,
+   "title": "Study Finds Evidence of Cannabis Use 2,800 Years Ago",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/psychiatry/generalpsychiatry/123750",
+   "date": "2026-11-07"
+  }
+ ]
+}
