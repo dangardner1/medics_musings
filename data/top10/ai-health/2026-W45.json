@@ -1,0 +1,267 @@
+{
+ "list": "ai-health",
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-08",
+ "status": "review",
+ "generated": "2026-11-09T23:01:55.865Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "AI-Generated Draft Response Tool, Message Turnaround Time, and After-Hours Replies Among Health Care Professionals",
+   "source": "JAMA Netw Open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42961417/",
+   "date": "2026-10-01",
+   "take": "Researchers test whether AI-drafted inbox replies cut turnaround time and after-hours work. Finally, an AI metric measured in physicians' evenings rather than the vendor's quarterly earnings."
+  },
+  {
+   "rank": 2,
+   "title": "Hospitals write off $132B as AI fails to move the needle with finances",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospitals-write-off-132b-ai-fails-to-move-needle-with-finances/874161/",
+   "date": "2026-11-09",
+   "take": "Hospitals write off $132 billion while AI fails to move the needle on finances. The pilot budget was apparently the only thing that scaled."
+  },
+  {
+   "rank": 3,
+   "title": "As more doctors consult chatbots, health systems can block them — or buy in",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/doctors-use-ai-chatbots-hipaa-compliance-questions/",
+   "date": "2026-11-05",
+   "take": "Hundreds of thousands of doctors are consulting chatbots, so health systems must choose between blocking them and buying in. Either way, the curbside consult now has a data-sharing agreement."
+  },
+  {
+   "rank": 4,
+   "title": "Why the latest heart drug failures should make us all more skeptical of AI hype",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/08/heart-drug-failures-lessons-for-artificial-intelligence-from-aha-conference/",
+   "date": "2026-11-08",
+   "take": "Another round of heart drug failures suggests AI has not yet abolished the oldest bottleneck in drug development, which is biology. The pitch decks remain undefeated."
+  },
+  {
+   "rank": 5,
+   "title": "Updated AI and/or Machine Learning-Based Medical Devices Cleared Through the FDA 510(k) Pathway",
+   "source": "JAMA Netw Open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42986649/",
+   "date": "2026-11-02",
+   "take": "JAMA Network Open updates the count of AI devices cleared through the FDA's 510(k) pathway. Substantial equivalence remains the only field where being similar to the last thing counts as innovation."
+  },
+  {
+   "rank": 6,
+   "title": "AI: ChatGPT makers are sued by parents over daughter's death",
+   "source": "BMJ",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42982477/",
+   "date": "2026-11-04",
+   "take": "Parents sue ChatGPT's makers over their daughter's death. Courts may now decide what software companies have long avoided: whether a product that talks like a confidant owes a duty like one."
+  },
+  {
+   "rank": 7,
+   "title": "More AI won’t fix healthcare’s revenue cycle. Orchestration will.",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/more-ai-wont-fix-healthcares-revenue-cycle-orchestration-will/873614/",
+   "date": "2026-11-09",
+   "take": "Most providers automate revenue with AI, but only 4% have connected it. The proposed fix for too many disconnected tools is a tool to manage the tools."
+  },
+  {
+   "rank": 8,
+   "title": "Performance of artificial intelligence versus clinician left-ventricular segmentation of cardiac MRI for mortality prediction: a retrospective, multicentre, prognostic study",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42971896/",
+   "date": "2027-06-16",
+   "take": "A multicentre study compares AI and clinician left-ventricular segmentation of cardiac MRI for predicting mortality. Radiologists have long suspected that contouring ventricles by hand was not the best use of a medical degree."
+  },
+  {
+   "rank": 9,
+   "title": "Context is built, not given: context readiness as the next benchmark for clinical use of artificial intelligence",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42977646/",
+   "date": "2026-11-04",
+   "take": "The Lancet Digital Health argues that context readiness should be the next benchmark for clinical AI. The model passed the exam but has never seen our EHR, our workflow, or our Tuesday."
+  },
+  {
+   "rank": 10,
+   "title": "FDA, CMS look to collaborate with states on health AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/03/fda-cms-collaborate-with-states-on-ai-heath-tech/",
+   "date": "2026-11-03",
+   "take": "FDA and CMS want to work with states on health AI regulation, including protecting doctors from AI liability. Federal and state oversight will meet in the middle, probably at the physician's malpractice policy."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Governing artificial intelligence for reliable research",
+   "source": "Lancet",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42962694/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 1,
+   "title": "Cross-paradigm audit of large language model judges for clinical text evaluation",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42982942/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 2,
+   "title": "Updated AI and/or Machine Learning-Based Medical Devices Cleared Through the FDA 510(k) Pathway",
+   "source": "JAMA Netw Open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42986649/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 3,
+   "title": "Emerging applications of machine learning and AI for predictive modeling in precision medicine",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42977730/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 4,
+   "title": "Patient engagement, acceptability, and preference of artificial intelligence versus human coaching for diabetes prevention",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42982853/",
+   "date": "2026-08-03"
+  },
+  {
+   "id": 5,
+   "title": "AI-Generated Draft Response Tool, Message Turnaround Time, and After-Hours Replies Among Health Care Professionals",
+   "source": "JAMA Netw Open",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42961417/",
+   "date": "2026-10-01"
+  },
+  {
+   "id": 6,
+   "title": "A statistical framework for evaluating the repeatability and reproducibility of large language models",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42987417/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 7,
+   "title": "AI: ChatGPT makers are sued by parents over daughter's death",
+   "source": "BMJ",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42982477/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 8,
+   "title": "AnySleep: a channel-agnostic deep learning system for high-resolution sleep staging in multi-center cohorts",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42963354/",
+   "date": "2026-10-30"
+  },
+  {
+   "id": 9,
+   "title": "Coasting on artificial intelligence safety",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42971893/",
+   "date": "2026-11-02"
+  },
+  {
+   "id": 10,
+   "title": "Mortality prediction using cardiac magnetic resonance: artificial intelligence versus clinicians-Quo vadis?",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42971895/",
+   "date": "2027-06-16"
+  },
+  {
+   "id": 11,
+   "title": "Context is built, not given: context readiness as the next benchmark for clinical use of artificial intelligence",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42977646/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 12,
+   "title": "Performance of artificial intelligence versus clinician left-ventricular segmentation of cardiac MRI for mortality prediction: a retrospective, multicentre, prognostic study",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42971896/",
+   "date": "2027-06-16"
+  },
+  {
+   "id": 13,
+   "title": "AI chatbots aren’t therapists. But can they finally get men to open up?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/ai-chatbots-can-overcome-mental-health-barriers-in-men/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 14,
+   "title": "Why the latest heart drug failures should make us all more skeptical of AI hype",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/08/heart-drug-failures-lessons-for-artificial-intelligence-from-aha-conference/",
+   "date": "2026-11-08"
+  },
+  {
+   "id": 15,
+   "title": "As more doctors consult chatbots, health systems can block them — or buy in",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/doctors-use-ai-chatbots-hipaa-compliance-questions/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 16,
+   "title": "What the midterms could mean for the future of health AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/05/midterms-shape-future-ai-in-health-care-fda/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 17,
+   "title": "The biotech startups skipping AI for drug discovery",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/04/the-biotech-startups-skipping-ai-for-drug-discovery-ai-prognosis/",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 18,
+   "title": "FDA, CMS look to collaborate with states on health AI",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/03/fda-cms-collaborate-with-states-on-ai-heath-tech/",
+   "date": "2026-11-03"
+  },
+  {
+   "id": 19,
+   "title": "Hospitals write off $132B as AI fails to move the needle with finances",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospitals-write-off-132b-ai-fails-to-move-needle-with-finances/874161/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 20,
+   "title": "AWS pledges $100M in cloud, AI credits to close health equity gaps",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/aws-pledges-100m-in-cloud-ai-credits-to-close-health-equity-gaps/874103/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 21,
+   "title": "What does AI governance really mean in healthcare?",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/what-does-ai-governance-really-mean-in-healthcare/873027/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 22,
+   "title": "More AI won’t fix healthcare’s revenue cycle. Orchestration will.",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/more-ai-wont-fix-healthcares-revenue-cycle-orchestration-will/873614/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 23,
+   "title": "How rural healthcare organizations are turning AI investments into measurable performance improvements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/how-rural-healthcare-organizations-are-turning-ai-investments-into-measurab/873543/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 24,
+   "title": "A new rule to prevent the spread of bioweapons",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/health-news-new-rule-to-prevent-bioweapon-spread/",
+   "date": "2026-11-09"
+  }
+ ]
+}

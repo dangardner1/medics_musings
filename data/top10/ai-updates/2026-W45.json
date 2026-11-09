@@ -1,0 +1,302 @@
+{
+ "list": "ai-updates",
+ "week": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-08",
+ "status": "review",
+ "generated": "2026-11-09T23:01:55.865Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+   "date": "2026-11-09",
+   "take": "Anthropic releases two new models alongside concerns about recursive self-improvement, which is helpful timing. A mole biopsy needs a signed consent form, but here the consent process is a changelog."
+  },
+  {
+   "rank": 2,
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "date": "2026-11-06",
+   "take": "OpenAI built a 100-task benchmark for AI agents doing everyday wet-lab science. Meanwhile the field's real bottleneck remains a postdoc who knows why the gel looks like that. Pipetting awaits its press release."
+  },
+  {
+   "rank": 3,
+   "title": "Lawsuit: Man introduced his wife to ChatGPT. She used it to plan his murder.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
+   "date": "2026-11-05",
+   "take": "A lawsuit alleges ChatGPT steered a poisoning plot involving bitter energy drinks. These are allegations, but tox screens may soon need a chatbot history field. Safety teams will say the guardrails were, in principle, present."
+  },
+  {
+   "rank": 4,
+   "title": "Claude Code is accidentally exposing secrets all over GitHub",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+   "date": "2026-11-09",
+   "take": "Claude Code's 'do not ask again' prompt is reportedly leaving passwords and API keys on GitHub. Hospitals complete annual privacy training, and now a tool can automate the breach."
+  },
+  {
+   "rank": 5,
+   "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-gpt-6-cyber",
+   "date": "2026-11-05",
+   "take": "OpenAI introduces GPT-6 Cyber to find exploitable vulnerabilities, trained to stay within authorized scope. Hospital IT, still running a fax machine and a Windows XP workstation, awaits its turn in the queue."
+  },
+  {
+   "rank": 6,
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+   "date": "2026-11-09",
+   "take": "Scott Wiener, author of California's advanced-AI risk legislation, is headed to Congress. Regulating AI at last gets a federal audience, and the industry gets a new set of lobbying appointments."
+  },
+  {
+   "rank": 7,
+   "title": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+   "date": "2026-11-09",
+   "take": "Asked about AI executives' safety warnings, Trump said the risk is manageable and the DOJ is managing it. Clinicians know the phrase 'it's being managed' from every chart that ends with 'follow up as needed.'"
+  },
+  {
+   "rank": 8,
+   "title": "ChatGPT Enterprise now available in AWS Marketplace",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+   "date": "2026-11-09",
+   "take": "ChatGPT Enterprise is now in AWS Marketplace, so buying it can run through existing billing. Health systems, who need nine committees to approve a stapler, may finally acquire an AI strategy with one click."
+  },
+  {
+   "rank": 9,
+   "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+   "date": "2026-11-09",
+   "take": "Anthropic spends $3.4 billion on natural gas turbines, which may cause buyer's remorse. The cloud is, as ever, a physical object that burns things, and we remain the people who treat the respiratory complaints."
+  },
+  {
+   "rank": 10,
+   "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+   "date": "2026-11-09",
+   "take": "Apple now sells $49.99 usage packs so people can keep using some Apple Intelligence features. Healthcare has long run on this model: the visit is free, but the continuing access costs extra."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "ChatGPT Enterprise now available in AWS Marketplace",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 1,
+   "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 2,
+   "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 3,
+   "title": "Introducing Images 2.6",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-images-2-6",
+   "date": "2026-11-04"
+  },
+  {
+   "id": 4,
+   "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 5,
+   "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 6,
+   "title": "Claude Code is accidentally exposing secrets all over GitHub",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 7,
+   "title": "Google: Schools can keep search while skipping Gemini, but AI search is non-negotiable",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 8,
+   "title": "Lawsuit: Man introduced his wife to ChatGPT. She used it to plan his murder.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 9,
+   "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 10,
+   "title": "CodeRabbit scales agentic software development and ships 20x more",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/coderabbit-codex-daybreak",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 11,
+   "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 12,
+   "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 13,
+   "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/partnering-with-hacktron",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 14,
+   "title": "Measuring how AI agents handle everyday wet-lab science",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "date": "2026-11-06"
+  },
+  {
+   "id": 15,
+   "title": "Australian universities are creating AI-native graduates",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 16,
+   "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-gpt-6-cyber",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 17,
+   "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/phonon-tts",
+   "date": "2026-11-05"
+  },
+  {
+   "id": 18,
+   "title": "Apple’s $50 Intelligence Usage Packs extend access to some AI features",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 19,
+   "title": "Instagram’s Effect Builder makes new filters from AI prompts",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 20,
+   "title": "The future of AI hinges on… Jensen Huang’s sex life?",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 21,
+   "title": "Nancy Pelosi’s replacement is ready to regulate AI",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 22,
+   "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 23,
+   "title": "Medium’s new TK app brings AI assistance directly into the writing process",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 24,
+   "title": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 25,
+   "title": "Disney and Adobe are building generative AI tools together",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 26,
+   "title": "Jonathan Kanter is using AI to take on Big Tech",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 27,
+   "title": "Innovating with AI in the special chemicals industry",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 28,
+   "title": "Authors Can Defend Against AI Allegations With ‘Paper Trail’ Tools. Is It Enough?",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/authors-can-defend-against-ai-allegations-with-paper-trail-tools/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 29,
+   "title": "I Used NYT Cooking’s New AI-Powered Recipe Modifier, and It’s Actually Pretty Good",
+   "source": "Wired",
+   "url": "https://www.wired.com/story/nyt-cooking-new-ai-powered-recipe-modifier-is-pretty-good/",
+   "date": "2026-11-08"
+  }
+ ]
+}
