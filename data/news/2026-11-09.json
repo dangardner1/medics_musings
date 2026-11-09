@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-09",
+ "status": "published",
+ "generated": "2026-11-09T21:24:48.380Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: vendors, revenue-cycle tech hype, and prior authorization bureaucracy. Patients, authors and private individuals are not mocked, and nothing involves death, children or violence. The headline stays close to the real story, which argues that more AI is not the fix and that orchestration is. The joke, that the industry's answer is a rebrand, is dry and clearly satirical. It does not quote the article. The 4% figure is the one item to check: it is presented as fact and I could not verify it from the headline alone, so confirm it appears in the source summary before publishing."
+ },
+ "pick": {
+  "title": "More AI won’t fix healthcare’s revenue cycle. Orchestration will.",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/spons/more-ai-wont-fix-healthcares-revenue-cycle-orchestration-will/873614/",
+  "date": "2026-11-09",
+  "headline": "Revenue Cycle AI Underperforms; Industry Recommends Giving It a New Name",
+  "take": "Only 4% of providers have connected their revenue automation, so the rest own several expensive robots that don't talk to each other. The proposed fix is a word: orchestration. Prior authorization already has a name, and it still takes a fax and a prayer."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Bill Ackman’s bold plan to transform brain research",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/bill-ackman-launches-new-brain-research-institute/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 1,
+   "title": "FDA warns GLP-1 drugs carry potential risk of rare eye condition",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/glp-1-drugs-potential-risk-rare-eye-condition-naion-fda/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 2,
+   "title": "AI chatbots aren’t therapists. But can they finally get men to open up?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/ai-chatbots-can-overcome-mental-health-barriers-in-men/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 3,
+   "title": "Why the latest heart drug failures should make us all more skeptical of AI hype",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/08/heart-drug-failures-lessons-for-artificial-intelligence-from-aha-conference/",
+   "date": "2026-11-08"
+  },
+  {
+   "id": 4,
+   "title": "Hospitals write off $132B as AI fails to move the needle with finances",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospitals-write-off-132b-ai-fails-to-move-needle-with-finances/874161/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 5,
+   "title": "FDA Slaps New Safety Warning on GLP-1 Drugs",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/ophthalmology/generalophthalmology/123783",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 6,
+   "title": "AWS pledges $100M in cloud, AI credits to close health equity gaps",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/aws-pledges-100m-in-cloud-ai-credits-to-close-health-equity-gaps/874103/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 7,
+   "title": "12% of U.S. hospitals are owned by private equity",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/12-of-us-hospitals-are-owned-by-private-equity/874098/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 8,
+   "title": "CMS postpones RPM payment halt for 2 years",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-postpones-rpm-payment-halt-for-2-years/874050/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 9,
+   "title": "What does AI governance really mean in healthcare?",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/what-does-ai-governance-really-mean-in-healthcare/873027/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 10,
+   "title": "More AI won’t fix healthcare’s revenue cycle. Orchestration will.",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/more-ai-wont-fix-healthcares-revenue-cycle-orchestration-will/873614/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 11,
+   "title": "How rural healthcare organizations are turning AI investments into measurable performance improvements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/how-rural-healthcare-organizations-are-turning-ai-investments-into-measurab/873543/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 12,
+   "title": "Trump administration removes WuXi AppTec from its Chinese military list",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/09/trump-administration-removes-wuxi-apptec-from-its-chinese-military-list/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 13,
+   "title": "A new rule to prevent the spread of bioweapons",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/health-news-new-rule-to-prevent-bioweapon-spread/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: STAT+: CVS’ split doesn’t fix its fundamental problem",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/cvs-health-split-pbm-conflict-examined-anthony-loiacono-judi-health/",
+   "date": "2026-11-09"
+  }
+ ]
+}
