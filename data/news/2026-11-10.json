@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-10",
+ "status": "review",
+ "generated": "2026-11-10T18:38:46.483Z",
+ "check": {
+  "ok": false,
+  "reason": "The take states as fact that Oura is 'delaying its IPO'. Neither the real headline nor anything shown to us supports this, so it may be an invented fact. The $625 million figure and the Counsel Health acquisition match the real headline. The satire is aimed at the right target (tech hype and clinical AI), and it doesn't mock patients, reporters or private individuals. It doesn't quote the article or touch any excluded topics. Remove or verify the IPO claim, for example by cutting it to 'Oura is spending $625 million on clinical AI', and it should pass."
+ },
+ "pick": {
+  "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+  "date": "2026-11-10",
+  "headline": "Smart Ring Maker Pays $625 Million to Teach Jewelry to Practice Medicine",
+  "take": "After delaying its IPO, Oura is spending $625 million on clinical AI. The ring that tells you how you slept will now tell you what to do about it. Physicians are still waiting on a prior authorization that no ring, algorithm or fax machine has managed to approve."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Former Eli Lilly rep claims she was fired for complaining about marketing of Mounjaro diabetes drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/10/former-lilly-rep-claims-she-was-fired-for-complaining-about-marketing-of-mounjaro-diabetes-drug/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 1,
+   "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 2,
+   "title": "GLP-1s are given an FDA warning for rare eye condition risk",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/biotech-news-glp-1-given-an-fda-warning-for-rare-eye-condition-risk/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 3,
+   "title": "Pharma is a ‘mixed bag’ when providing drug access to low- and middle-income countries, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/10/access-to-key-drugs-mixed-in-poor-countries-cancer-diabetes/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 4,
+   "title": "The Ultimate Adulting Task: Signing Up for Health Insurance",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/healthq-beginners-guide-buying-insurance-aca-marketplace-obamacare-free-assisters/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 5,
+   "title": "State Democratic wins make Medicaid expansion a possibility for more than a million people",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/medicaid-expansion-holdout-states-midterm-election-power-shift/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 6,
+   "title": "Opinion: AI’s health advice can be accurate and still make us sicker",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/ai-health-advice-accuracy-messaging-risk-behavioral-benchmarking/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 7,
+   "title": "Opinion: STAT+: BIO CEO: American biotech needs a coordinated plan to beat China — now",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/china-biotech-bio-plan-space-race/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 8,
+   "title": "FDA approves novel Bayer drug to reduce recurrence of stroke",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/cardiovascular-stroke-recurrence-bayer-drug-fda-approval/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 9,
+   "title": "Bill Ackman’s bold plan to transform brain research",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/bill-ackman-launches-new-brain-research-institute/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 10,
+   "title": "FDA warns GLP-1 drugs carry potential risk of rare eye condition",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/09/glp-1-drugs-potential-risk-rare-eye-condition-naion-fda/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 11,
+   "title": "New Medicare Payment Model for Back Pain, Heart Failure Riles Docs",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123806",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 12,
+   "title": "Peak Stroke Risk Hours; Concerning Flu Signals; Can AI Make Men Open Up?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/cardiology/strokes/123803",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 13,
+   "title": "Four states sue HHS to stop Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/four-states-sue-hhs-to-stop-medicaid-work-requirements/874191/",
+   "date": "2026-11-09"
+  },
+  {
+   "id": 14,
+   "title": "Hospitals write off $132B as AI fails to move the needle with finances",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/hospitals-write-off-132b-ai-fails-to-move-needle-with-finances/874161/",
+   "date": "2026-11-09"
+  }
+ ]
+}
