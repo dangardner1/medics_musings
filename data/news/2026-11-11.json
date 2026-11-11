@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-11",
+ "status": "review",
+ "generated": "2026-11-11T18:38:25.374Z",
+ "check": {
+  "ok": false,
+  "reason": "The headline says Oura 'Delays IPO', which is not in the real story and is presented as fact. That breaks the rule against inventing facts and misstating what the story is about. The headline is also written like a plausible straight news item, so the satire is weak. The $625 million and the acquisition are accurate, and the take targets the company, not patients. The 'readiness score is 62' line is an invented specific number and should be changed to a non-numeric phrase. Fix: remove the IPO claim, e.g. 'Smart Ring Maker Spends $625 Million to Answer the Questions Its Ring Raised', and drop the specific score."
+ },
+ "pick": {
+  "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+  "date": "2026-11-10",
+  "headline": "Smart Ring Maker Delays IPO, Spends $625 Million on Clinical AI",
+  "take": "After years of telling patients their readiness score is 62, the ring company is moving into care itself. The business plan is a finger-worn device that generates concerns and an AI that responds to them. The physician who eventually reviews all this will, as usual, not be on the cap table."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Why this former ER doc thinks giving AI less information is sometimes better",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-cofounder-graham-walker-on-crosscover-ai-prognosis/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 1,
+   "title": "Cassidy sets key vote on Overton, even as he remains undecided on nominee to lead FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/fda-commissioner-nominee-heidi-overton-senate-committee-vote/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 2,
+   "title": "MDCalc launches a ‘rumble strip’ for doctors using generative AI tools",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-launches-crosscover-rumble-strip-for-clinical-ai-chatbots/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 3,
+   "title": "Democrats take new step toward investigating Trump’s drug pricing deals",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/democrats-investigate-most-favored-nation-deals-letters-drugmakers/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 4,
+   "title": "Wyden, Sanders hand-in-hand on ‘Medicare for All’ initiative",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/dc-diagnosis-wyden-sanders-aligned-on-medicare-for-all/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 5,
+   "title": "Former Eli Lilly rep claims she was fired for complaining about marketing of Mounjaro diabetes drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/10/former-lilly-rep-claims-she-was-fired-for-complaining-about-marketing-of-mounjaro-diabetes-drug/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 6,
+   "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 7,
+   "title": "GLP-1s are given an FDA warning for rare eye condition risk",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/biotech-news-glp-1-given-an-fda-warning-for-rare-eye-condition-risk/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 8,
+   "title": "Pharma is a ‘mixed bag’ when providing drug access to low- and middle-income countries, analysis finds",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/10/access-to-key-drugs-mixed-in-poor-countries-cancer-diabetes/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 9,
+   "title": "The Ultimate Adulting Task: Signing Up for Health Insurance",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/healthq-beginners-guide-buying-insurance-aca-marketplace-obamacare-free-assisters/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 10,
+   "title": "Ex-FDA Chief Saw 'Corruption'; RFK Jr.'s Power Play; MAHA Defends Russell Brand",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/123827",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 11,
+   "title": "Oura makes bet on AI in healthcare with $625M Counsel Health buy",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/oura-makes-bet-on-ai-in-healthcare-with-625m-counsel-health-buy/874401/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 12,
+   "title": "HHS Vaccine Task Force Misses Report Deadline",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/vaccines/123823",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 13,
+   "title": "Another Option for Rare Benign Soft-Tissue Tumor Wins FDA Approval",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123817",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 14,
+   "title": "Next-Gen Anticoagulant Lands FDA Nod for Secondary Stroke Prevention",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/cardiology/strokes/123815",
+   "date": "2026-11-10"
+  }
+ ]
+}
