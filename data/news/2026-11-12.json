@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-12",
+ "status": "published",
+ "generated": "2026-11-12T18:52:01.598Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: Medicare, the AI prior-authorization experiment, and the opaque, denial-prone bureaucracy. It doesn't mock patients, reporters or private individuals. It uses no invented numbers or quotes and doesn't touch death, children or violence. The take is dry and deadpan, with a real satirical turn in the closing line about automating the appeals process. It also reflects the real story, which is about new documents raising questions about the experiment. The one soft spot is that 'handed prior authorization to an algorithm' slightly overstates what is a limited pilot. It reads as satirical exaggeration rather than a factual misstatement, so it passes."
+ },
+ "pick": {
+  "title": "New documents raise more questions about Medicare’s AI prior-authorization experiment",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/",
+  "date": "2026-11-12",
+  "headline": "Medicare's AI Prior-Authorization Experiment Raises More Questions, Answers Still Pending Review",
+  "take": "Medicare has handed prior authorization to an algorithm, and new documents suggest nobody is entirely sure how it works. That's consistent with the human version, which also runs on opaque criteria and ends in a denial. The efficiency gains will arrive once the appeals process is automated too."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Will Heidi Overton get to run the FDA?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/will-heidi-overton-be-confirmed-fda-commissioner-dc-diagnosis/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 1,
+   "title": "New documents raise more questions about Medicare’s AI prior-authorization experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 2,
+   "title": "Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 3,
+   "title": "Why this former ER doc thinks giving AI less information is sometimes better",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-cofounder-graham-walker-on-crosscover-ai-prognosis/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 4,
+   "title": "Cassidy sets key vote on Overton, even as he remains undecided on nominee to lead FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/fda-commissioner-nominee-heidi-overton-senate-committee-vote/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 5,
+   "title": "UnitedHealth audit of insurer policies ducks question of denials",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/unitedhealth-internal-review-medical-policies-gaps-denials/874454/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 6,
+   "title": "Kate Middleton's Cancer; RFK Jr. and 'Lavish Gifts'; Medicare Eligibility at Age 50?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123846",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 7,
+   "title": "Last Batch of New Residency Spots Doled Out by CMS",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hospitalbasedmedicine/graduatemedicaleducation/123843",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 8,
+   "title": "Novant COO tapped to lead system after CEO retires",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/novant-coo-tapped-to-lead-system-after-ceo-retires/874428/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 9,
+   "title": "Oura makes bet on AI in healthcare with $625M Counsel Health buy",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/oura-makes-bet-on-ai-in-healthcare-with-625m-counsel-health-buy/874401/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 10,
+   "title": "MDCalc launches a ‘rumble strip’ for doctors using generative AI tools",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-launches-crosscover-rumble-strip-for-clinical-ai-chatbots/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 11,
+   "title": "Blackstone backs Pfizer’s bet on monthly obesity treatment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/biotech-news-blackstone-backs-pfizer-bet-on-monthly-obesity-treatment/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 12,
+   "title": "Pharmalittle: We’re reading about Dems eyeing Trump MFN deals, fewer drug launches in Europe, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/11/dems-eye-trump-mfn-deals-fewer-drug-launches-in-europe/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 13,
+   "title": "Scientists debut map of basal ganglia, a key brain region involved in an array of diseases",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/brain-map-basal-ganglia-offers-treatment-clues-parkinsons-schizophrenia/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 14,
+   "title": "Experts update prostate cancer screening guidelines for men",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/health-news-experts-update-prostate-cancer-screening-guidelines-for-men/",
+   "date": "2026-11-12"
+  }
+ ]
+}
