@@ -18,5 +18,7 @@
     "caption": "“Your prescription is ready. The paperwork for your prescription will be ready in March.”",
     "alt": "A weary pharmacist hands a bearded patient a tiny paper bag beside a towering stack of forms while a cheerful robot holds a clipboard."
   },
-  "status": "send"
+  "status": "sent",
+  "sent_at": "2026-11-13T14:01:04.569Z",
+  "campaign_id": "6828f83f5e"
 }
