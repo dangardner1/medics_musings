@@ -1,0 +1,22 @@
+{
+  "issue": 5,
+  "date": "2026-11-13",
+  "title": "Please Hold For Your Diagnosis",
+  "preview": "Pharmacy paperwork, a cheerful robot, and an EHR with strong opinions.",
+  "jokes": [
+    {
+      "setup": "My insurer says my new medication requires step therapy.",
+      "punchline": "Step one is the drug that already failed, step two is a form, and step three is me failing the form."
+    },
+    {
+      "setup": "Our EHR just added an AI feature that suggests the next best action for every patient.",
+      "punchline": "It's always the same: a pop-up asking whether I'd like to document that I considered it."
+    }
+  ],
+  "cartoon": {
+    "file": "cartoon.jpg",
+    "caption": "“Your prescription is ready. The paperwork for your prescription will be ready in March.”",
+    "alt": "A weary pharmacist hands a bearded patient a tiny paper bag beside a towering stack of forms while a cheerful robot holds a clipboard."
+  },
+  "status": "send"
+}
