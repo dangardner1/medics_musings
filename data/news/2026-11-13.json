@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-13",
+ "status": "published",
+ "generated": "2026-11-13T18:29:18.431Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is UnitedHealth, a corporate insurer, and the joke is about the audit's scope, which matches the real headline that the audit ducks the question of denials. It does not mock patients, authors, or private individuals. It invents no numbers or quotes, does not quote the article, and avoids death, children, and violence. The tone is dry and deadpan, and the house-and-door metaphor makes it satire rather than a restatement of the news. The one weakness is that 'the door nobody mentioned' sits oddly beside 'the one question everyone was asking', but that is a style issue, not a rule violation."
+ },
+ "pick": {
+  "title": "UnitedHealth audit of insurer policies ducks question of denials",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/unitedhealth-internal-review-medical-policies-gaps-denials/874454/",
+  "date": "2026-11-12",
+  "headline": "UnitedHealth Completes Thorough Audit of Itself, Declines to Look at Denials",
+  "take": "The juggernaut reviewed its insurer policies and somehow never reached the one question everyone was asking. It's an impressive feat of scoping: examine the house carefully, then confirm that the door nobody mentioned is not part of the house. Rigorous, independent, and bounded by the auditee's own comfort."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "HHS plans funding for research into ibogaine for PTSD",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 1,
+   "title": "Brain implant startup pauses trials",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 2,
+   "title": "Senators introduce bill to curb conflicts of interest on preventive care panel",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/uspstf-preventive-care-panel-senators-target-conflicts-of-interest/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 3,
+   "title": "Medicaid Work Rules Don’t Apply to Native Americans. They Could Still Lose Coverage.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 4,
+   "title": "Oura’s acquisition of health tech startup raises conflict-of-interest questions for Eli Lilly, experts say",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/oura-acquisition-counsel-health-eli-lilly/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 5,
+   "title": "Will Heidi Overton get to run the FDA?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/will-heidi-overton-be-confirmed-fda-commissioner-dc-diagnosis/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 6,
+   "title": "New documents raise more questions about Medicare’s AI prior-authorization experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 7,
+   "title": "Pharmalittle: We’re reading about FDA shelving fast-track review, a Canadian importer arrested, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/12/fda-fast-track-review-shelved-canadian-importer-arrested/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 8,
+   "title": "Patient comfort with AI’s clinical decisions tied to provider oversight: Gallup",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/patient-comfort-with-ais-clinical-decisions-tied-to-provider-oversight-ga/874623/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 9,
+   "title": "Trump's FDA Pick on Thin Ice; AI to Fight Insurance Denials; Coffee and Gut Health",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/fdageneral/123871",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 10,
+   "title": "MD Defends 'The Pitt'; Dr. Glaucomflecken Talks Surprise Billing; Holiday Health PSA",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/popmedicine/popmedicine/123866",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 11,
+   "title": "Despite concerns, AI becomes daily fixture in physician workflows",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/despite-concerns-ai-becomes-daily-fixture-in-physician-workflows/874541/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 12,
+   "title": "UnitedHealth audit of insurer policies ducks question of denials",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/unitedhealth-internal-review-medical-policies-gaps-denials/874454/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 13,
+   "title": "Kate Middleton's Cancer; RFK Jr. and 'Lavish Gifts'; Medicare Eligibility at Age 50?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123846",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 14,
+   "title": "Pharmalittle: We’re reading about Lilly conflict questions, a DEA OK for a narcolepsy pill, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/13/lilly-conflict-questions-dea-okays-takeda-narcolepsy-pill/",
+   "date": "2026-11-13"
+  }
+ ]
+}
