@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-14",
+ "status": "published",
+ "generated": "2026-11-14T17:00:58.579Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: state administrators, thin federal guidance and verification bureaucracy. Patients are not mocked, and the framing sides with Native American enrollees who risk losing coverage despite being exempt. There are no invented numbers, quotes from the article, named private individuals, or mockery of the reporter. The topic avoids death, children and violence. The headline accurately reflects the real story, which is that the exemption exists but coverage can still be lost. The satire is mild and mostly deadpan irony about administrative burden, but it works. One caution: the claims about limited federal guidance and the policy not yet having started go beyond the headline, so the team should confirm them against the linked article before publishing."
+ },
+ "pick": {
+  "title": "Medicaid Work Rules Don’t Apply to Native Americans. They Could Still Lose Coverage.",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/",
+  "date": "2026-11-13",
+  "headline": "Tribal Citizens Exempt From Medicaid Work Rules, Subject to Paperwork Proving Exemption",
+  "take": "The exemption is real. Confirming it falls to states, which received limited federal guidance on how. Coverage may now depend on whether a clerk can verify what the law already says. The policy hasn't started, and it's already creating administrative work, just not for the people it was aimed at."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Enforcement of stringent Medicaid work requirements delayed for six months",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/medicaid-work-requirements-implementation-delayed-six-months/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 1,
+   "title": "Democrats coalesce around ‘Medicare for More,’ ‘Medikids’ proposals",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/democrats-eye-medicare-for-more-vs-medicare-for-all/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 2,
+   "title": "HHS plans funding for research into ibogaine for PTSD",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/biotech-news-hhs-funding-for-research-into-ibogaine-for-ptsd/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 3,
+   "title": "Brain implant startup pauses trials",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/health-news-brain-implant-startup-pauses-trials/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 4,
+   "title": "Senators introduce bill to curb conflicts of interest on preventive care panel",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/uspstf-preventive-care-panel-senators-target-conflicts-of-interest/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 5,
+   "title": "Medicaid Work Rules Don’t Apply to Native Americans. They Could Still Lose Coverage.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 6,
+   "title": "Oura’s acquisition of health tech startup raises conflict-of-interest questions for Eli Lilly, experts say",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/oura-acquisition-counsel-health-eli-lilly/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 7,
+   "title": "Injectable Nanobody Wins FDA Approval for Myasthenia Gravis",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/generalneurology/123885",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 8,
+   "title": "What Was FDA's GLP-1 Warning About?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/quizzes/news-quiz/123884",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 9,
+   "title": "Patient comfort with AI’s clinical decisions tied to provider oversight: Gallup",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/patient-comfort-with-ais-clinical-decisions-tied-to-provider-oversight-ga/874623/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 10,
+   "title": "Trump's FDA Pick on Thin Ice; AI to Fight Insurance Denials; Coffee and Gut Health",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/fdageneral/123871",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 11,
+   "title": "Pharmalittle: We’re reading about Lilly conflict questions, a DEA OK for a narcolepsy pill, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/13/lilly-conflict-questions-dea-okays-takeda-narcolepsy-pill/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 12,
+   "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/us-measles-elimination-status-lost-outbreaks-continuous-spread-year-paho-cdc/",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 13,
+   "title": "It’s Open Enrollment Season. Hear Reporters Discuss ACA Sign-Ups, High Costs, and More.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-november-14-2026-obamacare-aca-open-enrollment-measles-midterms/",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 14,
+   "title": "New addiction society guidance on medetomidine’s brutal withdrawal",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/13/medetomidine-withdrawal-asam-new-treatment-guidance/",
+   "date": "2026-11-13"
+  }
+ ]
+}
