@@ -1,0 +1,89 @@
+{
+ "date": "2026-11-15",
+ "status": "review",
+ "generated": "2026-11-15T17:40:45.733Z",
+ "check": {
+  "ok": false,
+  "reason": "The satirical headline and the take both say enforcement can wait 'until July.' The real headline only says enforcement is paused and gives no date, so the July deadline is an unsupported specific that may be invented. The headline also recasts a pause as the administration 'giving states until' a date 'to start removing people,' which changes what the story is about. The target (the administration and bureaucracy) and the tone are fine, and nothing mocks patients or quotes the article. To pass, drop the date or confirm it from the source, and keep the framing to a pause in enforcement."
+ },
+ "pick": {
+  "title": "Trump Admin Pauses Enforcement of Its Medicaid Work Rules",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123887",
+  "date": "2026-11-14",
+  "headline": "Administration Gives States Until July to Start Removing People From Medicaid",
+  "take": "The work requirement is national and mandatory, except that enforcement can now wait until July. It's good to see the system grant itself the grace period it has never offered anyone with a missing form. Deadlines, it turns out, are flexible when the bureaucracy is the one racing them."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/",
+   "date": "2026-11-15"
+  },
+  {
+   "id": 1,
+   "title": "Israeli Strike on Hospital Highlights the Devastation to Gaza's Healthcare System",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hospitalbasedmedicine/hospitalists/123869",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 2,
+   "title": "Early-Onset Colorectal Cancer; AI-Enabled Prior Auth; Type 1 Diabetes Subtypes",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123879",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 3,
+   "title": "Trump Admin Pauses Enforcement of Its Medicaid Work Rules",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/washington-watch/123887",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 4,
+   "title": "Are AI Data Centers a Health Concern?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/climate-checkup/123882",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 5,
+   "title": "Could Early Eosinophilic Esophagitis Treatment Prevent Asthma?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/acaai/123889",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 6,
+   "title": "US Has Lost Measles Elimination Status, Global Health Authorities Say",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/us-measles-elimination-status-lost-outbreaks-continuous-spread-year-paho-cdc/",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 7,
+   "title": "It’s Open Enrollment Season. Hear Reporters Discuss ACA Sign-Ups, High Costs, and More.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/on-air-november-14-2026-obamacare-aca-open-enrollment-measles-midterms/",
+   "date": "2026-11-14"
+  },
+  {
+   "id": 8,
+   "title": "The Fine Print on Our National Bet",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123873",
+   "date": "2026-11-15"
+  },
+  {
+   "id": 9,
+   "title": "U.S. Flu season Is Off to a Very Early Start. It's Targeting the South and West Now",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/primarycare/vaccines/123888",
+   "date": "2026-11-15"
+  }
+ ]
+}
