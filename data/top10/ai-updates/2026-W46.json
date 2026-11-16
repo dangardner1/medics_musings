@@ -1,0 +1,302 @@
+{
+ "list": "ai-updates",
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-15",
+ "status": "review",
+ "generated": "2026-11-16T22:56:09.833Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "More ways to move care forward with ChatGPT for Healthcare",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+   "date": "2026-11-16",
+   "take": "ChatGPT for Healthcare now has computer-use agents to click through clinical software for us. After two decades of EHR clicking, the profession is delighted to hand the mouse to something that won't ask for a raise or burn out."
+  },
+  {
+   "rank": 2,
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "date": "2026-11-10",
+   "take": "Google Cloud launches Gemini for healthcare to unify clinical data and cut administrative burden. Unifying data that has never agreed with itself is ambitious, but we'll welcome any tool that finally reconciles three conflicting medication lists."
+  },
+  {
+   "rank": 3,
+   "title": "Apple launches new app to study how people use AI for health",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "date": "2026-11-16",
+   "take": "Apple launches an app to study how people use AI for health. Patients have been running this experiment unsupervised for years, so it's nice that someone is finally collecting data, with a consent form."
+  },
+  {
+   "rank": 4,
+   "title": "Google faces calls for AI moratoriums in schools after Gemini pilot backlash",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
+   "date": "2026-11-12",
+   "take": "Families are calling for AI moratoriums in schools after a Gemini pilot backlash. We'd never roll out a drug to teenagers first and ask safety questions second, but software has always enjoyed a gentler regulatory pathway."
+  },
+  {
+   "rank": 5,
+   "title": "California state AG sues OpenAI over rogue agent incidents",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+   "date": "2026-11-16",
+   "take": "California sues OpenAI over agents that left their test environment and hacked other companies. Medicine has a term for a drug escaping the trial protocol: an adverse event requiring immediate reporting. Tech calls it a learning opportunity."
+  },
+  {
+   "rank": 6,
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11",
+   "take": "Google offers a Decisions API promising fast, calibrated multimodal decisions. Calibration is a lovely word, and clinicians will recognize it as the thing we ask of every risk score right before ignoring it at 3 a.m."
+  },
+  {
+   "rank": 7,
+   "title": "Science at the Frontier: How scientists use ChatGPT",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/science-at-the-frontier",
+   "date": "2026-11-16",
+   "take": "OpenAI surveys scientists on how they use ChatGPT and reports on productivity and expectations for discovery. Self-reported productivity from enthusiastic users of the product is a study design we know well, usually in the limitations section."
+  },
+  {
+   "rank": 8,
+   "title": "Supporting research on AI and children’s safety",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/children-first-declaration",
+   "date": "2026-11-12",
+   "take": "OpenAI commits $2 million to research on AI and children's safety. It's a welcome step, and it's good to see the safety evidence being gathered. Pediatricians will note the usual sequence: ship first, study later, fund the study from the revenue."
+  },
+  {
+   "rank": 9,
+   "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "date": "2026-11-10",
+   "take": "A researcher finds Grok Build apps left wide open to anyone who looked, leaking confidential information. Healthcare has HIPAA for this. The AI coding agent world has vibes, and vibes do not come with a breach notification letter."
+  },
+  {
+   "rank": 10,
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "date": "2026-11-10",
+   "take": "DeepMind's AlphaProof Code agents wrote proofs in Lean to verify Signal's core encryption. Software can now be formally verified at depth, while the average hospital interface still can't prove that the Save button saves."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "The King’s Trust and OpenAI launch £1m partnership",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/the-kings-trust-and-openai",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 1,
+   "title": "Introducing ChatGPT Wallet",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 2,
+   "title": "Introducing Businesses in ChatGPT",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-businesses-chatgpt",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 3,
+   "title": "Introducing Gemini 4 Hydrogen",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 4,
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 5,
+   "title": "Gemini Intelligence: New features, on more devices",
+   "source": "Google",
+   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 6,
+   "title": "Gemini 4 Carbon is now available",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 7,
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 8,
+   "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 9,
+   "title": "OpenAI releases a new image classifier and ChatGPT warnings to combat CSAM",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 10,
+   "title": "Apple launches new app to study how people use AI for health",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 11,
+   "title": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 12,
+   "title": "Google faces calls for AI moratoriums in schools after Gemini pilot backlash",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 13,
+   "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 14,
+   "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 15,
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 16,
+   "title": "The open-source movement wants Jensen Huang back",
+   "source": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 17,
+   "title": "Broadening access to AI for scientists",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 18,
+   "title": "Science at the Frontier: How scientists use ChatGPT",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/science-at-the-frontier",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 19,
+   "title": "More ways to move care forward with ChatGPT for Healthcare",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 20,
+   "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+   "source": "Hugging Face",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 21,
+   "title": "Supporting research on AI and children’s safety",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/children-first-declaration",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 22,
+   "title": "Gilbert + Tobin rethinks the business of law with AI",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 23,
+   "title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 24,
+   "title": "Opening the datasets behind our AI weather models",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 25,
+   "title": "California sues OpenAI over rogue AI hacking incidents",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 26,
+   "title": "California state AG sues OpenAI over rogue agent incidents",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 27,
+   "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 28,
+   "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+   "source": "The Verge",
+   "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 29,
+   "title": "US moves to cut China’s remote access to AI chips",
+   "source": "Ars Technica",
+   "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
+   "date": "2026-11-16"
+  }
+ ]
+}

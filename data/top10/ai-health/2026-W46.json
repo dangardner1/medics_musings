@@ -1,0 +1,246 @@
+{
+ "list": "ai-health",
+ "week": "2026-W46",
+ "start": "2026-11-09",
+ "end": "2026-11-15",
+ "status": "review",
+ "generated": "2026-11-16T22:56:09.833Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "New documents raise more questions about Medicare’s AI prior-authorization experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/",
+   "date": "2026-11-12",
+   "take": "Medicare's AI prior-authorization experiment now has new documents and, naturally, more questions. Nothing says innovation like automating the denial pipeline first and asking about the guardrails in a follow-up edition."
+  },
+  {
+   "rank": 2,
+   "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+   "date": "2026-11-10",
+   "take": "A smart ring maker pays $625 million for a clinical AI startup after delaying its IPO. Your sleep score now comes with a differential diagnosis and, presumably, a subscription tier."
+  },
+  {
+   "rank": 3,
+   "title": "Beyond the Rogue Agent-Preparing Health Systems for AI Failure",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43018982/",
+   "date": "2026-11-12",
+   "take": "JAMA suggests health systems prepare for AI failure, not just the dramatic rogue-agent kind. Radical idea: write the downtime procedure before the go-live party, not after the incident review."
+  },
+  {
+   "rank": 4,
+   "title": "MDCalc launches a ‘rumble strip’ for doctors using generative AI tools",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-launches-crosscover-rumble-strip-for-clinical-ai-chatbots/",
+   "date": "2026-11-11",
+   "take": "MDCalc launches a 'rumble strip' for doctors using generative AI, which is reassuring, since nothing says autonomous clinical intelligence like needing the road to vibrate when you drift."
+  },
+  {
+   "rank": 5,
+   "title": "Apple, OpenEvidence launch conversational health AI study and app",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/apple-openevidence-conversational-health-ai-study-app/874714/",
+   "date": "2026-11-16",
+   "take": "Apple and OpenEvidence launch a conversational health AI study and app. Two giants collaborate to learn how people ask medical questions, a field previously studied by every waiting room and 2 a.m. search bar."
+  },
+  {
+   "rank": 6,
+   "title": "Speak before the reveal: a practical method to protect clinical reasoning from artificial intelligence scribe deskilling, never-skilling, and mis-skilling",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43017790/",
+   "date": "2026-11-12",
+   "take": "A practical method asks clinicians to commit to their own reasoning before the AI scribe reveals its version. Finally, an intervention for deskilling that costs nothing and requires thinking, which is why it will need a task force."
+  },
+  {
+   "rank": 7,
+   "title": "Opinion: AI’s health advice can be accurate and still make us sicker",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/ai-health-advice-accuracy-messaging-risk-behavioral-benchmarking/",
+   "date": "2026-11-10",
+   "take": "Researchers argue AI health advice can be factually accurate and still make people sicker by changing behavior. Accuracy was apparently the easy benchmark, which is why every vendor slide features it."
+  },
+  {
+   "rank": 8,
+   "title": "Anthropic bought a one-person, AI-powered biotech: is this drug discovery's future?",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43015439/",
+   "date": "2026-11-11",
+   "take": "Anthropic buys a one-person, AI-powered biotech, and Nature asks whether this is drug discovery's future. Phase III trials remain famously unimpressed by pitch decks, but the acqui-hire has never looked leaner."
+  },
+  {
+   "rank": 9,
+   "title": "Health AI spend doubles as providers invest in clinical copilots, front-office AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/health-ai-spend-doubles-as-providers-invest-in-clinical-copilots-front-off/874752/",
+   "date": "2026-11-16",
+   "take": "Health AI spending doubles as providers buy clinical copilots and front-office tools. Hospitals continue the proud tradition of investing aggressively in whatever might fix the paperwork they created."
+  },
+  {
+   "rank": 10,
+   "title": "Healthcare struggles to scale AI past pilot stage: Google report",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/healthcare-struggles-to-scale-ai-past-pilot-stage-google-report/874609/",
+   "date": "2026-11-16",
+   "take": "A Google report says healthcare struggles to scale AI past the pilot stage. The pilot-to-production gap remains medicine's most reliable renewable resource, right after the pilot announcement press release."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Generative AI mental health chatbots: a scoping review of intervention design and user experience",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43020830/",
+   "date": "2026-07-23"
+  },
+  {
+   "id": 1,
+   "title": "Verifiable summarization of electronic health records using large language models to support chart review",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43024780/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 2,
+   "title": "Beyond the Rogue Agent-Preparing Health Systems for AI Failure",
+   "source": "JAMA",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43018982/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 3,
+   "title": "Anthropic bought a one-person, AI-powered biotech: is this drug discovery's future?",
+   "source": "Nature",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43015439/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 4,
+   "title": "Speak before the reveal: a practical method to protect clinical reasoning from artificial intelligence scribe deskilling, never-skilling, and mis-skilling",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43017790/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 5,
+   "title": "Venture capitalist John Doerr says AI company, named for his late brother, could help fix primary care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/ai-company-tom-health-fix-primary-care-new-tool/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 6,
+   "title": "New documents raise more questions about Medicare’s AI prior-authorization experiment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/12/new-documents-raise-more-questions-about-medicares-ai-prior-authorization-experiment/",
+   "date": "2026-11-12"
+  },
+  {
+   "id": 7,
+   "title": "Why this former ER doc thinks giving AI less information is sometimes better",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-cofounder-graham-walker-on-crosscover-ai-prognosis/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 8,
+   "title": "MDCalc launches a ‘rumble strip’ for doctors using generative AI tools",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/11/mdcalc-launches-crosscover-rumble-strip-for-clinical-ai-chatbots/",
+   "date": "2026-11-11"
+  },
+  {
+   "id": 9,
+   "title": "Men’s use of chatbots for therapy, and earnings season highlights",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/chatbots-for-men-and-earnings-highlights-health-tech/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 10,
+   "title": "Oura to acquire Counsel Health for $625 million, placing a big bet on AI care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/oura-acquires-counsel-health-big-bet-ai-care/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 11,
+   "title": "Opinion: AI’s health advice can be accurate and still make us sicker",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/10/ai-health-advice-accuracy-messaging-risk-behavioral-benchmarking/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 12,
+   "title": "Fellow Physicians, Let AI Fill in the Blanks",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/patientcenteredmedicalhome/123905",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 13,
+   "title": "Health AI spend doubles as providers invest in clinical copilots, front-office AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/health-ai-spend-doubles-as-providers-invest-in-clinical-copilots-front-off/874752/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 14,
+   "title": "Apple, OpenEvidence launch conversational health AI study and app",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/apple-openevidence-conversational-health-ai-study-app/874714/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 15,
+   "title": "Healthcare struggles to scale AI past pilot stage: Google report",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/healthcare-struggles-to-scale-ai-past-pilot-stage-google-report/874609/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 16,
+   "title": "More ways to move care forward with ChatGPT for Healthcare",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 17,
+   "title": "Apple launches new app to study how people use AI for health",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 18,
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "source": "Google",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "date": "2026-11-10"
+  },
+  {
+   "id": 19,
+   "title": "Apple and OpenEvidence launch experimental health chat app",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 20,
+   "title": "Advancing computer-use agents for healthcare teams",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 21,
+   "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+   "source": "Google DeepMind",
+   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "date": "2026-11-11"
+  }
+ ]
+}
