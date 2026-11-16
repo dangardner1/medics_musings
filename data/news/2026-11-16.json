@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-16",
+ "status": "published",
+ "generated": "2026-11-16T20:57:52.372Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is CMS and the administrative machinery of Medicaid work requirements, and the closing line sympathizes with enrollees rather than mocking them. It does not misstate the story, which is the deadline extension. It has no quotes, invented numbers, named individuals, reporter mockery, or sensitive subject matter. The tone is dry and deadpan, and the joke is actually satirical. One minor caution: the 'software, staffing, and guidance' explanation is stated as fact but is plausible and framed in a satirical voice, so it is not a clear invented fact."
+ },
+ "pick": {
+  "title": "CMS gives states another 6 months to implement Medicaid work requirements",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/cms-gives-states-another-6-months-to-implement-medicaid-work-requirements/874773/",
+  "date": "2026-11-16",
+  "headline": "CMS Gives States Six More Months to Finish Building Paperwork Machine",
+  "take": "Verifying everyone's work status turns out to require software, staffing, and guidance, none of which arrived on schedule. Health care's administrative layer usually expands without being asked, so a deadline extension is a rare sign it has limits. Please enjoy the extra half year of not yet being asked for documentation."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA approves new breast cancer drug, providing new option for some patients, boost for Roche",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 1,
+   "title": "In a win for MAHA, FDA creates new regulatory category for the supplement NAC",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/fda-proposes-new-category-supplement-nac/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 2,
+   "title": "Democrats settle on a message: ‘Medicare for More’",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/health-news-democrats-settle-on-medicare-for-more-message/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 3,
+   "title": "Venture capitalist John Doerr says AI company, named for his late brother, could help fix primary care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/ai-company-tom-health-fix-primary-care-new-tool/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 4,
+   "title": "Versant, Lilly put $100 million behind new startup aimed at solving one of gene therapy’s thorniest issues",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/versant-lilly-put-100-million-behind-new-startup-aimed-at-solving-one-of-gene-therapys-thorniest-issues/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 5,
+   "title": "These Governors-Elect Campaigned on Expanding Medicaid. It Won’t Be Easy.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/democrats-medicaid-expansion-governors-lance-bottoms-hinojosa-crowley-georgia-texas-wisconsin/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 6,
+   "title": "FDA rejects lung cancer treatment ivonescimab from Summit Therapeutics",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/",
+   "date": "2026-11-15"
+  },
+  {
+   "id": 7,
+   "title": "Fellow Physicians, Let AI Fill in the Blanks",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/patientcenteredmedicalhome/123905",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 8,
+   "title": "FDA Rejects Promising Cancer Drug Developed in China",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/lungcancer/123904",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 9,
+   "title": "Lawmakers Unveil Bipartisan Bill to Give NICU Parents More Time Off From Work",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/washington-watch/123899",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 10,
+   "title": "CMS gives states another 6 months to implement Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-gives-states-another-6-months-to-implement-medicaid-work-requirements/874773/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 11,
+   "title": "Health AI spend doubles as providers invest in clinical copilots, front-office AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/health-ai-spend-doubles-as-providers-invest-in-clinical-copilots-front-off/874752/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 12,
+   "title": "Apple, OpenEvidence launch conversational health AI study and app",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/apple-openevidence-conversational-health-ai-study-app/874714/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 13,
+   "title": "FDA OKs First Drug for Primary Membranous Nephropathy",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/nephrology/generalnephrology/123892",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 14,
+   "title": "Healthcare struggles to scale AI past pilot stage: Google report",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/healthcare-struggles-to-scale-ai-past-pilot-stage-google-report/874609/",
+   "date": "2026-11-16"
+  }
+ ]
+}
