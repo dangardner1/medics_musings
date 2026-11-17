@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-17",
+ "status": "published",
+ "generated": "2026-11-17T19:47:30.975Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the administration's regulation, Medicare Advantage accounting and insurer billing, so the system is the butt of the joke. Patients, reporters and private individuals are not mocked. The claim that all savings come from Medicare Advantage matches the real headline, and no numbers or quotes are invented. There are no quotation marks, and the 'crush fraudsters' wording echoes the headline rather than quoting the article. The tone is dry and clinically literate, with a real joke in the 'differential diagnosis' and 'code for it' lines. The story involves no death, children or violence."
+ },
+ "pick": {
+  "title": "New Trump regulation promises to crush ‘fraudsters.’ All the savings come from Medicare Advantage",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/16/cms-proposes-more-agressive-audits-medicare-advantage-crush/",
+  "date": "2026-11-16",
+  "headline": "Administration Vows to Crush Fraud, Locates All Savings in One Insurance Program",
+  "take": "The new regulation promises to crush fraudsters, and the projected savings come entirely from Medicare Advantage. Either fraud lives in one program, or the accounting does. We'd like to see the differential diagnosis, but the plans are unlikely to code for it."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "GOP, MAHA leaders clash over FDA nominee’s record on vapes",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/heidi-overton-fda-commissioner-nomination-vote-vaping-controversy/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 1,
+   "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/cms-ai-roadmap-and-news-from-hlth-health-tech/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 2,
+   "title": "‘Medicare for More’ gains traction",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/democrats-new-health-policy-medicare-for-more-stephen-miller-embraces-maha/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 3,
+   "title": "With $173 million, new startup takes aim at sickle cell",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/new-startup-developing-novel-sickle-cell-anemia-infusion-no-gene-therapy/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 4,
+   "title": "New Trump regulation promises to crush ‘fraudsters.’ All the savings come from Medicare Advantage",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/cms-proposes-more-agressive-audits-medicare-advantage-crush/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 5,
+   "title": "FDA approves new breast cancer drug, providing new option for some patients, boost for Roche",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/fda-approves-new-roche-breast-cancer-drug/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 6,
+   "title": "In a win for MAHA, FDA creates new regulatory category for the supplement NAC",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/16/fda-proposes-new-category-supplement-nac/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 7,
+   "title": "These Governors-Elect Campaigned on Expanding Medicaid. It Won’t Be Easy.",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/democrats-medicaid-expansion-governors-lance-bottoms-hinojosa-crowley-georgia-texas-wisconsin/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 8,
+   "title": "FDA Wants Liquid Statin Off Shelves",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/cardiology/dyslipidemia/123922",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 9,
+   "title": "Mayo Clinic taps AI, strategy leader as CEO",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/mayo-clinic-taps-ai-strategy-leader-as-ceo/874909/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 10,
+   "title": "From pilot to platform: Johns Hopkins researcher on healthcare AI’s next chapter",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/from-pilot-to-platform-johns-hopkins-researcher-on-healthcare-ais-next-ch/874708/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 11,
+   "title": "Fellow Physicians, Let AI Fill in the Blanks",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/patientcenteredmedicalhome/123905",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 12,
+   "title": "FDA Rejects Promising Cancer Drug Developed in China",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/lungcancer/123904",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 13,
+   "title": "CMS gives states another 6 months to implement Medicaid work requirements",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-gives-states-another-6-months-to-implement-medicaid-work-requirements/874773/",
+   "date": "2026-11-16"
+  },
+  {
+   "id": 14,
+   "title": "Health AI spend doubles as providers invest in clinical copilots, front-office AI",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/health-ai-spend-doubles-as-providers-invest-in-clinical-copilots-front-off/874752/",
+   "date": "2026-11-16"
+  }
+ ]
+}
