@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-18",
+ "status": "review",
+ "generated": "2026-11-18T19:22:40.869Z",
+ "check": {
+  "ok": false,
+  "reason": "Two problems. (1) The take cites 'an estimated 7.5 million people' affected by restrictions. That figure is not in the headline or summary we were given, so it is an invented or unsupported number presented as fact. The headline's 'subtracts enrollees elsewhere' claim is also not part of the real story, which is about approving traditional healing in two states, so it risks misstating the story. (2) It isn't satirical. The take is earnest policy commentary ('welcome expansion', 'real progress') with no joke, exaggeration, or deadpan absurdity aimed at the system. It does not target or mock patients, authors, or private individuals, but it fails on the unsupported number and the lack of satire. Rewrite it with no unsourced figures and an actual satirical angle on the bureaucracy or the administration's policy."
+ },
+ "pick": {
+  "title": "Trump Administration OKs Native Traditional Healing for Two States’ Medicaid Programs",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/medicaid/medicaid-cms-native-american-traditional-healing-state-waivers-utah-maine/",
+  "date": "2026-11-18",
+  "headline": "Administration Adds Medicaid Benefit in Two States, Subtracts Enrollees Elsewhere",
+  "take": "Approving traditional healing is a welcome expansion of what Medicaid covers. It arrives alongside restrictions that will affect access for an estimated 7.5 million people. Coverage for a new service is real progress, but it counts for less when the coverage itself is being cut back."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA discloses reasons for rejecting Summit drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/biotech-news-fda-discloses-reasons-for-rejecting-summit-drug/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/18/heidi-overton-fda-nomination-yanked-merck-cancer-drug-setback/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 2,
+   "title": "Meet the Teen Who Called a Hospital Home",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/hospital-boarding-social-stays-jaloni-teens-children-kids-guns-missouri-illinois/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 3,
+   "title": "Trump Administration OKs Native Traditional Healing for Two States’ Medicaid Programs",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/medicaid-cms-native-american-traditional-healing-state-waivers-utah-maine/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 4,
+   "title": "White House pulls nomination of Heidi Overton to lead FDA",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/heidi-overton-fda-commissioner-nomination-withdrawn/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 5,
+   "title": "GOP, MAHA leaders clash over FDA nominee’s record on vapes",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/heidi-overton-fda-commissioner-nomination-vote-vaping-controversy/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 6,
+   "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/cms-ai-roadmap-and-news-from-hlth-health-tech/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 7,
+   "title": "‘Medicare for More’ gains traction",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/democrats-new-health-policy-medicare-for-more-stephen-miller-embraces-maha/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 8,
+   "title": "With $173 million, new startup takes aim at sickle cell",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/new-startup-developing-novel-sickle-cell-anemia-infusion-no-gene-therapy/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 9,
+   "title": "CMS proposes sweeping reforms to curb healthcare fraud",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-sweeping-reforms-to-curb-healthcare-fraud/875059/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 10,
+   "title": "FDA OKs Drug Linked to Longer Survival in Fatal Genetic Disorder",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/genetics/generalgenetics/123945",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 11,
+   "title": "AI is coming for primary care",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-is-coming-for-primary-care/874966/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 12,
+   "title": "Bernie Sanders Unveils His Plan to Push 'Medicare for All' When Democrats Take Power",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123943",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 13,
+   "title": "White House Yanks Pick for FDA Chief",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/washington-watch/fdageneral/123940",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 14,
+   "title": "FDA Adds Another Player in ALK-Positive Lung Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/lungcancer/123937",
+   "date": "2026-11-17"
+  }
+ ]
+}
