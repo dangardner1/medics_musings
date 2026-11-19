@@ -5,8 +5,8 @@
   "url": "https://data.medicaid.gov/dataset/fbb83258-11c7-47f5-8b18-5f8e79f7e704",
   "about": "https://www.medicaid.gov/medicaid/prescription-drugs/pharmacy-pricing/index.html"
  },
- "asOf": "2026-11-11",
- "fetched": "2026-11-12",
+ "asOf": "2026-11-18",
+ "fetched": "2026-11-19",
  "drugs": [
   {
    "slug": "atorvastatin",
@@ -15,9 +15,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Lowers cholesterol for pennies. Raising the bill takes a team.",
-   "perUnit": 0.02858,
+   "perUnit": 0.02841,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 69,
    "history": {
     "2026-01-07": 0.03072,
@@ -64,7 +64,8 @@
     "2026-10-21": 0.02858,
     "2026-10-28": 0.02858,
     "2026-11-04": 0.02858,
-    "2026-11-11": 0.02858
+    "2026-11-11": 0.02858,
+    "2026-11-18": 0.02841
    }
   },
   {
@@ -74,9 +75,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "The blood pressure comes down. The deductible does not.",
-   "perUnit": 0.01797,
+   "perUnit": 0.01806,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 34,
    "history": {
     "2026-01-07": 0.01877,
@@ -123,7 +124,8 @@
     "2026-10-21": 0.01797,
     "2026-10-28": 0.01797,
     "2026-11-04": 0.01797,
-    "2026-11-11": 0.01797
+    "2026-11-11": 0.01797,
+    "2026-11-18": 0.01806
    }
   },
   {
@@ -133,9 +135,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "About a penny a pill. The bill, on the other hand, has several digits.",
-   "perUnit": 0.01015,
+   "perUnit": 0.01012,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 35,
    "history": {
     "2026-01-07": 0.01111,
@@ -182,7 +184,8 @@
     "2026-10-21": 0.01015,
     "2026-10-28": 0.01015,
     "2026-11-04": 0.01015,
-    "2026-11-11": 0.01015
+    "2026-11-11": 0.01015,
+    "2026-11-18": 0.01012
    }
   },
   {
@@ -192,9 +195,9 @@
    "qty": 60,
    "supply": "a month’s supply, twice a day",
    "note": "A 1950s drug with a 2020s explanation of benefits.",
-   "perUnit": 0.01483,
+   "perUnit": 0.01482,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 57,
    "history": {
     "2026-01-07": 0.01415,
@@ -241,7 +244,8 @@
     "2026-10-21": 0.01483,
     "2026-10-28": 0.01483,
     "2026-11-04": 0.01483,
-    "2026-11-11": 0.01483
+    "2026-11-11": 0.01483,
+    "2026-11-18": 0.01482
    }
   },
   {
@@ -251,9 +255,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Measured in micrograms. Billed in dollars.",
-   "perUnit": 0.04006,
+   "perUnit": 0.04245,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 25,
    "history": {
     "2026-01-07": 0.05022,
@@ -300,7 +304,8 @@
     "2026-10-21": 0.04006,
     "2026-10-28": 0.04006,
     "2026-11-04": 0.04006,
-    "2026-11-11": 0.04006
+    "2026-11-11": 0.04006,
+    "2026-11-18": 0.04245
    }
   },
   {
@@ -310,9 +315,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Treats heartburn. The bill causes it.",
-   "perUnit": 0.03045,
+   "perUnit": 0.03116,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 35,
    "history": {
     "2026-01-07": 0.03007,
@@ -359,7 +364,8 @@
     "2026-10-21": 0.03045,
     "2026-10-28": 0.03045,
     "2026-11-04": 0.03045,
-    "2026-11-11": 0.03045
+    "2026-11-11": 0.03045,
+    "2026-11-18": 0.03116
    }
   },
   {
@@ -369,9 +375,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Cheaper than the phone call about whether it’s covered.",
-   "perUnit": 0.03484,
+   "perUnit": 0.03551,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 41,
    "history": {
     "2026-01-07": 0.03876,
@@ -418,7 +424,8 @@
     "2026-10-21": 0.03484,
     "2026-10-28": 0.03484,
     "2026-11-04": 0.03484,
-    "2026-11-11": 0.03484
+    "2026-11-11": 0.03484,
+    "2026-11-18": 0.03551
    }
   },
   {
@@ -428,9 +435,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "An ARB, not to be confused with arbitrage, which is what happens after it leaves the wholesaler.",
-   "perUnit": 0.03316,
+   "perUnit": 0.03357,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 41,
    "history": {
     "2026-01-07": 0.03109,
@@ -477,7 +484,8 @@
     "2026-10-21": 0.03316,
     "2026-10-28": 0.03316,
     "2026-11-04": 0.03316,
-    "2026-11-11": 0.03316
+    "2026-11-11": 0.03316,
+    "2026-11-18": 0.03357
    }
   },
   {
@@ -487,9 +495,9 @@
    "qty": 30,
    "supply": "a ten-day course",
    "note": "Kills bacteria. The pricing model is resistant.",
-   "perUnit": 0.07925,
+   "perUnit": 0.07753,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 19,
    "history": {
     "2026-01-07": 0.09053,
@@ -536,7 +544,8 @@
     "2026-10-21": 0.07925,
     "2026-10-28": 0.07925,
     "2026-11-04": 0.07925,
-    "2026-11-11": 0.07925
+    "2026-11-11": 0.07925,
+    "2026-11-18": 0.07753
    }
   },
   {
@@ -546,9 +555,9 @@
    "qty": 20,
    "supply": "a short course",
    "note": "A steroid. The markup, on the other hand, is natural.",
-   "perUnit": 0.0521,
+   "perUnit": 0.05147,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 27,
    "history": {
     "2026-01-07": 0.05943,
@@ -595,7 +604,8 @@
     "2026-10-21": 0.0521,
     "2026-10-28": 0.0521,
     "2026-11-04": 0.0521,
-    "2026-11-11": 0.0521
+    "2026-11-11": 0.0521,
+    "2026-11-18": 0.05147
    }
   },
   {
@@ -605,9 +615,9 @@
    "qty": 90,
    "supply": "a month’s supply, three times a day",
    "note": "Three times a day, one price a pill, several prices a claim.",
-   "perUnit": 0.03283,
+   "perUnit": 0.03342,
    "unit": "EA",
-   "effective": "2026-10-28",
+   "effective": "2026-11-18",
    "ndcs": 57,
    "history": {
     "2026-01-07": 0.03399,
@@ -654,7 +664,8 @@
     "2026-10-21": 0.03283,
     "2026-10-28": 0.03283,
     "2026-11-04": 0.03283,
-    "2026-11-11": 0.03283
+    "2026-11-11": 0.03283,
+    "2026-11-18": 0.03342
    }
   },
   {
@@ -664,9 +675,9 @@
    "qty": 90,
    "supply": "a month’s supply, three times a day",
    "note": "Prescription strength. Prescription paperwork.",
-   "perUnit": 0.05554,
+   "perUnit": 0.05074,
    "unit": "EA",
-   "effective": "2026-11-11",
+   "effective": "2026-11-18",
    "ndcs": 39,
    "history": {
     "2026-01-07": 0.05617,
@@ -713,7 +724,8 @@
     "2026-10-21": 0.05554,
     "2026-10-28": 0.05554,
     "2026-11-04": 0.05554,
-    "2026-11-11": 0.05554
+    "2026-11-11": 0.05554,
+    "2026-11-18": 0.05074
    }
   },
   {
@@ -723,9 +735,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "A diuretic. Money also goes somewhere.",
-   "perUnit": 0.01142,
+   "perUnit": 0.0112,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 23,
    "history": {
     "2026-01-07": 0.01237,
@@ -772,7 +784,8 @@
     "2026-10-21": 0.01142,
     "2026-10-28": 0.01142,
     "2026-11-04": 0.01142,
-    "2026-11-11": 0.01142
+    "2026-11-11": 0.01142,
+    "2026-11-18": 0.0112
    }
   },
   {
@@ -782,9 +795,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Helps you breathe. The price breathes on its own.",
-   "perUnit": 0.04321,
+   "perUnit": 0.04307,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 31,
    "history": {
     "2026-01-07": 0.04735,
@@ -831,7 +844,8 @@
     "2026-10-21": 0.04321,
     "2026-10-28": 0.04321,
     "2026-11-04": 0.04321,
-    "2026-11-11": 0.04321
+    "2026-11-11": 0.04321,
+    "2026-11-18": 0.04307
    }
   },
   {
@@ -841,9 +855,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Once a brand-name blockbuster. Now a generic with a blockbuster explanation of benefits.",
-   "perUnit": 0.03553,
+   "perUnit": 0.03377,
    "unit": "EA",
-   "effective": "2026-10-28",
+   "effective": "2026-11-18",
    "ndcs": 47,
    "history": {
     "2026-01-07": 0.03993,
@@ -890,7 +904,8 @@
     "2026-10-21": 0.03553,
     "2026-10-28": 0.03553,
     "2026-11-04": 0.03553,
-    "2026-11-11": 0.03553
+    "2026-11-11": 0.03553,
+    "2026-11-18": 0.03377
    }
   },
   {
@@ -900,9 +915,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Slows the heart rate. The claims process needed no help.",
-   "perUnit": 0.0529,
+   "perUnit": 0.05409,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 45,
    "history": {
     "2026-01-07": 0.0573,
@@ -949,7 +964,8 @@
     "2026-10-21": 0.0529,
     "2026-10-28": 0.0529,
     "2026-11-04": 0.0529,
-    "2026-11-11": 0.0529
+    "2026-11-11": 0.0529,
+    "2026-11-18": 0.05409
    }
   },
   {
@@ -959,9 +975,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Improves flow. The money flows in one direction.",
-   "perUnit": 0.04892,
+   "perUnit": 0.04757,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 26,
    "history": {
     "2026-01-07": 0.05153,
@@ -1008,7 +1024,8 @@
     "2026-10-21": 0.04892,
     "2026-10-28": 0.04892,
     "2026-11-04": 0.04892,
-    "2026-11-11": 0.04892
+    "2026-11-11": 0.04892,
+    "2026-11-18": 0.04757
    }
   },
   {
@@ -1018,9 +1035,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Famous since 1987, affordable since the patent expired, confusing ever since.",
-   "perUnit": 0.02924,
+   "perUnit": 0.02921,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 30,
    "history": {
     "2026-01-07": 0.03004,
@@ -1067,7 +1084,8 @@
     "2026-10-21": 0.02924,
     "2026-10-28": 0.02924,
     "2026-11-04": 0.02924,
-    "2026-11-11": 0.02924
+    "2026-11-11": 0.02924,
+    "2026-11-18": 0.02921
    }
   },
   {
@@ -1077,9 +1095,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Delayed release, like the reimbursement.",
-   "perUnit": 0.03675,
+   "perUnit": 0.0376,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 40,
    "history": {
     "2026-01-07": 0.03598,
@@ -1126,7 +1144,8 @@
     "2026-10-21": 0.03675,
     "2026-10-28": 0.03675,
     "2026-11-04": 0.03675,
-    "2026-11-11": 0.03675
+    "2026-11-11": 0.03675,
+    "2026-11-18": 0.0376
    }
   },
   {
@@ -1136,9 +1155,9 @@
    "qty": 28,
    "supply": "a seven-day course",
    "note": "Four times a day for a week. The prior authorization takes longer.",
-   "perUnit": 0.11681,
+   "perUnit": 0.111,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 17,
    "history": {
     "2026-01-07": 0.12515,
@@ -1185,7 +1204,8 @@
     "2026-10-21": 0.11681,
     "2026-10-28": 0.11681,
     "2026-11-04": 0.11681,
-    "2026-11-11": 0.11681
+    "2026-11-11": 0.11681,
+    "2026-11-18": 0.111
    }
   },
   {
@@ -1195,9 +1215,9 @@
    "qty": 6,
    "supply": "a five-day pack",
    "note": "Six tablets in five days. The explanation of benefits runs longer.",
-   "perUnit": 0.27085,
+   "perUnit": 0.27108,
    "unit": "EA",
-   "effective": "2026-11-11",
+   "effective": "2026-11-18",
    "ndcs": 30,
    "history": {
     "2026-01-07": 0.31612,
@@ -1244,7 +1264,8 @@
     "2026-10-21": 0.27085,
     "2026-10-28": 0.27085,
     "2026-11-04": 0.27085,
-    "2026-11-11": 0.27085
+    "2026-11-11": 0.27085,
+    "2026-11-18": 0.27108
    }
   },
   {
@@ -1254,9 +1275,9 @@
    "qty": 30,
    "supply": "a month’s supply",
    "note": "Removes excess fluid. Excess fees are handled elsewhere.",
-   "perUnit": 0.02876,
+   "perUnit": 0.02932,
    "unit": "EA",
-   "effective": "2026-10-21",
+   "effective": "2026-11-18",
    "ndcs": 16,
    "history": {
     "2026-01-07": 0.03258,
@@ -1303,7 +1324,8 @@
     "2026-10-21": 0.02876,
     "2026-10-28": 0.02876,
     "2026-11-04": 0.02876,
-    "2026-11-11": 0.02876
+    "2026-11-11": 0.02876,
+    "2026-11-18": 0.02932
    }
   }
  ]
