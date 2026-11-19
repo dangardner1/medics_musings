@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-19",
+ "status": "published",
+ "generated": "2026-11-19T19:27:54.635Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is Epic, a health IT vendor, which is squarely the system. The piece does not mock patients, the reporter, or any private individual. It stays consistent with the real headline (Epic defends its practices and promises AI access to records) and invents no numbers or quotes. It does not quote the article and avoids death, children, and violence. The tone is dry and deadpan, and the satire is real: data access framed as a premium feature, and the machines getting the API before clinicians get a working search bar."
+ },
+ "pick": {
+  "title": "Epic Systems defends competitive practices, promises to let AI access its records",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/18/epic-defends-competitive-practices-promises-ai-access-to-records/",
+  "date": "2026-11-18",
+  "headline": "Epic Defends Competitive Practices, Agrees to Let AI Read Records Hospitals Already Own",
+  "take": "The largest EHR vendor says it is not anticompetitive, and as proof will allow artificial intelligence to access the charts. Access to patient data is now a feature to be granted, like a premium tier. Clinicians have spent years asking for a search bar that works. The machines get the API first."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Epic defends competitive practices; promises AI access to records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/epic-defends-competitive-practices-promises-ai-access-health-tech/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 1,
+   "title": "Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 2,
+   "title": "Sanders’ ‘Medicare for All’ plan accrues more liberal and moderate support in Congress",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/health-news-sanders-medicare-for-all-plan-accrues-more-support-in-congress/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 3,
+   "title": "What’s Behind a Recent Spike in Early Social Security Claims?",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/aging/social-security-early-claims-spike-doge-new-old-age/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 4,
+   "title": "Epic Systems defends competitive practices, promises to let AI access its records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/epic-defends-competitive-practices-promises-ai-access-to-records/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 5,
+   "title": "7 burning questions about the FDA’s post-Overton future",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/fda-after-heidi-overton-burning-questions-agency-future/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 6,
+   "title": "The emerging winners and losers in the AI scribe market",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/ai-scribe-market-emerging-winners-losers-ai-prognosis/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 7,
+   "title": "FDA discloses reasons for rejecting Summit drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/biotech-news-fda-discloses-reasons-for-rejecting-summit-drug/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 8,
+   "title": "Pharmalittle: We’re reading about Overton FDA nomination being yanked, a Merck setback, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/18/heidi-overton-fda-nomination-yanked-merck-cancer-drug-setback/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 9,
+   "title": "Meet the Teen Who Called a Hospital Home",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/public-health/hospital-boarding-social-stays-jaloni-teens-children-kids-guns-missouri-illinois/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 10,
+   "title": "Trump Administration OKs Native Traditional Healing for Two States’ Medicaid Programs",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/medicaid-cms-native-american-traditional-healing-state-waivers-utah-maine/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 11,
+   "title": "Healthcare firms fail to monitor AI tools as shadow AI leads to breaches",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/healthcare-ai-cybersecurity-monitoring/875171/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 12,
+   "title": "FDA Approves First Treatment for Neurologic Symptoms of Type 3 Gaucher Disease",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/generalneurology/123960",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 13,
+   "title": "Knit Health CEO on the AI startup building healthcare’s connective tissue",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/knit-health-ceo-ai-startup-building-healthcare-world-model/875031/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 14,
+   "title": "CMS proposes sweeping reforms to curb healthcare fraud",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-sweeping-reforms-to-curb-healthcare-fraud/875059/",
+   "date": "2026-11-18"
+  }
+ ]
+}
