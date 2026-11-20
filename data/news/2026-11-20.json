@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-20",
+ "status": "published",
+ "generated": "2026-11-20T19:03:58.938Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is UnitedHealth and the insurer star-rating system, not patients, and patients are framed as the ones who live with the actual quality. It doesn't mock the reporter, target a private individual, quote the article, or touch death, children or violence. The headline is accurate to the story (a lawsuit over downgraded ratings). 'Worth billions' is a general characterization, not an invented specific figure, and fits what Medicare Advantage star ratings are known to be worth in bonus payments. The tone is dry and deadpan, and the piece is genuinely satirical."
+ },
+ "pick": {
+  "title": "UnitedHealth sues to reverse downgraded Medicare Advantage quality scores",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/20/unitedhealth-cms-medicare-advantage-lawsuit-star-rating/",
+  "date": "2026-11-20",
+  "headline": "UnitedHealth Sues Government Over Insufficiently Appreciated Excellence, Which Happens to Be Worth Billions",
+  "take": "Quality is apparently a deeply held conviction that becomes a measurement error when the score drops. Insurers have found the one outcome worth taking to federal court: the star rating. Patients, who live with the actual quality, were not asked to file a brief."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/20/sanofi-eyeing-insmed-ai-speeding-drug-development/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 1,
+   "title": "FDA’s search for a new leader, and China’s largest drugmakers",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/new-fda-commissioner-summit-lung-cancer-drug-readout-loud-podcast/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 2,
+   "title": "UnitedHealth sues to reverse downgraded Medicare Advantage quality scores",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/unitedhealth-cms-medicare-advantage-lawsuit-star-rating/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 3,
+   "title": "Epic defends competitive practices; promises AI access to records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/epic-defends-competitive-practices-promises-ai-access-health-tech/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 4,
+   "title": "Pharmalittle: We’re reading about a Merck AI deal, China and the pharma supply chain, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/19/merck-isomorphic-ai-deal-china-pharmaceutical-supply-chain/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 5,
+   "title": "Sanders’ ‘Medicare for All’ plan accrues more liberal and moderate support in Congress",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/health-news-sanders-medicare-for-all-plan-accrues-more-support-in-congress/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 6,
+   "title": "What’s Behind a Recent Spike in Early Social Security Claims?",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/aging/social-security-early-claims-spike-doge-new-old-age/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 7,
+   "title": "Lawmakers press Oracle CEO on ballooning VA EHR modernization costs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/lawmakers-press-oracle-ceo-on-ballooning-va-ehr-modernization-costs/875345/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 8,
+   "title": "AI and affordability steal the show: 6 takeaways from HLTH",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-affordability-glp-1s-longevity-hlth-2026-takeaways/875048/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 9,
+   "title": "Medicare ACO program posts $2.5B in savings as CMS pushes growth",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-aco-program-posts-25b-in-savings-as-cms-pushes-growth/875312/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 10,
+   "title": "Healthcare firms fail to monitor AI tools as shadow AI leads to breaches",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/healthcare-ai-cybersecurity-monitoring/875171/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 11,
+   "title": "FDA Approves First Treatment for Neurologic Symptoms of Type 3 Gaucher Disease",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/generalneurology/123960",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 12,
+   "title": "Knit Health CEO on the AI startup building healthcare’s connective tissue",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/knit-health-ceo-ai-startup-building-healthcare-world-model/875031/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 13,
+   "title": "Big Win Sets Up Democrats To Intensify Probe of Trump’s Obamacare Purge",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/midterms-democratic-wins-aca-obamacare-purge-senate-insurance-investigation/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 14,
+   "title": "Peptide market poised to explode with new Hims and Noom launches",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/hims-noom-enter-peptide-market-mainstream-products-health-risks/",
+   "date": "2026-11-19"
+  }
+ ]
+}
