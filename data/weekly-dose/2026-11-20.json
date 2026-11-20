@@ -1,0 +1,22 @@
+{
+  "issue": 6,
+  "date": "2026-11-20",
+  "title": "Now Hiring: One Robot",
+  "preview": "This week: an AI rollout with no staff, and a clinic that values your feedback in writing.",
+  "jokes": [
+    {
+      "setup": "The hospital announced an AI assistant to ease the nursing shortage.",
+      "punchline": "It can chart, triage and schedule, but it still can't be in two rooms at once, so it has been promoted to administration."
+    },
+    {
+      "setup": "The clinic sent a survey asking how satisfied I was with my 40-minute wait.",
+      "punchline": "The survey takes 45 minutes, so they're really committed to consistency."
+    }
+  ],
+  "cartoon": {
+    "file": "cartoon.jpg",
+    "caption": "“It never sleeps, never complains, and never asks for a raise. Unlike the two of you.”",
+    "alt": "A smiling executive presents a large robot to a tired doctor and nurse while patients wait on gurneys behind them."
+  },
+  "status": "send"
+}
