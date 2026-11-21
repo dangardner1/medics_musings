@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-21",
+ "status": "published",
+ "generated": "2026-11-21T17:56:40.617Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is UnitedHealth, an insurer, which is squarely the system. No patients, reporters or private individuals are mocked. The satirical headline matches the real story, a lawsuit over downgraded Medicare Advantage quality scores. There are no invented figures or quotes, and 'billions at stake' is a general characterization of star-rating payments, not a specific number. The story involves no death, children or violence. The tone is dry and deadpan, and the joke is real satire: the insurer values quality measurement only when the scores favor it."
+ },
+ "pick": {
+  "title": "UnitedHealth sues to reverse downgraded Medicare Advantage quality scores",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/20/unitedhealth-cms-medicare-advantage-lawsuit-star-rating/",
+  "date": "2026-11-20",
+  "headline": "UnitedHealth Sues Federal Government for Underrating Its Commitment to Quality",
+  "take": "With billions at stake, the insurer has found a deep faith in quality measurement, provided the measurements come out well. When the stars drop, the remedy is a lawsuit. Quality, it turns out, is whatever pays out after the appeal."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA rejects Capricor Therapeutics’ Duchenne therapy, a decision that was a long time coming",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 1,
+   "title": "Medicare pilot will test ‘food is medicine’ and other lifestyle programs to counter chronic diseases",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/kennedy-food-is-medicine-maha-elevate-pilot/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 2,
+   "title": "Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/20/sanofi-eyeing-insmed-ai-speeding-drug-development/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 3,
+   "title": "FDA’s search for a new leader, and China’s largest drugmakers",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/new-fda-commissioner-summit-lung-cancer-drug-readout-loud-podcast/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 4,
+   "title": "UnitedHealth sues to reverse downgraded Medicare Advantage quality scores",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/20/unitedhealth-cms-medicare-advantage-lawsuit-star-rating/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 5,
+   "title": "An Insurer Paid Me $6.73 to Save a Teen's Life",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123980",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 6,
+   "title": "Court Approves $7.25B Settlement With Bayer Over Claims Roundup Caused Cancer",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/environmentalhealth/123993",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 7,
+   "title": "Cancer Care Driving Insurance Costs; Unnecessary Chemo? Profiting by Non-Profits",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/othercancers/123988",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 8,
+   "title": "Medicare for All Has Capitol Hill Abuzz, but It's Unlikely to Pass Soon, Experts Say",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/123987",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 9,
+   "title": "Lawmakers press Oracle CEO on ballooning VA EHR modernization costs",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/lawmakers-press-oracle-ceo-on-ballooning-va-ehr-modernization-costs/875345/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 10,
+   "title": "Medicare ACO program posts $2.5B in savings as CMS pushes growth",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/medicare-aco-program-posts-25b-in-savings-as-cms-pushes-growth/875312/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 11,
+   "title": "Democrats Demand Answers From Oz After Delay in $50B Rural Health Awards",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/rural-health/rural-health-transformation-fund-delays-democrats-demand-answers-mehmet-oz/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 12,
+   "title": "Big Win Sets Up Democrats To Intensify Probe of Trump’s Obamacare Purge",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/elections/midterms-democratic-wins-aca-obamacare-purge-senate-insurance-investigation/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 13,
+   "title": "Alzheimer's Test Results Delivered Digitally Didn't Increase Distress",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/ctad/123991",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 14,
+   "title": "Opinion: When should medical school start?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/21/stat-letters-to-editor-medical-school-pediatric-emergency-care/",
+   "date": "2026-11-21"
+  }
+ ]
+}
