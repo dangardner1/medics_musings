@@ -1,0 +1,68 @@
+{
+ "date": "2026-11-22",
+ "status": "review",
+ "generated": "2026-11-22T18:28:16.716Z",
+ "check": {
+  "ok": false,
+  "reason": "The story is about a teen whose life was saved, which falls under the rule to skip stories involving children or life-threatening illness. The take also states clinical details as fact (emergency appendectomy, perforated appendix, abdomen full of pus) that appear nowhere in the real headline or summary we were given. The claim that the insurer 'calls it coverage' and the line about prior authorization for the pus are likewise invented. The target (the insurer) is right and the tone is suitably dry, but the story should be skipped and the invented specifics would need to go in any case."
+ },
+ "pick": {
+  "title": "An Insurer Paid Me $6.73 to Save a Teen's Life",
+  "source": "MedPage Today",
+  "url": "https://www.medpagetoday.com/opinion/second-opinions/123980",
+  "date": "2026-11-21",
+  "headline": "Insurer Pays Surgeon $6.73 for Emergency Appendectomy, Calls It Coverage",
+  "take": "A perforated appendix, an abdomen full of pus, and a payment that wouldn't cover parking. Somewhere an actuary has modeled this and found it sustainable. The prior authorization for the pus was presumably approved faster than the claim."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "An Insurer Paid Me $6.73 to Save a Teen's Life",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123980",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 1,
+   "title": "Alzheimer's Test Results Delivered Digitally Didn't Increase Distress",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/meetingcoverage/ctad/123991",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 2,
+   "title": "Opinion: When should medical school start?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/21/stat-letters-to-editor-medical-school-pediatric-emergency-care/",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 3,
+   "title": "Reporters Talk Measles, Pediatric Care, and Democrats’ Post-Election Healthcare Agenda",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/on-air/november-21-2026-measles-pediatric-care-democrats-healthcare-agenda/",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 4,
+   "title": "Opinion: How Kennedy and MAHA could help stop measles",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/21/rfk-jr-maha-measles-outbreak-elimination-status-promote-mmr-vaccine/",
+   "date": "2026-11-21"
+  },
+  {
+   "id": 5,
+   "title": "Are GLP-1s Enabling Disordered Eating?",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/123986",
+   "date": "2026-11-22"
+  },
+  {
+   "id": 6,
+   "title": "Metformin and Long COVID; Lp(a) Lowering for Cardiovascular Disease",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/podcasts/healthwatch/123985",
+   "date": "2026-11-21"
+  }
+ ]
+}
