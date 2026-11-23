@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-23",
+ "status": "published",
+ "generated": "2026-11-23T22:35:18.517Z",
+ "check": {
+  "ok": true,
+  "reason": "The satire targets the system (device makers, insurers, Medicare billing, and consent processes) and never the patients, who are cast as the ones left uninformed. The headline matches the real story's theme of unproven benefit and higher costs. There are no article quotes, no mockery of the reporter, no private individuals, and none of the excluded topics. The tone is dry and deadpan, with no emojis or hashtags. One note: the 'two patients' detail is the only specific figure, and it is hedged with 'allege'. Confirm it against the linked article before publishing."
+ },
+ "pick": {
+  "title": "‘Smart’ Implants Are Driving Up Health Costs — Even When Patients Don’t Ask for Them",
+  "source": "KFF Health News",
+  "url": "https://kffhealthnews.org/health-industry/smart-joint-implants-knees-health-costs-patients-surprised/",
+  "date": "2026-11-23",
+  "headline": "Smart Knee Implant's Benefits Unproven, But Billing Connectivity Reported Excellent",
+  "take": "Researchers say the usefulness of these joints is unproven, yet insurers and Medicare reportedly still pay extra for them. The one reliably transmitted signal is revenue. Two patients allege they learned about their data-capable knees only after surgery, so informed consent apparently shipped without the firmware update."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Limb-girdle muscular dystrophy gets its first FDA-approved drug, from BridgeBio",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/fda-approves-bridgebio-lgmd-drug-welgemda/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 1,
+   "title": "‘Medicare for All’ Is Back on Drawing Board. Does It Stand a Better Chance This Time?",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/congress-democrats-medicare-for-all-unity-challenge-universal-healthcare/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 2,
+   "title": "Opinion: If the AI bubble bursts, it could create a serious problem for health care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/ai-bubble-medical-artificial-intelligence-health/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 3,
+   "title": "CMS proposes $100B cut to Medicare Advantage star ratings pay",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-100b-cut-to-medicare-advantage-star-ratings-pay/875441/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 4,
+   "title": "New maternity coding changes are here. Is your hospital ready?",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/new-maternity-coding-changes-are-here-is-your-hospital-ready/874847/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 5,
+   "title": "FDA Approves First Treatment for Limb-Girdle Muscular Dystrophy Type 2I/R9",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-limb-girdle-muscular-dystrophy-type-2ir9",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 6,
+   "title": "FDA Approves First New Hormone Therapy for Early-Stage Breast Cancer in More Than 20 Years",
+   "source": "FDA",
+   "url": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-new-hormone-therapy-early-stage-breast-cancer-more-20-years",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 7,
+   "title": "Pharmalittle: We’re reading about Capricor’s Duchenne drug, Lilly’s 15th acquisition of 2026, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/23/fda-rejects-capricor-duchenne-drug-lilly-acquires-loqus23-therapeutics/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 8,
+   "title": "‘Smart’ Implants Are Driving Up Health Costs — Even When Patients Don’t Ask for Them",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-industry/smart-joint-implants-knees-health-costs-patients-surprised/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 9,
+   "title": "First Hormone Therapy Approved for Early Breast Cancer in Over 20 Years",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/hematologyoncology/breastcancer/124010",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 10,
+   "title": "Feds unveil portal to track No Surprises disputes",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/feds-unveil-portal-to-track-no-surprises-disputes/875472/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 11,
+   "title": "A big win for a potential competitor for Dupixent eczema treatment",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/biotech-news-a-big-win-for-potential-dupixent-competitor-eczema-treatment/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 12,
+   "title": "UnitedHealth Sues the U.S.; Chaos at USPSTF Meeting; Antisemitism in Medical Schools",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/124000",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 13,
+   "title": "At first preventive services panel meeting in more than a year, votes are cast in private",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/health-news-preventive-services-panel-votes-cast-in-private/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 14,
+   "title": "Invivyd reports positive results in Sisyphean Covid antibody quest",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/invivyd-covid-monoclonal-antibody-declaration-trial-vyd2311/",
+   "date": "2026-11-23"
+  }
+ ]
+}
