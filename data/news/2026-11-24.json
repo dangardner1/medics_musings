@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-24",
+ "status": "published",
+ "generated": "2026-11-24T21:07:18.388Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the system: the FDA's rare enforcement and industry's lax compliance. It doesn't mock patients, authors, or private individuals, and it doesn't quote the article or touch death, children, or violence. The headline matches the story's subject, and the speed-limit joke is dry, deadpan and clearly satirical. The only soft spot is the 'more than a year' timeframe, which can't be checked against the headline alone. It reads as drawn from the summary rather than invented, so it passes, but confirm it against the source."
+ },
+ "pick": {
+  "title": "In a rare move, the FDA cites two drugmakers for failing to report clinical trial results to a database",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/11/24/fda-cites-two-drugmakers-for-failing-to-report-clinical-trial-results/",
+  "date": "2026-11-24",
+  "headline": "FDA Enforces Trial Reporting Rule, Briefly Startling Industry and Possibly Itself",
+  "take": "For the first time in more than a year, the FDA sent notices to drugmakers for not reporting required trial results. The requirement has presumably been there the whole time. Transparency is mandatory in roughly the way a speed limit is on a road where the police patrol annually."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Roche’s potential breast cancer blockbuster drug wins second FDA nod",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/biotech-news-roche-potential-breast-cancer-blockbluster-drug-wins-second-fda-nod/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 1,
+   "title": "Alaskan hospitals use AI to improve stroke care, peptides go mainstream, and RSNA 2026",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/alaskan-hospitals-using-ai-rsna-2026-peptides-health-tech/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 2,
+   "title": "In a rare move, the FDA cites two drugmakers for failing to report clinical trial results to a database",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/24/fda-cites-two-drugmakers-for-failing-to-report-clinical-trial-results/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 3,
+   "title": "When Disaster Strikes, Medicaid Work Rules Add Barriers for Potential Enrollees",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/natural-disasters-medicaid-work-requirements-eligibility-barriers-hawaii/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 4,
+   "title": "AI can analyze X-rays and CT scans to draft radiology reports. Will it make care better, safer?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/does-radiology-ai-draft-reports-make-care-better-safer-rsna/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 5,
+   "title": "Medicare estimates $9.2 billion in savings from third round of negotiated drug prices",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/medicare-drug-price-negotiations-announcement-third-round/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 6,
+   "title": "Limb-girdle muscular dystrophy gets its first FDA-approved drug, from BridgeBio",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/fda-approves-bridgebio-lgmd-drug-welgemda/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 7,
+   "title": "‘Medicare for All’ Is Back on Drawing Board. Does It Stand a Better Chance This Time?",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/congress-democrats-medicare-for-all-unity-challenge-universal-healthcare/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 8,
+   "title": "Opinion: If the AI bubble bursts, it could create a serious problem for health care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/ai-bubble-medical-artificial-intelligence-health/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 9,
+   "title": "First Systemic Therapy for Nonsegmental Vitiligo Gets FDA Green Light",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/dermatology/generaldermatology/124024",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 10,
+   "title": "Florida AG sues Leapfrog over ‘bogus’ hospital grades",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/florida-ag-sues-leapfrog-over-bogus-hospital-grades/875635/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 11,
+   "title": "Boxing Champ's Schizophrenia; Doctor vs AI in Court? Holiday Cooking Danger Zones",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/psychiatry/schizophrenia/124017",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 12,
+   "title": "CMS proposes $100B cut to Medicare Advantage star ratings pay",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/cms-proposes-100b-cut-to-medicare-advantage-star-ratings-pay/875441/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 13,
+   "title": "New maternity coding changes are here. Is your hospital ready?",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/spons/new-maternity-coding-changes-are-here-is-your-hospital-ready/874847/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 14,
+   "title": "How artificial intelligence is offering new hope for stroke patients in the Last Frontier",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/alaskan-hospitals-artificial-intelligence-bet-improve-stroke-care/",
+   "date": "2026-11-24"
+  }
+ ]
+}
