@@ -1,0 +1,225 @@
+{
+ "list": "ai-health",
+ "week": "2026-W48",
+ "start": "2026-11-17",
+ "end": "2026-11-23",
+ "status": "review",
+ "generated": "2026-11-24T01:01:39.412Z",
+ "picks": [
+  {
+   "rank": 1,
+   "title": "Opinion: If the AI bubble bursts, it could create a serious problem for health care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/ai-bubble-medical-artificial-intelligence-health/",
+   "date": "2026-11-23",
+   "take": "A health AI company's market value and the medical value of its technology are two different things, which is news only to anyone who has never read a prospectus. Clinicians may soon learn which workflows were load-bearing and which were venture-funded."
+  },
+  {
+   "rank": 2,
+   "title": "Epic Systems defends competitive practices, promises to let AI access its records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/epic-defends-competitive-practices-promises-ai-access-to-records/",
+   "date": "2026-11-18",
+   "take": "Epic defended its competitive practices at a conference, then promised AI access to its records. Medicine's data gatekeeper is now enthusiastic about openness, as soon as the term is defined internally."
+  },
+  {
+   "rank": 3,
+   "title": "The emerging winners and losers in the AI scribe market",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/ai-scribe-market-emerging-winners-losers-ai-prognosis/",
+   "date": "2026-11-18",
+   "take": "The AI scribe market is sorting into winners and losers, which is progress for a field where documentation burden was supposed to be solved three funding rounds ago. Clinicians await the part where the notes get shorter."
+  },
+  {
+   "rank": 4,
+   "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/cms-ai-roadmap-and-news-from-hlth-health-tech/",
+   "date": "2026-11-17",
+   "take": "CMS has released an AI roadmap, giving the industry a rare chance to check whether the destination includes anything resembling reimbursement logic. Physicians will be pleased to learn the map exists. The terrain remains prior authorization."
+  },
+  {
+   "rank": 5,
+   "title": "AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052334/",
+   "date": "2026-08-01",
+   "take": "A review of AI chatbots and youth suicide risk finds critical evidence gaps and proposes a clinical research agenda. The products shipped first, and the research agenda arrives to examine them, as is tradition."
+  },
+  {
+   "rank": 6,
+   "title": "Verifiable summarization of electronic health records using large language models to support chart review",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43024780/",
+   "date": "2026-11-13",
+   "take": "Researchers are working on summaries of electronic health records that can be verified against the chart. This is a refreshing standard for a technology whose usual pitch is that you should simply trust the confident paragraph."
+  },
+  {
+   "rank": 7,
+   "title": "Bias and equity in large language model-based applications for health care: a scoping review",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052083/",
+   "date": "2026-11-18",
+   "take": "A scoping review of bias and equity in LLM-based health applications arrives just as deployment is accelerating. Equity assessment remains the seatbelt installed after the car has been sold, test-driven, and recommended to your cardiologist."
+  },
+  {
+   "rank": 8,
+   "title": "AI and affordability steal the show: 6 takeaways from HLTH",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-affordability-glp-1s-longevity-hlth-2026-takeaways/875048/",
+   "date": "2026-11-20",
+   "take": "HLTH takeaways: AI and affordability stole the show. Two topics are bound to share a stage at a conference where the first is usually priced, and the second is mostly discussed."
+  },
+  {
+   "rank": 9,
+   "title": "Benchmarking and developing large language models using one million clinical trials",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052352/",
+   "date": "2026-07-31",
+   "take": "A benchmark built from one million clinical trials tests whether language models can handle the trial literature. Medicine has finally produced a data set large enough that nobody, including the investigators' mothers, has read all of it."
+  },
+  {
+   "rank": 10,
+   "title": "Generative AI mental health chatbots: a scoping review of intervention design and user experience",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43020830/",
+   "date": "2026-07-23",
+   "take": "A scoping review of generative AI mental health chatbots examines intervention design and user experience. Access to care is scarce, so we have built a patient, tireless, unlicensed listener, and now we are, appropriately, reading the manual."
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "title": "AI assistance for fetal ultrasound interpretation in a multi-reader study",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43045756/",
+   "date": "2026-07-28"
+  },
+  {
+   "id": 1,
+   "title": "Bias and equity in large language model-based applications for health care: a scoping review",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052083/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 2,
+   "title": "MedKGent: a large language model agent framework for constructing temporally evolving medical knowledge graph",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43058248/",
+   "date": "2026-08-04"
+  },
+  {
+   "id": 3,
+   "title": "Verifiable summarization of electronic health records using large language models to support chart review",
+   "source": "J Am Med Inform Assoc",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43024780/",
+   "date": "2026-11-13"
+  },
+  {
+   "id": 4,
+   "title": "Generative AI mental health chatbots: a scoping review of intervention design and user experience",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43020830/",
+   "date": "2026-07-23"
+  },
+  {
+   "id": 5,
+   "title": "Health professions education (HPE) in the age of generative AI",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052469/",
+   "date": "2026-07-31"
+  },
+  {
+   "id": 6,
+   "title": "AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052334/",
+   "date": "2026-08-01"
+  },
+  {
+   "id": 7,
+   "title": "An interpretable artificial intelligence model for real-time leukemia screening via routine blood tests across multicenter cohorts",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052369/",
+   "date": "2026-07-25"
+  },
+  {
+   "id": 8,
+   "title": "Benchmarking and developing large language models using one million clinical trials",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43052352/",
+   "date": "2026-07-31"
+  },
+  {
+   "id": 9,
+   "title": "Causal machine learning for exploring radiation dose effects on mandibular osteoradionecrosis",
+   "source": "NPJ Digit Med",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43045750/",
+   "date": "2026-07-29"
+  },
+  {
+   "id": 10,
+   "title": "Multimodal multitask deep learning for predicting tertiary lymphoid structures and peritoneal recurrence in gastric cancer: a multicentre development, validation, and testing study",
+   "source": "Lancet Digit Health",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43058006/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 11,
+   "title": "Opinion: If the AI bubble bursts, it could create a serious problem for health care",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/23/ai-bubble-medical-artificial-intelligence-health/",
+   "date": "2026-11-23"
+  },
+  {
+   "id": 12,
+   "title": "Epic defends competitive practices; promises AI access to records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/19/epic-defends-competitive-practices-promises-ai-access-health-tech/",
+   "date": "2026-11-19"
+  },
+  {
+   "id": 13,
+   "title": "Epic Systems defends competitive practices, promises to let AI access its records",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/epic-defends-competitive-practices-promises-ai-access-to-records/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 14,
+   "title": "The emerging winners and losers in the AI scribe market",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/18/ai-scribe-market-emerging-winners-losers-ai-prognosis/",
+   "date": "2026-11-18"
+  },
+  {
+   "id": 15,
+   "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/17/cms-ai-roadmap-and-news-from-hlth-health-tech/",
+   "date": "2026-11-17"
+  },
+  {
+   "id": 16,
+   "title": "AI and affordability steal the show: 6 takeaways from HLTH",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/ai-affordability-glp-1s-longevity-hlth-2026-takeaways/875048/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 17,
+   "title": "Pharmalittle: We’re reading about Sanofi eyeing Insmed, AI speeding drug development, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/20/sanofi-eyeing-insmed-ai-speeding-drug-development/",
+   "date": "2026-11-20"
+  },
+  {
+   "id": 18,
+   "title": "Can AI help scientists identify promising drug candidates?",
+   "source": "OpenAI",
+   "url": "https://openai.com/index/introducing-medchembench",
+   "date": "2026-11-20"
+  }
+ ]
+}
