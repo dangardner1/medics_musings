@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-25",
+ "status": "review",
+ "generated": "2026-11-25T20:27:00.285Z",
+ "check": {
+  "ok": false,
+  "reason": "The target is right (the FDA and drugmakers), the tone is dry, and nothing mocks patients, reporters or individuals. But the take states that these are the FDA's 'first such notices in more than a year.' The headline only says 'in a rare move,' so this specific timeframe is not supported and reads as an invented fact. Remove or soften it, for example 'a rare move,' and the item should pass."
+ },
+ "pick": {
+  "title": "In a rare move, the FDA cites two drugmakers for failing to report clinical trial results to a database",
+  "source": "STAT",
+  "url": "https://www.statnews.com/pharmalot/2026/11/24/fda-cites-two-drugmakers-for-failing-to-report-clinical-trial-results/",
+  "date": "2026-11-24",
+  "headline": "FDA Reminds Drugmakers Trial Reporting Law Exists, Pending Next Reminder",
+  "take": "The FDA cited two drugmakers for not reporting required trial results, its first such notices in more than a year. The rule is mandatory in the way a gym membership is: everyone agrees it's important, and enforcement arrives about once per fiscal calendar, sometimes."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "We’re reading about BioNTech founders’ oncology startup, a long-acting GSK drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/25/biontech-founders-oncology-startup-gsk-egpa-drug-exdensur/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 1,
+   "title": "Medicare Open Enrollment: Here’s What’s Changing, and What Mistakes To Avoid",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/medicare-open-enrollment-guide-medicare-advantage-medigap-part-d-drugs-premiums/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 2,
+   "title": "It’s the Paperwork, Not the Work, Causing Enrollees To Lose Medicaid in Nebraska",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-requirements-new-rules-coverage-dropped-nebraska-rollout/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 3,
+   "title": "Roche’s potential breast cancer blockbuster drug wins second FDA nod",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/biotech-news-roche-potential-breast-cancer-blockbluster-drug-wins-second-fda-nod/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 4,
+   "title": "Alaskan hospitals use AI to improve stroke care, peptides go mainstream, and RSNA 2026",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/alaskan-hospitals-using-ai-rsna-2026-peptides-health-tech/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 5,
+   "title": "In a rare move, the FDA cites two drugmakers for failing to report clinical trial results to a database",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/24/fda-cites-two-drugmakers-for-failing-to-report-clinical-trial-results/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 6,
+   "title": "When Disaster Strikes, Medicaid Work Rules Add Barriers for Potential Enrollees",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/medicaid/natural-disasters-medicaid-work-requirements-eligibility-barriers-hawaii/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 7,
+   "title": "AI can analyze X-rays and CT scans to draft radiology reports. Will it make care better, safer?",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/24/does-radiology-ai-draft-reports-make-care-better-safer-rsna/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 8,
+   "title": "Medicare sets 2028 prices for 13 new drugs under Biden-era law",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/inflation-reduction-act-2028-final-medicare-drug-price/875783/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 9,
+   "title": "Just a handful of payers control US health insurance markets, AMA warns",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/just-a-handful-of-payers-control-us-health-insurance-markets-ama-warns/875719/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 10,
+   "title": "FDA Moves to Boost Drug Quality Testing",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/fdageneral/124048",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 11,
+   "title": "13 Drugs Get Double-Digit Price Cuts in Medicare",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/medicare/124046",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 12,
+   "title": "Rural health orgs keep pace with chronic care demand, but Medicaid cuts could change that",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/rural-health-orgs-keep-pace-with-chronic-care-demand-but-medicaid-cuts-cou/875567/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 13,
+   "title": "A quarter of physicians eye the exit — and it’s not just burnout: survey",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/a-quarter-of-physicians-eye-the-exit-and-its-not-just-burnout-survey/875700/",
+   "date": "2026-11-24"
+  },
+  {
+   "id": 14,
+   "title": "Vitamin D and Sleep; Metformin-Cognition Link; FDA Rejects Duchenne Drug Again",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/neurology/generalneurology/124041",
+   "date": "2026-11-24"
+  }
+ ]
+}
