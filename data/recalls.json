@@ -1,22 +1,16 @@
 {
  "source": "openFDA enforcement reports (api.fda.gov/{drug,device,food}/enforcement)",
- "sourceUpdated": "2026-11-11",
- "fetched": "2026-11-19",
+ "sourceUpdated": "2026-11-18",
+ "fetched": "2026-11-26",
  "windowDays": 30,
  "counts": {
-  "total": 464,
-  "classI": 62,
-  "drug": 124,
-  "device": 235,
-  "food": 105
+  "total": 509,
+  "classI": 69,
+  "drug": 132,
+  "device": 265,
+  "food": 112
  },
  "trend": [
-  {
-   "week": "2026-05-25",
-   "I": 39,
-   "II": 57,
-   "III": 6
-  },
   {
    "week": "2026-06-01",
    "I": 18,
@@ -92,18 +86,18 @@
   {
    "week": "2026-08-24",
    "I": 24,
-   "II": 56,
+   "II": 58,
    "III": 5
   },
   {
    "week": "2026-08-31",
-   "I": 9,
+   "I": 10,
    "II": 82,
    "III": 0
   },
   {
    "week": "2026-09-07",
-   "I": 8,
+   "I": 9,
    "II": 96,
    "III": 13
   },
@@ -115,25 +109,25 @@
   },
   {
    "week": "2026-09-21",
-   "I": 64,
-   "II": 81,
-   "III": 1
-  },
-  {
-   "week": "2026-09-28",
-   "I": 7,
-   "II": 69,
+   "I": 67,
+   "II": 83,
    "III": 2
   },
   {
+   "week": "2026-09-28",
+   "I": 8,
+   "II": 69,
+   "III": 4
+  },
+  {
    "week": "2026-10-05",
-   "I": 11,
-   "II": 146,
+   "I": 14,
+   "II": 150,
    "III": 1
   },
   {
    "week": "2026-10-12",
-   "I": 7,
+   "I": 16,
    "II": 85,
    "III": 12
   },
@@ -145,148 +139,1336 @@
   },
   {
    "week": "2026-10-26",
-   "I": 25,
-   "II": 138,
+   "I": 26,
+   "II": 139,
    "III": 31
   },
   {
    "week": "2026-11-02",
    "I": 12,
-   "II": 62,
-   "III": 3
+   "II": 63,
+   "III": 4
   },
   {
    "week": "2026-11-09",
-   "I": 22,
+   "I": 23,
+   "II": 101,
+   "III": 1
+  },
+  {
+   "week": "2026-11-16",
+   "I": 8,
    "II": 98,
    "III": 1
   }
  ],
- "previousTotal": 449,
+ "previousTotal": 464,
  "newIds": [
-  "Z-0316-2027",
-  "Z-0216-2027",
-  "Z-0215-2027",
-  "Z-0218-2027",
-  "Z-0212-2027",
-  "Z-0219-2027",
-  "Z-0217-2027",
-  "Z-0221-2027",
-  "Z-0214-2027",
-  "Z-0220-2027",
-  "Z-0287-2027",
-  "Z-0222-2027",
-  "Z-0213-2027",
-  "H-0197-2027",
-  "H-0192-2027",
-  "H-0191-2027",
-  "H-0193-2027",
-  "H-0190-2027",
-  "H-0196-2027",
-  "H-0187-2027",
-  "H-0188-2027",
-  "H-0194-2027",
-  "D-0145-2027",
-  "D-0122-2027",
-  "D-0125-2027",
-  "D-0152-2027",
-  "D-0158-2027",
-  "D-0173-2027",
-  "D-0124-2027",
-  "D-0171-2027",
-  "D-0142-2027",
-  "D-0127-2027",
-  "D-0140-2027",
-  "D-0144-2027",
-  "D-0170-2027",
-  "D-0143-2027",
-  "D-0155-2027",
-  "D-0116-2027",
-  "D-0159-2027",
-  "D-0160-2027",
-  "D-0138-2027",
-  "D-0154-2027",
-  "D-0147-2027",
-  "D-0120-2027",
-  "D-0115-2027",
-  "D-0130-2027",
-  "D-0119-2027",
-  "D-0133-2027",
-  "D-0114-2027",
-  "D-0167-2027",
-  "D-0151-2027",
-  "D-0146-2027",
-  "D-0137-2027",
-  "D-0150-2027",
-  "D-0169-2027",
-  "D-0157-2027",
-  "D-0148-2027",
-  "D-0182-2027",
-  "D-0135-2027",
-  "D-0141-2027",
-  "D-0161-2027",
-  "D-0126-2027",
-  "D-0121-2027",
-  "D-0134-2027",
-  "D-0129-2027",
-  "D-0123-2027",
-  "D-0168-2027",
-  "D-0131-2027",
-  "D-0149-2027",
-  "D-0132-2027",
-  "D-0153-2027",
-  "D-0128-2027",
-  "D-0166-2027",
-  "D-0117-2027",
-  "D-0165-2027",
-  "D-0118-2027",
-  "D-0139-2027",
-  "D-0136-2027",
-  "Z-0346-2027",
-  "Z-0327-2027",
-  "Z-0342-2027",
-  "Z-0354-2027",
-  "Z-0353-2027",
-  "Z-0335-2027",
-  "Z-0318-2027",
-  "Z-0347-2027",
-  "Z-0351-2027",
-  "Z-0349-2027",
-  "Z-0325-2027",
-  "Z-0338-2027",
-  "Z-0332-2027",
-  "Z-0352-2027",
-  "Z-0340-2027",
-  "Z-0339-2027",
-  "Z-0326-2027",
-  "Z-0356-2027",
-  "Z-0321-2027",
-  "Z-0358-2027",
-  "Z-0319-2027",
-  "Z-0348-2027",
-  "Z-0344-2027",
-  "Z-0345-2027",
-  "Z-0341-2027",
-  "Z-0355-2027",
-  "Z-0324-2027",
-  "Z-0334-2027",
-  "Z-0359-2027",
-  "Z-0336-2027",
-  "Z-0323-2027",
-  "Z-0331-2027",
-  "Z-0337-2027",
-  "Z-0322-2027",
-  "Z-0357-2027",
-  "Z-0333-2027",
-  "Z-0328-2027",
-  "Z-0317-2027",
-  "Z-0350-2027",
-  "Z-0320-2027",
-  "Z-0343-2027",
-  "H-0189-2027",
-  "H-0195-2027"
+  "D-0189-2027",
+  "Z-0409-2027",
+  "Z-0330-2027",
+  "Z-0329-2027",
+  "H-0200-2027",
+  "H-0198-2027",
+  "H-0229-2027",
+  "H-0199-2027",
+  "D-0176-2027",
+  "D-0177-2027",
+  "D-0180-2027",
+  "D-0178-2027",
+  "D-0174-2027",
+  "D-0179-2027",
+  "D-0175-2027",
+  "Z-0443-2027",
+  "Z-0405-2027",
+  "Z-0393-2027",
+  "Z-0406-2027",
+  "Z-0391-2027",
+  "Z-0427-2027",
+  "Z-0389-2027",
+  "Z-0362-2027",
+  "Z-0404-2027",
+  "Z-0397-2027",
+  "Z-0388-2027",
+  "Z-0444-2027",
+  "Z-0417-2027",
+  "Z-0390-2027",
+  "Z-0442-2027",
+  "Z-0371-2027",
+  "Z-0438-2027",
+  "Z-0381-2027",
+  "Z-0369-2027",
+  "Z-0428-2027",
+  "Z-0386-2027",
+  "Z-0412-2027",
+  "Z-0385-2027",
+  "Z-0365-2027",
+  "Z-0432-2027",
+  "Z-0372-2027",
+  "Z-0433-2027",
+  "Z-0411-2027",
+  "Z-0370-2027",
+  "Z-0403-2027",
+  "Z-0383-2027",
+  "Z-0424-2027",
+  "Z-0416-2027",
+  "Z-0420-2027",
+  "Z-0402-2027",
+  "Z-0376-2027",
+  "Z-0419-2027",
+  "Z-0445-2027",
+  "Z-0387-2027",
+  "Z-0399-2027",
+  "Z-0414-2027",
+  "Z-0379-2027",
+  "Z-0431-2027",
+  "Z-0375-2027",
+  "Z-0407-2027",
+  "Z-0384-2027",
+  "Z-0364-2027",
+  "Z-0366-2027",
+  "Z-0398-2027",
+  "Z-0363-2027",
+  "Z-0378-2027",
+  "Z-0396-2027",
+  "Z-0392-2027",
+  "Z-0395-2027",
+  "Z-0421-2027",
+  "Z-0422-2027",
+  "Z-0413-2027",
+  "Z-0377-2027",
+  "Z-0305-2027",
+  "Z-0437-2027",
+  "Z-0367-2027",
+  "Z-0423-2027",
+  "Z-0368-2027",
+  "Z-0361-2027",
+  "Z-0435-2027",
+  "Z-0374-2027",
+  "Z-0440-2027",
+  "Z-0401-2027",
+  "Z-0415-2027",
+  "Z-0373-2027",
+  "Z-0441-2027",
+  "Z-0436-2027",
+  "Z-0380-2027",
+  "Z-0425-2027",
+  "Z-0430-2027",
+  "Z-0400-2027",
+  "Z-0382-2027",
+  "Z-0426-2027",
+  "Z-0360-2027",
+  "Z-0408-2027",
+  "Z-0418-2027",
+  "Z-0429-2027",
+  "Z-0394-2027",
+  "Z-0434-2027",
+  "H-0203-2027",
+  "H-0201-2027",
+  "H-0208-2027",
+  "H-0209-2027",
+  "H-0206-2027",
+  "H-0205-2027",
+  "H-0207-2027",
+  "Z-0439-2027",
+  "H-0204-2027",
+  "D-0185-2027",
+  "H-0202-2027",
+  "H-0227-2027",
+  "D-0172-2027",
+  "D-0181-2027",
+  "D-0156-2027",
+  "D-0192-2027"
  ],
  "recalls": [
+  {
+   "id": "D-0189-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class I",
+   "product": "UMARY Acido Hialuronico, also known as: \"New Hyaluronic Acid 850mg Sealed 30 Caps\", Suplemento Alimenticio, Contenido Neto: 30 capletas de 850 mg.",
+   "firm": "IBeautiStore.com",
+   "reason": "Marketed without approved NDA/ANDA- FDA laboratory analysis found product to be tainted with undeclared ingredients: Dexamethasone, Diclofenac and Omeprazole.",
+   "status": "Ongoing",
+   "distribution": "USA Nationwide"
+  },
+  {
+   "id": "Z-0409-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class I",
+   "product": "Luna G3 BPAP System Model/Catalog Number: LG3800-30VT Product Description: The Luna G3 BPAP System is a Bi-level PAP (Bi-level Positive Airway Pressure) device…",
+   "firm": "3B Medical, Inc.",
+   "reason": "The configured IPAP value is recorded and transmitted instead of the actual delivered inspiratory pressure when Targeted VT is enabled.",
+   "status": "Ongoing",
+   "distribution": "US nationwide distribution including Puerto Rico. No OUS distribution."
+  },
+  {
+   "id": "Z-0330-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class I",
+   "product": "Cardinal Health Presource PBDS kits, Containing BD Alaris Pump Infusion Sets used with BD Alaris Pump Module Model 8100,labeled as: 1) LDR,MUSC,KIT , CATALOG #…",
+   "firm": "Cardinal Health 200, LLC",
+   "reason": "Notification of performance disclosures of kit component.",
+   "status": "Ongoing",
+   "distribution": "US: CA, TX, NC"
+  },
+  {
+   "id": "Z-0329-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class I",
+   "product": "Cardinal Health Presource PBDS kits, Containing BD Alaris Pump Infusion Sets used with BD Alaris Pump Module Model 8100,labeled as: 1) OPEN HEART A,B,C, KIT…",
+   "firm": "Cardinal Health 200, LLC",
+   "reason": "Notification of performance disclosures of kit component.",
+   "status": "Ongoing",
+   "distribution": "US: CA, TX, NC"
+  },
+  {
+   "id": "H-0200-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class I",
+   "product": "Country Creek Acres Alfalfa Sprout Seeds packed in a clear and silver poly bag, 16 oz, with a white adhesive label and green, yellow and blue lettering, packed…",
+   "firm": "Country Creek LLC",
+   "reason": "Products contain seed recalled from the supplier and may be contaminated with E. coli and/or Salmonella",
+   "status": "Ongoing",
+   "distribution": "E-commerce customers located nationwide"
+  },
+  {
+   "id": "H-0198-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class I",
+   "product": "Cold Smoked Sprats, 5 lbs.",
+   "firm": "D & M Smoked Fish, Inc.",
+   "reason": "May be contaminated with Clostridium botulinum",
+   "status": "Ongoing",
+   "distribution": "NY, NJ, PA"
+  },
+  {
+   "id": "H-0229-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class I",
+   "product": "Fresh To You Sausage, Egg & Cheese Biscuit Sandwich, net weight. 4.6 oz (131g). Refrigerated breakfast sandwich sold to the general population, packaging is…",
+   "firm": "Fresh & Ready Foods LLC",
+   "reason": "Possible Listeria monocytogenes contamination.",
+   "status": "Ongoing",
+   "distribution": "Distributed in OR and WA"
+  },
+  {
+   "id": "H-0199-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class I",
+   "product": "Alfalfa Sprouts hydroponically grown. 4oz Alfalfa Sprouts were packaged in zip lock style bag and 1lb Alfalfa Sprouts were packaged in gusseted plastic bag…",
+   "firm": "Francisco Family Foods",
+   "reason": "Potential E. coli and Salmonella contamination",
+   "status": "Completed",
+   "distribution": "Distributed in MT only."
+  },
+  {
+   "id": "D-0176-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "ORL Organic Oral Care Cinnamint toothpaste, 4 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA UPC# 850006245512",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "D-0177-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "ORL Organic Oral Care Fresh Mint natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC 850006245499",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "D-0180-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "ORL Organic Oral Care Fresh mint mouthwash, 16.9 oz., ORL, Manufactured in USA, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245451",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "D-0178-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "ORL Organic Oral Care Bubblegum Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, UPC# #850006245475",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "D-0174-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "Lisdexamfetamine Dimesylate Capsules 40 mg, 100-count bottle, Rx Only, Manufactured by: Ohm Laboratories, New Brunswick, NJ 08901, Distributed by: Sun…",
+   "firm": "SUN PHARMACEUTICAL INDUSTRIES INC",
+   "reason": "Failed Dissolution Specifications",
+   "status": "Ongoing",
+   "distribution": "OHIO and Mississippi"
+  },
+  {
+   "id": "D-0179-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "Organic Oral Care Cinnamint Kids Mouthwash, 16.9 oz., ORL, ORL Labs, LLC, Scottsdale, Arizona, USA, 16.9 oz. UPC# #850006245468",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "D-0175-2027",
+   "date": "2026-11-18",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "ORL Organic Oral Care Bubblegum Kids natural toothpaste, 4 oz., ORL, Manufactured in USA, ORL LAbs, LLC, Scottsdale, Arizona, USA, UPC# 850006245505",
+   "firm": "ORL Labs LLC",
+   "reason": "Cross-contamination: The firm was notified by the FDA of sampling results which found the presence of progesterone, estradiol, or dehydroepiandrosterone (DHEA)",
+   "status": "Ongoing",
+   "distribution": "USA nationwide"
+  },
+  {
+   "id": "Z-0443-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "IMRIS Operating Suite iMRI 3T S, Model Number 116118-000, IMRIS Product Description ORT400 Table, IMRIS Part Number 119900-000; Floor System, Skyra Magnet…",
+   "firm": "IMRIS Imaging Inc",
+   "reason": "Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "status": "Ongoing",
+   "distribution": "Distribution to US and China"
+  },
+  {
+   "id": "Z-0405-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp TH-5 Thermalert Monitoring Thermometer REF: TH-5",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0393-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ACUSON Orgin ICE Ultrasound Imaging System REF: 11669400",
+   "firm": "Siemens Medical Solutions USA, Inc.",
+   "reason": "A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, CT, KY, NC, TX and…"
+  },
+  {
+   "id": "Z-0406-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp TH-5/AOP Thermalert Monitoring Thermometer with Analog Output REF: TH-5/AOP",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0391-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver System for organ transport OCS Solution Delivery Cassettes Model/Catalog Number: 1467 Product Description: OCS Solution Delivery Cassettes The…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Faulty Solution Delivery System (SDS) Cassettes within the device set were assembled with syringes that were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the state of NE and the country of…"
+  },
+  {
+   "id": "Z-0427-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "FP3D Original Opaque; Model/Catalog Number: 4220443; Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength =…",
+   "firm": "Keystone Industries - Myerstown",
+   "reason": "Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the country of Canada."
+  },
+  {
+   "id": "Z-0389-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver System for organ transport OCS Liver Perfusion Set Model/Catalog Number: 3200 Product Description: The recalled product is a standard off the shelf…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Faulty Solution Delivery System (SDS) Cassettes within the device set were assembled with syringes that were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the state of NE and the country of…"
+  },
+  {
+   "id": "Z-0362-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "PROGRAMMER 24970A, provides the analyzer and ECG hardware during device implant, invasive troubleshooting, and implanted device follow-up procedures, Product…",
+   "firm": "Medtronic, Inc.",
+   "reason": "Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution."
+  },
+  {
+   "id": "Z-0404-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp MT-D REF: MT-D",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0397-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Straumann BLC Implants, SLActive, RXD. Endosseous Dental Implant. WB Healing Abutment, O6, GH1.5, AH2,Ti. Article Numbers: 035.9208S, 035.9210S, 035.9214S…",
+   "firm": "Straumann USA LLC",
+   "reason": "Potential exposure to contamination, possibly compromising the sterility and cleanliness.",
+   "status": "Ongoing",
+   "distribution": "US distribution to AZ, CA, CO, FL, GA, IL, IN, KS, MA, MI, MN, NC, NE, NH, NJ…"
+  },
+  {
+   "id": "Z-0388-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "BOBBIN VENTILATION TUBE 5PK 1.14 FLPL, REF: 1010201, Lot# 0231048277 (GTIN 20763000281612).",
+   "firm": "Medtronic Xomed, Inc.",
+   "reason": "Ventilation tubes, that provide a passageway for movement of air between the auditory canal and the middle ear, were not subjected to the required sterilization process, which after implantation could cause infection…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution including in the states of NY, AL, VA…"
+  },
+  {
+   "id": "Z-0444-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "IMRIS Operating Suite InVision 3T Operating Suite, Model Number: 120823-000, IMRIS Product Description ORT400 Table, IMRIS Part Number 119900-000; medical…",
+   "firm": "IMRIS Imaging Inc",
+   "reason": "Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "status": "Ongoing",
+   "distribution": "Distribution to US and China"
+  },
+  {
+   "id": "Z-0417-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes ROBOTIC COLON DYNJ911424 ROBOTIC LITHOTOMY DYNJ903440D…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0390-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver System for organ transport OCS Liver Solution Infusion Set Model/Catalog Number: 3457 Product Description: OCS Liver Solution Infusion Set; The…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Faulty Solution Delivery System (SDS) Cassettes within the device set were assembled with syringes that were manufactured with an atypical lubricant, which results in sub-par performance and has the potential to cause…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the state of NE and the country of…"
+  },
+  {
+   "id": "Z-0442-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "IMRIS Operating Suite Neuro III-SV, Model Number: 116189-000, IMRIS Product Description ORT400 Table, IMRIS Part Number 119900-000; medical scanner",
+   "firm": "IMRIS Imaging Inc",
+   "reason": "Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "status": "Ongoing",
+   "distribution": "Distribution to US and China"
+  },
+  {
+   "id": "Z-0371-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono floor. Model Number: 11327700.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, KY, NY, TX."
+  },
+  {
+   "id": "Z-0438-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Arial Call Stations Model/Catalog Number: CSK200-900, CSK200-900MR, CSK200, CSK200MR, CSK200-1069, CSK200-1069MR Software Version: V1.6.4 (FW)",
+   "firm": "Securitas Healthcare LLC",
+   "reason": "Call station batteries may fully deplete without a low battery alert.",
+   "status": "Ongoing",
+   "distribution": "Distribution US nationwide, Canada, Israel, Republic of Korea, and United Arab…"
+  },
+  {
+   "id": "Z-0381-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver Perfusion Set Model/Catalog Number: 3200 Software Version: rev 3 OCS Liver Perfusion Module included in the Liver Perfusion Set used for organ…",
+   "firm": "TransMedics, Inc.",
+   "reason": "The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, FL, IL, MA, MN, NC…"
+  },
+  {
+   "id": "Z-0369-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono biplane. Model Number: 11327600.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, KY, NY, TX."
+  },
+  {
+   "id": "Z-0428-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Philips EPIQ series and Affiniti series Diagnostic Ultrasound Systems with the Auto Measure licensed Option with Software Versions 9.0 and 9.0.1. Model…",
+   "firm": "Philips Ultrasound, LLC",
+   "reason": "Due to software issues that may display incorrect values in the results box, final report, or both, potentially leading to the need for re-measureemtn of values.",
+   "status": "Ongoing",
+   "distribution": "U.S.: AK, AL, AR, AZ, CA, CO, CT, DC, FL, GA, IA, ID, IL, IN, KS, KY, LA, MA…"
+  },
+  {
+   "id": "Z-0386-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Heart System OCS Heart Instrumentation Tool Set Model/Catalog Number: 1401 OCS Heart Instrumentation Tool Set, accessories intended to be used with the OCS…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Incorrectly assembled device kits that include incorrect components.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of NE, AZ, CA, FL, GA, IL…"
+  },
+  {
+   "id": "Z-0412-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Eleganz Fusion Screw System, 1.8mm Cannulated Drill, Long REF: DI-2004",
+   "firm": "Dev4",
+   "reason": "Driver bit included in fusion Screw System may fracture or break during use resulting in intraoperative delay.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of MN, IL, FL, TX, RI, CT, SC, NY."
+  },
+  {
+   "id": "Z-0385-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver System OCS Liver Perfusion Set Model/Catalog Number: 3200 OCS Liver Perfusion Sets containing OCS Liver Perfusion Initiation Set and OCS Liver…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Incorrectly assembled device kits that include incorrect components.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of NE, AZ, CA, FL, GA, IL…"
+  },
+  {
+   "id": "Z-0365-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Atellica CH Total Protein_2 (TP_2); Siemens Material Number (SMN): 1. 11645755 (3700 tests), 2. 11537228 (7400 tests);",
+   "firm": "Siemens Healthcare Diagnostics, Inc.",
+   "reason": "Reagent probe carryover on the Atellica CH and Atellica CI Analyzers may cause falsely elevated Hemoglobin A1c (A1c_E/A1c_H) results due to HDLC carryover (biases of 9 29% in NGSP units), and falsely depressed Direct…",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the countries of Argentina…"
+  },
+  {
+   "id": "Z-0432-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS pheno. Model Number: 10849000.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential for loss of X-ray functionality after system startup or restart.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, IA, KY, MN, NY, OH."
+  },
+  {
+   "id": "Z-0372-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS pheno. Model Number: 10849000.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, KY, NY, TX."
+  },
+  {
+   "id": "Z-0433-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "APTUS 1.2/1.5 TriLock Scaph.Pl 3x2H Large,t0.8, Model/Catalog Number: A-4350.81; APTUS fixation systems are intended for temporary fixation, correction or…",
+   "firm": "Medartis AG",
+   "reason": "Plate is incorrectly bent",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of IN, AZ, CA, NY."
+  },
+  {
+   "id": "Z-0411-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Eleganz Fusion Screw System , 1.8mm (Cannulated), Short REF: DI-2001",
+   "firm": "Dev4",
+   "reason": "Driver bit included in fusion Screw System may fracture or break during use resulting in intraoperative delay.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of MN, IL, FL, TX, RI, CT, SC, NY."
+  },
+  {
+   "id": "Z-0370-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono ceiling. Model Number: 11328100.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential that the system may not execute movement control commands as intended and may display the following message to the user, \"Limited stand/table movement, SC.\"",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, KY, NY, TX."
+  },
+  {
+   "id": "Z-0403-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp OT-1 ORAL THERMOCOUPLE PROBE REF: OT-1",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0383-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Liver Perfusion Set Model/Catalog Number: 3200 OCS Liver Perfusion Sets containing OCS Liver Instrumentation Tool Set and OCS Liver Perfusion Termination…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Incorrectly assembled device sets with incorrect accessories.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AZ, CA, CO, FL, GA, MA, MI, MN, NC…"
+  },
+  {
+   "id": "Z-0424-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "FP3D Light Reddish Pink; Model/Catalog Number: 4230441; Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength…",
+   "firm": "Keystone Industries - Myerstown",
+   "reason": "Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the country of Canada."
+  },
+  {
+   "id": "Z-0416-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes LTP CDS-LF CDS980375M",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0420-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes ABDOMINAL HYSTERECTOMY DYNJT8877 LAPAROSCOPIC HYSTERECTOMY…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0402-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp SST-2 SKIN SENSOR REF: SST-2",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0376-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q 40mm Screw Cap Feed Set, Model Number VED-052",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0419-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes C-SECTION DYNJ911835B C-SECTION PACK DYNJ906557D…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0445-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "IMRIS Operating Suite InVision 1.5T Operating Suite, Model Number: 12111-000, IMRIS Product Description ORT400 Table, IMRIS Part Number 119900-000; medical…",
+   "firm": "IMRIS Imaging Inc",
+   "reason": "Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "status": "Ongoing",
+   "distribution": "Distribution to US and China"
+  },
+  {
+   "id": "Z-0387-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Sheehy VENTILATION TUBE 5PK BUTTON 1.27 FLPL, REF: 1013301, Lot# 0231048279 (GTIN 20763000281636), Lot# 0231048280 (GTIN 20763000281636).",
+   "firm": "Medtronic Xomed, Inc.",
+   "reason": "Ventilation tubes, that provide a passageway for movement of air between the auditory canal and the middle ear, were not subjected to the required sterilization process, which after implantation could cause infection…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution including in the states of NY, AL, VA…"
+  },
+  {
+   "id": "Z-0399-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp RET-1 Rectal Probe Model/Catalog Number: RET-1",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0414-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes ADULT HEART CIRCULATOR KIT DYKS1120G AHT CVOR CABG…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0379-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q 100mL Small Bore Bag Feed Set, Model Number VED-059",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0431-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono floor. Model Number: 11327700.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential for loss of X-ray functionality after system startup or restart.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, IA, KY, MN, NY, OH."
+  },
+  {
+   "id": "Z-0375-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q 1000mL Bag Feed Set (LL), Model Number VED-051",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0407-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp TH-8 Thermalert Monitoring Thermometer REF: TH-8",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0384-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Heart System OCS Heart Perfusion Set Model/Catalog Number: 1200 OCS Heart Perfusion Sets containing OCS Heart Cardioplegia Arrest Set are components of…",
+   "firm": "TransMedics, Inc.",
+   "reason": "Incorrectly assembled device kits that include incorrect components.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of NE, AZ, CA, FL, GA, IL…"
+  },
+  {
+   "id": "Z-0364-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Atellica CH HDL Cholesterol (HDLC); Siemens Material Number (SMN): 11537213;",
+   "firm": "Siemens Healthcare Diagnostics, Inc.",
+   "reason": "Reagent probe carryover on the Atellica CH and Atellica CI Analyzers may cause falsely elevated Hemoglobin A1c (A1c_E/A1c_H) results due to HDLC carryover (biases of 9 29% in NGSP units), and falsely depressed Direct…",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the countries of Argentina…"
+  },
+  {
+   "id": "Z-0366-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Zynex Medical M-Wave, Model: 701200",
+   "firm": "Altivera Medical Inc.",
+   "reason": "Muscle stimulator may deliver constant electrical impulses to all four electrodes simultaneously, instead of alternating between the electrodes as designed, which may cause muscle fatigue.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution including in the states of TX, TN, NJ, OH, IA, SC…"
+  },
+  {
+   "id": "Z-0398-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Straumann Healing Abutments, Ti, Endosseous Dental Implant Abutments. Article Numbers: 064.4202S, 064.4204S, 064.4214S, 064.8212S, 064.8213S, 064.8215S.",
+   "firm": "Straumann USA LLC",
+   "reason": "Potential exposure to contamination, possibly compromising the sterility and cleanliness.",
+   "status": "Ongoing",
+   "distribution": "US distribution to AZ, CA, CO, FL, GA, IL, IN, KS, MA, MI, MN, NC, NE, NH, NJ…"
+  },
+  {
+   "id": "Z-0363-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "RF HEAD 24967 PATIENT CONNECTOR and RF HEAD 24967 EUR MKT, communicates with Medtronic cardiac devices, Product Number 24967",
+   "firm": "Medtronic, Inc.",
+   "reason": "Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution."
+  },
+  {
+   "id": "Z-0378-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q 1000mL Bag Feed Set (PVC), Model Number VED-054",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0396-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "AMS 700 CX/LGX Rear Tip Extenders (RTEs), Snapcone, CX/LGX, 0.5 cm. UPN: 72404320.",
+   "firm": "Boston Scientific Corporation",
+   "reason": "Potential for the Rear Tip Extender (RTE) size contained within the package to differ from the size identified on the product labeling. Certain packages labeled as containing a 0.5 cm RTE may contain a 1.5 cm RTE.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, NC, PA, TX, UT, WI…"
+  },
+  {
+   "id": "Z-0392-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ACUSON Orgin Ultrasound Imaging System REF: 11668590",
+   "firm": "Siemens Medical Solutions USA, Inc.",
+   "reason": "A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, CT, KY, NC, TX and…"
+  },
+  {
+   "id": "Z-0395-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ACUSON Sequoia Select Ultrasound Imaging System REF: 11658635",
+   "firm": "Siemens Medical Solutions USA, Inc.",
+   "reason": "A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, CT, KY, NC, TX and…"
+  },
+  {
+   "id": "Z-0421-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes UNIVERSAL GYN DYNJ910195A",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0422-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes ENT-MICRO DYNJ912347 LAMINECTOMY DYNJ911420A NON MB MJR…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0413-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes SM-VAT DYNJ912762",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0377-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q ENPlus Spike Feed Set, Model Numer VED-053",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0305-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Product Series: CMH Series Main Model Involved: CMH1530-C-A Laser Power Range: 1.5-6 kW",
+   "firm": "GD HAN'S YUEMING LASER GROUP CO. LTD.",
+   "reason": "The rear service/maintenance doors of certain early CMH1530-C-A laser cutting machines were fitted only with key-operated mechanical locks and were not equipped with laser safety interlock devices.",
+   "status": "Ongoing",
+   "distribution": "U.S."
+  },
+  {
+   "id": "Z-0437-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Tandem Mobi Insulin Pump with Interoperable Technology (with Android Tandem Mobi Mobile app) Model/Catalog Number: 1015472",
+   "firm": "Tandem Diabetes Care, Inc.",
+   "reason": "A software defect in the Tandem Mobi mobile application for Android (versions 3.5.4, 3.5.2.2, and 3.5.2.1) in which the immediate ( Now ) portion of an Extended Bolus is incorrectly reduced to 0 units when the entered…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide and the country of Czech Republic."
+  },
+  {
+   "id": "Z-0367-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Philips Allura Xper systems with software releases R8.1.x and R8.2.x systems and configured with a FlexVision monitor. Includes the following System Product…",
+   "firm": "PHILIPS MEDICAL SYSTEMS NEDERLAND B.V.",
+   "reason": "Software issue that may cause the FlexVision software application to become unresponsive during clinical use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide and the countries of ALBANIA, ARGENTINA, AUSTRALIA…"
+  },
+  {
+   "id": "Z-0423-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Horizon QDR X-Ray Bone Densitometer; Models: 1. Horizon W, 2. Horizon-WI;",
+   "firm": "Hologic, Inc",
+   "reason": "A nonconformance was identified for systems manufactured from December 2024 to January 2025 that were shipped without the validated VGA cables. Some installations were completed using VGA cables that may not meet…",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the countries of Argentina…"
+  },
+  {
+   "id": "Z-0368-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "TCD Electrodes (Description/REF(Inner/Outer)): TCD Electrode, Multi-Pack, 3M Cable, 10cm x 28ga (0.36mm)/(TCD-10-3M/TCD-10-3M-P); TCD Electrode, Multi-Pack…",
+   "firm": "Boston Scientific Neuromodulation Corporation",
+   "reason": "Radiofrequency probes may have small cut marks on the Tyvek side of the sterile pouch, and if the sterile barrier is compromised and devices are used, this could cause microbial or other foreign material contamination…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution including in the states of OH, ID, KY, NJ, GA, NY…"
+  },
+  {
+   "id": "Z-0361-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "CareLink SmartSync Device Manager App, a tablet-based platform used to program and interrogate compatible Medtronic CIEDs, Product Number M01A02",
+   "firm": "Medtronic, Inc.",
+   "reason": "Bluetooth disconnections may occur between the device manager software and its associated accessories. Bluetooth disconnections during a SmartSync patient session may lead to harm due to undesirable or incomplete…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution."
+  },
+  {
+   "id": "Z-0435-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "3.0T SIGNA Architect, whole body magnetic resonance scanner, System ID 905684MR3T",
+   "firm": "GE Medical Systems, LLC",
+   "reason": "Certain protocols can produce incorrect elevated measurements of liver stiffness. These incorrect measurements could contribute to inappropriate clinical management decisions.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of NY and the country of…"
+  },
+  {
+   "id": "Z-0374-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q 500mL Bag Feed Set (PVC), Model Number VED-050",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0440-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "NITINOL K-WIRE BLUNT; Catalog/Part Number: 48280232; used in spinal surgery",
+   "firm": "VB SPINE LLC",
+   "reason": "Potential for the K-wire to fracture during use resulting in procedural delay and possibility of a piece of fractured K-wire remaining in the patient's bone.",
+   "status": "Ongoing",
+   "distribution": "Domestic: Nationwide Distribution; International: Australia, Belgium, France…"
+  },
+  {
+   "id": "Z-0401-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp SST-1 SKIN SENSOR Model/Catalog Number: SST-1 Software Version: N/A",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0415-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes CHEST/BREAST DYNJ908433F COLON DYNJ904031C DIAGNOSTIC LAP…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0373-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Vesco Q Enteral Feeding Pump, Model Number VED-701, Software Versions 6.0 - 7.8",
+   "firm": "Vesco Medical Llc",
+   "reason": "The feeding pump may deliver enteral fluids outside its labeled accuracy specification of +/-5%. This inaccuracy can result in over-delivery or under-delivery of enteral fluids relative to the prescribed dose, if proper…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution."
+  },
+  {
+   "id": "Z-0441-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "IMRIS Operating Suite iMRX System, Model Number 105828-000, IMRIS Product Description ORT400 Table, IMRIS Part Number 119900-000; electromechanical operating…",
+   "firm": "IMRIS Imaging Inc",
+   "reason": "Operating suite contains TruSystem Surgical Tables which are being recalled by Baxter.",
+   "status": "Ongoing",
+   "distribution": "Distribution to US and China"
+  },
+  {
+   "id": "Z-0436-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "NO Calibration Gas Cylinder, 45ppm; Model/Catalog Number: 80006; Software Version: N/A - No firmware/software; Product Description: Nitric Oxide Calibration…",
+   "firm": "Beyond Air Inc.",
+   "reason": "Some NO calibration tanks may have been contaminated with O2 (from the air).",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of California, Tennessee…"
+  },
+  {
+   "id": "Z-0380-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Heart Perfusion Set Model/Catalog Number: 1200 Software Version: rev 3 Product Description: OCS Heart Perfusion Module, included in the Heart Perfusion Set…",
+   "firm": "TransMedics, Inc.",
+   "reason": "The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, FL, IL, MA, MN, NC…"
+  },
+  {
+   "id": "Z-0425-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "FP3D Dark Veined; Model/Catalog Number: 4220442 Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength = 385…",
+   "firm": "Keystone Industries - Myerstown",
+   "reason": "Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the country of Canada."
+  },
+  {
+   "id": "Z-0430-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono ceiling. Model Number: 11328100.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential for loss of X-ray functionality after system startup or restart.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, IA, KY, MN, NY, OH."
+  },
+  {
+   "id": "Z-0400-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp ESO-1 FOR ESOPHAGEAL AND GENERAL PURPOSE USE REF: ESO-1 .",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0382-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "OCS Lung Mission Critical Plus Perfusion Set Model/Catalog Number: 2200 Software Version: rev 1 OCS Lung MC+ Perfusion Module included in the Lung MC+…",
+   "firm": "TransMedics, Inc.",
+   "reason": "The Perfusion Module may have an unprogrammed Front End Board (FEB) which will not allow the system to proceed beyond the initial startup process. The OCS system will display an error message saying Unsupported…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, FL, IL, MA, MN, NC…"
+  },
+  {
+   "id": "Z-0426-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "FP3D Original Pink; Model/Catalog Number: 4220440; Product Description: The FP3D is designed for additive manufacturing on Carbon 3D printers (wavelength = 385…",
+   "firm": "Keystone Industries - Myerstown",
+   "reason": "Some resin cartridges may have been filled without Part B resin. If an affected cartridge is used, the resin may look discolored when dispensed or after post-curing and printed parts may be less flexible and durable.",
+   "status": "Ongoing",
+   "distribution": "Worldwide distribution - US Nationwide and the country of Canada."
+  },
+  {
+   "id": "Z-0360-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Brand Name: GOREÂ¿ VIABAHNÂ¿ Endoprosthesis with Heparin Bioactive Surface, GOREÂ¿ VIABAHNÂ¿ Endoprosthesis with PROPATEN Bioactive Surface Product Name…",
+   "firm": "W L Gore & Associates, Inc.",
+   "reason": "Endovascular prosthesis were manufactured on equipment that was not operating with valid parameters and may cause the distal tip to separate.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution including in the states of AL, AR, AZ…"
+  },
+  {
+   "id": "Z-0408-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Physitemp TH-8/AOP Thermalert Monitoring Thermometer with Analog Output REF: TH-8/AOP",
+   "firm": "Physitemp Instruments, LLC",
+   "reason": "Temperature monitors and associated probes have not been reviewed for safety and effectiveness for intended use.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of AR, MA, CA, PA, NY, IN…"
+  },
+  {
+   "id": "Z-0418-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "Medline convenience kits containing BD Urinary Catheter Trays that include CliniClean Pericare Wipes DAVINCI DYNJ906763C GYN ABDOMINAL ONCOLOGY DYNJ911414A GYN…",
+   "firm": "Medline Industries, LP",
+   "reason": "Convenience kits contain additional product codes and lots of recalled CliniClean Pericare Wipes identified by manufacturer. Wipes may be contaminated with a lubricant used in the manufacturing process. Use of affected…",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of AL, AR, CA, FL, GA, IL, IN, LA, MA…"
+  },
+  {
+   "id": "Z-0429-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ARTIS icono biplane. Model Number: 11327600.",
+   "firm": "Siemens Medical Solutions USA, Inc",
+   "reason": "Potential for loss of X-ray functionality after system startup or restart.",
+   "status": "Ongoing",
+   "distribution": "US Nationwide distribution in the states of CA, IA, KY, MN, NY, OH."
+  },
+  {
+   "id": "Z-0394-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "ACUSON Sequoia Ultrasound Imaging System REF: 11148775",
+   "firm": "Siemens Medical Solutions USA, Inc.",
+   "reason": "A software issue identified in the ultrasound system may result in the unintended activation of the Color Doppler setting, which has not received FDA clearance. This unintended activation could cause the system to crash…",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of CA, CT, KY, NC, TX and…"
+  },
+  {
+   "id": "Z-0434-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class II",
+   "product": "1.5T SIGNA Artist, whole body magnetic resonance scanner, System ID 585214MRAO",
+   "firm": "GE Medical Systems, LLC",
+   "reason": "Certain protocols can produce incorrect elevated measurements of liver stiffness. These incorrect measurements could contribute to inappropriate clinical management decisions.",
+   "status": "Ongoing",
+   "distribution": "Worldwide - US Nationwide distribution in the states of NY and the country of…"
+  },
+  {
+   "id": "H-0203-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Ground Up Nut Butter Cups filled with Almond & Cashew Butter Dark Chocolate Two Pack. Net wt. 1.9oz. Each paper box consists two cups wrapped in one sealed…",
+   "firm": "Breath of Fresh Air PDX LLC",
+   "reason": "Foreign material: plastic fiber",
+   "status": "Ongoing",
+   "distribution": "Product was distributed in Oregon and sold nationwide through online orders."
+  },
+  {
+   "id": "H-0201-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "NAGAI SOYEAT GREEN branded soy paper wrap; 10- 2.5OZ containers in vacuumed sealed containers. UPC: 0 11152 64246 8",
+   "firm": "J F C International Inc",
+   "reason": "Undeclared Yellow#5",
+   "status": "Ongoing",
+   "distribution": "Product was distributed to 267 different customers nationwide. Product was…"
+  },
+  {
+   "id": "H-0208-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Brad's Crunchy Kale Original, 2 oz (57g) bags with UPC 813104021679.",
+   "firm": "Snack Right Super Foods, Inc.",
+   "reason": "Products may contain elevated levels of thallium",
+   "status": "Ongoing",
+   "distribution": "The product was distributed to the following States: IL and RI"
+  },
+  {
+   "id": "H-0209-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Brad's Crunchy Kale, Cheeze It Up, 2 oz (57g) bags with UPC 813104021877.",
+   "firm": "Snack Right Super Foods, Inc.",
+   "reason": "Products may contain elevated levels of thallium",
+   "status": "Ongoing",
+   "distribution": "The product was distributed to the following States: IL and RI"
+  },
+  {
+   "id": "H-0206-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Brad's Crunchy Kale Radical Ranch, 2 oz (57g) bags with UPC UPC 813104020726.",
+   "firm": "Snack Right Super Foods, Inc.",
+   "reason": "Products may contain elevated levels of thallium",
+   "status": "Ongoing",
+   "distribution": "The product was distributed to the following States: IL and RI"
+  },
+  {
+   "id": "H-0205-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Mana Bakery Peperecha, 8 oz., with UPC: 8-5000973405-1.",
+   "firm": "Mana Bakery",
+   "reason": "Contains undeclared color (FD&C Yellow 5)",
+   "status": "Ongoing",
+   "distribution": "NJ, NY, CT"
+  },
+  {
+   "id": "H-0207-2027",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Brad's Veggie Chips Kale, 3 oz (85g) bags with UPC UPC 854615002054.",
+   "firm": "Snack Right Super Foods, Inc.",
+   "reason": "Products may contain elevated levels of thallium",
+   "status": "Ongoing",
+   "distribution": "The product was distributed to the following States: IL and RI"
+  },
+  {
+   "id": "Z-0439-2027",
+   "date": "2026-11-18",
+   "category": "Device",
+   "classification": "Class III",
+   "product": "ROTEM sigma complete; Model/Catalog Number: 555501; In vitro diagnostic to monitor and analyze patient coagulation status from a blood sample.",
+   "firm": "TEM INNOVATIONS GMBH",
+   "reason": "Customer ordered US-approved version of the device but received a variant not approved for sale/use in the United States. Product was distributed into an unauthorized geography due to a fulfillment/distribution error.",
+   "status": "Ongoing",
+   "distribution": "Product in scope of this recall is for one USA customer located in Hawaii."
+  },
+  {
+   "id": "",
+   "date": "2026-11-18",
+   "category": "Food",
+   "classification": "Not Yet Classified",
+   "product": "Branch Manager, Dietary Supplement for Men 18+, packaged in single capsule blister card, 24 individual blister cards per retail box; UPC 672713228585. Labeled…",
+   "firm": "SUPPLX.com",
+   "reason": "FDA laboratory analysis confirmed that the product contains yohimbine that is not declared on the product labels.",
+   "status": "Ongoing",
+   "distribution": "The products were sold to 9 consignees by internet sales through SUPPLX.com to…"
+  },
   {
    "id": "Z-0316-2027",
    "date": "2026-11-11",
@@ -431,6 +1613,17 @@
    "distribution": "US and Canada"
   },
   {
+   "id": "H-0204-2027",
+   "date": "2026-11-11",
+   "category": "Food",
+   "classification": "Class I",
+   "product": "365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules 120 count. Product Item Number: 3006661. 120 ct powder capsules in a 200cc…",
+   "firm": "Vitality Works, Inc",
+   "reason": "Possible Salmonella contamination.",
+   "status": "Ongoing",
+   "distribution": "Recalled product was distributed nationwide."
+  },
+  {
    "id": "H-0197-2027",
    "date": "2026-11-11",
    "category": "Food",
@@ -438,7 +1631,7 @@
    "product": "Raw milk cheddar cheese packed in vacuum sealed clear plastic with a white, red and green label which reads in part as, \"FAMILY FARMSTEAD MILD RAW CHEDDAR -…",
    "firm": "Family Farmstead Dairy, LLC",
    "reason": "Potential contamination with E. coli (pathogenic non-O157 STEC).",
-   "status": "Completed",
+   "status": "Terminated",
    "distribution": "Distributors located in CT, MA, MD, NJ, NY, PA, and VA. Product may be further…"
   },
   {
@@ -726,6 +1919,17 @@
    "reason": "Failed Stability Specifications: OOS stability results included viscosity and appearance results that did not align with the established specifications.",
    "status": "Ongoing",
    "distribution": "TX only"
+  },
+  {
+   "id": "D-0185-2027",
+   "date": "2026-11-11",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "Famotidine Injection, 200 mg per 50 mL (4 mg per mL), 1 x 50 mL Multi-Dose Vial, For Intravenous Use, Rx only, Sterile, Mfd. for SAGENT Pharmaceuticals…",
+   "firm": "Sagent Pharmaceuticals",
+   "reason": "Presence of Particulate Matter",
+   "status": "Ongoing",
+   "distribution": "US Nationwide"
   },
   {
    "id": "D-0138-2027",
@@ -1608,6 +2812,28 @@
    "distribution": "AZ, TX, VA, GA, MA, NC, IN, NV, CA, NJ, CT, OH, WY"
   },
   {
+   "id": "H-0202-2027",
+   "date": "2026-11-11",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "Wise Wife ground cinnamon in plastic container with black screw top cap, 3.88 oz",
+   "firm": "SLR Food Distribution, Inc.",
+   "reason": "Product contains elevated levels of lead",
+   "status": "Ongoing",
+   "distribution": "20 retail locations located in: CT, IN, KS, MA, MI, MN, NC, NE, NY, OH, PA, TX…"
+  },
+  {
+   "id": "H-0227-2027",
+   "date": "2026-11-11",
+   "category": "Food",
+   "classification": "Class II",
+   "product": "- Product Name: 7-Eleven Horchata FD 4:1 BIB - Brand: 7-Eleven -Item Number: L0496F010201 - Package Size: 3 gallon bag in box",
+   "firm": "Sunny Sky Products, LLC",
+   "reason": "Sunny Sky Products has identified that analytical results for certain lots of 7-Eleven Horchata may not conform to established product requirements. Specifically, finished-product water activity results were identified…",
+   "status": "Ongoing",
+   "distribution": "Nationwide 7-11 stores"
+  },
+  {
    "id": "H-0195-2027",
    "date": "2026-11-11",
    "category": "Food",
@@ -1628,17 +2854,6 @@
    "reason": "Microbial Contamination of Sterile Products: Out of specifications results were obtained for bacterial endotoxin.",
    "status": "Ongoing",
    "distribution": "Nationwide within the United States"
-  },
-  {
-   "id": "",
-   "date": "2026-11-11",
-   "category": "Food",
-   "classification": "Not Yet Classified",
-   "product": "365 Whole Foods Market Standardized + Full Spectrum Blend Ashwagandha Capsules 120 count. Product Item Number: 3006661. 120 ct powder capsules in a 200cc…",
-   "firm": "Vitality Works, Inc",
-   "reason": "Possible Salmonella contamination.",
-   "status": "Ongoing",
-   "distribution": "Recalled product was distributed nationwide."
   },
   {
    "id": "Z-0208-2027",
@@ -1815,6 +3030,17 @@
    "reason": "CGMP Deviations",
    "status": "Ongoing",
    "distribution": "US Nationwide"
+  },
+  {
+   "id": "D-0172-2027",
+   "date": "2026-11-04",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "Cyanocobalamin Injection, USP, 1000 mcg/mL, 25 x 1 mL multi-dose vials, Rx only, American Regent INC, Shirley, NY, 11967, NDC 0517-0031-25, (Vial NDC…",
+   "firm": "American Regent, Inc.",
+   "reason": "Presence of Particulate matter: Identified as glass",
+   "status": "Ongoing",
+   "distribution": "Nationwide within the United States"
   },
   {
    "id": "D-0080-2027",
@@ -2488,6 +3714,17 @@
    "distribution": "Nationwide in the USA"
   },
   {
+   "id": "D-0181-2027",
+   "date": "2026-11-04",
+   "category": "Drug",
+   "classification": "Class III",
+   "product": "Tridacaine III / Lidocaine Patch 5%, 15 envelopes containing 1 patch each per pouch, Rx only, Distributed by: Trifluent Pharma San Antonio, TX 78213, NDC…",
+   "firm": "Trifluent Pharma LLC",
+   "reason": "Labeling: Incorrect or Missing Lot and/or Exp Date. Incorrect expiration date printed on the label.",
+   "status": "Ongoing",
+   "distribution": "Nationwide within the United States"
+  },
+  {
    "id": "D-0082-2027",
    "date": "2026-10-28",
    "category": "Drug",
@@ -2497,6 +3734,17 @@
    "reason": "Particulate matter: particulate matter identified as cellulose, polystyrene, polyethylene teraphalate, stainless steel, or stopper material in the product solution.",
    "status": "Ongoing",
    "distribution": "Nationwide within the United States"
+  },
+  {
+   "id": "D-0156-2027",
+   "date": "2026-10-28",
+   "category": "Drug",
+   "classification": "Class I",
+   "product": "Brevital Sodium (Methohexital Sodium), For Injection, USP, 500 mg/vial, 500 mg Multiple Dose Vial,, Rx only, Distributed by: Par Pharmaceutical, Chestnut…",
+   "firm": "Par Health USA, LLC",
+   "reason": "Presence of Particulate Matter; Particulates identified as cellulose",
+   "status": "Ongoing",
+   "distribution": "US Nationwide and Canada"
   },
   {
    "id": "D-0084-2027",
@@ -2529,7 +3777,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0132-2027",
@@ -2540,7 +3788,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0131-2027",
@@ -2551,7 +3799,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0128-2027",
@@ -2562,7 +3810,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0126-2027",
@@ -2573,7 +3821,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0123-2027",
@@ -2584,7 +3832,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0125-2027",
@@ -2595,7 +3843,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0152-2027",
@@ -2617,18 +3865,18 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0129-2027",
    "date": "2026-10-28",
    "category": "Device",
    "classification": "Class I",
-   "product": "V+Pro Model Number: PRT-01185-000, Package PN:PRT-01198-000; Model Number: PRT-01185-001, Package PN: N/A; Model Number: PRT-01185-002, Package PN:N/A. used…",
+   "product": "V+Pro Model Number: PRT-01185-000, Package PN:PRT-01198-000; Model Number: PRT-01185-001 , Package PN: N/A; Model Number: PRT-01185-002, Package PN:N/A. used…",
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0133-2027",
@@ -2639,7 +3887,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0124-2027",
@@ -2650,7 +3898,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "Z-0122-2027",
@@ -2661,7 +3909,7 @@
    "firm": "Ventec Life Systems, Inc.",
    "reason": "Ventilator's Internal Flow transducer cable connector may disconnect from internal board, potentially resulting in system reboot and interruption of ventilation therapy.",
    "status": "Ongoing",
-   "distribution": "Distribution US nationwide including Puerto Rico."
+   "distribution": "US: AK AL AR AZ CA CO DC FL GA HI IA ID IL IN KS KY LA MA MD ME MI MN MO MS MT…"
   },
   {
    "id": "H-0141-2027",
@@ -2671,7 +3919,7 @@
    "product": "Special Red Almond Mole Powder; packaged in 1lb, 5lb, 11lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sesame, Peanuts, Wheat, Soy, Almonds, Walnuts, Yellow#5, Yellow#6, Red#40, Blue#2)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -2682,7 +3930,7 @@
    "product": "Fritura Rueda Papa / Potato Wheel Snack; packed in a clear plastic 1lb, 5lb, 33lb unit sizes. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -2693,7 +3941,7 @@
    "product": "Horchata Drink Mix; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Milk)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -2715,7 +3963,7 @@
    "product": "Bread Crumbs; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Milk, Wheat, Sesame, Soy)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -2737,7 +3985,7 @@
    "product": "Wild West Seeds Broccoli Seeds Green Sprouting Calabrese lot #4105. Net Wt. 50lb. Wild West Seeds Broccoli Waltham29 Seeds lot #4475 (this lot was sent to only…",
    "firm": "Wild West Seed Inc",
    "reason": "Salmonella",
-   "status": "Ongoing",
+   "status": "Completed",
    "distribution": "Distributed in CA, FL, GA, ID, MD, ME, NC, OR, PA, TX, UT, and United Kingdom."
   },
   {
@@ -2759,7 +4007,7 @@
    "product": "Homestyle Poblano Mole; packaged in 1lb, 5lb, 22lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sesame, Peanuts, Wheat, Soy, Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -2783,6 +4031,17 @@
    "reason": "CGMP Deviations.",
    "status": "Ongoing",
    "distribution": "US Nationwide."
+  },
+  {
+   "id": "D-0192-2027",
+   "date": "2026-10-28",
+   "category": "Drug",
+   "classification": "Class II",
+   "product": "Testosterone Cypionate / Testosterone Propionate 200/10 mg/mL, 30mL vials, This Is A Compounded Drug, Intramuscular Use, Office Use Only, 8400 Esters Blvd, STE…",
+   "firm": "Right Value Drug Stores LLC",
+   "reason": "Lack of sterility assurance.",
+   "status": "Ongoing",
+   "distribution": "Nationwide in the USA."
   },
   {
    "id": "D-0056-2027",
@@ -2976,7 +4235,7 @@
    "date": "2026-10-28",
    "category": "Drug",
    "classification": "Class II",
-   "product": "Testosterone Cypionate, 200 mg/mL, packaged in a) 5 mL vials (NDC 73271-1225-1) and b) 30 m vials ( NDC 73271-1226-2) This Is A Compounded Dug, Intramuscular…",
+   "product": "Testosterone Cypionate, 200 mg/mL, packaged in a) 5 mL vials (NDC 73271-1225-1) and b) 30 m vials (NDC 73271-1226-2) This Is A Compounded Drug, Intramuscular…",
    "firm": "Right Value Drug Stores LLC",
    "reason": "Lack of sterility assurance.",
    "status": "Ongoing",
@@ -3903,7 +5162,7 @@
    "product": "Jovy Gummy Worms Neon; packaged in 1lb plastic units. UPC 712199083411",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6, Blue#1)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3914,7 +5173,7 @@
    "product": "Milk Chocolate Covered Raisins; packaged in 1lb, 5lb, 20lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Milk, Soy)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3925,7 +5184,7 @@
    "product": "Fritura mixed dry fruit; packed in a clear plastic 1lb, 5lb, 25lb unit sizes. no UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat, Yellow #5, Yellow #6)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3947,7 +5206,7 @@
    "product": "All-Purpose Flour; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3958,7 +5217,7 @@
    "product": "Churro Mix; packed in a clear plastic 1lb, 5lb, 50lb unit sizes. no UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Egg, Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3969,7 +5228,7 @@
    "product": "Jovy Gummy Bears Regular; packed in a clear plastic 1lb unit sizes. UPC: UPC 712199085156",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6, Blue#1)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -3980,7 +5239,7 @@
    "product": "Dried Pears; packaged in 1lb, 5lb, 25lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4002,7 +5261,7 @@
    "product": "Dried Diced Pineapple; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4013,7 +5272,7 @@
    "product": "Fritura Lagrimita / Teardrop Wheat Snack; packed in a clear plastic 1lb, 5lb, 44lb unit sizes.",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat, Yellow #6, Soy)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4035,7 +5294,7 @@
    "product": "Whole Pitted Dried Apricots; packed in a clear plastic 1lb, 5lb, 28lb unit sizes. no UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4046,7 +5305,7 @@
    "product": "Dried Kiwi Slices; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites, Yellow#5, Blue#1)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4057,7 +5316,7 @@
    "product": "GEARHARTS FINE CHOCOLATES Net Wt. 4oz UPC 8 98111 00205 7; Net Wt. 8oz UPC 8 98111 00206; Gearharts Fine Chocolates 243B Ridge McIntire Rd, Charlottesville, VA…",
    "firm": "Gearharts Fine Chocolates, Inc.",
    "reason": "Foreign Object - Broken glass was found in a piece of finished product.",
-   "status": "Ongoing",
+   "status": "Completed",
    "distribution": "Product was shipped to the following states: CA, CT, GA, IL, KY, MA, MD, ME…"
   },
   {
@@ -4079,7 +5338,7 @@
    "product": "Dried Fruit Mix; packed in a clear plastic 1lb, 5lb, 25lb unit sizes.",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites, Yellow#6)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4090,7 +5349,7 @@
    "product": "Air-Dried Apple Rings; packaged in 1lb, 5lb, 22lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4101,7 +5360,7 @@
    "product": "Dried Peaches; packed in a clear plastic 1lb, 5lb, 22-25lb unit sizes. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4112,7 +5371,7 @@
    "product": "Jovy Gummy Peach Rings; packed in a clear plastic 1lb unit sizes. UPC: 712199083404",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4123,7 +5382,7 @@
    "product": "Dried Mango Slices; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites, Yellow#6)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4134,7 +5393,7 @@
    "product": "Dried Pineapple Rings; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4156,7 +5415,7 @@
    "product": "Tropical Trail Mix; packaged in 1lb, 5lb, 25lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Peanuts, Almonds, Sulfites, Yellow#6)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4167,7 +5426,7 @@
    "product": "Jovy Gummy Bears Neon; packed in 1lb plastic units. UPC 712199083558",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6, Blue#1)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4200,7 +5459,7 @@
    "product": "Jovy Gummy Worms (Regular); packaged in 1lb plastic units. UPC: 712199083398",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40, Yellow#5, Yellow#6, Blue#1)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4211,7 +5470,7 @@
    "product": "Dried Papaya Spears; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Yellow#6, Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4222,7 +5481,7 @@
    "product": "Fritura Rueda / Wheat Wheel Snack; packed in a clear plastic 2lb, 5lb, 33lb unit sizes. no UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat, Yellow#5, Yellow #6,)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4233,7 +5492,7 @@
    "product": "Dried Diced Papaya; packaged in 1lb, 5lb, 44lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Yellow#6, Sulfites)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4244,7 +5503,7 @@
    "product": "Roasted & Salted Mixed Nuts; packaged in 1lb, 5lb, 25lb clear plastic units. Roasted & Unsalted Mixed Nuts; packaged in 1lb, 5lb, 25lb clear plastic units. No…",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Cashew, Almond, Brazil Nut, Hazelnut, Pecan)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4266,7 +5525,7 @@
    "product": "Apple Rings; packed in 1lb, 5lb, and 2lb unit sizes. Product code: APLC-R01-22",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared sulfites",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4277,7 +5536,7 @@
    "product": "Honey Nut Granola",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond, Cashew)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4299,7 +5558,7 @@
    "product": "Whole wheat flour; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4310,7 +5569,7 @@
    "product": "Black Sesame Seeds; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sesame)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4321,7 +5580,7 @@
    "product": "10X10 Wheat Snack; packaged in 2lb, 5lb, 33lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4332,7 +5591,7 @@
    "product": "Textured Soy Protein; packaged in 1lb, 5lb, 33lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Soy)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4343,7 +5602,7 @@
    "product": "Soybeans; packed in a clear plastic 1lb, 5lb, 50lb unit sizes. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Soy)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4354,7 +5613,7 @@
    "product": "Almonds in Shell; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4365,7 +5624,7 @@
    "product": "4X6 Wheat Snack; packaged in 1lb, 5lb, 33lb clear plastic units. 4X8 Wheat Snack; packaged in 1lb, 5lb, 33lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4376,7 +5635,7 @@
    "product": "Wheat Bran; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4387,7 +5646,7 @@
    "product": "Butter Toffee Peanuts; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Peanuts, Milk)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4398,7 +5657,7 @@
    "product": "Harina de Trigo; Whole Wheat Flour; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4409,7 +5668,7 @@
    "product": "Almond Flour; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4420,7 +5679,7 @@
    "product": "Dried Cod; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Fish)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4431,7 +5690,7 @@
    "product": "Hulled Sesame Seeds; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Sesame)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4442,7 +5701,7 @@
    "product": "Shelled White Pine Nuts; packaged in 1lb, 5lb, 25-55lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Pine Nuts)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4453,7 +5712,7 @@
    "product": "Raw Shelled Pistachios; packaged in 1lb, 5lb, 25-30lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Pistachios)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4464,7 +5723,7 @@
    "product": "Walnut halves; packaged in 1lb, 5lb, 22-25lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Walnuts)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4475,7 +5734,7 @@
    "product": "Roasted Whole Almonds; packed in a clear plastic bag. 1lb, 5lb, 25lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4486,7 +5745,7 @@
    "product": "Natural Sesame Seeds; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "various undeclared allergen ingredients (Sesame)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4497,7 +5756,7 @@
    "product": "Raw In-Shell Peanuts; packed in a clear plastic 1lb, 5lb, 50lb unit sizes. Raw Spanish Peanuts; sold by weight (bulk) Raw shelled Peanuts; packed in a clear…",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Peanuts)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4508,7 +5767,7 @@
    "product": "Ground Shrimp; packed in a clear plastic 1lb, 5lb, 25-50lb unit sizes. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (shrimp)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4519,7 +5778,7 @@
    "product": "Wheat Germ; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4530,7 +5789,7 @@
    "product": "Pecans in Shell; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Pecans)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4541,7 +5800,7 @@
    "product": "Sliced Almonds; packed in a clear plastic bag. 1lb, 5lb, 25lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4552,7 +5811,7 @@
    "product": "Whole Wheat; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4563,7 +5822,7 @@
    "product": "Walnuts in Shell; packaged in 1lb, 5lb, 50lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Walnuts)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4574,7 +5833,7 @@
    "product": "Tube Shaped Wheat Snack; packaged in 1lb, 5lb, 33lb clear plastic units. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Wheat)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4585,7 +5844,7 @@
    "product": "Hazelnuts in Shell; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Hazelnut)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4596,7 +5855,7 @@
    "product": "Dried Whole Shrimp; packed in a clear plastic 1lb, 5lb, 30lb unit sizes. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (shrimp)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4607,7 +5866,7 @@
    "product": "Jovy Watermelon Gummy Rings; packed in a clear plastic 1lb unit sizes. UPC 712199083510",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Red#40)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
   },
   {
@@ -4618,778 +5877,8 @@
    "product": "Chocolate Covered Almonds; packed in a clear plastic bag. 1lb, 5lb, 50lb unit size. No UPC",
    "firm": "El Ruisenor De Mexico, Inc.",
    "reason": "undeclared allergen ingredient (Almond)",
-   "status": "Ongoing",
+   "status": "Terminated",
    "distribution": "Recalling firm distributes primarily to California customers both retail and…"
-  },
-  {
-   "id": "Z-0002-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class I",
-   "product": "HemoslL AcuStar HIT-lgG(PF-4). Part Number: 0009802028. in vitro diagnostic (OUS only)",
-   "firm": "Instrumentation Laboratory",
-   "reason": "Potential for invalid calibration curve or negative mean bias of up to 47% with patient samples.",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the states of AR, AZ, CA, CT, FL, GA…"
-  },
-  {
-   "id": "Z-0001-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class I",
-   "product": "HemoslL AcuStar HIT-lgG(PF-4). Part Number: 0009800127. in vitro diagnostic",
-   "firm": "Instrumentation Laboratory",
-   "reason": "Potential for invalid calibration curve or negative mean bias of up to 47% with patient samples.",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the states of AR, AZ, CA, CT, FL, GA…"
-  },
-  {
-   "id": "H-0092-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class I",
-   "product": "Deano's Pasta; Pear and Pecorino Triangoli Ravioli, 1lb.; Ingredients: Dough: Semolina (Wheat, Niacin, Thiamine, Mononitrate, Riboflavin, Folic Acid), Water…",
-   "firm": "DEANO'S PASTA",
-   "reason": "Undeclared Lobster",
-   "status": "Ongoing",
-   "distribution": "MA, NH"
-  },
-  {
-   "id": "D-0041-2027",
-   "date": "2026-10-21",
-   "category": "Drug",
-   "classification": "Class II",
-   "product": "Sermorelin, 1 mg/mL, 10 ml vial, Sterile injectable solution, RX Only, Houston RX LLC, 15430 Vantage Parkway E STE 220, Houston, TX 77032.",
-   "firm": "Houston Rx LLC",
-   "reason": "Lack of process control",
-   "status": "Ongoing",
-   "distribution": "Nationwide in the USA."
-  },
-  {
-   "id": "D-0038-2027",
-   "date": "2026-10-21",
-   "category": "Drug",
-   "classification": "Class II",
-   "product": "Metoclopramide Tablets, USP, 5 mg, [100 or 500] Tablets per bottle, Rx Only, Manufactured for: Teva Pharmaceuticals, Parsippany, NJ 07054. NDC 100 Tablets…",
-   "firm": "Teva Pharmaceuticals USA, Inc",
-   "reason": "Presence of Foreign Tablets/Capsules",
-   "status": "Ongoing",
-   "distribution": "US Nationwide."
-  },
-  {
-   "id": "D-0042-2027",
-   "date": "2026-10-21",
-   "category": "Drug",
-   "classification": "Class II",
-   "product": "Metoclopramide Tablets, USP, 5 mg, 100 Tablets (10 x 10), Rx Only, Distributed by: American Health Packaging, Columbus, Ohio 43217. NDC Carton: 60687-620-01…",
-   "firm": "American Health Packaging",
-   "reason": "Presence of Foreign Tablets/Capsules",
-   "status": "Ongoing",
-   "distribution": "US Nationwide"
-  },
-  {
-   "id": "D-0039-2027",
-   "date": "2026-10-21",
-   "category": "Drug",
-   "classification": "Class II",
-   "product": "Hydrocortisone Sodium Succinate for Injection, USP 100 mg/vial, 1 Vial, Rx Only, Manufactured by: Zydus Lifesciences Ltd., Vadodara - 391510 India, Distributed…",
-   "firm": "Zydus Pharmaceuticals (USA) Inc",
-   "reason": "Failed Impurities/Degradation Specifications.",
-   "status": "Ongoing",
-   "distribution": "Nationwide within the United States"
-  },
-  {
-   "id": "D-0040-2027",
-   "date": "2026-10-21",
-   "category": "Drug",
-   "classification": "Class II",
-   "product": "Tirzepatide/Niacinamide 2mL vial (40 MG per Vial) Inj 20mg/2mg/mL, RX Only, Houston RX LLC, 15430 Vantage Parkway E STE 220, Houston, TX 77032.",
-   "firm": "Houston Rx LLC",
-   "reason": "Lack of assurance of sterility.",
-   "status": "Ongoing",
-   "distribution": "Nationwide in the USA."
-  },
-  {
-   "id": "Z-0164-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "TS Universal Baseplate Finishing Tray, Triathlon. Catalog Number: 6543-6-506.",
-   "firm": "Howmedica Osteonics Corp.",
-   "reason": "Reprocessing instructions provided in LSTPI-B specify a sterilization dry time of 30 minutes for the trays sterilized in blue wrap. When blue wrap is used, the 30-minute dry time may lead to a small amount of residual…",
-   "status": "Ongoing",
-   "distribution": "These trays are provided by sale or loan. Loans are provided through…"
-  },
-  {
-   "id": "Z-0145-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Power F2 Powered Fastening System, Power F2, Item No. 0567093 used with Power X2 Stretchers, Power X2, Item No. 0015816 and PowerX2 Premium, Item No. 0015821",
-   "firm": "Ferno-Washington Inc",
-   "reason": "Firmware issue may result in intermittent loss or degradation of powered functionality when paired with compatible stretcher. The issue may lead to the system not operating in powered mode, or exhibiting reduced powered…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the states of AL, AR, AZ, CA, CO, FL…"
-  },
-  {
-   "id": "Z-0166-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Triathlon Hinge Femoral Prep Tray. Catalog Number: 6543-6-514.",
-   "firm": "Howmedica Osteonics Corp.",
-   "reason": "Reprocessing instructions provided in LSTPI-B specify a sterilization dry time of 30 minutes for the trays sterilized in blue wrap. When blue wrap is used, the 30-minute dry time may lead to a small amount of residual…",
-   "status": "Ongoing",
-   "distribution": "These trays are provided by sale or loan. Loans are provided through…"
-  },
-  {
-   "id": "Z-0176-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) OPEN HEART PACK A &#38; B, Medline Product number/SKU DYNJ04584L; 2) OPEN HEART ACCESSORY PACK, Medline…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0163-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Williams Cystoscopic Injection Needles, used for cystoscopic injection into the urethra, bladder neck, and bladder wall, Reference Part Number 090001-S26…",
-   "firm": "Cook Incorporated",
-   "reason": "The female Luer lock adapter component in the affected device lots may not have been correctly seated due to misalignment and inadequate torquing during manufacturing. Potential events that may occur as a result of this…",
-   "status": "Ongoing",
-   "distribution": "US States: FL, IL, NM, TX, WA. Canada, France, Germany, Italy, Spain…"
-  },
-  {
-   "id": "Z-0138-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Grafton\" DBM and Grafton Plus\" DBM contain demineralized human bone tissue combined with an inert additive to yield a demineralized bone matrix (DBM) allograft…",
-   "firm": "Medtronic Sofamor Danek USA Inc",
-   "reason": "Medtronic identified through donor record review that the donor for Medtronic batch A62881 did not meet all Medtronic donor eligibility requirements related to the presence of microbial organisms. While the batch passed…",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of OK, VA, CO, AR, FL, TX, MD, DE, IL…"
-  },
-  {
-   "id": "Z-0189-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline convenience kit labeled as: FOOT ANKLE. Medline Kit SKU DYNJ65395A",
-   "firm": "Medline Industries, LP",
-   "reason": "Discrepancy in the shelf-life of a component",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the state of NY."
-  },
-  {
-   "id": "Z-0184-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports ADVANCE LAPAROSCOPIC DYNJ911135A CHN GYN ONCOLOGY DYNJ906731M",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0178-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: OPEN HEART, Medline Product Number/SKU DYNJ902898D",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0172-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: VEIN HARVESTING PACK, Medline product number/SKU DYNJ51845D",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0151-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Likorall Overhead Lifts Product Code: 3121001 Product Description: LIKORALL 200 Product Code: 3122005 Product Description: LIKORALL 242 ES, NATURAL Product…",
-   "firm": "Baxter Healthcare Corporation",
-   "reason": "Potential issue involving motor shaft breakage combined with reduced performance of the Single Fault Safety (SFS) system may lead to instances where the lift strap lowers more quickly than expected during use. Patients…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution including in the states of Alabama…"
-  },
-  {
-   "id": "Z-0160-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "DxU 840m Iris, REF: C76947; DxU 850m Iris, REF: C49513",
-   "firm": "Beckman Coulter, Inc.",
-   "reason": "The rinse-line check valve has a shorter service lifespan than originally expected and requires annual replacement to prevent lamina fluid leakage; however, the check valve replacement was excluded from the annual…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution including in the states and territory of…"
-  },
-  {
-   "id": "Z-0183-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports CHN GYN ONCOLOGY DYNJ906731K DYNJ906731L DYNJ906731N DAVINCI PROSTATECTOMY DYNJG901002A DYNJG901002B…",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0177-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) NEURO-SPINE BASIN PACK, Medline Product Number/SKU DYNJ80055A; 2) AV SHUNT PACK-LF, Medline Product Number/SKU…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0170-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) OPEN HEART CDS, Medline product number/SKU CDS840094R; 2) OPEN HEART CDS, Medline product number/SKU…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0174-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) MAIN/LAPAROSCOPY TRANSPLA PACK, Medline product number/SKU DYNJ0656274AC; 2) MAIN/LAPAROSCOPY TRANSPLA PACK…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0137-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Grafton\" DBM and Grafton Plus\" DBM contain demineralized human bone tissue combined with an inert additive to yield a demineralized bone matrix (DBM) allograft…",
-   "firm": "Medtronic Sofamor Danek USA Inc",
-   "reason": "Medtronic identified through donor record review that the donor for Medtronic batch A62881 did not meet all Medtronic donor eligibility requirements related to the presence of microbial organisms. While the batch passed…",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of OK, VA, CO, AR, FL, TX, MD, DE, IL…"
-  },
-  {
-   "id": "Z-0150-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Generic Name: BioFire¿ Joint Infection (JI) Panel Generic Name: BioFire¿ Joint Infection (JI) Panel Model/Catalog Number: RFIT-ASY-0138 (30 Kit), RFIT-ASY-0135…",
-   "firm": "BioFire Diagnostics, LLC",
-   "reason": "Due to potential contaiminated of spefic lots of pneumonia and joint infection panels that could result in false positive results",
-   "status": "Ongoing",
-   "distribution": "Worldwide - U.S. Nationwide distribution including in the states and territory…"
-  },
-  {
-   "id": "Z-0186-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "IntelePACS, InteleConnect Portal/Tech Portal Versions PACS-5-1-1-R102, PACS-5-2-1-R93, PACS-5-3-1-R83 through R128, PACS-5-4-1-R66 through R101, PACS-5-5-1-R50…",
-   "firm": "INTELERAD MEDICAL SYSTEMS INCORPORATED",
-   "reason": "Following a Chromium-based web-browser, report and displayed images may not match.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0165-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "TS Femoral Prep Tray, Triathlon. Catalog Number: 6543-6-507.",
-   "firm": "Howmedica Osteonics Corp.",
-   "reason": "Reprocessing instructions provided in LSTPI-B specify a sterilization dry time of 30 minutes for the trays sterilized in blue wrap. When blue wrap is used, the 30-minute dry time may lead to a small amount of residual…",
-   "status": "Ongoing",
-   "distribution": "These trays are provided by sale or loan. Loans are provided through…"
-  },
-  {
-   "id": "Z-0175-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) CV BASIN PACK-LF, Medline Product number/SKU DYNJ0538615K; 2) CV BASIN PACK-LF, Medline product number/SKU…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0185-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports KIT ROBOTICS UROLOGY PROSTATE DYKMBNDL116G",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0190-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "The ABL90 FLEX and ABL90 FLEX PLUS analyzers are intended for use by trained technologists, nurses, physicians and therapists. It is intended for use in a…",
-   "firm": "Radiometer Medical ApS",
-   "reason": "In vitro diagnostic analyzer had a risk of potentially inaccurate results requiring changes to instructions for use and: 1) Sample types, including whole blood samples no longer suitable for testing FHbF and ctBil, 2)…",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution including in the states of CA, OH, LA, MA, FL, NY…"
-  },
-  {
-   "id": "Z-0141-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Brand Name: IOMAX Product Name: IOMAX Cortical Module Model/Catalog Number: 190296-200 UDI-DI code: 00840067100653 Product Description: The IOMAX Cortical…",
-   "firm": "Cadwell Industries Inc",
-   "reason": "Stimulator device contains a defective printed circuit board assembly (PCBA) that may cause the device to unintentionally deliver electrical stimulation to the patient, or allow an unintended electrical current to reach…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the state of TN and the countries of…"
-  },
-  {
-   "id": "Z-0146-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "iFuse TORQ Implant System Model/Catalog Number: 10055T(10x55mm), 10060T(10x60mm), 10065T(10x65mm), 10080T(10x55mm), 11580T(11.5x80mm)",
-   "firm": "SI-BONE, Inc.",
-   "reason": "The pelvic fixation screws failed to meet acceptance criteria for tube packaging seal integrity testing; therefore, sterility assurance cannot be ensured.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of FL, GA, HI, NC, OH, PA, SD, TX, VA."
-  },
-  {
-   "id": "Z-0157-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "REF: P65 ST862 CoLag SCREW, FT, 6.7X62.5 mm",
-   "firm": "In2bones USA, LLC",
-   "reason": "Due to labeling error, bone screws specified as fully threaded, are actually partially threaded screws.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of FL, GA, HI, NC, OH, PA, SD, TX, VA."
-  },
-  {
-   "id": "Z-0179-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) SPINAL CDS, Medline Product Number/SKU CDS940087AM; 2) CUSTOM CRANI, Medline Product Number/SKU DYNJ907697C…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0161-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "IQ200 SPRINT, REF: 700-3322,700-3322RFB, 700-3325, 700-3326, B48997; IQ200 SELECT, REF: 700-3340, 700-3345, 700-3347, B48998, C10684; IQ200 ELITE, REF…",
-   "firm": "Beckman Coulter, Inc.",
-   "reason": "The rinse-line check valve has a shorter service lifespan than originally expected and requires annual replacement to prevent lamina fluid leakage; however, the check valve replacement was excluded from the annual…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution including in the states and territory of…"
-  },
-  {
-   "id": "Z-0136-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "JenaValve Trilogy Delivery Catheter, Size 27MM REF: TRILOGY-DC-L",
-   "firm": "Jenavalve Technology Inc.",
-   "reason": "Delivery Catheter may have sleeve liner separation that results in difficulty or inability to deploy heart valve device.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, FL, GA, IL, MA, MD, MI, MN…"
-  },
-  {
-   "id": "Z-0154-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "RAPICIDE PA Part A High-Level Disinfectant, Model/Catalog Number: ML020115",
-   "firm": "Steris Corporation",
-   "reason": "If the vented cap becomes blocked, gas may accumulate and the bottle may swell due to increased internal pressure. In some cases, excess vapor or liquid chemistry may escape from the bottle when the cap is twisted…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution."
-  },
-  {
-   "id": "Z-0159-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "MAS Omni IMMUNE PRO Liquid Assayed Integrated Immunoassay Control, Level 1, REF: OPRO-101; MAS Omni IMMUNETM PRO Liquid Assayed Integrated Immunoassay Control…",
-   "firm": "Microgenics Corporation",
-   "reason": "Vial-to-vial variability in MAS¿ Omni\"IMMUNE PRO Liquid Assayed Integrated Immunoassay Control, Level 1, Lot OPRO29061A results in low Parathyroid Hormone (PTH) recovery, which may lead to a delay in reporting patient…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the states of UT, MI, OK, NY, TX, CA…"
-  },
-  {
-   "id": "Z-0158-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Generic Name: GORE VIABIL Short Wire Biliary Endoprosthesis; Model/Catalog Number: VSWVH0808 and VSWVN1006 Product Description: The GORE VIABIL Short Wire…",
-   "firm": "W L Gore & Associates, Inc.",
-   "reason": "The potential for the devices to be mislabeled with the incorrect length.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of GA, RI."
-  },
-  {
-   "id": "Z-0135-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "JenaValve Trilogy Delivery Catheter, Size 25MM REF: TRILOGY-DC-M",
-   "firm": "Jenavalve Technology Inc.",
-   "reason": "Delivery Catheter may have sleeve liner separation that results in difficulty or inability to deploy heart valve device.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, FL, GA, IL, MA, MD, MI, MN…"
-  },
-  {
-   "id": "Z-0153-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "PERMA-HAND Silk Black Braided Sterile Nonabsorbable Surgical Suture, 1X18\" TF-5, Product Code: N271H",
-   "firm": "Ethicon, LLC",
-   "reason": "Silk sutures, indicated for use in cardiovascular, ophthalmic and neurological procedures, packaged with alcohol-based fluid, not part of product design, that if discovered prior to use may cause surgical delay. If…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution in the states of SC, PA, TX, CA, ID, LA…"
-  },
-  {
-   "id": "Z-0171-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) VEIN HARVESTING PACK-LF, Medline product number/SKU DYNJ0826732J; 2) NBMC VASCULAR PACK-LF, Medline product…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0156-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "RAPICIDE PA Part A High-Level Disinfectant, Model/Catalog Number: ML020117",
-   "firm": "Steris Corporation",
-   "reason": "If the vented cap becomes blocked, gas may accumulate and the bottle may swell due to increased internal pressure. In some cases, excess vapor or liquid chemistry may escape from the bottle when the cap is twisted…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution."
-  },
-  {
-   "id": "Z-0147-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "FORWARD Gunshot Wound Kit; Model: AFT-GSW;",
-   "firm": "INTEGRATED MEDCRAFT LLC",
-   "reason": "Subrecall of a kitted device from SafeGuard Medical due to internal testing identified an issue affecting the device's sterile pad, potentially causing the sterile pad to degrade over time. The degradation may cause…",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of GA, VA."
-  },
-  {
-   "id": "Z-0149-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Generic Name: FilmArray¿ Pneumonia Panel plus Generic Name: FilmArray¿ Pneumonia Panel plus Model/Catalog Number: RFIT-ASY-0143 (30 Kit), RFIT-ASY-0142 (6 Kit)…",
-   "firm": "BioFire Diagnostics, LLC",
-   "reason": "Due to potential contaiminated of spefic lots of pneumonia and joint infection panels that could result in false positive results",
-   "status": "Ongoing",
-   "distribution": "Worldwide - U.S. Nationwide distribution including in the states and territory…"
-  },
-  {
-   "id": "Z-0169-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "1) Product Name AUD OPEN HEART PACK, Medline Kit Number/SKU DYNJ22052I; 2) Product Name AV SHUNT PACK-MARYVIEW, Medline Kit Number/SKU DYNJ24528N; 3) Product…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0182-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports GENERAL DAVINCI DYNJG901004C LAP CHOLE DYNJ88071 ROBOTIC PACK DYNJ50474F",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0144-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Curaplex Capnography EtCO2/O2 Oral/Nasal Cannula Multipack (10 pk), Item Number 670272-KIT",
-   "firm": "Sarnova HC, Llc",
-   "reason": "Affected kits were assembled with pediatric nasal cannula instead of the intended adult nasal cannula.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of IA, IL, IN, KY, MI, MN, MO, ND, OH…"
-  },
-  {
-   "id": "Z-0181-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports HERNANDEZ DAVINCI ACC BUNDLE M DYNJ911258 KIT ROBOTICS UROLOGY PROSTATE DYKMBNDL116I ROBOTIC CHEST…",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0139-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "BD Phoenix Panel NMIC-312. Catalog Number: 449082.",
-   "firm": "Becton Dickinson & Co.",
-   "reason": "Potential for quality control failures with Klebsiella pneumoniae ATCC BAA-1705 when using the CPO Ambler classification feature.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0188-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Vinyl Instrument Guards, labeled as: 1) VENTED INSTRUMENT GUARD 1/16 X 3/4H - WHITE, Model Number 09-1-011; 2) WHITE VENTED INSTRUMENT GUARD 1/16 X 3/4, Model…",
-   "firm": "Healthmark Industries Co., Inc.",
-   "reason": "Labeling not compliant with 21 CFR 801 and steam sterilization IFU has been updated.",
-   "status": "Ongoing",
-   "distribution": "Worldwide distribution - US Nationwide and the countries of JAPAN, AUSTRALIA…"
-  },
-  {
-   "id": "Z-0187-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Scout MD, REF MDS05A-01, MDS05C-01, MDS10C-01 Contents: (1) Scout MD Delivery System, Standard for use with the SCOUT MD Surgical Guidance System, Rx Only…",
-   "firm": "Merit Medical Systems, Inc.",
-   "reason": "The implantable clip may experience difficulties deploying, which could prevent the reflector from functioning as intended during use.",
-   "status": "Ongoing",
-   "distribution": "US: AZ, CA, FL, IN, LA, NV, RI OUS: None"
-  },
-  {
-   "id": "Z-0168-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: CABG AUXILIARY PACK, Medline Product Number/SKU DYNJ44925D",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0180-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Convenience Kits containing CONMED AirSeal Access Ports ADVANCE LAPAROSCOPIC DYNJ911135 LAP CHOLE DYNJ911660 LAP NISSEN DYNJ911560 UROLOGY LAPAROSCOPIC - 51638…",
-   "firm": "Medline Industries, LP",
-   "reason": "Kits contain CONMED AirSeal Access Ports. The ports were recalled by manufacturer due to potential for erroneous overpressure alerts and system venting during use, which may result in delays or ending procedures.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, IN, MD, MO, NJ, OH, and WI."
-  },
-  {
-   "id": "Z-0134-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "JenaValve Trilogy Delivery Catheter, Size 23MM REF: TRILOGY-DC-S",
-   "firm": "Jenavalve Technology Inc.",
-   "reason": "Delivery Catheter may have sleeve liner separation that results in difficulty or inability to deploy heart valve device.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AZ, CA, FL, GA, IL, MA, MD, MI, MN…"
-  },
-  {
-   "id": "Z-0140-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "BD Phoenix Panel NMIC-306. Catalog Number: 449292.",
-   "firm": "Becton Dickinson & Co.",
-   "reason": "Potential for quality control failures with Klebsiella pneumoniae ATCC BAA-1705 when using the CPO Ambler classification feature.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0167-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "TS Misc. Instruments Tray, Triathlon. Catalog Number: 6543-6-519.",
-   "firm": "Howmedica Osteonics Corp.",
-   "reason": "Reprocessing instructions provided in LSTPI-B specify a sterilization dry time of 30 minutes for the trays sterilized in blue wrap. When blue wrap is used, the 30-minute dry time may lead to a small amount of residual…",
-   "status": "Ongoing",
-   "distribution": "These trays are provided by sale or loan. Loans are provided through…"
-  },
-  {
-   "id": "Z-0148-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Generic Name: FilmArray¿ Pneumonia Panel Generic Name: FilmArray¿ Pneumonia Panel Model/Catalog Number: RFIT-ASY-0144 (30 pack), RFIT-ASY-0145 (6 pack)…",
-   "firm": "BioFire Diagnostics, LLC",
-   "reason": "Due to potential contaiminated of spefic lots of pneumonia and joint infection panels that could result in false positive results",
-   "status": "Ongoing",
-   "distribution": "Worldwide - U.S. Nationwide distribution including in the states and territory…"
-  },
-  {
-   "id": "Z-0143-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "NaviFlex LW Pusher; Advx Panc. Stent 4/5F; Material Number (UPN): M00535030;",
-   "firm": "Boston Scientific Corporation",
-   "reason": "Device was incorrectly manufactured with a guidewire exit port (referred to in the IFU as the RX port), which is not a design feature associated with this device configuration.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of AL, CA, FL, GA, IL, IN, KY, MD, NC…"
-  },
-  {
-   "id": "Z-0173-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "Medline surgical convenience kits labeled as: 1) EAR, Medline product number/SKU DYNJ909020B; 2) EAR, Medline product number/SKU DYNJ909020A; 3) CAROTID PACK…",
-   "firm": "Medline Industries, LP",
-   "reason": "Medical convenience kits were distributed containing cannula components which do not conform to ISO 80369-7 dimensional requirements and may contribute to leaking or breaking during use.",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution."
-  },
-  {
-   "id": "Z-0142-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "NeuroStar Advanced Therapy System. Contains the NeuroStar HP Coil Assembly Part Number 81-01000-200. Affects the below NeuroStar Advanced Therapy Systems: 1…",
-   "firm": "Neuronetics, Inc.",
-   "reason": "Cables are not in conformance with the product specifications required in the production of the HP Coil Assembly.",
-   "status": "Ongoing",
-   "distribution": "Worldwide distribution - US Nationwide and the countries of Japan and South…"
-  },
-  {
-   "id": "Z-0155-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class II",
-   "product": "RAPICIDE PA Part A High-Level Disinfectant, Model/Catalog Number: ML020116",
-   "firm": "Steris Corporation",
-   "reason": "If the vented cap becomes blocked, gas may accumulate and the bottle may swell due to increased internal pressure. In some cases, excess vapor or liquid chemistry may escape from the bottle when the cap is twisted…",
-   "status": "Ongoing",
-   "distribution": "Worldwide - US Nationwide distribution."
-  },
-  {
-   "id": "H-0094-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class II",
-   "product": "Stewarts Shops Vanilla Heavenly Medley 1/2 Gallon (1.89 L), UPC Codes: 0 82086 44371 1",
-   "firm": "Stewart's Shops Corp.",
-   "reason": "Foreign object: May contain pieces of metal",
-   "status": "Ongoing",
-   "distribution": "NY, VT, NH"
-  },
-  {
-   "id": "H-0090-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class II",
-   "product": "J. HIGGS Loaded Bacon & Cheddar Potato Chips, NET WT 7.75 OZ (219.7g) bag, UPC 051933316454. Sold as 13 (7.75oz) bags per case.",
-   "firm": "Saratoga Potato Chips LLC",
-   "reason": "Undeclared soy.",
-   "status": "Ongoing",
-   "distribution": "The recalled J. HIGGS Loaded Bacon and Cheddar Potato Chips were distributed in…"
-  },
-  {
-   "id": "H-0091-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class II",
-   "product": "Made From Plants; Daring; Plant Steak Bites; Ready in 4 Mins Microwaveable Pouch; UPC: 86001124319",
-   "firm": "DARING FOODS INC",
-   "reason": "defective packaging; packaging can rupture/explode during cooking.",
-   "status": "Ongoing",
-   "distribution": "Product was distributed to a single retail grocery chain customer with multiple…"
-  },
-  {
-   "id": "H-0093-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class II",
-   "product": "Stewarts Shops Vanilla chocolate Strawberry Ice Cream 1/2 gallon (1.89 L), UPC: 0 82086 44377 3",
-   "firm": "Stewart's Shops Corp.",
-   "reason": "Foreign object: May contain pieces of metal",
-   "status": "Ongoing",
-   "distribution": "NY, VT, NH"
-  },
-  {
-   "id": "H-0089-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class II",
-   "product": "Holsum Spinach Flour Tortillas Large, 8 count (20 oz.) UPC: 810023430629",
-   "firm": "Holsum De Puerto Rico, Inc.",
-   "reason": "Undeclared colors (FD&C Blue No. 1 and FD&C Yellow No. 5)",
-   "status": "Ongoing",
-   "distribution": "PR, US Virgin Islands"
-  },
-  {
-   "id": "Z-0162-2027",
-   "date": "2026-10-21",
-   "category": "Device",
-   "classification": "Class III",
-   "product": "LeadCare II Blood Lead Test Kit. Model/Catalog Number: 70-6762.",
-   "firm": "Magellan Diagnostics, Inc.",
-   "reason": "In kit sub-lot 2530M-01 the date of expiration printed on the outer labeling may indicate the wrong expiration date of July 22, 2026 while the correct expiration date is July 13, 2026. If used the system will display an…",
-   "status": "Ongoing",
-   "distribution": "US Nationwide distribution in the states of CA, IN, PA, TX, NE, IL, MA, MO, KY."
-  },
-  {
-   "id": "H-0095-2027",
-   "date": "2026-10-21",
-   "category": "Food",
-   "classification": "Class III",
-   "product": "Pur Aqua Sparkling Frost Cherry Limeade 17 oz., UPC: 4099100167023",
-   "firm": "Refresco Beverages US Inc",
-   "reason": "May contain undeclared aspartame.",
-   "status": "Ongoing",
-   "distribution": "Florida with further downstream distribution to retail stores"
   }
  ]
 }
