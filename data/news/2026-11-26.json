@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-26",
+ "status": "published",
+ "generated": "2026-11-26T20:07:17.939Z",
+ "check": {
+  "ok": true,
+  "reason": "The target is the insurers and market consolidation, so it punches at the system. Patients are treated as people with limited choices, and the joke is on the insurers. It accurately reflects the story (the AMA warning about a few payers controlling markets) without invented numbers, quotes or results. It does not mock the reporter or the AMA, and it names no private individual. It avoids death, children and violence. The tone is dry and deadpan, and the irony of 'competition' among a handful of firms is genuinely satirical."
+ },
+ "pick": {
+  "title": "Just a handful of payers control US health insurance markets, AMA warns",
+  "source": "Healthcare Dive",
+  "url": "https://www.healthcaredive.com/news/just-a-handful-of-payers-control-us-health-insurance-markets-ama-warns/875719/",
+  "date": "2026-11-25",
+  "headline": "Handful of Insurers Celebrate Fiercely Competitive Market of Handful of Insurers",
+  "take": "The AMA warns that a few payers control US insurance markets. Fortunately, competition survives: the same few companies still vie to set the premiums, narrow the networks, and design the prior authorization forms. Patients are free to choose, provided they enjoy the menu. Physicians, meanwhile, negotiate from a position best described as supplicant."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "Why Medicare’s 2027 physician pay changes worry some specialists",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/25/medicare-physician-fee-schedule-change-worry-some-specialists/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 1,
+   "title": "FDA approves Cogent’s drug for rare stomach cancer",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/25/biotech-news-fda-approves-cogents-drug-for-rare-stomach-cancer/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 2,
+   "title": "We’re reading about BioNTech founders’ oncology startup, a long-acting GSK drug, and more",
+   "source": "STAT",
+   "url": "https://www.statnews.com/pharmalot/2026/11/25/biontech-founders-oncology-startup-gsk-egpa-drug-exdensur/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 3,
+   "title": "Medicare Open Enrollment: Here’s What’s Changing, and What Mistakes To Avoid",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/insurance/medicare-open-enrollment-guide-medicare-advantage-medigap-part-d-drugs-premiums/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 4,
+   "title": "It’s the Paperwork, Not the Work, Causing Enrollees To Lose Medicaid in Nebraska",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/health-care-costs/medicaid-work-requirements-new-rules-coverage-dropped-nebraska-rollout/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 5,
+   "title": "Medicare sets 2028 prices for 13 new drugs under Biden-era law",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/inflation-reduction-act-2028-final-medicare-drug-price/875783/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 6,
+   "title": "Just a handful of payers control US health insurance markets, AMA warns",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/just-a-handful-of-payers-control-us-health-insurance-markets-ama-warns/875719/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 7,
+   "title": "FDA Moves to Boost Drug Quality Testing",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/fdageneral/124048",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 8,
+   "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": 9,
+   "title": "The grueling struggle to find a primary care doctor in the ‘medical capital’ of America",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/26/primary-care-appointment-times-doctor-shortage/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": 10,
+   "title": "Inside RFK Jr.'s Day-to-Day; 'Not Dying Fast Enough'; Peddling Unproven Cures",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/publichealthpolicy/healthpolicy/124062",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 11,
+   "title": "Antibiotic Paste Approved to Prevent Surgical Site Infections",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/surgery/generalsurgery/124056",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 12,
+   "title": "Inside HLTH 2026",
+   "source": "Healthcare Dive",
+   "url": "https://www.healthcaredive.com/news/inside-hlth-conference-2026/875665/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 13,
+   "title": "RFK Jr. weighs in on plan to detonate toxic material in Iowa",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/25/health-news-rfk-jr-weighs-in-on-plan-to-detonate-toxic-material-in-iowa/",
+   "date": "2026-11-25"
+  },
+  {
+   "id": 14,
+   "title": "Listen to the Latest ‘KFF Health News Minute’",
+   "source": "KFF Health News",
+   "url": "https://kffhealthnews.org/news/listen-kff-health-news-minute-2026/",
+   "date": "2026-11-25"
+  }
+ ]
+}
