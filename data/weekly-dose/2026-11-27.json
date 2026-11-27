@@ -1,0 +1,12 @@
+{
+  "issue": 7,
+  "date": "2026-11-27",
+  "title": "Evidence-Based, Pending Evidence",
+  "preview": "This week: wellness fads move into the supply closet, and the portal learns to bill for logging in.",
+  "jokes": [
+    {"setup": "The hospital just opened an Integrative Wellness Wing with a crystal bar and a cold-pressed juice menu.", "punchline": "It was funded by cutting the budget for the thing that was actually integrated into patient care: nurses."},
+    {"setup": "The new patient portal now sends a notification every time a test result is ready to view.", "punchline": "Viewing it triggers a separate notification to your insurer that you looked, so they can begin the denial."}
+  ],
+  "cartoon": {"file": "cartoon.jpg", "caption": "“The crystals aren’t covered, but neither are the bandages, so we’ve made peace with it.”", "alt": "A doctor holds a glowing crystal and a bottle of green juice before shelves of crystals, candles and tonics while a patient in a gown waits on an exam table."},
+  "status": "send"
+}
