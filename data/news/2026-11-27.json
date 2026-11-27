@@ -1,0 +1,89 @@
+{
+ "date": "2026-11-27",
+ "status": "published",
+ "generated": "2026-11-27T19:54:16.557Z",
+ "check": {
+  "ok": true,
+  "reason": "The joke targets hospital and health-system priorities (naming opportunities and new wings over primary care capacity), not patients, who are shown as shut out by the system. It accurately reflects the story's subject, the difficulty of finding a primary care doctor in Boston. It has no invented numbers or quotes, doesn't mock the reporter, and avoids death, children and violence. The tone is dry and deadpan, and it is clearly satirical."
+ },
+ "pick": {
+  "title": "The grueling struggle to find a primary care doctor in the ‘medical capital’ of America",
+  "source": "STAT",
+  "url": "https://www.statnews.com/2026/11/26/primary-care-appointment-times-doctor-shortage/",
+  "date": "2026-11-26",
+  "headline": "Boston, Medical Capital of America, Offers World-Class Care to Anyone Already Inside",
+  "take": "The city has hospitals famous worldwide, each with a new wing and a naming opportunity, but not enough primary care doctors to go around. It turns out a donor plaque is easier to fund than a Tuesday appointment. Patients can access the cutting edge once someone refers them, which requires the thing they can't find."
+ },
+ "candidates": [
+  {
+   "id": 0,
+   "title": "FDA extends assessment of experimental Vertex kidney drug",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/27/fda-vertex-povetacicept-kidney-capricor-duchenne-readout-newsletter/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 1,
+   "title": "Here are some health AI conversation starters for the holidays",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/27/health-ai-conversation-starters-for-holidays-ai-prognosis/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 2,
+   "title": "Our Patients May Already Be Using Peptides. Counseling Matters.",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/opinion/second-opinions/124036",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 3,
+   "title": "The stories we’re grateful for this year",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/27/favorite-stat-stories-health-news-morning-rounds/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 4,
+   "title": "Pregnancy is the ‘perfect storm’ for eating disorders, but doctors keep missing them",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/27/pregnancy-eating-disorders-expanded-doctor-screening-needed/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 5,
+   "title": "Opinion: Montana’s ‘right to try’ law makes patients responsible for bearing costs — and risks",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/27/montana-sb-535-right-to-try-questions-risks-costs-insurance/",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 6,
+   "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": 7,
+   "title": "The grueling struggle to find a primary care doctor in the ‘medical capital’ of America",
+   "source": "STAT",
+   "url": "https://www.statnews.com/2026/11/26/primary-care-appointment-times-doctor-shortage/",
+   "date": "2026-11-26"
+  },
+  {
+   "id": 8,
+   "title": "Scientists Report Strong Evidence That Specially Bred Mosquitoes Can Fend Off Dengue",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/infectiousdisease/generalinfectiousdisease/124008",
+   "date": "2026-11-27"
+  },
+  {
+   "id": 9,
+   "title": "Most Lupus Patients in Remission Can Safely Stop Steroids, Study Finds",
+   "source": "MedPage Today",
+   "url": "https://www.medpagetoday.com/rheumatology/lupus/124063",
+   "date": "2026-11-27"
+  }
+ ]
+}
